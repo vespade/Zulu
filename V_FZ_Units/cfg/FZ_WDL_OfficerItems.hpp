@@ -1,0 +1,24 @@
+headgearList[]=
+{
+	"OPTRE_UNSC_PatrolCap_Marines", 1,
+};
+linkedItems[]=
+{
+	"VES_M52A_WDL_Radio_A",
+	"ItemMap",
+	"ItemCompass",
+	"ACE_Altimeter",
+	"ItemRadio",
+	"OPTRE_Smartfinder",
+	"ItemGPS"
+};
+respawnLinkedItems[]=
+{
+	"VES_M52A_WDL_Radio_A",
+	"ItemMap",
+	"ItemCompass",
+	"ACE_Altimeter",
+	"ItemRadio",
+	"OPTRE_Smartfinder",
+	"ItemGPS"
+};

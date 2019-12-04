@@ -10,7 +10,7 @@ class CfgPatches
 	class V_FZ_Armor
 	{
 		author="Fireteam Zulu";
-		name="Codename: Fireteam Zulu";
+		name="A2D: Fireteam Zulu";
 		url="https://discord.gg/fa7Cguk";
 		// Added Items
 		units[]={};
@@ -42,7 +42,7 @@ class CfgGlasses
 	class VES_HUD_Balaclava_Black: OPTRE_HUD_Glasses
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HUD Goggles with Balaclava (Black)";
 		ace_resistance=2;
         ace_protection=1;
@@ -82,7 +82,7 @@ class CfgGlasses
 	class VES_HUD_Visor: OPTRE_HUD_Glasses
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HUD Visor (Pilot)";
 		ace_resistance=1;
         ace_protection=1;
@@ -101,7 +101,7 @@ class CfgWeapons
 	class VES_NVG_Collar: NVGoggles
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="UNSC Uniform Collar";
 		model="OPTRE_UNSC_Units\Army\helmet.p3d";
 		hiddenSelections[]={"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", /*"H_Collar",*/ "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
@@ -133,7 +133,7 @@ class CfgWeapons
 	class VES_Beret_MP: H_Beret_Colonel
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] UNSC Military Police Beret";
 		model="\A3\Characters_F_EPB\BLUFOR\headgear_beret02";
 		picture="\A3\characters_f_EPB\BLUFOR\Data\UI\icon_H_beret02_ca.paa";
@@ -155,7 +155,7 @@ class CfgWeapons
 	class VES_CH252D: OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.60;
 		displayName="[FZ] CH252D Helmet";
@@ -207,7 +207,7 @@ class CfgWeapons
 	class VES_CH252D_dp: OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.10;
 		displayName="[FZ] CH252D Helmet";
@@ -239,7 +239,7 @@ class CfgWeapons
 	
 	class VES_S1ONIR: VES_CH252D
 	{
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] S1/ONI/R Helmet (Gold)";
 		model="\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
 		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon.paa";
@@ -264,7 +264,7 @@ class CfgWeapons
 	
 	class VES_S1ONIR_dp: VES_CH252D_dp
 	{
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] S1/ONI/R Helmet (Gold)";
 		model="\OPTRE_UNSC_Units\Army\recon_helmet_dp.p3d";
 		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon.paa";
@@ -284,7 +284,7 @@ class CfgWeapons
 	
 	class VES_CH252A: VES_CH252D
 	{
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] CH252A Helmet";
 		model="\OPTRE_UNSC_Units\Army\aa_helmet.p3d";
 		hiddenSelections[]={"camo","camo2"};
@@ -319,7 +319,7 @@ class CfgWeapons
 	
 	class VES_CH252A_dp: VES_CH252D_dp
 	{
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] CH252A Helmet";
 		model="\OPTRE_UNSC_Units\Army\aa_helmet_dp.p3d";
 		hiddenSelections[]={"camo","camo2"};
@@ -341,7 +341,7 @@ class CfgWeapons
 	class VES_CH252_MAR_Heavy: OPTRE_UNSC_CH252_Helmet2_MAR
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		ace_hearing_protection=0.85;
 		ace_hearing_lowerVolume=0.50;
 		displayName="[FZ] CH252 Helmet (Heavy) Marine";
@@ -413,7 +413,7 @@ class CfgWeapons
 	};
 	class VES_CH252_MAR_Vacuum: VES_CH252D
 	{
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] ECH252 Helmet (Silver) Marine";
 		model="\OPTRE_UNSC_Units\Army\helmet_p.p3d";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac.paa";
@@ -431,7 +431,7 @@ class CfgWeapons
 	};
 	class VES_CH252_MAR_Vacuum_dp: VES_CH252D_dp
 	{
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] ECH252 Helmet (Silver) Marine";
 		model="\OPTRE_UNSC_Units\Army\helmet.p3d";
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac.paa";
@@ -840,7 +840,7 @@ class CfgWeapons
 	class VES_PC_Gray: OPTRE_UNSC_PatrolCap_Marines
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] Patrol Cap (Gray)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_PC_CEA_CO.paa"};
 		class ItemInfo: HeadgearItem
@@ -856,7 +856,7 @@ class CfgWeapons
 	class VES_M52D_Rifleman: OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] M52D (Rifleman)";
 		picture="\optre_unsc_units\army\icons\odst_vest.paa";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","V_FZ_Armor\Data\Vests\V_M52_O_URB_CO.paa"};
@@ -866,7 +866,7 @@ class CfgWeapons
 	class VES_M52D_Demolitions: OPTRE_UNSC_M52D_Armor_Demolitions
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] M52D (Demolitions)";
 		picture="\optre_unsc_units\army\icons\odst_vest.paa";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","V_FZ_Armor\Data\Vests\V_M52_O_URB_CO.paa"};
@@ -876,7 +876,7 @@ class CfgWeapons
 	class VES_M52D_Marksman: OPTRE_UNSC_M52D_Armor_Marksman
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] M52D (Marksman)";
 		picture="\optre_unsc_units\army\icons\odst_vest.paa";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","V_FZ_Armor\Data\Vests\V_M52_O_URB_CO.paa"};
@@ -886,7 +886,7 @@ class CfgWeapons
 	class VES_M52D_Scout: OPTRE_UNSC_M52D_Armor_Scout
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] M52D (Scout)";
 		picture="\optre_unsc_units\army\icons\odst_vest.paa";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","V_FZ_Armor\Data\Vests\V_M52_O_URB_CO.paa"};
@@ -896,7 +896,7 @@ class CfgWeapons
 	class VES_M52D_Sniper: OPTRE_UNSC_M52D_Armor_Sniper
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] M52D (Sniper)";
 		picture="\optre_unsc_units\army\icons\odst_vest.paa";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_URB_CO.paa","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","V_FZ_Armor\Data\Vests\V_M52_O_URB_CO.paa"};
@@ -932,7 +932,7 @@ class CfgWeapons
 	class VES_M52A_MAR_Rifleman_A: OPTRE_UNSC_M52A_Armor_Rifleman_MAR
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="[FZ] M52A (Rifleman)(A) Marine";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO.paa","V_FZ_Armor\Data\Vests\V_M52_MAR_CO.paa","V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\odst_armor_co.paa"};
 		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Vests\Materials\V_M52_V.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat","",""};
@@ -2170,7 +2170,7 @@ class CfgWeapons
 	{
 		dlc="FZ";
 		scope=2;
-        author="Fireteam Zulu";
+        author="Vespade";
         displayName="[FZ] Mjolnir MkIV Armor";
 		CBRN_protection=1;
 		class ItemInfo: VestItem
@@ -2204,7 +2204,7 @@ class CfgWeapons
     {
 		dlc="FZ";
 		scope=2;
-        author="Kreah Leiser & Fireteam Zulu";
+        author="Kreah Leiser & Vespade";
         displayName="[FZ] Combat Uniform (Gray)";
         picture="\optre_unsc_units\army\icons\army_uniform_DES.paa";
 		CBRN_protection=1;
@@ -2367,7 +2367,7 @@ class CfgWeapons
     {
 		dlc="FZ";
 		scope=2;
-        author="Kreah Leiser & Fireteam Zulu";
+        author="Kreah Leiser & Vespade";
         displayName="[FZ] Combat Uniform (Gray)(Short)";
         picture="\optre_unsc_units\army\icons\army_uniform_DES.paa";
         class ItemInfo: UniformItem
@@ -2529,7 +2529,7 @@ class CfgWeapons
     {
 		dlc="FZ";
 		scope=2;
-        author="Kreah Leiser & Fireteam Zulu";
+        author="Kreah Leiser & Vespade";
         displayName="[FZ] Combat Uniform (Gray)(Rolled)";
         picture="\optre_unsc_units\army\icons\army_uniform_DES.paa";
         class ItemInfo: UniformItem
@@ -3920,7 +3920,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="UNSC Rucksack (M247T)";
 		picture="\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
 		model="\OPTRE_unsc_units\army\rucksack.p3d";
@@ -3941,7 +3941,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="ILCS Rucksack [MQ-49A]";
 		picture="\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
 		model="\OPTRE_weapons\backpacks\ODST_ruck.p3d";
@@ -3962,7 +3962,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="ILCS Rucksack [MQ-49R]";
 		class assembleInfo
 		{
@@ -3979,7 +3979,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="UNSC Rucksack (Dome Tent)";
 		picture="\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
 		model="\OPTRE_unsc_units\army\rucksack.p3d";
@@ -4001,7 +4001,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="UNSC Rucksack (Tent)";
 		picture="\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
 		model="\OPTRE_unsc_units\army\rucksack.p3d";
@@ -4023,7 +4023,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="UNSC Rucksack (Sleeping Bag)";
 		picture="\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
 		model="\OPTRE_unsc_units\army\rucksack.p3d";
@@ -4047,7 +4047,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="Standard Issue UNSC Dome Tent";
 		class assembleInfo
 		{
@@ -4064,7 +4064,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="Standard Issue UNSC Tent";
 		class assembleInfo
 		{
@@ -4081,7 +4081,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="Standard Issue UNSC Sleepingbag";
 		class assembleInfo
 		{

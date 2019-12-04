@@ -10,7 +10,7 @@ class CfgPatches
 	class V_FZ_Weapons
 	{
 		author="Fireteam Zulu";
-		name="Codename: Fireteam Zulu";
+		name="A2D: Fireteam Zulu";
 		url="https://discord.gg/fa7Cguk";
 		// Added Items
 		units[]=
@@ -63,7 +63,7 @@ class CfgWeapons
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="BR25 Battle Rifle";
 		baseWeapon="VES_BR25";
 		model="\A3\Weapons_F_Exp\Rifles\CTAR\CTAR_F.p3d";
@@ -77,7 +77,7 @@ class CfgWeapons
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="BR25HB Battle Rifle";
 		baseWeapon="VES_BR25HB";
 		model="\A3\Weapons_F_Exp\Rifles\CTARS\CTARS_F.p3d";
@@ -91,7 +91,7 @@ class CfgWeapons
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="M51K ICWS Carbine";
 		baseWeapon="VES_M51K";
 		model="\A3\Weapons_F\Rifles\Khaybar\KhaybarC_F.p3d";
@@ -104,7 +104,7 @@ class CfgWeapons
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="M51V ICWS Assault Rifle";
 		baseWeapon="VES_M51V";
 		model="\A3\Weapons_F\Rifles\Khaybar\Khaybar_F.p3d";
@@ -135,7 +135,7 @@ class CfgWeapons
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="M34S ICWS Assault Rifle";
 		baseWeapon="VES_M34S";
 		model="\A3\Weapons_F\Rifles\MX\MX_F.p3d";
@@ -157,7 +157,7 @@ class CfgWeapons
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="M28A2 IMWS DMR";
 		baseWeapon="VES_M28A2";
 		model="\A3\Weapons_F_Exp\Rifles\ARX\ARX_F.p3d";
@@ -303,7 +303,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="M247H Mounted Machinegun Turret";
 		crew="VES_Rifleman_MA5B_MAR";
 		icon="";
@@ -322,7 +322,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=2;
 		scopeCurator=2;
-		author="Fireteam Zulu";
+		author="Vespade";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
 		class assembleInfo
@@ -358,7 +358,7 @@ class CfgVehicles
 		dlc="FZ";
 		scope=1;
 		scopeCurator=1;
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="M247T Side Turret (Left)";
 		crew="VES_Rifleman_MA5B_MAR";
 		icon="";
@@ -373,7 +373,7 @@ class CfgVehicles
 	class VES_Static_AA: OPTRE_Static_AA
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -384,7 +384,7 @@ class CfgVehicles
 	class VES_Static_ATGM: OPTRE_Static_ATGM
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -395,7 +395,7 @@ class CfgVehicles
 	class VES_Static_M68: OPTRE_Static_Gauss
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -406,7 +406,7 @@ class CfgVehicles
 	class VES_Static_M41: OPTRE_Static_M41
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		editorCategory="V_FZ_EdCat_Zulu";

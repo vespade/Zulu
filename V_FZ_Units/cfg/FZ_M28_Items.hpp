@@ -1,0 +1,54 @@
+Weapons[]=
+{
+	"VES_M28A2",
+	"Throw",
+	"Put"
+};
+respawnWeapons[]=
+{
+	"VES_M28A2",
+	"Throw",
+	"Put"
+};
+Magazines[]=
+{
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_8Rnd_127x40_Mag",
+	"OPTRE_8Rnd_127x40_Mag",
+	"OPTRE_M9_Frag",
+	"OPTRE_M9_Frag",
+	"SmokeShell",
+	"SmokeShell",
+	"OPTRE_M2_Smoke_Red",
+	"OPTRE_M2_Smoke_Red",
+	"OPTRE_M2_Smoke_Green",
+	"OPTRE_M2_Smoke_Green"
+};
+respawnMagazines[]=
+{
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_15Rnd_762x51_Mag",
+	"OPTRE_8Rnd_127x40_Mag",
+	"OPTRE_8Rnd_127x40_Mag",
+	"OPTRE_M9_Frag",
+	"OPTRE_M9_Frag",
+	"SmokeShell",
+	"SmokeShell",
+	"OPTRE_M2_Smoke_Red",
+	"OPTRE_M2_Smoke_Red",
+	"OPTRE_M2_Smoke_Green",
+	"OPTRE_M2_Smoke_Green"
+};

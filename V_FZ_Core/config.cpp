@@ -10,7 +10,7 @@ class CfgPatches
 	class V_FZ_Core
 	{
 		author="Fireteam Zulu";
-		name="Fireteam Zulu's A2D: Fireteam Zulu";
+		name="A2D: Fireteam Zulu";
 		url="https://discord.gg/fa7Cguk";
 		// Added Items
 		units[]={};

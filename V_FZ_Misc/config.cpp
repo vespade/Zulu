@@ -10,7 +10,7 @@ class CfgPatches
 	class V_FZ_Misc
 	{
 		author="Fireteam Zulu";
-		name="Fireteam Zulu's A2D: Fireteam Zulu";
+		name="A2D: Fireteam Zulu";
 		url="https://discord.gg/fa7Cguk";
 		// Added Items
 		units[]=
@@ -46,13 +46,13 @@ class CfgWeapons
 	class VES_TacSpraycan: ACE_SpraypaintBlack
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="Tactical Spraycan";
 	};
 	class VES_TagSpraycan: ACE_SpraypaintBlack
 	{
 		dlc="FZ";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="Artist's Spraycan";
 	};
 };
@@ -133,7 +133,7 @@ class CfgVehicles
 	class VES_Flag_UNSC: FlagCarrier_Asym
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		displayName="Flag [UNSC]";
@@ -164,7 +164,7 @@ class CfgVehicles
 	class VES_Light: FloatingStructure_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="Light (Off)";
 		scope=2;
 		scopeCurator=2;

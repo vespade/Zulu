@@ -10,7 +10,7 @@ class CfgPatches
 	class V_FZ_Vehicles
 	{
 		author="Fireteam Zulu";
-		name="Fireteam Zulu's A2D: Fireteam Zulu";
+		name="A2D: Fireteam Zulu";
 		url="https://discord.gg/fa7Cguk";
 		// Added Items
 		units[]=
@@ -105,7 +105,7 @@ class cfgVehicles
 	class VES_M12: OPTRE_M12_FAV
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -154,7 +154,7 @@ class cfgVehicles
 	class VES_M12_LRV: OPTRE_M12_LRV
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -203,7 +203,7 @@ class cfgVehicles
 	class VES_M12G1_LRV: OPTRE_M12G1_LRV
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -244,7 +244,7 @@ class cfgVehicles
 	class VES_M12A1_LRV: OPTRE_M12A1_LRV
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -293,7 +293,7 @@ class cfgVehicles
 	class VES_M813_TT: OPTRE_M813_TT
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -341,7 +341,7 @@ class cfgVehicles
 	class VES_M12R_AA: OPTRE_M12R_AA
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -377,7 +377,7 @@ class cfgVehicles
 	class VES_M12_APC_MED: VES_M12_APC_Base
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -443,7 +443,7 @@ class cfgVehicles
 	class VES_M12_APC: VES_M12_APC_Base
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -492,7 +492,7 @@ class cfgVehicles
 	class VES_IFV76_A: B_APC_Wheeled_01_cannon_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		displayName="IFV-76 Honeybadger";
@@ -542,7 +542,7 @@ class cfgVehicles
 	class VES_M808B_MBT: OPTRE_M808B_UNSC
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
 		class TransportItems
@@ -557,7 +557,7 @@ class cfgVehicles
 	class VES_HDV134_Resupply: O_Truck_03_ammo_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HDV-134 Resupply Buffalo";
 		side=1;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -574,7 +574,7 @@ class cfgVehicles
 	class VES_HDV134_Fujikawa: O_Truck_03_device_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HDV-134 Shaw-Fujikawa Buffalo";
 		side=1;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -592,7 +592,7 @@ class cfgVehicles
 	/*class VES_HDV134_Tanker_C: O_Truck_03_fuel_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HDV-134 Tanker Buffalo";
 		side=1;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -615,7 +615,7 @@ class cfgVehicles
 	class VES_HDV134_Maintenance: O_Truck_03_repair_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HDV-134 Maintenance Buffalo";
 		side=1;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -638,7 +638,7 @@ class cfgVehicles
 	class VES_HDV134_TT: O_Truck_03_transport_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HDV-134 TT Buffalo";
 		side=1;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -655,7 +655,7 @@ class cfgVehicles
 	class VES_HDV134_TT_C: O_Truck_03_covered_F
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="HDV-134 TT Buffalo (Covered)";
 		side=1;
 		editorCategory="V_FZ_EdCat_Zulu";
@@ -687,7 +687,7 @@ class cfgVehicles
 	class VES_MQ49_SD: VES_UAV_Base1
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		displayName="MQ-49 Support Drone";
@@ -713,7 +713,7 @@ class cfgVehicles
 	class VES_MQ49_RD: VES_MQ49_SD
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		displayName="MQ-49 Recon Drone";
@@ -730,7 +730,7 @@ class cfgVehicles
 	class VES_UH144_A: OPTRE_UNSC_falcon
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -802,7 +802,7 @@ class cfgVehicles
 	class VES_UH144: OPTRE_UNSC_falcon_unarmed
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -875,7 +875,7 @@ class cfgVehicles
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -914,7 +914,7 @@ class cfgVehicles
 	class VES_D77HTCI: OPTRE_Pelican_unarmed
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
@@ -974,7 +974,7 @@ class cfgVehicles
 	class VES_Lifeboat: OPTRE_EscapePod
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="SKT-9 Bumblebee";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_ODST";
@@ -1016,7 +1016,7 @@ class cfgVehicles
 	class VES_Lifeboat_Wreck: OPTRE_Objects_Wreck_EscapePod
 	{
 		dlc="Zulu";
-		author="Fireteam Zulu";
+		author="Vespade";
 		displayName="SKT-9 Bumblebee Wreck";
 		reversed=1;
 		editorCategory="V_FZ_EdCat_Zulu";
