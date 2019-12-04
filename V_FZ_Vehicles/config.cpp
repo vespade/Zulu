@@ -64,6 +64,10 @@ class CfgPatches
 			"VES_D77HTCI",
 			"VES_D77HTCIS",
 			"VES_D77HTCIS_A",
+			"VES_AV14_Rockets",
+			"VES_AV14",
+			"VES_AV14_AIM",
+			"VES_AV14_AGM",
 			// APC
 			"VES_IFV76",
 			"VES_IFV76_M",
@@ -944,6 +948,123 @@ class cfgVehicles
 		{
 			init = "0 = _this spawn V_FZ_fnc_PelicanAddMG";
 		};
+	};
+	
+	// Hornets
+    class OPTRE_UNSC_hornet;
+    class OPTRE_UNSC_hornet_CAS;
+    class OPTRE_UNSC_hornet_CAP;
+	class VES_AV14_Rockets: OPTRE_UNSC_hornet
+	{
+		dlc="Zulu";
+		author="Skywalker";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="AV-14 Hornet (Rockets)";
+		editorCategory="V_FZ_EdCat_Zulu";
+		editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+		mainRotorSpeed=3;
+		backRotorSpeed=3;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=12000;
+		class TransportBackpacks
+		{
+			pack_xx(B_Parachute,2);
+		};
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+        #include "cfg\FZ_A_HornetCamos.hpp"
+	};
+    class VES_AV14: OPTRE_UNSC_hornet
+	{
+		dlc="Zulu";
+		author="Skywalker";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="AV-14 Hornet (Unarmed)";
+		editorCategory="V_FZ_EdCat_Zulu";
+		editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+		mainRotorSpeed=3;
+		backRotorSpeed=3;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=12000;
+        weapons[]=
+		{
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		class TransportBackpacks
+		{
+			pack_xx(B_Parachute,2);
+		};
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_HornetCamos.hpp"
+	};
+    class VES_AV14_AGM: OPTRE_UNSC_hornet_CAS
+	{
+		dlc="Zulu";
+		author="Skywalker";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="AV-14 Hornet (AGM)";
+		editorCategory="V_FZ_EdCat_Zulu";
+		editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+		mainRotorSpeed=3;
+		backRotorSpeed=3;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=12000;
+		class TransportBackpacks
+		{
+			pack_xx(B_Parachute,2);
+		};
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_HornetCamos.hpp"
+	};
+    class VES_AV14_AIM: OPTRE_UNSC_hornet_CAP
+	{
+		dlc="Zulu";
+		author="Skywalker";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="AV-14 Hornet (AIM)";
+		editorCategory="V_FZ_EdCat_Zulu";
+		editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+		mainRotorSpeed=3;
+		backRotorSpeed=3;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=12000;
+		class TransportBackpacks
+		{
+			pack_xx(B_Parachute,2);
+		};
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_HornetCamos.hpp"
 	};
 	
 	// Jets
