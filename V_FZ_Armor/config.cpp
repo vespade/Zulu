@@ -2715,7 +2715,7 @@ class CfgWeapons
 	//Uniforms (Bases)
 	class VES_BDU_Evolved_Slim: VES_BDU_Evolved
     {
-		scope=1;
+		scope=2;
         displayName="[FZ] Combat Uniform (Gray)(Slim)";
         class ItemInfo: ItemInfo
         {
@@ -2879,7 +2879,7 @@ class CfgWeapons
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_Evolved_Slim: VES_BDU_SS_Evolved
     {
-		scope=1;
+		scope=2;
         displayName="[FZ] Combat Uniform (Gray)(Short)(Slim)";
         class ItemInfo: UniformItem
         {
@@ -3034,7 +3034,7 @@ class CfgWeapons
 	// Rolled Uniforms
 	class VES_BDU_R_Evolved_Slim: VES_BDU_R_Evolved
     {
-		scope=1;
+		scope=2;
         displayName="[FZ] Combat Uniform (Gray)(Rolled)(Slim)";
         class ItemInfo: ItemInfo
         {
