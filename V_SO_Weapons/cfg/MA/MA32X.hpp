@@ -5,7 +5,7 @@ class OPTRE_MA32X: OPTRE_MA5CX
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "MA32X ICWS";
+	displayName					= "MA32X ICWS Assault Rifle";
 	baseWeapon 					= "OPTRE_MA32X";
 	model                       = "\OPTRE_Weapons\AR\MA37I.p3d";
 };

@@ -37,15 +37,17 @@ class CfgAddons
 	};
 };
 
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
+
+class MuzzleSlot;
+class CowsSlot;
+class PointerSlot;
+class UnderBarrelSlot;
+
 class CfgWeapons
 {
-	class Mode_SemiAuto;
-	class Mode_Burst;
-	class Mode_FullAuto;
-	class MuzzleSlot;
-	class CowsSlot;
-	class PointerSlot;
-	class UnderBarrelSlot;
 	// Assault Rifles
 	#include "cfg\MA\MA5BX.hpp"
 	#include "cfg\MA\MA5BXGL.hpp"
@@ -64,5 +66,11 @@ class CfgWeapons
 	#include "cfg\MA\MA32X.hpp"
 	#include "cfg\MA\MA32XGL.hpp"
 	
-	#include "cfg\M28\M28A2.hpp"
+	// Domesticated Marksman's Rifles
+	//#include "cfg\M28\M28A2.hpp"
+	
+	// Battle Rifles
+	#include "cfg\BR\BR55X.hpp"
+	#include "cfg\BR\BR55XHB.hpp"
+	#include "cfg\BR\BR55AM.hpp"
 };

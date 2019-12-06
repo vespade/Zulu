@@ -1,53 +1,55 @@
-class OPTRE_MA5BGL;
-class SO_MA5BGL_Base: OPTRE_MA5BGL
+class OPTRE_BR55;
+class SO_BR55_Base: OPTRE_BR55
 {
 	class WeaponSlotsInfo;
-	class Single;
-	class FullAuto;
+	
+	scope						= 1;
+	scopeArsenal				= 1;
+	baseWeapon					= "SO_BR55_Base";
 };
-class OPTRE_MA5BXGL: SO_MA5BGL_Base
+
+class OPTRE_BR55X: SO_BR55_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "MA5BX + M301 GL Assault Rifle";
-	baseWeapon 					= "OPTRE_MA5BXGL";
-	model                       = "\OPTRE_Weapons\AR\MA5BGL.p3d";
+	displayName					= "BR55X Battle Rifle";
+	baseWeapon 					= "OPTRE_BR55X";
+	model                       = "\OPTRE_Weapons\BR\BR.p3d";
 	
-	magazines[] = 
+	magazines[]=
 	{
-		"OPTRE_60Rnd_762x51_Mag",
-		"OPTRE_60Rnd_762x51_Mag_Tracer",
-		"OPTRE_60Rnd_762x51_Mag_AP",
-		"OPTRE_60Rnd_762x51_Mag_AP_Tracer",
-		"OPTRE_60Rnd_762x51_Mag_JHP",
-		"OPTRE_60Rnd_762x51_Mag_JHP_Tracer"
+		"OPTRE_36Rnd_95x40_Mag",
+		"OPTRE_36Rnd_95x40_Mag_Tracer",
+		"OPTRE_36Rnd_95x40_Mag_JHP",
+		"OPTRE_36Rnd_95x40_Mag_SS",
+		"OPTRE_36Rnd_95x40_Mag_HPSAP"
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
-	{
-		mass = 60;
-		class MuzzleSlot: MuzzleSlot
+ 	{
+		mass = 50;
+ 		class MuzzleSlot: MuzzleSlot
 		{
-			compatibleitems[] = 
+			compatibleitems[]=
 			{
-				"muzzle_snds_B";
-				"muzzle_snds_65_TI_blk_F";
-				"OPTRE_M7_Silencer"
+				"muzzle_snds_B",
+				"muzzle_snds_L",
+				"OPTRE_M7_Silencer";
+				"muzzle_snds_65_TI_blk_F"
 			};
 		};
 		class CowsSlot: CowsSlot
 		{
-			compatibleitems[] = 
+			compatibleitems[]=
 			{
 				"optic_hamr",
 				"optic_Arco_blk_F",
 				"optic_ERCO_blk_F",
 				"optic_Holosight_blk_F",
 				"optic_Holosight_smg_blk_F",
-				"optic_ico_01_black_f",
 				
 				"OPTRE_M392_Scope",
 				"OPTRE_M392_Scope_v2",
@@ -64,28 +66,27 @@ class OPTRE_MA5BXGL: SO_MA5BGL_Base
 				"OPTRE_MA5_SmartLink_legacy",
 				"OPTRE_MA5C_SmartLink_legacy",
 				"OPTRE_MA5_SmartLink",
+				"OPTRE_MA5C_Smartlink",
 				"OPTRE_MA5_SmartLink_v2",
 				"OPTRE_MA5C_Smartlink_v2",
 				"OPTRE_SRS99C_Scope",
 				"OPTRE_SRS99_Scope",
 				"OPTRE_MA5_BUIS",
 				"OPTRE_M73_Smartlink_v2",
-				"OPTRE_M73_SmartLink",
-				"OPTRE_HMG38_CarryHandle"
+				"OPTRE_M73_SmartLink"
 			};
 		};
 		class PointerSlot: PointerSlot
 		{
-			compatibleitems[] = 
+			access=1;
+			compatibleitems[]=
 			{
 				"acc_pointer_IR",
-				"acc_flashlight",
+				"acc_flashlight"
 			};
-		};
-		class UnderBarrelSlot: UnderBarrelSlot
-		{
-			compatibleitems[] = {};
+			displayname="Pointer Slot";
+			linkproxy="\A3\data_f\proxies\weapon_slots\SIDE";
+			scope=2;
 		};
 	};
 };
-	

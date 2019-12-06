@@ -5,7 +5,7 @@ class OPTRE_MA37XGL: OPTRE_MA5CXGL
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "MA37X + M301 GL";
+	displayName					= "MA37X + M301 GL Assault Rifle";
 	baseWeapon 					= "OPTRE_MA37XGL";
 	model                       = "\OPTRE_Weapons\AR\MA37GL.p3d";
 	

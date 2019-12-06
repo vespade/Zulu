@@ -1,3 +1,4 @@
+class Rifle_Base_F;
 class OPTRE_M393_DMR;
 class VES_LongRifle_Base: OPTRE_M393_DMR
 {
@@ -143,7 +144,7 @@ class VES_M28A2: VES_LongRifle_Base
 	hiddenSelections[]={"camo1","camo2"};
 	hiddenSelectionsTextures[]=
 	{
-		"\V_FZ_Weapons\Data\M28\V_M28_CO.paa",
+		"\V_SO_Weapons\Data\M28\V_M28_CO.paa",
 		"\A3\Weapons_F_Exp\Rifles\ARX\Data\arifle_ARX_blk_02_F_co.paa"
 	};
 	/*hiddenSelectionsMaterials[]=

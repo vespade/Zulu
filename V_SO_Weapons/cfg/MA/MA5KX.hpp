@@ -5,7 +5,7 @@ class OPTRE_MA5KX: OPTRE_MA5CX
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "MA5KX ICWS";
+	displayName					= "MA5KX ICWS Assault Rifle";
 	baseWeapon 					= "OPTRE_MA5KX";
 	model                       = "\OPTRE_Weapons\AR\MA5K.p3d";
 	
