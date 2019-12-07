@@ -1,44 +1,40 @@
-class OPTRE_BR55;
-class SO_BR55_Base: OPTRE_BR55
+class OPTRE_M392_DMR;
+class SO_M392_Base: OPTRE_M392_DMR
 {
 	class WeaponSlotsInfo;
 	class ItemInfo;
-	
-	scope						= 1;
-	scopeArsenal				= 1;
-	baseWeapon					= "SO_BR55_Base";
 };
 
-class OPTRE_BR55X: SO_BR55_Base
+class OPTRE_M392X: SO_M392_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "BR55X Battle Rifle";
-	baseWeapon 					= "OPTRE_BR55X";
-	model                       = "\OPTRE_Weapons\BR\BR.p3d";
+	displayName					= "M392X DMR";
+	baseWeapon 					= "OPTRE_M392X";
+	model                       = "\OPTRE_Weapons\DMR\DMR.p3d";
 	
 	magazines[]=
 	{
-		"OPTRE_36Rnd_95x40_Mag",
-		"OPTRE_36Rnd_95x40_Mag_Tracer",
-		"OPTRE_36Rnd_95x40_Mag_JHP",
-		"OPTRE_36Rnd_95x40_Mag_SS",
-		"OPTRE_36Rnd_95x40_Mag_HPSAP"
+		"OPTRE_15Rnd_762x51_Mag",
+		"OPTRE_15Rnd_762x51_Mag_Tracer",
+		"OPTRE_15Rnd_762x51_SS_Mag",
+		"OPTRE_15Rnd_762x51_AP_Mag",
+		"OPTRE_15Rnd_762x51_AP_Mag_Tracer",
+		"OPTRE_15Rnd_762x51_FS_Mag",
+		"OPTRE_15Rnd_762x51_FS_Mag_Tracer"
 	};
-	
+
 	class WeaponSlotsInfo: WeaponSlotsInfo
- 	{
-		mass = 50;
- 		class MuzzleSlot: MuzzleSlot
+	{
+		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=
 			{
 				"muzzle_snds_B",
-				"muzzle_snds_L",
-				"OPTRE_M7_Silencer";
+				"OPTRE_M7_Silencer",
 				"muzzle_snds_65_TI_blk_F"
 			};
 		};
@@ -74,20 +70,26 @@ class OPTRE_BR55X: SO_BR55_Base
 				"OPTRE_SRS99_Scope",
 				"OPTRE_MA5_BUIS",
 				"OPTRE_M73_Smartlink_v2",
-				"OPTRE_M73_SmartLink"
+				"OPTRE_M73_SmartLink",
+				"OPTRE_HMG38_CarryHandle"
 			};
 		};
 		class PointerSlot: PointerSlot
 		{
-			access=1;
 			compatibleitems[]=
 			{
-				"acc_pointer_IR",
-				"acc_flashlight"
+				"acc_pointer_IR"
 			};
-			displayname="Pointer Slot";
-			linkproxy="\A3\data_f\proxies\weapon_slots\SIDE";
-			scope=2;
 		};
+		class UnderBarrelSlot: UnderBarrelSlot
+		{
+			compatibleItems[]=
+			{
+				"bipod_01_F_blk",
+				"bipod_02_F_blk",
+				"bipod_03_F_blk"
+			};
+		};
+		mass=50;
 	};
 };

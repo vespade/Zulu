@@ -2,6 +2,7 @@ class OPTRE_MA5B;
 class SO_MA5B_Base: OPTRE_MA5B
 {
 	class WeaponSlotsInfo;
+	class ItemInfo;
 	class Single;
 	class FullAuto;
 	
@@ -38,8 +39,8 @@ class OPTRE_MA5BX: SO_MA5B_Base
 		{
 			compatibleitems[] = 
 			{
-				"muzzle_snds_B";
-				"muzzle_snds_65_TI_blk_F";
+				"muzzle_snds_B",
+				"muzzle_snds_65_TI_blk_F",
 				"OPTRE_M7_Silencer"
 			};
 		};
@@ -84,7 +85,7 @@ class OPTRE_MA5BX: SO_MA5B_Base
 			compatibleitems[] = 
 			{
 				"acc_pointer_IR",
-				"acc_flashlight",
+				"acc_flashlight"
 			};
 		};
 		class UnderBarrelSlot: UnderBarrelSlot

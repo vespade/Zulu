@@ -40,6 +40,7 @@ class CfgAddons
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class BaseSoundModeType;
 
 class MuzzleSlot;
 class CowsSlot;
@@ -67,7 +68,10 @@ class CfgWeapons
 	#include "cfg\MA\MA32XGL.hpp"
 	
 	// Domesticated Marksman's Rifles
-	//#include "cfg\M28\M28A2.hpp"
+	#include "cfg\M39\M392X.hpp"
+	#include "cfg\M39\M395X.hpp"
+	#include "cfg\M39\M395XS.hpp"
+	#include "cfg\M28\M28.hpp"
 	
 	// Battle Rifles
 	#include "cfg\BR\BR55X.hpp"
