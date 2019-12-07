@@ -77,4 +77,10 @@ class CfgWeapons
 	#include "cfg\BR\BR55X.hpp"
 	#include "cfg\BR\BR55XHB.hpp"
 	#include "cfg\BR\BR55AM.hpp"
+	
+	// Sub-Machine Guns
+	#include "cfg\M7\M7X.hpp"
+	
+	// Handguns
+	#include "cfg\M6\M6S.hpp"
 };
