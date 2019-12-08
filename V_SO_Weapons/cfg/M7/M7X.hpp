@@ -5,6 +5,7 @@ class SO_M7_Base: OPTRE_M7
 };
 
 class cfgRecoils
+class CfgRecoils
 {
 	class M7X_Recoil
 	{
@@ -16,7 +17,7 @@ class cfgRecoils
 	};
 };
 
-class OPTRE_M7X: OPTRE_M7
+class OPTRE_M7X: SO_M7_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -26,22 +27,26 @@ class OPTRE_M7X: OPTRE_M7
 	displayName					= "M7X Caseless SMG";
 	baseWeapon 					= "OPTRE_M7X";
 	model                       = "\OPTRE_Weapons\SMG\SMG.p3d";
-	recoil						= "M7X_Recoil";
+	//recoil						= "M7X_Recoil";
 	
 	magazines[]=
 	{
 		"OPTRE_60Rnd_5x23mm_Mag",
-		"OPTRE_60Rnd_5x23mm_Mag_tracer",	
-		"OPTRE_60Rnd_5x23mm_JHP_Mag",
-		"OPTRE_60Rnd_5x23mm_HV_Mag",
-		"OPTRE_60Rnd_5x23mm_FMJ_Mag",
-		"OPTRE_60Rnd_5x23mm_Mag_SS",
+		"OPTRE_60Rnd_5x23mm_Mag_tracer",
+		"OPTRE_60Rnd_5x23mm_Mag_FMJ",
+		"OPTRE_60Rnd_5x23mm_Mag_FMJT",
+		"OPTRE_60Rnd_5x23mm_Mag_HV",
+		"OPTRE_60Rnd_5x23mm_Mag_HVT",
+		"OPTRE_60Rnd_5x23mm_Mag_JHP",
+		"OPTRE_60Rnd_5x23mm_Mag_JHPT",
 		"OPTRE_48Rnd_5x23mm_Mag",
 		"OPTRE_48Rnd_5x23mm_Mag_tracer",
-		"OPTRE_48Rnd_5x23mm_JHP_Mag",
-		"OPTRE_48Rnd_5x23mm_HV_Mag",
-		"OPTRE_48Rnd_5x23mm_FMJ_Mag",
-		"OPTRE_48Rnd_5x23mm_Mag_SS"
+		"OPTRE_48Rnd_5x23mm_Mag_FMJ",
+		"OPTRE_48Rnd_5x23mm_Mag_FMJT",
+		"OPTRE_48Rnd_5x23mm_Mag_HV",
+		"OPTRE_48Rnd_5x23mm_Mag_HVT",
+		"OPTRE_48Rnd_5x23mm_Mag_JHP",
+		"OPTRE_48Rnd_5x23mm_Mag_JHPT"
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo

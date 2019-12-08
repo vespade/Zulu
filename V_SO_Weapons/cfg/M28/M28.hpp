@@ -18,17 +18,20 @@ class OPTRE_M28: OPTRE_M395X
 	{
 		"OPTRE_15Rnd_762x51_Mag",
 		"OPTRE_15Rnd_762x51_Mag_Tracer",
-		"OPTRE_15Rnd_762x51_SS_Mag",
-		"OPTRE_15Rnd_762x51_AP_Mag",
-		"OPTRE_15Rnd_762x51_AP_Mag_Tracer",
-		"OPTRE_15Rnd_762x51_FS_Mag",
-		"OPTRE_15Rnd_762x51_FS_Mag_Tracer",
+		"OPTRE_15Rnd_762x51_Mag_AP",
+		"OPTRE_15Rnd_762x51_Mag_APT",
+		"OPTRE_15Rnd_762x51_Mag_JHP",
+		"OPTRE_15Rnd_762x51_Mag_JHPT",
+		"OPTRE_15Rnd_762x51_Mag_SS",
+		"OPTRE_15Rnd_762x51_Mag_FS",
+		"OPTRE_15Rnd_762x51_Mag_FST",
 		"OPTRE_32Rnd_762x51_Mag",
 		"OPTRE_32Rnd_762x51_Mag_Tracer",
-		"OPTRE_32Rnd_762x51_Mag_UW",
-		"OPTRE_AP32Rnd_762x51_Mag",
-		"OPTRE_JHP32Rnd_762x51_Mag",
-		"OPTRE_SS32Rnd_762x51_Mag"
+		"OPTRE_32Rnd_762x51_Mag_AP",
+		"OPTRE_32Rnd_762x51_Mag_APT",
+		"OPTRE_32Rnd_762x51_Mag_JHP",
+		"OPTRE_32Rnd_762x51_Mag_JHPT",
+		"OPTRE_32Rnd_762x51_Mag_SS"
 	};
 	
 	hiddenSelectionsTextures[]=

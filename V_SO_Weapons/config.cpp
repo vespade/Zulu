@@ -83,4 +83,5 @@ class CfgWeapons
 	
 	// Handguns
 	#include "cfg\M6\M6S.hpp"
+	#include "cfg\M6\M6D.hpp"
 };

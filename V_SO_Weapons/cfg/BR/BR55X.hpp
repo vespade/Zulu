@@ -25,8 +25,9 @@ class OPTRE_BR55X: SO_BR55_Base
 		"OPTRE_36Rnd_95x40_Mag",
 		"OPTRE_36Rnd_95x40_Mag_Tracer",
 		"OPTRE_36Rnd_95x40_Mag_JHP",
-		"OPTRE_36Rnd_95x40_Mag_SS",
-		"OPTRE_36Rnd_95x40_Mag_HPSAP"
+		"OPTRE_36Rnd_95x40_Mag_JHPT",
+		"OPTRE_36Rnd_95x40_Mag_HPSAP",
+		"OPTRE_36Rnd_95x40_Mag_HPSAPT"
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo

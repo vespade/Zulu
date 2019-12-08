@@ -27,9 +27,9 @@ class OPTRE_MA5BX: SO_MA5B_Base
 		"OPTRE_60Rnd_762x51_Mag",
 		"OPTRE_60Rnd_762x51_Mag_Tracer",
 		"OPTRE_60Rnd_762x51_Mag_AP",
-		"OPTRE_60Rnd_762x51_Mag_AP_Tracer",
+		"OPTRE_60Rnd_762x51_Mag_APT",
 		"OPTRE_60Rnd_762x51_Mag_JHP",
-		"OPTRE_60Rnd_762x51_Mag_JHP_Tracer"
+		"OPTRE_60Rnd_762x51_Mag_JHPT"
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo

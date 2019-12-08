@@ -13,9 +13,11 @@ class OPTRE_MA5CX: OPTRE_MA5BX
 	{
 		"OPTRE_32Rnd_762x51_Mag",
 		"OPTRE_32Rnd_762x51_Mag_Tracer",
-		"OPTRE_JHP32Rnd_762x51_Mag",
-		"OPTRE_SS32Rnd_762x51_Mag",
-		"OPTRE_AP32Rnd_762x51_Mag"
+		"OPTRE_32Rnd_762x51_Mag_AP",
+		"OPTRE_32Rnd_762x51_Mag_APT",
+		"OPTRE_32Rnd_762x51_Mag_JHP",
+		"OPTRE_32Rnd_762x51_Mag_JHPT",
+		"OPTRE_32Rnd_762x51_Mag_SS"
 	};
 	
 	HUD_TotalPosibleBullet 		= 32;

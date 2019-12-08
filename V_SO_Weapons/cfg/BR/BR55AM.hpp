@@ -12,11 +12,18 @@ class OPTRE_BR55AM: OPTRE_BR55XHB
 	
 	magazines[]=
 	{
-		"OPTRE_16Rnd_Faf_Mag",
-		"OPTRE_16Rnd_Faf_Mag_Tracer",
-		"OPTRE_16Rnd_Faf_Mag_JHP",
-		"OPTRE_16Rnd_Faf_Mag_SS",
-		"OPTRE_16Rnd_Faf_Mag_HighEx"
+		"OPTRE_16Rnd_127x40_Mag",
+		"OPTRE_16Rnd_127x40_Mag_AP",
+		"OPTRE_16Rnd_127x40_Mag_APT",
+		"OPTRE_16Rnd_127x40_Mag_HE",
+		"OPTRE_16Rnd_127x40_Mag_HET",
+		"OPTRE_16Rnd_127x40_Mag_HVAP",
+		"OPTRE_16Rnd_127x40_Mag_HVAPT",
+		"OPTRE_16Rnd_127x40_Mag_JHP",
+		"OPTRE_16Rnd_127x40_Mag_JHPT",
+		"OPTRE_16Rnd_127x40_Mag_SAPHE",
+		"OPTRE_16Rnd_127x40_Mag_SAPHET",
+		"OPTRE_16Rnd_127x40_Mag_SS"
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
@@ -25,7 +32,7 @@ class OPTRE_BR55AM: OPTRE_BR55XHB
 		{
 			compatibleitems[]=
 			{
-				"OPTRE_SRS99D_Suppressor"
+				"OPTRE_M6_Silencer"
 			};
 		};
 	};

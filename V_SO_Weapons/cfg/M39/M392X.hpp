@@ -20,11 +20,13 @@ class OPTRE_M392X: SO_M392_Base
 	{
 		"OPTRE_15Rnd_762x51_Mag",
 		"OPTRE_15Rnd_762x51_Mag_Tracer",
-		"OPTRE_15Rnd_762x51_SS_Mag",
-		"OPTRE_15Rnd_762x51_AP_Mag",
-		"OPTRE_15Rnd_762x51_AP_Mag_Tracer",
-		"OPTRE_15Rnd_762x51_FS_Mag",
-		"OPTRE_15Rnd_762x51_FS_Mag_Tracer"
+		"OPTRE_15Rnd_762x51_Mag_AP",
+		"OPTRE_15Rnd_762x51_Mag_APT",
+		"OPTRE_15Rnd_762x51_Mag_JHP",
+		"OPTRE_15Rnd_762x51_Mag_JHPT",
+		"OPTRE_15Rnd_762x51_Mag_SS",
+		"OPTRE_15Rnd_762x51_Mag_FS",
+		"OPTRE_15Rnd_762x51_Mag_FST"
 	};
 
 	class WeaponSlotsInfo: WeaponSlotsInfo
