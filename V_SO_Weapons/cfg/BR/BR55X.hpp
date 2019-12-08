@@ -1,7 +1,6 @@
 class OPTRE_BR55;
 class SO_BR55_Base: OPTRE_BR55
 {
-	class WeaponSlotsInfo;
 	class ItemInfo;
 	
 	scope						= 1;
@@ -30,65 +29,73 @@ class OPTRE_BR55X: SO_BR55_Base
 		"OPTRE_36Rnd_95x40_Mag_HPSAPT"
 	};
 	
-	class WeaponSlotsInfo: WeaponSlotsInfo
+	class WeaponSlotsInfo
  	{
 		mass = 50;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=
 			{
-				"muzzle_snds_B",
-				"muzzle_snds_L",
-				"OPTRE_M7_Silencer";
-				"muzzle_snds_65_TI_blk_F"
+				"muzzle_snds_h_mg_blk_f",
+				"muzzle_snds_l",
+
+				"optre_ma5suppressor",
+				"optre_m7_silencer",
+				"optre_m6_silencer"
 			};
 		};
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[]=
 			{
+				"optic_arco_ak_blk_f",
+				"optic_dms",
+				"optic_aco_grn",
+				"optic_aco",
+				"optic_arco_blk_f",
+				"optic_holosight_blk_f",
+				"optic_mrco",
+				"optic_khs_blk",
 				"optic_hamr",
-				"optic_Arco_blk_F",
-				"optic_ERCO_blk_F",
-				"optic_Holosight_blk_F",
-				"optic_Holosight_smg_blk_F",
-				
-				"OPTRE_M392_Scope",
-				"OPTRE_M392_Scope_v2",
-				"OPTRE_BR55HB_Scope",
-				"OPTRE_BR55HB_Scope_v2",
-				"OPTRE_M393_Scope",
-				"OPTRE_M393_ACOG",
-				"OPTRE_M393_EOTECH",
-				"OPTRE_M393_EOTECH_v2",
-				"OPTRE_M393_Scope_v2",
-				"OPTRE_M393_ACOG_v2",
-				"OPTRE_M7_Sight",
-				"OPTRE_M7_Sight_v2",
-				"OPTRE_MA5_SmartLink_legacy",
-				"OPTRE_MA5C_SmartLink_legacy",
-				"OPTRE_MA5_SmartLink",
-				"OPTRE_MA5C_Smartlink",
-				"OPTRE_MA5_SmartLink_v2",
-				"OPTRE_MA5C_Smartlink_v2",
-				"OPTRE_SRS99C_Scope",
-				"OPTRE_SRS99_Scope",
-				"OPTRE_MA5_BUIS",
-				"OPTRE_M73_Smartlink_v2",
-				"OPTRE_M73_SmartLink"
+				"optic_sos",
+				"optic_lrps",
+				"optic_nightstalker",
+				"optic_erco_blk_f",
+				"optic_ams",
+				"ace_optic_lrps_2d",
+				"ace_optic_lrps_pip",
+				"ace_optic_sos_2d",
+				"ace_optic_sos_pip",
+				"ace_optic_mrco_2d",
+				"ace_optic_hamr_2d",
+				"ace_optic_hamr_pip",
+				"optic_aco_smg",
+				"optic_aco_grn_smg",
+				"optic_holosight_smg_blk_f",
+
+				"optre_srs99_scope",
+				"optre_srs99c_scope",
+				"optre_ma5_buis",
+				"optre_m393_eotech",
+				"optre_m73_smartlink",
+				"optre_m7_sight",
+				"optre_m393_acog",
+				"optre_m393_scope",
+				"optre_m392_scope",
+				"optre_br55hb_scope"
 			};
 		};
 		class PointerSlot: PointerSlot
 		{
-			access=1;
 			compatibleitems[]=
 			{
-				"acc_pointer_IR",
-				"acc_flashlight"
+				"acc_pointer_ir",
+				"ace_acc_pointer_green",
+				"acc_flashlight",
+
+				"optre_m45_flashlight",
+				"optre_m45_flashlight_red"
 			};
-			displayname="Pointer Slot";
-			linkproxy="\A3\data_f\proxies\weapon_slots\SIDE";
-			scope=2;
 		};
 	};
 };

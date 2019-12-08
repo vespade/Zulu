@@ -44,14 +44,41 @@ class OPTRE_M6S: SO_M6C_Base
 		"OPTRE_16Rnd_127x40_Mag_SS"
 	};
 	
-	class WeaponSlotsInfo: WeaponSlotsInfo
-	{
+	class WeaponSlotsInfo
+ 	{
+		mass = 50;
+ 		class MuzzleSlot: MuzzleSlot
+		{
+			compatibleitems[]=
+			{
+				"optre_m6_silencer",
+				"optre_m6c_compensator"
+			};
+		};
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[]=
 			{
-				"OPTRE_M6S_Scope",
-				"REC_HOLO_v2"
+				"optic_aco_grn",
+				"optic_aco",
+				"optic_holosight_blk_f",
+				"optic_yorris",
+				"optic_aco_smg",
+				"optic_aco_grn_smg",
+				"optic_holosight_smg_blk_f",
+				"optic_mrd_black",
+
+				"optre_m393_eotech",
+				"optre_m7_sight",
+				"optre_m6c_scope",
+			};
+		};
+		class PointerSlot: PointerSlot
+		{
+			compatibleitems[]=
+			{
+				"optre_m6g_flashlight",
+				"optre_m6c_laser"
 			};
 		};
 	};

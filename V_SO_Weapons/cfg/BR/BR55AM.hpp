@@ -25,15 +25,4 @@ class OPTRE_BR55AM: OPTRE_BR55XHB
 		"OPTRE_16Rnd_127x40_Mag_SAPHET",
 		"OPTRE_16Rnd_127x40_Mag_SS"
 	};
-	
-	class WeaponSlotsInfo: WeaponSlotsInfo
- 	{
-		class MuzzleSlot: MuzzleSlot
-		{
-			compatibleitems[]=
-			{
-				"OPTRE_M6_Silencer"
-			};
-		};
-	};
 };

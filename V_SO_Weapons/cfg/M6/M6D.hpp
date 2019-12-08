@@ -34,22 +34,40 @@ class OPTRE_M6D: SO_M6G_Base
 		"OPTRE_8Rnd_127x40_Mag_FG"
 	};
 	
-	class WeaponSlotsInfo: WeaponSlotsInfo
-	{
+	class WeaponSlotsInfo
+ 	{
+		mass = 50;
+ 		class MuzzleSlot: MuzzleSlot
+		{
+			compatibleitems[]=
+			{
+				"optre_m6_silencer"
+			};
+		};
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[]=
 			{
-				"OPTRE_M6G_Scope",
-				"REC_HOLO_v2"
+				"optic_aco_grn",
+				"optic_aco",
+				"optic_holosight_blk_f",
+				"optic_yorris",
+				"optic_aco_smg",
+				"optic_aco_grn_smg",
+				"optic_holosight_smg_blk_f",
+				"optic_mrd_black",
+
+				"optre_m393_eotech",
+				"optre_m7_sight",
+				"optre_m6c_scope",
+				"optre_m6g_scope"
 			};
 		};
-		class MuzzleSlot: MuzzleSlot
+		class PointerSlot: PointerSlot
 		{
 			compatibleitems[]=
 			{
-				"OPTRE_M6C_Compensator",
-				"OPTRE_M6_Silencer"
+				"optre_m6g_flashlight"
 			};
 		};
 	};
