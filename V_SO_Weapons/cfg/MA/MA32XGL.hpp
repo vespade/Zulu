@@ -9,6 +9,12 @@ class OPTRE_MA32XGL: OPTRE_MA5CXGL
 	baseWeapon 					= "OPTRE_MA32XGL";
 	model                       = "\OPTRE_Weapons\AR\MA37IGL.p3d";
 	
+	handAnim[]=
+	{
+		"OFP2_ManSkeleton",
+		"\OPTRE_Weapons\AR\Data\Anim\hand_anim_ma37.rtm"
+	};
+	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{
 		class CowsSlot: CowsSlot

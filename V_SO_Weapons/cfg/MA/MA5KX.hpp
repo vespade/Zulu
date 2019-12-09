@@ -19,6 +19,12 @@ class OPTRE_MA5KX: OPTRE_MA5CX
 		"OPTRE_32Rnd_762x51_Mag_UW"
 	};
 	
+	handAnim[]=
+	{
+		"OFP2_ManSkeleton",
+		"\OPTRE_Weapons\AR\Data\Anim\hand_anim_ma5k.rtm"
+	};
+	
 	class Single: Single
 	{
 		reloadTime 				= 0.05;

@@ -84,4 +84,10 @@ class CfgWeapons
 	// Handguns
 	#include "cfg\M6\M6S.hpp"
 	#include "cfg\M6\M6D.hpp"
+	
+	// Sniper Rifles
+	#include "cfg\SRS99\SRS99CX.hpp"
+	
+	// Rocket Launchers
+	#include "cfg\M48\M48B.hpp"
 };

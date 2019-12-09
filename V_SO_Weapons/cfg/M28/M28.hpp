@@ -11,7 +11,7 @@ class OPTRE_M28: OPTRE_M395X
 	model                       = "\A3\Weapons_F_Exp\Rifles\ARX\ARX_F.p3d";
 	picture						= "\A3\Weapons_F_Exp\Rifles\ARX\Data\UI\arifle_ARX_blk_F_X_CA.paa";
 	handAnim[]					= {"OFP2_ManSkeleton","\A3\Weapons_F_Exp\Rifles\ARX\data\anim\arx.rtm"};
-	modes[] 					= {"Single", "Secondary"};
+	modes[] 					= {"Single"/*, "Secondary"*/};
 	reloadAction				= "GestureReloadARX";
 	
 	magazines[]=
@@ -40,7 +40,7 @@ class OPTRE_M28: OPTRE_M395X
 		"\A3\Weapons_F_Exp\Rifles\ARX\Data\arifle_ARX_blk_02_F_co.paa"
 	};
 	
-	class Single: Single
+	/*class Single: Single
 	{
 		class SilencedSound
 		{
@@ -50,7 +50,7 @@ class OPTRE_M28: OPTRE_M395X
 		{
 			soundSetShot[] 				= {"DMR03_Shot_SoundSet","DMR03_tail_SoundSet","DMR03_InteriorTail_SoundSet"};
 		};
-	};
+	};*/
 	
 	class Secondary: Rifle_Base_F
 	{

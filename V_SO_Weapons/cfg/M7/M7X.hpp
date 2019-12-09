@@ -25,7 +25,8 @@ class OPTRE_M7X: SO_M7_Base
 	
 	displayName					= "M7X Caseless SMG";
 	baseWeapon 					= "OPTRE_M7X";
-	model                       = "\OPTRE_Weapons\SMG\SMG.p3d";
+	//model                       = "\OPTRE_Weapons\SMG\SMG.p3d";
+	
 	//recoil						= "M7X_Recoil";
 	
 	magazines[]=

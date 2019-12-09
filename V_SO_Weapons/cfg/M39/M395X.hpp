@@ -10,7 +10,13 @@ class OPTRE_M395X: OPTRE_M392X
 	model                       = "\OPTRE_Weapons\DMR\M395.p3d";
 	picture 					= "\OPTRE_Weapons\DMR\icons\M395_Icon.paa";
 	
-	class Single;
+	handAnim[]=
+	{
+		"OFP2_ManSkeleton",
+		"\OPTRE_Weapons\DMR\Anim\Handanim_M395.rtm"
+	};
+	
+	// class Single;
 	
 	class WeaponSlotsInfo
  	{
