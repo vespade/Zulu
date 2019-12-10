@@ -18,7 +18,7 @@ class OPTRE_M395X: OPTRE_M392X
 	
 	// class Single;
 	
-	class WeaponSlotsInfo
+	class WeaponSlotsInfo: WeaponSlotsInfo
  	{
 		mass = 50;
  		class MuzzleSlot: MuzzleSlot

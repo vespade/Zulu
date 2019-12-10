@@ -18,6 +18,7 @@ class OPTRE_M6D: SO_M6G_Base
 	magazines[]=
 	{
 		"OPTRE_8Rnd_127x40_Mag",
+		"OPTRE_8Rnd_127x40_Mag_Tracer",
 		"OPTRE_8Rnd_127x40_Mag_AP",
 		"OPTRE_8Rnd_127x40_Mag_APT",
 		"OPTRE_8Rnd_127x40_Mag_HE",

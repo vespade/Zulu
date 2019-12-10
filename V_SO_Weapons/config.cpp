@@ -91,3 +91,38 @@ class CfgWeapons
 	// Rocket Launchers
 	#include "cfg\M48\M48B.hpp"
 };
+
+class Extended_PreInit_EventHandlers
+{
+	class Humbler
+	{
+		init="call compile preprocessFileLineNumbers '\V_SO_Weapons\scripts\XEH_preInit.sqf'; ";
+	};
+};
+
+class Extended_PreStart_EventHandlers
+{
+	class Humbler
+	{
+		init="call compile preprocessFileLineNumbers '\V_SO_Weapons\scripts\XEH_preStart.sqf'; ";
+	};
+};
+
+class Extended_Respawn_EventHandlers
+{
+	class CAManBase
+	{
+		class Humbler
+		{
+			respawn="_this call CSW_fnc_TaserOnRespawn";
+		};
+	};
+};
+
+class Extended_Hit_EventHandlers
+{
+	class CAManBase
+	{
+		Humbler="_this call CSW_fnc_TaserOnHit;";
+	};
+};

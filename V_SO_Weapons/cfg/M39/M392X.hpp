@@ -1,11 +1,5 @@
 class OPTRE_M392_DMR;
-class SO_M392_Base: OPTRE_M392_DMR
-{
-	class WeaponSlotsInfo;
-	class ItemInfo;
-};
-
-class OPTRE_M392X: SO_M392_Base
+class OPTRE_M392X: OPTRE_M392_DMR
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -94,6 +88,15 @@ class OPTRE_M392X: SO_M392_Base
 				"acc_pointer_ir",
 				"ace_acc_pointer_green",
 				"acc_flashlight"
+			};
+		};
+		class UnderBarrelSlot: UnderBarrelSlot
+		{
+			compatibleitems[]=
+			{
+				"bipod_01_f_blk",
+				"bipod_02_f_blk",
+				"bipod_03_f_blk"
 			};
 		};
 	};

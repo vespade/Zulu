@@ -78,3 +78,8 @@ class OPTRE_B_127x40_SS: OPTRE_B_127x40_Ball
 	hit 						= 14;
 	typicalSpeed				= 343;
 };
+
+class OPTRE_B_127x40_NARQ: OPTRE_B_127x40_Ball
+{
+	hit 						= 0.1;
+};

@@ -8,6 +8,7 @@ class OPTRE_8Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_127x40_Ball";
+	count						= 8;
 	displayname 				= "8Rnd 12.7x40mm Magazine";
 	descriptionShort			= "8 Round Magazine<br>12.7x40mm";
 	
@@ -163,6 +164,18 @@ class OPTRE_8Rnd_127x40_Mag_SS: OPTRE_8Rnd_127x40_Mag
 	descriptionShort			= "8 Round Magazine<br>12.7x40mm<br>Sub-Sonic";
 };
 
+class OPTRE_8Rnd_127x40_Mag_NARQ: OPTRE_8Rnd_127x40_Mag
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_127x40_NARQ";
+	displayname 				= "8Rnd 12.7x40mm NARQ Magazine";
+	descriptionShort			= "8 Round Magazine<br>12.7x40mm<br>Tranquilizer";
+};
+
 // 12 Round Magazines
 class OPTRE_12Rnd_127x40_Mag: 20Rnd_762x51_Mag
 {
@@ -172,6 +185,7 @@ class OPTRE_12Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_127x40_Ball";
+	count						= 12;
 	displayname 				= "12Rnd 12.7x40mm Magazine";
 	descriptionShort			= "12 Round Magazine<br>12.7x40mm";
 	
@@ -303,6 +317,18 @@ class OPTRE_12Rnd_127x40_Mag_SS: OPTRE_12Rnd_127x40_Mag
 	descriptionShort			= "12 Round Magazine<br>12.7x40mm<br>Sub-Sonic";
 };
 
+class OPTRE_12Rnd_127x40_Mag_NARQ: OPTRE_12Rnd_127x40_Mag
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_127x40_NARQ";
+	displayname 				= "12Rnd 12.7x40mm NARQ Magazine";
+	descriptionShort			= "12 Round Magazine<br>12.7x40mm<br>Tranquilizer";
+};
+
 // 16 Round Magazines
 class OPTRE_16Rnd_127x40_Mag: 20Rnd_762x51_Mag
 {
@@ -312,6 +338,7 @@ class OPTRE_16Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_127x40_Ball";
+	count						= 16;
 	displayname 				= "16Rnd 12.7x40mm Magazine";
 	descriptionShort			= "16 Round Magazine<br>12.7x40mm";
 	
@@ -441,4 +468,16 @@ class OPTRE_16Rnd_127x40_Mag_SS: OPTRE_16Rnd_127x40_Mag
 	ammo 						= "OPTRE_B_127x40_SS";
 	displayname 				= "16Rnd 12.7x40mm SS Magazine";
 	descriptionShort			= "16 Round Magazine<br>12.7x40mm<br>Sub-Sonic";
+};
+
+class OPTRE_16Rnd_127x40_Mag_NARQ: OPTRE_16Rnd_127x40_Mag
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_127x40_NARQ";
+	displayname 				= "16Rnd 12.7x40mm NARQ Magazine";
+	descriptionShort			= "16 Round Magazine<br>12.7x40mm<br>Tranquilizer";
 };

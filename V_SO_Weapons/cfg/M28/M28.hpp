@@ -113,7 +113,7 @@ class OPTRE_M28: OPTRE_M395X
 		};
 	};
 	
-	class WeaponSlotsInfo
+	class WeaponSlotsInfo: WeaponSlotsInfo
  	{
 		mass = 50;
  		class MuzzleSlot: MuzzleSlot
