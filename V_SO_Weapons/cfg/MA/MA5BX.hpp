@@ -34,7 +34,7 @@ class OPTRE_MA5BX: SO_MA5B_Base
 	
 	class WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 84;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

@@ -7,7 +7,6 @@ class F_40mm_Blue: F_40mm_White
 	scopeArsenal				= 2;
 	
 	lightColor[] 				= {0.25,0.25,0.5,0};
-	model 						= "v_so_weapons\data\flares\flare_blue.p3d";
 };
 
 // Don't look down here...

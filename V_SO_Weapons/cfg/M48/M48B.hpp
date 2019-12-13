@@ -39,7 +39,7 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 	
 	class WeaponSlotsInfo
 	{
-		mass 					= 80;
+		mass = 93;
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[]=

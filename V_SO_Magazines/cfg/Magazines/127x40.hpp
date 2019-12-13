@@ -147,7 +147,7 @@ class OPTRE_8Rnd_127x40_Mag_SAPHET: OPTRE_8Rnd_127x40_Mag_SAPHE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	ammo 						= "OPTRE_B_127x40_JHPT";
+	ammo 						= "OPTRE_B_127x40_SAPHET";
 	displayname 				= "8Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 	descriptionShort			= "8 Round Magazine<br>12.7x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 };
@@ -300,7 +300,7 @@ class OPTRE_12Rnd_127x40_Mag_SAPHET: OPTRE_12Rnd_127x40_Mag_SAPHE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	ammo 						= "OPTRE_B_127x40_JHPT";
+	ammo 						= "OPTRE_B_127x40_SAPHET";
 	displayname 				= "12Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 	descriptionShort			= "12 Round Magazine<br>12.7x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 };
@@ -453,7 +453,7 @@ class OPTRE_16Rnd_127x40_Mag_SAPHET: OPTRE_16Rnd_127x40_Mag_SAPHE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	ammo 						= "OPTRE_B_127x40_JHPT";
+	ammo 						= "OPTRE_B_127x40_SAPHET";
 	displayname 				= "16Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 	descriptionShort			= "16 Round Magazine<br>12.7x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 };

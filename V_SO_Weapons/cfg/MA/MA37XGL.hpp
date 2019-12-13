@@ -7,7 +7,7 @@ class OPTRE_MA37XGL: OPTRE_MA5CXGL
 	
 	displayName					= "MA37X + M301 GL Assault Rifle";
 	baseWeapon 					= "OPTRE_MA37XGL";
-	model     	= "\OPTRE_Weapons\AR\MA37GL.p3d";
+	model     					= "\OPTRE_Weapons\AR\MA37GL.p3d";
 	
 	handAnim[]=
 	{
@@ -17,6 +17,7 @@ class OPTRE_MA37XGL: OPTRE_MA5CXGL
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
 	{
+		mass = 110;
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[] = {};

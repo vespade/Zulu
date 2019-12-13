@@ -9,6 +9,7 @@ class OPTRE_6Rnd_8Gauge_Pellets: 20Rnd_762x51_Mag
 	ammo 						= "OPTRE_B_8Gauge_Pellets";
 	count						= 6;
 	displayname 				= "6Rnd 8 Gauge Pellets";
+	displayNameShort 			= "8 Gauge Pellets";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Pellets";
 	
 	initspeed 					= 500;
@@ -26,6 +27,7 @@ class OPTRE_6Rnd_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Pellets
 	
 	ammo 						= "OPTRE_B_8Gauge_Slugs";
 	displayname 				= "6Rnd 8 Gauge Slugs";
+	displayNameShort 			= "8 Gauge Slugs";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Slugs";
 	
 	initspeed 					= 800;
@@ -42,6 +44,7 @@ class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slugs
 	
 	ammo 						= "OPTRE_B_8Gauge_HEDP";
 	displayname 				= "6Rnd 8 Gauge HEDP";
+	displayNameShort 			= "8 Gauge HEDP";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>High-Explosive Dual Purpose";
 	
 	initspeed 					= 1000;
@@ -56,6 +59,7 @@ class OPTRE_6Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Pellets
 	
 	ammo 						= "OPTRE_B_8Gauge_Beanbags";
 	displayname 				= "6Rnd 8 Gauge Beanbags";
+	displayNameShort 			= "8 Gauge Beanbags";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Beanbags";
 	
 	initspeed 					= 300;

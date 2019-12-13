@@ -37,7 +37,7 @@ class OPTRE_M6D: SO_M6G_Base
 	
 	class WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 43;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

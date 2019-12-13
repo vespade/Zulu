@@ -25,7 +25,7 @@ class OPTRE_M392X: OPTRE_M392_DMR
 
 	class WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 126;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

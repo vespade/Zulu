@@ -16,11 +16,11 @@ class OPTRE_M395X: OPTRE_M392X
 		"\OPTRE_Weapons\DMR\Anim\Handanim_M395.rtm"
 	};
 	
-	// class Single;
+	class Single;
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 134;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

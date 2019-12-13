@@ -18,23 +18,32 @@ class OPTRE_M73X: OPTRE_M73
 		"OPTRE_36Rnd_95x40_Mag_JHPT",
 		"OPTRE_36Rnd_95x40_Mag_HPSAP",
 		"OPTRE_36Rnd_95x40_Mag_HPSAPT",
+		"OPTRE_36Rnd_95x40_Mag_SAPHE",
+		"OPTRE_36Rnd_95x40_Mag_SAPHET",
+		"OPTRE_36Rnd_95x40_Mag_SS",
 		"OPTRE_100Rnd_95x40_Box",
 		"OPTRE_100Rnd_95x40_Box_Tracer",
 		"OPTRE_100Rnd_95x40_Box_JHP",
 		"OPTRE_100Rnd_95x40_Box_JHPT",
 		"OPTRE_100Rnd_95x40_Box_HPSAP",
 		"OPTRE_100Rnd_95x40_Box_HPSAPT",
+		"OPTRE_100Rnd_95x40_Box_SAPHE",
+		"OPTRE_100Rnd_95x40_Box_SAPHET",
+		"OPTRE_100Rnd_95x40_Box_SS",
 		"OPTRE_300Rnd_95x40_Box",
 		"OPTRE_300Rnd_95x40_Box_Tracer",
 		"OPTRE_300Rnd_95x40_Box_JHP",
 		"OPTRE_300Rnd_95x40_Box_JHPT",
 		"OPTRE_300Rnd_95x40_Box_HPSAP",
-		"OPTRE_300Rnd_95x40_Box_HPSAPT"
+		"OPTRE_300Rnd_95x40_Box_HPSAPT",
+		"OPTRE_300Rnd_95x40_Box_SAPHE",
+		"OPTRE_300Rnd_95x40_Box_SAPHET",
+		"OPTRE_300Rnd_95x40_Box_SS"
 	};
 	
 	class WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 158;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

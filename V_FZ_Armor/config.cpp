@@ -39,7 +39,7 @@ class CfgGlasses
 {
 	// Balaclava w/ Goggles
 	class OPTRE_HUD_Glasses;
-	class VES_HUD_Balaclava_Black: OPTRE_HUD_Glasses
+	class VES_HUD_Balaclava_G_Black: OPTRE_HUD_Glasses
 	{
 		dlc="Zulu";
 		author="Vespade";
@@ -53,60 +53,59 @@ class CfgGlasses
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_BLK_CO.paa", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA.paa"};
 		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Facewear\V_BGH.rvmat", "", ""};
 	};
-	class VES_HUD_Balaclava_Gray: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_G_Gray: VES_HUD_Balaclava_G_Black
 	{
 		displayName="HUD Goggles with Balaclava (Gray)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_GRY_CO.paa", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA.paa"};
 	};
-	class VES_HUD_Balaclava_White: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_G_White: VES_HUD_Balaclava_G_Black
 	{
 		displayName="HUD Goggles with Balaclava (White)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_WHT_CO.paa", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA.paa"};
 	};
-	class VES_HUD_Balaclava_Beast: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_G_Beast: VES_HUD_Balaclava_G_Black
 	{
 		displayName="HUD Goggles with Balaclava (Beast)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_BST_CO.paa", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA.paa"};
 	};
-	class VES_HUD_Balaclava_Punisher: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_G_Punisher: VES_HUD_Balaclava_G_Black
 	{
 		displayName="HUD Goggles with Balaclava (Punisher)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_PNS_CO.paa", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA.paa"};
 	};
-	class VES_HUD_Balaclava_Joker: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_G_Joker: VES_HUD_Balaclava_G_Black
 	{
 		displayName="HUD Goggles with Balaclava (Joker)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO.paa", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA.paa"};
 	};
 	
 	// Balaclava
-	class VES_HUD_Balaclava_NG_Black: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_Black: VES_HUD_Balaclava_G_Black
 	{
-		author="Vespade";
 		displayName="HUD Balaclava (Black)";
-		model="\A3\Characters_F_Exp\BLUFOR\G_Balaclava_TI_F.p3d";
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_BLK_CO.paa"};
 	};
-	class VES_HUD_Balaclava_NG_Gray: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_Gray: VES_HUD_Balaclava_G_Gray
 	{
 		displayName="HUD Balaclava (Gray)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_GRY_CO.paa"};
 	};
-	class VES_HUD_Balaclava_NG_White: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_White: VES_HUD_Balaclava_G_White
 	{
 		displayName="HUD Balaclava (White)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_WHT_CO.paa"};
 	};
-	class VES_HUD_Balaclava_NG_Beast: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_Beast: VES_HUD_Balaclava_G_Beast
 	{
 		displayName="HUD Balaclava (Beast)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_BST_CO.paa"};
 	};
-	class VES_HUD_Balaclava_NG_Punisher: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_Punisher: VES_HUD_Balaclava_G_Punisher
 	{
 		displayName="HUD Balaclava (Punisher)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_PNS_CO.paa"};
 	};
-	class VES_HUD_Balaclava_NG_Joker: VES_HUD_Balaclava_Black
+	class VES_HUD_Balaclava_Joker: VES_HUD_Balaclava_G_Joker
 	{
 		displayName="HUD Balaclava (Joker)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO.paa"};
@@ -4134,12 +4133,21 @@ class CfgOptreHudSchemes
 	{
 		class MainDialogs
 		{
-			VES_HUD_Balaclava_Black="OPTRE_MarrineGlasses_orange";
-			VES_HUD_Balaclava_Gray="OPTRE_MarrineGlasses_orange";
-			VES_HUD_Balaclava_White="OPTRE_MarrineGlasses_orange";
-			VES_HUD_Balaclava_Beast="OPTRE_MarrineGlasses_orange";
-			VES_HUD_Balaclava_Joker="OPTRE_MarrineGlasses_orange";
-			VES_HUD_Balaclava_Punisher="OPTRE_MarrineGlasses_orange";
+			// Balaclava w/ Goggles
+			VES_HUD_Balaclava_G_Black="OPTRE_MarrineGlasses_orange";
+			VES_HUD_Balaclava_G_Gray="OPTRE_MarrineGlasses_orange";
+			VES_HUD_Balaclava_G_White="OPTRE_MarrineGlasses_orange";
+			VES_HUD_Balaclava_G_Beast="OPTRE_MarrineGlasses_orange";
+			VES_HUD_Balaclava_G_Joker="OPTRE_MarrineGlasses_orange";
+			VES_HUD_Balaclava_G_Punisher="OPTRE_MarrineGlasses_orange";
+			
+			// Balaclava
+			VES_HUD_Balaclava_Black="OPTRE_MarrineGlasses_white";
+			VES_HUD_Balaclava_Gray="OPTRE_MarrineGlasses_white";
+			VES_HUD_Balaclava_White="OPTRE_MarrineGlasses_white";
+			VES_HUD_Balaclava_Beast="OPTRE_MarrineGlasses_white";
+			VES_HUD_Balaclava_Joker="OPTRE_MarrineGlasses_white";
+			VES_HUD_Balaclava_Punisher="OPTRE_MarrineGlasses_white";
 		};
 	};
 };

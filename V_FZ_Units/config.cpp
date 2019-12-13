@@ -186,11 +186,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_MAR: VES_Rifleman_MA5B_MAR
+	/*class VES_Rifleman_M28_MAR: VES_Rifleman_MA5B_MAR
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_MAR: VES_Rifleman_MA5B_MAR
 	{
 		displayName="Autorifleman";
@@ -248,11 +248,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_WDL: VES_Rifleman_MA5B_WDL
+	/*class VES_Rifleman_M28_WDL: VES_Rifleman_MA5B_WDL
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_WDL: VES_Rifleman_MA5B_WDL
 	{
 		displayName="Autorifleman";
@@ -310,11 +310,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_DES: VES_Rifleman_MA5B_DES
+	/*class VES_Rifleman_M28_DES: VES_Rifleman_MA5B_DES
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_DES: VES_Rifleman_MA5B_DES
 	{
 		displayName="Autorifleman";
@@ -372,11 +372,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_SNO: VES_Rifleman_MA5B_SNO
+	/*class VES_Rifleman_M28_SNO: VES_Rifleman_MA5B_SNO
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_SNO: VES_Rifleman_MA5B_SNO
 	{
 		displayName="Autorifleman";
@@ -434,11 +434,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_CEA: VES_Rifleman_MA5B_CEA
+	/*class VES_Rifleman_M28_CEA: VES_Rifleman_MA5B_CEA
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_CEA: VES_Rifleman_MA5B_CEA
 	{
 		displayName="Autorifleman";
@@ -496,11 +496,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_URB: VES_Rifleman_MA5B_URB
+	/*class VES_Rifleman_M28_URB: VES_Rifleman_MA5B_URB
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_URB: VES_Rifleman_MA5B_URB
 	{
 		displayName="Autorifleman";
@@ -558,11 +558,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_ARM: VES_Rifleman_MA5B_ARM
+	/*class VES_Rifleman_M28_ARM: VES_Rifleman_MA5B_ARM
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_ARM: VES_Rifleman_MA5B_ARM
 	{
 		displayName="Autorifleman";
@@ -621,11 +621,11 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	class VES_Rifleman_M28_AMP: VES_Rifleman_MA5B_AMP
+	/*class VES_Rifleman_M28_AMP: VES_Rifleman_MA5B_AMP
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_AMP: VES_Rifleman_MA5B_AMP
 	{
 		displayName="Autorifleman";
@@ -653,11 +653,11 @@ class CfgVehicles
 		#include "cfg\FZ_M392_Items.hpp"
 		#include "cfg\FZ_ODST_MarksmanItems.hpp"
 	};
-	class VES_Rifleman_M28_ODST: VES_Rifleman_M392_ODST
+	/*class VES_Rifleman_M28_ODST: VES_Rifleman_M392_ODST
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_ODST: VES_Rifleman_MA5B_ODST
 	{
 		displayName="Autorifleman";
@@ -703,11 +703,11 @@ class CfgVehicles
 		#include "cfg\FZ_M392_Items.hpp"
 		#include "cfg\FZ_SFP_MarksmanItems.hpp"
 	};
-	class VES_Rifleman_M28_SFP: VES_Rifleman_M392_SFP
+	/*class VES_Rifleman_M28_SFP: VES_Rifleman_M392_SFP
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_SFP: VES_Rifleman_MA5B_SFP
 	{
 		displayName="Autorifleman";
@@ -747,11 +747,11 @@ class CfgVehicles
 		#include "cfg\FZ_M392_Items.hpp"
 		#include "cfg\FZ_AA_MarksmanItems.hpp"
 	};
-	class VES_Rifleman_M28_AA: VES_Rifleman_M392_AA
+	/*class VES_Rifleman_M28_AA: VES_Rifleman_M392_AA
 	{
 		displayName="Designated Marksman (M28A2)";
 		#include "cfg\FZ_M28_Items.hpp"
-	};
+	};*/
 	class VES_Rifleman_M73_AA: VES_Rifleman_MA5B_AA
 	{
 		displayName="Autorifleman";

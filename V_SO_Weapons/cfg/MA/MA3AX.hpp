@@ -8,4 +8,9 @@ class OPTRE_MA3AX: OPTRE_MA5BX
 	displayName					= "MA3AX ICWS Assault Rifle";
 	baseWeapon 					= "OPTRE_MA3AX";
 	model                       = "\OPTRE_Weapons\AR\MA5A.p3d";
+	
+	class WeaponSlotsInfo: WeaponSlotsInfo
+ 	{
+		mass = 80;
+	};
 };

@@ -9,6 +9,7 @@ class 3Rnd_UGL_FlareBlue_F: 3Rnd_UGL_FlareWhite_F
 	
 	ammo 						= "F_40mm_Blue";
 	displayName 				= "3Rnd 3GL Flares (Blue)";
+	displayNameShort 			= "Blue Flare";
 	descriptionShort 			= "Type: Flare Rounds - Blue<br />Rounds: 3<br />Used in: 3GL";
 	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca.paa";
 };
@@ -59,6 +60,7 @@ class UGL_FlareBlue_F: UGL_FlareWhite_F
 	
 	ammo 						= "F_40mm_Blue";
 	displayName 				= "Flare Round (Blue)";
+	displayNameShort 			= "Blue Flare";
 	descriptionShort 			= "Type: Flare Round - Blue<br />Rounds: 1<br />Used in: ELGM, 3GL";
 	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca.paa";
 };
@@ -101,6 +103,7 @@ class UGL_Potato: OPTRE_6Rnd_8Gauge_Pellets
 	
 	ammo						= "UGL_Potato";
 	displayName 				= "Potato";
+	displayNameShort 			= "Potato";
 	count						= 1;
 	descriptionShort 			= "Type: Potato<br />Rounds: 1<br />Used in: ELGM, 3GL";
 	picture 					= "\v_so_weapons\data\flares\gear_ugl_potat_ca.paa";

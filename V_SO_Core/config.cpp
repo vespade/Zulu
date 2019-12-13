@@ -7,7 +7,7 @@
 
 class CfgPatches
 {
-	class V_SO_Magazines
+	class V_SO_Core
 	{
 		author="Fireteam Zulu";
 		name="Fireteam Zulu: Specialized Ordanance";
@@ -21,7 +21,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"V_SO_Core"
+			"OPTRE_Weapons"
 		};
 	};
 };
@@ -30,32 +30,44 @@ class CfgAddons
 {
 	class PreloadAddons
 	{
-		class V_SO_Magazines
+		class V_SO_Core
 		{
-			list[]={"V_SO_Magazines"};
+			list[]={"V_SO_Core"};
 		};
 	};
 };
 
-class CfgAmmo
+class Extended_PreInit_EventHandlers
 {
-	#include "cfg\ammo\762x51.hpp"
-	#include "cfg\ammo\95x40.hpp"
-	#include "cfg\ammo\127x40.hpp"
-	#include "cfg\ammo\145x114.hpp"
-	#include "cfg\ammo\5x23.hpp"
-	#include "cfg\ammo\212.hpp"
-	#include "cfg\ammo\40.hpp"
+	class Humbler
+	{
+		init="call compile preprocessFileLineNumbers '\V_SO_Core\scripts\XEH_preInit.sqf'; ";
+	};
 };
 
-class CfgMagazines
+class Extended_PreStart_EventHandlers
 {
-	#include "cfg\magazines\762x51.hpp"
-	#include "cfg\magazines\95x40.hpp"
-	#include "cfg\magazines\127x40.hpp"
-	#include "cfg\magazines\145x114.hpp"
-	#include "cfg\magazines\5x23.hpp"
-	#include "cfg\magazines\50x137.hpp"
-	#include "cfg\magazines\212.hpp"
-	#include "cfg\magazines\40.hpp"
+	class Humbler
+	{
+		init="call compile preprocessFileLineNumbers '\V_SO_Core\scripts\XEH_preStart.sqf'; ";
+	};
+};
+
+class Extended_Respawn_EventHandlers
+{
+	class CAManBase
+	{
+		class Humbler
+		{
+			respawn="_this call CSW_fnc_TaserOnRespawn";
+		};
+	};
+};
+
+class Extended_Hit_EventHandlers
+{
+	class CAManBase
+	{
+		Humbler="_this call CSW_fnc_TaserOnHit;";
+	};
 };

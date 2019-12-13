@@ -54,6 +54,7 @@ class OPTRE_M319X: OPTRE_M319
 	
 	class WeaponSlotsInfo
  	{
+		mass = 88;
 		class PointerSlot: PointerSlot
 		{
 			compatibleitems[]=

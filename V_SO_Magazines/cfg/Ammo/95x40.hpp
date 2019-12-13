@@ -29,3 +29,20 @@ class OPTRE_B_95x40_SS: OPTRE_B_95x40_Ball
 	hit 						= 15;
 	typicalSpeed				= 343;
 };
+
+class OPTRE_B_95x40_SAPHE: OPTRE_B_95x40_Ball
+{
+	craterEffects				= "ExploAmmoCrater";
+	explosive					= 0.10;
+	explosionEffects			= "ExploAmmoExplosion";
+	explosionSoundEffect		= "DefaultExplosion";
+	hit 						= 17;
+	typicalSpeed				= 720;
+	indirectHit					= 12;
+	indirectHitRange			= 0.35;
+};
+
+class OPTRE_B_95x40_SAPHET: OPTRE_B_95x40_SAPHE
+{
+	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+};

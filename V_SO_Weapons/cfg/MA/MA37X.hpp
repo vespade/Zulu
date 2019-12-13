@@ -17,6 +17,7 @@ class OPTRE_MA37X: OPTRE_MA5CX
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
 	{
+		mass = 77;
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[] = {};

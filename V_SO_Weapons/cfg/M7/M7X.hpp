@@ -66,7 +66,7 @@ class OPTRE_M7X: SO_M7_Base
 	
 	class WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 29;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

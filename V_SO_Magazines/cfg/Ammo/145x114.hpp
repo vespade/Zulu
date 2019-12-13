@@ -23,3 +23,8 @@ class OPTRE_B_145x114_HEDPT: OPTRE_B_145x114_HEDP
 {
 	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 };
+
+class OPTRE_B_145x114_NARQ: OPTRE_B_145x114_APFSDS
+{
+	hit 						= 0.1;
+};

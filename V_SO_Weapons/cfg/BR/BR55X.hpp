@@ -26,12 +26,15 @@ class OPTRE_BR55X: SO_BR55_Base
 		"OPTRE_36Rnd_95x40_Mag_JHP",
 		"OPTRE_36Rnd_95x40_Mag_JHPT",
 		"OPTRE_36Rnd_95x40_Mag_HPSAP",
-		"OPTRE_36Rnd_95x40_Mag_HPSAPT"
+		"OPTRE_36Rnd_95x40_Mag_HPSAPT",
+		"OPTRE_36Rnd_95x40_Mag_SAPHE",
+		"OPTRE_36Rnd_95x40_Mag_SAPHET",
+		"OPTRE_36Rnd_95x40_Mag_SS"
 	};
 	
 	class WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 82;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

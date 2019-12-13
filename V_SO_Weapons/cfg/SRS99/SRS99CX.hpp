@@ -23,12 +23,13 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 		"OPTRE_4Rnd_145x114_Mag_HEDPT",
 		"OPTRE_4Rnd_145x114_HVAP_Mag",
 		"OPTRE_4Rnd_145x114_Mag_HVAPT",
-		"OPTRE_4Rnd_145x114_Mag_SS"
+		"OPTRE_4Rnd_145x114_Mag_SS",
+		"OPTRE_4Rnd_145x114_Mag_NARQ"
 	};
 	
 	class WeaponSlotsInfo
  	{
-		mass = 50;
+		mass = 237;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=

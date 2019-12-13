@@ -12,13 +12,15 @@ class OPTRE_B_8Gauge_Slugs: B_12Gauge_Slug
 	hit 						= 48;
 };
 
-class OPTRE_B_8Gauge_HEDP: OPTRE_B_8Gauge_Pellets
+class OPTRE_B_8Gauge_HEDP: OPTRE_B_8Gauge_Slugs
 {
 	craterEffects				= "ExploAmmoCrater";
 	explosive					= 0.25;
 	explosionEffects			= "ExploAmmoExplosion";
 	explosionSoundEffect		= "DefaultExplosion";
 	hit 						= 32;
+	indirectHit					= 12;
+	indirectHitRange			= 0.25;
 };
 
 class OPTRE_B_8Gauge_Beanbags: OPTRE_B_8Gauge_Slugs

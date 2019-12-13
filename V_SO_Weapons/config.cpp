@@ -21,7 +21,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"OPTRE_Weapons"
+			"V_SO_Core"
 		};
 	};
 };
@@ -71,7 +71,11 @@ class CfgWeapons
 	#include "cfg\MA\MA32X.hpp"
 	#include "cfg\MA\MA32XGL.hpp"
 	
-	// Domesticated Marksman's Rifles
+	// Handguns
+	#include "cfg\M6\M6S.hpp"
+	#include "cfg\M6\M6D.hpp"
+	
+	// Domesticated (Vespade's) Marksman's Rifles
 	#include "cfg\M39\M392X.hpp"
 	#include "cfg\M39\M395X.hpp"
 	#include "cfg\M39\M395XS.hpp"
@@ -84,10 +88,6 @@ class CfgWeapons
 	
 	// Sub-Machine Guns
 	#include "cfg\M7\M7X.hpp"
-	
-	// Handguns
-	#include "cfg\M6\M6S.hpp"
-	#include "cfg\M6\M6D.hpp"
 	
 	// Sniper Rifles
 	#include "cfg\SRS99\SRS99CX.hpp"
@@ -103,39 +103,4 @@ class CfgWeapons
 	
 	// Why is this shit here? Because Arma for whatever reason reads it as defined in CfgWeapons, and that breaks shit.
 	class MuzzleSlot: MuzzleSlot{};
-};
-
-class Extended_PreInit_EventHandlers
-{
-	class Humbler
-	{
-		init="call compile preprocessFileLineNumbers '\V_SO_Weapons\scripts\XEH_preInit.sqf'; ";
-	};
-};
-
-class Extended_PreStart_EventHandlers
-{
-	class Humbler
-	{
-		init="call compile preprocessFileLineNumbers '\V_SO_Weapons\scripts\XEH_preStart.sqf'; ";
-	};
-};
-
-class Extended_Respawn_EventHandlers
-{
-	class CAManBase
-	{
-		class Humbler
-		{
-			respawn="_this call CSW_fnc_TaserOnRespawn";
-		};
-	};
-};
-
-class Extended_Hit_EventHandlers
-{
-	class CAManBase
-	{
-		Humbler="_this call CSW_fnc_TaserOnHit;";
-	};
 };
