@@ -79,6 +79,39 @@ class CfgGlasses
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO.paa", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA.paa"};
 	};
 	
+	// Balaclava
+	class VES_HUD_Balaclava_NG_Black: VES_HUD_Balaclava_Black
+	{
+		author="Vespade";
+		displayName="HUD Balaclava (Black)";
+		model="\A3\Characters_F_Exp\BLUFOR\G_Balaclava_TI_F.p3d";
+	};
+	class VES_HUD_Balaclava_NG_Gray: VES_HUD_Balaclava_Black
+	{
+		displayName="HUD Balaclava (Gray)";
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_GRY_CO.paa"};
+	};
+	class VES_HUD_Balaclava_NG_White: VES_HUD_Balaclava_Black
+	{
+		displayName="HUD Balaclava (White)";
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_WHT_CO.paa"};
+	};
+	class VES_HUD_Balaclava_NG_Beast: VES_HUD_Balaclava_Black
+	{
+		displayName="HUD Balaclava (Beast)";
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_BST_CO.paa"};
+	};
+	class VES_HUD_Balaclava_NG_Punisher: VES_HUD_Balaclava_Black
+	{
+		displayName="HUD Balaclava (Punisher)";
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_PNS_CO.paa"};
+	};
+	class VES_HUD_Balaclava_NG_Joker: VES_HUD_Balaclava_Black
+	{
+		displayName="HUD Balaclava (Joker)";
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO.paa"};
+	};
+	
 	class VES_HUD_Visor: OPTRE_HUD_Glasses
 	{
 		dlc="Zulu";

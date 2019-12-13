@@ -72,6 +72,8 @@ class CfgPatches
 			"VES_IFV76",
 			"VES_IFV76_M",
 			"VES_IFV76_A",
+            "VES_M413_MGS",
+            "VES_M412_IFV",
 			// Jets
 			"VES_VAF19",
 			"VES_Lifeboat",
@@ -541,6 +543,44 @@ class cfgVehicles
 		class TransportItems{};
 	};*/
 	
+	// Bisons
+    class OPTRE_M413_MGS_UNSC;
+    class OPTRE_M412_IFV_UNSC;
+    class VES_M413_MGS: OPTRE_M413_MGS_UNSC
+	{
+		dlc="Zulu";
+		author="Vespade";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+        forceInGarage=1;
+        tf_hasLRradio=1;
+		tf_isolatedAmount=.65;
+		tf_range=12000;
+		TFAR_hasIntercom=1;
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_BisonCamos.hpp"
+	};
+    class VES_M412_IFV: OPTRE_M412_IFV_UNSC
+	{
+		dlc="Zulu";
+		author="Vespade";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+        forceInGarage=1;
+        tf_hasLRradio=1;
+		tf_isolatedAmount=.65;
+		tf_range=12000;
+		TFAR_hasIntercom=1;
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_BisonCamos.hpp"
+	};
+	
 	// Scorpions
 	class OPTRE_M808B_UNSC;
 	class VES_M808B_MBT: OPTRE_M808B_UNSC
@@ -593,28 +633,23 @@ class cfgVehicles
 		#include "cfg\FZ_B_BuffaloCamos.hpp"
 	};
 	class O_Truck_03_fuel_F;
-	/*class VES_HDV134_Tanker_C: O_Truck_03_fuel_F
+	class VES_HDV134_Tanker_C: O_Truck_03_fuel_F
 	{
 		dlc="Zulu";
-		author="Vespade";
+		author="Mike Hartley";
 		displayName="HDV-134 Tanker Buffalo";
 		side=1;
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
 		textureList[]={};
 		hiddenSelections[]={"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[]=
-		{
-			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_OD3_CO.paa",
-			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_OD3_A_CO.paa",
-			"\A3\Soft_F_EPC\Truck_03\Data\Truck_03_fuel_CO.paa"
-		};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_A_BuffaloCamos.hpp"
+		#include "cfg\FZ_C_BuffaloCamos.hpp"
 	};
+	/*
 	class O_Truck_03_repair_F;
 	class VES_HDV134_Maintenance: O_Truck_03_repair_F
 	{

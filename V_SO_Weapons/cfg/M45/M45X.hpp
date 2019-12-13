@@ -1,45 +1,37 @@
-class launch_RPG32_F;
-class OPTRE_M48_PAW: Launch_RPG32_F
+class OPTRE_M45A;
+class OPTRE_M45X: OPTRE_M45A
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "M48B 'Cricket' PAW";
-	baseWeapon 					= "OPTRE_M48_PAW";
-	model                       = "\V_SO_Weapons\data\M48\M48B_Cricket.p3d";
-	picture 					= "\A3\Weapons_F_Enoch\Launchers\RPG32\Data\UI\icon_launch_RPG32_green_F_ca.paa";
-	
-	ODST_1						= "OPTRE_ODST_HUD_AmmoCount_RL";
-	Glasses						= "OPTRE_GLASS_HUD_AmmoCount_RL";
-	Eye							= "OPTRE_EYE_HUD_AmmoCount_RL";
-	HUD_BulletInARows			= 1;
-	HUD_TotalPosibleBullet		= 1;
+	displayName					= "M45X Semi-Automatic Shotgun";
+	baseWeapon 					= "OPTRE_M45X";
+	model                       = "\OPTRE_Weapons\Shotgun\shotgun_e.p3d";
 	
 	magazines[]=
 	{
-		"OPTRE_1Rnd_50x137_HEAT",
-		"OPTRE_1Rnd_50x137_HEAP"
-	};
-	magazineWell[] 				= {};
-	reloadAction				= "ReloadRPG";
-	reloadmagazinesound[]=
-	{
-		"A3\sounds_f\weapons\rockets\titan_reload_final",
-		0.56234097,
-		1,
-		50
-	};
-	handAnim[]=
-	{
-		"OFP2_ManSkeleton",
-		"\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"
+		"OPTRE_6Rnd_8Gauge_Pellets",
+		"OPTRE_6Rnd_8Gauge_Slugs",
+		"OPTRE_6Rnd_8Gauge_HEDP",
+		"OPTRE_6Rnd_8Gauge_Beanbags",
+		"OPTRE_12Rnd_8Gauge_Pellets",
+		"OPTRE_12Rnd_8Gauge_Slugs",
+		"OPTRE_12Rnd_8Gauge_HEDP",
+		"OPTRE_12Rnd_8Gauge_Beanbags"
 	};
 	
 	class WeaponSlotsInfo
-	{
-		mass 					= 80;
+ 	{
+		mass = 50;
+ 		class MuzzleSlot: MuzzleSlot
+		{
+			compatibleitems[]=
+			{
+				"optre_srs99d_suppressor"
+			};
+		};
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[]=
@@ -54,26 +46,33 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 				"optic_khs_blk",
 				"optic_hamr",
 				"optic_sos",
+				"optic_lrps",
 				"optic_nightstalker",
 				"optic_erco_blk_f",
 				"optic_ams",
+				"ace_optic_lrps_2d",
+				"ace_optic_lrps_pip",
 				"optic_yorris",
 				"ace_optic_sos_2d",
 				"ace_optic_sos_pip",
 				"ace_optic_mrco_2d",
 				"ace_optic_hamr_2d",
 				"ace_optic_hamr_pip",
+				"optic_ico_01_black_f",
 				"optic_aco_smg",
 				"optic_aco_grn_smg",
 				"optic_holosight_smg_blk_f",
 				"optic_mrd_black",
-
-				"optre_srs99_scope",
-				"optre_srs99c_scope",
+				
+				"optre_ma5_buis",
 				"optre_m393_eotech",
+				"optre_m73_smartlink",
 				"optre_m7_sight",
 				"optre_m393_acog",
+				"optre_hmg38_carryhandle",
+				"optre_m393_scope",
 				"optre_m392_scope",
+				"optre_br55hb_scope",
 				"optre_m6c_scope"
 			};
 		};
@@ -83,7 +82,10 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 			{
 				"acc_pointer_ir",
 				"ace_acc_pointer_green",
-				"acc_flashlight"
+				"acc_flashlight",
+
+				"optre_m45_flashlight",
+				"optre_m45_flashlight_red"
 			};
 		};
 	};

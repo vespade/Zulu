@@ -19,7 +19,7 @@ class CfgPatches
 		ammo[]={};
 		// Requirements
 		requiredVersion=1.0;
-		requiredAddons[]={"OPTRE_Core"};
+		requiredAddons[]={};
 	};
 };
 

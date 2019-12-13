@@ -22,6 +22,10 @@ class OPTRE_MA5BXGL: SO_MA5BGL_Base
 	baseWeapon 					= "OPTRE_MA5BXGL";
 	model                       = "\OPTRE_Weapons\AR\MA5BGL.p3d";
 	
+	// Inclusion of new UGL
+	muzzles[] 					= {"this","OPTRE_M301X"};
+	class OPTRE_M301X: OPTRE_M301X{};
+	
 	magazines[] = 
 	{
 		"OPTRE_60Rnd_762x51_Mag",

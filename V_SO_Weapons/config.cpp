@@ -21,7 +21,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"V_FZ_Core"
+			"OPTRE_Weapons"
 		};
 	};
 };
@@ -49,6 +49,10 @@ class UnderBarrelSlot;
 
 class CfgWeapons
 {
+	// Grenade Launchers
+	#include "cfg\M3\M301X.hpp"
+	#include "cfg\M3\M391X.hpp"
+	
 	// Assault Rifles
 	#include "cfg\MA\MA5BX.hpp"
 	#include "cfg\MA\MA5BXGL.hpp"
@@ -90,6 +94,15 @@ class CfgWeapons
 	
 	// Rocket Launchers
 	#include "cfg\M48\M48B.hpp"
+	
+	// Machine Guns
+	#include "cfg\M73\M73X.hpp"
+	
+	// Shotguns
+	#include "cfg\M45\M45X.hpp"
+	
+	// Why is this shit here? Because Arma for whatever reason reads it as defined in CfgWeapons, and that breaks shit.
+	class MuzzleSlot: MuzzleSlot{};
 };
 
 class Extended_PreInit_EventHandlers

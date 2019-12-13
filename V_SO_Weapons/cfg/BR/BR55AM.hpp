@@ -10,6 +10,9 @@ class OPTRE_BR55AM: OPTRE_BR55XHB
 	
 	recoil						= "recoil_dmr_04";
 	
+	HUD_BulletInARows 			= 1;
+	HUD_TotalPosibleBullet 		= 16;
+	
 	magazines[]=
 	{
 		"OPTRE_16Rnd_127x40_Mag",

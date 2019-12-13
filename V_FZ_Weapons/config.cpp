@@ -33,9 +33,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"V_FZ_Core",
-			"A3_Weapons_F",
-			"A3_Weapons_F_Exp"
+			"V_FZ_Core"
 		};
 	};
 };
@@ -52,9 +50,6 @@ class CfgAddons
 };
 
 // Guns
-class Mode_SemiAuto;
-class Mode_Burst;
-class BaseSoundModeType;
 class CfgWeapons
 {
 	/*class OPTRE_BR55;
@@ -145,7 +140,6 @@ class CfgWeapons
 	};*/
 	
 	// Vehicle Weaponry
-	
 	class OPTRE_M7;
 	class VES_M7_I: OPTRE_M7
 	{

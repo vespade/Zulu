@@ -25,7 +25,22 @@ class OPTRE_M7X: SO_M7_Base
 	
 	displayName					= "M7X Caseless SMG";
 	baseWeapon 					= "OPTRE_M7X";
-	//model                       = "\OPTRE_Weapons\SMG\SMG.p3d";
+	model 						= "\A3\Weapons_F_gamma\Smgs\pdw2000\pdw2000_F.p3d";
+	picture 					= "\A3\Weapons_F_gamma\Smgs\pdw2000\data\UI\gear_pdw2X_X_CA.paa";
+	
+	handAnim[] = 
+	{
+		"OFP2_ManSkeleton",
+		"\A3\Weapons_F_Gamma\Smgs\pdw2000\data\Anim\SMG_03.rtm"
+	};
+	
+	hiddenSelectionsTextures[] = 
+	{
+		"\a3\weapons_f\acc\data\battlesight_co",
+		"\a3\weapons_f\rifles\mx\data\xmx_handle_co",
+		"\a3\weapons_f_gamma\smgs\pdw2000\data\pdw2000_ammo_ca",
+		"\a3\weapons_f_gamma\smgs\pdw2000\data\pdw2000_co"
+	};
 	
 	//recoil						= "M7X_Recoil";
 	

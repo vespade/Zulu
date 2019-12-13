@@ -42,3 +42,95 @@ class OPTRE_36Rnd_95x40_Mag_HPSAPT: OPTRE_36Rnd_95x40_Mag_HPSAP
 	displayname 				= "36Rnd 9.5x40mm HP-SAP Magazine (Tracer)";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
 };
+
+// 100 Round Box Magazines
+class OPTRE_100Rnd_95x40_Box;
+class OPTRE_100Rnd_95x40_Box_JHP: OPTRE_100Rnd_95x40_Box
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_95x40_JHP";
+	displayname 				= "100Rnd 9.5x40mm JHP Box Magazine";
+	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
+};
+
+class OPTRE_100Rnd_95x40_Box_JHPT: OPTRE_100Rnd_95x40_Box_JHP
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	ammo 						= "OPTRE_B_95x40_JHPT";
+	displayname 				= "100Rnd 9.5x40mm JHP Magazine (Tracer)";
+	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+};
+
+class OPTRE_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_95x40_HPSAP";
+	displayname 				= "100Rnd 9.5x40mm HP-SAP Magazine";
+	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
+};
+
+class OPTRE_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_HPSAP
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	ammo 						= "OPTRE_B_95x40_JHPT";
+	displayname 				= "100Rnd 9.5x40mm HP-SAP Magazine (Tracer)";
+	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+};
+
+// 300 Round Box Magazines
+class OPTRE_300Rnd_95x40_Box_JHP: OPTRE_100Rnd_95x40_Box
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_95x40_JHP";
+	count						= 300;
+	displayname 				= "300Rnd 9.5x40mm JHP Box Magazine";
+	descriptionShort			= "300 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
+};
+
+class OPTRE_300Rnd_95x40_Box_JHPT: OPTRE_300Rnd_95x40_Box_JHP
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	ammo 						= "OPTRE_B_95x40_JHPT";
+	displayname 				= "300Rnd 9.5x40mm JHP Magazine (Tracer)";
+	descriptionShort			= "300 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+};
+
+class OPTRE_300Rnd_95x40_Box_HPSAP: OPTRE_300Rnd_95x40_Box_JHP
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_95x40_HPSAP";
+	displayname 				= "300Rnd 9.5x40mm HP-SAP Magazine";
+	descriptionShort			= "300 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
+};
+
+class OPTRE_300Rnd_95x40_Box_HPSAPT: OPTRE_300Rnd_95x40_Box_HPSAP
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	ammo 						= "OPTRE_B_95x40_JHPT";
+	displayname 				= "300Rnd 9.5x40mm HP-SAP Magazine (Tracer)";
+	descriptionShort			= "300 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+};
