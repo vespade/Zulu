@@ -1,7 +1,7 @@
 headgearList[]=
 {
 	"VES_S1ONIR", 1,
-	"VES_S1ONIR_S", .5,
+	"VES_S1ONIR_S", .5
 };
 linkedItems[]=
 {

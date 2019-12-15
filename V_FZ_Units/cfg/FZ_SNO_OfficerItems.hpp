@@ -1,6 +1,6 @@
 headgearList[]=
 {
-	"OPTRE_UNSC_PatrolCap_Marines", 1,
+	"OPTRE_UNSC_PatrolCap_Marines", 1
 };
 linkedItems[]=
 {

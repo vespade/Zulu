@@ -413,7 +413,7 @@ class CfgWeapons
 			"immersion_cigs_cigar1", .10,
 			"immersion_cigs_cigar2", .10,
 			"immersion_cigs_cigar3", .10,
-			"immersion_cigs_cigar4", .10,
+			"immersion_cigs_cigar4", .10
         };
 	};
 	class VES_CH252_MAR_Light: VES_CH252_MAR_Heavy

@@ -2,7 +2,7 @@ headgearList[]=
 {
 	"VES_CH252_SNO_Heavy", 1,
 	"OPTRE_UNSC_Dress_Hat", .15,
-	"VES_Beret_MP", .05,
+	"VES_Beret_MP", .05
 };
 linkedItems[]=
 {

@@ -34,6 +34,14 @@ class OPTRE_M7X: SO_M7_Base
 		"\A3\Weapons_F_Gamma\Smgs\pdw2000\data\Anim\SMG_03.rtm"
 	};
 	
+	hiddenSelections[] = 
+	{
+		"camo",
+		"camo1",
+		"camo2",
+		"camo3"
+	};
+	
 	hiddenSelectionsTextures[] = 
 	{
 		"\a3\weapons_f\acc\data\battlesight_co",
@@ -63,6 +71,7 @@ class OPTRE_M7X: SO_M7_Base
 		"OPTRE_48Rnd_5x23mm_Mag_JHP",
 		"OPTRE_48Rnd_5x23mm_Mag_JHPT"
 	};
+	magazineWell[] = {};
 	
 	class WeaponSlotsInfo
  	{

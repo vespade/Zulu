@@ -73,7 +73,7 @@ class OPTRE_M6S: SO_M6C_Base
 
 				"optre_m393_eotech",
 				"optre_m7_sight",
-				"optre_m6c_scope",
+				"optre_m6c_scope"
 			};
 		};
 		class PointerSlot: PointerSlot

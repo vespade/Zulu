@@ -17,7 +17,7 @@ class OPTRE_MA32XGL: OPTRE_MA5CXGL
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{
-		mass = 996;
+		mass = 99.6;
 		class CowsSlot: CowsSlot
 		{
 			compatibleitems[]=

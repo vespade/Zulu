@@ -31,7 +31,7 @@ Magazines[]=
 	"OPTRE_M2_Smoke_Red",
 	"OPTRE_M2_Smoke_Red",
 	"OPTRE_M2_Smoke_Green",
-	"OPTRE_M2_Smoke_Green",
+	"OPTRE_M2_Smoke_Green"
 };
 respawnMagazines[]=
 {
@@ -52,5 +52,5 @@ respawnMagazines[]=
 	"OPTRE_M2_Smoke_Red",
 	"OPTRE_M2_Smoke_Red",
 	"OPTRE_M2_Smoke_Green",
-	"OPTRE_M2_Smoke_Green",
+	"OPTRE_M2_Smoke_Green"
 };

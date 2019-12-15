@@ -2,7 +2,7 @@ headgearList[]=
 {
 	"VES_CH252A", 1,
 	"VES_CH252A_S", .25,
-	"VES_CH252A_G", .05,
+	"VES_CH252A_G", .05
 };
 linkedItems[]=
 {

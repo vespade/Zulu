@@ -74,12 +74,15 @@ class CfgWeapons
 	// Handguns
 	#include "cfg\M6\M6S.hpp"
 	#include "cfg\M6\M6D.hpp"
+	#include "cfg\M33\M33.hpp"
 	
 	// Domesticated (Vespade's) Marksman's Rifles
 	#include "cfg\M39\M392X.hpp"
 	#include "cfg\M39\M395X.hpp"
 	#include "cfg\M39\M395XS.hpp"
 	#include "cfg\M28\M28.hpp"
+	#include "cfg\MRS10\MRS10X.hpp"
+	#include "cfg\CR77\CR77.hpp"
 	
 	// Battle Rifles
 	#include "cfg\BR\BR55X.hpp"
@@ -100,6 +103,7 @@ class CfgWeapons
 	
 	// Shotguns
 	#include "cfg\M45\M45X.hpp"
+	#include "cfg\M90\M90X.hpp"
 	
 	// Why is this shit here? Because Arma for whatever reason reads it as defined in CfgWeapons, and that breaks shit.
 	class MuzzleSlot: MuzzleSlot{};

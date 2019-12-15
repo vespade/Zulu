@@ -2,7 +2,7 @@ headgearList[]=
 {
 	"VES_CH252_WDL_Light", .75,
 	"H_Booniehat_khk", .05,
-	"OPTRE_UNSC_PatrolCap_Marines", .1,
+	"OPTRE_UNSC_PatrolCap_Marines", .1
 };
 linkedItems[]=
 {

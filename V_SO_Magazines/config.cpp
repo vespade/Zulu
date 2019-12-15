@@ -46,6 +46,7 @@ class CfgAmmo
 	#include "cfg\ammo\5x23.hpp"
 	#include "cfg\ammo\212.hpp"
 	#include "cfg\ammo\40.hpp"
+	#include "cfg\ammo\86x70.hpp"
 };
 
 class CfgMagazines
@@ -58,4 +59,5 @@ class CfgMagazines
 	#include "cfg\magazines\50x137.hpp"
 	#include "cfg\magazines\212.hpp"
 	#include "cfg\magazines\40.hpp"
+	#include "cfg\magazines\86x70.hpp"
 };

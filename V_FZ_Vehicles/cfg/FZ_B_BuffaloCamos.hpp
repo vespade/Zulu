@@ -22,7 +22,7 @@ class textureSources
 			{
 				author="Vespade";
 				displayName="Urban";
-				textures[]={"\V_FZ_Vehicles\data\Buffalo\V_HDV134_URB_CO.paa","\V_FZ_Vehicles\data\Buffalo\V_HDV134_URB_A_CO.paa","\V_FZ_Vehicles\data\Buffalo\V_HDV134_URB_S_CO.paa""\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"};
+				textures[]={"\V_FZ_Vehicles\data\Buffalo\V_HDV134_URB_CO.paa","\V_FZ_Vehicles\data\Buffalo\V_HDV134_URB_A_CO.paa","\V_FZ_Vehicles\data\Buffalo\V_HDV134_URB_S_CO.paa","\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"};
 			};
 			class ves_black
 			{

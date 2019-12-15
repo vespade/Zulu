@@ -1,7 +1,7 @@
 headgearList[]=
 {
 	"VES_CH252_DES_Heavy", 1,
-	"OPTRE_UNSC_PatrolCap_Army", .1,
+	"OPTRE_UNSC_PatrolCap_Army", .1
 };
 linkedItems[]=
 {

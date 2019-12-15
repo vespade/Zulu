@@ -169,9 +169,10 @@ class OPTRE_300Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
 	count						= 300;
 	displayname 				= "300Rnd 9.5x40mm Box Magazine";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm";
+	mass						= 103.6;
 };
 
-class OPTRE_300Rnd_95x40_Box_JHP: OPTRE_100Rnd_95x40_Box
+class OPTRE_300Rnd_95x40_Box_JHP: OPTRE_300Rnd_95x40_Box
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";

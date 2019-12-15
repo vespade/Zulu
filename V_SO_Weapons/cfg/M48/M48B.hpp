@@ -9,7 +9,7 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 	displayName					= "M48B 'Cricket' PAW";
 	baseWeapon 					= "OPTRE_M48_PAW";
 	model                       = "\V_SO_Weapons\data\M48\M48B_Cricket.p3d";
-	picture 					= "\A3\Weapons_F_Enoch\Launchers\RPG32\Data\UI\icon_launch_RPG32_green_F_ca.paa";
+	picture 					= "\V_SO_Weapons\data\M48\M48B_Cricket.paa";
 	
 	ODST_1						= "OPTRE_ODST_HUD_AmmoCount_RL";
 	Glasses						= "OPTRE_GLASS_HUD_AmmoCount_RL";
