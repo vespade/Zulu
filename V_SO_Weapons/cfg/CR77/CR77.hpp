@@ -12,6 +12,8 @@ class OPTRE_CR77: OPTRE_M395X
 	handAnim[] 					= {"OFP2_ManSkeleton","\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\data\Anim\DMR_05.rtm"};
 	reloadAction 				= "GestureReloadDMR05";
 	
+	pictureWire 				= "\V_SO_Weapons\data\CR77\V_CR77_HUD_CA.paa";
+	
 	recoil 						= "recoil_dmr_05";
 	
 	magazines[] =
@@ -25,13 +27,13 @@ class OPTRE_CR77: OPTRE_M395X
 		"OPTRE_10Rnd_86x70_Mag_SS",
 		"OPTRE_10Rnd_86x70_Mag_FS",
 		"OPTRE_10Rnd_86x70_Mag_FST",
-		"OPTRE_20Rnd_86x70_Mag",
-		"OPTRE_20Rnd_86x70_Mag_Tracer",
-		"OPTRE_20Rnd_86x70_Mag_AP",
-		"OPTRE_20Rnd_86x70_Mag_APT",
-		"OPTRE_20Rnd_86x70_Mag_JHP",
-		"OPTRE_20Rnd_86x70_Mag_JHPT",
-		"OPTRE_20Rnd_86x70_Mag_SS"
+		"OPTRE_15Rnd_86x70_Mag",
+		"OPTRE_15Rnd_86x70_Mag_Tracer",
+		"OPTRE_15Rnd_86x70_Mag_AP",
+		"OPTRE_15Rnd_86x70_Mag_APT",
+		"OPTRE_15Rnd_86x70_Mag_JHP",
+		"OPTRE_15Rnd_86x70_Mag_JHPT",
+		"OPTRE_15Rnd_86x70_Mag_SS"
 	};
 	magazineWell[] = {};
 	
@@ -44,7 +46,7 @@ class OPTRE_CR77: OPTRE_M395X
 	hiddenSelectionsMaterials[] = 
 	{
 		"\V_SO_Weapons\Data\CR77\V_CR77.rvmat",
-		"\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\Data\DMR_05_02.rvmat";
+		"\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\Data\DMR_05_02.rvmat"
 	};
 	
 	hiddenSelectionsTextures[] = 

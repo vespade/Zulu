@@ -26,6 +26,11 @@ class CfgPatches
 	};
 };
 
+class CfgWeapons
+{
+	#include "cfg\Thermals.hpp"
+};
+
 class CfgAddons
 {
 	class PreloadAddons

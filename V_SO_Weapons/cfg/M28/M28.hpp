@@ -9,6 +9,7 @@ class OPTRE_M28A2: OPTRE_M395X
 	baseWeapon 					= "OPTRE_M28A2";
 	model                       = "\A3\Weapons_F_Exp\Rifles\ARX\ARX_F.p3d";
 	picture						= "\A3\Weapons_F_Exp\Rifles\ARX\Data\UI\arifle_ARX_blk_F_X_CA.paa";
+	pictureWire 				= "\V_SO_Weapons\data\M28\V_M28_HUD_CA.paa";
 	handAnim[]					= {"OFP2_ManSkeleton","\A3\Weapons_F_Exp\Rifles\ARX\data\anim\arx.rtm"};
 	muzzles[]					= {"this", "Secondary"};
 	reloadAction				= "GestureReloadARX";

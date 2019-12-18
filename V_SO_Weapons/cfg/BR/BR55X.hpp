@@ -32,6 +32,8 @@ class OPTRE_BR55X: SO_BR55_Base
 		"OPTRE_36Rnd_95x40_Mag_SS"
 	};
 	
+	class Burst;
+	
 	class WeaponSlotsInfo
  	{
 		mass = 82;

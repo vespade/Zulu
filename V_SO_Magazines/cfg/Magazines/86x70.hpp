@@ -1,5 +1,5 @@
-// 20 Round Magazines
-class OPTRE_20Rnd_86x70_Mag: OPTRE_32Rnd_762x51_Mag
+// 15 Round Magazines
+class OPTRE_15Rnd_86x70_Mag: OPTRE_32Rnd_762x51_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -7,22 +7,24 @@ class OPTRE_20Rnd_86x70_Mag: OPTRE_32Rnd_762x51_Mag
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_86x70_Ball";
-	count						= 20;
-	displayname 				= "20Rnd 8.6x70mm Magazine";
-	descriptionShort			= "20 Round Magazine<br>8.6x70mm";
+	count						= 15;
+	mass						= 9;
+	
+	displayname 				= "15Rnd 8.6x70mm Magazine";
+	descriptionShort			= "15 Round Magazine<br>8.6x70mm";
 };
 
-class OPTRE_20Rnd_86x70_Mag_Tracer: OPTRE_20Rnd_86x70_Mag
+class OPTRE_15Rnd_86x70_Mag_Tracer: OPTRE_15Rnd_86x70_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
 	ammo 						= "OPTRE_B_86x70_Ball_Tracer";
-	displayname 				= "20Rnd 8.6x70mm Magazine (Tracer)";
-	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Tracers";
+	displayname 				= "15Rnd 8.6x70mm Magazine (Tracer)";
+	descriptionShort			= "15 Round Magazine<br>8.6x70mm<br>Tracers";
 };
 
-class OPTRE_20Rnd_86x70_Mag_AP: OPTRE_20Rnd_86x70_Mag
+class OPTRE_15Rnd_86x70_Mag_AP: OPTRE_15Rnd_86x70_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -30,21 +32,21 @@ class OPTRE_20Rnd_86x70_Mag_AP: OPTRE_20Rnd_86x70_Mag
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_86x70_AP";
-	displayname 				= "20Rnd 8.6x70mm AP Magazine";
-	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Armor-Piercing";
+	displayname 				= "15Rnd 8.6x70mm AP Magazine";
+	descriptionShort			= "15 Round Magazine<br>8.6x70mm<br>Armor-Piercing";
 };
 
-class OPTRE_20Rnd_86x70_Mag_APT: OPTRE_20Rnd_86x70_Mag_AP
+class OPTRE_15Rnd_86x70_Mag_APT: OPTRE_15Rnd_86x70_Mag_AP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
 	ammo 						= "OPTRE_B_86x70_APT";
-	displayname 				= "20Rnd 8.6x70mm AP Magazine (Tracer)";
-	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Armor-Piercing<br>Tracers";
+	displayname 				= "15Rnd 8.6x70mm AP Magazine (Tracer)";
+	descriptionShort			= "15 Round Magazine<br>8.6x70mm<br>Armor-Piercing<br>Tracers";
 };
 
-class OPTRE_20Rnd_86x70_Mag_JHP: OPTRE_20Rnd_86x70_Mag
+class OPTRE_15Rnd_86x70_Mag_JHP: OPTRE_15Rnd_86x70_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -52,21 +54,21 @@ class OPTRE_20Rnd_86x70_Mag_JHP: OPTRE_20Rnd_86x70_Mag
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_86x70_JHP";
-	displayname 				= "20Rnd 8.6x70mm JHP Magazine";
-	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Jacketed Hollow-Point";
+	displayname 				= "15Rnd 8.6x70mm JHP Magazine";
+	descriptionShort			= "15 Round Magazine<br>8.6x70mm<br>Jacketed Hollow-Point";
 };
 
-class OPTRE_20Rnd_86x70_Mag_JHPT: OPTRE_20Rnd_86x70_Mag_JHP
+class OPTRE_15Rnd_86x70_Mag_JHPT: OPTRE_15Rnd_86x70_Mag_JHP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
 	ammo 						= "OPTRE_B_86x70_JHPT";
-	displayname 				= "20Rnd 8.6x70mm JHP Magazine (Tracer)";
-	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Jacketed Hollow-Point<br>Tracers";
+	displayname 				= "15Rnd 8.6x70mm JHP Magazine (Tracer)";
+	descriptionShort			= "15 Round Magazine<br>8.6x70mm<br>Jacketed Hollow-Point<br>Tracers";
 };
 
-class OPTRE_20Rnd_86x70_Mag_SS: OPTRE_20Rnd_86x70_Mag
+class OPTRE_15Rnd_86x70_Mag_SS: OPTRE_15Rnd_86x70_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -74,12 +76,12 @@ class OPTRE_20Rnd_86x70_Mag_SS: OPTRE_20Rnd_86x70_Mag
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_86x70_SS";
-	displayname 				= "20Rnd 8.6x70mm SS Magazine";
-	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Subsonic";
+	displayname 				= "15Rnd 8.6x70mm SS Magazine";
+	descriptionShort			= "15 Round Magazine<br>8.6x70mm<br>Subsonic";
 };
 
 // 10 Round Magazines
-class OPTRE_10Rnd_86x70_Mag: OPTRE_20Rnd_86x70_Mag
+class OPTRE_10Rnd_86x70_Mag: OPTRE_15Rnd_86x70_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -88,6 +90,8 @@ class OPTRE_10Rnd_86x70_Mag: OPTRE_20Rnd_86x70_Mag
 	
 	ammo 						= "OPTRE_B_86x70_Ball";
 	count						= 10;
+	mass						= 6;
+	
 	displayname 				= "10Rnd 8.6x70mm Magazine";
 	descriptionShort			= "10 Round Magazine<br>8.6x70mm";
 };
