@@ -159,6 +159,119 @@ class CfgWeapons
 		};
 	};
 	
+	class VES_NVG_CAM: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC Command Network Module";
+		model				= "V_FZ_Armor\Data\Attachments\Camera\V_CAM.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Camera\V_CAM_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Camera\V_CAM.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Camera\V_CAM.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_COMMS: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC Communications Array";
+		model				= "V_FZ_Armor\Data\Attachments\Comms\V_COMMS.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Comms\V_COMMS_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Comms\V_COMMS.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Comms\V_COMMS.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_UA: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC Up-Armor Module";
+		model				= "V_FZ_Armor\Data\Attachments\UA\V_UA.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\UA\V_UA_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\UA\V_UA.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\UA\V_UA.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	// Mixed Versions of NVGoggles
+	class VES_NVG_COMMS_CAM: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC CNM/CA";
+		model				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMS.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMS_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMS.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMS.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_COMMS_UA: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC CNM/UA";
+		model				= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSUA.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSUA_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSUA.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSUA.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_CAM_UA: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC CNM/UA";
+		model				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMUA.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMUA_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMUA.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMUA.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_COMMS_CAM_UA: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC CNM/CA/UA";
+		model				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSUA.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSUA_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSUA.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSUA.p3d";
+			mass 			= 6;
+		};
+	};
+	
 	// Hats & Berets
 	class H_Beret_Colonel;
 	class HeadgearItem;

@@ -85,3 +85,20 @@ class OPTRE_M33: SO_M33_Base
 		};
 	};
 };
+
+class OPTRE_M33G: OPTRE_M33
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName					= "Model 33 'Godfather' Handgun (Gold)";
+	baseWeapon 					= "OPTRE_M33G";
+	
+	hiddenSelectionsTextures[] = 
+	{
+		"\V_SO_Weapons\data\M33\V_M33_G_CO.paa",
+		"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
+	};
+};

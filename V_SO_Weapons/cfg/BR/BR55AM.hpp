@@ -10,6 +10,9 @@ class OPTRE_BR55AM: OPTRE_BR55XHB
 	
 	recoil						= "recoil_dmr_04";
 	
+	Eye 						= "OPTRE_EYE_HUD_AmmoCount_PistolSmart";
+	Glasses 					= "OPTRE_GLASS_HUD_AmmoCount_PistolODST";
+	ODST_1 						= "OPTRE_ODST_HUD_AmmoCount_PistolODST";
 	HUD_BulletInARows 			= 1;
 	HUD_TotalPosibleBullet 		= 16;
 	

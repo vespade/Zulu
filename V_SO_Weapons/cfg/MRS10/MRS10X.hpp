@@ -9,11 +9,14 @@ class OPTRE_MRS10X: OPTRE_M395X
 	baseWeapon 					= "OPTRE_MRS10X";
 	model 						= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\DMR_02_F.p3d";
 	picture 					= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_X_CA.paa";
-	pictureWire 				= "\V_SO_Weapons\data\MRS10\V_MRS10_HUD_CA.paa";
 	handAnim[] 					= {"OFP2_ManSkeleton","\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\data\Anim\DMR_02.rtm"};
 	reloadAction 				= "GestureReloadDMR02";
 	
 	recoil 						= "recoil_dmr_02";
+	
+	Eye 						= "";
+	Glasses 					= "";
+	ODST_1 						= "";
 	
 	magazines[]=
 	{
@@ -26,13 +29,13 @@ class OPTRE_MRS10X: OPTRE_M395X
 		"OPTRE_10Rnd_86x70_Mag_SS",
 		"OPTRE_10Rnd_86x70_Mag_FS",
 		"OPTRE_10Rnd_86x70_Mag_FST",
-		"OPTRE_15Rnd_86x70_Mag",
-		"OPTRE_15Rnd_86x70_Mag_Tracer",
-		"OPTRE_15Rnd_86x70_Mag_AP",
-		"OPTRE_15Rnd_86x70_Mag_APT",
-		"OPTRE_15Rnd_86x70_Mag_JHP",
-		"OPTRE_15Rnd_86x70_Mag_JHPT",
-		"OPTRE_15Rnd_86x70_Mag_SS"
+		"OPTRE_20Rnd_86x70_Mag",
+		"OPTRE_20Rnd_86x70_Mag_Tracer",
+		"OPTRE_20Rnd_86x70_Mag_AP",
+		"OPTRE_20Rnd_86x70_Mag_APT",
+		"OPTRE_20Rnd_86x70_Mag_JHP",
+		"OPTRE_20Rnd_86x70_Mag_JHPT",
+		"OPTRE_20Rnd_86x70_Mag_SS"
 	};
 	
 	hiddenSelections[] = 
