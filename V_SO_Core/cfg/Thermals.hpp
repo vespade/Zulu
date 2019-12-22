@@ -305,6 +305,106 @@ class A3_TVG_S_F8_COMMS_UA: A3_TVG_S_F_COMMS_UA
 	};
 };
 
+// Zulu Compat (CNM/UA)
+class VES_NVG_CAM_UA;
+class A3_TVG_S_F_CAM_UA: VES_NVG_CAM_UA
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	displayName					= "Mark 2 Interface (CNM/UA)";
+	
+	ace_nightVision_grain 		= 0;
+	ace_nightVision_blur 		= 0;
+	ace_nightVision_radBlur 	= 0;
+	ace_nightvision_border 		= "";
+	ace_nightvision_bluRadius 	= 0.05;
+	ace_nightvision_generation 	= 4;
+	ace_nightvision_eyeCups 	= 0;
+	
+	thermalMode[] =
+	{
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7
+	};
+	
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+};
+
+class A3_TVG_S_F2_CAM_UA: A3_TVG_S_F_CAM_UA
+{
+	displayName 				= "Mark 3 Interface (CNM/UA)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		3,
+		4,
+		7
+	};
+};
+
+class A3_TVG_S_F3_CAM_UA: A3_TVG_S_F_CAM_UA
+{
+	displayName 				= "Mark 4 Interface (CNM/UA)";
+	thermalMode[] =
+	{
+		0,
+		1,
+		6,
+		7
+	};
+};
+
+class A3_TVG_S_F45_CAM_UA: A3_TVG_S_F_CAM_UA
+{
+	displayName 				= "Mark 5 Interface (CNM/UA)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		7
+	};
+};
+
+class A3_TVG_S_F6_CAM_UA: A3_TVG_S_F_CAM_UA
+{
+	displayName 				= "Mark 6 Interface (CNM/UA)";
+	thermalMode[] = 
+	{
+		0
+	};
+};
+
+class A3_TVG_S_F7_CAM_UA: A3_TVG_S_F_CAM_UA
+{
+	displayName				 	= "Mark 7 Interface (CNM/UA)";
+	thermalMode[] = 
+	{
+		6
+	};
+};
+
+class A3_TVG_S_F8_CAM_UA: A3_TVG_S_F_CAM_UA
+{
+	displayName 				= "Mark 8 Interface (CNM/UA)";
+	thermalMode[] = 
+	{
+		7
+	};
+};
+
 // Zulu Compat (CNM/CA/UA)
 class VES_NVG_COMMS_CAM_UA;
 class A3_TVG_S_F_COMMS_CAM_UA: VES_NVG_COMMS_CAM_UA
@@ -399,6 +499,306 @@ class A3_TVG_S_F7_COMMS_CAM_UA: A3_TVG_S_F_COMMS_CAM_UA
 class A3_TVG_S_F8_COMMS_CAM_UA: A3_TVG_S_F_COMMS_CAM_UA
 {
 	displayName 				= "Mark 8 Interface (CNM/CA/UA)";
+	thermalMode[] = 
+	{
+		7
+	};
+};
+
+// Zulu Compat (Comms/OD)
+class VES_NVG_COMMS_SCOPE;
+class A3_TVG_S_F_COMMS_SCOPE: VES_NVG_COMMS_SCOPE
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	displayName					= "Mark 2 Interface (CA/OD)";
+	
+	ace_nightVision_grain 		= 0;
+	ace_nightVision_blur 		= 0;
+	ace_nightVision_radBlur 	= 0;
+	ace_nightvision_border 		= "";
+	ace_nightvision_bluRadius 	= 0.05;
+	ace_nightvision_generation 	= 4;
+	ace_nightvision_eyeCups 	= 0;
+	
+	thermalMode[] =
+	{
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7
+	};
+	
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+};
+
+class A3_TVG_S_F2_COMMS_SCOPE: A3_TVG_S_F_COMMS_SCOPE
+{
+	displayName 				= "Mark 3 Interface (CA/OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		3,
+		4,
+		7
+	};
+};
+
+class A3_TVG_S_F3_COMMS_SCOPE: A3_TVG_S_F_COMMS_SCOPE
+{
+	displayName 				= "Mark 4 Interface (CA/OD)";
+	thermalMode[] =
+	{
+		0,
+		1,
+		6,
+		7
+	};
+};
+
+class A3_TVG_S_F45_COMMS_SCOPE: A3_TVG_S_F_COMMS_SCOPE
+{
+	displayName 				= "Mark 5 Interface (CA/OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		7
+	};
+};
+
+class A3_TVG_S_F6_COMMS_SCOPE: A3_TVG_S_F_COMMS_SCOPE
+{
+	displayName 				= "Mark 6 Interface (CA/OD)";
+	thermalMode[] = 
+	{
+		0
+	};
+};
+
+class A3_TVG_S_F7_COMMS_SCOPE: A3_TVG_S_F_COMMS_SCOPE
+{
+	displayName				 	= "Mark 7 Interface (CA/OD)";
+	thermalMode[] = 
+	{
+		6
+	};
+};
+
+class A3_TVG_S_F8_COMMS_SCOPE: A3_TVG_S_F_COMMS_SCOPE
+{
+	displayName 				= "Mark 8 Interface (CA/OD)";
+	thermalMode[] = 
+	{
+		7
+	};
+};
+
+// Zulu Compat (CNM/OD)
+class VES_NVG_CAM_SCOPE;
+class A3_TVG_S_F_CAM_SCOPE: VES_NVG_CAM_SCOPE
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	displayName					= "Mark 2 Interface (CNM/OD)";
+	
+	ace_nightVision_grain 		= 0;
+	ace_nightVision_blur 		= 0;
+	ace_nightVision_radBlur 	= 0;
+	ace_nightvision_border 		= "";
+	ace_nightvision_bluRadius 	= 0.05;
+	ace_nightvision_generation 	= 4;
+	ace_nightvision_eyeCups 	= 0;
+	
+	thermalMode[] =
+	{
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7
+	};
+	
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+};
+
+class A3_TVG_S_F2_CAM_SCOPE: A3_TVG_S_F_CAM_SCOPE
+{
+	displayName 				= "Mark 3 Interface (CNM/OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		3,
+		4,
+		7
+	};
+};
+
+class A3_TVG_S_F3_CAM_SCOPE: A3_TVG_S_F_CAM_SCOPE
+{
+	displayName 				= "Mark 4 Interface (CNM/OD)";
+	thermalMode[] =
+	{
+		0,
+		1,
+		6,
+		7
+	};
+};
+
+class A3_TVG_S_F45_CAM_SCOPE: A3_TVG_S_F_CAM_SCOPE
+{
+	displayName 				= "Mark 5 Interface (CNM/OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		7
+	};
+};
+
+class A3_TVG_S_F6_CAM_SCOPE: A3_TVG_S_F_CAM_SCOPE
+{
+	displayName 				= "Mark 6 Interface (CNM/OD)";
+	thermalMode[] = 
+	{
+		0
+	};
+};
+
+class A3_TVG_S_F7_CAM_SCOPE: A3_TVG_S_F_CAM_SCOPE
+{
+	displayName				 	= "Mark 7 Interface (CNM/OD)";
+	thermalMode[] = 
+	{
+		6
+	};
+};
+
+class A3_TVG_S_F8_CAM_SCOPE: A3_TVG_S_F_CAM_SCOPE
+{
+	displayName 				= "Mark 8 Interface (CNM/OD)";
+	thermalMode[] = 
+	{
+		7
+	};
+};
+
+// Zulu Compat (CNM/CA/OD)
+class VES_NVG_COMMS_CAM_SCOPE;
+class A3_TVG_S_F_COMMS_CAM_SCOPE: VES_NVG_COMMS_CAM_SCOPE
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	displayName					= "Mark 2 Interface (CNM/CA/OD)";
+	
+	ace_nightVision_grain 		= 0;
+	ace_nightVision_blur 		= 0;
+	ace_nightVision_radBlur 	= 0;
+	ace_nightvision_border 		= "";
+	ace_nightvision_bluRadius 	= 0.05;
+	ace_nightvision_generation 	= 4;
+	ace_nightvision_eyeCups 	= 0;
+	
+	thermalMode[] =
+	{
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7
+	};
+	
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+};
+
+class A3_TVG_S_F2_COMMS_CAM_SCOPE: A3_TVG_S_F_COMMS_CAM_SCOPE
+{
+	displayName 				= "Mark 3 Interface (CNM/CA/OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		3,
+		4,
+		7
+	};
+};
+
+class A3_TVG_S_F3_COMMS_CAM_SCOPE: A3_TVG_S_F_COMMS_CAM_SCOPE
+{
+	displayName 				= "Mark 4 Interface (CNM/CA/OD)";
+	thermalMode[] =
+	{
+		0,
+		1,
+		6,
+		7
+	};
+};
+
+class A3_TVG_S_F45_COMMS_CAM_SCOPE: A3_TVG_S_F_COMMS_CAM_SCOPE
+{
+	displayName 				= "Mark 5 Interface (CNM/CA/OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		7
+	};
+};
+
+class A3_TVG_S_F6_COMMS_CAM_SCOPE: A3_TVG_S_F_COMMS_CAM_SCOPE
+{
+	displayName 				= "Mark 6 Interface (CNM/CA/OD)";
+	thermalMode[] = 
+	{
+		0
+	};
+};
+
+class A3_TVG_S_F7_COMMS_CAM_SCOPE: A3_TVG_S_F_COMMS_CAM_SCOPE
+{
+	displayName				 	= "Mark 7 Interface (CNM/CA/OD)";
+	thermalMode[] = 
+	{
+		6
+	};
+};
+
+class A3_TVG_S_F8_COMMS_CAM_SCOPE: A3_TVG_S_F_COMMS_CAM_SCOPE
+{
+	displayName 				= "Mark 8 Interface (CNM/CA/OD)";
 	thermalMode[] = 
 	{
 		7
@@ -699,6 +1099,106 @@ class A3_TVG_S_F7_UA: A3_TVG_S_F_UA
 class A3_TVG_S_F8_UA: A3_TVG_S_F_UA
 {
 	displayName 				= "Mark 8 Interface (UA)";
+	thermalMode[] = 
+	{
+		7
+	};
+};
+
+// Zulu Compat (OD)
+class VES_NVG_SCOPE;
+class A3_TVG_S_F_SCOPE: VES_NVG_SCOPE
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	displayName					= "Mark 2 Interface (OD)";
+	
+	ace_nightVision_grain 		= 0;
+	ace_nightVision_blur 		= 0;
+	ace_nightVision_radBlur 	= 0;
+	ace_nightvision_border 		= "";
+	ace_nightvision_bluRadius 	= 0.05;
+	ace_nightvision_generation 	= 4;
+	ace_nightvision_eyeCups 	= 0;
+	
+	thermalMode[] =
+	{
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7
+	};
+	
+	visionMode[]=
+	{
+		"Normal",
+		"NVG",
+		"TI"
+	};
+};
+
+class A3_TVG_S_F2_SCOPE: A3_TVG_S_F_SCOPE
+{
+	displayName 				= "Mark 3 Interface (OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		3,
+		4,
+		7
+	};
+};
+
+class A3_TVG_S_F3_SCOPE: A3_TVG_S_F_SCOPE
+{
+	displayName 				= "Mark 4 Interface (OD)";
+	thermalMode[] =
+	{
+		0,
+		1,
+		6,
+		7
+	};
+};
+
+class A3_TVG_S_F45_SCOPE: A3_TVG_S_F_SCOPE
+{
+	displayName 				= "Mark 5 Interface (OD)";
+	thermalMode[] = 
+	{
+		0,
+		1,
+		7
+	};
+};
+
+class A3_TVG_S_F6_SCOPE: A3_TVG_S_F_SCOPE
+{
+	displayName 				= "Mark 6 Interface (OD)";
+	thermalMode[] = 
+	{
+		0
+	};
+};
+
+class A3_TVG_S_F7_SCOPE: A3_TVG_S_F_SCOPE
+{
+	displayName				 	= "Mark 7 Interface (OD)";
+	thermalMode[] = 
+	{
+		6
+	};
+};
+
+class A3_TVG_S_F8_SCOPE: A3_TVG_S_F_SCOPE
+{
+	displayName 				= "Mark 8 Interface (OD)";
 	thermalMode[] = 
 	{
 		7

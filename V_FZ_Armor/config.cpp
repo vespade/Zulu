@@ -207,6 +207,22 @@ class CfgWeapons
 		};
 	};
 	
+	class VES_NVG_SCOPE: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC Optics Device";
+		model				= "V_FZ_Armor\Data\Attachments\SCOPE\V_SCOPE_OFF.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\SCOPE\V_SCOPE_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\SCOPE\V_SCOPE_ON.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\SCOPE\V_SCOPE_OFF.p3d";
+			mass 			= 6;
+		};
+	};
+	
 	// Mixed Versions of NVGoggles
 	class VES_NVG_COMMS_CAM: NVGoggles
 	{
@@ -268,6 +284,54 @@ class CfgWeapons
 			type 			= 616;
 			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSUA.p3d";
 			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSUA.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_COMMS_SCOPE: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC CA/OD";
+		model				= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSSCOPE_OFF.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSSCOPE_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSSCOPE_ON.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_COMMSSCOPE_OFF.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_CAM_SCOPE: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC CNM/OD";
+		model				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMSCOPE_OFF.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMSCOPE_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMSCOPE_ON.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMSCOPE_OFF.p3d";
+			mass 			= 6;
+		};
+	};
+	
+	class VES_NVG_COMMS_CAM_SCOPE: NVGoggles
+	{
+		dlc 				= "Zulu";
+		author 				= "Vespade";
+		displayName			= "UNSC CNM/CA/OD";
+		model				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSSCOPE_OFF.p3d";
+		picture				= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSSCOPE_CA.paa";
+		class ItemInfo
+		{
+			type 			= 616;
+			uniformModel 	= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSSCOPE_ON.p3d";
+			modelOff 		= "V_FZ_Armor\Data\Attachments\Mixed\V_CAMCOMMSSCOPE_OFF.p3d";
 			mass 			= 6;
 		};
 	};
