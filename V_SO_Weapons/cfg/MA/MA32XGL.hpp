@@ -9,10 +9,10 @@ class OPTRE_MA32XGL: OPTRE_MA5CXGL
 	baseWeapon 					= "OPTRE_MA32XGL";
 	model                       = "\OPTRE_Weapons\AR\MA37IGL.p3d";
 	
-	handAnim[]=
+	handAnim[] = 
 	{
-		"OFP2_ManSkeleton",
-		"\OPTRE_Weapons\AR\Data\Anim\hand_anim_ma37.rtm"
+		"OFP2_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma37.rtm",
+		"Spartan_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma37_Spartan.rtm"
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
@@ -58,7 +58,17 @@ class OPTRE_MA32XGL: OPTRE_MA5CXGL
 				"optre_m7_sight",
 				"optre_m393_acog",
 				"optre_m392_scope",
-				"optre_br55hb_scope"
+				"optre_br55hb_scope",
+				
+				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_M73_Smartlink_v2",
+				"OPTRE_M6S_Scope",
+				"OPTRE_M7_Sight_v2",
+				"OPTRE_M392_Scope_v2",
+				"OPTRE_M393_Scope_v2",
+				"OPTRE_M393_ACOG_v2",
+				"OPTRE_M393_EOTECH_v2",
+				"OPTRE_BR55HB_Scope_v2"
 			};
 		};
 	};

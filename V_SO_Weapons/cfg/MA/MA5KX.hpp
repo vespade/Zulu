@@ -21,10 +21,10 @@ class OPTRE_MA5KX: OPTRE_MA5CX
 		"OPTRE_32Rnd_762x51_Mag_UW"
 	};
 	
-	handAnim[]=
+	handanim[] = 
 	{
-		"OFP2_ManSkeleton",
-		"\OPTRE_Weapons\AR\Data\Anim\hand_anim_ma5k.rtm"
+		"OFP2_ManSkeleton","OPTRE_Weapons\ar\data\anim\hand_anim_ma5k.rtm",
+		"Spartan_ManSkeleton","OPTRE_Weapons\ar\data\anim\ma5k_handanim_Spartan.rtm"
 	};
 	
 	class Single: Single

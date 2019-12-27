@@ -78,7 +78,22 @@ class OPTRE_M45X: SO_M45_Base
 				"optre_m393_scope",
 				"optre_m392_scope",
 				"optre_br55hb_scope",
-				"optre_m6c_scope"
+				"optre_m6c_scope",
+				
+				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_M73_Smartlink_v2",
+				"OPTRE_M6S_Scope",
+				"OPTRE_MA5_Smartlink",
+				"OPTRE_MA5_SmartLink_v2",
+				"OPTRE_MA5C_SmartLink_v2",
+				"OPTRE_MA5_SmartLink_legacy",
+				"OPTRE_MA5C_SmartLink_legacy",
+				"OPTRE_M7_Sight_v2",
+				"OPTRE_M392_Scope_v2",
+				"OPTRE_M393_Scope_v2",
+				"OPTRE_M393_ACOG_v2",
+				"OPTRE_M393_EOTECH_v2",
+				"OPTRE_BR55HB_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot

@@ -73,7 +73,7 @@ class CfgWeapons
 	
 	// Handguns
 	#include "cfg\M6\M6S.hpp"
-	#include "cfg\M6\M6D.hpp"
+	#include "cfg\M6\M6GX.hpp"
 	#include "cfg\M33\M33.hpp"
 	
 	// Domesticated (Vespade's) Marksman's Rifles
@@ -107,4 +107,16 @@ class CfgWeapons
 	
 	// Why is this shit here? Because Arma for whatever reason reads it as defined in CfgWeapons, and that breaks shit.
 	class MuzzleSlot: MuzzleSlot{};
+};
+
+class CfgRecoils
+{
+	class recoil_M7X
+	{
+		muzzleOuter[] 			= {"0.075*0.2","0.64*1","0.315*1","0.21*1"};
+		kickBack[] 				= {"0.015*1.4","0.04*1.4"};
+		temporary 				= "0.010*1.2";
+		muzzleInner[] 			= {0,0,0.05,0.05};
+		permanent 				= "0.05*0.4";
+	};
 };

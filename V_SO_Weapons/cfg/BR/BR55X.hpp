@@ -87,7 +87,17 @@ class OPTRE_BR55X: SO_BR55_Base
 				"optre_m393_acog",
 				"optre_m393_scope",
 				"optre_m392_scope",
-				"optre_br55hb_scope"
+				"optre_br55hb_scope",
+				
+				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_M73_Smartlink_v2",
+				"OPTRE_M6S_Scope",
+				"OPTRE_M7_Sight_v2",
+				"OPTRE_M392_Scope_v2",
+				"OPTRE_M393_Scope_v2",
+				"OPTRE_M393_ACOG_v2",
+				"OPTRE_M393_EOTECH_v2",
+				"OPTRE_BR55HB_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot

@@ -10,10 +10,10 @@ class OPTRE_M395X: OPTRE_M392X
 	model                       = "\OPTRE_Weapons\DMR\M395.p3d";
 	picture 					= "\OPTRE_Weapons\DMR\icons\M395_Icon.paa";
 	
-	handAnim[]=
+	handAnim[] = 
 	{
-		"OFP2_ManSkeleton",
-		"\OPTRE_Weapons\DMR\Anim\Handanim_M395.rtm"
+		"OFP2_ManSkeleton", "\OPTRE_Weapons\DMR\anim\Handanim_M395.rtm",
+		"Spartan_ManSkeleton", "\OPTRE_Weapons\DMR\anim\Handanim_M395_Spartan.rtm"
 	};
 	
 	class Single;
@@ -77,7 +77,17 @@ class OPTRE_M395X: OPTRE_M392X
 				"optre_m393_scope",
 				"optre_m392_scope",
 				"optre_br55hb_scope",
-				"optre_m6c_scope"
+				"optre_m6c_scope",
+				
+				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_M73_Smartlink_v2",
+				"OPTRE_M6S_Scope",
+				"OPTRE_M7_Sight_v2",
+				"OPTRE_M392_Scope_v2",
+				"OPTRE_M393_Scope_v2",
+				"OPTRE_M393_ACOG_v2",
+				"OPTRE_M393_EOTECH_v2",
+				"OPTRE_BR55HB_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot

@@ -4,15 +4,15 @@ class SO_M6G_Base: OPTRE_M6G
 	class WeaponSlotsInfo;
 };
 
-class OPTRE_M6D: SO_M6G_Base
+class OPTRE_M6GX: SO_M6G_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "M6D Magnum";
-	baseWeapon 					= "OPTRE_M6D";
+	displayName					= "M6GX Magnum";
+	baseWeapon 					= "OPTRE_M6GX";
 	model                       = "\OPTRE_Weapons\Pistol\M6G.p3d";
 	
 	magazines[]=
@@ -42,7 +42,8 @@ class OPTRE_M6D: SO_M6G_Base
 		{
 			compatibleitems[]=
 			{
-				"optre_m6_silencer"
+				"optre_m6_silencer",
+				"optre_m6c_compensator"
 			};
 		};
 		class CowsSlot: CowsSlot
@@ -61,14 +62,21 @@ class OPTRE_M6D: SO_M6G_Base
 				"optre_m393_eotech",
 				"optre_m7_sight",
 				"optre_m6c_scope",
-				"optre_m6g_scope"
+				"optre_m6g_scope",
+				
+				"OPTRE_M6S_Scope",
+				"OPTRE_M6GX_Scope",
+				"OPTRE_M7_Sight_v2",
+				"OPTRE_M393_EOTECH_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
 		{
 			compatibleitems[]=
 			{
-				"optre_m6g_flashlight"
+				"optre_m6g_flashlight",
+				"optre_m6c_laser",
+				"acc_flashlight_pistol"
 			};
 		};
 	};

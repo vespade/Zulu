@@ -11,6 +11,9 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 	model                       = "\V_SO_Weapons\data\M48\M48B_Cricket.p3d";
 	picture 					= "\V_SO_Weapons\data\M48\M48B_Cricket.paa";
 	
+	initSpeed 					= 80;
+	modelOptics					= "\OPTRE_Weapons\Rockets\M41_Optic.p3d";
+	
 	ODST_1						= "OPTRE_ODST_HUD_AmmoCount_RL";
 	Glasses						= "OPTRE_GLASS_HUD_AmmoCount_RL";
 	Eye							= "OPTRE_EYE_HUD_AmmoCount_RL";
@@ -31,10 +34,10 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 		1,
 		50
 	};
-	handAnim[]=
+	handAnim[] = 
 	{
-		"OFP2_ManSkeleton",
-		"\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"
+		"OFP2_ManSkeleton","\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm",
+		"Spartan_ManSkeleton","\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim_Spartan.rtm"
 	};
 	
 	class WeaponSlotsInfo
@@ -74,7 +77,14 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 				"optre_m7_sight",
 				"optre_m393_acog",
 				"optre_m392_scope",
-				"optre_m6c_scope"
+				"optre_m6c_scope",
+				
+				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_M6S_Scope",
+				"OPTRE_M7_Sight_v2",
+				"OPTRE_M392_Scope_v2",
+				"OPTRE_M393_ACOG_v2",
+				"OPTRE_M393_EOTECH_v2",
 			};
 		};
 		class PointerSlot: PointerSlot

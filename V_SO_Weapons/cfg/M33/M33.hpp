@@ -71,7 +71,10 @@ class OPTRE_M33: SO_M33_Base
 				"optic_mrd_black",
 
 				"optre_m393_eotech",
-				"optre_m6c_scope"
+				"optre_m6c_scope",
+				
+				"OPTRE_M6S_Scope",
+				"OPTRE_M393_EOTECH_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -79,7 +82,6 @@ class OPTRE_M33: SO_M33_Base
 			compatibleitems[]=
 			{
 				"optre_m6g_flashlight",
-				"optre_m6c_laser",
 				"acc_flashlight_pistol"
 			};
 		};

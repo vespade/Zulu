@@ -4,18 +4,6 @@ class SO_M7_Base: OPTRE_M7
 	class WeaponSlotsInfo;
 };
 
-class CfgRecoils
-{
-	class M7X_Recoil
-	{
-		muzzleOuter[] 			= {"0.075*0.2","0.64*1","0.315*1","0.21*1"};
-		kickBack[] 				= {"0.015*1.4","0.04*1.4"};
-		temporary 				= "0.010*1.2";
-		muzzleInner[] 			= {0,0,0.05,0.05};
-		permanent 				= "0.05*0.4";
-	};
-};
-
 class OPTRE_M7X: SO_M7_Base
 {
 	dlc							= "SO";
@@ -25,32 +13,12 @@ class OPTRE_M7X: SO_M7_Base
 	
 	displayName					= "M7X Caseless SMG";
 	baseWeapon 					= "OPTRE_M7X";
-	model 						= "\A3\Weapons_F_gamma\Smgs\pdw2000\pdw2000_F.p3d";
-	picture 					= "\A3\Weapons_F_gamma\Smgs\pdw2000\data\UI\gear_pdw2X_X_CA.paa";
+	model 						= "\OPTRE_Weapons\SMG\SMG.p3d";
 	
-	handAnim[] = 
-	{
-		"OFP2_ManSkeleton",
-		"\A3\Weapons_F_Gamma\Smgs\pdw2000\data\Anim\SMG_03.rtm"
-	};
+	recoil						= "recoil_M7X";
 	
-	hiddenSelections[] = 
-	{
-		"camo",
-		"camo1",
-		"camo2",
-		"camo3"
-	};
-	
-	hiddenSelectionsTextures[] = 
-	{
-		"\a3\weapons_f\acc\data\battlesight_co",
-		"\a3\weapons_f\rifles\mx\data\xmx_handle_co",
-		"\a3\weapons_f_gamma\smgs\pdw2000\data\pdw2000_ammo_ca",
-		"\a3\weapons_f_gamma\smgs\pdw2000\data\pdw2000_co"
-	};
-	
-	//recoil						= "M7X_Recoil";
+	class Single;
+	class FullAuto;
 	
 	magazines[]=
 	{
@@ -118,9 +86,7 @@ class OPTRE_M7X: SO_M7_Base
 				"optic_aco_grn_smg",
 				"optic_holosight_smg_blk_f",
 				"optic_mrd_black",
-
-				"optre_srs99_scope",
-				"optre_srs99c_scope",
+				
 				"optre_ma5_buis",
 				"optre_m393_eotech",
 				"optre_m73_smartlink",
@@ -128,7 +94,16 @@ class OPTRE_M7X: SO_M7_Base
 				"optre_m393_scope",
 				"optre_m392_scope",
 				"optre_br55hb_scope",
-				"optre_m6c_scope"
+				"optre_m6c_scope",
+				
+				"OPTRE_M73_Smartlink_v2",
+				"OPTRE_M6S_Scope",
+				"OPTRE_M7_Sight_v2",
+				"OPTRE_M392_Scope_v2",
+				"OPTRE_M393_Scope_v2",
+				"OPTRE_M393_ACOG_v2",
+				"OPTRE_M393_EOTECH_v2",
+				"OPTRE_BR55HB_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -143,3 +118,31 @@ class OPTRE_M7X: SO_M7_Base
 		};
 	};
 };
+
+class OPTRE_M7X_Folded: OPTRE_M7X
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName                                                             	= "M7X Caseless SMG (Folded)";
+	descriptionShort                                                    		= "UNSC M7X SMG (Folded)";
+	baseWeapon 																	= "OPTRE_M7X_Folded";
+	model                                                                   	= "\OPTRE_Weapons\SMG\SMG_folded.p3d";
+	
+	handAnim[]                                                            		= {"OFP2_ManSkeleton"};
+	reloadAction 																= "GestureReloadPistol";
+	type 																		= 2;
+	
+	class Single: Single
+	{	
+		recoil 																	= "recoil_single_mx";
+		recoilProne 															= "recoil_single_prone_mx";
+	};
+	class FullAuto: FullAuto
+	{	
+		recoil 																	= "recoil_single_mx";
+		recoilProne 															= "recoil_single_prone_mx";
+	};
+};	
