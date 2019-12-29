@@ -95,6 +95,7 @@ class OPTRE_M7X: SO_M7_Base
 				"optre_m392_scope",
 				"optre_br55hb_scope",
 				"optre_m6c_scope",
+				"OPTRE_BMR_Scope",
 				
 				"OPTRE_M73_Smartlink_v2",
 				"OPTRE_M6S_Scope",
@@ -103,17 +104,23 @@ class OPTRE_M7X: SO_M7_Base
 				"OPTRE_M393_Scope_v2",
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
-				"OPTRE_BR55HB_Scope_v2"
+				"OPTRE_BR55HB_Scope_v2",
+				"OPTRE_BMR_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
 		{
 			compatibleitems[]=
 			{
+				"acc_pointer_ir",
+				"ace_acc_pointer_green",
+				"acc_flashlight",
+				
 				"optre_m45_flashlight",
 				"optre_m45_flashlight_red",
 				"optre_m7_laser",
-				"optre_m7_flashlight"
+				"optre_m7_flashlight",
+				"OPTRE_BMR_Laser"
 			};
 		};
 	};

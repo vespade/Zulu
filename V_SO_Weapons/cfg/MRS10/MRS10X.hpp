@@ -127,8 +127,10 @@ class OPTRE_MRS10X: OPTRE_M395X
 				"optre_m392_scope",
 				"optre_br55hb_scope",
 				"optre_m6c_scope",
+				"OPTRE_BMR_Scope",
 				
 				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_SRS99C_Scope_v2",
 				"OPTRE_M73_Smartlink_v2",
 				"OPTRE_M6S_Scope",
 				"OPTRE_M7_Sight_v2",
@@ -136,7 +138,8 @@ class OPTRE_MRS10X: OPTRE_M395X
 				"OPTRE_M393_Scope_v2",
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
-				"OPTRE_BR55HB_Scope_v2"
+				"OPTRE_BR55HB_Scope_v2",
+				"OPTRE_BMR_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -148,7 +151,8 @@ class OPTRE_MRS10X: OPTRE_M395X
 				"acc_flashlight",
 
 				"optre_m45_flashlight",
-				"optre_m45_flashlight_red"
+				"optre_m45_flashlight_red",
+				"OPTRE_BMR_Laser"
 			};
 		};
 	};

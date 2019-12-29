@@ -1,40 +1,53 @@
-class OPTRE_SRS99C;
-class SO_SRS_Base: OPTRE_SRS99C
-{
-	class WeaponSlotsInfo;
-};
-
-class OPTRE_SRS99CX: OPTRE_SRS99C
+class srifle_DMR_06_camo_F;
+class OPTRE_M14X: srifle_DMR_06_camo_F
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "SRS99CX-S2 AM Sniper Rifle";
-	baseWeapon 					= "OPTRE_SRS99CX";
-	model                       = "\OPTRE_Weapons\Sniper\SRS99C.p3d";
+	displayName					= "Mk14X DMR";
+	baseWeapon 					= "OPTRE_M14X";
+	
+	hiddenSelectionsTextures[] = 
+	{
+		"\V_SO_Weapons\Data\Mk14\V_M14X_CO.paa",
+		"\V_SO_Weapons\Data\Mk14\V_M14X_A_CO.paa"
+	};
+	
+	Eye 						= "";
+	Glasses 					= "";
+	ODST_1 						= "";
+	pictureWire 				= "\V_SO_Weapons\data\Mk14\V_M14X_HUD_CA.paa";
+	picture						= "\V_SO_Weapons\data\Mk14\V_M14X_CA.paa";
 	
 	magazines[]=
 	{
-		"OPTRE_4Rnd_145x114_APFSDS_Mag",
-		"OPTRE_4Rnd_145x114_Mag_APFSDST",
-		"OPTRE_4Rnd_145x114_HEDP_Mag",
-		"OPTRE_4Rnd_145x114_Mag_HEDPT",
-		"OPTRE_4Rnd_145x114_HVAP_Mag",
-		"OPTRE_4Rnd_145x114_Mag_HVAPT",
-		"OPTRE_4Rnd_145x114_Mag_SS",
-		"OPTRE_4Rnd_145x114_Mag_NARQ"
+		"OPTRE_15Rnd_762x51_Mag",
+		"OPTRE_15Rnd_762x51_Mag_Tracer",
+		"OPTRE_15Rnd_762x51_Mag_AP",
+		"OPTRE_15Rnd_762x51_Mag_APT",
+		"OPTRE_15Rnd_762x51_Mag_JHP",
+		"OPTRE_15Rnd_762x51_Mag_JHPT",
+		"OPTRE_15Rnd_762x51_Mag_SS",
+		"OPTRE_15Rnd_762x51_Mag_FS",
+		"OPTRE_15Rnd_762x51_Mag_FST"
 	};
+	magazineWell[] = {};
 	
 	class WeaponSlotsInfo
  	{
-		mass = 237;
+		mass = 92;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=
 			{
-				"optre_srs99d_suppressor"
+				"muzzle_snds_h_mg_blk_f",
+				"muzzle_snds_l",
+
+				"optre_ma5suppressor",
+				"optre_m7_silencer",
+				"optre_m6_silencer"
 			};
 		};
 		class CowsSlot: CowsSlot
@@ -62,11 +75,9 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 				"ace_optic_mrco_2d",
 				"ace_optic_hamr_2d",
 				"ace_optic_hamr_pip",
-				"optic_ico_01_black_f",
 				"optic_aco_smg",
 				"optic_aco_grn_smg",
 				"optic_holosight_smg_blk_f",
-				"optic_mrd_black",
 
 				"optre_srs99_scope",
 				"optre_srs99c_scope",
@@ -75,7 +86,6 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 				"optre_m73_smartlink",
 				"optre_m7_sight",
 				"optre_m393_acog",
-				"optre_hmg38_carryhandle",
 				"optre_m393_scope",
 				"optre_m392_scope",
 				"optre_br55hb_scope",
@@ -94,17 +104,13 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 				"OPTRE_BMR_Scope_v2"
 			};
 		};
-		class PointerSlot: PointerSlot
+		class UnderBarrelSlot: UnderBarrelSlot
 		{
 			compatibleitems[]=
 			{
-				"acc_pointer_ir",
-				"ace_acc_pointer_green",
-				"acc_flashlight",
-
-				"optre_m45_flashlight",
-				"optre_m45_flashlight_red",
-				"OPTRE_BMR_Laser"
+				"bipod_01_f_blk",
+				"bipod_02_f_blk",
+				"bipod_03_f_blk"
 			};
 		};
 	};

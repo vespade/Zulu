@@ -24,3 +24,24 @@ class OPTRE_MA37X: OPTRE_MA5CX
 		};
 	};
 };
+
+class OPTRE_MA37BX: OPTRE_MA5BX
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName					= "MA37BX ICWS Assault Rifle";
+	baseWeapon 					= "OPTRE_MA37BX";
+	model                       = "\OPTRE_Weapons\AR\MA37B.p3d";
+	
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		mass = 77;
+		class CowsSlot: CowsSlot
+		{
+			compatibleitems[] = {};
+		};
+	};
+};

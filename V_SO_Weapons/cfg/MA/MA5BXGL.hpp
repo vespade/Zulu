@@ -91,8 +91,10 @@ class OPTRE_MA5BXGL: SO_MA5BGL_Base
 				"optre_m393_acog",
 				"optre_m392_scope",
 				"optre_br55hb_scope",
+				"OPTRE_BMR_Scope",
 				
 				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_SRS99C_Scope_v2",
 				"OPTRE_M73_Smartlink_v2",
 				"OPTRE_M6S_Scope",
 				"OPTRE_MA5_Smartlink",
@@ -105,7 +107,8 @@ class OPTRE_MA5BXGL: SO_MA5BGL_Base
 				"OPTRE_M393_Scope_v2",
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
-				"OPTRE_BR55HB_Scope_v2"
+				"OPTRE_BR55HB_Scope_v2",
+				"OPTRE_BMR_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -117,7 +120,8 @@ class OPTRE_MA5BXGL: SO_MA5BGL_Base
 				"acc_flashlight",
 
 				"optre_m45_flashlight",
-				"optre_m45_flashlight_red"
+				"optre_m45_flashlight_red",
+				"OPTRE_BMR_Laser"
 			};
 		};
 	};

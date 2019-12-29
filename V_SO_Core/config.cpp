@@ -29,6 +29,7 @@ class CfgPatches
 class CfgWeapons
 {
 	#include "cfg\Thermals.hpp"
+	#include "cfg\Scopes.hpp"
 };
 
 class CfgAddons

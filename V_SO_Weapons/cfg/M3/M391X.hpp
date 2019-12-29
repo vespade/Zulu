@@ -64,7 +64,8 @@ class OPTRE_M319X: OPTRE_M319
 				"acc_flashlight",
 
 				"optre_m45_flashlight",
-				"optre_m45_flashlight_red"
+				"optre_m45_flashlight_red",
+				"OPTRE_BMR_Laser"
 			};
 		};
 	};

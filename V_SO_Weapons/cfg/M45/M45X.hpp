@@ -69,6 +69,8 @@ class OPTRE_M45X: SO_M45_Base
 				"optic_holosight_smg_blk_f",
 				"optic_mrd_black",
 				
+				"optre_srs99_scope",
+				"optre_srs99c_scope",
 				"optre_ma5_buis",
 				"optre_m393_eotech",
 				"optre_m73_smartlink",
@@ -79,8 +81,10 @@ class OPTRE_M45X: SO_M45_Base
 				"optre_m392_scope",
 				"optre_br55hb_scope",
 				"optre_m6c_scope",
+				"OPTRE_BMR_Scope",
 				
 				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_SRS99C_Scope_v2",
 				"OPTRE_M73_Smartlink_v2",
 				"OPTRE_M6S_Scope",
 				"OPTRE_MA5_Smartlink",
@@ -93,7 +97,8 @@ class OPTRE_M45X: SO_M45_Base
 				"OPTRE_M393_Scope_v2",
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
-				"OPTRE_BR55HB_Scope_v2"
+				"OPTRE_BR55HB_Scope_v2",
+				"OPTRE_BMR_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -105,7 +110,8 @@ class OPTRE_M45X: SO_M45_Base
 				"acc_flashlight",
 
 				"optre_m45_flashlight",
-				"optre_m45_flashlight_red"
+				"optre_m45_flashlight_red",
+				"OPTRE_BMR_Laser"
 			};
 		};
 	};
@@ -156,4 +162,16 @@ class OPTRE_M45X: SO_M45_Base
 		};
 		reloadTime = 0.25;
 	};
+};
+
+class OPTRE_M45XTAC: OPTRE_M45X
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName					= "M45X Semi-Automatic Shotgun (Tactical)";
+	baseWeapon 					= "OPTRE_M45XTAC";
+	model                       = "\OPTRE_Weapons\Shotgun\shotgun_etac.p3d";
 };

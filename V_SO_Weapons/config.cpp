@@ -80,9 +80,11 @@ class CfgWeapons
 	#include "cfg\M39\M392X.hpp"
 	#include "cfg\M39\M395X.hpp"
 	#include "cfg\M39\M395XS.hpp"
+	#include "cfg\M39\M295X.hpp"
 	#include "cfg\M28\M28.hpp"
 	#include "cfg\MRS10\MRS10X.hpp"
 	#include "cfg\CR77\CR77.hpp"
+	#include "cfg\Mk14\M14X.hpp"
 	
 	// Battle Rifles
 	#include "cfg\BR\BR55X.hpp"
@@ -94,6 +96,7 @@ class CfgWeapons
 	
 	// Sniper Rifles
 	#include "cfg\SRS99\SRS99CX.hpp"
+	#include "cfg\SRS99\SRS99DX.hpp"
 	
 	// Rocket Launchers
 	#include "cfg\M48\M48B.hpp"

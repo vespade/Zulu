@@ -1,5 +1,14 @@
 class OPTRE_M392_DMR;
-class OPTRE_M392X: OPTRE_M392_DMR
+class SO_M392_Base: OPTRE_M392_DMR
+{
+	class Single;
+	
+	scope						= 1;
+	scopeArsenal				= 1;
+	baseWeapon					= "SO_M392_Base";
+};
+
+class OPTRE_M392X: SO_M392_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -21,6 +30,31 @@ class OPTRE_M392X: OPTRE_M392_DMR
 		"OPTRE_15Rnd_762x51_Mag_SS",
 		"OPTRE_15Rnd_762x51_Mag_FS",
 		"OPTRE_15Rnd_762x51_Mag_FST"
+	};
+	magazineWell[] = {};
+	
+	class FullAuto: Single
+	{
+		aiDispersionCoefX 		= 2;
+		aiDispersionCoefY 		= 3;
+		burst 					= 1;
+		autoFire 				= 1;
+		dispersion			 	= 0.0005;
+		displayName 			= "Full";
+		maxRange 				= 80;
+		maxRangeProbab 			= 0.04;
+		midRange 				= 30;
+		midRangeProbab 			= 0.58;
+		minRange 				= 1;
+		minRangeProbab 			= 0.2;
+		recoil 					= "recoil_auto_primary_3outof10";
+		recoilProne 			= "recoil_auto_primary_prone_3outof10";
+		reloadTime 				= 0.08;
+		sound[] 				= {"",10,1};
+		soundBurst 				= 0;
+		soundContinuous 		= 0;
+		soundEnd[] 				= {"sound",1};
+		textureType 			= "fullAuto";
 	};
 
 	class WeaponSlotsInfo
@@ -79,16 +113,18 @@ class OPTRE_M392X: OPTRE_M392_DMR
 				"optre_m392_scope",
 				"optre_br55hb_scope",
 				"optre_m6c_scope",
+				"OPTRE_BMR_Scope",
 				
 				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_SRS99C_Scope_v2",
 				"OPTRE_M73_Smartlink_v2",
 				"OPTRE_M6S_Scope",
 				"OPTRE_M7_Sight_v2",
 				"OPTRE_M392_Scope_v2",
-				"OPTRE_M393_Scope_v2",
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
-				"OPTRE_BR55HB_Scope_v2"
+				"OPTRE_BR55HB_Scope_v2",
+				"OPTRE_BMR_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -97,7 +133,9 @@ class OPTRE_M392X: OPTRE_M392_DMR
 			{
 				"acc_pointer_ir",
 				"ace_acc_pointer_green",
-				"acc_flashlight"
+				"acc_flashlight",
+				
+				"OPTRE_BMR_Laser"
 			};
 		};
 		class UnderBarrelSlot: UnderBarrelSlot

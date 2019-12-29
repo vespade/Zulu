@@ -42,7 +42,8 @@ class OPTRE_M90X: SO_M90_Base
 				"acc_flashlight",
 
 				"optre_m45_flashlight",
-				"optre_m45_flashlight_red"
+				"optre_m45_flashlight_red",
+				"OPTRE_BMR_Laser"
 			};
 		};
 	};

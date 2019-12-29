@@ -59,8 +59,10 @@ class OPTRE_MA32X: OPTRE_MA5CX
 				"optre_m393_acog",
 				"optre_m392_scope",
 				"optre_br55hb_scope",
+				"OPTRE_BMR_Scope",
 				
 				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_SRS99C_Scope_v2",
 				"OPTRE_M73_Smartlink_v2",
 				"OPTRE_M6S_Scope",
 				"OPTRE_M7_Sight_v2",
@@ -68,8 +70,26 @@ class OPTRE_MA32X: OPTRE_MA5CX
 				"OPTRE_M393_Scope_v2",
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
-				"OPTRE_BR55HB_Scope_v2"
+				"OPTRE_BR55HB_Scope_v2",
+				"OPTRE_BMR_Scope_v2"
 			};
 		};
+	};
+};
+
+class OPTRE_MA32BX: OPTRE_MA5BX
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName					= "MA32BX ICWS Assault Rifle";
+	baseWeapon 					= "OPTRE_MA32BX";
+	model                       = "\OPTRE_Weapons\AR\MA32B.p3d";
+	
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		mass = 73;
 	};
 };

@@ -78,13 +78,16 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 				"optre_m393_acog",
 				"optre_m392_scope",
 				"optre_m6c_scope",
+				"OPTRE_BMR_Scope",
 				
 				"OPTRE_SRS99_Scope_v2",
+				"OPTRE_SRS99C_Scope_v2",
 				"OPTRE_M6S_Scope",
 				"OPTRE_M7_Sight_v2",
 				"OPTRE_M392_Scope_v2",
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
+				"OPTRE_BMR_Scope_v2"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -93,7 +96,9 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 			{
 				"acc_pointer_ir",
 				"ace_acc_pointer_green",
-				"acc_flashlight"
+				"acc_flashlight",
+				
+				"OPTRE_BMR_Laser"
 			};
 		};
 	};

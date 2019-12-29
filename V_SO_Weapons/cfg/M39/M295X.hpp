@@ -1,40 +1,59 @@
-class OPTRE_SRS99C;
-class SO_SRS_Base: OPTRE_SRS99C
-{
-	class WeaponSlotsInfo;
-};
-
-class OPTRE_SRS99CX: OPTRE_SRS99C
+class OPTRE_M295X: OPTRE_M392X
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "SRS99CX-S2 AM Sniper Rifle";
-	baseWeapon 					= "OPTRE_SRS99CX";
-	model                       = "\OPTRE_Weapons\Sniper\SRS99C.p3d";
+	displayName					= "M295X BMR";
+	baseWeapon 					= "OPTRE_M295X";
+	model                       = "\OPTRE_Weapons\BR\BMR.p3d";
+	picture 					= "\OPTRE_Weapons\BR\icons\br.paa";
 	
-	magazines[]=
+	handAnim[] = 
 	{
-		"OPTRE_4Rnd_145x114_APFSDS_Mag",
-		"OPTRE_4Rnd_145x114_Mag_APFSDST",
-		"OPTRE_4Rnd_145x114_HEDP_Mag",
-		"OPTRE_4Rnd_145x114_Mag_HEDPT",
-		"OPTRE_4Rnd_145x114_HVAP_Mag",
-		"OPTRE_4Rnd_145x114_Mag_HVAPT",
-		"OPTRE_4Rnd_145x114_Mag_SS",
-		"OPTRE_4Rnd_145x114_Mag_NARQ"
+		"OFP2_ManSkeleton", "\OPTRE_Weapons\BR\data\anim\bmr_handanim.rtm",
+		"Spartan_ManSkeleton", "\OPTRE_Weapons\br\data\anim\bmr_handanim_Spartan.rtm"
 	};
 	
-	class WeaponSlotsInfo
+	class FullAuto: Single
+	{
+		aiDispersionCoefX 		= 2;
+		aiDispersionCoefY 		= 3;
+		burst 					= 1;
+		autoFire 				= 1;
+		dispersion			 	= 0.0005;
+		displayName 			= "Full";
+		maxRange 				= 80;
+		maxRangeProbab 			= 0.04;
+		midRange 				= 30;
+		midRangeProbab 			= 0.58;
+		minRange 				= 1;
+		minRangeProbab 			= 0.2;
+		recoil 					= "recoil_auto_primary_3outof10";
+		recoilProne 			= "recoil_auto_primary_prone_3outof10";
+		reloadTime 				= 0.08;
+		sound[] 				= {"",10,1};
+		soundBurst 				= 0;
+		soundContinuous 		= 0;
+		soundEnd[] 				= {"sound",1};
+		textureType 			= "fullAuto";
+	};
+	
+	class WeaponSlotsInfo: WeaponSlotsInfo
  	{
-		mass = 237;
+		mass = 123;
  		class MuzzleSlot: MuzzleSlot
 		{
 			compatibleitems[]=
 			{
-				"optre_srs99d_suppressor"
+				"muzzle_snds_b",
+				"muzzle_snds_h_mg_blk_f",
+				"ace_muzzle_mzls_b",
+				
+				"optre_ma5suppressor",
+				"optre_m7_silencer",
+				"optre_m6_silencer"
 			};
 		};
 		class CowsSlot: CowsSlot
@@ -57,12 +76,12 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 				"optic_ams",
 				"ace_optic_lrps_2d",
 				"ace_optic_lrps_pip",
+				"optic_yorris",
 				"ace_optic_sos_2d",
 				"ace_optic_sos_pip",
 				"ace_optic_mrco_2d",
 				"ace_optic_hamr_2d",
 				"ace_optic_hamr_pip",
-				"optic_ico_01_black_f",
 				"optic_aco_smg",
 				"optic_aco_grn_smg",
 				"optic_holosight_smg_blk_f",
@@ -75,10 +94,10 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 				"optre_m73_smartlink",
 				"optre_m7_sight",
 				"optre_m393_acog",
-				"optre_hmg38_carryhandle",
 				"optre_m393_scope",
 				"optre_m392_scope",
 				"optre_br55hb_scope",
+				"optre_m6c_scope",
 				"OPTRE_BMR_Scope",
 				
 				"OPTRE_SRS99_Scope_v2",
@@ -91,6 +110,7 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 				"OPTRE_M393_ACOG_v2",
 				"OPTRE_M393_EOTECH_v2",
 				"OPTRE_BR55HB_Scope_v2",
+				"OPTRE_BMR_Scope_v2",
 				"OPTRE_BMR_Scope_v2"
 			};
 		};
@@ -104,7 +124,8 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 
 				"optre_m45_flashlight",
 				"optre_m45_flashlight_red",
-				"OPTRE_BMR_Laser"
+				"OPTRE_BMR_Laser",
+				"OPTRE_BMR_Flashlight"
 			};
 		};
 	};

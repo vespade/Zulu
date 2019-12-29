@@ -24,3 +24,24 @@ class OPTRE_MA37XGL: OPTRE_MA5CXGL
 		};
 	};
 };
+
+class OPTRE_MA37BXGL: OPTRE_MA5BXGL
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName					= "MA37BX + M301 GL Assault Rifle";
+	baseWeapon 					= "OPTRE_MA37BXGL";
+	model                       = "\OPTRE_Weapons\AR\MA37BGL.p3d";
+	
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		mass = 110;
+		class CowsSlot: CowsSlot
+		{
+			compatibleitems[] = {};
+		};
+	};
+};

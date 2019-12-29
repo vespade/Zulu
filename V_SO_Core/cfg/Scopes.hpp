@@ -16,7 +16,7 @@ class OPTRE_SRS99_Scope_v2: OPTRE_SRS99_Scope
 		opticType 				= 1;
 		optics 					= 1;
 		inertia 				= 0;
-		modelOptics 			= "\OPTRE_Weapons\Sniper\scope.p3d";
+		modelOptics 			= "\OPTRE_Weapons\Sniper\SRS99D_Scope.p3d";
 		class OpticsModes
 		{
 			class SRS99_Scope_View
@@ -56,6 +56,22 @@ class OPTRE_SRS99_Scope_v2: OPTRE_SRS99_Scope
 	};
 };
 
+class OPTRE_SRS99C_Scope_v2: OPTRE_SRS99_Scope_v2
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName					= "Oracle N-variant SRS99C SF Scope";
+	model						= "\OPTRE_Weapons\Sniper\SRS99C_Scope.p3d";
+	picture 					= "\OPTRE_weapons\sniper\icons\sniper2.paa";
+	
+	class ItemInfo: ItemInfo
+	{
+		modelOptics 			= "\OPTRE_Weapons\Sniper\SRS99C_Scope.p3d";
+	};
+};
 
 class OPTRE_M73_Smartlink;
 class OPTRE_M73_Smartlink_v2: OPTRE_M73_Smartlink
@@ -556,6 +572,23 @@ class OPTRE_M392_Scope_v2: ItemCore
 				cameraDir 						= "";
 			};
 		};
+	};
+};
+
+class OPTRE_BMR_Scope_v2: OPTRE_M392_Scope_v2
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName 				= "M295 DMR A4 SF Scope";
+	model 						= "\OPTRE_Weapons\BR\BMR_Scope.p3d";
+	picture 					= "\OPTRE_weapons\br\icons\scope.paa";
+	
+	class ItemInfo: ItemInfo
+	{
+		modelOptics				= "\OPTRE_Weapons\BR\BMR_Scope.p3d";
 	};
 };
 
