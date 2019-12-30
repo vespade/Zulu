@@ -11,7 +11,6 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 	model                       = "\V_SO_Weapons\data\M48\M48B_Cricket.p3d";
 	picture 					= "\V_SO_Weapons\data\M48\M48B_Cricket.paa";
 	
-	initSpeed 					= 80;
 	modelOptics					= "\OPTRE_Weapons\Rockets\M41_Optic.p3d";
 	
 	ODST_1						= "OPTRE_ODST_HUD_AmmoCount_RL";
@@ -23,7 +22,9 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 	magazines[]=
 	{
 		"OPTRE_1Rnd_50x137_HEAT",
-		"OPTRE_1Rnd_50x137_HEAP"
+		"OPTRE_1Rnd_50x137_HE",
+		"OPTRE_1Rnd_50x137_PEN",
+		"OPTRE_1Rnd_50x137_Thermo"
 	};
 	magazineWell[] 				= {};
 	reloadAction				= "ReloadRPG";

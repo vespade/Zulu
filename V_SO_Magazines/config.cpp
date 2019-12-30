@@ -47,6 +47,7 @@ class CfgAmmo
 	#include "cfg\ammo\212.hpp"
 	#include "cfg\ammo\40.hpp"
 	#include "cfg\ammo\86x70.hpp"
+	#include "cfg\ammo\50x137.hpp"
 };
 
 class CfgMagazines
