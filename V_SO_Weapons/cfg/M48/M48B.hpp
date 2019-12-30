@@ -24,7 +24,8 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 		"OPTRE_1Rnd_50x137_HEAT",
 		"OPTRE_1Rnd_50x137_HE",
 		"OPTRE_1Rnd_50x137_PEN",
-		"OPTRE_1Rnd_50x137_Thermo"
+		"OPTRE_1Rnd_50x137_Thermo",
+		"OPTRE_1Rnd_50x137_BLURSED"
 	};
 	magazineWell[] 				= {};
 	reloadAction				= "ReloadRPG";

@@ -37,7 +37,7 @@ class OPTRE_1Rnd_50x137_PEN: OPTRE_1Rnd_50x137_HE
 	count						= 1;
 	displayname 				= "50x137mm Penetrator Rocket";
 	descriptionShort			= "1 Rocket<br>50x137mm<br>Anti-Tank<br>Unguided";
-	mass						= 25;
+	mass						= 50;
 };
 
 class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_PEN
@@ -46,9 +46,24 @@ class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_PEN
 	author						= "Fireteam Zulu";
 	
 	ammo 						= "OPTRE_50X137_THERMO";
-	initspeed					= 250;
+	initspeed					= 150;
 	count						= 1;
 	displayname 				= "50x137mm Thermobaric Rocket";
 	descriptionShort			= "1 Rocket<br>50x137mm<br>Thermobarick<br>Unguided";
 	mass						= 45;
+};
+
+class OPTRE_1Rnd_50x137_BLURSED: OPTRE_1Rnd_50x137_THERMO
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 1;
+	scopeArsenal				= 1;
+	
+	ammo 						= "OPTRE_50X137_Thermo";
+	initspeed					= -1;
+	count						= 50;
+	displayname 				= "BLURSED";
+	descriptionShort			= "1 Rocket<br>50x137mm<br>Thermobarick<br>Unguided";
+	mass						= 1;
 };
