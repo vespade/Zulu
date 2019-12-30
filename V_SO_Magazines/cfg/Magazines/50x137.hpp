@@ -50,7 +50,7 @@ class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_PEN
 	count						= 1;
 	displayname 				= "50x137mm Thermobaric Rocket";
 	descriptionShort			= "1 Rocket<br>50x137mm<br>Thermobarick<br>Unguided";
-	mass						= 45;
+	mass						= 55;
 };
 
 class OPTRE_1Rnd_50x137_BLURSED: OPTRE_1Rnd_50x137_THERMO
@@ -62,7 +62,7 @@ class OPTRE_1Rnd_50x137_BLURSED: OPTRE_1Rnd_50x137_THERMO
 	
 	ammo 						= "OPTRE_50X137_Thermo";
 	initspeed					= -1;
-	count						= 50;
+	count						= 55;
 	displayname 				= "BLURSED";
 	descriptionShort			= "1 Rocket<br>50x137mm<br>Thermobarick<br>Unguided";
 	mass						= 1;

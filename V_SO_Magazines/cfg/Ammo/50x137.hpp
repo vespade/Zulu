@@ -2,7 +2,7 @@ class OPTRE_M41_Rocket_Heat;
 class OPTRE_50X137_HEAT: OPTRE_M41_Rocket_Heat
 {
 	caliber						= 10;
-	hit							= 850;
+	hit							= 950;
 	indirectHit					= 200;
 	indirectHitRange			= 0.05;
 	explosive					= 1;
@@ -53,7 +53,7 @@ class OPTRE_50X137_THERMO: OPTRE_50X137_PEN
 	fuseDistance				= 10;
 	initTime					= 0.2;
 	thrust						= 4000;
-	thrustTime					= 1.5;
+	thrustTime					= 0.5;
 	maxSpeed					= 400;
 	timeToLive					= 40;
 	allowAgainstInfantry		= 0;
