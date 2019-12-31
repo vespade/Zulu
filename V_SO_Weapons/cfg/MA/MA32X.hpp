@@ -86,7 +86,7 @@ class OPTRE_MA32BX: OPTRE_MA5BX
 	
 	displayName					= "MA32BX ICWS Assault Rifle";
 	baseWeapon 					= "OPTRE_MA32BX";
-	model                       = "\OPTRE_Weapons\AR\MA32B.p3d";
+	model                       = "\OPTRE_Weapons\AR\MA37BI.p3d";
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
 	{
