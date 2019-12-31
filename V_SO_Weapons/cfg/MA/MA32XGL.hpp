@@ -86,7 +86,7 @@ class OPTRE_MA32BXGL: OPTRE_MA5BXGL
 	
 	displayName					= "MA32BXGL + M301 GL Assault Rifle";
 	baseWeapon 					= "OPTRE_MA32BXGL";
-	model                       = "\OPTRE_Weapons\AR\MA32BGL.p3d";
+	model                       = "\OPTRE_Weapons\AR\MA37BIGL.p3d";
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
 	{
