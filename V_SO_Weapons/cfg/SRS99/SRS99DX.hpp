@@ -7,6 +7,12 @@ class OPTRE_SRS99DX: OPTRE_SRS99CX
 	
 	displayName					= "SRS99DX-S2 Sniper Rifle";
 	baseWeapon 					= "OPTRE_SRS99DX";
-	model                       = "\OPTRE_Weapons\Sniper\SRS99D.p3d";
-	picture 					= "\OPTRE_weapons\sniper\icons\sniper.paa";
+	model                       = "\OPTRE_Weapons\Sniper\SRS99D";
+	picture 					= "\OPTRE_weapons\sniper\icons\sniper";
+	
+	handAnim[] = 
+	{
+		"OFP2_ManSkeleton", "\OPTRE_Weapons\Sniper\data\anim\srs99D_handpos.rtm",
+		"Spartan_ManSkeleton", "\OPTRE_Weapons\Sniper\data\anim\srs99D_Spartan_handpos.rtm"
+	};
 };

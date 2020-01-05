@@ -13,7 +13,7 @@ class OPTRE_M6S: SO_M6C_Base
 	
 	displayName					= "M6C/SOCOM Magnum";
 	baseWeapon 					= "OPTRE_M6S";
-	model                       = "\OPTRE_Weapons\Pistol\M6C.p3d";
+	model                       = "\OPTRE_Weapons\Pistol\M6C";
 	
 	magazines[]=
 	{
@@ -88,7 +88,9 @@ class OPTRE_M6S: SO_M6C_Base
 			{
 				"optre_m6g_flashlight",
 				"optre_m6c_laser",
-				"acc_flashlight_pistol"
+				"acc_flashlight_pistol",
+				
+				"OPTRE_M6D_Flashlight"
 			};
 		};
 	};

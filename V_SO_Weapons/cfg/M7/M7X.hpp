@@ -13,7 +13,7 @@ class OPTRE_M7X: SO_M7_Base
 	
 	displayName					= "M7X Caseless SMG";
 	baseWeapon 					= "OPTRE_M7X";
-	model 						= "\OPTRE_Weapons\SMG\SMG.p3d";
+	model 						= "\OPTRE_Weapons\SMG\SMG";
 	
 	recoil						= "recoil_M7X";
 	
@@ -136,7 +136,7 @@ class OPTRE_M7X_Folded: OPTRE_M7X
 	displayName                                                             	= "M7X Caseless SMG (Folded)";
 	descriptionShort                                                    		= "UNSC M7X SMG (Folded)";
 	baseWeapon 																	= "OPTRE_M7X_Folded";
-	model                                                                   	= "\OPTRE_Weapons\SMG\SMG_folded.p3d";
+	model                                                                   	= "\OPTRE_Weapons\SMG\SMG_folded";
 	
 	handAnim[]                                                            		= {"OFP2_ManSkeleton"};
 	reloadAction 																= "GestureReloadPistol";

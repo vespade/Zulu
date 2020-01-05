@@ -75,6 +75,7 @@ class CfgWeapons
 	#include "cfg\M6\M6S.hpp"
 	#include "cfg\M6\M6GX.hpp"
 	#include "cfg\M33\M33.hpp"
+	#include "cfg\M6\M6D.hpp"
 	
 	// Domesticated (Vespade's) Marksman's Rifles
 	#include "cfg\M39\M392X.hpp"

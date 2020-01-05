@@ -7,8 +7,8 @@ class OPTRE_MRS10X: OPTRE_M395X
 	
 	displayName					= "MRS10X DMR";
 	baseWeapon 					= "OPTRE_MRS10X";
-	model 						= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\DMR_02_F.p3d";
-	picture 					= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_X_CA.paa";
+	model 						= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\DMR_02_F";
+	picture 					= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_X_CA";
 	handAnim[] 					= {"OFP2_ManSkeleton","\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\data\Anim\DMR_02.rtm"};
 	reloadAction 				= "GestureReloadDMR02";
 	
@@ -52,8 +52,8 @@ class OPTRE_MRS10X: OPTRE_M395X
 	
 	hiddenSelectionsTextures[] = 
 	{
-		"\V_SO_Weapons\Data\MRS10\V_MRS10_CO.paa",
-		"\V_SO_Weapons\Data\MRS10\V_MRS10_A_CO.paa"
+		"\V_SO_Weapons\Data\MRS10\V_MRS10_CO",
+		"\V_SO_Weapons\Data\MRS10\V_MRS10_A_CO"
 	};
 	
 	class Single: Single

@@ -6,13 +6,13 @@ class textureSources
 				displayName="Desert";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_DES_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DES_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DES_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DES_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DES_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_DES_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DES_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DES_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DES_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DES_9_CO"
                 };
 			};
 			class ves_woodland
@@ -21,13 +21,13 @@ class textureSources
 				displayName="Woodland";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_WDL_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_WDL_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_WDL_9_CO"
                 };
 			};
 			class ves_jungle
@@ -36,13 +36,13 @@ class textureSources
 				displayName="Jungle";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_JNG_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_JNG_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_JNG_9_CO"
                 };
 			};
 			class ves_urban
@@ -51,13 +51,13 @@ class textureSources
 				displayName="Urban";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_URB_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_URB_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_URB_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_URB_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_URB_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_URB_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_URB_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_URB_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_URB_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_URB_9_CO"
                 };
 			};
 			class ves_black
@@ -66,13 +66,13 @@ class textureSources
 				displayName="Black";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_BLK_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_BLK_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_BLK_9_CO"
                 };
 			};
 			class ves_frost
@@ -81,13 +81,13 @@ class textureSources
 				displayName="Frost";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_FRS_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_FRS_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_FRS_9_CO"
                 };
 			};
 			class ves_tundra
@@ -96,13 +96,13 @@ class textureSources
 				displayName="Tundra";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_TND_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_TND_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_TND_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_TND_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_TND_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_TND_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_TND_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_TND_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_TND_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_TND_9_CO"
                 };
 			};
 			class ves_dunes
@@ -111,13 +111,13 @@ class textureSources
 				displayName="Dunes";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_DUN_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_DUN_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_DUN_9_CO"
                 };
 			};
 			class ves_classic
@@ -126,13 +126,13 @@ class textureSources
 				displayName="Classic";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_CLS_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_CLS_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_CLS_9_CO"
                 };
 			};
 			class ves_olive
@@ -141,23 +141,23 @@ class textureSources
 				displayName="Olive";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_M_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_W_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_S_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_9_CO.paa"
+                    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_M_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_W_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_S_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+					"V_FZ_Vehicles\data\Bison\V_BISON_OD3_9_CO"
                 };
 			};
 		};
 hiddenSelectionsTextures[]=
 {
-    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_CO.paa",
-    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_M_CO.paa",
-    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_W_CO.paa",
-    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_S_CO.paa",
-    "V_FZ_Vehicles\data\Bison\V_BISON_I_CO.paa",
-    "OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_9_CO.paa"
+    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_CO",
+    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_M_CO",
+    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_W_CO",
+    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_S_CO",
+    "V_FZ_Vehicles\data\Bison\V_BISON_I_CO",
+    "OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO",
+    "V_FZ_Vehicles\data\Bison\V_BISON_OD3_9_CO"
 };

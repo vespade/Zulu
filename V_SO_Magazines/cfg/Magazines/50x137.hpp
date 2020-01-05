@@ -6,7 +6,7 @@ class OPTRE_1Rnd_50x137_HEAT: OPTRE_M41_Twin_HEAT
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	ammo 						= "OPTRE_50X137_HEAT";
+	ammo 						= "OPTRE_50x137_HEAT";
 	initspeed					= 360;
 	count						= 1;
 	displayname 				= "50x137mm HEAT Rocket";
@@ -32,7 +32,7 @@ class OPTRE_1Rnd_50x137_PEN: OPTRE_1Rnd_50x137_HE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	ammo 						= "OPTRE_50X137_PEN";
+	ammo 						= "OPTRE_50x137_PEN";
 	initspeed					= 700;
 	count						= 1;
 	displayname 				= "50x137mm Penetrator Rocket";
@@ -45,7 +45,7 @@ class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_PEN
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	ammo 						= "OPTRE_50X137_THERMO";
+	ammo 						= "OPTRE_50x137_THERMO";
 	initspeed					= 150;
 	count						= 1;
 	displayname 				= "50x137mm Thermobaric Rocket";
@@ -60,7 +60,7 @@ class OPTRE_1Rnd_50x137_BLURSED: OPTRE_1Rnd_50x137_THERMO
 	scope						= 1;
 	scopeArsenal				= 1;
 	
-	ammo 						= "OPTRE_50X137_Thermo";
+	ammo 						= "OPTRE_50x137_THERMO";
 	initspeed					= -1;
 	count						= 55;
 	displayname 				= "BLURSED";

@@ -187,7 +187,7 @@ class CfgNonAIVehicles
 	class CamCurator
 	{
 		scope=2;
-		model="\A3\Structures_F_Heli\VR\Helpers\Sign_sphere25cm_F.p3d";
+		model="\A3\Structures_F_Heli\VR\Helpers\Sign_sphere25cm_F";
 		simulation="CamCurator";
 		radius=125;
 		maxHAL=100;

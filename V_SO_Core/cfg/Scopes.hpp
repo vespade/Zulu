@@ -16,7 +16,7 @@ class OPTRE_SRS99_Scope_v2: OPTRE_SRS99_Scope
 		opticType 				= 1;
 		optics 					= 1;
 		inertia 				= 0;
-		modelOptics 			= "\OPTRE_Weapons\Sniper\SRS99D_Scope.p3d";
+		modelOptics 			= "\OPTRE_Weapons\Sniper\SRS99D_Scope";
 		class OpticsModes
 		{
 			class SRS99_Scope_View
@@ -64,12 +64,12 @@ class OPTRE_SRS99C_Scope_v2: OPTRE_SRS99_Scope_v2
 	scopeArsenal				= 2;
 	
 	displayName					= "Oracle N-variant SRS99C SF Scope";
-	model						= "\OPTRE_Weapons\Sniper\SRS99C_Scope.p3d";
-	picture 					= "\OPTRE_weapons\sniper\icons\sniper2.paa";
+	model						= "\OPTRE_Weapons\Sniper\SRS99C_Scope";
+	picture 					= "\OPTRE_weapons\sniper\icons\scope2";
 	
 	class ItemInfo: ItemInfo
 	{
-		modelOptics 			= "\OPTRE_Weapons\Sniper\SRS99C_Scope.p3d";
+		modelOptics 			= "\OPTRE_Weapons\Sniper\SRS99C_Scope";
 	};
 };
 
@@ -89,7 +89,7 @@ class OPTRE_M73_Smartlink_v2: OPTRE_M73_Smartlink
 		mass 					= 5;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\MG\M73_SmartLink.p3d";
+		modelOptics 			= "\OPTRE_Weapons\MG\M73_SmartLink";
 		class OpticsModes
 		{
 			class M73_IS_v2
@@ -142,7 +142,7 @@ class OPTRE_M6S_Scope: OPTRE_M6C_Scope
 		mass 					= 1;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\Pistol\m6c_scope.p3d";
+		modelOptics 			= "\OPTRE_Weapons\Pistol\m6c_scope";
 		inertia 				= 0.1;
 		class OpticsModes
 		{
@@ -191,11 +191,27 @@ class OPTRE_M6GX_Scope: OPTRE_M6S_Scope
 	scopeArsenal				= 2;
 	
 	displayName 				= "M6G 6E SmartLink Scope";
-	model 						= "\OPTRE_Weapons\Pistol\m6g_scope.p3d";
+	model 						= "\OPTRE_Weapons\Pistol\m6g_scope";
 	
 	class ItemInfo: ItemInfo
 	{
-		modelOptics 							= "\OPTRE_Weapons\Pistol\m6g_scope.p3d";
+		modelOptics 			= "\OPTRE_Weapons\Pistol\m6g_scope";
+	};
+};
+
+class OPTRE_M6D_Smartlink: OPTRE_M6GX_Scope
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName 				= "M6D KFA-2 SmartLink Scope";
+	model 						= "\V_SO_Weapons\data\M6\M6D_Smartlink";
+	
+	class ItemInfo: ItemInfo
+	{
+		modelOptics 			= "\V_SO_Weapons\data\M6\M6D_Smartlink";
 	};
 };
 
@@ -208,14 +224,14 @@ class OPTRE_MA5_SmartLink: optic_Aco
 	scopeArsenal				= 2;
 	
 	displayName 				= "MA5 - Series Smart Link Optic";
-	model 						= "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
+	model 						= "\OPTRE_Weapons\AR\MA5_smartlink";
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
 	{
 		mass 					= 1;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
+		modelOptics 			= "\OPTRE_Weapons\AR\MA5_smartlink";
 		inertia 				= 0.1;
 		class OpticsModes
 		{
@@ -263,14 +279,14 @@ class OPTRE_MA5_SmartLink_v2: optic_aco
 	scopeArsenal				= 2;
 	
 	displayName 				= "MA5X - Series Smart Link Optic";
-	model 						= "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
+	model 						= "\OPTRE_Weapons\AR\MA5_smartlink";
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
 	{
 		mass 					= 1;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
+		modelOptics 			= "\OPTRE_Weapons\AR\MA5_smartlink";
 		inertia 				= 0.1;
 		class OpticsModes
 		{
@@ -316,14 +332,14 @@ class OPTRE_MA5C_SmartLink_v2: optic_aco
 	scopeArsenal				= 2;
 	
 	displayName 				= "MA5X - Series Smart Link Optic (Grey)";
-	model 						= "\OPTRE_Weapons\AR\MA5C_smartlink.p3d";
+	model 						= "\OPTRE_Weapons\AR\MA5C_smartlink";
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
 	{
 		mass 					= 1;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\AR\MA5C_smartlink.p3d";
+		modelOptics 			= "\OPTRE_Weapons\AR\MA5C_smartlink";
 		inertia 				= 0.1;
 		class OpticsModes
 		{
@@ -370,14 +386,14 @@ class OPTRE_MA5_SmartLink_legacy: optic_aco
 	scopeArsenal				= 2;
 	
 	displayName 				= "MA5X - Series Smart Link Optic (HAMR)";
-	model 						= "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
+	model 						= "\OPTRE_Weapons\AR\MA5_smartlink";
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
 	{
 		mass 					= 1;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
+		modelOptics 			= "\OPTRE_Weapons\AR\MA5_smartlink";
 		inertia 				= 0.1;
 		class OpticsModes
 		{
@@ -425,14 +441,14 @@ class OPTRE_MA5C_SmartLink_legacy: optic_aco
 	scopeArsenal				= 2;
 	
 	displayName 				= "MA5X - Series Smart Link Optic (Grey) (HAMR)";
-	model 						= "\OPTRE_Weapons\AR\MA5C_smartlink.p3d";
+	model 						= "\OPTRE_Weapons\AR\MA5C_smartlink";
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
 	{
 		mass 					= 1;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\AR\MA5C_smartlink.p3d";
+		modelOptics 			= "\OPTRE_Weapons\AR\MA5C_smartlink";
 		inertia 				= 0.1;
 		class OpticsModes
 		{
@@ -481,8 +497,8 @@ class OPTRE_M7_Sight_v2: optic_Aco
 	scopeArsenal				= 2;
 	
 	displayName 				= "M7 SLS/V 5B Reflex with Smartlink";
-	model 						= "\OPTRE_Weapons\SMG\m7_sights.p3d";
-	picture						= "\OPTRE_weapons\smg\icons\scope.paa";
+	model 						= "\OPTRE_Weapons\SMG\m7_sights";
+	picture						= "\OPTRE_weapons\smg\icons\scope";
 	inertia 					= 0.1;
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
@@ -538,8 +554,8 @@ class OPTRE_M392_Scope_v2: ItemCore
 	scopeArsenal				= 2;
 	
 	displayName 				= "EVOS-D Mk1 SF Scope";
-	model 						= "\OPTRE_Weapons\DMR\scope.p3d";
-	picture 					= "\OPTRE_weapons\br\icons\scope.paa";
+	model 						= "\OPTRE_Weapons\DMR\scope";
+	picture 					= "\OPTRE_weapons\br\icons\scope";
 	inertia 					= 0.1;
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
@@ -547,7 +563,7 @@ class OPTRE_M392_Scope_v2: ItemCore
 		mass 					= 2;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\DMR\scope.p3d";
+		modelOptics 			= "\OPTRE_Weapons\DMR\scope";
 		class OpticsModes
 		{
 			class DMR_Scope
@@ -567,7 +583,7 @@ class OPTRE_M392_Scope_v2: ItemCore
 				opticsFlare 					= 0;
 				opticsDisablePeripherialVision 	= 0;
 				memoryPointCamera 				= "opticView";
-				modelOptics[] 					= {"\OPTRE_Weapons\DMR\M395_optic10.p3d"};
+				modelOptics[] 					= {"\OPTRE_Weapons\DMR\M395_optic10"};
 				visionMode[] 					= {};
 				cameraDir 						= "";
 			};
@@ -583,12 +599,12 @@ class OPTRE_BMR_Scope_v2: OPTRE_M392_Scope_v2
 	scopeArsenal				= 2;
 	
 	displayName 				= "M295 DMR A4 SF Scope";
-	model 						= "\OPTRE_Weapons\BR\BMR_Scope.p3d";
-	picture 					= "\OPTRE_weapons\br\icons\scope.paa";
+	model 						= "\OPTRE_Weapons\BR\BMR_Scope";
+	picture 					= "\OPTRE_weapons\br\icons\scope";
 	
 	class ItemInfo: ItemInfo
 	{
-		modelOptics				= "\OPTRE_Weapons\BR\BMR_Scope.p3d";
+		modelOptics				= "\OPTRE_Weapons\BR\BMR_Scope";
 	};
 };
 
@@ -600,8 +616,8 @@ class OPTRE_M393_Scope_v2: ItemCore
 	scopeArsenal				= 2;
 	
 	displayName 				= "EVOS-D Mk3 SF Scope";
-	model						= "\OPTRE_Weapons\DMR\M395Optic.p3d";
-	picture 					= "\OPTRE_Weapons\DMR\icons\M395__Scope_Icon.paa";
+	model						= "\OPTRE_Weapons\DMR\M395Optic";
+	picture 					= "\OPTRE_Weapons\DMR\icons\M395__Scope_Icon";
 	inertia 					= 0;
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
@@ -609,7 +625,7 @@ class OPTRE_M393_Scope_v2: ItemCore
 		mass 					= 10;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\DMR\M395Optic.p3d";
+		modelOptics 			= "\OPTRE_Weapons\DMR\M395Optic";
 		class OpticsModes
 		{
 			class M395_Scope_View
@@ -626,7 +642,7 @@ class OPTRE_M393_Scope_v2: ItemCore
 				distanceZoomMin 				= 200;
 				distanceZoomMax 				= 600;
 				memoryPointCamera 				= "opticView";
-				modelOptics[] 					= {"\OPTRE_Weapons\DMR\M395_optic5.p3d","\OPTRE_Weapons\DMR\M395_optic10.p3d","\OPTRE_Weapons\DMR\M395_optic15.p3d"};
+				modelOptics[] 					= {"\OPTRE_Weapons\DMR\M395_optic5","\OPTRE_Weapons\DMR\M395_optic10","\OPTRE_Weapons\DMR\M395_optic15"};
 				opticsPPEffects[] 				= {"OpticsCHAbera1","OpticsBlur1"};
 				visionMode[] 					= {};
 				opticsFlare 					= 1;
@@ -645,8 +661,8 @@ class OPTRE_M393_ACOG_v2: optic_Arco
 	scopeArsenal				= 2;
 	
 	displayName 				= "M15 SF Combat Optical Gunsight";
-	model 						= "\OPTRE_Weapons\DMR\M395ACOG.p3d";
-	picture 					= "\OPTRE_Weapons\DMR\icons\M395__ACOG_Icon.paa";
+	model 						= "\OPTRE_Weapons\DMR\M395ACOG";
+	picture 					= "\OPTRE_Weapons\DMR\icons\M395__ACOG_Icon";
 	inertia 					= 0.1;
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
@@ -654,7 +670,7 @@ class OPTRE_M393_ACOG_v2: optic_Arco
 		mass 					= 10;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\DMR\M395Optic.p3d";
+		modelOptics 			= "\OPTRE_Weapons\DMR\M395Optic";
 		class OpticsModes
 		{
 			class ACOG_Scope
@@ -688,8 +704,8 @@ class OPTRE_M393_EOTECH_v2: optic_Aco
 	scopeArsenal				= 2;
 	
 	displayName 				= "SR-10 SF Rapid Acquisition Sight";
-	model 						= "\OPTRE_Weapons\DMR\M395EOTECH.p3d";
-	picture 					= "\OPTRE_Weapons\DMR\icons\M395__EOTECH_Icon.paa";
+	model 						= "\OPTRE_Weapons\DMR\M395EOTECH";
+	picture 					= "\OPTRE_Weapons\DMR\icons\M395__EOTECH_Icon";
 	inertia 					= 0.1;
 	
 	class ItemInfo: InventoryOpticsItem_Base_F
@@ -734,7 +750,7 @@ class OPTRE_M393_EOTECH_v2: optic_Aco
 				opticsFlare 					= 0;
 				opticsDisablePeripherialVision 	= 0;
 				memoryPointCamera 				= "opticView";
-				modelOptics[] 					= {"\OPTRE_Weapons\DMR\M395_optic10.p3d"};
+				modelOptics[] 					= {"\OPTRE_Weapons\DMR\M395_optic10"};
 				visionMode[] 					= {};
 				cameraDir 						= "";
 			};
@@ -758,7 +774,7 @@ class OPTRE_BR55HB_Scope_v2: OPTRE_BR55HB_Scope
 		mass 					= 2;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\BR\BR_Scope.p3d";
+		modelOptics 			= "\OPTRE_Weapons\BR\BR_Scope";
 		class OpticsModes
 		{
 			class BR55HB_BUIS2

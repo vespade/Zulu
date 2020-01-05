@@ -13,7 +13,7 @@ class OPTRE_SRS99CX: OPTRE_SRS99C
 	
 	displayName					= "SRS99CX-S2 AM Sniper Rifle";
 	baseWeapon 					= "OPTRE_SRS99CX";
-	model                       = "\OPTRE_Weapons\Sniper\SRS99C.p3d";
+	model                       = "\OPTRE_Weapons\Sniper\SRS99C";
 	
 	magazines[]=
 	{

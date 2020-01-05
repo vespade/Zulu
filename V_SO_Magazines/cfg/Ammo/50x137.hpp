@@ -1,5 +1,5 @@
 class OPTRE_M41_Rocket_Heat;
-class OPTRE_50X137_HEAT: OPTRE_M41_Rocket_Heat
+class OPTRE_50x137_HEAT: OPTRE_M41_Rocket_Heat
 {
 	caliber						= 10;
 	hit							= 950;
@@ -15,7 +15,7 @@ class OPTRE_50X137_HEAT: OPTRE_M41_Rocket_Heat
 	allowAgainstInfantry		= 0;
 };	
 
-class OPTRE_50X137_HE: OPTRE_50X137_HEAT
+class OPTRE_50x137_HE: OPTRE_50X137_HEAT
 {
 	caliber						= 0;
 	hit							= 400;
@@ -27,7 +27,7 @@ class OPTRE_50X137_HE: OPTRE_50X137_HEAT
 	allowAgainstInfantry		= 1;
 };	
 
-class OPTRE_50X137_PEN: OPTRE_50X137_HE
+class OPTRE_50x137_PEN: OPTRE_50X137_HE
 {
 	caliber						= 20;
 	hit							= 1500;
@@ -43,7 +43,7 @@ class OPTRE_50X137_PEN: OPTRE_50X137_HE
 	allowAgainstInfantry		= 0;
 };	
 
-class OPTRE_50X137_THERMO: OPTRE_50X137_PEN
+class OPTRE_50x137_THERMO: OPTRE_50X137_PEN
 {
 	caliber						= 5;
 	hit							= 1500;

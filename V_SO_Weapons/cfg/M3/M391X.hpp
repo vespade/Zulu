@@ -8,7 +8,7 @@ class OPTRE_M319X: OPTRE_M319
 	
 	displayName					= "M319X Individual Grenade Launcher";
 	baseWeapon 					= "M319X";
-	model 						= "\OPTRE_Weapons\GL\M319.p3d";
+	model 						= "\OPTRE_Weapons\GL\M319";
 	
 	magazines[] = 
 	{

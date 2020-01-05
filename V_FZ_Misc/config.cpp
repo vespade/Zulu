@@ -64,43 +64,43 @@ class ACE_Tags
 	{
         displayName="Clear";
         requiredItem="VES_TacSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_CLR_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_CLR_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_CLR_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_CLR_TAG";
     };
 	class CAUTION
 	{
         displayName="Caution";
         requiredItem="VES_TacSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_CATN_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_CATN_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_CATN_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_CATN_TAG";
     };
 	class MINES
 	{
         displayName="Mines";
         requiredItem="VES_TacSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_MINE_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_MINE_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_MINE_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_MINE_TAG";
     };
 	class ODST
 	{
         displayName="ODST";
         requiredItem="VES_TacSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_ODST_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_ODST_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_ODST_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_ODST_TAG";
     };
     class UNSC
 	{
         displayName="UNSC Logo";
         requiredItem="VES_TacSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_UNSC_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_UNSC_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_UNSC_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_UNSC_TAG";
     };
 	class ONI
 	{
         displayName="ONI";
         requiredItem="VES_TacSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_ONI_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_ONI_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_ONI_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_ONI_TAG";
     };
 	
 	// Artist's Spraycan
@@ -108,22 +108,22 @@ class ACE_Tags
 	{
         displayName="Insurrection";
         requiredItem="VES_TagSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_INS_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_INS_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_INS_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_INS_TAG";
     };
 	class SFP
 	{
         displayName="SF Phoenix";
         requiredItem="VES_TagSpraycan";
-        textures[]={"V_FZ_Misc\data\TAGs\V_SFP_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_SFP_TAG.paa";
+        textures[]={"V_FZ_Misc\data\TAGs\V_SFP_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_SFP_TAG";
     };
 	class SLAYER
 	{
 		displayName="Slayer";
 		requiredItem="VES_TagSpraycan";
-		textures[]={"V_FZ_Misc\data\TAGs\V_SLYR_TAG.paa"};
-        icon="V_FZ_Misc\data\TAGs\V_SLYR_TAG.paa";
+		textures[]={"V_FZ_Misc\data\TAGs\V_SLYR_TAG"};
+        icon="V_FZ_Misc\data\TAGs\V_SLYR_TAG";
 	};
 };
 
@@ -140,7 +140,7 @@ class CfgVehicles
 		editorCategory="V_FZ_EdCat_Zulu";
 		class EventHandlers
 		{
-			init = "(_this select 0) setFlagTexture ""\V_FZ_Misc\data\Flags\V_Flag_UNSC_CO.paa""";
+			init = "(_this select 0) setFlagTexture ""\V_FZ_Misc\data\Flags\V_Flag_UNSC_CO""";
 		};
 	};
 	class VES_Flag_UNSCMC: VES_Flag_UNSC
@@ -148,7 +148,7 @@ class CfgVehicles
 		displayName="Flag [UNSCMC]";
 		class EventHandlers
 		{
-			init = "(_this select 0) setFlagTexture ""\V_FZ_Misc\data\Flags\V_Flag_UNMC_CO.paa""";
+			init = "(_this select 0) setFlagTexture ""\V_FZ_Misc\data\Flags\V_Flag_UNMC_CO""";
 		};
 	};
 	class VES_Flag_UNSCAF: VES_Flag_UNSC
@@ -156,7 +156,7 @@ class CfgVehicles
 		displayName="Flag [UNSCAF]";
 		class EventHandlers
 		{
-			init = "(_this select 0) setFlagTexture ""\V_FZ_Misc\data\Flags\V_Flag_UNAF_CO.paa""";
+			init = "(_this select 0) setFlagTexture ""\V_FZ_Misc\data\Flags\V_Flag_UNAF_CO""";
 		};
 	};
 	
@@ -168,7 +168,7 @@ class CfgVehicles
 		displayName="Light (Off)";
 		scope=2;
 		scopeCurator=2;
-		model="\A3\Structures_F_Heli\Items\Airport\PortableHelipadLight_01_F.p3d";
+		model="\A3\Structures_F_Heli\Items\Airport\PortableHelipadLight_01_F";
 		hiddenSelections[]={"Camo_1","Light_1_hide"};
 		hiddenSelectionsMaterials[]={"\A3\Structures_F_Heli\Items\Airport\Data\PortableHelipadLight_01.rvmat","\A3\Data_f\Lights\Car_Beacon_Blue_emit.rvmat"};
 		hiddenSelectionsTextures[]={"#(argb,8,8,3)color(1,1,1,0.5,co)","#(argb,8,8,3)color(1,1,1,0.5,co)"};

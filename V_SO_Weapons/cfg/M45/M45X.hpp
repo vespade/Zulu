@@ -13,7 +13,7 @@ class OPTRE_M45X: SO_M45_Base
 	
 	displayName					= "M45X Semi-Automatic Shotgun";
 	baseWeapon 					= "OPTRE_M45X";
-	model                       = "\OPTRE_Weapons\Shotgun\shotgun_e.p3d";
+	model                       = "\OPTRE_Weapons\Shotgun\shotgun_e";
 	
 	magazines[]=
 	{
@@ -173,5 +173,5 @@ class OPTRE_M45XTAC: OPTRE_M45X
 	
 	displayName					= "M45X Semi-Automatic Shotgun (Tactical)";
 	baseWeapon 					= "OPTRE_M45XTAC";
-	model                       = "\OPTRE_Weapons\Shotgun\shotgun_etac.p3d";
+	model                       = "\OPTRE_Weapons\Shotgun\shotgun_etac";
 };

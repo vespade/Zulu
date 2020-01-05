@@ -13,19 +13,19 @@ class OPTRE_M33: SO_M33_Base
 	
 	displayName					= "Model 33 'Godfather' Handgun";
 	baseWeapon 					= "OPTRE_M33";
-	model 						= "\A3\Weapons_F_EPA\Pistols\Pistol_heavy_02\Pistol_heavy_02_F.p3d";
+	model 						= "\A3\Weapons_F_EPA\Pistols\Pistol_heavy_02\Pistol_heavy_02_F";
 	descriptionShort 			= "12.7x40mm Revolver";
 	
 	Eye 						= "";
 	Glasses 					= "";
 	ODST_1 						= "";
-	pictureWire 				= "\V_SO_Weapons\data\M33\V_M33_HUD_CA.paa";
+	pictureWire 				= "\V_SO_Weapons\data\M33\V_M33_HUD_CA";
 	HUD_BulletInARows 			= 1;
 	HUD_TotalPosibleBullet 		= 6;
 	
 	hiddenSelectionsTextures[] = 
 	{
-		"\V_SO_Weapons\data\M33\V_M33_CO.paa",
+		"\V_SO_Weapons\data\M33\V_M33_CO",
 		"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
 	};
 	
@@ -82,7 +82,9 @@ class OPTRE_M33: SO_M33_Base
 			compatibleitems[]=
 			{
 				"optre_m6g_flashlight",
-				"acc_flashlight_pistol"
+				"acc_flashlight_pistol",
+				
+				"OPTRE_M6D_Flashlight"
 			};
 		};
 	};
@@ -100,7 +102,7 @@ class OPTRE_M33G: OPTRE_M33
 	
 	hiddenSelectionsTextures[] = 
 	{
-		"\V_SO_Weapons\data\M33\V_M33_G_CO.paa",
+		"\V_SO_Weapons\data\M33\V_M33_G_CO",
 		"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
 	};
 };

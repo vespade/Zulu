@@ -7,15 +7,15 @@ class OPTRE_CR77: OPTRE_M395X
 	
 	displayName					= "CR77 Tactical Rifle";
 	baseWeapon 					= "OPTRE_CR77";
-	model 						= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\DMR_05_F.p3d";
-	picture 					= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\Data\UI\gear_DMR_05_X_CA.paa";
+	model 						= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\DMR_05_F";
+	picture 					= "\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\Data\UI\gear_DMR_05_X_CA";
 	handAnim[] 					= {"OFP2_ManSkeleton","\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\data\Anim\DMR_05.rtm"};
 	reloadAction 				= "GestureReloadDMR05";
 	
 	Eye 						= "";
 	Glasses 					= "";
 	ODST_1 						= "";
-	pictureWire 				= "\V_SO_Weapons\data\CR77\V_CR77_HUD_CA.paa";
+	pictureWire 				= "\V_SO_Weapons\data\CR77\V_CR77_HUD_CA";
 	
 	recoil 						= "recoil_dmr_05";
 	
@@ -54,8 +54,8 @@ class OPTRE_CR77: OPTRE_M395X
 	
 	hiddenSelectionsTextures[] = 
 	{
-		"\V_SO_Weapons\Data\CR77\V_CR77_CO.paa",
-		"\V_SO_Weapons\Data\CR77\V_CR77_A_CO.paa"
+		"\V_SO_Weapons\Data\CR77\V_CR77_CO",
+		"\V_SO_Weapons\Data\CR77\V_CR77_A_CO"
 	};
 	
 	class Single: Single

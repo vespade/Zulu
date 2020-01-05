@@ -6,7 +6,7 @@ class textureSources
 				displayName="Desert";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_DES.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_DES"
                 };
 			};
 			class ves_woodland
@@ -15,7 +15,7 @@ class textureSources
 				displayName="Woodland";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_WDL.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_WDL"
                 };
 			};
 			class ves_jungle
@@ -24,7 +24,7 @@ class textureSources
 				displayName="Jungle";
                 textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_JNG.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_JNG"
                 };
 			};
 			class ves_urban
@@ -33,7 +33,7 @@ class textureSources
 				displayName="Urban";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_URB.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_URB"
                 };
 			};
 			class ves_black
@@ -42,7 +42,7 @@ class textureSources
 				displayName="Black";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_BLK.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_BLK"
                 };
 			};
 			class ves_frost
@@ -51,7 +51,7 @@ class textureSources
 				displayName="Frost";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_FRS.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_FRS"
                 };
 			};
 			class ves_tundra
@@ -60,7 +60,7 @@ class textureSources
 				displayName="Tundra";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_TND.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_TND"
                 };
 			};
 			class ves_dunes
@@ -69,7 +69,7 @@ class textureSources
 				displayName="Dunes";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_DUN.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_DUN"
                 };
 			};
 			class ves_classic
@@ -78,7 +78,7 @@ class textureSources
 				displayName="Classic";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_CLS.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_CLS"
                 };
 			};
 			class ves_olive
@@ -87,11 +87,11 @@ class textureSources
 				displayName="Olive";
 				textures[]=
                 {
-                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3.paa"
+                    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3"
                 };
 			};
 		};
 hiddenSelectionstextures[]=
 {
-    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3.paa"
+    "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3"
 };

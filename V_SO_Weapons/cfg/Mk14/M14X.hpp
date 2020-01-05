@@ -11,15 +11,15 @@ class OPTRE_M14X: srifle_DMR_06_camo_F
 	
 	hiddenSelectionsTextures[] = 
 	{
-		"\V_SO_Weapons\Data\Mk14\V_M14X_CO.paa",
-		"\V_SO_Weapons\Data\Mk14\V_M14X_A_CO.paa"
+		"\V_SO_Weapons\Data\Mk14\V_M14X_CO",
+		"\V_SO_Weapons\Data\Mk14\V_M14X_A_CO"
 	};
 	
 	Eye 						= "";
 	Glasses 					= "";
 	ODST_1 						= "";
-	pictureWire 				= "\V_SO_Weapons\data\Mk14\V_M14X_HUD_CA.paa";
-	picture						= "\V_SO_Weapons\data\Mk14\V_M14X_CA.paa";
+	pictureWire 				= "\V_SO_Weapons\data\Mk14\V_M14X_HUD_CA";
+	picture						= "\V_SO_Weapons\data\Mk14\V_M14X_CA";
 	
 	magazines[]=
 	{

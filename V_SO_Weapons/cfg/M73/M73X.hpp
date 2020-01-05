@@ -8,7 +8,7 @@ class OPTRE_M73X: OPTRE_M73
 	
 	displayName					= "M73X Light Machine Gun";
 	baseWeapon 					= "OPTRE_M73X";
-	model 						= "\OPTRE_Weapons\MG\M73.p3d";
+	model 						= "\OPTRE_Weapons\MG\M73";
 	
 	magazines[]=
 	{
@@ -119,13 +119,8 @@ class OPTRE_M73X: OPTRE_M73
 		{
 			compatibleitems[]=
 			{
-				"acc_pointer_ir",
-				"ace_acc_pointer_green",
-				"acc_flashlight",
-
 				"optre_m45_flashlight",
-				"optre_m45_flashlight_red",
-				"OPTRE_BMR_Laser"
+				"optre_m45_flashlight_red"
 			};
 		};
 		class UnderBarrelSlot: UnderBarrelSlot

@@ -1,5 +1,5 @@
-if ((isDedicated) OR (hasInterface && isServer)) then
-{
+/*if ((isDedicated) OR (hasInterface && isServer)) then
+{*/
 	_mg = _this;
 	_player = (crew _mg) select 0;
 
@@ -37,4 +37,4 @@ if ((isDedicated) OR (hasInterface && isServer)) then
 	_player addPrimaryWeaponItem (_attachments select 2);
 	_player addPrimaryWeaponItem (_attachments select 3);
 	_player selectWeapon _weapon;
-};
+/*};*/

@@ -14,8 +14,8 @@ class OPTRE_8Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	
 	initspeed 					= 600;
 	mass 						= 8;
-	model 						= "\OPTRE_Weapons\pistol\m6_Magazine.p3d";
-	picture 					= "\OPTRE_weapons\pistol\icons\magazine.paa";
+	model 						= "\OPTRE_Weapons\pistol\m6_Magazine";
+	picture 					= "\OPTRE_weapons\pistol\icons\magazine";
 };
 
 class OPTRE_8Rnd_127x40_Mag_AP: OPTRE_8Rnd_127x40_Mag
@@ -191,8 +191,8 @@ class OPTRE_6Rnd_127x40_Cyl: 20Rnd_762x51_Mag
 	
 	initspeed 					= 600;
 	mass 						= 6;
-	model 						= "\A3\weapons_F\ammo\mag_univ.p3d";
-	picture 					= "\A3\Weapons_F_EPA\Data\ui\M_6Rnd_revolver_CA.paa";
+	model 						= "\A3\weapons_F\ammo\mag_univ";
+	picture 					= "\A3\Weapons_F_EPA\Data\ui\M_6Rnd_revolver_CA";
 };
 
 class OPTRE_6Rnd_127x40_Cyl_AP: OPTRE_6Rnd_127x40_Cyl
@@ -368,8 +368,8 @@ class OPTRE_12Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	
 	initspeed 					= 600;
 	mass 						= 8.5;
-	model 						= "\OPTRE_Weapons\pistol\m6_Magazine.p3d";
-	picture 					= "\OPTRE_weapons\pistol\icons\magazine.paa";
+	model 						= "\OPTRE_Weapons\pistol\m6_Magazine";
+	picture 					= "\OPTRE_weapons\pistol\icons\magazine";
 };
 
 class OPTRE_12Rnd_127x40_Mag_AP: OPTRE_12Rnd_127x40_Mag
@@ -521,8 +521,8 @@ class OPTRE_16Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	
 	initspeed 					= 600;
 	mass 						= 16;
-	model 						= "\OPTRE_Weapons\pistol\m6_Magazine.p3d";
-	picture 					= "\OPTRE_weapons\pistol\icons\magazine.paa";
+	model 						= "\OPTRE_Weapons\pistol\m6_Magazine";
+	picture 					= "\OPTRE_weapons\pistol\icons\magazine";
 };
 
 class OPTRE_16Rnd_127x40_Mag_AP: OPTRE_16Rnd_127x40_Mag

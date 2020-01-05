@@ -2,16 +2,17 @@ class launch_RPG32_F;
 class OPTRE_M48_PAW: Launch_RPG32_F
 {
 	dlc							= "SO";
-	author						= "Fireteam Zulu";
+	author						= "Fireteam Zulu & Shadow";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
 	displayName					= "M48B 'Cricket' PAW";
 	baseWeapon 					= "OPTRE_M48_PAW";
-	model                       = "\V_SO_Weapons\data\M48\M48B_Cricket.p3d";
-	picture 					= "\V_SO_Weapons\data\M48\M48B_Cricket.paa";
+	model                       = "\V_SO_Weapons\data\M48\M48B_Cricket";
+	picture 					= "\V_SO_Weapons\data\M48\M48B_Cricket";
 	
-	modelOptics					= "\OPTRE_Weapons\Rockets\M41_Optic.p3d";
+	initSpeed 					= 80;
+	modelOptics					= "\OPTRE_Weapons\Rockets\M41_Optic";
 	
 	ODST_1						= "OPTRE_ODST_HUD_AmmoCount_RL";
 	Glasses						= "OPTRE_GLASS_HUD_AmmoCount_RL";
@@ -24,8 +25,8 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 		"OPTRE_1Rnd_50x137_HEAT",
 		"OPTRE_1Rnd_50x137_HE",
 		"OPTRE_1Rnd_50x137_PEN",
-		"OPTRE_1Rnd_50x137_Thermo",
-		"OPTRE_1Rnd_50x137_BLURSED"
+		"OPTRE_1Rnd_50x137_THERMO",
+		"OPTRE_1Rnd_50x137_HE"
 	};
 	magazineWell[] 				= {};
 	reloadAction				= "ReloadRPG";

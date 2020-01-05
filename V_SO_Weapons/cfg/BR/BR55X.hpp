@@ -17,7 +17,7 @@ class OPTRE_BR55X: SO_BR55_Base
 	
 	displayName					= "BR55X Battle Rifle";
 	baseWeapon 					= "OPTRE_BR55X";
-	model                       = "\OPTRE_Weapons\BR\BR.p3d";
+	model                       = "\OPTRE_Weapons\BR\BR";
 	
 	magazines[]=
 	{

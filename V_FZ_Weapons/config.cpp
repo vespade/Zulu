@@ -61,8 +61,8 @@ class CfgWeapons
 		author="Vespade";
 		displayName="BR25 Battle Rifle";
 		baseWeapon="VES_BR25";
-		model="\A3\Weapons_F_Exp\Rifles\CTAR\CTAR_F.p3d";
-		picture="\A3\Weapons_F_Exp\Rifles\CTAR\Data\UI\icon_arifle_CTAR_blk_F_X_CA.paa";
+		model="\A3\Weapons_F_Exp\Rifles\CTAR\CTAR_F";
+		picture="\A3\Weapons_F_Exp\Rifles\CTAR\Data\UI\icon_arifle_CTAR_blk_F_X_CA";
 		handAnim[]={"OFP2_ManSkeleton","\A3\Weapons_F_Exp\Rifles\CTAR\Anim\CTAR_F.rtm"};
 		reloadAction="GestureReloadCTAR";
 	};
@@ -75,8 +75,8 @@ class CfgWeapons
 		author="Vespade";
 		displayName="BR25HB Battle Rifle";
 		baseWeapon="VES_BR25HB";
-		model="\A3\Weapons_F_Exp\Rifles\CTARS\CTARS_F.p3d";
-		picture="\A3\Weapons_F_Exp\Rifles\CTARS\Data\UI\icon_arifle_CTARS_blk_F_X_CA.paa";
+		model="\A3\Weapons_F_Exp\Rifles\CTARS\CTARS_F";
+		picture="\A3\Weapons_F_Exp\Rifles\CTARS\Data\UI\icon_arifle_CTARS_blk_F_X_CA";
 		handAnim[]={"OFP2_ManSkeleton","\A3\Weapons_F_Exp\Rifles\CTAR\Anim\CTAR_F.rtm"};
 		reloadAction="GestureReloadCTAR";
 	};
@@ -89,8 +89,8 @@ class CfgWeapons
 		author="Vespade";
 		displayName="M51K ICWS Carbine";
 		baseWeapon="VES_M51K";
-		model="\A3\Weapons_F\Rifles\Khaybar\KhaybarC_F.p3d";
-		picture="\A3\weapons_F\Rifles\Khaybar\Data\UI\gear_KhaybarC_X_CA.paa";
+		model="\A3\Weapons_F\Rifles\Khaybar\KhaybarC_F";
+		picture="\A3\weapons_F\Rifles\Khaybar\Data\UI\gear_KhaybarC_X_CA";
 		handAnim[]={"OFP2_ManSkeleton","\A3\Weapons_F\Rifles\Khaybar\Data\Anim\katiba.rtm"};
 		reloadAction="GestureReloadKatiba";
 	};
@@ -102,8 +102,8 @@ class CfgWeapons
 		author="Vespade";
 		displayName="M51V ICWS Assault Rifle";
 		baseWeapon="VES_M51V";
-		model="\A3\Weapons_F\Rifles\Khaybar\Khaybar_F.p3d";
-		picture="\A3\Weapons_F\Rifles\Khaybar\Data\UI\gear_Khaybar_X_CA.paa";
+		model="\A3\Weapons_F\Rifles\Khaybar\Khaybar_F";
+		picture="\A3\Weapons_F\Rifles\Khaybar\Data\UI\gear_Khaybar_X_CA";
 		handAnim[]={"OFP2_ManSkeleton","\A3\Weapons_F\Rifles\Khaybar\Data\Anim\katiba.rtm"};
 		reloadAction="GestureReloadKatiba";
 		modes[]={"Single","Burst","FullAuto"};
@@ -133,8 +133,8 @@ class CfgWeapons
 		author="Vespade";
 		displayName="M34S ICWS Assault Rifle";
 		baseWeapon="VES_M34S";
-		model="\A3\Weapons_F\Rifles\MX\MX_F.p3d";
-		picture="\A3\Weapons_F_EPB\Rifles\MX_Black\Data\UI\gear_mx_rifle_black_X_CA.paa";
+		model="\A3\Weapons_F\Rifles\MX\MX_F";
+		picture="\A3\Weapons_F_EPB\Rifles\MX_Black\Data\UI\gear_mx_rifle_black_X_CA";
 		handAnim[]={"OFP2_ManSkeleton","\A3\Weapons_F\Rifles\MX\data\Anim\MX_afg.rtm"};
 		reloadAction="GestureReloadMX";
 	};*/

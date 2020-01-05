@@ -1,4 +1,4 @@
-if (isServer && isDedicated) exitWith {};
+if (isServer && isDedicated) exitWith {};/*
 if (isMultiplayer) then {player addMPEventHandler ["MPRespawn", {[] spawn V_FZ_fnc_AutomaticSlimLeg}];} else {player addEventHandler ["Respawn", {[] spawn V_FZ_fnc_AutomaticSlimLeg}];};
 _isProperUniform = false;
 _isShinArmorPresent = false;
@@ -39,4 +39,4 @@ while {alive player} do
 		};
 	};
 	sleep 1;
-};
+};*/

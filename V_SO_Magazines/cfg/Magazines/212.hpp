@@ -14,8 +14,8 @@ class OPTRE_6Rnd_8Gauge_Pellets: 20Rnd_762x51_Mag
 	
 	initspeed 					= 500;
 	mass 						= 10;
-	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_S.p3d";
-	picture 					= "\a3\weapons_F\data\ui\m_12gauge_ca.paa";
+	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_S";
+	picture 					= "\a3\weapons_F\data\ui\m_12gauge_ca";
 };
 
 class OPTRE_6Rnd_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Pellets
@@ -31,8 +31,8 @@ class OPTRE_6Rnd_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Pellets
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Slugs";
 	
 	initspeed 					= 800;
-	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_P.p3d";
-	picture 					= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca.paa";
+	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_P";
+	picture 					= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca";
 };
 
 class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slugs
@@ -84,8 +84,8 @@ class OPTRE_12Rnd_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Slugs
 	
 	displayname 				= "12Rnd 8 Gauge Slugs";
 	descriptionShort			= "12 Rounds<br>8 Gauge<br>Slugs";
-	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_P.p3d";
-	picture 					= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca.paa";
+	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_P";
+	picture 					= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca";
 };
 
 class OPTRE_12Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_HEDP

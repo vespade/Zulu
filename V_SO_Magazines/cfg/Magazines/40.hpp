@@ -11,7 +11,7 @@ class 3Rnd_UGL_FlareBlue_F: 3Rnd_UGL_FlareWhite_F
 	displayName 				= "3Rnd 3GL Flares (Blue)";
 	displayNameShort 			= "Blue Flare";
 	descriptionShort 			= "Type: Flare Rounds - Blue<br />Rounds: 3<br />Used in: 3GL";
-	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca.paa";
+	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca";
 };
 
 class 3Rnd_UGL_8Gauge_Pellets: OPTRE_6Rnd_8Gauge_Pellets
@@ -24,7 +24,7 @@ class 3Rnd_UGL_8Gauge_Pellets: OPTRE_6Rnd_8Gauge_Pellets
 	displayName 				= "3Rnd 3GL 8 Gauge (Pellets)";
 	count						= 3;
 	descriptionShort 			= "Type: 8 Gauge - Pellets<br />Rounds: 3<br />Used in: 3GL";
-	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca.paa";
+	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca";
 };
 
 class 3Rnd_UGL_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Slugs
@@ -35,7 +35,7 @@ class 3Rnd_UGL_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Slugs
 	displayName 				= "3Rnd 3GL 8 Gauge (Slugs)";
 	count						= 3;
 	descriptionShort 			= "Type: 8 Gauge - Slugs<br />Rounds: 3<br />Used in: 3GL";
-	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Pellets_ca.paa";
+	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Pellets_ca";
 };
 
 class 3Rnd_UGL_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Beanbags
@@ -46,7 +46,7 @@ class 3Rnd_UGL_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Beanbags
 	displayName 				= "3Rnd 3GL 8 Gauge (Beanbags)";
 	count						= 3;
 	descriptionShort 			= "Type: 8 Gauge - Beanbags<br />Rounds: 3<br />Used in: 3GL";
-	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca.paa";
+	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca";
 };
 
 // 1 Round 40mm
@@ -62,7 +62,7 @@ class UGL_FlareBlue_F: UGL_FlareWhite_F
 	displayName 				= "Flare Round (Blue)";
 	displayNameShort 			= "Blue Flare";
 	descriptionShort 			= "Type: Flare Round - Blue<br />Rounds: 1<br />Used in: ELGM, 3GL";
-	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca.paa";
+	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca";
 };
 
 class UGL_8Gauge_Pellets: OPTRE_6Rnd_8Gauge_Pellets
@@ -106,5 +106,5 @@ class UGL_Potato: OPTRE_6Rnd_8Gauge_Pellets
 	displayNameShort 			= "Potato";
 	count						= 1;
 	descriptionShort 			= "Type: Potato<br />Rounds: 1<br />Used in: ELGM, 3GL";
-	picture 					= "\v_so_weapons\data\flares\gear_ugl_potat_ca.paa";
+	picture 					= "\v_so_weapons\data\flares\gear_ugl_potat_ca";
 };

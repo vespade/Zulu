@@ -7,8 +7,8 @@ class OPTRE_M395X: OPTRE_M392X
 	
 	displayName					= "M395X DMR";
 	baseWeapon 					= "OPTRE_M395X";
-	model                       = "\OPTRE_Weapons\DMR\M395.p3d";
-	picture 					= "\OPTRE_Weapons\DMR\icons\M395_Icon.paa";
+	model                       = "\OPTRE_Weapons\DMR\M395";
+	picture 					= "\OPTRE_Weapons\DMR\icons\M395_Icon";
 	
 	handAnim[] = 
 	{

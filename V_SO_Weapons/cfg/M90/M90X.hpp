@@ -13,7 +13,7 @@ class OPTRE_M90X: SO_M90_Base
 	
 	displayName					= "M90X CAWS Tactical Shotgun";
 	baseWeapon 					= "OPTRE_M90X";
-	model                       = "\OPTRE_Weapons\Shotgun\M90A.p3d";
+	model                       = "\OPTRE_Weapons\Shotgun\M90A";
 	
 	magazines[]=
 	{

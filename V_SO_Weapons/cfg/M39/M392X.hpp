@@ -17,7 +17,7 @@ class OPTRE_M392X: SO_M392_Base
 	
 	displayName					= "M392X DMR";
 	baseWeapon 					= "OPTRE_M392X";
-	model                       = "\OPTRE_Weapons\DMR\DMR.p3d";
+	model                       = "\OPTRE_Weapons\DMR\DMR";
 	
 	magazines[]=
 	{
@@ -32,6 +32,12 @@ class OPTRE_M392X: SO_M392_Base
 		"OPTRE_15Rnd_762x51_Mag_FST"
 	};
 	magazineWell[] = {};
+	
+	modes[] = 
+	{
+		"Single",
+		"FullAuto"
+	};
 	
 	class FullAuto: Single
 	{

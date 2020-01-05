@@ -150,8 +150,8 @@ class cfgVehicles
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO.paa",
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO.paa"
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
 	};
 	
@@ -199,8 +199,8 @@ class cfgVehicles
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO.paa",
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO.paa"
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
 	};
 	
@@ -240,8 +240,8 @@ class cfgVehicles
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO.paa",
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO.paa"
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
 	};
 	
@@ -289,8 +289,8 @@ class cfgVehicles
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO.paa",
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A2_CO.paa"
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A2_CO"
 		};
 	};
 	
@@ -338,8 +338,8 @@ class cfgVehicles
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO.paa",
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO.paa"
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
 	};
 	// AA Warthogs
@@ -414,7 +414,7 @@ class cfgVehicles
 			{
 				condition="(alive this) AND !(this getvariable [""VES_Warthog_LightbarStatus"", false]) AND (player in [driver this])";
 				displayName="Turn on Lightbar";
-				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca.paa' size='2.5' />";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
 				onlyForPlayer=1;
 				position="";
 				radius=6;
@@ -424,7 +424,7 @@ class cfgVehicles
 			{
 				condition="(alive this) AND (this getvariable ""VES_Warthog_LightbarStatus"") AND (player in [driver this])";
 				displayName="Turn off Lightbar";
-				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca.paa' size='2.5' />";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
 				onlyForPlayer=1;
 				position="";
 				radius=6;
@@ -441,8 +441,8 @@ class cfgVehicles
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO.paa",
-			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A2_CO.paa"
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A2_CO"
 		};
 	};
 	
@@ -488,8 +488,8 @@ class cfgVehicles
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO.paa",
-			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO.paa"
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
 	};
 	
@@ -504,6 +504,7 @@ class cfgVehicles
 		displayName="IFV-76 Honeybadger";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
+		armor=690;
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.65;
 		tf_range=10000;
@@ -539,7 +540,7 @@ class cfgVehicles
 	{
 		scope=1;
 		scopeCurator=1;
-		hiddenSelectionsTextures[]={"","V_FZ_Vehicles\Data\Honeybadger\V_IFV76_G_OD3_CO.paa"};
+		hiddenSelectionsTextures[]={"","V_FZ_Vehicles\Data\Honeybadger\V_IFV76_G_OD3_CO"};
 		class TransportItems{};
 	};*/
 	
@@ -663,9 +664,9 @@ class cfgVehicles
 		hiddenSelections[]={"camo1","camo2","camo3"};
 		hiddenSelectionsTextures[]=
 		{
-			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_OD3_CO.paa",
-			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_OD3_A_CO.paa",
-			"\A3\Soft_F_EPC\Truck_03\Data\Truck_03_ammo_CO.paa"
+			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_OD3_CO",
+			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_OD3_A_CO",
+			"\A3\Soft_F_EPC\Truck_03\Data\Truck_03_ammo_CO"
 		};
 		class TransportItems
 		{
@@ -705,7 +706,7 @@ class cfgVehicles
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_C_BuffaloCamos.hpp"
+		#include "cfg\FZ_D_BuffaloCamos.hpp"
 	};
 	
 	// UAV
@@ -747,7 +748,7 @@ class cfgVehicles
 			displayName="";
 			dissasembleTo[]={"VES_MQ49_Pack"};
 		};
-		hiddenSelectionsTextures[]={"V_FZ_Vehicles\Data\MQ49\V_MQ49_CO.paa"};
+		hiddenSelectionsTextures[]={"V_FZ_Vehicles\Data\MQ49\V_MQ49_CO"};
 	};
 	class VES_MQ49_RD: VES_MQ49_SD
 	{
@@ -809,10 +810,10 @@ class cfgVehicles
 		editorCategory="V_FZ_EdCat_SFP";
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO.paa"
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
 		};
 	};
 	class VES_UH144S_A: VES_UH144_A
@@ -831,10 +832,10 @@ class cfgVehicles
 		editorCategory="V_FZ_EdCat_SFP";
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO.paa"
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
 		};
 	};
 	class OPTRE_UNSC_falcon_unarmed;
@@ -879,10 +880,10 @@ class cfgVehicles
 		editorCategory="V_FZ_EdCat_SFP";
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO.paa"
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
 		};
 	};
 	class VES_UH144S: VES_UH144
@@ -901,10 +902,10 @@ class cfgVehicles
 		editorCategory="V_FZ_EdCat_SFP";
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO.paa",
-			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO.paa"
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
+			"V_FZ_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
 		};
 	};
 	
@@ -1112,13 +1113,13 @@ class cfgVehicles
 		editorCategory="V_FZ_EdCat_Zulu";
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Falchion\V_VAF19_CO.paa",
-			"V_FZ_Vehicles\data\Falchion\V_VAF19_A_CO.paa",
-			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
-			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co.paa",
-			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co.paa",
-			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co.paa",
-			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co.paa",
+			"V_FZ_Vehicles\data\Falchion\V_VAF19_CO",
+			"V_FZ_Vehicles\data\Falchion\V_VAF19_A_CO",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co",
 			"",
 			"",
 			""

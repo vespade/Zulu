@@ -7,37 +7,13 @@ class OPTRE_M295X: OPTRE_M392X
 	
 	displayName					= "M295X BMR";
 	baseWeapon 					= "OPTRE_M295X";
-	model                       = "\OPTRE_Weapons\BR\BMR.p3d";
-	picture 					= "\OPTRE_Weapons\BR\icons\br.paa";
+	model                       = "\OPTRE_Weapons\BR\BMR";
+	picture 					= "\OPTRE_Weapons\BR\icons\br";
 	
 	handAnim[] = 
 	{
 		"OFP2_ManSkeleton", "\OPTRE_Weapons\BR\data\anim\bmr_handanim.rtm",
 		"Spartan_ManSkeleton", "\OPTRE_Weapons\br\data\anim\bmr_handanim_Spartan.rtm"
-	};
-	
-	class FullAuto: Single
-	{
-		aiDispersionCoefX 		= 2;
-		aiDispersionCoefY 		= 3;
-		burst 					= 1;
-		autoFire 				= 1;
-		dispersion			 	= 0.0005;
-		displayName 			= "Full";
-		maxRange 				= 80;
-		maxRangeProbab 			= 0.04;
-		midRange 				= 30;
-		midRangeProbab 			= 0.58;
-		minRange 				= 1;
-		minRangeProbab 			= 0.2;
-		recoil 					= "recoil_auto_primary_3outof10";
-		recoilProne 			= "recoil_auto_primary_prone_3outof10";
-		reloadTime 				= 0.08;
-		sound[] 				= {"",10,1};
-		soundBurst 				= 0;
-		soundContinuous 		= 0;
-		soundEnd[] 				= {"sound",1};
-		textureType 			= "fullAuto";
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo

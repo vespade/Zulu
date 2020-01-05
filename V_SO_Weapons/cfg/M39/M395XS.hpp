@@ -7,7 +7,7 @@ class OPTRE_M395XS: OPTRE_M395X
 	
 	displayName					= "M395X/S DMR";
 	baseWeapon 					= "OPTRE_M395XS";
-	model                       = "\OPTRE_Weapons\DMR\M395S.p3d";
+	model                       = "\OPTRE_Weapons\DMR\M395S";
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{

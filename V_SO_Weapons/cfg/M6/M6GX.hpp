@@ -13,7 +13,7 @@ class OPTRE_M6GX: SO_M6G_Base
 	
 	displayName					= "M6GX Magnum";
 	baseWeapon 					= "OPTRE_M6GX";
-	model                       = "\OPTRE_Weapons\Pistol\M6G.p3d";
+	model                       = "\OPTRE_Weapons\Pistol\M6G";
 	
 	magazines[]=
 	{
@@ -67,7 +67,8 @@ class OPTRE_M6GX: SO_M6G_Base
 				"OPTRE_M6S_Scope",
 				"OPTRE_M6GX_Scope",
 				"OPTRE_M7_Sight_v2",
-				"OPTRE_M393_EOTECH_v2"
+				"OPTRE_M393_EOTECH_v2",
+				"OPTRE_M6D_Smartlink"
 			};
 		};
 		class PointerSlot: PointerSlot
@@ -75,8 +76,9 @@ class OPTRE_M6GX: SO_M6G_Base
 			compatibleitems[]=
 			{
 				"optre_m6g_flashlight",
-				"optre_m6c_laser",
-				"acc_flashlight_pistol"
+				"acc_flashlight_pistol",
+				
+				"OPTRE_M6D_Flashlight"
 			};
 		};
 	};
