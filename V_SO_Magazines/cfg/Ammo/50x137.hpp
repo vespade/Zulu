@@ -57,4 +57,7 @@ class OPTRE_50x137_THERMO: OPTRE_50X137_PEN
 	maxSpeed					= 400;
 	timeToLive					= 40;
 	allowAgainstInfantry		= 0;
+	CraterEffects				= "HEShellCrater";
+	CraterWaterEffects			= "ImpactEffectsWaterHE";
+	ExplosionEffects			= "HEShellExplosion";
 };	
