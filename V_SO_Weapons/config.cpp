@@ -108,6 +108,8 @@ class CfgWeapons
 	// Shotguns
 	#include "cfg\M45\M45X.hpp"
 	#include "cfg\M90\M90X.hpp"
+	// Charges
+	#include "Cfg\Charges\Charges.hpp"
 	
 	// Why is this shit here? Because Arma for whatever reason reads it as defined in CfgWeapons, and that breaks shit.
 	class MuzzleSlot: MuzzleSlot{};
