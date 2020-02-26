@@ -8082,7 +8082,7 @@ class cfgVehicles
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		side=1;
+		side=2;
 		hiddenSelections[]=
 		{
 			"camo1",
