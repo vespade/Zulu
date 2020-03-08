@@ -3272,8 +3272,8 @@ class CfgWeapons
 class CfgVehicles
 {
 	// Uniforms (Textures)
-	class B_Soldier_base_F;
-	class VES_BDU_V_Base: B_Soldier_base_F
+	class OPTRE_UNSC_Army_Soldier_WDL;
+	class VES_BDU_V_Base: OPTRE_UNSC_Army_Soldier_WDL
 	{
 		class EventHandlers;
 	};
