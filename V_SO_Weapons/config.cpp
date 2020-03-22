@@ -19,10 +19,7 @@ class CfgPatches
 		ammo[]={};
 		// Requirements
 		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"V_SO_Core"
-		};
+		requiredAddons[]={"V_SO_Core"};
 	};
 };
 
@@ -49,6 +46,10 @@ class UnderBarrelSlot;
 
 class CfgWeapons
 {
+	// Thermals and Scopes
+	#include "cfg\Thermals.hpp"
+	#include "cfg\Scopes.hpp"
+	
 	// Grenade Launchers
 	#include "cfg\M3\M301X.hpp"
 	#include "cfg\M3\M391X.hpp"
@@ -108,8 +109,6 @@ class CfgWeapons
 	// Shotguns
 	#include "cfg\M45\M45X.hpp"
 	#include "cfg\M90\M90X.hpp"
-	// Charges
-	#include "Cfg\Charges\Charges.hpp"
 	
 	// Why is this shit here? Because Arma for whatever reason reads it as defined in CfgWeapons, and that breaks shit.
 	class MuzzleSlot: MuzzleSlot{};

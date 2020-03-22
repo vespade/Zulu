@@ -79,36 +79,93 @@ class CfgGlasses
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA"};
 	};
 	
+	// Masks(?)
+	class VES_HUD_APR_01: VES_HUD_Balaclava_G_Black
+	{
+		displayName = "HUD APR";
+		model = "\a3\Characters_F_Enoch\Facewear\G_AirPurifyingRespirator_01_F";
+		picture = "\A3\Characters_F_Enoch\Facewear\Data\UI\icon_G_AirPurifyingRespirator_01_F_ca.paa";
+	};
+	class VES_HUD_APR_02: VES_HUD_Balaclava_G_Black
+	{
+		displayName = "HUD APR (2)";
+		model = "\a3\Characters_F_Enoch\Facewear\G_AirPurifyingRespirator_02_F";
+		picture = "\A3\Characters_F_Enoch\Facewear\Data\UI\icon_G_AirPurifyingRespirator_02_black_F_ca";
+	};
+	class VES_HUD_APR_03: VES_HUD_Balaclava_G_Black
+	{
+		displayName = "HUD APR (3)";
+		model = "\a3\Characters_F_Enoch\Facewear\G_RegulatorMask_F";
+		picture = "\A3\Characters_F_Enoch\Facewear\Data\UI\icon_G_RegulatorMask_F_ca";
+	};
+	
+	// Aviators
+	class VES_HUD_RayBans: VES_HUD_Balaclava_G_Black
+	{
+		displayName = "HUD Aviators";
+		model = "\A3\characters_f_gamma\Heads\Glasses\g_aviators";
+		picture = "\A3\Characters_F\data\ui\icon_g_aviators_CA";
+	};
+	class VES_HUD_RayBans_Bandana: VES_HUD_Balaclava_G_Black
+	{
+		displayName = "HUD Aviators with Bandana (Black)";
+		model = "\A3\Characters_F_Bootcamp\Guerrilla\g_bandana_aviator";
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Bandana_aviator_ca";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"\a3\characters_f_bootcamp\guerrilla\data\headgear_bandmask_blk_co","\a3\characters_f\heads\glasses\data\glass_ca"};
+	};
+	class VES_HUD_RayBans_Bandana_Green: VES_HUD_RayBans_Bandana
+	{
+		displayName = "HUD Aviators with Bandana (Green)";
+		hiddenSelectionsTextures[] = {"\a3\characters_f_bootcamp\guerrilla\data\headgear_bandmask_grn_co","\a3\characters_f\heads\glasses\data\glass_ca"};
+	};
+	class VES_HUD_RayBans_Bandana_Tan: VES_HUD_RayBans_Bandana
+	{
+		displayName = "HUD Aviators with Bandana (Tan)";
+		hiddenSelectionsTextures[] = {"\a3\characters_f_bootcamp\guerrilla\data\headgear_bandmask_tan_co","\a3\characters_f\heads\glasses\data\glass_ca"};
+	};
+	class VES_HUD_RayBans_Bandana_Beast: VES_HUD_RayBans_Bandana
+	{
+		displayName = "HUD Aviators with Bandana (Beast)";
+		hiddenSelectionsTextures[] = {"\a3\characters_f_bootcamp\guerrilla\data\headgear_bandmask_beast_co","\a3\characters_f\heads\glasses\data\glass_ca"};
+	};
+	
 	// Balaclava
 	class VES_HUD_Balaclava_Black: VES_HUD_Balaclava_G_Black
 	{
 		displayName="HUD Balaclava (Black)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_BLK_CO"};
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 	};
 	class VES_HUD_Balaclava_Gray: VES_HUD_Balaclava_G_Gray
 	{
 		displayName="HUD Balaclava (Gray)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_GRY_CO"};
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 	};
 	class VES_HUD_Balaclava_White: VES_HUD_Balaclava_G_White
 	{
 		displayName="HUD Balaclava (White)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_WHT_CO"};
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 	};
 	class VES_HUD_Balaclava_Beast: VES_HUD_Balaclava_G_Beast
 	{
 		displayName="HUD Balaclava (Beast)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_BST_CO"};
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 	};
 	class VES_HUD_Balaclava_Punisher: VES_HUD_Balaclava_G_Punisher
 	{
 		displayName="HUD Balaclava (Punisher)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_PNS_CO"};
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 	};
 	class VES_HUD_Balaclava_Joker: VES_HUD_Balaclava_G_Joker
 	{
 		displayName="HUD Balaclava (Joker)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO"};
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 	};
 	
 	class VES_HUD_Visor: OPTRE_HUD_Glasses
@@ -194,7 +251,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume=0.60;
 		displayName="[FZ] CH252D Helmet";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO"};
-		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat",""};
+		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"};
 		CBRN_protection=1;
 		class ItemInfo: HeadgearItem
 		{
@@ -203,6 +260,7 @@ class CfgWeapons
 			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
 			hiddenSelections[]={"camo","camo2"};
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO"};
+			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"};
 			class HitpointsProtectionInfo
 			{
 				class Face {armor=25; hitpointName="HitFace"; passThrough=0.1;};
@@ -279,14 +337,14 @@ class CfgWeapons
 		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon";
 		hiddenSelections[]={"camo","camo2"};
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_GLD_V_CO"};
-		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat",""};
+		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR_V.rvmat"};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\recon_helmet";
 			picture="\OPTRE_UNSC_Units\Army\icons\odst_recon";
 			hiddenSelections[]={"camo","camo2"};
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_GLD_V_CO"};
-			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat",""};
+			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR_V.rvmat"};
 		};
 	};
 	class VES_S1ONIR_S: VES_S1ONIR
@@ -323,13 +381,13 @@ class CfgWeapons
 		model="\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[]={"camo","camo2"};
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"};
-		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",""};
+		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\aa_helmet";
 			hiddenSelections[]={"camo","camo2"};
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252A_DEF_V_CO"};
-			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat",""};
+			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
 		};
 	};
 	class VES_CH252A_S: VES_CH252A
@@ -381,7 +439,7 @@ class CfgWeapons
 		displayName="[FZ] CH252 Helmet (Heavy) Marine";
 		hiddenSelections[]={"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_Collar", "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO", "optre_unsc_units\army\data\helmet_visor_ca"};
-		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
+		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat", ""};
 		class ItemInfo: HeadgearItem
 		{
 			mass=30;
@@ -453,14 +511,14 @@ class CfgWeapons
 		picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
 		hiddenSelections[]={"camo","camo2","camo3","H_Collar","H_Ghillie"};
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO", "V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
+		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="OPTRE_UNSC_Units\Army\helmet_p";
 			picture="\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
 			hiddenSelections[]={"camo","camo2","camo3","H_Collar","H_Ghillie"};
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO", "V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
+			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"};
 		};
 	};
 	class VES_CH252_MAR_Vacuum_dp: VES_CH252D_dp
@@ -868,22 +926,6 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_CEA_C_CO"};
 		};
 	};
-	
-	// Hats
-	/*class OPTRE_UNSC_PatrolCap_Marines;
-	class VES_PC_Gray: OPTRE_UNSC_PatrolCap_Marines
-	{
-		dlc="FZ";
-		author="Vespade";
-		displayName="[FZ] Patrol Cap (Gray)";
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_PC_CEA_CO"};
-		class ItemInfo: HeadgearItem
-		{
-			hiddenSelections[]={"camo1","hide_army"};
-			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_PC_CEA_CO"};
-			uniformModel="\OPTRE_UNSC_Units\Army\patrolcap";
-		};
-	};*/
 	
 	// Armor Sets
 	class OPTRE_UNSC_M52D_Armor_Rifleman;
@@ -4150,6 +4192,17 @@ class CfgOptreHudSchemes
 			VES_HUD_Balaclava_Beast="OPTRE_MarrineGlasses_white";
 			VES_HUD_Balaclava_Joker="OPTRE_MarrineGlasses_white";
 			VES_HUD_Balaclava_Punisher="OPTRE_MarrineGlasses_white";
+			
+			// Aviators
+			VES_HUD_RayBans="OPTRE_MarrineGlasses_white";
+			VES_HUD_RayBans_Bandana="OPTRE_MarrineGlasses_white";
+			VES_HUD_RayBans_Bandana_Green="OPTRE_MarrineGlasses_white";
+			VES_HUD_RayBans_Bandana_Tan="OPTRE_MarrineGlasses_white";
+			
+			// APRs
+			VES_HUD_APR_01="OPTRE_MarrineGlasses_white";
+			VES_HUD_APR_02="OPTRE_MarrineGlasses_white";
+			VES_HUD_APR_03="OPTRE_MarrineGlasses_white";
 		};
 	};
 };
