@@ -1,3 +1,10 @@
+//       _____         __                   ____       __    
+//      / __(_)______ / /____ ___ ___ _    /_  / __ __/ /_ __
+//     / _// / __/ -_) __/ -_) _ `/  ' \    / /_/ // / / // /
+//    /_/ /_/_/  \__/\__/\__/\_,_/_/_/_/   /___/\_,_/_/\_,_/ 
+//
+//    Do NOT modify or add this PBO to any other pack. It belongs here and here only.
+
 class CfgPatches
 {
 	class V_FZ_Core
@@ -9,7 +16,7 @@ class CfgPatches
 		weapons[]={};
 		magazines[]={};
 		ammo[]={};
-		requiredVersion=1;
+		requiredVersion=1.0;
 		requiredAddons[]={};
 	};
 };
@@ -32,17 +39,17 @@ class CfgEditorCategories
 	{
 		displayName="UNSCDF (Fireteam Zulu)";
 	};
-    class V_FZ_EdCat_PD_Zulu
+    class V_FZ_EdCat_CPD_Zulu
 	{
 		displayName="Colonial Police (Fireteam Zulu)";
 	};
 	class V_FZ_EdCat_SFP
 	{
-		displayName="Insurrectionist (SF Phoenix)";
+		displayName="Strike Force Phoenix (Fireteam Zulu)";
 	};
 	class V_FZ_EdCat_URF
 	{
-		displayName="Insurrectionist (URF)";
+		displayName="United Rebel Front (Fireteam Zulu)";
 	};
 };
 class CfgEditorSubcategories
@@ -99,130 +106,74 @@ class CfgFunctions
 		class WarthogLights
 		{
 			file="V_FZ_Core\init";
-			class WarthogLightsAdd
-			{
-			};
-			class WarthogLightsOn
-			{
-			};
-			class WarthogLightsOff
-			{
-			};
+			class WarthogLightsAdd{};
+			class WarthogLightsOn{};
+			class WarthogLightsOff{};
 		};
 		class PelicanAddMG
 		{
 			file="V_FZ_Core\init";
-			class PelicanAddMG
-			{
-			};
+			class PelicanAddMG{};
 		};
 		class ScorpionAddMG
 		{
 			file="V_FZ_Core\init";
-			class ScorpionAddMG
-			{
-			};
+			class ScorpionAddMG{};
 		};
 		class FalconAddMGs
 		{
 			file="V_FZ_Core\init";
-			class FalconAddMGs
-			{
-			};
+			class FalconAddMGs{};
 		};
 		class HoneybadgerRemoveTurret
 		{
 			file="V_FZ_Core\init";
-			class HoneybadgerRemoveTurret
-			{
-			};
+			class HoneybadgerRemoveTurret{};
 		};
 		class PelicanMagLiftSystem
 		{
 			file="V_FZ_Core\init";
-			class PelicanLoadValidate
-			{
-			};
-			class PelicanUnLoadValidate
-			{
-			};
-			class SlipspaceRuptureDetected
-			{
-			};
+			class PelicanLoadValidate{};
+			class PelicanUnLoadValidate{};
+			class SlipspaceRuptureDetected{};
 		};
 		class PelicanFncs
 		{
 			file="V_FZ_Core\init";
-			class ThrusterEngage
-			{
-			};
-			class ThrusterDisengage
-			{
-			};
-			class ThrusterAnimate
-			{
-			};
-			class AirbrakeEngage
-			{
-			};
+			class ThrusterEngage{};
+			class ThrusterDisengage{};
+			class ThrusterAnimate{};
+			class AirbrakeEngage{};
 		};
         class ThrustersAfterburnersAirbrakesFncs
 		{
 			file="V_FZ_Core\init";
-			class Thruster400Engage
-			{
-			};
-			class Thruster400Disengage
-			{
-			};
-			class FullAirbrakeEngage
-			{
-			};
-            class HalfAirbrakeEngage
-			{
-			};
-            class FullAirbrakeEngageFast
-			{
-			};
-            class HalfAirbrakeEngageFast
-			{
-			};
-            class Afterburners600Engage
-			{
-			};
-			class Afterburners600Disengage
-			{
-			};
-            class Afterburners900Engage
-			{
-			};
-			class Afterburners900Disengage
-			{
-			};
-            class ThrusterDeAnimate
-			{
-			};
+			class Thruster400Engage{};
+			class Thruster400Disengage{};
+			class FullAirbrakeEngage{};
+            class HalfAirbrakeEngage{};
+            class FullAirbrakeEngageFast{};
+            class HalfAirbrakeEngageFast{};
+            class Afterburners600Engage{};
+			class Afterburners600Disengage{};
+            class Afterburners900Engage{};
+			class Afterburners900Disengage{};
+            class ThrusterDeAnimate{};
 		};
 		class MGDetach
 		{
 			file="V_FZ_Core\init";
-			class MGDetach
-			{
-			};
+			class MGDetach{};
 		};
 		class LifeboatLaunch
 		{
 			file="V_FZ_Core\init";
-			class LifeboatLaunch
-			{
-			};
+			class LifeboatLaunch{};
 		};
 		class AutomaticSlimLeg
 		{
 			file="V_FZ_Core\init";
-			class AutomaticSlimLeg
-			{
-			};
+			class AutomaticSlimLeg{};
 		};
 	};
 };

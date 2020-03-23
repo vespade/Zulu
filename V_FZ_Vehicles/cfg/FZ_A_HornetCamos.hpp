@@ -95,3 +95,17 @@ hiddenSelectionstextures[]=
 {
     "V_FZ_Vehicles\data\Hornet\V_FZ_Hornet_OD3"
 };
+
+textureList[] = 
+{
+	"ves_desert", 1,
+	"ves_woodland", 1,
+	"ves_jungle", 1,
+	"ves_urban", 1,
+	"ves_black", 1,
+	"ves_frost", 1,
+	"ves_tundra", 1,
+	"ves_dunes", 1,
+	"ves_classic", 1,
+	"ves_olive", 1
+};

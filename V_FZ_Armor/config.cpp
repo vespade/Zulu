@@ -240,6 +240,43 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_B_Army_MP_CA"};
 		};
 	};
+	class VES_Beret_CPD: VES_Beret_MP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		displayName="[FZ] Colonial Police Beret";
+		hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_B_CPD_CA"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_B_CPD_CA"};
+		};
+	};
+	class VES_PatrolCap_CPD: VES_Beret_CPD
+	{
+		dlc="Zulu";
+		author="Vespade";
+		displayName="[FZ] Colonial Police Patrol Cap";
+		model = "\A3\Characters_F\Common\cappatrol";
+		hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_PC_CPD_BLK_CO"};
+		hiddenSelectionsMaterials[]={""};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\A3\Characters_F\Common\cappatrol";
+			hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_PC_CPD_BLK_CO"};
+			hiddenSelectionsMaterials[]={""};
+		};
+	};
+	class VES_PatrolCap_CPD_Blue: VES_PatrolCap_CPD
+	{
+		dlc="Zulu";
+		author="Vespade";
+		displayName="[FZ] Colonial Police Patrol Cap (Blue)";
+		hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_PC_CPD_BLU_CO"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_PC_CPD_BLU_CO"};
+		};		
+	};
 	
 	// Helmets
 	class OPTRE_UNSC_CH252D_Helmet;
@@ -924,6 +961,25 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_CEA_C_CO"};
+		};
+	};
+	
+	// KH2000
+	class VES_KH2000_CPD: VES_CH252_MAR_Heavy
+	{
+		dlc="Zulu";
+		author="Vespade";
+		displayName="[FZ] KH2000 Colonial Police Helmet";
+		model="\a3\characters_f_beta\indep\headgear_helmet_canvas";
+		hiddenSelections[]={"camo"};
+		HiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_KH2000_CPD_CO"};
+		hiddenSelectionsMaterials[]={""};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\a3\characters_f_beta\indep\headgear_helmet_canvas";
+			hiddenSelections[]={"camo"};
+			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_KH2000_CPD_CO"};
+			hiddenSelectionsMaterials[]={""};
 		};
 	};
 	
@@ -2240,38 +2296,53 @@ class CfgWeapons
 	class VES_M52A_URB_Vest_A: VES_M52A_MAR_Vest_A{displayName="[FZ] M52A (Vest) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_M_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_URB_Vest_B: VES_M52A_MAR_Vest_B{displayName="[FZ] M52A (Soft) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_M_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	
-	/*//MJOLNIR
-	class OPTRE_MJOLNIR_Mk4Armor;
-	class VES_Mjolnir_MkIV: OPTRE_MJOLNIR_Mk4Armor
+	// FH-320
+	class VES_FH320_CPD_Heavy: VES_M52A_MAR_Vest_A
 	{
-		dlc="FZ";
-		scope=2;
-        author="Vespade";
-        displayName="[FZ] Mjolnir MkIV Armor";
-		CBRN_protection=1;
-		class ItemInfo: VestItem
+		dlc="Zulu";
+		author="Vespade";
+		displayName="[FZ] FH320 Colonial Police Vest (Heavy)";
+		model="\a3\characters_f_beta\indep\equip_ia_ga_carrier_gl_rig";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_FH_CPD_CO", "V_FZ_Armor\Data\Vests\V_FH_CPD_A_CO"};
+		hiddenSelectionsMaterials[]={"",""};
+		class ItemInfo: ItemInfo
 		{
-			containerClass="Supply300";
-			mass=20;
-			modelSides[]={6};
-			passThrough=0.1;
-			uniformModel="\OPTRE_MJOLNIR\armormk4";
-			vestType="Rebreather";
-			hiddenSelections[]={"mkvbuilt", "object001"};
-			hiddenSelectionsTextures[]={"",""};
-			class HitpointsProtectionInfo
-			{
-				class Abdomen {armor=100; hitpointName="HitAbdomen"; passThrough=0.1;};
-				class Arms: Abdomen {hitpointName="HitArms";};
-				class Body: Abdomen {hitpointName="HitBody";};
-				class Chest: Abdomen {hitpointName="HitChest";};
-				class Diaphragm: Abdomen {hitpointName="HitDiaphragm";};
-				class Hands: Abdomen {hitpointName="HitHands";};
-				class Legs: Abdomen {hitpointName="HitLegs";};
-				class Neck: Abdomen {hitpointName="HitNeck";};
-			};
+			uniformModel="\a3\characters_f_beta\indep\equip_ia_ga_carrier_gl_rig";
+			hiddenSelections[]={"camo1","camo2"};
+			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_FH_CPD_CO", "V_FZ_Armor\Data\Vests\V_FH_CPD_A_CO"};
+			hiddenSelectionsMaterials[]={"",""};
 		};
-	};*/
+	};
+	class VES_FH320_CPD_Medium: VES_FH320_CPD_Heavy
+	{
+		dlc="Zulu";
+		author="Vespade";
+		model="\a3\characters_f_beta\indep\equip_ia_vest02";
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_FH_CPD_2_CO"};
+		displayName="[FZ] FH320 Colonial Police Vest (Medium)";
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\a3\characters_f_beta\indep\equip_ia_vest02";	
+			hiddenSelections[]={"camo"};
+			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_FH_CPD_2_CO"};
+		};		
+	};
+	class VES_FH320_CPD_Light: VES_FH320_CPD_Heavy
+	{
+		dlc="Zulu";
+		author="Vespade";
+		model="\a3\characters_f_beta\indep\equip_ia_vest01";
+		hiddenSelections[]={"camo"};
+		displayName="[FZ] FH320 Colonial Police Vest (Light)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]={"camo"};
+			uniformModel="\a3\characters_f_beta\indep\equip_ia_vest01";
+		};
+	};
+	
 	
 	//Uniforms (Bases)
 	class OPTRE_UNSC_Army_Uniform_OLI;
@@ -2436,6 +2507,15 @@ class CfgWeapons
         {
 			uniformClass=VES_BDU_V_Khaki;
         };
+	};
+	
+	class VES_BDU_CPD: VES_BDU_Evolved
+	{
+		displayName="[FZ] Colonial Police Uniform";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass=VES_BDU_V_CPD;
+		};
 	};
 	
 	// Short-Sleeve Uniforms
@@ -2760,6 +2840,15 @@ class CfgWeapons
         {
 			uniformClass=VES_BDU_R_V_Khaki;
         };
+	};
+	
+	class VES_BDU_R_CPD: VES_BDU_R_Evolved
+	{
+		displayName="[FZ] Colonial Police Uniform (Rolled)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass=VES_BDU_R_V_CPD;
+		};
 	};
 	
 	// Military Police Uniforms
@@ -3423,6 +3512,14 @@ class CfgVehicles
 		uniformclass="VES_BDU_Khaki";
 	};
 	
+	class VES_BDU_V_CPD: VES_BDU_V_Evolved
+	{
+		model="\a3\characters_f_beta\indep\ia_soldier_01";
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_CPD_CO"};
+		uniformclass="VES_BDU_CPD";
+	};
+	
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_V_Evolved: VES_BDU_V_Evolved
 	{
@@ -3627,6 +3724,14 @@ class CfgVehicles
 	{
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_R_Khaki_CO","V_FZ_Armor\Data\Uniforms\V_BDU_R_Khaki_CO"};
 		uniformclass="VES_BDU_R_Khaki";
+	};
+	
+	class VES_BDU_R_V_CPD: VES_BDU_R_V_Evolved
+	{
+		model="\a3\characters_f_beta\indep\ia_soldier_02";
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_CPD_CO"};
+		uniformclass="VES_BDU_R_CPD";
 	};
 	
 	// Military Police Uniforms

@@ -26,3 +26,10 @@ class textureSources
 			"V_FZ_Vehicles\data\Falcon\V_UH144_URF_T_CO.paa",
 			"V_FZ_Vehicles\data\Falcon\V_UH144_URF_S_CO.paa"
 		};
+
+textureList[] = 
+{
+	"ves_urf_green", 1,
+	"ves_urf_desert", 1,
+	"ves_urf_tundra", 1
+};

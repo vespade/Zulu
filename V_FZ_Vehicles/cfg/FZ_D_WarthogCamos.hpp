@@ -24,3 +24,10 @@ class textureSources
 			"V_FZ_Vehicles\data\Warthog\V_M12_URF_CO.paa",
 			"V_FZ_Vehicles\data\Warthog\V_M12_URF_A2_CO.paa"
 		};
+		
+textureList[] = 
+{
+	"ves_urf_green", 1,
+	"ves_urf_desert", 1,
+	"ves_urf_tundra", 1
+};
