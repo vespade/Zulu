@@ -156,6 +156,8 @@ class cfgVehicles
 	};
 	class VES_M12_URF: VES_M12
 	{
+		dlc="Zulu";
+		author="Vespade";
 		side=0;
 		forceInGarage=0;
 		crew="OPTRE_Ins_URF_Rifleman_AR";
@@ -164,6 +166,8 @@ class cfgVehicles
 	};
 	class VES_M12_SFP: VES_M12
 	{
+		dlc="Zulu";
+		author="Vespade";
 		side=2;
 		forceInGarage=0;
 		crew="VES_Rifleman_MA5B_SFP";
@@ -173,6 +177,16 @@ class cfgVehicles
 		{
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
+		};
+	};
+	class VES_M12_CPD: VES_M12_SFP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
 		};
 	};
 	
@@ -870,7 +884,7 @@ class cfgVehicles
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
 		#include "cfg\FZ_A_FalconCamos.hpp"
-		#include "cfg\FZ_FalconActions.hpp
+		#include "cfg\FZ_FalconActions.hpp"
 		class EventHandlers;
 	};
 	class VES_UH144_URF: VES_UH144
@@ -1133,7 +1147,7 @@ class cfgVehicles
 		{
             class CopilotTurret;
 		};
-		#include "cfg\FZ_SparrowhawkActions.hpp
+		#include "cfg\FZ_SparrowhawkActions.hpp"
 		class MFD;
     };
     class VES_AV22_Sparrowhawk: VES_AV22_Sparrowhawk_Base_F
