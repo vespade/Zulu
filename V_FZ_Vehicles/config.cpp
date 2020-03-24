@@ -19,22 +19,30 @@ class CfgPatches
 			"VES_M12",
 			"VES_M12_URF",
 			"VES_M12_SFP",
+			"VES_M12_CPD",
+			
 			"VES_M12_LRV",
 			"VES_M12_LRV_URF",
 			"VES_M12_LRV_SFP",
+			
 			"VES_M12G1_LRV",
 			"VES_M12G1_LRV_SFP",
+			
 			"VES_M12A1_LRV",
 			"VES_M12A1_LRV_URF",
 			"VES_M12A1_LRV_SFP",
+			
 			"VES_M813_TT",
 			"VES_M813_TT_URF",
 			"VES_M813_TT_SFP",
+			
 			"VES_M12R_AA",
 			"VES_M12R_AA_URF",
 			"VES_M12R_AA_SFP",
+			
 			"VES_M12_APC_MED",
 			"VES_M12_APC_MED_SFP",
+			
 			"VES_M12_APC",
 			"VES_M12_APC_URF",
 			"VES_M12_APC_SFP",
@@ -101,7 +109,9 @@ class CfgPatches
 			
 			// UAVs
 			"VES_MQ49_SD",
-			"VES_MQ49_RD"
+			"VES_MQ49_RD",
+			"VES_MQ221",
+			"VES_MQ221_URF"
 		};
 		weapons[]={};
 		magazines[]={};
@@ -178,15 +188,47 @@ class cfgVehicles
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
+		class EventHandlers;
+		class UserActions;
 	};
 	class VES_M12_CPD: VES_M12_SFP
 	{
 		dlc="Zulu";
 		author="Vespade";
+		crew="VES_Rifleman_MA5B_CPD";
+		editorCategory="V_FZ_EdCat_CPD";
+		weapons[]={"TruckHorn3", "PoliceHorn"};
 		hiddenSelectionsTextures[]=
 		{
 			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "0 = _this spawn V_FZ_fnc_WarthogLightsAdd";
+		};
+		class UserActions: UserActions
+		{
+			class LightbarOn
+			{
+				condition="(alive this) AND !(this getvariable [""VES_Warthog_LightbarStatus"", false]) AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn on Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOn";
+			};
+			class LightbarOff
+			{
+				condition="(alive this) AND (this getvariable ""VES_Warthog_LightbarStatus"") AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn off Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOff";
+			};
 		};
 	};
 	
@@ -785,6 +827,24 @@ class cfgVehicles
 			dissasmbleTo[]={"VES_MQ49R_Pack"};
 		};
 	};
+	// MQ221
+	class B_T_UAV_03_dynamicLoadout_F;
+	class VES_MQ221: B_T_UAV_03_dynamicLoadout_F
+	{
+		dlc="Zulu";
+		author="Azzamean";
+		displayName="MQ-221 Dragonfly";
+		editorCategory="V_FZ_EdCat_Zulu";
+		#include "cfg\FZ_A_DragonflyCamos.hpp"
+	};
+	class VES_MQ221_URF: VES_MQ221
+	{
+		dlc="Zulu";
+		author="Azzamean";
+		side=2;
+		editorCategory="V_FZ_EdCat_URF";
+		#include "cfg\FZ_B_DragonflyCamos.hpp"
+	};
 	
 	// Falcons
 	
@@ -1376,7 +1436,7 @@ class cfgVehicles
 	{
 		author="Vespade + DaveSkywalker";
 		side=2;
-		editorCategory="V_FZ_EdCat_CPD_Zulu";
+		editorCategory="V_FZ_EdCat_CPD";
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
@@ -1399,7 +1459,7 @@ class cfgVehicles
 	{
 		author="Vespade + DaveSkywalker";
 		side=2;
-		editorCategory="V_FZ_EdCat_CPD_Zulu";
+		editorCategory="V_FZ_EdCat_CPD";
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
@@ -1422,7 +1482,7 @@ class cfgVehicles
 	{
 		author="Vespade + DaveSkywalker";
 		side=2;
-		editorCategory="V_FZ_EdCat_CPD_Zulu";
+		editorCategory="V_FZ_EdCat_CPD";
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{
@@ -1445,7 +1505,7 @@ class cfgVehicles
 	{
 		author="Vespade + DaveSkywalker";
 		side=2;
-		editorCategory="V_FZ_EdCat_CPD_Zulu";
+		editorCategory="V_FZ_EdCat_CPD";
 		class textureSources{};
 		hiddenSelectionsTextures[]=
 		{

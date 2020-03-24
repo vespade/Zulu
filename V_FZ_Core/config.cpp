@@ -39,7 +39,7 @@ class CfgEditorCategories
 	{
 		displayName="UNSCDF (Fireteam Zulu)";
 	};
-    class V_FZ_EdCat_CPD_Zulu
+    class V_FZ_EdCat_CPD
 	{
 		displayName="Colonial Police (Fireteam Zulu)";
 	};
