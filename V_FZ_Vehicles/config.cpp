@@ -24,6 +24,7 @@ class CfgPatches
 			"VES_M12_LRV",
 			"VES_M12_LRV_URF",
 			"VES_M12_LRV_SFP",
+			"VES_M12_LRV_CPD",
 			
 			"VES_M12G1_LRV",
 			"VES_M12G1_LRV_SFP",
@@ -31,10 +32,12 @@ class CfgPatches
 			"VES_M12A1_LRV",
 			"VES_M12A1_LRV_URF",
 			"VES_M12A1_LRV_SFP",
+			"VES_M12A1_LRV_CPD",
 			
 			"VES_M813_TT",
 			"VES_M813_TT_URF",
 			"VES_M813_TT_SFP",
+			"VES_M813_TT_CPD",
 			
 			"VES_M12R_AA",
 			"VES_M12R_AA_URF",
@@ -46,6 +49,7 @@ class CfgPatches
 			"VES_M12_APC",
 			"VES_M12_APC_URF",
 			"VES_M12_APC_SFP",
+			"VES_M12_APC_CPD",
 			
 			// Trucks
 			"VES_HDV134_Resupply",
@@ -279,6 +283,48 @@ class cfgVehicles
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
+		class EventHandlers;
+		class UserActions;
+	};
+	class VES_M12_LRV_CPD: VES_M12_LRV_SFP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		crew="VES_Rifleman_MA5B_CPD";
+		editorCategory="V_FZ_EdCat_CPD";
+		weapons[]={"TruckHorn3", "PoliceHorn"};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "0 = _this spawn V_FZ_fnc_WarthogLightsAdd";
+		};
+		class UserActions: UserActions
+		{
+			class LightbarOn
+			{
+				condition="(alive this) AND !(this getvariable [""VES_Warthog_LightbarStatus"", false]) AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn on Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOn";
+			};
+			class LightbarOff
+			{
+				condition="(alive this) AND (this getvariable ""VES_Warthog_LightbarStatus"") AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn off Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOff";
+			};
+		};
 	};
 	
 	// Gauss Warthogs
@@ -369,6 +415,48 @@ class cfgVehicles
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A2_CO"
 		};
+		class EventHandlers;
+		class UserActions;
+	};
+	class VES_M12A1_LRV_CPD: VES_M12A1_LRV_SFP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		crew="VES_Rifleman_MA5B_CPD";
+		editorCategory="V_FZ_EdCat_CPD";
+		weapons[]={"TruckHorn3", "PoliceHorn"};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "0 = _this spawn V_FZ_fnc_WarthogLightsAdd";
+		};
+		class UserActions: UserActions
+		{
+			class LightbarOn
+			{
+				condition="(alive this) AND !(this getvariable [""VES_Warthog_LightbarStatus"", false]) AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn on Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOn";
+			};
+			class LightbarOff
+			{
+				condition="(alive this) AND (this getvariable ""VES_Warthog_LightbarStatus"") AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn off Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOff";
+			};
+		};
 	};
 	
 	// Transport Warthogs
@@ -417,6 +505,48 @@ class cfgVehicles
 		{
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
+		};
+		class EventHandlers;
+		class UserActions;
+	};
+	class VES_M813_TT_CPD: VES_M813_TT_SFP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		crew="VES_Rifleman_MA5B_CPD";
+		editorCategory="V_FZ_EdCat_CPD";
+		weapons[]={"TruckHorn3", "PoliceHorn"};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "0 = _this spawn V_FZ_fnc_WarthogLightsAdd";
+		};
+		class UserActions: UserActions
+		{
+			class LightbarOn
+			{
+				condition="(alive this) AND !(this getvariable [""VES_Warthog_LightbarStatus"", false]) AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn on Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOn";
+			};
+			class LightbarOff
+			{
+				condition="(alive this) AND (this getvariable ""VES_Warthog_LightbarStatus"") AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn off Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOff";
+			};
 		};
 	};
 	
@@ -568,6 +698,48 @@ class cfgVehicles
 		{
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
+		};
+		class EventHandlers;
+		class UserActions;
+	};
+	class VES_M12_APC_CPD: VES_M12_APC_SFP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		crew="VES_Rifleman_MA5B_CPD";
+		editorCategory="V_FZ_EdCat_CPD";
+		weapons[]={"TruckHorn3", "PoliceHorn"};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
+		};
+		class EventHandlers: EventHandlers
+		{
+			init = "0 = _this spawn V_FZ_fnc_WarthogLightsAdd";
+		};
+		class UserActions: UserActions
+		{
+			class LightbarOn
+			{
+				condition="(alive this) AND !(this getvariable [""VES_Warthog_LightbarStatus"", false]) AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn on Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOn";
+			};
+			class LightbarOff
+			{
+				condition="(alive this) AND (this getvariable ""VES_Warthog_LightbarStatus"") AND (player in [driver this])";
+				displayName="<t color='#FFBF00'>Turn off Lightbar";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="0 = this spawn V_FZ_fnc_WarthogLightsOff";
+			};
 		};
 	};
 	
