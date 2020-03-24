@@ -1187,7 +1187,7 @@ class cfgVehicles
 	};
 	
 	// Sparrowhawk
-		class OPTRE_AV22_Sparrowhawk_Base;
+	class OPTRE_AV22_Sparrowhawk_Base;
     class VES_AV22_Sparrowhawk_Base: OPTRE_AV22_Sparrowhawk_Base
     {
         class Turrets;
@@ -1212,7 +1212,7 @@ class cfgVehicles
     };
     class VES_AV22_Sparrowhawk: VES_AV22_Sparrowhawk_Base_F
 	{
-		displayName="AV-22V Sparrowhawk";
+		displayName="AV-22V Sparrowhawk [GAU-23 / M230]";
 		author="Vespade + DaveSkywalker";
 		scope=2;
 		scopeCurator=2;
@@ -1287,7 +1287,7 @@ class cfgVehicles
 	};
 	class VES_AV22A_Sparrowhawk: VES_AV22_Sparrowhawk
 	{
-		displayName="AV-22VA Sparrowhawk";
+		displayName="AV-22V Sparrowhawk [M9109 / M6]";
 		author="Vespade + DaveSkywalker";
 		
 		
@@ -1329,7 +1329,7 @@ class cfgVehicles
 			{
 				weapons[]=
 				{
-					"OPTRE_M6_Laser",
+					"VES_M6_Laser",
 					"Laserdesignator_mounted"
 				};
 				magazines[]=
@@ -1346,7 +1346,7 @@ class cfgVehicles
 	};
 	class VES_AV22B_Sparrowhawk: VES_AV22A_Sparrowhawk
 	{
-		displayName="AV-22VB Sparrowhawk";
+		displayName="AV-22V Sparrowhawk [GAU-23 / M6]";
 		author="Vespade + DaveSkywalker";
 		
 		hiddenSelections[]=
@@ -1386,7 +1386,7 @@ class cfgVehicles
 	};
 	class VES_AV22C_Sparrowhawk: VES_AV22A_Sparrowhawk
 	{
-		displayName="AV-22VC Sparrowhawk";
+		displayName="AV-22V Sparrowhawk [M9109 / M230]";
 		author="Vespade + DaveSkywalker";
 		hiddenSelections[]=
 		{
