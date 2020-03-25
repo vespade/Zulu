@@ -116,6 +116,7 @@ class CfgPatches
 			"VES_MQ49_RD",
 			"VES_MQ221",
 			"VES_MQ221_URF"
+			"VES_MQ221_CPD"
 		};
 		weapons[]={};
 		magazines[]={};
@@ -1016,6 +1017,14 @@ class cfgVehicles
 		side=2;
 		editorCategory="V_FZ_EdCat_URF";
 		#include "cfg\FZ_B_DragonflyCamos.hpp"
+	};
+	class VES_MQ221_CPD: VES_MQ221
+	{
+		dlc="Zulu";
+		author="Azzamean";
+		side=3;
+		editorCategory="V_FZ_EdCat_Zulu";
+		#include "cfg\FZ_C_DragonflyCamos.hpp"
 	};
 	
 	// Falcons
