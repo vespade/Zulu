@@ -55,3 +55,15 @@ class OPTRE_4Rnd_145x114_Mag_NARQ:  OPTRE_4Rnd_145x114_APFSDS_Mag
 	displayname 				= "4Rnd 14.5x114mm NARQ Magazine";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>Tranquilizer";
 };
+
+class OPTRE_4Rnd_145x114_Mag_DOC:  OPTRE_4Rnd_145x114_APFSDS_Mag
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_145x114_DOC";
+	displayname 				= "4Rnd 14.5x114mm DOC Magazine";
+	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>Adrenaline";
+};

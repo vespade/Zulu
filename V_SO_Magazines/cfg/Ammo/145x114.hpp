@@ -28,3 +28,8 @@ class OPTRE_B_145x114_NARQ: OPTRE_B_145x114_APFSDS
 {
 	hit 						= 0.1;
 };
+
+class OPTRE_B_145x114_DOC: OPTRE_B_145x114_APFSDS
+{
+	hit							= 0.1;
+};

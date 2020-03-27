@@ -67,6 +67,10 @@ class Extended_Respawn_EventHandlers
 		{
 			respawn="_this call CSW_fnc_TaserOnRespawn";
 		};
+		class Adren
+		{
+			respawn="[_this, _this] remoteExecCall [""ace_medical_fnc_treatmentAdvanced_fullHealLocal"", _this, false];";
+		};
 	};
 };
 
@@ -75,5 +79,6 @@ class Extended_Hit_EventHandlers
 	class CAManBase
 	{
 		Humbler="_this call CSW_fnc_TaserOnHit;";
+		Adren="[_this, _this] remoteExecCall [""ace_medical_fnc_treatmentAdvanced_fullHealLocal"", _this, false];";
 	};
 };
