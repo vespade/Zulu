@@ -94,6 +94,14 @@ class CfgEditorSubcategories
 	{
 		displayName="Men (Army Air Assault)";
 	};
+	class V_FZ_EdSubCat_Men_Police
+	{
+		displayName="Men (Colonial Police)";
+	};
+	class V_FZ_EdSubCat_Men_SWAT
+	{
+		displayName="Men (SWAT)";
+	};
 	class V_FZ_EdSubCat_Rotary
 	{
 		displayName="Rotary";

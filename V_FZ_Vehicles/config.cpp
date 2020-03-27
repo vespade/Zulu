@@ -1022,12 +1022,13 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Azzamean";
-		side=3;
+		side=1;
 		editorCategory="V_FZ_EdCat_CPD";
+		class TextureSources{};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Vehicles\data\Dragonfly\A_MQ221_CPD_CO.paa",
-			"V_FZ_Vehicles\data\Dragonfly\A_MQ221_CPD_A_CO.paa"
+			"V_FZ_Vehicles\data\Dragonfly\A_MQ221_CPD_CO",
+			"V_FZ_Vehicles\data\Dragonfly\A_MQ221_CPD_A_CO"
 		};
 	};
 	

@@ -174,7 +174,7 @@ class CfgVehicles
             init = "if (local (_this select 0)) then {[(_this select 0), [], []] call BIS_fnc_unitHeadgear;};";
         };
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_MAR_LightItems.hpp"
+		#include "cfg\Marine\FZ_MAR_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_MAR: VES_Rifleman_MA5B_MAR
 	{
@@ -186,57 +186,53 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_MAR: VES_Rifleman_MA5B_MAR
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_MAR: VES_Rifleman_MA5B_MAR
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_MAR_HeavyItems.hpp"
+		#include "cfg\Marine\FZ_MAR_HeavyItems.hpp"
 	};
 	class VES_Rifleman_Radio_MAR: VES_Rifleman_BR55_MAR
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\FZ_MAR_RadioItems.hpp"
+		#include "cfg\Marine\FZ_MAR_RadioItems.hpp"
 	};
 	class VES_Rifleman_Crew_MAR: VES_Rifleman_MA5B_MAR
 	{
 		displayName="Crewman";
 		backpack="";
-		#include "cfg\FZ_MAR_CrewItems.hpp"
+		#include "cfg\Marine\FZ_MAR_CrewItems.hpp"
 	};
 	class VES_Rifleman_Officer_MAR: VES_Rifleman_MA5B_MAR
 	{
 		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\FZ_MAR_OfficerItems.hpp"
+		#include "cfg\Marine\FZ_MAR_OfficerItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_MAR: VES_Rifleman_MA5B_MAR
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_MAR_HeavyItems.hpp"
+		#include "cfg\Marine\FZ_MAR_HeavyItems.hpp"
 	};
 	class VES_Rifleman_TeamLeader_MAR: VES_Rifleman_MA5B_MAR
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_MAR_LightItems.hpp"
+		#include "cfg\Marine\FZ_MAR_LightItems.hpp"
 	};
 
+	// Woodland
 	class VES_Rifleman_MA5B_WDL: VES_Rifleman_MA5B_MAR
 	{
 		editorSubcategory="V_FZ_EdSubCat_Men_Marine_W";
 		uniformClass="VES_BDU_Halo2A";
-		#include "cfg\FZ_WDL_LightItems.hpp"
+		#include "cfg\Woodland\FZ_WDL_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_WDL: VES_Rifleman_MA5B_WDL
 	{
@@ -248,57 +244,53 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_WDL: VES_Rifleman_MA5B_WDL
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_WDL: VES_Rifleman_MA5B_WDL
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_WDL_HeavyItems.hpp"
+		#include "cfg\Woodland\FZ_WDL_HeavyItems.hpp"
 	};
 	class VES_Rifleman_Radio_WDL: VES_Rifleman_BR55_WDL
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\FZ_WDL_RadioItems.hpp"
+		#include "cfg\Woodland\FZ_WDL_RadioItems.hpp"
 	};
 	class VES_Rifleman_Crew_WDL: VES_Rifleman_MA5B_WDL
 	{
 		displayName="Crewman";
 		backpack="";
-		#include "cfg\FZ_WDL_CrewItems.hpp"
+		#include "cfg\Woodland\FZ_WDL_CrewItems.hpp"
 	};
 	class VES_Rifleman_Officer_WDL: VES_Rifleman_MA5B_WDL
 	{
 		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\FZ_WDL_OfficerItems.hpp"
+		#include "cfg\Woodland\FZ_WDL_OfficerItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_WDL: VES_Rifleman_MA5B_WDL
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_WDL_HeavyItems.hpp"
+		#include "cfg\Woodland\FZ_WDL_HeavyItems.hpp"
 	};
 	class VES_Rifleman_TeamLeader_WDL: VES_Rifleman_MA5B_WDL
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_WDL_LightItems.hpp"
+		#include "cfg\Woodland\FZ_WDL_LightItems.hpp"
 	};
 	
+	// Desert
 	class VES_Rifleman_MA5B_DES: VES_Rifleman_MA5B_MAR
 	{
 		editorSubcategory="V_FZ_EdSubCat_Men_Marine_D";
 		uniformClass="VES_BDU_DesertDPM";
-		#include "cfg\FZ_DES_LightItems.hpp"
+		#include "cfg\Desert\FZ_DES_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_DES: VES_Rifleman_MA5B_DES
 	{
@@ -310,57 +302,53 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_DES: VES_Rifleman_MA5B_DES
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_DES: VES_Rifleman_MA5B_DES
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_DES_HeavyItems.hpp"
+		#include "cfg\Desert\FZ_DES_HeavyItems.hpp"
 	};
 	class VES_Rifleman_Radio_DES: VES_Rifleman_BR55_DES
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\FZ_DES_RadioItems.hpp"
+		#include "cfg\Desert\FZ_DES_RadioItems.hpp"
 	};
 	class VES_Rifleman_Crew_DES: VES_Rifleman_MA5B_DES
 	{
 		displayName="Crewman";
 		backpack="";
-		#include "cfg\FZ_DES_CrewItems.hpp"
+		#include "cfg\Desert\FZ_DES_CrewItems.hpp"
 	};
 	class VES_Rifleman_Officer_DES: VES_Rifleman_MA5B_DES
 	{
 		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\FZ_DES_OfficerItems.hpp"
+		#include "cfg\Desert\FZ_DES_OfficerItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_DES: VES_Rifleman_MA5B_DES
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_DES_HeavyItems.hpp"
+		#include "cfg\Desert\FZ_DES_HeavyItems.hpp"
 	};
 	class VES_Rifleman_TeamLeader_DES: VES_Rifleman_MA5B_DES
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_DES_LightItems.hpp"
+		#include "cfg\Desert\FZ_DES_LightItems.hpp"
 	};
 	
+	// Arctic
 	class VES_Rifleman_MA5B_SNO: VES_Rifleman_MA5B_MAR
 	{
 		editorSubcategory="V_FZ_EdSubCat_Men_Marine_S";
 		uniformClass="VES_BDU_Tundra";
-		#include "cfg\FZ_SNO_LightItems.hpp"
+		#include "cfg\Arctic\FZ_SNO_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_SNO: VES_Rifleman_MA5B_SNO
 	{
@@ -372,57 +360,53 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_SNO: VES_Rifleman_MA5B_SNO
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_SNO: VES_Rifleman_MA5B_SNO
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_SNO_HeavyItems.hpp"
+		#include "cfg\Arctic\FZ_SNO_HeavyItems.hpp"
 	};
 	class VES_Rifleman_Radio_SNO: VES_Rifleman_BR55_SNO
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\FZ_SNO_RadioItems.hpp"
+		#include "cfg\Arctic\FZ_SNO_RadioItems.hpp"
 	};
 	class VES_Rifleman_Crew_SNO: VES_Rifleman_MA5B_SNO
 	{
 		displayName="Crewman";
 		backpack="";
-		#include "cfg\FZ_SNO_CrewItems.hpp"
+		#include "cfg\Arctic\FZ_SNO_CrewItems.hpp"
 	};
 	class VES_Rifleman_Officer_SNO: VES_Rifleman_MA5B_SNO
 	{
 		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\FZ_SNO_OfficerItems.hpp"
+		#include "cfg\Arctic\FZ_SNO_OfficerItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_SNO: VES_Rifleman_MA5B_SNO
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_SNO_HeavyItems.hpp"
+		#include "cfg\Arctic\FZ_SNO_HeavyItems.hpp"
 	};
 	class VES_Rifleman_TeamLeader_SNO: VES_Rifleman_MA5B_SNO
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_SNO_LightItems.hpp"
+		#include "cfg\Arctic\FZ_SNO_LightItems.hpp"
 	};
 	
+	// Evolved
 	class VES_Rifleman_MA5B_CEA: VES_Rifleman_MA5B_MAR
 	{
 		editorSubcategory="V_FZ_EdSubCat_Men_Marine_C";
 		uniformClass="VES_BDU_Evolved";
-		#include "cfg\FZ_CEA_LightItems.hpp"
+		#include "cfg\Evolved\FZ_CEA_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_CEA: VES_Rifleman_MA5B_CEA
 	{
@@ -434,57 +418,53 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_CEA: VES_Rifleman_MA5B_CEA
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_CEA: VES_Rifleman_MA5B_CEA
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_CEA_HeavyItems.hpp"
+		#include "cfg\Evolved\FZ_CEA_HeavyItems.hpp"
 	};
 	class VES_Rifleman_Radio_CEA: VES_Rifleman_BR55_CEA
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\FZ_CEA_RadioItems.hpp"
+		#include "cfg\Evolved\FZ_CEA_RadioItems.hpp"
 	};
 	class VES_Rifleman_Crew_CEA: VES_Rifleman_MA5B_CEA
 	{
 		displayName="Crewman";
 		backpack="";
-		#include "cfg\FZ_CEA_CrewItems.hpp"
+		#include "cfg\Evolved\FZ_CEA_CrewItems.hpp"
 	};
 	class VES_Rifleman_Officer_CEA: VES_Rifleman_MA5B_CEA
 	{
 		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\FZ_CEA_OfficerItems.hpp"
+		#include "cfg\Evolved\FZ_CEA_OfficerItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_CEA: VES_Rifleman_MA5B_CEA
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_CEA_HeavyItems.hpp"
+		#include "cfg\Evolved\FZ_CEA_HeavyItems.hpp"
 	};
 	class VES_Rifleman_TeamLeader_CEA: VES_Rifleman_MA5B_CEA
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_CEA_LightItems.hpp"
+		#include "cfg\Evolved\FZ_CEA_LightItems.hpp"
 	};
 	
+	// Urban
 	class VES_Rifleman_MA5B_URB: VES_Rifleman_MA5B_MAR
 	{
 		editorSubcategory="V_FZ_EdSubCat_Men_Marine_U";
 		uniformClass="VES_BDU_Urban";
-		#include "cfg\FZ_URB_LightItems.hpp"
+		#include "cfg\Urban\FZ_URB_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_URB: VES_Rifleman_MA5B_URB
 	{
@@ -496,57 +476,53 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_URB: VES_Rifleman_MA5B_URB
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_URB: VES_Rifleman_MA5B_URB
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_URB_HeavyItems.hpp"
+		#include "cfg\Urban\FZ_URB_HeavyItems.hpp"
 	};
 	class VES_Rifleman_Radio_URB: VES_Rifleman_BR55_URB
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\FZ_URB_RadioItems.hpp"
+		#include "cfg\Urban\FZ_URB_RadioItems.hpp"
 	};
 	class VES_Rifleman_Crew_URB: VES_Rifleman_MA5B_URB
 	{
 		displayName="Crewman";
 		backpack="";
-		#include "cfg\FZ_URB_CrewItems.hpp"
+		#include "cfg\Urban\FZ_URB_CrewItems.hpp"
 	};
 	class VES_Rifleman_Officer_URB: VES_Rifleman_MA5B_URB
 	{
 		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\FZ_URB_OfficerItems.hpp"
+		#include "cfg\Urban\FZ_URB_OfficerItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_URB: VES_Rifleman_MA5B_URB
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_URB_HeavyItems.hpp"
+		#include "cfg\Urban\FZ_URB_HeavyItems.hpp"
 	};
 	class VES_Rifleman_TeamLeader_URB: VES_Rifleman_MA5B_URB
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_URB_LightItems.hpp"
+		#include "cfg\Urban\FZ_URB_LightItems.hpp"
 	};
 	
+	// Army
 	class VES_Rifleman_MA5B_ARM: VES_Rifleman_MA5B_MAR
 	{
 		editorSubcategory="V_FZ_EdSubCat_Men_Army";
 		uniformClass="VES_BDU_Reach";
-		#include "cfg\FZ_ARM_LightItems.hpp"
+		#include "cfg\Army\FZ_ARM_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_ARM: VES_Rifleman_MA5B_ARM
 	{
@@ -558,50 +534,45 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_ARM: VES_Rifleman_MA5B_ARM
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_ARM: VES_Rifleman_MA5B_ARM
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_ARM_HeavyItems.hpp"
+		#include "cfg\Army\FZ_ARM_HeavyItems.hpp"
 	};
 	class VES_Rifleman_Radio_ARM: VES_Rifleman_BR55_ARM
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\FZ_ARM_RadioItems.hpp"
+		#include "cfg\Army\FZ_ARM_RadioItems.hpp"
 	};
 	class VES_Rifleman_Crew_ARM: VES_Rifleman_MA5B_ARM
 	{
 		displayName="Crewman";
 		backpack="";
-		#include "cfg\FZ_ARM_CrewItems.hpp"
+		#include "cfg\Army\FZ_ARM_CrewItems.hpp"
 	};
 	class VES_Rifleman_Officer_ARM: VES_Rifleman_MA5B_ARM
 	{
 		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\FZ_ARM_OfficerItems.hpp"
+		#include "cfg\Army\FZ_ARM_OfficerItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_ARM: VES_Rifleman_MA5B_ARM
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_ARM_HeavyItems.hpp"
+		#include "cfg\Army\FZ_ARM_HeavyItems.hpp"
 	};
 	class VES_Rifleman_TeamLeader_ARM: VES_Rifleman_MA5B_ARM
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
-		#include "cfg\FZ_ARM_LightItems.hpp"
+		#include "cfg\Army\FZ_ARM_LightItems.hpp"
 	};
 	
 	class VES_Rifleman_MA5B_AMP: VES_Rifleman_MA5B_MAR
@@ -609,7 +580,7 @@ class CfgVehicles
 		editorSubcategory="V_FZ_EdSubCat_Men_Army_MP";
 		uniformClass="VES_MPU_Reach";
 		backpack="";
-		#include "cfg\FZ_AMP_LightItems.hpp"
+		#include "cfg\Military Police\FZ_AMP_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_AMP: VES_Rifleman_MA5B_AMP
 	{
@@ -621,17 +592,12 @@ class CfgVehicles
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
-	/*class VES_Rifleman_M28_AMP: VES_Rifleman_MA5B_AMP
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_AMP: VES_Rifleman_MA5B_AMP
 	{
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\FZ_AMP_HeavyItems.hpp"
+		#include "cfg\Military Police\FZ_AMP_HeavyItems.hpp"
 	};
 	
 	// ODSTs
@@ -640,7 +606,7 @@ class CfgVehicles
 		backpack="OPTRE_ILCS_Rucksack_Black";
 		editorSubcategory="V_FZ_EdSubCat_Men_Marine_ODST";
 		uniformClass="VES_BDU_Urban_Slim";
-		#include "cfg\FZ_ODST_LightItems.hpp"
+		#include "cfg\ODST\FZ_ODST_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_ODST: VES_Rifleman_MA5B_ODST
 	{
@@ -651,13 +617,8 @@ class CfgVehicles
 	{
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
-		#include "cfg\FZ_ODST_MarksmanItems.hpp"
+		#include "cfg\ODST\FZ_ODST_MarksmanItems.hpp"
 	};
-	/*class VES_Rifleman_M28_ODST: VES_Rifleman_M392_ODST
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_ODST: VES_Rifleman_MA5B_ODST
 	{
 		displayName="Autorifleman";
@@ -668,7 +629,7 @@ class CfgVehicles
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_515";
-		#include "cfg\FZ_ODST_ScoutItems.hpp"
+		#include "cfg\ODST\FZ_ODST_ScoutItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_ODST: VES_Rifleman_Radio_ODST
 	{
@@ -681,7 +642,7 @@ class CfgVehicles
 	class VES_Rifleman_ONI_ODST: VES_Rifleman_BR55_ODST
 	{
 		displayName="ONI Field Operative";
-		#include "cfg\FZ_ODST_ONIItems.hpp"
+		#include "cfg\ODST\FZ_ODST_ONIItems.hpp"
 	};
 	
 	// Strike Force Phoenix
@@ -690,7 +651,7 @@ class CfgVehicles
 		side=2;
 		uniformClass="VES_BDU_Urban_I_Slim";
 		editorCategory="V_FZ_EdCat_SFP";
-		#include "cfg\FZ_SFP_LightItems.hpp"
+		#include "cfg\Strike Force Phoenix\FZ_SFP_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_SFP: VES_Rifleman_MA5B_SFP
 	{
@@ -701,13 +662,8 @@ class CfgVehicles
 	{
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
-		#include "cfg\FZ_SFP_MarksmanItems.hpp"
+		#include "cfg\Strike Force Phoenix\FZ_SFP_MarksmanItems.hpp"
 	};
-	/*class VES_Rifleman_M28_SFP: VES_Rifleman_M392_SFP
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_SFP: VES_Rifleman_MA5B_SFP
 	{
 		displayName="Autorifleman";
@@ -718,7 +674,7 @@ class CfgVehicles
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_515";
-		#include "cfg\FZ_SFP_ScoutItems.hpp"
+		#include "cfg\Strike Force Phoenix\FZ_SFP_ScoutItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_SFP: VES_Rifleman_Radio_SFP
 	{
@@ -734,7 +690,7 @@ class CfgVehicles
 	{
 		uniformClass="VES_BDU_Evolved_Slim";
 		editorSubcategory="V_FZ_EdSubCat_Men_Army_AA";
-		#include "cfg\FZ_AA_LightItems.hpp"
+		#include "cfg\Air Assault\FZ_AA_LightItems.hpp"
 	};
 	class VES_Rifleman_BR55_AA: VES_Rifleman_MA5B_AA
 	{
@@ -745,13 +701,8 @@ class CfgVehicles
 	{
 		displayName="Designated Marksman (M392)";
 		#include "cfg\FZ_M392_Items.hpp"
-		#include "cfg\FZ_AA_MarksmanItems.hpp"
+		#include "cfg\Air Assault\FZ_AA_MarksmanItems.hpp"
 	};
-	/*class VES_Rifleman_M28_AA: VES_Rifleman_M392_AA
-	{
-		displayName="Designated Marksman (M28A2)";
-		#include "cfg\FZ_M28_Items.hpp"
-	};*/
 	class VES_Rifleman_M73_AA: VES_Rifleman_MA5B_AA
 	{
 		displayName="Autorifleman";
@@ -762,7 +713,7 @@ class CfgVehicles
 	{
 		displayName="Radio Operator";
 		backpack="OPTRE_ANPRC_515";
-		#include "cfg\FZ_AA_ScoutItems.hpp"
+		#include "cfg\Air Assault\FZ_AA_ScoutItems.hpp"
 	};
 	class VES_Rifleman_SquadLeader_AA: VES_Rifleman_Radio_AA
 	{
@@ -771,6 +722,69 @@ class CfgVehicles
 	class VES_Rifleman_TeamLeader_AA: VES_Rifleman_SquadLeader_AA
 	{
 		displayName="Team Leader";
+	};
+	
+	// Colonial Police
+	class VES_Rifleman_MA5B_CPD: VES_Rifleman_MA5B_MAR
+	{
+		side=2;
+		editorCategory="V_FZ_EdCat_CPD";
+		editorSubcategory="V_FZ_EdSubCat_Men_Police";
+		uniformClass="VES_BDU_CPD";
+		#include "cfg\Colonial Police\FZ_CPD_LightItems.hpp"
+	};
+	class VES_Rifleman_BR55_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Rifleman (BR55)";
+		uniformClass="VES_BDU_R_CPD";
+		#include "cfg\FZ_BR55_Items.hpp"
+	};
+	class VES_Rifleman_M392_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Designated Marksman (M392)";
+		uniformClass="VES_BDU_R_CPD";
+		#include "cfg\FZ_M392_Items.hpp"
+	};
+	class VES_Rifleman_M73_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Autorifleman";
+		backpack="OPTRE_UNSC_Rucksack_Heavy";
+		#include "cfg\FZ_M73_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_HeavyItems.hpp"
+	};
+	class VES_Rifleman_Radio_CPD: VES_Rifleman_BR55_CPD
+	{
+		displayName="Radio Operator";
+		backpack="OPTRE_ANPRC_521_Black";
+		#include "cfg\Colonial Police\FZ_CPD_OfficerItems.hpp"
+	};
+	class VES_Rifleman_Crew_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Crewman";
+		backpack="";
+		#include "cfg\Colonial Police\FZ_CPD_CrewItems.hpp"
+	};
+	class VES_Rifleman_Officer_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Officer";
+		backpack="OPTRE_ANPRC_521_Black";
+		uniformClass="VES_BDU_R_CPD";
+		#include "cfg\FZ_M6C_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_OfficerItems.hpp"
+	};
+	class VES_Rifleman_SquadLeader_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Squad Leader";
+		backpack="OPTRE_ANPRC_521_Black";
+		#include "cfg\FZ_MA5B_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_HeavyItems.hpp"
+	};
+	class VES_Rifleman_TeamLeader_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Team Leader";
+		backpack="OPTRE_UNSC_Rucksack_Heavy";
+		#include "cfg\FZ_MA5B_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_LightItems.hpp"
 	};
 };
 
@@ -894,7 +908,7 @@ class CfgGroups
 			};
 			class MarinesSNOW
 			{
-				name="Infantry (Snow)";
+				name="Infantry (Arctic)";
 				class Fireteam
 				{
 					dlc="Zulu";
