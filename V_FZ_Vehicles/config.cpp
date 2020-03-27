@@ -103,6 +103,10 @@ class CfgPatches
 			"VES_IFV76",
 			"VES_IFV76_M",
 			"VES_IFV76_A",
+			
+			"VES_IFV76_CPD",
+			"VES_IFV76_A_CPD",
+			
             "VES_M413_MGS",
             "VES_M412_IFV",
 			
@@ -760,6 +764,7 @@ class cfgVehicles
 		tf_isolatedAmount=.65;
 		tf_range=10000;
 		TFAR_hasIntercom=1;
+		waterResistanceCoef=0.05;
 		class EventHandlers;
 		class TransportItems
 		{
@@ -770,6 +775,7 @@ class cfgVehicles
 		class AnimationSources;
 		#include "cfg\FZ_A_HoneybadgerCamos.hpp"
 	};
+	
 	class VES_IFV76: VES_IFV76_A
 	{
 		displayName="APC-76 Honeybadger";
@@ -784,6 +790,37 @@ class cfgVehicles
 			};
 		};
 	};
+	
+	class VES_IFV76_A_CPD: VES_IFV76_A
+	{
+		crew="VES_Rifleman_MA5B_CPD";
+		editorCategory="V_FZ_EdCat_CPD";
+		weapons[]={"TruckHorn3", "PoliceHorn"};
+		side=1;
+		class TextureSources{};
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Honeybadger\V_IFV76_CPD_CO.paa",
+			"V_FZ_Vehicles\data\Honeybadger\V_IFV76_BLK_A_CO.paa",
+			"V_FZ_Vehicles\data\Honeybadger\V_IFV76_BLK_T_CO.paa"
+		};
+	};
+	class VES_IFV76_CPD: VES_IFV76_A_CPD
+	{
+		displayName="APC-76 Honeybadger";
+		class Turrets{};
+		class AnimationSources: AnimationSources
+		{
+			class HideTurret
+			{
+				animPeriod = 0.001;
+				initPhase = "true";
+				source = "user";
+			};
+		};
+	};
+	
+	
 	class VES_IFV76_M: VES_IFV76
 	{
 		displayName="APC-76 Medical Honeybadger";
@@ -1014,7 +1051,7 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Azzamean";
-		side=2;
+		side=0;
 		editorCategory="V_FZ_EdCat_URF";
 		#include "cfg\FZ_B_DragonflyCamos.hpp"
 	};
@@ -1022,7 +1059,7 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Azzamean";
-		side=1;
+		side=2;
 		editorCategory="V_FZ_EdCat_CPD";
 		class TextureSources{};
 		hiddenSelectionsTextures[]=

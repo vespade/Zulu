@@ -125,7 +125,18 @@ class CfgPatches
 			"VES_Rifleman_M73_AA",
 			"VES_Rifleman_Radio_AA",
 			"VES_Rifleman_SquadLeader_AA",
-			"VES_Rifleman_TeamLeader_AA"
+			"VES_Rifleman_TeamLeader_AA",
+			// Colonial Police
+			"VES_Rifleman_MA5B_CPD",
+			"VES_Rifleman_BR55_CPD",
+			"VES_Rifleman_M392_CPD",
+			"VES_Rifleman_M28_CPD",
+			"VES_Rifleman_M73_CPD",
+			"VES_Rifleman_Radio_CPD",
+			"VES_Rifleman_Crew_CPD",
+			"VES_Rifleman_Officer_CPD",
+			"VES_Rifleman_SquadLeader_CPD",
+			"VES_Rifleman_TeamLeader_CPD"
 		};
 		weapons[]={};
 		magazines[]={};
@@ -792,7 +803,7 @@ class CfgGroups
 {
 	class West
 	{
-		class FireteamZulu
+		class V_FZ_UNSCDF
 		{
 			dlc="Zulu";
 			name="Fireteam Zulu";
@@ -1181,6 +1192,8 @@ class CfgGroups
 					};
 				};
 			};
+			
+			// Vehicles
 			class MarinesVeh
 			{
 				name="Motorized Marines";
@@ -1352,6 +1365,67 @@ class CfgGroups
 					{
 						position[]={-10,-10,0};
 						vehicle="VES_Rifleman_MA5B_MAR";
+					};
+				};
+			};
+		};
+	};
+	class Indep
+	{
+		class V_FZ_CPD
+		// Colonial Police
+			class CPD
+			{
+				name="Infantry (Colonial Police)";
+				class Fireteam
+				{
+					dlc="Zulu";
+					name="Fireteam";
+					side=1;
+					faction="OPTRE_UNSC";
+					rarityGroup=0.3;
+					class Corporal
+					{
+						position[]={0,0,0};
+						rank="CORPORAL";
+						side=1;
+						vehicle="VES_Rifleman_TeamLeader_CPD";
+					};
+					class Private: Corporal
+					{
+						position[]={5,-5,0};
+						rank="PRIVATE";
+						vehicle="VES_Rifleman_MA5B_CPD";
+					};
+					class Private1: Private
+					{
+						position[]={-5,-5,0};
+					};
+					class Private2: Private
+					{
+						position[]={10,-10,0};
+						vehicle="VES_Rifleman_BR55_CPD";
+					};
+				};
+				class Sentry
+				{
+					dlc="Zulu";
+					name="Sentry";
+					side=1;
+					faction="OPTRE_UNSC";
+					rarityGroup=0.3;
+					class Corporal
+					{
+						position[]={0,0,0};
+						rank="CORPORAL";
+						side=1;
+						vehicle="VES_Rifleman_TeamLeader_CPD";
+					};
+					class Corporal1: Corporal
+					{
+						position[]={5,-5,0};
+						rank="CORPORAL";
+						vehicle="VES_Rifleman_M73_CPD";
 					};
 				};
 			};

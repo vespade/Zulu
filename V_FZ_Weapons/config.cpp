@@ -145,11 +145,12 @@ class CfgWeapons
 	{
 		displayName="Integrated M7 SMG";
 	};
+	class OPTRE_M6_Laser;
 	class VES_M6_Laser: OPTRE_M6_Laser
 	{
-		ace_overpressure_angle = 0;  
-        ace_overpressure_range = 0; 
-        ace_overpressure_damage = 0; 
+		ace_overpressure_angle = 0;
+        ace_overpressure_range = 0;
+        ace_overpressure_damage = 0;
 	};
 };
 
