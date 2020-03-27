@@ -115,7 +115,7 @@ class CfgPatches
 			"VES_MQ49_SD",
 			"VES_MQ49_RD",
 			"VES_MQ221",
-			"VES_MQ221_URF"
+			"VES_MQ221_URF",
 			"VES_MQ221_CPD"
 		};
 		weapons[]={};
@@ -1023,8 +1023,12 @@ class cfgVehicles
 		dlc="Zulu";
 		author="Azzamean";
 		side=3;
-		editorCategory="V_FZ_EdCat_Zulu";
-		#include "cfg\FZ_C_DragonflyCamos.hpp"
+		editorCategory="V_FZ_EdCat_CPD";
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Dragonfly\A_MQ221_CPD_CO.paa",
+			"V_FZ_Vehicles\data\Dragonfly\A_MQ221_CPD_A_CO.paa"
+		};
 	};
 	
 	// Falcons
