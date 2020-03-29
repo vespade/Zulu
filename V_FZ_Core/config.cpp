@@ -195,9 +195,8 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"V_FZ_Core\sounds\zulu_armed.ogg",
-			1,
-			1
+			"V_FZ_Core\sounds\v_fz_armed.ogg",
+			5, 1.0, 250
 		};
 		titles[]={};
 	};
@@ -205,10 +204,18 @@ class CfgSounds
 	{
 		sound[]=
 		{
-			"V_FZ_Core\sounds\zulu_disarmed.ogg",
-			1,
-			1
+			"V_FZ_Core\sounds\v_fz_disarmed.ogg",
+			5, 1.0, 250
 		};
+	};
+	class VES_Siren
+	{
+		sound[]=
+		{
+			"V_FZ_Core\sounds\v_fz_cpd_siren.ogg",
+			1, 1.0, 250
+		};
+		titles[]={};
 	};
 };
 class CfgNonAIVehicles

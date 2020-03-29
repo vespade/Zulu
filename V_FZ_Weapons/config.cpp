@@ -152,6 +152,19 @@ class CfgWeapons
         ace_overpressure_range = 0;
         ace_overpressure_damage = 0;
 	};
+	
+	// Sirens
+	class PoliceHorn;
+	class VES_CPD_Horn: PoliceHorn
+	{
+		displayName = "Police Horn";
+		drySound[] = {"\V_FZ_Core\Sounds\V_FZ_CPD_Horn.ogg", 1, 1};
+	};
+	class VES_CPD_Yelp: PoliceHorn
+	{
+		displayName = "Siren Yelp";
+		drySound[] = {"\V_FZ_Core\Sounds\V_FZ_CPD_Yelp.ogg", 1, 1};
+	};
 };
 
 // Turrets
