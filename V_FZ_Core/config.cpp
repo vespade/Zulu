@@ -37,19 +37,23 @@ class CfgEditorCategories
 {
 	class V_FZ_EdCat_Zulu
 	{
-		displayName="UNSCDF (Fireteam Zulu)";
+		displayName="[Zulu] UNSCDF";
 	};
     class V_FZ_EdCat_CPD
 	{
-		displayName="Colonial Police (Fireteam Zulu)";
+		displayName="[Zulu] Colonial Police";
 	};
 	class V_FZ_EdCat_SFP
 	{
-		displayName="Strike Force Phoenix (Fireteam Zulu)";
+		displayName="[Zulu] Strike Force Phoenix";
 	};
 	class V_FZ_EdCat_URF
 	{
-		displayName="United Rebel Front (Fireteam Zulu)";
+		displayName="[Zulu] United Rebel Front";
+	};
+	class V_FZ_EdCat_ONI
+	{
+		displayName="[Zulu] Office of Naval Intelligence";
 	};
 };
 class CfgEditorSubcategories
@@ -101,6 +105,10 @@ class CfgEditorSubcategories
 	class V_FZ_EdSubCat_Men_SWAT
 	{
 		displayName="Men (SWAT)";
+	};
+	class V_FZ_EdSubCat_Men_Agent
+	{
+		displayName="Men (Agents)";
 	};
 	class V_FZ_EdSubCat_Rotary
 	{

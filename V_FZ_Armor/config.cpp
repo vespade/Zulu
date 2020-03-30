@@ -2536,6 +2536,14 @@ class CfgWeapons
 			uniformClass=VES_BDU_V_CPD;
 		};
 	};
+	class VES_BDU_ONI: VES_BDU_Evolved
+	{
+		displayName="[FZ] Naval Intelligence Formal Attire";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass=VES_BDU_V_ONI;
+		};
+	};
 	
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_Evolved: OPTRE_UNSC_Army_Uniform_OLI
@@ -3555,6 +3563,13 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_CPD_CO"};
 		uniformclass="VES_BDU_CPD";
 	};
+	class VES_BDU_V_ONI: VES_BDU_V_Evolved
+	{
+		model="\a3\Characters_F\Civil\Scientist_01_formal_F";
+		hiddenSelections[]={"camo1","badge","id"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_UNI_ONI_CO","V_FZ_Armor\Data\Uniforms\V_UNI_ONI_CO"};
+		uniformclass="VES_BDU_ONI";
+	};
 	
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_V_Evolved: VES_BDU_V_Evolved
@@ -3660,7 +3675,7 @@ class CfgVehicles
 	
 	class VES_BDU_SS_V_CPD: VES_BDU_SS_V_Evolved
 	{
-		model="\a3\characters_f_beta\indep\ia_soldier_01";
+		model="\A3\Characters_F\Civil\c_poloshirtpants";
 		hiddenSelections[]={"camo"};
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_UNI_CPD_BLK_CO"};
 		uniformclass="VES_BDU_SS_CPD";

@@ -28,6 +28,7 @@ class CfgPatches
 			
 			"VES_M12G1_LRV",
 			"VES_M12G1_LRV_SFP",
+			"VES_M12G1_LRV_CPD",
 			
 			"VES_M12A1_LRV",
 			"VES_M12A1_LRV_URF",
@@ -271,7 +272,7 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Vespade";
-		crew="VES_Rifleman_MA5B_CPD";
+		crew="VES_Rifleman_MA5B_SWAT";
 		editorCategory="V_FZ_EdCat_CPD";
 		hiddenSelectionsTextures[]=
 		{
@@ -320,6 +321,19 @@ class cfgVehicles
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
+	};
+	class VES_M12G1_LRV_CPD: VES_M12G1_LRV_SFP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		crew="VES_Rifleman_MA5B_SWAT";
+		editorCategory="V_FZ_EdCat_CPD";
+		hiddenSelectionsTextures[]=
+		{
+			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
+			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
+		};
+		#include "cfg\FZ_WarthogActions_CPD.hpp"
 	};
 	
 	// Rocket Warthogs
@@ -376,7 +390,7 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Vespade";
-		crew="VES_Rifleman_MA5B_CPD";
+		crew="VES_Rifleman_MA5B_SWAT";
 		editorCategory="V_FZ_EdCat_CPD";
 		hiddenSelectionsTextures[]=
 		{
@@ -440,7 +454,7 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Vespade";
-		crew="VES_Rifleman_MA5B_CPD";
+		crew="VES_Rifleman_MA5B_SWAT";
 		editorCategory="V_FZ_EdCat_CPD";
 		hiddenSelectionsTextures[]=
 		{
@@ -606,7 +620,7 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Vespade";
-		crew="VES_Rifleman_MA5B_CPD";
+		crew="VES_Rifleman_MA5B_SWAT";
 		editorCategory="V_FZ_EdCat_CPD";
 		hiddenSelectionsTextures[]=
 		{
@@ -667,7 +681,7 @@ class cfgVehicles
 		author="Vespade";
 		scope=1;
 		scopeCurator=1;
-		crew="VES_Rifleman_MA5B_CPD";
+		crew="VES_Rifleman_MA5B_SWAT";
 		editorCategory="V_FZ_EdCat_CPD";
 		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Siren"};
 		side=2;

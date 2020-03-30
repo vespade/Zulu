@@ -107,7 +107,10 @@ class CfgPatches
 			"VES_Rifleman_Radio_ODST",
 			"VES_Rifleman_SquadLeader_ODST",
 			"VES_Rifleman_TeamLeader_ODST",
+			
 			"VES_Rifleman_ONI_ODST",
+			"VES_ONI_Agent",
+			
 			// Phoenix
 			"VES_Rifleman_MA5B_SFP",
 			"VES_Rifleman_BR55_SFP",
@@ -136,7 +139,18 @@ class CfgPatches
 			"VES_Rifleman_Crew_CPD",
 			"VES_Rifleman_Officer_CPD",
 			"VES_Rifleman_SquadLeader_CPD",
-			"VES_Rifleman_TeamLeader_CPD"
+			"VES_Rifleman_TeamLeader_CPD",
+			
+			"VES_Rifleman_MA5B_SWAT",
+			"VES_Rifleman_BR55_SWAT",
+			"VES_Rifleman_M392_SWAT",
+			"VES_Rifleman_M28_SWAT",
+			"VES_Rifleman_M73_SWAT",
+			"VES_Rifleman_Radio_SWAT",
+			"VES_Rifleman_Crew_SWAT",
+			"VES_Rifleman_Officer_SWAT",
+			"VES_Rifleman_SquadLeader_SWAT",
+			"VES_Rifleman_TeamLeader_SWAT"
 		};
 		weapons[]={};
 		magazines[]={};
@@ -650,11 +664,6 @@ class CfgVehicles
 	{
 		displayName="Team Leader";
 	};
-	class VES_Rifleman_ONI_ODST: VES_Rifleman_BR55_ODST
-	{
-		displayName="ONI Field Operative";
-		#include "cfg\ODST\FZ_ODST_ONIItems.hpp"
-	};
 	
 	// Strike Force Phoenix
 	class VES_Rifleman_MA5B_SFP: VES_Rifleman_MA5B_ODST
@@ -741,19 +750,20 @@ class CfgVehicles
 		side=2;
 		editorCategory="V_FZ_EdCat_CPD";
 		editorSubcategory="V_FZ_EdSubCat_Men_Police";
-		uniformClass="VES_BDU_CPD";
-		#include "cfg\Colonial Police\FZ_CPD_LightItems.hpp"
+		backpack="";
+		uniformClass="VES_BDU_SS_CPD";
+		#include "cfg\Colonial Police\FZ_CPD_OfficerItems.hpp"
 	};
 	class VES_Rifleman_BR55_CPD: VES_Rifleman_MA5B_CPD
 	{
 		displayName="Rifleman (BR55)";
-		uniformClass="VES_BDU_R_CPD";
+		uniformClass="VES_BDU_SS_CPD_BLU";
 		#include "cfg\FZ_BR55_Items.hpp"
 	};
 	class VES_Rifleman_M392_CPD: VES_Rifleman_MA5B_CPD
 	{
 		displayName="Designated Marksman (M392)";
-		uniformClass="VES_BDU_R_CPD";
+		uniformClass="VES_BDU_SS_CPD_BLU";
 		#include "cfg\FZ_M392_Items.hpp"
 	};
 	class VES_Rifleman_M73_CPD: VES_Rifleman_MA5B_CPD
@@ -761,13 +771,12 @@ class CfgVehicles
 		displayName="Autorifleman";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_M73_Items.hpp"
-		#include "cfg\Colonial Police\FZ_CPD_HeavyItems.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_MediumItems.hpp"
 	};
 	class VES_Rifleman_Radio_CPD: VES_Rifleman_BR55_CPD
 	{
 		displayName="Radio Operator";
-		backpack="OPTRE_ANPRC_521_Black";
-		#include "cfg\Colonial Police\FZ_CPD_OfficerItems.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_LightItems.hpp"
 	};
 	class VES_Rifleman_Crew_CPD: VES_Rifleman_MA5B_CPD
 	{
@@ -778,24 +787,119 @@ class CfgVehicles
 	class VES_Rifleman_Officer_CPD: VES_Rifleman_MA5B_CPD
 	{
 		displayName="Officer";
+		uniformClass="VES_BDU_SS_CPD_BLU";
+		#include "cfg\FZ_M6C_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_LightItems.hpp"
+	};
+	class VES_Rifleman_SquadLeader_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Squad Leader";
+		#include "cfg\FZ_MA5B_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_MediumItems.hpp"
+	};
+	class VES_Rifleman_TeamLeader_CPD: VES_Rifleman_MA5B_CPD
+	{
+		displayName="Team Leader";
+		#include "cfg\FZ_MA5B_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_OfficerItems.hpp"
+	};
+	
+	class VES_Rifleman_MA5B_SWAT: VES_Rifleman_MA5B_CPD
+	{
+		side=2;
+		editorCategory="V_FZ_EdCat_CPD";
+		editorSubcategory="V_FZ_EdSubCat_Men_SWAT";
+		uniformClass="VES_BDU_CPD";
+		#include "cfg\Colonial Police\FZ_CPD_LightItems.hpp"
+	};
+	class VES_Rifleman_BR55_SWAT: VES_Rifleman_MA5B_SWAT
+	{
+		displayName="Rifleman (BR55)";
+		uniformClass="VES_BDU_R_CPD";
+		#include "cfg\FZ_BR55_Items.hpp"
+	};
+	class VES_Rifleman_M392_SWAT: VES_Rifleman_MA5B_SWAT
+	{
+		displayName="Designated Marksman (M392)";
+		uniformClass="VES_BDU_R_CPD";
+		#include "cfg\FZ_M392_Items.hpp"
+	};
+	class VES_Rifleman_M73_SWAT: VES_Rifleman_MA5B_SWAT
+	{
+		displayName="Autorifleman";
+		backpack="OPTRE_UNSC_Rucksack_Heavy";
+		#include "cfg\FZ_M73_Items.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_HeavyItems.hpp"
+	};
+	class VES_Rifleman_Radio_SWAT: VES_Rifleman_BR55_SWAT
+	{
+		displayName="Radio Operator";
+		backpack="OPTRE_ANPRC_521_Black";
+		#include "cfg\Colonial Police\FZ_CPD_MediumItems.hpp"
+	};
+	class VES_Rifleman_Crew_SWAT: VES_Rifleman_MA5B_SWAT
+	{
+		displayName="Crewman";
+		backpack="";
+		#include "cfg\Colonial Police\FZ_CPD_CrewItems.hpp"
+	};
+	class VES_Rifleman_Officer_SWAT: VES_Rifleman_MA5B_SWAT
+	{
+		displayName="Officer";
 		backpack="OPTRE_ANPRC_521_Black";
 		uniformClass="VES_BDU_R_CPD";
 		#include "cfg\FZ_M6C_Items.hpp"
-		#include "cfg\Colonial Police\FZ_CPD_OfficerItems.hpp"
+		#include "cfg\Colonial Police\FZ_CPD_MediumItems.hpp"
 	};
-	class VES_Rifleman_SquadLeader_CPD: VES_Rifleman_MA5B_CPD
+	class VES_Rifleman_SquadLeader_SWAT: VES_Rifleman_MA5B_SWAT
 	{
 		displayName="Squad Leader";
 		backpack="OPTRE_ANPRC_521_Black";
 		#include "cfg\FZ_MA5B_Items.hpp"
 		#include "cfg\Colonial Police\FZ_CPD_HeavyItems.hpp"
 	};
-	class VES_Rifleman_TeamLeader_CPD: VES_Rifleman_MA5B_CPD
+	class VES_Rifleman_TeamLeader_SWAT: VES_Rifleman_MA5B_SWAT
 	{
 		displayName="Team Leader";
 		backpack="OPTRE_UNSC_Rucksack_Heavy";
 		#include "cfg\FZ_MA5B_Items.hpp"
 		#include "cfg\Colonial Police\FZ_CPD_LightItems.hpp"
+	};
+	
+	// Office of Naval Intelligence
+	class VES_Rifleman_ONI_ODST: VES_Rifleman_BR55_ODST
+	{
+		side=2;
+		editorCategory="V_FZ_EdCat_ONI";
+		editorSubcategory="V_FZ_EdSubCat_Men_Agent";
+		displayName="ONI Field Operative";
+		#include "cfg\ODST\FZ_ODST_ONIItems.hpp"
+	};
+	class VES_ONI_Agent: VES_Rifleman_ONI_ODST
+	{
+		displayName="Naval Intelligence Officer";
+		backpack="";
+		uniformClass="VES_BDU_ONI";
+		headgearList[]={};
+		#include "cfg\FZ_M6C_Items.hpp"
+		linkedItems[]=
+		{
+			"ItemMap",
+			"ItemCompass",
+			"ACE_Altimeter",
+			"ItemRadio",
+			"OPTRE_Smartfinder",
+			"ItemGPS"
+		};
+		respawnLinkedItems[]=
+		{
+			"ItemMap",
+			"ItemCompass",
+			"ACE_Altimeter",
+			"ItemRadio",
+			"OPTRE_Smartfinder",
+			"ItemGPS"
+		};
 	};
 };
 
@@ -803,10 +907,10 @@ class CfgGroups
 {
 	class West
 	{
-		class FireteamZulu
+		class V_FZ_UNSCDF
 		{
 			dlc="Zulu";
-			name="Fireteam Zulu";
+			name="[Zulu] UNSCDF";
 			class Marines
 			{
 				name="Infantry (Marines)";
@@ -1363,6 +1467,124 @@ class CfgGroups
 					{
 						position[]={-10,-10,0};
 						vehicle="VES_Rifleman_MA5B_MAR";
+					};
+				};
+			};
+		};
+	};
+	class Indep
+	{
+		class V_FZ_CPD
+		{
+			dlc="Zulu";
+			name="[Zulu] Colonial Police";
+			class Police
+			{
+				name="Infantry (Police)";
+				class Fireteam
+				{
+					dlc="Zulu";
+					name="Fireteam";
+					side=2;
+					faction="OPTRE_UNSC";
+					rarityGroup=0.3;
+					class Corporal
+					{
+						position[]={0,0,0};
+						rank="CORPORAL";
+						side=2;
+						vehicle="VES_Rifleman_TeamLeader_CPD";
+					};
+					class Private: Corporal
+					{
+						position[]={5,-5,0};
+						rank="PRIVATE";
+						vehicle="VES_Rifleman_MA5B_CPD";
+					};
+					class Private1: Private
+					{
+						position[]={-5,-5,0};
+					};
+					class Private2: Private
+					{
+						position[]={10,-10,0};
+						vehicle="VES_Rifleman_BR55_CPD";
+					};
+				};
+				class Sentry
+				{
+					dlc="Zulu";
+					name="Sentry";
+					side=2;
+					faction="OPTRE_UNSC";
+					rarityGroup=0.3;
+					class Corporal
+					{
+						position[]={0,0,0};
+						rank="CORPORAL";
+						side=2;
+						vehicle="VES_Rifleman_TeamLeader_CPD";
+					};
+					class Corporal1: Corporal
+					{
+						position[]={5,-5,0};
+						rank="CORPORAL";
+						vehicle="VES_Rifleman_M73_CPD";
+					};
+				};
+			};
+			class SWAT
+			{
+				name="Infantry (SWAT)";
+				class Fireteam
+				{
+					dlc="Zulu";
+					name="Fireteam";
+					side=2;
+					faction="OPTRE_UNSC";
+					rarityGroup=0.3;
+					class Corporal
+					{
+						position[]={0,0,0};
+						rank="CORPORAL";
+						side=2;
+						vehicle="VES_Rifleman_TeamLeader_SWAT";
+					};
+					class Private: Corporal
+					{
+						position[]={5,-5,0};
+						rank="PRIVATE";
+						vehicle="VES_Rifleman_MA5B_SWAT";
+					};
+					class Private1: Private
+					{
+						position[]={-5,-5,0};
+					};
+					class Private2: Private
+					{
+						position[]={10,-10,0};
+						vehicle="VES_Rifleman_BR55_SWAT";
+					};
+				};
+				class Sentry
+				{
+					dlc="Zulu";
+					name="Sentry";
+					side=2;
+					faction="OPTRE_UNSC";
+					rarityGroup=0.3;
+					class Corporal
+					{
+						position[]={0,0,0};
+						rank="CORPORAL";
+						side=2;
+						vehicle="VES_Rifleman_TeamLeader_SWAT";
+					};
+					class Corporal1: Corporal
+					{
+						position[]={5,-5,0};
+						rank="CORPORAL";
+						vehicle="VES_Rifleman_M73_SWAT";
 					};
 				};
 			};
