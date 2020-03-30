@@ -2343,6 +2343,25 @@ class CfgWeapons
 		};
 	};
 	
+	class Vest_NoCamo_Base;
+	class V_Rangemaster_Belt: Vest_NoCamo_Base
+	{
+		class ItemInfo;
+	};
+	class VES_Holster_CPD: V_Rangemaster_Belt
+	{
+		dlc="Zulu";
+		author="Vespade";
+		displayName="[FZ] Colonial Police Holster";
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"a3\characters_f\blufor\data\vests_blk_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]={"camo"};
+			hiddenSelectionsTextures[]={"a3\characters_f\blufor\data\vests_blk_co.paa"};
+		};
+	};
+	
 	
 	//Uniforms (Bases)
 	class OPTRE_UNSC_Army_Uniform_OLI;
@@ -2678,6 +2697,23 @@ class CfgWeapons
         {
 			uniformClass=VES_BDU_SS_V_Khaki;
         };
+	};
+	
+	class VES_BDU_SS_CPD: VES_BDU_SS_Evolved
+	{
+		displayName="[FZ] Colonial Police Uniform (Short)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass=VES_BDU_SS_V_CPD;
+		};
+	};
+	class VES_BDU_SS_CPD_BLU: VES_BDU_SS_Evolved
+	{
+		displayName="[FZ] Colonial Police Uniform (Blue)(Short)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass=VES_BDU_SS_V_CPD_BLU;
+		};
 	};
 	
 	// Rolled Uniforms
@@ -3620,6 +3656,19 @@ class CfgVehicles
 	{
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_Khaki_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Khaki_CO"};
 		uniformclass="VES_BDU_SS_Khaki";
+	};
+	
+	class VES_BDU_SS_V_CPD: VES_BDU_SS_V_Evolved
+	{
+		model="\a3\characters_f_beta\indep\ia_soldier_01";
+		hiddenSelections[]={"camo"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_UNI_CPD_BLK_CO"};
+		uniformclass="VES_BDU_SS_CPD";
+	};
+	class VES_BDU_SS_V_CPD_BLU: VES_BDU_SS_V_CPD
+	{
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_UNI_CPD_BLU_CO"};
+		uniformclass="VES_BDU_SS_CPD_BLU";
 	};
 	
 	// Rolled Uniforms

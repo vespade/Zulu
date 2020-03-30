@@ -160,10 +160,9 @@ class CfgWeapons
 		displayName = "Police Horn";
 		drySound[] = {"\V_FZ_Core\Sounds\V_FZ_CPD_Horn.ogg", 1, 1};
 	};
-	class VES_CPD_Yelp: PoliceHorn
+	class VES_CPD_Siren: PoliceHorn
 	{
-		displayName = "Siren Yelp";
-		drySound[] = {"\V_FZ_Core\Sounds\V_FZ_CPD_Yelp.ogg", 1, 1};
+		displayName = "Police Siren";
 	};
 };
 

@@ -646,6 +646,8 @@ class cfgVehicles
 	
 	class VES_IFV76: VES_IFV76_A
 	{
+		dlc="Zulu";
+		author="Vespade";
 		displayName="APC-76 Honeybadger";
 		class Turrets{};
 		class AnimationSources: AnimationSources
@@ -661,9 +663,13 @@ class cfgVehicles
 	
 	class VES_IFV76_A_CPD: VES_IFV76_A
 	{
+		dlc="Zulu";
+		author="Vespade";
+		scope=1;
+		scopeCurator=1;
 		crew="VES_Rifleman_MA5B_CPD";
 		editorCategory="V_FZ_EdCat_CPD";
-		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Yelp"};
+		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Siren"};
 		side=2;
 		class TextureSources{};
 		hiddenSelectionsTextures[]=
@@ -675,6 +681,10 @@ class cfgVehicles
 	};
 	class VES_IFV76_CPD: VES_IFV76_A_CPD
 	{
+		dlc="Zulu";
+		author="Vespade";
+		scope=2;
+		scopeCurator=2;
 		displayName="APC-76 Honeybadger";
 		class Turrets{};
 		class AnimationSources: AnimationSources
@@ -834,14 +844,14 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_BuffaloCamos.hpp"
 	};
-	
+	/*
 	class VES_HDV134_TT_CPD: VES_HDV134_TT
 	{
 		dlc="Zulu";
 		author="Vespade";
 		crew="VES_Rifleman_MA5B_CPD";
 		editorCategory="V_FZ_EdCat_CPD";
-		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Yelp"};
+		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Siren"};
 		side=2;
 		class TextureSources{};
 		hiddenSelectionsTextures[]=
@@ -852,6 +862,7 @@ class cfgVehicles
 			"\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
 		};				
 	};
+	*/
 	
 	class O_Truck_03_covered_F;
 	class VES_HDV134_TT_C: O_Truck_03_covered_F
@@ -869,14 +880,14 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_D_BuffaloCamos.hpp"
 	};
-	
+	/*
 	class VES_HDV134_TT_C_CPD: VES_HDV134_TT_C
 	{
 		dlc="Zulu";
 		author="Vespade";
 		crew="VES_Rifleman_MA5B_CPD";
 		editorCategory="V_FZ_EdCat_CPD";
-		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Yelp"};
+		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Siren"};
 		side=2;
 		class TextureSources{};
 		hiddenSelectionsTextures[]=
@@ -886,7 +897,7 @@ class cfgVehicles
 			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_BLK_S_CO.paa",
 			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_BLK_C_CO.paa"
 		};		
-	};
+	};*/
 	
 	// UAV
 	class B_UAV_01_F;
