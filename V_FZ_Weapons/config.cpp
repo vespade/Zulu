@@ -164,6 +164,18 @@ class CfgWeapons
 	{
 		displayName = "Police Siren";
 	};
+	
+	// Warthog Music
+	class VES_HogRun: PoliceHorn
+	{
+		displayName = "Warthog Run";
+		drySound[] = {"\V_FZ_Weapons\Sounds\V_FZ_HogRun.ogg", 2, 1};
+	};
+	class VES_HogJazz: PoliceHorn
+	{
+		displayName = "Smooth Jazz";
+		drySound[] = {"\V_FZ_Weapons\Sounds\V_FZ_HogJazz.ogg", 2, 1};
+	};
 };
 
 // Turrets

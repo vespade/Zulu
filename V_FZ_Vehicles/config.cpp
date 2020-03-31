@@ -172,7 +172,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-		weapons[]={"TruckHorn3"};
+		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
@@ -255,7 +255,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-		weapons[]={"TruckHorn3", "VES_HogJazz", "VES_HogRun"};
+		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
@@ -319,7 +319,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-		weapons[]={"TruckHorn3", "VES_HogJazz", "VES_HogRun"};
+		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
@@ -375,7 +375,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-		weapons[]={"TruckHorn3", "VES_HogJazz", "VES_HogRun"};
+		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
@@ -439,7 +439,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-		weapons[]={"TruckHorn3", "VES_HogJazz", "VES_HogRun"};
+		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
@@ -605,7 +605,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-		weapons[]={"TruckHorn3", "VES_HogJazz", "VES_HogRun"};
+		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
