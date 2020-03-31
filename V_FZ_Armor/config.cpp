@@ -3090,7 +3090,7 @@ class CfgWeapons
     {
 		scope=2;
         displayName="[FZ] Combat Uniform (Gray)(Short)(Slim)";
-        class ItemInfo: UniformItem
+        class ItemInfo: ItemInfo
         {
 			uniformClass=VES_BDU_SS_V_Evolved_Slim;
         };
