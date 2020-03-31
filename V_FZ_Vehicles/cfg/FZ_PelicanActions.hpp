@@ -19,7 +19,7 @@ class UserActions
 			{
 				animPeriod=5;
 				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayName="<t color='#F28D00'>Engage Airbrakes (Half)";
 				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
 				onlyForPlayer=0;
 				position="cargo_door_handle";
@@ -27,7 +27,7 @@ class UserActions
 				radius=100000;
 				showWindow=0;
 				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=58;
 			};
             class Thruster400Engage

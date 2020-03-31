@@ -6,8 +6,6 @@ class OPTRE_SRS99D: OPTRE_LongRifle_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "SRS99DX-S2 Sniper Rifle";
-	baseWeapon 					= "OPTRE_SRS99CX";
-	model                       = "\OPTRE_Weapons\Sniper\SRS99C";
 	
 	magazines[]=
 	{
