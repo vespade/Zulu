@@ -1,5 +1,4 @@
-class OPTRE_M319;
-class OPTRE_M319X: OPTRE_M319
+class OPTRE_M319: OPTRE_Rifle_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -7,8 +6,6 @@ class OPTRE_M319X: OPTRE_M319
 	scopeArsenal				= 2;
 	
 	displayName					= "M319X Individual Grenade Launcher";
-	baseWeapon 					= "M319X";
-	model 						= "\OPTRE_Weapons\GL\M319";
 	
 	magazines[] = 
 	{

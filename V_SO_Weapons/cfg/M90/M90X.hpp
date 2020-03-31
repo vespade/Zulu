@@ -1,10 +1,4 @@
-class OPTRE_M90A;
-class SO_M90_Base: OPTRE_M90A
-{
-	class Single;
-};
-
-class OPTRE_M90X: SO_M90_Base
+class OPTRE_M90A: OPTRE_M45
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -12,8 +6,6 @@ class OPTRE_M90X: SO_M90_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "M90X CAWS Tactical Shotgun";
-	baseWeapon 					= "OPTRE_M90X";
-	model                       = "\OPTRE_Weapons\Shotgun\M90A";
 	
 	magazines[]=
 	{

@@ -1,17 +1,4 @@
-class OPTRE_MA5BGL;
-class SO_MA5BGL_Base: OPTRE_MA5BGL
-{
-	class WeaponSlotsInfo;	
-	class ItemInfo;
-	class Single;
-	class FullAuto;
-	
-	scope						= 1;
-	scopeArsenal				= 1;
-	baseWeapon					= "SO_MA5B_Base";
-};
-
-class OPTRE_MA5BXGL: SO_MA5BGL_Base
+class OPTRE_MA5BGL: OPTRE_MA5B
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";

@@ -1,4 +1,4 @@
-class OPTRE_MA5CX: OPTRE_MA5BX
+class OPTRE_MA5C: OPTRE_MA5B
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -6,8 +6,6 @@ class OPTRE_MA5CX: OPTRE_MA5BX
 	scopeArsenal				= 2;
 	
 	displayName					= "MA5CX ICWS Assault Rifle";
-	baseWeapon 					= "OPTRE_MA5CX";
-	model                       = "\OPTRE_Weapons\AR\MA5C.p3d";
 	
 	magazines[] = 
 	{

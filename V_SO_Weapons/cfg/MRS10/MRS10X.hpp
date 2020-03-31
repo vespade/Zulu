@@ -1,4 +1,4 @@
-class OPTRE_MRS10X: OPTRE_M395X
+class OPTRE_MRS10X: OPTRE_M393_DMR
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";

@@ -1,14 +1,4 @@
-class OPTRE_M392_DMR;
-class SO_M392_Base: OPTRE_M392_DMR
-{
-	class Single;
-	
-	scope						= 1;
-	scopeArsenal				= 1;
-	baseWeapon					= "SO_M392_Base";
-};
-
-class OPTRE_M392X: SO_M392_Base
+class OPTRE_M392_DMR: OPTRE_LongRifle_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -16,8 +6,6 @@ class OPTRE_M392X: SO_M392_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "M392X DMR";
-	baseWeapon 					= "OPTRE_M392X";
-	model                       = "\OPTRE_Weapons\DMR\DMR";
 	
 	magazines[]=
 	{

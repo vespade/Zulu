@@ -1,4 +1,4 @@
-class OPTRE_M295X: OPTRE_M392X
+class OPTRE_M295_BMR: OPTRE_M393_DMR
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -6,15 +6,6 @@ class OPTRE_M295X: OPTRE_M392X
 	scopeArsenal				= 2;
 	
 	displayName					= "M295X BMR";
-	baseWeapon 					= "OPTRE_M295X";
-	model                       = "\OPTRE_Weapons\BR\BMR";
-	picture 					= "\OPTRE_Weapons\BR\icons\br";
-	
-	handAnim[] = 
-	{
-		"OFP2_ManSkeleton", "\OPTRE_Weapons\BR\data\anim\bmr_handanim.rtm",
-		"Spartan_ManSkeleton", "\OPTRE_Weapons\br\data\anim\bmr_handanim_Spartan.rtm"
-	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{

@@ -21,7 +21,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"OPTRE_Weapons"
+			"V_SO_Weapons"
 		};
 	};
 };
@@ -30,6 +30,10 @@ class CfgWeapons
 {
 	#include "cfg\Thermals.hpp"
 	#include "cfg\Scopes.hpp"
+};
+class CfgVehicles
+{
+	#include "cfg\Charges.hpp"
 };
 
 class CfgAddons

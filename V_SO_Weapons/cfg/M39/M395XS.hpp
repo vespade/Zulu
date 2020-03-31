@@ -1,4 +1,4 @@
-class OPTRE_M395XS: OPTRE_M395X
+class OPTRE_M393S_DMR: OPTRE_M393_DMR
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -6,8 +6,6 @@ class OPTRE_M395XS: OPTRE_M395X
 	scopeArsenal				= 2;
 	
 	displayName					= "M395X/S DMR";
-	baseWeapon 					= "OPTRE_M395XS";
-	model                       = "\OPTRE_Weapons\DMR\M395S";
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{

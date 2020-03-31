@@ -1,4 +1,4 @@
-class OPTRE_MA3AXGL: OPTRE_MA5BXGL
+class OPTRE_MA5AGL: OPTRE_MA5BGL
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -6,8 +6,6 @@ class OPTRE_MA3AXGL: OPTRE_MA5BXGL
 	scopeArsenal				= 2;
 	
 	displayName					= "MA3AX + M301 GL Assault Rifle";
-	baseWeapon 					= "OPTRE_MA3AXGL";
-	model                       = "\OPTRE_Weapons\AR\MA5AGL.p3d";
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{

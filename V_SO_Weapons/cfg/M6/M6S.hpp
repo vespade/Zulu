@@ -1,10 +1,4 @@
-class OPTRE_M6C;
-class SO_M6C_Base: OPTRE_M6C
-{
-	class WeaponSlotsInfo;
-};
-
-class OPTRE_M6S: SO_M6C_Base
+class OPTRE_M6C: OPTRE_M6G
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -12,8 +6,6 @@ class OPTRE_M6S: SO_M6C_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "M6C/SOCOM Magnum";
-	baseWeapon 					= "OPTRE_M6S";
-	model                       = "\OPTRE_Weapons\Pistol\M6C";
 	
 	magazines[]=
 	{

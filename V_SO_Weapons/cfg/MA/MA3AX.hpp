@@ -1,4 +1,4 @@
-class OPTRE_MA3AX: OPTRE_MA5BX
+class OPTRE_MA5A: OPTRE_MA5B
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -6,8 +6,6 @@ class OPTRE_MA3AX: OPTRE_MA5BX
 	scopeArsenal				= 2;
 	
 	displayName					= "MA3AX ICWS Assault Rifle";
-	baseWeapon 					= "OPTRE_MA3AX";
-	model                       = "\OPTRE_Weapons\AR\MA5A.p3d";
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{

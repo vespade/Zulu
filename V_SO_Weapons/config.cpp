@@ -19,7 +19,11 @@ class CfgPatches
 		ammo[]={};
 		// Requirements
 		requiredVersion=0.1;
-		requiredAddons[]={"V_SO_Core"};
+		requiredAddons[]=
+		{
+			"OPTRE_Core",
+			"OPTRE_Weapons"
+		};
 	};
 };
 
@@ -46,6 +50,22 @@ class UnderBarrelSlot;
 
 class CfgWeapons
 {
+	class srifle_EBR_F;
+	class OPTRE_LongRifle_Base: srifle_EBR_F
+	{
+		class Single;
+		class WeaponSlotsInfo;
+	};
+	class arifle_Mk20_F;
+	class OPTRE_Rifle_Base: arifle_Mk20_F
+	{
+		class WeaponSlotsInfo;
+		class ItemInfo;
+		class Single;
+		class Burst;
+		class FullAuto;
+	};
+	
 	// Thermals and Scopes
 	#include "cfg\Thermals.hpp"
 	#include "cfg\Scopes.hpp"
@@ -73,8 +93,8 @@ class CfgWeapons
 	#include "cfg\MA\MA32XGL.hpp"
 	
 	// Handguns
-	#include "cfg\M6\M6S.hpp"
 	#include "cfg\M6\M6GX.hpp"
+	#include "cfg\M6\M6S.hpp"
 	#include "cfg\M33\M33.hpp"
 	#include "cfg\M6\M6D.hpp"
 	
@@ -89,16 +109,16 @@ class CfgWeapons
 	#include "cfg\Mk14\M14X.hpp"
 	
 	// Battle Rifles
-	#include "cfg\BR\BR55X.hpp"
 	#include "cfg\BR\BR55XHB.hpp"
+	#include "cfg\BR\BR55X.hpp"
 	#include "cfg\BR\BR55AM.hpp"
 	
 	// Sub-Machine Guns
 	#include "cfg\M7\M7X.hpp"
 	
 	// Sniper Rifles
-	#include "cfg\SRS99\SRS99CX.hpp"
 	#include "cfg\SRS99\SRS99DX.hpp"
+	#include "cfg\SRS99\SRS99CX.hpp"
 	
 	// Rocket Launchers
 	#include "cfg\M48\M48B.hpp"

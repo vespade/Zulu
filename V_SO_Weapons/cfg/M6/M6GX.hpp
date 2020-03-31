@@ -1,10 +1,10 @@
-class OPTRE_M6G;
-class SO_M6G_Base: OPTRE_M6G
+class hgun_Pistol_heavy_01_F;
+class OPTRE_Handgun_Base: hgun_Pistol_heavy_01_F
 {
 	class WeaponSlotsInfo;
 };
 
-class OPTRE_M6GX: SO_M6G_Base
+class OPTRE_M6G: OPTRE_Handgun_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -12,8 +12,6 @@ class OPTRE_M6GX: SO_M6G_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "M6GX Magnum";
-	baseWeapon 					= "OPTRE_M6GX";
-	model                       = "\OPTRE_Weapons\Pistol\M6G";
 	
 	magazines[]=
 	{

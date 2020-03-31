@@ -1,4 +1,4 @@
-class OPTRE_M6D: OPTRE_M6GX
+class OPTRE_M6D: OPTRE_M6G
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu & Forky";

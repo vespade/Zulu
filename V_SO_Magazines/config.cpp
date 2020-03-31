@@ -41,7 +41,7 @@ class CfgAmmo
 {
 	#include "cfg\ammo\762x51.hpp"
 	#include "cfg\ammo\95x40.hpp"
-	#include "Cfg\Ammo\95x60.hpp"
+	#include "cfg\ammo\95x60.hpp"
 	#include "cfg\ammo\127x40.hpp"
 	#include "cfg\ammo\145x114.hpp"
 	#include "cfg\ammo\5x23.hpp"
@@ -56,7 +56,7 @@ class CfgMagazines
 {
 	#include "cfg\magazines\762x51.hpp"
 	#include "cfg\magazines\95x40.hpp"
-	#include "Cfg\magazines\95x60.hpp"
+	#include "cfg\magazines\95x60.hpp"
 	#include "cfg\magazines\127x40.hpp"
 	#include "cfg\magazines\145x114.hpp"
 	#include "cfg\magazines\5x23.hpp"
@@ -65,8 +65,4 @@ class CfgMagazines
 	#include "cfg\magazines\40.hpp"
 	#include "cfg\magazines\86x70.hpp"
 	#include "cfg\Magazines\charges.hpp"
-};
-class Cfgvehicles
-{
-	#include "cfg\vehicles\charges.hpp"
 };

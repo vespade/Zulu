@@ -1,19 +1,16 @@
-class OPTRE_M45A;
-class SO_M45_Base: OPTRE_M45A
+class OPTRE_Shotgun_Base: arifle_Mk20_F
 {
 	class Single;
 };
 
-class OPTRE_M45X: SO_M45_Base
+class OPTRE_M45: OPTRE_Shotgun_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "M45X Semi-Automatic Shotgun";
-	baseWeapon 					= "OPTRE_M45X";
-	model                       = "\OPTRE_Weapons\Shotgun\shotgun_e";
+	displayName 				= "M45X Tactical Shotgun";
 	
 	magazines[]=
 	{
@@ -164,14 +161,12 @@ class OPTRE_M45X: SO_M45_Base
 	};
 };
 
-class OPTRE_M45XTAC: OPTRE_M45X
+class OPTRE_M45TAC: OPTRE_M45
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName					= "M45X Semi-Automatic Shotgun (Tactical)";
-	baseWeapon 					= "OPTRE_M45XTAC";
-	model                       = "\OPTRE_Weapons\Shotgun\shotgun_etac";
+	displayName 				= "M45 Combat Shotgun (Tactical)";
 };

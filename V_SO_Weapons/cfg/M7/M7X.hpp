@@ -1,10 +1,10 @@
-class OPTRE_M7;
-class SO_M7_Base: OPTRE_M7
+class SMG_01_F;
+class OPTRE_SubMachineGun_Base: SMG_01_F
 {
 	class WeaponSlotsInfo;
 };
 
-class OPTRE_M7X: SO_M7_Base
+class OPTRE_M7: OPTRE_SubMachineGun_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -12,8 +12,6 @@ class OPTRE_M7X: SO_M7_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "M7X Caseless SMG";
-	baseWeapon 					= "OPTRE_M7X";
-	model 						= "\OPTRE_Weapons\SMG\SMG";
 	
 	recoil						= "recoil_M7X";
 	
@@ -126,30 +124,28 @@ class OPTRE_M7X: SO_M7_Base
 	};
 };
 
-class OPTRE_M7X_Folded: OPTRE_M7X
+class OPTRE_M7_Folded: OPTRE_M7
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName                                                             	= "M7X Caseless SMG (Folded)";
-	descriptionShort                                                    		= "UNSC M7X SMG (Folded)";
-	baseWeapon 																	= "OPTRE_M7X_Folded";
-	model                                                                   	= "\OPTRE_Weapons\SMG\SMG_folded";
+	displayName					= "M7X Caseless SMG (Folded)";
+	descriptionShort			= "UNSC M7X SMG (Folded)";
 	
-	handAnim[]                                                            		= {"OFP2_ManSkeleton"};
-	reloadAction 																= "GestureReloadPistol";
-	type 																		= 2;
+	handAnim[]					= {"OFP2_ManSkeleton"};
+	reloadAction				= "GestureReloadPistol";
+	type						= 2;
 	
 	class Single: Single
 	{	
-		recoil 																	= "recoil_single_mx";
-		recoilProne 															= "recoil_single_prone_mx";
+		recoil					= "recoil_single_mx";
+		recoilProne 			= "recoil_single_prone_mx";
 	};
 	class FullAuto: FullAuto
 	{	
-		recoil 																	= "recoil_single_mx";
-		recoilProne 															= "recoil_single_prone_mx";
+		recoil					= "recoil_single_mx";
+		recoilProne				= "recoil_single_prone_mx";
 	};
 };	

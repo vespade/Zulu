@@ -1,4 +1,4 @@
-class OPTRE_M395X: OPTRE_M392X
+class OPTRE_M393_DMR: OPTRE_M392_DMR
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -6,15 +6,6 @@ class OPTRE_M395X: OPTRE_M392X
 	scopeArsenal				= 2;
 	
 	displayName					= "M395X DMR";
-	baseWeapon 					= "OPTRE_M395X";
-	model                       = "\OPTRE_Weapons\DMR\M395";
-	picture 					= "\OPTRE_Weapons\DMR\icons\M395_Icon";
-	
-	handAnim[] = 
-	{
-		"OFP2_ManSkeleton", "\OPTRE_Weapons\DMR\anim\Handanim_M395.rtm",
-		"Spartan_ManSkeleton", "\OPTRE_Weapons\DMR\anim\Handanim_M395_Spartan.rtm"
-	};
 	
 	class Single;
 	

@@ -28,6 +28,7 @@ class OPTRE_M48_PAW: Launch_RPG32_F
 		"OPTRE_1Rnd_50x137_THERMO",
 		"OPTRE_1Rnd_50x137_HE"
 	};
+	
 	magazineWell[] 				= {};
 	reloadAction				= "ReloadRPG";
 	reloadmagazinesound[]=

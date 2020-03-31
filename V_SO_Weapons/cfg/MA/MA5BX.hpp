@@ -1,17 +1,4 @@
-class OPTRE_MA5B;
-class SO_MA5B_Base: OPTRE_MA5B
-{
-	class WeaponSlotsInfo;
-	class ItemInfo;
-	class Single;
-	class FullAuto;
-	
-	scope						= 1;
-	scopeArsenal				= 1;
-	baseWeapon					= "SO_MA5B_Base";
-};
-
-class OPTRE_MA5BX: SO_MA5B_Base
+class OPTRE_MA5B: OPTRE_Rifle_Base
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -19,8 +6,6 @@ class OPTRE_MA5BX: SO_MA5B_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "MA5BX ICWS Assault Rifle";
-	baseWeapon 					= "OPTRE_MA5BX";
-	model                       = "\OPTRE_Weapons\AR\MA5B.p3d";
 	
 	magazines[] = 
 	{

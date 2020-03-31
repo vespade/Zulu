@@ -1,4 +1,4 @@
-class OPTRE_BR55AM: OPTRE_BR55XHB
+class OPTRE_BR55AM: OPTRE_BR55HB
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";

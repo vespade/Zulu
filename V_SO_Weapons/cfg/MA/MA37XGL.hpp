@@ -1,4 +1,4 @@
-class OPTRE_MA37XGL: OPTRE_MA5CXGL
+class OPTRE_MA37GL: OPTRE_MA5CGL
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -6,14 +6,6 @@ class OPTRE_MA37XGL: OPTRE_MA5CXGL
 	scopeArsenal				= 2;
 	
 	displayName					= "MA37X + M301 GL Assault Rifle";
-	baseWeapon 					= "OPTRE_MA37XGL";
-	model     					= "\OPTRE_Weapons\AR\MA37GL.p3d";
-	
-	handAnim[] = 
-	{
-		"OFP2_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma37.rtm",
-		"Spartan_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma37_Spartan.rtm"
-	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo
 	{
@@ -25,7 +17,7 @@ class OPTRE_MA37XGL: OPTRE_MA5CXGL
 	};
 };
 
-class OPTRE_MA37BXGL: OPTRE_MA5BXGL
+class OPTRE_MA37BGL: OPTRE_MA5BGL
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -33,15 +25,14 @@ class OPTRE_MA37BXGL: OPTRE_MA5BXGL
 	scopeArsenal				= 2;
 	
 	displayName					= "MA37BX + M301 GL Assault Rifle";
-	baseWeapon 					= "OPTRE_MA37BXGL";
-	model                       = "\OPTRE_Weapons\AR\MA37BGL.p3d";
 	
-	class WeaponSlotsInfo: WeaponSlotsInfo
+	magazines[] = 
 	{
-		mass = 110;
-		class CowsSlot: CowsSlot
-		{
-			compatibleitems[] = {};
-		};
+		"OPTRE_60Rnd_762x51_Mag",
+		"OPTRE_60Rnd_762x51_Mag_Tracer",
+		"OPTRE_60Rnd_762x51_Mag_AP",
+		"OPTRE_60Rnd_762x51_Mag_APT",
+		"OPTRE_60Rnd_762x51_Mag_JHP",
+		"OPTRE_60Rnd_762x51_Mag_JHPT"
 	};
 };

@@ -1,4 +1,4 @@
-class OPTRE_M28A2: OPTRE_M395X
+class OPTRE_M28A2: OPTRE_M393_DMR
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -52,7 +52,7 @@ class OPTRE_M28A2: OPTRE_M395X
 		};
 	};
 	
-	class Secondary: OPTRE_M6GX
+	class Secondary: OPTRE_M6G
 	{
 		displayName						= "M6MWS Magnum";
 		recoil							= "recoil_ARX_secondary";
