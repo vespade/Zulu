@@ -36,10 +36,10 @@ class textureSources
 				displayName="What's This?";
 				textures[]={"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_UWU_CO.paa"};
 			};
-			class ves_dixie
+			class ves_solo
 			{
 				author="Vespade";
-				displayName="Dixie";
+				displayName="Solo";
 				textures[]={"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_DXC_CO.paa"};
 			};
 			class ves_orange

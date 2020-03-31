@@ -661,6 +661,7 @@ class cfgVehicles
 		class TransportMagazines{};
 		class TransportWeapons{};
 		class AnimationSources;
+		class UserActions;
 		#include "cfg\FZ_A_HoneybadgerCamos.hpp"
 	};
 	
@@ -697,6 +698,26 @@ class cfgVehicles
 			"V_FZ_Vehicles\data\Honeybadger\V_IFV76_CPD_CO.paa",
 			"V_FZ_Vehicles\data\Honeybadger\V_IFV76_BLK_A_CO.paa",
 			"V_FZ_Vehicles\data\Honeybadger\V_IFV76_BLK_T_CO.paa"
+		};
+		class UserActions: UserActions
+		{
+			class SirenOn
+			{
+				condition="(alive this) AND (player in [driver this]) AND !(this getVariable [""VES_Warthog_SirenStatus"", false])";
+				displayName="<t color='#FFBF00'>Siren On";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
+				onlyForPlayer=1;
+				position="";
+				radius=6;
+				statement="this setVariable [""VES_Warthog_SirenStatus"", true]; [this] spawn {while {(alive (_this select 0)) AND (_this select 0 getvariable [""VES_Warthog_SirenStatus"", true])} do {_this select 0 say3d [""VES_Siren"", 250, 1]; sleep 3.9;};};";
+			};
+			class SirenOff: SirenOn
+			{
+				condition="(alive this) AND (player in [driver this]) AND (this getVariable ""VES_Warthog_SirenStatus"")";
+				displayName="<t color='#FF8400'>Siren Off";
+				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
+				statement="this setVariable [""VES_Warthog_SirenStatus"", false];";
+			};
 		};
 	};
 	class VES_IFV76_CPD: VES_IFV76_A_CPD
