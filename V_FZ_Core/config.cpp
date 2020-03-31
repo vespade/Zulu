@@ -55,6 +55,10 @@ class CfgEditorCategories
 	{
 		displayName="[Zulu] Office of Naval Intelligence";
 	};
+	class V_FZ_EdCat_CIV
+	{
+		displayName="[Zulu] Civilian (UEG)";
+	};
 };
 class CfgEditorSubcategories
 {

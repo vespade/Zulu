@@ -889,7 +889,8 @@ class CfgVehicles
 			"ACE_Altimeter",
 			"ItemRadio",
 			"OPTRE_Smartfinder",
-			"ItemGPS"
+			"ItemGPS",
+			"VES_HUD_RayBans"
 		};
 		respawnLinkedItems[]=
 		{
@@ -898,7 +899,8 @@ class CfgVehicles
 			"ACE_Altimeter",
 			"ItemRadio",
 			"OPTRE_Smartfinder",
-			"ItemGPS"
+			"ItemGPS",
+			"VES_HUD_RayBans"
 		};
 	};
 };

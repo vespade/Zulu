@@ -78,17 +78,3 @@ class textureSources
 			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_OD3_S_CO.paa",
 			"\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
 		};
-
-textureList[] = 
-{
-	"ves_desert", 1,
-	"ves_woodland", 1,
-	"ves_jungle", 1,
-	"ves_urban", 1,
-	"ves_black", 1,
-	"ves_frost", 1,
-	"ves_tundra", 1,
-	"ves_dunes", 1,
-	"ves_classic", 1,
-	"ves_olive", 1
-};

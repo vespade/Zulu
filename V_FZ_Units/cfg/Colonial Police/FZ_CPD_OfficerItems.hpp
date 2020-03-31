@@ -1,6 +1,6 @@
 headgearList[]=
 {
-	"VES_Beret_CPD", .5,
+	"VES_Beret_CPD", .25,
 	"VES_PatrolCap_CPD", .5
 };
 linkedItems[]=
@@ -11,7 +11,8 @@ linkedItems[]=
 	"ACE_Altimeter",
 	"ItemRadio",
 	"OPTRE_Smartfinder",
-	"ItemGPS"
+	"ItemGPS",
+	"VES_HUD_Raybans"
 };
 respawnLinkedItems[]=
 {
@@ -21,5 +22,6 @@ respawnLinkedItems[]=
 	"ACE_Altimeter",
 	"ItemRadio",
 	"OPTRE_Smartfinder",
-	"ItemGPS"
+	"ItemGPS",
+	"VES_HUD_RayBans"
 };

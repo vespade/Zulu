@@ -21,6 +21,8 @@ class CfgPatches
 			"VES_M12_SFP",
 			"VES_M12_CPD",
 			
+			"VES_M12_CIV",
+			
 			"VES_M12_LRV",
 			"VES_M12_LRV_URF",
 			"VES_M12_LRV_SFP",
@@ -218,6 +220,21 @@ class cfgVehicles
 		#include "cfg\FZ_WarthogActions_CPD.hpp"
 	};
 	
+	class VES_M12_CIV: VES_M12_SFP
+	{
+		dlc="Zulu";
+		author="Vespade";
+		side=3;
+		crew="C_man_1";
+		editorCategory="V_FZ_EdCat_CIV";
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
+		};
+		#include "cfg\FZ_F_WarthogCamos.hpp"
+	};
+	
+	
 	// Machinegun Warthogs
 	class OPTRE_M12_LRV;
 	class VES_M12_LRV: OPTRE_M12_LRV
@@ -321,6 +338,8 @@ class cfgVehicles
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_CO",
 			"V_FZ_Vehicles\data\Warthog\V_M12_SFP_A_CO"
 		};
+		class UserActions;
+		class EventHandlers;
 	};
 	class VES_M12G1_LRV_CPD: VES_M12G1_LRV_SFP
 	{
@@ -615,19 +634,6 @@ class cfgVehicles
 		};
 		class EventHandlers;
 		class UserActions;
-	};
-	class VES_M12_APC_CPD: VES_M12_APC_SFP
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_SWAT";
-		editorCategory="V_FZ_EdCat_CPD";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
-			"V_FZ_Vehicles\data\Warthog\V_M12_BLK_A_CO"
-		};
-		#include "cfg\FZ_WarthogActions_CPD.hpp"
 	};
 	
 	// APC ~ Hound? Think again.

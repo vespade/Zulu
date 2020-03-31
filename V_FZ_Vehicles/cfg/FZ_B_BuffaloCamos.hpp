@@ -69,17 +69,3 @@ class textureSources
 			"\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa",
 			"\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
 		};
-		
-textureList[] = 
-{
-	"ves_desert", 1,
-	"ves_woodland", 1,
-	"ves_jungle", 1,
-	"ves_urban", 1,
-	"ves_black", 1,
-	"ves_frost", 1,
-	"ves_tundra", 1,
-	"ves_dunes", 1,
-	"ves_classic", 1,
-	"ves_olive", 1
-};
