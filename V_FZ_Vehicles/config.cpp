@@ -15,7 +15,7 @@ class CfgPatches
 		// Added Items
 		units[]=
 		{
-			// Cars
+			// Warthogs
 			"VES_M12",
 			"VES_M12_URF",
 			"VES_M12_SFP",
@@ -53,6 +53,12 @@ class CfgPatches
 			"VES_M12_APC_URF",
 			"VES_M12_APC_SFP",
 			"VES_M12_APC_CPD",
+			
+			// Hyena/Mattock
+			"VES_M19",
+			"VES_M19_URF",
+			"VES_M19_CIV",
+			"VES_M19_CIV_News",
 			
 			// Trucks
 			"VES_HDV134_Resupply",
@@ -939,6 +945,53 @@ class cfgVehicles
 			"\V_FZ_Vehicles\data\Buffalo\V_HDV134_BLK_C_CO.paa"
 		};		
 	};*/
+	
+	// Hyena/Mattock
+	class O_MRAP_02_F;
+	class VES_M19: O_MRAP_02_F
+	{
+		dlc="Zulu";
+		displayName="M19 Hyena (Unarmed)";
+		author="Mike Hartley";
+		scope=2;
+		scopeCurator=2;
+		side=1;
+		forceInGarage=1;
+		enableRadio=1;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=0.40000001;
+		tf_range=10500;
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		#include "cfg\FZ_A_MattockCamos.hpp"
+	};
+	class VES_M19_URF: VES_M19
+	{
+		dlc="Zulu";
+		displayName="M19 Hyena (Unarmed)";
+		author="Mike Hartley";
+		side=0;
+		editorCategory="V_FZ_EdCat_URF";
+		crew="OPTRE_ins_urf_rifleman_ar";
+		#include "cfg\FZ_B_MattockCamos.hpp"
+	};
+	class VES_M19_CIV: VES_M19
+	{
+		dlc="Zulu";
+		displayName="Mattock";
+		author="Mike Hartley";
+		side=3;
+		editorCategory="V_FZ_EdCat_CIV";		
+		crew="c_man_1";
+		#include "cfg\FZ_C_MattockCamos.hpp"
+	};
+	class VES_M19_CIV_News: VES_M19_CIV
+	{
+		dlc="Zulu";
+		author="Mike Hartley";
+		class TextureSources{};
+		hiddenSelectionsTextures[]={"V_FZ_Vehicles\data\Mattock\Civilian\V_M19_NEW_CO.paa","V_FZ_Vehicles\data\Mattock\Civilian\V_M19_NEW_A_CO.paa"};
+	};
 	
 	// UAV
 	class B_UAV_01_F;
