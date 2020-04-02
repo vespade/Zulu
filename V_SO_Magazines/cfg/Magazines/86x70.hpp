@@ -30,6 +30,7 @@ class OPTRE_20Rnd_86x70_Mag_AP: OPTRE_20Rnd_86x70_Mag
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
+	initspeed					= 920;
 	
 	ammo 						= "OPTRE_B_86x70_AP";
 	displayname 				= "20Rnd 8.6x70mm AP Magazine";
@@ -52,6 +53,7 @@ class OPTRE_20Rnd_86x70_Mag_JHP: OPTRE_20Rnd_86x70_Mag
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
+	initspeed					= 905;
 	
 	ammo 						= "OPTRE_B_86x70_JHP";
 	displayname 				= "20Rnd 8.6x70mm JHP Magazine";
@@ -74,9 +76,22 @@ class OPTRE_20Rnd_86x70_Mag_SS: OPTRE_20Rnd_86x70_Mag
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
+	initspeed					= 340;
 	
 	ammo 						= "OPTRE_B_86x70_SS";
 	displayname 				= "20Rnd 8.6x70mm SS Magazine";
+	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Subsonic";
+};
+
+class OPTRE_20Rnd_86x70_Mag_SST: OPTRE_20Rnd_86x70_Mag_SS
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_86x70_SST";
+	displayname 				= "20Rnd 8.6x70mm SS Magazine (Tracer) ";
 	descriptionShort			= "20 Round Magazine<br>8.6x70mm<br>Subsonic";
 };
 
@@ -112,6 +127,7 @@ class OPTRE_10Rnd_86x70_Mag_AP: OPTRE_10Rnd_86x70_Mag
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
+	initspeed					= 920;
 	
 	ammo 						= "OPTRE_B_86x70_AP";
 	displayname 				= "10Rnd 8.6x70mm AP Magazine";
@@ -134,6 +150,7 @@ class OPTRE_10Rnd_86x70_Mag_JHP: OPTRE_10Rnd_86x70_Mag
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
+	initspeed					= 905;
 	
 	ammo 						= "OPTRE_B_86x70_JHP";
 	displayname 				= "10Rnd 8.6x70mm JHP Magazine";
@@ -156,11 +173,25 @@ class OPTRE_10Rnd_86x70_Mag_SS: OPTRE_10Rnd_86x70_Mag
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
+	initspeed					= 340;
 	
 	ammo 						= "OPTRE_B_86x70_SS";
 	displayname 				= "10Rnd 8.6x70mm SS Magazine";
 	descriptionShort			= "10 Round Magazine<br>8.6x70mm<br>Subsonic";
 };
+
+class OPTRE_10Rnd_86x70_Mag_SST: OPTRE_10Rnd_86x70_Mag_SS
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "OPTRE_B_86x70_SST";
+	displayname 				= "10Rnd 8.6x70mm SS Magazine (Tracer) ";
+	descriptionShort			= "10 Round Magazine<br>8.6x70mm<br>Subsonic";
+};
+
 
 class OPTRE_10Rnd_86x70_Mag_FS: OPTRE_10Rnd_86x70_Mag
 {
@@ -168,6 +199,7 @@ class OPTRE_10Rnd_86x70_Mag_FS: OPTRE_10Rnd_86x70_Mag
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
+	initspeed					= 1000;
 	
 	ammo 						= "OPTRE_B_86x70_FS";
 	displayname 				= "10Rnd 8.6x70mm FS Magazine";
