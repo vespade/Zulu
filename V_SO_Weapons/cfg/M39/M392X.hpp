@@ -6,6 +6,7 @@ class OPTRE_M392_DMR: OPTRE_LongRifle_Base
 	scopeArsenal				= 2;
 	
 	displayName					= "M392X DMR";
+	model						= "v_so_weapons\data\m392\m392";
 	
 	magazines[]=
 	{
@@ -142,4 +143,18 @@ class OPTRE_M392_DMR: OPTRE_LongRifle_Base
 			};
 		};
 	};
+};
+
+class OPTRE_M392XD_DMR: OPTRE_M392_DMR
+{
+	
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName					= "Vespade's M392XD";
+	
+	hiddenSelections[] 			= {"camo"};
+	hiddenSelectionsTextures[]	= {"V_SO_Weapons\data\M392\M392\dmr_a_co"};
 };

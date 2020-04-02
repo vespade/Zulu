@@ -48,6 +48,7 @@ class OPTRE_M319: OPTRE_Rifle_Base
 		"3Rnd_SmokeBlue_Grenade_shell",
 		"3Rnd_SmokeOrange_Grenade_shell"
 	};
+	magazineWell[] = {"UGL_40x36","CBA_40mm_M203","CBA_40mm_EGLM"};
 	
 	class WeaponSlotsInfo
  	{

@@ -554,7 +554,7 @@ class OPTRE_M392_Scope_v2: ItemCore
 	scopeArsenal				= 2;
 	
 	displayName 				= "EVOS-D Mk1 SF Scope";
-	model 						= "\OPTRE_Weapons\DMR\scope";
+	model 						= "\v_so_weapons\data\m392\m392_scope";
 	picture 					= "\OPTRE_weapons\br\icons\scope";
 	inertia 					= 0.1;
 	
@@ -563,7 +563,7 @@ class OPTRE_M392_Scope_v2: ItemCore
 		mass 					= 2;
 		opticType 				= 1;
 		optics 					= 1;
-		modelOptics 			= "\OPTRE_Weapons\DMR\scope";
+		modelOptics 			= "\v_so_weapons\data\m392\m392_scope";
 		class OpticsModes
 		{
 			class DMR_Scope
