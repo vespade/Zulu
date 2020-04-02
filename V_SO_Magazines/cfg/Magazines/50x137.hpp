@@ -53,17 +53,28 @@ class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_PEN
 	mass						= 55;
 };
 
-class OPTRE_1Rnd_50x137_BLURSED: OPTRE_1Rnd_50x137_THERMO
+class OPTRE_48Rnd_50x137_Tekcirc: OPTRE_1Rnd_50x137_THERMO
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 1;
-	scopeArsenal				= 1;
 	
-	ammo 						= "OPTRE_50x137_THERMO";
+	ammo 						= "OPTRE_50x137_Tekcirc";
+	initspeed					= -5;
+	count						= 48;
+	displayname 				= "Tekcirc";
+	descriptionShort			= "1 Rocket<br>50x137mm<br>Thermobarick<br>Unguided";
+	mass						= 1;
+};
+
+class OPTRE_1rnd_SHIVA: OPTRE_48Rnd_50x137_Tekcirc
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	ammo 						= "OPTRE_M_Shiva_Nuke";
 	initspeed					= -1;
-	count						= 55;
-	displayname 				= "BLURSED";
+	count						= 1;
+	displayname 				= "Shiva Missile";
 	descriptionShort			= "1 Rocket<br>50x137mm<br>Thermobarick<br>Unguided";
 	mass						= 1;
 };

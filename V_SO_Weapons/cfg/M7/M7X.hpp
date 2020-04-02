@@ -28,6 +28,8 @@ class OPTRE_M7: OPTRE_SubMachineGun_Base
 		"OPTRE_60Rnd_5x23mm_Mag_HVT",
 		"OPTRE_60Rnd_5x23mm_Mag_JHP",
 		"OPTRE_60Rnd_5x23mm_Mag_JHPT",
+		"OPTRE_60Rnd_5x23mm_Mag_SS",
+		"OPTRE_60Rnd_5x23mm_Mag_SST",
 		"OPTRE_48Rnd_5x23mm_Mag",
 		"OPTRE_48Rnd_5x23mm_Mag_tracer",
 		"OPTRE_48Rnd_5x23mm_Mag_FMJ",
@@ -35,7 +37,9 @@ class OPTRE_M7: OPTRE_SubMachineGun_Base
 		"OPTRE_48Rnd_5x23mm_Mag_HV",
 		"OPTRE_48Rnd_5x23mm_Mag_HVT",
 		"OPTRE_48Rnd_5x23mm_Mag_JHP",
-		"OPTRE_48Rnd_5x23mm_Mag_JHPT"
+		"OPTRE_48Rnd_5x23mm_Mag_JHPT",
+		"OPTRE_48Rnd_5x23mm_Mag_SS",
+		"OPTRE_48Rnd_5x23mm_Mag_SST",
 	};
 	magazineWell[] = {};
 	

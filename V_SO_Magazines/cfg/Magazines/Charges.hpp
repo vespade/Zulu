@@ -14,7 +14,7 @@
 		ammo="C12_Remote_Ammo";
 		model="\OPTRE_Weapons\charges\c12G.p3d";
 		picture="\OPTRE_weapons\charges\icons\c12.paa";
-		mass=45;
+		mass=110;
 		count=1;
 		maxLeadSpeed=0;
 		nameSoundWeapon="satchelcharge";
@@ -42,7 +42,7 @@
 		ammo="C7_Remote_Ammo";
 		model="\OPTRE_Weapons\charges\C7Can.p3d";
 		picture="\OPTRE_weapons\charges\icons\c7.paa";
-		mass=2;
+		mass=7;
 		count=1;
 		maxLeadSpeed=0;
 		nameSoundWeapon="satchelcharge";
@@ -100,7 +100,7 @@
 		ammo="M168_Remote_Ammo";
 		model="\OPTRE_Weapons\charges\m168g.p3d";
 		picture="\OPTRE_weapons\charges\icons\m168.paa";
-		mass=75;
+		mass=795;
 		count=1;
 		maxLeadSpeed=0;
 		nameSoundWeapon="satchelcharge";
@@ -128,7 +128,7 @@
 		ammo="M41_IED_Remote_Ammo";
 		model="\OPTRE_Weapons\charges\m41.p3d";
 		picture="\OPTRE_weapons\rockets\icons\rocket.paa";
-		mass=15;
+		mass=22;
 		count=1;
 		maxLeadSpeed=0;
 		nameSoundWeapon="satchelcharge";
