@@ -154,6 +154,7 @@ class OPTRE_M392XD_DMR: OPTRE_M392_DMR
 	scopeArsenal				= 2;
 	
 	displayName					= "Vespade's M392XD";
+	baseWeapon					= "OPTRE_M392XD_DMR";
 	
 	hiddenSelections[] 			= {"camo"};
 	hiddenSelectionsTextures[]	= {"V_SO_Weapons\data\M392\M392\dmr_a_co"};
