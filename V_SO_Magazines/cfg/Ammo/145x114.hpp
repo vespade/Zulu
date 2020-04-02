@@ -3,7 +3,7 @@ class OPTRE_B_145x114_SS: OPTRE_B_145x114_APFSDS
 {
 	caliber						= 10;
 	hit 						= 55;
-	typicalSpeed				= 343;
+	typicalSpeed				= 340;
 	timeToLive					= 20;
 };
 

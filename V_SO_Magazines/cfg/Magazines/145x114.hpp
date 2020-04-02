@@ -5,6 +5,7 @@ class OPTRE_4Rnd_145x114_Mag_APFSDST: OPTRE_4Rnd_145x114_APFSDS_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	initspeed 					= 2000;
 	ammo 						= "OPTRE_B_145x114_APFSDST";
 	displayname 				= "4Rnd 14.5x114mm APFSDS Magazine (Tracer)";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>Armor Piercing Fin-Stabilized Disposable Shell<br>Tracers";
@@ -16,6 +17,7 @@ class OPTRE_4Rnd_145x114_Mag_HVAPT: OPTRE_4Rnd_145x114_HVAP_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	initspeed 					= 1800;
 	ammo 						= "OPTRE_B_145x114_HVAPT";
 	displayname 				= "4Rnd 14.5x114mm HVAP Magazine (Tracer)";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>High Velocity Armor Piercing<br>Tracers";
@@ -27,6 +29,7 @@ class OPTRE_4Rnd_145x114_Mag_HEDPT: OPTRE_4Rnd_145x114_HEDP_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	initspeed 					= 1500;
 	ammo 						= "OPTRE_B_145x114_HEDPT";
 	displayname 				= "4Rnd 14.5x114mm HEDP Magazine (Tracer)";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>High Explosive Dual Purpose<br>Tracers";
@@ -39,6 +42,7 @@ class OPTRE_4Rnd_145x114_Mag_SS:  OPTRE_4Rnd_145x114_APFSDS_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 340;
 	ammo 						= "OPTRE_B_145x114_SS";
 	displayname 				= "4Rnd 14.5x114mm SS Magazine";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>Sub-Sonic";
@@ -51,6 +55,7 @@ class OPTRE_4Rnd_145x114_Mag_NARQ:  OPTRE_4Rnd_145x114_APFSDS_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 2000;
 	ammo 						= "OPTRE_B_145x114_NARQ";
 	displayname 				= "4Rnd 14.5x114mm NARQ Magazine";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>Tranquilizer";
@@ -63,6 +68,7 @@ class OPTRE_4Rnd_145x114_Mag_DOC:  OPTRE_4Rnd_145x114_APFSDS_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 2000;
 	ammo 						= "OPTRE_B_145x114_DOC";
 	displayname 				= "4Rnd 14.5x114mm DOC Magazine";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>Adrenaline";

@@ -70,6 +70,8 @@ class OPTRE_1rnd_SHIVA: OPTRE_48Rnd_50x137_Tekcirc
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	scope						= 0;
+	scopeArsenal				= 0;
 	
 	ammo 						= "OPTRE_M_Shiva_Nuke";
 	initspeed					= -1;
