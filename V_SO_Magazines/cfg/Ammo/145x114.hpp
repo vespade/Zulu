@@ -6,6 +6,10 @@ class OPTRE_B_145x114_SS: OPTRE_B_145x114_APFSDS
 	typicalSpeed				= 343;
 	timeToLive					= 20;
 };
+class OPTRE_B_145x114_SST: OPTRE_B_145x114_SS
+{
+	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+};
 
 class OPTRE_B_145x114_APFSDST: OPTRE_B_145x114_APFSDS
 {
@@ -28,8 +32,7 @@ class OPTRE_B_145x114_NARQ: OPTRE_B_145x114_APFSDS
 {
 	hit 						= 0.1;
 };
-
-class OPTRE_B_145x114_DOC: OPTRE_B_145x114_APFSDS
+class OPTRE_B_145x114_NARQT: OPTRE_B_145x114_NARQ
 {
-	hit							= 0.1;
+	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 };

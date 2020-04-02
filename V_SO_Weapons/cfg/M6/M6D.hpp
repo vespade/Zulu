@@ -24,7 +24,9 @@ class OPTRE_M6D: OPTRE_M6G
 		"OPTRE_12Rnd_127x40_Mag_SAPHE",
 		"OPTRE_12Rnd_127x40_Mag_SAPHET",
 		"OPTRE_12Rnd_127x40_Mag_SS",
-		"OPTRE_12Rnd_127x40_Mag_NARQ"
+		"OPTRE_12Rnd_127x40_Mag_SST",
+		"OPTRE_12Rnd_127x40_Mag_NARQ",
+		"OPTRE_12Rnd_127x40_Mag_NARQY"
 	};
 	
 	class WeaponSlotsInfo: WeaponSlotsInfo

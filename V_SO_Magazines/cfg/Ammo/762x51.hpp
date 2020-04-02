@@ -42,3 +42,8 @@ class OPTRE_B_762x51_SS: OPTRE_B_762x51_Ball
 	hit 						= 10;
 	typicalSpeed				= 343;
 };
+
+class OPTRE_B_762x51_SST: OPTRE_B_762x51_SS
+{
+	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+};

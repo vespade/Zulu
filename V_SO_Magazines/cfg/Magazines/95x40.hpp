@@ -8,6 +8,7 @@ class OPTRE_36Rnd_95x40_Mag_JHP: OPTRE_36Rnd_95x40_Mag
 	
 	ammo 						= "OPTRE_B_95x40_JHP";
 	displayname 				= "36Rnd 9.5x40mm JHP Magazine";
+	displaynameshort 			= "9.5x60mm JHP";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
 };
 
@@ -18,6 +19,7 @@ class OPTRE_36Rnd_95x40_Mag_JHPT: OPTRE_36Rnd_95x40_Mag_JHP
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "36Rnd 9.5x40mm JHP Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm JHP Tracer";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
 };
 
@@ -30,6 +32,7 @@ class OPTRE_36Rnd_95x40_Mag_HPSAP: OPTRE_36Rnd_95x40_Mag
 	
 	ammo 						= "OPTRE_B_95x40_HPSAP";
 	displayname 				= "36Rnd 9.5x40mm HP-SAP Magazine";
+	displaynameshort 			= "9.5x60mm HP-SAP";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
 };
 
@@ -40,6 +43,7 @@ class OPTRE_36Rnd_95x40_Mag_HPSAPT: OPTRE_36Rnd_95x40_Mag_HPSAP
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "36Rnd 9.5x40mm HP-SAP Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
 };
 
@@ -52,6 +56,7 @@ class OPTRE_36Rnd_95x40_Mag_SAPHE: OPTRE_36Rnd_95x40_Mag
 	
 	ammo 						= "OPTRE_B_95x40_SAPHE";
 	displayname 				= "36Rnd 9.5x40mm SAP-HE Magazine";
+	displaynameshort 			= "9.5x60mm SAP-HE";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
 };
 
@@ -62,6 +67,7 @@ class OPTRE_36Rnd_95x40_Mag_SAPHET: OPTRE_36Rnd_95x40_Mag_SAPHE
 	
 	ammo 						= "OPTRE_B_95x40_SAPHET";
 	displayname 				= "36Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm SAP-HE Tracer";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 };
 
@@ -74,6 +80,7 @@ class OPTRE_36Rnd_95x40_Mag_SS: OPTRE_36Rnd_95x40_Mag
 	
 	ammo 						= "OPTRE_B_95x40_SS";
 	displayname 				= "36Rnd 9.5x40mm SS Magazine";
+	displaynameshort 			= "9.5x60mm SS";
 	descriptionShort			= "36 Round Magazine<br>9.5x40mm<br>Sub-Sonic";
 };
 
@@ -88,6 +95,7 @@ class OPTRE_100Rnd_95x40_Box_JHP: OPTRE_100Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_JHP";
 	displayname 				= "100Rnd 9.5x40mm JHP Box Magazine";
+	displaynameshort 			= "9.5x60mm JHP";
 	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
 };
 
@@ -98,6 +106,7 @@ class OPTRE_100Rnd_95x40_Box_JHPT: OPTRE_100Rnd_95x40_Box_JHP
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm JHP Tracer";
 	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
 };
 
@@ -110,6 +119,7 @@ class OPTRE_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_HPSAP";
 	displayname 				= "100Rnd 9.5x40mm HP-SAP Box Magazine";
+	displaynameshort 			= "9.5x60mm HP-SAP";
 	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
 };
 
@@ -120,6 +130,7 @@ class OPTRE_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_HPSAP
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
 	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
 };
 
@@ -132,6 +143,7 @@ class OPTRE_100Rnd_95x40_Box_SAPHE: OPTRE_100Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_SAPHE";
 	displayname 				= "100Rnd 9.5x40mm SAP-HE Box Magazine";
+	displaynameshort 			= "9.5x60mm SAP-HE";
 	descriptionShort			= "100 Round Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
 };
 
@@ -142,6 +154,7 @@ class OPTRE_100Rnd_95x40_Box_SAPHET: OPTRE_100Rnd_95x40_Box_SAPHE
 	
 	ammo 						= "OPTRE_B_95x40_SAPHET";
 	displayname 				= "100Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm SAP-HE Tracer";
 	descriptionShort			= "100 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 };
 
@@ -154,6 +167,7 @@ class OPTRE_100Rnd_95x40_Box_SS: OPTRE_100Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_SS";
 	displayname 				= "100Rnd 9.5x40mm SS Box Magazine";
+	displaynameshort 			= "9.5x60mm SS";
 	descriptionShort			= "100 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
 };
 
@@ -181,6 +195,7 @@ class OPTRE_300Rnd_95x40_Box_JHP: OPTRE_300Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_JHP";
 	displayname 				= "300Rnd 9.5x40mm JHP Box Magazine";
+	displaynameshort 			= "9.5x60mm JHP";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
 };
 
@@ -191,6 +206,7 @@ class OPTRE_300Rnd_95x40_Box_JHPT: OPTRE_300Rnd_95x40_Box_JHP
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "300Rnd 9.5x40mm JHP Box Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm JHP Tracer";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
 };
 
@@ -203,6 +219,7 @@ class OPTRE_300Rnd_95x40_Box_HPSAP: OPTRE_300Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_HPSAP";
 	displayname 				= "300Rnd 9.5x40mm HP-SAP Box Magazine";
+	displaynameshort 			= "9.5x60mm HP-SAP";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
 };
 
@@ -213,6 +230,7 @@ class OPTRE_300Rnd_95x40_Box_HPSAPT: OPTRE_300Rnd_95x40_Box_HPSAP
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "300Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
 };
 
@@ -225,6 +243,7 @@ class OPTRE_300Rnd_95x40_Box_SAPHE: OPTRE_300Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_SAPHE";
 	displayname 				= "300Rnd 9.5x40mm SAP-HE Box Magazine";
+	displaynameshort 			= "9.5x60mm SAP-HE";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
 };
 
@@ -235,6 +254,7 @@ class OPTRE_300Rnd_95x40_Box_SAPHET: OPTRE_300Rnd_95x40_Box_SAPHE
 	
 	ammo 						= "OPTRE_B_95x40_SAPHET";
 	displayname 				= "300Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
+	displaynameshort 			= "9.5x60mm SAP-HE Tracer";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 };
 
@@ -247,5 +267,6 @@ class OPTRE_300Rnd_95x40_Box_SS: OPTRE_300Rnd_95x40_Box
 	
 	ammo 						= "OPTRE_B_95x40_SS";
 	displayname 				= "300Rnd 9.5x40mm SS Box Magazine";
+	displaynameshort 			= "9.5x60mm SS";
 	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
 };

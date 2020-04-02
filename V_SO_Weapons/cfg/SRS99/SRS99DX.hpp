@@ -16,7 +16,9 @@ class OPTRE_SRS99D: OPTRE_LongRifle_Base
 		"OPTRE_4Rnd_145x114_HVAP_Mag",
 		"OPTRE_4Rnd_145x114_Mag_HVAPT",
 		"OPTRE_4Rnd_145x114_Mag_SS",
+		"OPTRE_4Rnd_145x114_Mag_SST",
 		"OPTRE_4Rnd_145x114_Mag_NARQ",
+		"OPTRE_4Rnd_145x114_Mag_NARQT",
 		"OPTRE_4Rnd_145x114_Mag_DOC"
 	};
 	

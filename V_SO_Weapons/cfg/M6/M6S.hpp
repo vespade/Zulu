@@ -22,7 +22,9 @@ class OPTRE_M6C: OPTRE_M6G
 		"OPTRE_12Rnd_127x40_Mag_SAPHE",
 		"OPTRE_12Rnd_127x40_Mag_SAPHET",
 		"OPTRE_12Rnd_127x40_Mag_SS",
+		"OPTRE_12Rnd_127x40_Mag_SST",
 		"OPTRE_12Rnd_127x40_Mag_NARQ",
+		"OPTRE_12Rnd_127x40_Mag_NARQT",
 		"OPTRE_16Rnd_127x40_Mag",
 		"OPTRE_16Rnd_127x40_Mag_Tracer",
 		"OPTRE_16Rnd_127x40_Mag_AP",
@@ -36,7 +38,9 @@ class OPTRE_M6C: OPTRE_M6G
 		"OPTRE_16Rnd_127x40_Mag_SAPHE",
 		"OPTRE_16Rnd_127x40_Mag_SAPHET",
 		"OPTRE_16Rnd_127x40_Mag_SS",
-		"OPTRE_16Rnd_127x40_Mag_NARQ"
+		"OPTRE_16Rnd_127x40_Mag_SST",
+		"OPTRE_16Rnd_127x40_Mag_NARQ",
+		"OPTRE_16Rnd_127x40_Mag_NARQT"
 	};
 	
 	class WeaponSlotsInfo

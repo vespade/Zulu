@@ -28,7 +28,9 @@ class OPTRE_M6G: OPTRE_Handgun_Base
 		"OPTRE_8Rnd_127x40_Mag_SAPHE",
 		"OPTRE_8Rnd_127x40_Mag_SAPHET",
 		"OPTRE_8Rnd_127x40_Mag_SS",
+		"OPTRE_8Rnd_127x40_Mag_SST",
 		"OPTRE_8Rnd_127x40_Mag_NARQ",
+		"OPTRE_8Rnd_127x40_Mag_NARQT",
 		"OPTRE_8Rnd_127x40_Mag_FR",
 		"OPTRE_8Rnd_127x40_Mag_FG"
 	};

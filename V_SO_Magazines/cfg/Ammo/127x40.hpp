@@ -79,7 +79,17 @@ class OPTRE_B_127x40_SS: OPTRE_B_127x40_Ball
 	typicalSpeed				= 343;
 };
 
+class OPTRE_B_127x40_SST: OPTRE_B_127x40_SS
+{
+	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+};
+
 class OPTRE_B_127x40_NARQ: OPTRE_B_127x40_Ball
 {
 	hit 						= 0.1;
+};
+
+class OPTRE_B_127x40_NARQT: OPTRE_B_127x40_NARQ
+{
+	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 };
