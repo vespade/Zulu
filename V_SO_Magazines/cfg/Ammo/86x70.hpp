@@ -49,5 +49,11 @@ class OPTRE_B_86x70_JHPT: OPTRE_B_86x70_JHP
 class OPTRE_B_86x70_SS: OPTRE_B_86x70_Ball
 {
 	hit 						= 12;
-	typicalSpeed				= 343;
+	typicalSpeed				= 340;
 };
+
+class OPTRE_B_86x70_SST: OPTRE_B_86x70_SS
+{
+	model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+};
+

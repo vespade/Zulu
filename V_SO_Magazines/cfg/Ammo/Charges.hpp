@@ -2,9 +2,9 @@
 	class ATMine_Range_Ammo;
 	class C12_Remote_Ammo: SatchelCharge_Remote_Ammo
 	{
-		hit=5500;
-		indirectHit=3500;
-		indirectHitRange=8;
+		hit=6500;
+		indirectHit=4500;
+		indirectHitRange=3;
 		defaultMagazine="C12_Remote_Mag";
 		model="\OPTRE_Weapons\charges\c12.p3d";
 		picture="\OPTRE_weapons\charges\icons\c12.paa";
@@ -48,8 +48,8 @@
 	class C7_Remote_Ammo: SatchelCharge_Remote_Ammo
 	{
 		hit=2500;
-		indirectHit=2500;
-		indirectHitRange=0.5;
+		indirectHit=2400;
+		indirectHitRange=0.7;
 		defaultMagazine="C7_Remote_Mag";
 		model="\OPTRE_Weapons\charges\C7.p3d";
 		picture="\OPTRE_weapons\charges\icons\c12.paa";
@@ -93,8 +93,8 @@
 	};
 	class M168_Remote_Ammo: SatchelCharge_Remote_Ammo
 	{
-		hit=8500;
-		indirectHit=4500;
+		hit=9500;
+		indirectHit=6500;
 		indirectHitRange=10;
 		defaultMagazine="M168_Remote_Mag";
 		model="\OPTRE_Weapons\charges\m168.p3d";

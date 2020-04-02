@@ -28,6 +28,7 @@ class OPTRE_CR77: OPTRE_M393_DMR
 		"OPTRE_10Rnd_86x70_Mag_JHP",
 		"OPTRE_10Rnd_86x70_Mag_JHPT",
 		"OPTRE_10Rnd_86x70_Mag_SS",
+		"OPTRE_10Rnd_86x70_Mag_SST",
 		"OPTRE_10Rnd_86x70_Mag_FS",
 		"OPTRE_10Rnd_86x70_Mag_FST",
 		"OPTRE_20Rnd_86x70_Mag",
@@ -36,7 +37,8 @@ class OPTRE_CR77: OPTRE_M393_DMR
 		"OPTRE_20Rnd_86x70_Mag_APT",
 		"OPTRE_20Rnd_86x70_Mag_JHP",
 		"OPTRE_20Rnd_86x70_Mag_JHPT",
-		"OPTRE_20Rnd_86x70_Mag_SS"
+		"OPTRE_20Rnd_86x70_Mag_SS",
+		"OPTRE_20Rnd_86x70_Mag_SST",
 	};
 	magazineWell[] = {};
 	
