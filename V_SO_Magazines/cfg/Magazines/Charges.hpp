@@ -61,7 +61,7 @@
 	{
 		author="Fireteam Zulu";
 		scope=2;
-		mass=60;
+		mass=40;
 		displayName="M154 AT Mine";
 		descriptionUse="Use mine";
 		picture="\OPTRE_weapons\charges\icons\mine.paa";
@@ -100,7 +100,7 @@
 		ammo="M168_Remote_Ammo";
 		model="\OPTRE_Weapons\charges\m168g.p3d";
 		picture="\OPTRE_weapons\charges\icons\m168.paa";
-		mass=795;
+		mass=395;
 		count=1;
 		maxLeadSpeed=0;
 		nameSoundWeapon="satchelcharge";

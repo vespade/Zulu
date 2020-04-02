@@ -27,7 +27,7 @@ class OPTRE_B_95x40_SS: OPTRE_B_95x40_Ball
 {
 	caliber						= 2;
 	hit 						= 15;
-	typicalSpeed				= 343;
+	typicalSpeed				= 340;
 };
 
 class OPTRE_B_95x40_SAPHE: OPTRE_B_95x40_Ball

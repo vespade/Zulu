@@ -7,6 +7,7 @@ class OPTRE_60Rnd_762x51_Mag_AP: OPTRE_60Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 920;
 	ammo 						= "OPTRE_B_762x51_AP";
 	displayname 				= "60Rnd 7.62x51mm AP Magazine";
 	displaynameshort 			= "7.62x51mm AP";
@@ -31,6 +32,7 @@ class OPTRE_60Rnd_762x51_Mag_JHP: OPTRE_60Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 905;
 	ammo 						= "OPTRE_B_762x51_JHP";
 	displayname 				= "60Rnd 7.62x51mm JHP Magazine";
 	displaynameshort 			= "7.62x51mm JHP";
@@ -57,6 +59,7 @@ class OPTRE_32Rnd_762x51_Mag_AP: OPTRE_32Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 920;
 	ammo 						= "OPTRE_B_762x51_AP";
 	displayname 				= "32Rnd 7.62x51mm AP Magazine";
 	displaynameshort 			= "7.62x51mm AP";
@@ -81,6 +84,7 @@ class OPTRE_32Rnd_762x51_Mag_JHP: OPTRE_32Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 905;
 	ammo 						= "OPTRE_B_762x51_JHP";
 	displayname 				= "32Rnd 7.62x51mm JHP Magazine";
 	displaynameshort 			= "7.62x51mm JHP";
@@ -105,6 +109,7 @@ class OPTRE_32Rnd_762x51_Mag_SS: OPTRE_32Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 340;
 	ammo 						= "OPTRE_B_762x51_SS";
 	displayname 				= "32Rnd 7.62x51mm SS Magazine";
 	displaynameshort 			= "7.62x51mm SS";
@@ -131,6 +136,7 @@ class OPTRE_15Rnd_762x51_Mag_AP: OPTRE_15Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 920;
 	ammo 						= "OPTRE_B_762x51_AP";
 	displayname 				= "15Rnd 7.62x51mm AP Magazine";
 	displaynameshort 			= "7.62x51mm AP";
@@ -155,6 +161,7 @@ class OPTRE_15Rnd_762x51_Mag_JHP: OPTRE_15Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 905;
 	ammo 						= "OPTRE_B_762x51_JHP";
 	displayname 				= "15Rnd 7.62x51mm JHP Magazine";
 	displaynameshort 			= "7.62x51mm JHP";
@@ -179,6 +186,7 @@ class OPTRE_15Rnd_762x51_Mag_SS: OPTRE_15Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 340;
 	ammo 						= "OPTRE_B_762x51_SS";
 	displayname 				= "15Rnd 7.62x51mm SS Magazine";
 	displaynameshort 			= "7.62x51mm SS";
@@ -205,6 +213,7 @@ class OPTRE_15Rnd_762x51_Mag_FS: OPTRE_15Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 1000;
 	ammo 						= "OPTRE_B_762x51_FS";
 	displayname 				= "15Rnd 7.62x51mm FS Magazine";
 	displaynameshort 			= "7.62x51mm FS";

@@ -5,6 +5,7 @@ class OPTRE_4Rnd_145x114_Mag_APFSDST: OPTRE_4Rnd_145x114_APFSDS_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	initspeed 					= 2000;
 	ammo 						= "OPTRE_B_145x114_APFSDST";
 	displayname 				= "4Rnd 14.5x114mm APFSDS Magazine (Tracer)";
 	displaynameshort 			= "14.5x114mm APFSDS Tracer";
@@ -17,6 +18,7 @@ class OPTRE_4Rnd_145x114_Mag_HVAPT: OPTRE_4Rnd_145x114_HVAP_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	initspeed 					= 1800;
 	ammo 						= "OPTRE_B_145x114_HVAPT";
 	displayname 				= "4Rnd 14.5x114mm HVAP Magazine (Tracer)";
 	displaynameshort 			= "14.5x114mm HVAP Tracer";
@@ -29,6 +31,7 @@ class OPTRE_4Rnd_145x114_Mag_HEDPT: OPTRE_4Rnd_145x114_HEDP_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	initspeed 					= 1500;
 	ammo 						= "OPTRE_B_145x114_HEDPT";
 	displayname 				= "4Rnd 14.5x114mm HEDP Magazine (Tracer)";
 	displaynameshort 			= "14.5x114mm HEDP Tracer";
@@ -42,6 +45,7 @@ class OPTRE_4Rnd_145x114_Mag_SS: OPTRE_4Rnd_145x114_APFSDS_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 340;
 	ammo 						= "OPTRE_B_145x114_SS";
 	displayname 				= "4Rnd 14.5x114mm SS Magazine";
 	displaynameshort 			= "14.5x114mm SS";
@@ -68,6 +72,7 @@ class OPTRE_4Rnd_145x114_Mag_NARQ: OPTRE_4Rnd_145x114_APFSDS_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	initspeed 					= 2000;
 	ammo 						= "OPTRE_B_145x114_NARQ";
 	displayname 				= "4Rnd 14.5x114mm NARQ Magazine";
 	displaynameshort 			= "14.5x114mm NARQ";

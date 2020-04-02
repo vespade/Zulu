@@ -64,6 +64,7 @@ class OPTRE_1Rnd_50x137_Tekcirc: OPTRE_1Rnd_50x137_THERMO
 	
 	ammo 						= "OPTRE_50x137_Tekcirc";
 	initspeed					= -5;
+	
 	displayname 				= "50x137mm Tekcirc Rocket";
 	displaynameshort 			= "Tekcirc";
 	descriptionShort			= "1 Rocket<br>50x137mm<br>Tekcirc<br>Dediugnu";

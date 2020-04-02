@@ -26,7 +26,7 @@ class OPTRE_B_95x60_SS: OPTRE_B_95x60_JHP
 {
 	caliber						= 3;
 	hit 						= 20;
-	typicalSpeed				= 343;
+	typicalSpeed				= 340;
 };
 
 class OPTRE_B_95x60_SAPHE: OPTRE_B_95x60_JHP
@@ -35,10 +35,10 @@ class OPTRE_B_95x60_SAPHE: OPTRE_B_95x60_JHP
 	explosive					= 0.20;
 	explosionEffects			= "ExploAmmoExplosion";
 	explosionSoundEffect		= "DefaultExplosion";
-	hit 						= 23;
+	hit 						= 17;
 	typicalSpeed				= 920;
-	indirectHit					= 17;
-	indirectHitRange			= 0.45;
+	indirectHit					= 23;
+	indirectHitRange			= 0.045;
 };
 
 class OPTRE_B_95x60_SAPHET: OPTRE_B_95x60_SAPHE

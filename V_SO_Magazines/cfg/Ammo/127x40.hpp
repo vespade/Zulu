@@ -23,9 +23,9 @@ class OPTRE_B_127x40_HE: OPTRE_B_127x40_Ball
 	explosive					= 0.2;
 	explosionEffects			= "ExploAmmoExplosion";
 	explosionSoundEffect		= "DefaultExplosion";
-	hit 						= 18;
-	indirectHit					= 12;
-	indirectHitRange			= 0.25;
+	hit 						= 12;
+	indirectHit					= 18;
+	indirectHitRange			= 0.025;
 };
 
 class OPTRE_B_127x40_HET: OPTRE_B_127x40_HE
@@ -76,7 +76,7 @@ class OPTRE_B_127x40_SAPHET: OPTRE_B_127x40_SAPHE
 class OPTRE_B_127x40_SS: OPTRE_B_127x40_Ball
 {
 	hit 						= 14;
-	typicalSpeed				= 343;
+	typicalSpeed				= 340;
 };
 
 class OPTRE_B_127x40_SST: OPTRE_B_127x40_SS
