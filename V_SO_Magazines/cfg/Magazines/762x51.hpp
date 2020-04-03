@@ -193,7 +193,7 @@ class OPTRE_15Rnd_762x51_Mag_SS: OPTRE_15Rnd_762x51_Mag
 	descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Subsonic";
 };
 
-class OPTRE_15Rnd_762x51_Mag_SSS: OPTRE_15Rnd_762x51_Mag
+class OPTRE_15Rnd_762x51_Mag_SST: OPTRE_15Rnd_762x51_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";

@@ -1,41 +1,42 @@
 // 6 Round Magazines
-class OPTRE_6Rnd_8Gauge_Pellets: 20Rnd_762x51_Mag
+class 2Rnd_12Gauge_Pellets;
+class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	ammo 						= "OPTRE_B_8Gauge_Pellets";
+	ammo 						= "OPTRE_B_8Gauge_Pellet";
 	count						= 6;
 	displayname 				= "6Rnd 8 Gauge Pellets";
 	displayNameShort 			= "8 Gauge Pellets";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Pellets";
 	
-	initspeed 					= 500;
 	mass 						= 10;
 	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_S";
 	picture 					= "\a3\weapons_F\data\ui\m_12gauge_ca";
 };
 
-class OPTRE_6Rnd_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Pellets
+class 2Rnd_12Gauge_Slug;
+class OPTRE_6Rnd_8Gauge_Slug: 2Rnd_12Gauge_Slug
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	ammo 						= "OPTRE_B_8Gauge_Slugs";
+	ammo 						= "OPTRE_B_8Gauge_Slug";
 	displayname 				= "6Rnd 8 Gauge Slugs";
 	displayNameShort 			= "8 Gauge Slugs";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Slugs";
 	
-	initspeed 					= 800;
+	mass 						= 10;
 	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_P";
 	picture 					= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca";
 };
 
-class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slugs
+class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slug
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -46,46 +47,56 @@ class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slugs
 	displayname 				= "6Rnd 8 Gauge HEDP";
 	displayNameShort 			= "8 Gauge HEDP";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>High-Explosive Dual Purpose";
-	
-	initspeed 					= 1000;
 };
 
-class OPTRE_6Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Pellets
+class OPTRE_6Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Slug
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	ammo 						= "OPTRE_B_8Gauge_Beanbags";
+	ammo 						= "OPTRE_B_8Gauge_Beanbag";
 	displayname 				= "6Rnd 8 Gauge Beanbags";
 	displayNameShort 			= "8 Gauge Beanbags";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Beanbags";
+};
+
+class OPTRE_6Rnd_8Gauge_Incendiary: OPTRE_6Rnd_8Gauge_Pellet
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
 	
-	initspeed 					= 300;
+	ammo 						= "OPTRE_B_8Gauge_Incendiary";
+	displayname 				= "6Rnd 8 Gauge Dragon's Breath";
+	displayNameShort 			= "8 Gauge Incendiary";
+	descriptionShort			= "6 Rounds<br>8 Gauge<br>Incendiary";
+	tracersEvery 				= 1;
 };
 
 // 12 Round Magazines
-class OPTRE_12Rnd_8Gauge_Pellets: OPTRE_6Rnd_8Gauge_Pellets
+class OPTRE_12Rnd_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	ammo 						= "OPTRE_B_8Gauge_Pellets";
 	count						= 12;
+	mass 						= 20;
 	displayname 				= "12Rnd 8 Gauge Pellets";
 	descriptionShort			= "12 Rounds<br>8 Gauge<br>Pellets";
 };
 
-class OPTRE_12Rnd_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Slugs
+class OPTRE_12Rnd_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	count						= 12;
+	mass 						= 20;
 	displayname 				= "12Rnd 8 Gauge Slugs";
 	descriptionShort			= "12 Rounds<br>8 Gauge<br>Slugs";
-	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_P";
-	picture 					= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca";
 };
 
 class OPTRE_12Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_HEDP
@@ -93,15 +104,30 @@ class OPTRE_12Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_HEDP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	count						= 12;
+	mass 						= 20;
 	displayname 				= "12Rnd 8 Gauge HEDP";
 	descriptionShort			= "12 Rounds<br>8 Gauge<br>High-Explosive Dual Purpose";
 };
 
-class OPTRE_12Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Beanbags
+class OPTRE_12Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	count						= 12;
+	mass 						= 20;
 	displayname 				= "12Rnd 8 Gauge Beanbags";
 	descriptionShort			= "12 Rounds<br>8 Gauge<br>Beanbags";
+};
+
+class OPTRE_12Rnd_8Gauge_Incendiary: OPTRE_6Rnd_8Gauge_Incendiary
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	
+	count						= 12;
+	mass 						= 20;
+	displayname 				= "12Rnd 8 Gauge Dragon's Breath";
+	descriptionShort			= "12 Rounds<br>8 Gauge<br>Incendiary";	
 };

@@ -126,7 +126,7 @@ class OPTRE_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box
 	displayname 				= "100Rnd 9.5x40mm HP-SAP Box Magazine";
 	displaynameshort 			= "9.5x60mm HP-SAP";
 	descriptionShort			= "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
-	initspeed					= 1300;
+	initspeed					= 1200;
 };
 
 class OPTRE_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_HPSAP
@@ -179,8 +179,8 @@ class OPTRE_100Rnd_95x40_Box_SS: OPTRE_100Rnd_95x40_Box
 	initspeed					= 340;
 };
 
-// 300 Round Box Magazines
-class OPTRE_300Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
+// 200 Round Box Magazines
+class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -188,14 +188,14 @@ class OPTRE_300Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_95x40";
-	count						= 300;
-	displayname 				= "300Rnd 9.5x40mm Box Magazine";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm";
-	mass						= 103.6;
+	count						= 200;
+	displayname 				= "200Rnd 9.5x40mm Box Magazine";
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm";
+	mass						= 70.5;
 	initspeed					= 1100;
 };
 
-class OPTRE_300Rnd_95x40_Box_JHP: OPTRE_300Rnd_95x40_Box
+class OPTRE_200Rnd_95x40_Box_JHP: OPTRE_200Rnd_95x40_Box
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -203,25 +203,25 @@ class OPTRE_300Rnd_95x40_Box_JHP: OPTRE_300Rnd_95x40_Box
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_95x40_JHP";
-	displayname 				= "300Rnd 9.5x40mm JHP Box Magazine";
+	displayname 				= "200Rnd 9.5x40mm JHP Box Magazine";
 	displaynameshort 			= "9.5x60mm JHP";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
 	initspeed					= 1100;
 };
 
-class OPTRE_300Rnd_95x40_Box_JHPT: OPTRE_300Rnd_95x40_Box_JHP
+class OPTRE_200Rnd_95x40_Box_JHPT: OPTRE_200Rnd_95x40_Box_JHP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
-	displayname 				= "300Rnd 9.5x40mm JHP Box Magazine (Tracer)";
+	displayname 				= "200Rnd 9.5x40mm JHP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm JHP Tracer";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
 
 };
 
-class OPTRE_300Rnd_95x40_Box_HPSAP: OPTRE_300Rnd_95x40_Box
+class OPTRE_200Rnd_95x40_Box_HPSAP: OPTRE_200Rnd_95x40_Box
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -229,24 +229,24 @@ class OPTRE_300Rnd_95x40_Box_HPSAP: OPTRE_300Rnd_95x40_Box
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_95x40_HPSAP";
-	displayname 				= "300Rnd 9.5x40mm HP-SAP Box Magazine";
+	displayname 				= "200Rnd 9.5x40mm HP-SAP Box Magazine";
 	displaynameshort 			= "9.5x60mm HP-SAP";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
-	initspeed					= 1300
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
+	initspeed					= 1200;
 };
 
-class OPTRE_300Rnd_95x40_Box_HPSAPT: OPTRE_300Rnd_95x40_Box_HPSAP
+class OPTRE_200Rnd_95x40_Box_HPSAPT: OPTRE_200Rnd_95x40_Box_HPSAP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
-	displayname 				= "300Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
+	displayname 				= "200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
 };
 
-class OPTRE_300Rnd_95x40_Box_SAPHE: OPTRE_300Rnd_95x40_Box
+class OPTRE_200Rnd_95x40_Box_SAPHE: OPTRE_200Rnd_95x40_Box
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -254,24 +254,24 @@ class OPTRE_300Rnd_95x40_Box_SAPHE: OPTRE_300Rnd_95x40_Box
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_95x40_SAPHE";
-	displayname 				= "300Rnd 9.5x40mm SAP-HE Box Magazine";
+	displayname 				= "200Rnd 9.5x40mm SAP-HE Box Magazine";
 	displaynameshort 			= "9.5x60mm SAP-HE";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
 	initspeed					= 720;
 };
 
-class OPTRE_300Rnd_95x40_Box_SAPHET: OPTRE_300Rnd_95x40_Box_SAPHE
+class OPTRE_200Rnd_95x40_Box_SAPHET: OPTRE_200Rnd_95x40_Box_SAPHE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
 	ammo 						= "OPTRE_B_95x40_SAPHET";
-	displayname 				= "300Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
+	displayname 				= "200Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm SAP-HE Tracer";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 };
 
-class OPTRE_300Rnd_95x40_Box_SS: OPTRE_300Rnd_95x40_Box
+class OPTRE_200Rnd_95x40_Box_SS: OPTRE_200Rnd_95x40_Box
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -279,8 +279,8 @@ class OPTRE_300Rnd_95x40_Box_SS: OPTRE_300Rnd_95x40_Box
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_95x40_SS";
-	displayname 				= "300Rnd 9.5x40mm SS Box Magazine";
+	displayname 				= "200Rnd 9.5x40mm SS Box Magazine";
 	displaynameshort 			= "9.5x60mm SS";
-	descriptionShort			= "300 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
+	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
 	initspeed					= 340;
 };

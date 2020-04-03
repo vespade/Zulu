@@ -12,11 +12,13 @@ class OPTRE_M392_DMR: OPTRE_LongRifle_Base
 	{
 		"OPTRE_15Rnd_762x51_Mag",
 		"OPTRE_15Rnd_762x51_Mag_Tracer",
+		"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
 		"OPTRE_15Rnd_762x51_Mag_AP",
 		"OPTRE_15Rnd_762x51_Mag_APT",
 		"OPTRE_15Rnd_762x51_Mag_JHP",
 		"OPTRE_15Rnd_762x51_Mag_JHPT",
 		"OPTRE_15Rnd_762x51_Mag_SS",
+		"OPTRE_15Rnd_762x51_Mag_SST",
 		"OPTRE_15Rnd_762x51_Mag_FS",
 		"OPTRE_15Rnd_762x51_Mag_FST"
 	};

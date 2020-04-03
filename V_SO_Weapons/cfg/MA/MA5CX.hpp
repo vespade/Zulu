@@ -11,6 +11,7 @@ class OPTRE_MA5C: OPTRE_MA5B
 	{
 		"OPTRE_32Rnd_762x51_Mag",
 		"OPTRE_32Rnd_762x51_Mag_Tracer",
+		"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
 		"OPTRE_32Rnd_762x51_Mag_AP",
 		"OPTRE_32Rnd_762x51_Mag_APT",
 		"OPTRE_32Rnd_762x51_Mag_JHP",

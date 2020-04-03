@@ -12,6 +12,7 @@ class OPTRE_M73: OPTRE_MachineGun_Base
 	{
 		"OPTRE_36Rnd_95x40_Mag",
 		"OPTRE_36Rnd_95x40_Mag_Tracer",
+		"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
 		"OPTRE_36Rnd_95x40_Mag_JHP",
 		"OPTRE_36Rnd_95x40_Mag_JHPT",
 		"OPTRE_36Rnd_95x40_Mag_HPSAP",
@@ -21,6 +22,7 @@ class OPTRE_M73: OPTRE_MachineGun_Base
 		"OPTRE_36Rnd_95x40_Mag_SS",
 		"OPTRE_100Rnd_95x40_Box",
 		"OPTRE_100Rnd_95x40_Box_Tracer",
+		"OPTRE_100Rnd_95x40_Box_Tracer_Yellow",
 		"OPTRE_100Rnd_95x40_Box_JHP",
 		"OPTRE_100Rnd_95x40_Box_JHPT",
 		"OPTRE_100Rnd_95x40_Box_HPSAP",
@@ -28,15 +30,16 @@ class OPTRE_M73: OPTRE_MachineGun_Base
 		"OPTRE_100Rnd_95x40_Box_SAPHE",
 		"OPTRE_100Rnd_95x40_Box_SAPHET",
 		"OPTRE_100Rnd_95x40_Box_SS",
-		"OPTRE_300Rnd_95x40_Box",
-		"OPTRE_300Rnd_95x40_Box_Tracer",
-		"OPTRE_300Rnd_95x40_Box_JHP",
-		"OPTRE_300Rnd_95x40_Box_JHPT",
-		"OPTRE_300Rnd_95x40_Box_HPSAP",
-		"OPTRE_300Rnd_95x40_Box_HPSAPT",
-		"OPTRE_300Rnd_95x40_Box_SAPHE",
-		"OPTRE_300Rnd_95x40_Box_SAPHET",
-		"OPTRE_300Rnd_95x40_Box_SS"
+		"OPTRE_200Rnd_95x40_Box",
+		"OPTRE_200Rnd_95x40_Box_Tracer",
+		"OPTRE_200Rnd_95x40_Box_Tracer_Yellow",
+		"OPTRE_200Rnd_95x40_Box_JHP",
+		"OPTRE_200Rnd_95x40_Box_JHPT",
+		"OPTRE_200Rnd_95x40_Box_HPSAP",
+		"OPTRE_200Rnd_95x40_Box_HPSAPT",
+		"OPTRE_200Rnd_95x40_Box_SAPHE",
+		"OPTRE_200Rnd_95x40_Box_SAPHET",
+		"OPTRE_200Rnd_95x40_Box_SS"
 	};
 	
 	class WeaponSlotsInfo
@@ -132,6 +135,7 @@ class OPTRE_M73: OPTRE_MachineGun_Base
 		};
 	};
 };
+
 class OPTRE_M73H: OPTRE_M73
 {
 	dlc							= "SO";

@@ -22,6 +22,8 @@ class OPTRE_SRS99D: OPTRE_LongRifle_Base
 		"OPTRE_4Rnd_145x114_Mag_DOC"
 	};
 	
+	class Single;
+	
 	class WeaponSlotsInfo
  	{
 		mass = 237;

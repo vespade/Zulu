@@ -21,7 +21,8 @@ class OPTRE_M7: OPTRE_SubMachineGun_Base
 	magazines[]=
 	{
 		"OPTRE_60Rnd_5x23mm_Mag",
-		"OPTRE_60Rnd_5x23mm_Mag_tracer",
+		"OPTRE_60Rnd_5x23mm_Mag_Tracer",
+		"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow",
 		"OPTRE_60Rnd_5x23mm_Mag_FMJ",
 		"OPTRE_60Rnd_5x23mm_Mag_FMJT",
 		"OPTRE_60Rnd_5x23mm_Mag_HV",
@@ -31,7 +32,8 @@ class OPTRE_M7: OPTRE_SubMachineGun_Base
 		"OPTRE_60Rnd_5x23mm_Mag_SS",
 		"OPTRE_60Rnd_5x23mm_Mag_SST",
 		"OPTRE_48Rnd_5x23mm_Mag",
-		"OPTRE_48Rnd_5x23mm_Mag_tracer",
+		"OPTRE_48Rnd_5x23mm_Mag_Tracer",
+		"OPTRE_48Rnd_5x23mm_Mag_Tracer_Yellow",
 		"OPTRE_48Rnd_5x23mm_Mag_FMJ",
 		"OPTRE_48Rnd_5x23mm_Mag_FMJT",
 		"OPTRE_48Rnd_5x23mm_Mag_HV",

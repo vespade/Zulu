@@ -41,7 +41,6 @@ class CfgAddons
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
-class BaseSoundModeType;
 
 class MuzzleSlot;
 class CowsSlot;
@@ -119,6 +118,7 @@ class CfgWeapons
 	// Sniper Rifles
 	#include "cfg\SRS99\SRS99DX.hpp"
 	#include "cfg\SRS99\SRS99CX.hpp"
+	#include "cfg\M99\M99X.hpp"
 	
 	// Rocket Launchers
 	#include "cfg\M48\M48B.hpp"

@@ -13,13 +13,13 @@ class OPTRE_M301X: UGL_F
 	magazines[] = 
 	{
 		// Specialized Ordnance
-		"UGL_8Gauge_Pellets",
-		"UGL_8Gauge_Slugs",
-		"UGL_8Gauge_Beanbags",
+		"UGL_8Gauge_Pellet",
+		"UGL_8Gauge_Slug",
+		"UGL_8Gauge_Beanbag",
 		"UGL_FlareBlue_F",
-		"3Rnd_UGL_8Gauge_Pellets",
-		"3Rnd_UGL_8Gauge_Slugs",
-		"3Rnd_UGL_8Gauge_Beanbags",
+		"3Rnd_UGL_8Gauge_Pellet",
+		"3Rnd_UGL_8Gauge_Slug",
+		"3Rnd_UGL_8Gauge_Beanbag",
 		"3Rnd_UGL_FlareBlue_F",
 		
 		// Standard

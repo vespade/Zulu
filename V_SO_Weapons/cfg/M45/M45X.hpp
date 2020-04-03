@@ -14,14 +14,16 @@ class OPTRE_M45: OPTRE_Shotgun_Base
 	
 	magazines[]=
 	{
-		"OPTRE_6Rnd_8Gauge_Pellets",
-		"OPTRE_6Rnd_8Gauge_Slugs",
+		"OPTRE_6Rnd_8Gauge_Pellet",
+		"OPTRE_6Rnd_8Gauge_Slug",
 		"OPTRE_6Rnd_8Gauge_HEDP",
-		"OPTRE_6Rnd_8Gauge_Beanbags",
-		"OPTRE_12Rnd_8Gauge_Pellets",
-		"OPTRE_12Rnd_8Gauge_Slugs",
+		"OPTRE_6Rnd_8Gauge_Beanbag",
+		"OPTRE_6Rnd_8Gauge_Incendiary",
+		"OPTRE_12Rnd_8Gauge_Pellet",
+		"OPTRE_12Rnd_8Gauge_Slug",
 		"OPTRE_12Rnd_8Gauge_HEDP",
-		"OPTRE_12Rnd_8Gauge_Beanbags"
+		"OPTRE_12Rnd_8Gauge_Beanbag",
+		"OPTRE_12Rnd_8Gauge_Incendiary"
 	};
 	
 	class WeaponSlotsInfo

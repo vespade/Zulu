@@ -7,6 +7,29 @@ class OPTRE_M295_BMR: OPTRE_M393_DMR
 	
 	displayName					= "M295X BMR";
 	
+	magazines[]=
+	{
+		"OPTRE_15Rnd_762x51_Mag",
+		"OPTRE_15Rnd_762x51_Mag_Tracer",
+		"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
+		"OPTRE_15Rnd_762x51_Mag_AP",
+		"OPTRE_15Rnd_762x51_Mag_APT",
+		"OPTRE_15Rnd_762x51_Mag_JHP",
+		"OPTRE_15Rnd_762x51_Mag_JHPT",
+		"OPTRE_15Rnd_762x51_Mag_SS",
+		"OPTRE_15Rnd_762x51_Mag_FS",
+		"OPTRE_15Rnd_762x51_Mag_FST",
+		"OPTRE_32Rnd_762x51_Mag",
+		"OPTRE_32Rnd_762x51_Mag_Tracer",
+		"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+		"OPTRE_32Rnd_762x51_Mag_AP",
+		"OPTRE_32Rnd_762x51_Mag_APT",
+		"OPTRE_32Rnd_762x51_Mag_JHP",
+		"OPTRE_32Rnd_762x51_Mag_JHPT",
+		"OPTRE_32Rnd_762x51_Mag_SS",
+		"OPTRE_32Rnd_762x51_Mag_SST"
+	};
+	
 	class WeaponSlotsInfo: WeaponSlotsInfo
  	{
 		mass = 123;

@@ -660,14 +660,13 @@ class OPTRE_16Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	initspeed 					= 620;
 	ammo 						= "OPTRE_B_127x40_Ball";
 	count						= 12;
 	displayname 				= "16Rnd 12.7x40mm Magazine";
 	displaynameshort 			= "12.7x40mm";
 	descriptionShort			= "16 Round Magazine<br>12.7x40mm";
 	
-	initspeed 					= 600;
+	initspeed 					= 620;
 	mass 						= 12;
 	model 						= "\OPTRE_Weapons\pistol\m6_Magazine";
 	picture 					= "\OPTRE_weapons\pistol\icons\magazine";

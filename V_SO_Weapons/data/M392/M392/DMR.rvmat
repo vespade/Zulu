@@ -68,26 +68,26 @@ class Stage5
 };
 class Stage6
 {
-	texture = "#(ai,16,2,2)fresnel(0.45,0.25)";
-	uvSource = "tex";
+	texture="#(ai,16,2,2)fresnel(10.4,8.3)";
+	uvSource="tex";
 	class uvTransform
 	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,1};
-		pos[] = {0,0,0};
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
 	};
 };
 class Stage7
 {
-	texture = "a3\data_f\env_land_co.paa";
-	useWorldEnvMap = "true";
-	uvSource = "tex";
+	texture="a3\data_f\env_land_co.paa";
+	useWorldEnvMap="true";
+	uvSource="tex";
 	class uvTransform
 	{
-		aside[] = {1.0,0.0,0.0};
-		up[] = {0.0,1.0,0.0};
-		dir[] = {0.0,0.0,0.0};
-		pos[] = {0.0,0.0,0.0};
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
 	};
 };

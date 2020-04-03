@@ -63,6 +63,7 @@ class CfgMagazines
 	#include "cfg\magazines\50x137.hpp"
 	#include "cfg\magazines\212.hpp"
 	#include "cfg\magazines\40.hpp"
+	#include "cfg\magazines\54.hpp"
 	#include "cfg\magazines\86x70.hpp"
-	#include "cfg\Magazines\charges.hpp"
+	#include "cfg\magazines\charges.hpp"
 };

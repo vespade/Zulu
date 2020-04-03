@@ -18,6 +18,7 @@ class OPTRE_M28A2: OPTRE_M393_DMR
 	{
 		"OPTRE_15Rnd_762x51_Mag",
 		"OPTRE_15Rnd_762x51_Mag_Tracer",
+		"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
 		"OPTRE_15Rnd_762x51_Mag_AP",
 		"OPTRE_15Rnd_762x51_Mag_APT",
 		"OPTRE_15Rnd_762x51_Mag_JHP",
@@ -27,6 +28,7 @@ class OPTRE_M28A2: OPTRE_M393_DMR
 		"OPTRE_15Rnd_762x51_Mag_FST",
 		"OPTRE_32Rnd_762x51_Mag",
 		"OPTRE_32Rnd_762x51_Mag_Tracer",
+		"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
 		"OPTRE_32Rnd_762x51_Mag_AP",
 		"OPTRE_32Rnd_762x51_Mag_APT",
 		"OPTRE_32Rnd_762x51_Mag_JHP",

@@ -11,6 +11,7 @@ class OPTRE_MA5CGL: OPTRE_MA5BGL
 	{
 		"OPTRE_32Rnd_762x51_Mag",
 		"OPTRE_32Rnd_762x51_Mag_Tracer",
+		"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
 		"OPTRE_32Rnd_762x51_Mag_AP",
 		"OPTRE_32Rnd_762x51_Mag_APT",
 		"OPTRE_32Rnd_762x51_Mag_JHP",

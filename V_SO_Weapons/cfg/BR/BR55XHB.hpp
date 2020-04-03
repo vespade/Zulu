@@ -20,6 +20,7 @@ class OPTRE_BR55HB: OPTRE_Rifle_Base
 	{
 		"OPTRE_36Rnd_95x40_Mag",
 		"OPTRE_36Rnd_95x40_Mag_Tracer",
+		"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
 		"OPTRE_36Rnd_95x40_Mag_JHP",
 		"OPTRE_36Rnd_95x40_Mag_JHPT",
 		"OPTRE_36Rnd_95x40_Mag_HPSAP",
