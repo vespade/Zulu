@@ -220,13 +220,17 @@ class OPTRE_M45A: OPTRE_M45E
 	{
 		"OPTRE_6Rnd_8Gauge_Pellets",
 		"OPTRE_6Rnd_8Gauge_Slugs",
-		"OPTRE_6Rnd_8Gauge_HEDP",
-		"OPTRE_6Rnd_8Gauge_Incendiary"
 	};
 	
 	class OPTRE_M45: OPTRE_M45
 	{
 		displayName						= "Single (Secondary)";
+		magazines[]=
+		{
+			"OPTRE_6Rnd_8Gauge_HEDP",
+			"OPTRE_6Rnd_8Gauge_Beanbags",
+			"OPTRE_6Rnd_8Gauge_Incendiary"
+		};
 	};
 };
 
@@ -241,8 +245,6 @@ class OPTRE_M45ATAC: OPTRE_M45A
 	{
 		"OPTRE_6Rnd_8Gauge_Pellets",
 		"OPTRE_6Rnd_8Gauge_Slugs",
-		"OPTRE_6Rnd_8Gauge_HEDP",
-		"OPTRE_6Rnd_8Gauge_Incendiary"
 	};
 	
 	displayName 				= "M45AX Semi-Automatic Shotgun (Tactical)";
