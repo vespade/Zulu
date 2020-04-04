@@ -6,6 +6,8 @@ class OPTRE_3Rnd_54mm_Mag: OPTRE_3Rnd_ALIM_Gauss_Slugs
 	scope						= 2;
 	scopeArsenal				= 2;
 	
+	tracersEvery				= 1;
+	
 	type 						= "256";
 	weaponpoolavailable 		= 1;
 	mass 						= 19;

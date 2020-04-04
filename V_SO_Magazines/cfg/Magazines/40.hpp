@@ -14,7 +14,7 @@ class 3Rnd_UGL_FlareBlue_F: 3Rnd_UGL_FlareWhite_F
 	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca";
 };
 
-class 3Rnd_UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
+class 3Rnd_UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellets
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -27,7 +27,7 @@ class 3Rnd_UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
 	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca";
 };
 
-class 3Rnd_UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
+class 3Rnd_UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slugs
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -38,7 +38,7 @@ class 3Rnd_UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
 	picture 					= "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Pellets_ca";
 };
 
-class 3Rnd_UGL_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
+class 3Rnd_UGL_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbags
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -65,7 +65,7 @@ class UGL_FlareBlue_F: UGL_FlareWhite_F
 	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca";
 };
 
-class UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
+class UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellets
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -75,7 +75,7 @@ class UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
 	descriptionShort 			= "Type: 8 Gauge - Pellets<br />Rounds: 1<br />Used in: ELGM, 3GL";
 };
 
-class UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
+class UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slugs
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -85,7 +85,7 @@ class UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
 	descriptionShort 			= "Type: 8 Gauge - Slugs<br />Rounds: 1<br />Used in: ELGM, 3GL";
 };
 
-class UGL_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
+class UGL_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbags
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -96,7 +96,7 @@ class UGL_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
 };
 
 // Don't look down here...
-class UGL_Potato: OPTRE_6Rnd_8Gauge_Pellet
+class UGL_Potato: OPTRE_6Rnd_8Gauge_Pellets
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";

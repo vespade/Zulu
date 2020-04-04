@@ -38,6 +38,8 @@ class OPTRE_8Rnd_127x40_Mag_APT: OPTRE_8Rnd_127x40_Mag_AP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_APT";
 	displayname 				= "8Rnd 12.7x40mm AP Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm AP Tracer";
@@ -91,6 +93,8 @@ class OPTRE_8Rnd_127x40_Mag_HET: OPTRE_8Rnd_127x40_Mag_HE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_HET";
 	displayname 				= "8Rnd 12.7x40mm HE Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm HE Tracer";
@@ -115,6 +119,8 @@ class OPTRE_8Rnd_127x40_Mag_HVAPT: OPTRE_8Rnd_127x40_Mag_HVAP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_HVAPT";
 	displayname 				= "8Rnd 12.7x40mm HVAP Magazine (Tracer)";
@@ -141,6 +147,8 @@ class OPTRE_8Rnd_127x40_Mag_JHPT: OPTRE_8Rnd_127x40_Mag_JHP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_JHPT";
 	displayname 				= "8Rnd 12.7x40mm JHP Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm JHP Tracer";
@@ -166,6 +174,8 @@ class OPTRE_8Rnd_127x40_Mag_SAPHET: OPTRE_8Rnd_127x40_Mag_SAPHE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_SAPHET";
 	displayname 				= "8Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm SAP-HE Tracer";
@@ -186,12 +196,12 @@ class OPTRE_8Rnd_127x40_Mag_SS: OPTRE_8Rnd_127x40_Mag
 	descriptionShort			= "8 Round Magazine<br>12.7x40mm<br>Sub-Sonic";
 };
 
-class OPTRE_8Rnd_127x40_Mag_SST: OPTRE_8Rnd_127x40_Mag
+class OPTRE_8Rnd_127x40_Mag_SST: OPTRE_8Rnd_127x40_Mag_SS
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_SST";
 	displayname 				= "8Rnd 12.7x40mm SS Magazine (Tracer)";
@@ -217,8 +227,8 @@ class OPTRE_8Rnd_127x40_Mag_NARQT: OPTRE_8Rnd_127x40_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_NARQT";
 	displayname 				= "8Rnd 12.7x40mm NARQ Magazine (Tracer)";
@@ -264,6 +274,8 @@ class OPTRE_6Rnd_127x40_Cyl_APT: OPTRE_6Rnd_127x40_Cyl_AP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_APT";
 	displayname 				= "6Rnd 12.7x40mm AP Cylinder (Tracer)";
@@ -318,6 +330,8 @@ class OPTRE_6Rnd_127x40_Cyl_HET: OPTRE_6Rnd_127x40_Cyl_HE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_HET";
 	displayname 				= "6Rnd 12.7x40mm HE Cylinder (Tracer)";
 	displaynameshort 			= "12.7x40mm HE Tracer";
@@ -342,6 +356,8 @@ class OPTRE_6Rnd_127x40_Cyl_HVAPT: OPTRE_6Rnd_127x40_Cyl_HVAP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_HVAPT";
 	displayname 				= "6Rnd 12.7x40mm HVAP Cylinder (Tracer)";
@@ -368,6 +384,8 @@ class OPTRE_6Rnd_127x40_Cyl_JHPT: OPTRE_6Rnd_127x40_Cyl_JHP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_JHPT";
 	displayname 				= "6Rnd 12.7x40mm JHP Cylinder (Tracer)";
 	displaynameshort 			= "12.7x40mm JHP Tracer";
@@ -393,6 +411,8 @@ class OPTRE_6Rnd_127x40_Cyl_SAPHET: OPTRE_6Rnd_127x40_Cyl_SAPHE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_SAPHET";
 	displayname 				= "6Rnd 12.7x40mm SAP-HE Cylinder (Tracer)";
 	displaynameshort 			= "12.7x40mm SAP-HE Tracer";
@@ -413,12 +433,12 @@ class OPTRE_6Rnd_127x40_Cyl_SS: OPTRE_6Rnd_127x40_Cyl
 	descriptionShort			= "6 Round Cylinder<br>12.7x40mm<br>Sub-Sonic";
 };
 
-class OPTRE_6Rnd_127x40_Cyl_SST: OPTRE_6Rnd_127x40_Cyl
+class OPTRE_6Rnd_127x40_Cyl_SST: OPTRE_6Rnd_127x40_Cyl_SS
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_SST";
 	displayname 				= "6Rnd 12.7x40mm SS Cylinder (Tracer)";
@@ -440,12 +460,12 @@ class OPTRE_6Rnd_127x40_Cyl_NARQ: OPTRE_6Rnd_127x40_Cyl
 	descriptionShort			= "6 Round Cylinder<br>12.7x40mm<br>Tranquilizer";
 };
 
-class OPTRE_6Rnd_127x40_Cyl_NARQT: OPTRE_6Rnd_127x40_Cyl
+class OPTRE_6Rnd_127x40_Cyl_NARQT: OPTRE_6Rnd_127x40_Cyl_NARQ
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_NARQT";
 	displayname 				= "6Rnd 12.7x40mm NARQ Cylinder (Tracer)";
@@ -492,6 +512,8 @@ class OPTRE_12Rnd_127x40_Mag_APT: OPTRE_12Rnd_127x40_Mag_AP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_APT";
 	displayname 				= "12Rnd 12.7x40mm AP Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm AP Tracer";
@@ -516,6 +538,8 @@ class OPTRE_12Rnd_127x40_Mag_HET: OPTRE_12Rnd_127x40_Mag_HE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_HET";
 	displayname 				= "12Rnd 12.7x40mm HE Magazine (Tracer)";
@@ -542,6 +566,8 @@ class OPTRE_12Rnd_127x40_Mag_HVAPT: OPTRE_12Rnd_127x40_Mag_HVAP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_HVAPT";
 	displayname 				= "12Rnd 12.7x40mm HVAP Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm HVAP Tracer";
@@ -566,6 +592,8 @@ class OPTRE_12Rnd_127x40_Mag_JHPT: OPTRE_12Rnd_127x40_Mag_JHP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_JHPT";
 	displayname 				= "12Rnd 12.7x40mm JHP Magazine (Tracer)";
@@ -592,6 +620,8 @@ class OPTRE_12Rnd_127x40_Mag_SAPHET: OPTRE_12Rnd_127x40_Mag_SAPHE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_SAPHET";
 	displayname 				= "12Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm SAP-HE Tracer";
@@ -612,12 +642,12 @@ class OPTRE_12Rnd_127x40_Mag_SS: OPTRE_12Rnd_127x40_Mag
 	descriptionShort			= "12 Round Magazine<br>12.7x40mm<br>Sub-Sonic";
 };
 
-class OPTRE_12Rnd_127x40_Mag_SST: OPTRE_12Rnd_127x40_Mag
+class OPTRE_12Rnd_127x40_Mag_SST: OPTRE_12Rnd_127x40_Mag_SS
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_SST";
 	displayname 				= "12Rnd 12.7x40mm SS Magazine (Tracer)";
@@ -639,12 +669,12 @@ class OPTRE_12Rnd_127x40_Mag_NARQ: OPTRE_12Rnd_127x40_Mag
 	descriptionShort			= "12 Round Magazine<br>12.7x40mm<br>Tranquilizer";
 };
 
-class OPTRE_12Rnd_127x40_Mag_NARQT: OPTRE_12Rnd_127x40_Mag
+class OPTRE_12Rnd_127x40_Mag_NARQT: OPTRE_12Rnd_127x40_Mag_NARQ
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_NARQT";
 	displayname 				= "12Rnd 12.7x40mm NARQ Magazine (Tracer)";
@@ -691,6 +721,8 @@ class OPTRE_16Rnd_127x40_Mag_APT: OPTRE_16Rnd_127x40_Mag_AP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_APT";
 	displayname 				= "16Rnd 12.7x40mm AP Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm AP Tracer";
@@ -715,6 +747,8 @@ class OPTRE_16Rnd_127x40_Mag_HET: OPTRE_16Rnd_127x40_Mag_HE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_HET";
 	displayname 				= "16Rnd 12.7x40mm HE Magazine (Tracer)";
@@ -741,6 +775,8 @@ class OPTRE_16Rnd_127x40_Mag_HVAPT: OPTRE_16Rnd_127x40_Mag_HVAP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_HVAPT";
 	displayname 				= "16Rnd 12.7x40mm HVAP Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm HVAP Tracer";
@@ -765,6 +801,8 @@ class OPTRE_16Rnd_127x40_Mag_JHPT: OPTRE_16Rnd_127x40_Mag_JHP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_JHPT";
 	displayname 				= "16Rnd 12.7x40mm JHP Magazine (Tracer)";
@@ -791,6 +829,8 @@ class OPTRE_16Rnd_127x40_Mag_SAPHET: OPTRE_16Rnd_127x40_Mag_SAPHE
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_127x40_SAPHET";
 	displayname 				= "16Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 	displaynameshort 			= "12.7x40mm SAP-HE Tracer";
@@ -811,12 +851,12 @@ class OPTRE_16Rnd_127x40_Mag_SS: OPTRE_16Rnd_127x40_Mag
 	descriptionShort			= "16 Round Magazine<br>12.7x40mm<br>Sub-Sonic";
 };
 
-class OPTRE_16Rnd_127x40_Mag_SST: OPTRE_16Rnd_127x40_Mag
+class OPTRE_16Rnd_127x40_Mag_SST: OPTRE_16Rnd_127x40_Mag_SS
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_SST";
 	displayname 				= "16Rnd 12.7x40mm SS Magazine (Tracer)";
@@ -838,12 +878,12 @@ class OPTRE_16Rnd_127x40_Mag_NARQ: OPTRE_16Rnd_127x40_Mag
 	descriptionShort			= "16 Round Magazine<br>12.7x40mm<br>Tranquilizer";
 };
 
-class OPTRE_16Rnd_127x40_Mag_NARQT: OPTRE_16Rnd_127x40_Mag
+class OPTRE_16Rnd_127x40_Mag_NARQT: OPTRE_16Rnd_127x40_Mag_NARQ
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_127x40_NARQT";
 	displayname 				= "16Rnd 12.7x40mm NARQ Magazine (Tracer)";

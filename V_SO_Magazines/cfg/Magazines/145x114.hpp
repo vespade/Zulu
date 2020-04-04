@@ -1,37 +1,53 @@
 // 8 Round Magazines
-class OPTRE_4Rnd_145x114_APFSDS_Mag;
+class OPTRE_4Rnd_145x114_APFSDS_Mag: 20Rnd_762x51_Mag
+{
+	everyTracer 				= 0;
+	initspeed 					= 2000;
+};
+
 class OPTRE_4Rnd_145x114_Mag_APFSDST: OPTRE_4Rnd_145x114_APFSDS_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	initspeed 					= 2000;
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_145x114_APFSDST";
 	displayname 				= "4Rnd 14.5x114mm APFSDS Magazine (Tracer)";
 	displaynameshort 			= "14.5x114mm APFSDS Tracer";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>Armor Piercing Fin-Stabilized Disposable Shell<br>Tracers";
 };
 
-class OPTRE_4Rnd_145x114_HVAP_Mag;
+class OPTRE_4Rnd_145x114_HVAP_Mag: OPTRE_4Rnd_145x114_APFSDS_Mag
+{
+	everyTracer 				= 0;
+	initspeed 					= 1800;
+};
 class OPTRE_4Rnd_145x114_Mag_HVAPT: OPTRE_4Rnd_145x114_HVAP_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	initspeed 					= 1800;
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_145x114_HVAPT";
 	displayname 				= "4Rnd 14.5x114mm HVAP Magazine (Tracer)";
 	displaynameshort 			= "14.5x114mm HVAP Tracer";
 	descriptionshort 			= "4 Round Magazine<br>14.5x114mm<br>High Velocity Armor Piercing<br>Tracers";
 };
 
-class OPTRE_4Rnd_145x114_HEDP_Mag;
+class OPTRE_4Rnd_145x114_HEDP_Mag: OPTRE_4Rnd_145x114_HVAP_Mag
+{
+	everyTracer 				= 0;
+	initspeed 					= 1500;
+};
 class OPTRE_4Rnd_145x114_Mag_HEDPT: OPTRE_4Rnd_145x114_HEDP_Mag
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
-	initspeed 					= 1500;
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_145x114_HEDPT";
 	displayname 				= "4Rnd 14.5x114mm HEDP Magazine (Tracer)";
 	displaynameshort 			= "14.5x114mm HEDP Tracer";
@@ -56,8 +72,8 @@ class OPTRE_4Rnd_145x114_Mag_SST: OPTRE_4Rnd_145x114_Mag_SS
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_145x114_SST";
 	displayname 				= "4Rnd 14.5x114mm SS Magazine (Tracer)";
@@ -83,8 +99,8 @@ class OPTRE_4Rnd_145x114_Mag_NARQT: OPTRE_4Rnd_145x114_Mag_NARQ
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_145x114_NARQT";
 	displayname 				= "4Rnd 14.5x114mm NARQ Magazine (Tracer)";

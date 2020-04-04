@@ -20,6 +20,8 @@ class OPTRE_20Rnd_86x70_Mag_Tracer: OPTRE_20Rnd_86x70_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_86x70_Ball_Tracer";
 	displayname 				= "20Rnd 8.6x70mm Magazine (Tracer)";
 	displaynameshort 			= "8.6x70mm Tracer";
@@ -45,6 +47,8 @@ class OPTRE_20Rnd_86x70_Mag_APT: OPTRE_20Rnd_86x70_Mag_AP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_86x70_APT";
 	displayname 				= "20Rnd 8.6x70mm AP Magazine (Tracer)";
 	displaynameshort 			= "8.6x70mm AP Tracer";
@@ -69,6 +73,8 @@ class OPTRE_20Rnd_86x70_Mag_JHPT: OPTRE_20Rnd_86x70_Mag_JHP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_86x70_JHPT";
 	displayname 				= "20Rnd 8.6x70mm JHP Magazine (Tracer)";
@@ -125,6 +131,8 @@ class OPTRE_10Rnd_86x70_Mag_Tracer: OPTRE_10Rnd_86x70_Mag
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_86x70_Ball_Tracer";
 	displayname 				= "10Rnd 8.6x70mm Magazine (Tracer)";
 	displaynameshort 			= "8.6x70mm Tracer";
@@ -149,6 +157,8 @@ class OPTRE_10Rnd_86x70_Mag_APT: OPTRE_10Rnd_86x70_Mag_AP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_86x70_APT";
 	displayname 				= "10Rnd 8.6x70mm AP Magazine (Tracer)";
@@ -175,6 +185,8 @@ class OPTRE_10Rnd_86x70_Mag_JHPT: OPTRE_10Rnd_86x70_Mag_JHP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_86x70_JHPT";
 	displayname 				= "10Rnd 8.6x70mm JHP Magazine (Tracer)";
 	displaynameshort 			= "8.6x70mm JHP Tracer";
@@ -199,8 +211,8 @@ class OPTRE_10Rnd_86x70_Mag_SST: OPTRE_10Rnd_86x70_Mag_SS
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
-	scope						= 2;
-	scopeArsenal				= 2;
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_86x70_SST";
 	displayname 				= "10Rnd 8.6x70mm SS Magazine (Tracer)";
@@ -227,6 +239,8 @@ class OPTRE_10Rnd_86x70_Mag_FST: OPTRE_10Rnd_86x70_Mag_FS
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_86x70_FST";
 	displayname 				= "10Rnd 8.6x70mm FS Magazine (Tracer)";

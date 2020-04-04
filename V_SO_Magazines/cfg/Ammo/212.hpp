@@ -16,6 +16,7 @@ class OPTRE_B_8Gauge_Slug: B_12Gauge_Slug
 class OPTRE_B_8Gauge_HEDP: OPTRE_B_8Gauge_Slug
 {
 	craterEffects				= "ExploAmmoCrater";
+	deflecting 					= 0;
 	explosive					= 0.25;
 	explosionEffects			= "ExploAmmoExplosion";
 	explosionSoundEffect		= "DefaultExplosion";

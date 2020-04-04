@@ -14,16 +14,11 @@ class OPTRE_M45: OPTRE_Shotgun_Base
 	
 	magazines[]=
 	{
-		"OPTRE_6Rnd_8Gauge_Pellet",
-		"OPTRE_6Rnd_8Gauge_Slug",
+		"OPTRE_6Rnd_8Gauge_Pellets",
+		"OPTRE_6Rnd_8Gauge_Slugs",
 		"OPTRE_6Rnd_8Gauge_HEDP",
-		"OPTRE_6Rnd_8Gauge_Beanbag",
-		"OPTRE_6Rnd_8Gauge_Incendiary",
-		"OPTRE_12Rnd_8Gauge_Pellet",
-		"OPTRE_12Rnd_8Gauge_Slug",
-		"OPTRE_12Rnd_8Gauge_HEDP",
-		"OPTRE_12Rnd_8Gauge_Beanbag",
-		"OPTRE_12Rnd_8Gauge_Incendiary"
+		"OPTRE_6Rnd_8Gauge_Beanbags",
+		"OPTRE_6Rnd_8Gauge_Incendiary"
 	};
 	
 	class WeaponSlotsInfo
@@ -170,5 +165,85 @@ class OPTRE_M45TAC: OPTRE_M45
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	displayName 				= "M45 Combat Shotgun (Tactical)";
+	displayName 				= "M45X Combat Shotgun (Tactical)";
+	
+	magazines[]=
+	{
+		"OPTRE_6Rnd_8Gauge_Pellets",
+		"OPTRE_6Rnd_8Gauge_Slugs",
+		"OPTRE_6Rnd_8Gauge_HEDP",
+		"OPTRE_6Rnd_8Gauge_Beanbags",
+		"OPTRE_6Rnd_8Gauge_Incendiary"
+	};
+};
+
+class OPTRE_M45E: OPTRE_M45
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName 				= "M45EX Combat Shotgun";
+	
+	magazines[]=
+	{
+		"OPTRE_6Rnd_8Gauge_Pellets",
+		"OPTRE_6Rnd_8Gauge_Slugs",
+		"OPTRE_6Rnd_8Gauge_HEDP",
+		"OPTRE_6Rnd_8Gauge_Beanbags",
+		"OPTRE_6Rnd_8Gauge_Incendiary",
+		"OPTRE_12Rnd_8Gauge_Pellets",
+		"OPTRE_12Rnd_8Gauge_Slugs",
+		"OPTRE_12Rnd_8Gauge_HEDP",
+		"OPTRE_12Rnd_8Gauge_Beanbags",
+		"OPTRE_12Rnd_8Gauge_Incendiary"
+	};
+	
+	class Single: Single
+	{
+		reloadTime 				= 0.25;
+	};
+};
+
+class OPTRE_M45A: OPTRE_M45E
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	displayName 				= "M45AX Semi-Automatic Shotgun";
+	muzzles[]					= {"this", "OPTRE_M45"};
+	
+	magazines[]=
+	{
+		"OPTRE_6Rnd_8Gauge_Pellets",
+		"OPTRE_6Rnd_8Gauge_Slugs",
+		"OPTRE_6Rnd_8Gauge_HEDP",
+		"OPTRE_6Rnd_8Gauge_Incendiary"
+	};
+	
+	class OPTRE_M45: OPTRE_M45
+	{
+		displayName						= "Single (Secondary)";
+	};
+};
+
+class OPTRE_M45ATAC: OPTRE_M45A
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	magazines[]=
+	{
+		"OPTRE_6Rnd_8Gauge_Pellets",
+		"OPTRE_6Rnd_8Gauge_Slugs",
+		"OPTRE_6Rnd_8Gauge_HEDP",
+		"OPTRE_6Rnd_8Gauge_Incendiary"
+	};
+	
+	displayName 				= "M45AX Semi-Automatic Shotgun (Tactical)";
 };

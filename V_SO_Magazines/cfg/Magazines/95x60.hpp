@@ -19,6 +19,8 @@ class OPTRE_100Rnd_95x60_Box_JHPT: OPTRE_100Rnd_95x60_Box_JHP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x60_JHPT";
 	displayname 				= "100Rnd 9.5x60mm JHP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm JHP Tracer";
@@ -44,6 +46,8 @@ class OPTRE_100Rnd_95x60_Box_HPSAPT: OPTRE_100Rnd_95x60_Box_HPSAP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x60_JHPT";
 	displayname 				= "100Rnd 9.5x60mm HP-SAP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
@@ -68,6 +72,8 @@ class OPTRE_100Rnd_95x60_Box_SAPHET: OPTRE_100Rnd_95x60_Box_SAPHE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_95x60_SAPHET";
 	displayname 				= "100Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";
@@ -98,7 +104,6 @@ class OPTRE_300Rnd_95x60_Box: OPTRE_100Rnd_95x40_Box
 	scopeArsenal				= 2;
 	
 	initspeed 					= 1300;
-	ammo 						= "OPTRE_B_95x60";
 	count						= 300;
 	displayname 				= "300Rnd 9.5x60mm Box Magazine";
 	displaynameshort 			= "9.5x60mm";
@@ -125,6 +130,8 @@ class OPTRE_300Rnd_95x60_Box_JHPT: OPTRE_300Rnd_95x60_Box_JHP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x60_JHPT";
 	displayname 				= "300Rnd 9.5x60mm JHP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm JHP Tracer";
@@ -150,6 +157,8 @@ class OPTRE_300Rnd_95x60_Box_HPSAPT: OPTRE_300Rnd_95x60_Box_HPSAP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x60_JHPT";
 	displayname 				= "300Rnd 9.5x60mm HP-SAP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
@@ -174,6 +183,8 @@ class OPTRE_300Rnd_95x60_Box_SAPHET: OPTRE_300Rnd_95x60_Box_SAPHE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_95x60_SAPHET";
 	displayname 				= "300Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";

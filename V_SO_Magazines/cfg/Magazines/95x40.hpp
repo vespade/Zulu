@@ -18,6 +18,8 @@ class OPTRE_36Rnd_95x40_Mag_JHPT: OPTRE_36Rnd_95x40_Mag_JHP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "36Rnd 9.5x40mm JHP Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm JHP Tracer";
@@ -43,6 +45,8 @@ class OPTRE_36Rnd_95x40_Mag_HPSAPT: OPTRE_36Rnd_95x40_Mag_HPSAP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "36Rnd 9.5x40mm HP-SAP Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
@@ -67,6 +71,8 @@ class OPTRE_36Rnd_95x40_Mag_SAPHET: OPTRE_36Rnd_95x40_Mag_SAPHE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_95x40_SAPHET";
 	displayname 				= "36Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
@@ -109,6 +115,8 @@ class OPTRE_100Rnd_95x40_Box_JHPT: OPTRE_100Rnd_95x40_Box_JHP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm JHP Tracer";
@@ -134,6 +142,8 @@ class OPTRE_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_HPSAP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
@@ -158,6 +168,8 @@ class OPTRE_100Rnd_95x40_Box_SAPHET: OPTRE_100Rnd_95x40_Box_SAPHE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_95x40_SAPHET";
 	displayname 				= "100Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
@@ -187,7 +199,6 @@ class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
 	scope						= 2;
 	scopeArsenal				= 2;
 	
-	ammo 						= "OPTRE_B_95x40";
 	count						= 200;
 	displayname 				= "200Rnd 9.5x40mm Box Magazine";
 	descriptionShort			= "200 Round Box Magazine<br>9.5x40mm";
@@ -213,6 +224,8 @@ class OPTRE_200Rnd_95x40_Box_JHPT: OPTRE_200Rnd_95x40_Box_JHP
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "200Rnd 9.5x40mm JHP Box Magazine (Tracer)";
@@ -240,6 +253,8 @@ class OPTRE_200Rnd_95x40_Box_HPSAPT: OPTRE_200Rnd_95x40_Box_HPSAP
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
 	
+	tracersEvery				= 1;
+	
 	ammo 						= "OPTRE_B_95x40_JHPT";
 	displayname 				= "200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
 	displaynameshort 			= "9.5x60mm HP-SAP Tracer";
@@ -264,6 +279,8 @@ class OPTRE_200Rnd_95x40_Box_SAPHET: OPTRE_200Rnd_95x40_Box_SAPHE
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
+	
+	tracersEvery				= 1;
 	
 	ammo 						= "OPTRE_B_95x40_SAPHET";
 	displayname 				= "200Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";

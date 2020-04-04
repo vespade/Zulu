@@ -1,6 +1,6 @@
 // 6 Round Magazines
 class 2Rnd_12Gauge_Pellets;
-class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
+class OPTRE_6Rnd_8Gauge_Pellets: 2Rnd_12Gauge_Pellets
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -8,18 +8,19 @@ class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_8Gauge_Pellet";
-	count						= 6;
 	displayname 				= "6Rnd 8 Gauge Pellets";
 	displayNameShort 			= "8 Gauge Pellets";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Pellets";
 	
-	mass 						= 10;
+	// Overwriting of the OPTRE classes back to the inherited...
+	initSpeed 					= 380;
+	
 	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_S";
 	picture 					= "\a3\weapons_F\data\ui\m_12gauge_ca";
 };
 
 class 2Rnd_12Gauge_Slug;
-class OPTRE_6Rnd_8Gauge_Slug: 2Rnd_12Gauge_Slug
+class OPTRE_6Rnd_8Gauge_Slugs: 2Rnd_12Gauge_Slug
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -27,16 +28,19 @@ class OPTRE_6Rnd_8Gauge_Slug: 2Rnd_12Gauge_Slug
 	scopeArsenal				= 2;
 	
 	ammo 						= "OPTRE_B_8Gauge_Slug";
+	count						= 6;
 	displayname 				= "6Rnd 8 Gauge Slugs";
 	displayNameShort 			= "8 Gauge Slugs";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Slugs";
 	
-	mass 						= 10;
+	// Overwriting of the OPTRE classes back to the inherited...
+	initSpeed 					= 450;
+	
 	model 						= "\OPTRE_Weapons\Shotgun\Shell_mag_P";
 	picture 					= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca";
 };
 
-class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slug
+class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slugs
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -47,9 +51,11 @@ class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slug
 	displayname 				= "6Rnd 8 Gauge HEDP";
 	displayNameShort 			= "8 Gauge HEDP";
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>High-Explosive Dual Purpose";
+	
+	initSpeed 					= 450;
 };
 
-class OPTRE_6Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Slug
+class OPTRE_6Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Slugs
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -62,7 +68,7 @@ class OPTRE_6Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Slug
 	descriptionShort			= "6 Rounds<br>8 Gauge<br>Beanbags";
 };
 
-class OPTRE_6Rnd_8Gauge_Incendiary: OPTRE_6Rnd_8Gauge_Pellet
+class OPTRE_6Rnd_8Gauge_Incendiary: OPTRE_6Rnd_8Gauge_Pellets
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -77,7 +83,7 @@ class OPTRE_6Rnd_8Gauge_Incendiary: OPTRE_6Rnd_8Gauge_Pellet
 };
 
 // 12 Round Magazines
-class OPTRE_12Rnd_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
+class OPTRE_12Rnd_8Gauge_Pellets: OPTRE_6Rnd_8Gauge_Pellets
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -88,7 +94,7 @@ class OPTRE_12Rnd_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
 	descriptionShort			= "12 Rounds<br>8 Gauge<br>Pellets";
 };
 
-class OPTRE_12Rnd_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
+class OPTRE_12Rnd_8Gauge_Slugs: OPTRE_6Rnd_8Gauge_Slugs
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
@@ -110,7 +116,7 @@ class OPTRE_12Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_HEDP
 	descriptionShort			= "12 Rounds<br>8 Gauge<br>High-Explosive Dual Purpose";
 };
 
-class OPTRE_12Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
+class OPTRE_12Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Beanbags
 {
 	dlc							= "SO";
 	author						= "Fireteam Zulu";
