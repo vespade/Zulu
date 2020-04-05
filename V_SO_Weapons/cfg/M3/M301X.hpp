@@ -21,6 +21,7 @@ class OPTRE_M301X: UGL_F
 		"3Rnd_UGL_8Gauge_Slug",
 		"3Rnd_UGL_8Gauge_Beanbag",
 		"3Rnd_UGL_FlareBlue_F",
+		"ACE_40mm_Flare_blue",
 		
 		// Standard
 		"1Rnd_HE_Grenade_shell",

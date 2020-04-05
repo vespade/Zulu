@@ -34,6 +34,7 @@ class CfgWeapons
 class CfgVehicles
 {
 	#include "cfg\Charges.hpp"
+	#include "cfg\ResupplyPods.hpp"
 };
 
 class CfgAddons

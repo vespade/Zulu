@@ -65,6 +65,18 @@ class UGL_FlareBlue_F: UGL_FlareWhite_F
 	picture 					= "\v_so_weapons\data\flares\gear_ugl_flare_blue_ca";
 };
 
+class ACE_40mm_Flare_blue: UGL_FlareBlue_F
+{
+	dlc							= "SO";
+	author						= "Fireteam Zulu";
+	scope						= 2;
+	scopeArsenal				= 2;
+	
+	ammo 						= "ACE_40mm_Flare_blue";
+	displayName					= "M660 Illumination Flare (Blue)";
+	descriptionShort 			= "Type: Star Parachute Flare";
+};
+
 class UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellets
 {
 	dlc							= "SO";

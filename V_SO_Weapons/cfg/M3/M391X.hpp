@@ -19,6 +19,7 @@ class OPTRE_M319: OPTRE_Rifle_Base
 		"3Rnd_UGL_8Gauge_Slug",
 		"3Rnd_UGL_8Gauge_Beanbag",
 		"3Rnd_UGL_FlareBlue_F",
+		"ACE_40mm_Flare_blue",
 		
 		// Standard
 		"1Rnd_HE_Grenade_shell",
