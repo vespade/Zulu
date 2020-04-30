@@ -1,7 +1,7 @@
-//       _____         __                   ____       __    
+//       _____         __                   ____       __
 //      / __(_)______ / /____ ___ ___ _    /_  / __ __/ /_ __
 //     / _// / __/ -_) __/ -_) _ `/  ' \    / /_/ // / / // /
-//    /_/ /_/_/  \__/\__/\__/\_,_/_/_/_/   /___/\_,_/_/\_,_/ 
+//    /_/ /_/_/  \__/\__/\__/\_,_/_/_/_/   /___/\_,_/_/\_,_/
 //
 //    Do NOT modify or add this PBO to any other pack. It belongs here and here only.
 
@@ -20,7 +20,7 @@ class CfgPatches
 		// Requirements
 		requiredVersion=0.1;
 		requiredAddons[]=
-		{"V_FZ_Core"};
+		{"V_FZ_Core","OPTRE_UNSC_Units_Army"};
 	};
 };
 
@@ -78,7 +78,7 @@ class CfgGlasses
 		displayName="HUD Goggles with Balaclava (Joker)";
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO", "V_FZ_Armor\Data\Facewear\V_G_GLD_CA"};
 	};
-	
+
 	// Masks(?)
 	class VES_HUD_APR_01: VES_HUD_Balaclava_G_Black
 	{
@@ -98,7 +98,7 @@ class CfgGlasses
 		model = "\a3\Characters_F_Enoch\Facewear\G_RegulatorMask_F";
 		picture = "\A3\Characters_F_Enoch\Facewear\Data\UI\icon_G_RegulatorMask_F_ca";
 	};
-	
+
 	// Aviators
 	class VES_HUD_RayBans: VES_HUD_Balaclava_G_Black
 	{
@@ -129,7 +129,7 @@ class CfgGlasses
 		displayName = "HUD Aviators with Bandana (Beast)";
 		hiddenSelectionsTextures[] = {"\a3\characters_f_bootcamp\guerrilla\data\headgear_bandmask_beast_co","\a3\characters_f\heads\glasses\data\glass_ca"};
 	};
-	
+
 	// Balaclava
 	class VES_HUD_Balaclava_Black: VES_HUD_Balaclava_G_Black
 	{
@@ -167,7 +167,7 @@ class CfgGlasses
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Facewear\V_B_JKR_CO"};
 		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 	};
-	
+
 	class VES_HUD_Visor: OPTRE_HUD_Glasses
 	{
 		dlc="Zulu";
@@ -215,9 +215,9 @@ class CfgWeapons
 			hiddenSelections[]={"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_Collar", "H_UNSCVacVisor", /*"H_VacCollar",*/ "H_Ghillie"};
 		};
 	};
-	
+
 	#include "data\attachments\attachments.hpp"
-	
+
 	// Hats & Berets
 	class H_Beret_Colonel;
 	class HeadgearItem;
@@ -275,9 +275,9 @@ class CfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelectionsTextures[]={"\V_FZ_Armor\Data\Headgear\V_PC_CPD_BLU_CO"};
-		};		
+		};
 	};
-	
+
 	// Helmets
 	class OPTRE_UNSC_CH252D_Helmet;
 	class VES_CH252D: OPTRE_UNSC_CH252D_Helmet
@@ -331,7 +331,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"};
 		class ItemInfo: ItemInfo {hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"};};
 	};
-	
+
 	class OPTRE_UNSC_CH252D_Helmet_dp;
 	class VES_CH252D_dp: OPTRE_UNSC_CH252D_Helmet_dp
 	{
@@ -365,7 +365,7 @@ class CfgWeapons
 	class VES_CH252D_S_dp: VES_CH252D_dp{displayName="[FZ] CH252D Helmet (Silver)";};
 	class VES_CH252D_G_dp: VES_CH252D_dp{displayName="[FZ] CH252D Helmet (Gold)";};
 	class VES_CH252D_RPR_dp: VES_CH252D_dp{displayName="[FZ] CH252D Helmet (Reaper)";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};class ItemInfo: ItemInfo{hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};};};
-	
+
 	class VES_S1ONIR: VES_CH252D
 	{
 		author="Vespade";
@@ -390,7 +390,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_SLV_V_CO"};
 		class ItemInfo: ItemInfo {hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_SLV_V_CO"};};
 	};
-	
+
 	class VES_S1ONIR_dp: VES_CH252D_dp
 	{
 		author="Vespade";
@@ -410,7 +410,7 @@ class CfgWeapons
 		};
 	};
 	class VES_S1ONIR_S_dp: VES_S1ONIR_dp{displayName="[FZ] S1/ONI/R Helmet (Gold)";};
-	
+
 	class VES_CH252A: VES_CH252D
 	{
 		author="Vespade";
@@ -445,7 +445,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252A_BLU_V_CO"};
 		class ItemInfo: ItemInfo {hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252A_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252A_BLU_V_CO"};};
 	};
-	
+
 	class VES_CH252A_dp: VES_CH252D_dp
 	{
 		author="Vespade";
@@ -465,7 +465,7 @@ class CfgWeapons
 	class VES_CH252A_S_dp: VES_CH252A_dp{displayName="[FZ] CH252A Helmet (Silver)";};
 	class VES_CH252A_G_dp: VES_CH252A_dp{displayName="[FZ] CH252A Helmet (Gold)";};
 	class VES_CH252A_B_dp: VES_CH252A_dp{displayName="[FZ] CH252A Helmet (Blue)";};
-	
+
 	class OPTRE_UNSC_CH252_Helmet2_MAR;
 	class VES_CH252_MAR_Heavy: OPTRE_UNSC_CH252_Helmet2_MAR
 	{
@@ -611,7 +611,7 @@ class CfgWeapons
 			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252C.rvmat"};
 		};
 	};
-	
+
 	class VES_CH252_WDL_Heavy: VES_CH252_MAR_Heavy
 	{
 		displayName="[FZ] CH252 Helmet (Heavy) Woodland";
@@ -681,7 +681,7 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_WDL_C_CO"};
 		};
 	};
-	
+
 	class VES_CH252_DES_Heavy: VES_CH252_MAR_Heavy
 	{
 		displayName="[FZ] CH252 Helmet (Heavy) Desert";
@@ -751,7 +751,7 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_DES_C_CO"};
 		};
 	};
-	
+
 	class VES_CH252_SNO_Heavy: VES_CH252_MAR_Heavy
 	{
 		displayName="[FZ] CH252 Helmet (Heavy) Snow";
@@ -821,7 +821,7 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_SNO_C_CO"};
 		};
 	};
-	
+
 	class VES_CH252_URB_Heavy: VES_CH252_MAR_Heavy
 	{
 		displayName="[FZ] CH252 Helmet (Heavy) Urban";
@@ -891,9 +891,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_URB_C_CO"};
 		};
 	};
-	
-	
-	
+
+
+
 	class VES_CH252_CEA_Heavy: VES_CH252_MAR_Heavy
 	{
 		displayName="[FZ] CH252 Helmet (Heavy) Evolved";
@@ -963,7 +963,7 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252_CEA_C_CO"};
 		};
 	};
-	
+
 	// KH2000
 	class VES_KH2000_CPD: VES_CH252_MAR_Heavy
 	{
@@ -982,7 +982,7 @@ class CfgWeapons
 			hiddenSelectionsMaterials[]={""};
 		};
 	};
-	
+
 	// Armor Sets
 	class OPTRE_UNSC_M52D_Armor_Rifleman;
 	class VES_M52D_Rifleman: OPTRE_UNSC_M52D_Armor_Rifleman
@@ -1034,31 +1034,31 @@ class CfgWeapons
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_URB_CO"};
 		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Vests\Materials\V_M52_V.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat","","V_FZ_Armor\Data\Vests\Materials\V_M52_O.rvmat"};
 	};
-	
+
 	class VES_M52D_SFP_Rifleman: VES_M52D_Rifleman{displayName="[FZ] M52D (Rifleman) Phoenix";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_SFP_CO"};};
 	class VES_M52D_SFP_Demolitions: VES_M52D_Demolitions{displayName="[FZ] M52D (Demolitions) Phoenix";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_SFP_CO"};};
 	class VES_M52D_SFP_Marksman: VES_M52D_Marksman{displayName="[FZ] M52D (Marksman) Phoenix";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_SFP_CO"};};
 	class VES_M52D_SFP_Scout: VES_M52D_Scout{displayName="[FZ] M52D (Scout) Phoenix";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_SFP_CO"};};
 	class VES_M52D_SFP_Sniper: VES_M52D_Sniper{displayName="[FZ] M52D (Sniper) Phoenix";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_SFP_CO"};};
-	
+
 	class VES_M52D_RPR_Rifleman: VES_M52D_Rifleman{displayName="[FZ] M52D (Rifleman) Reaper";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_RPR_CO"};};
 	class VES_M52D_RPR_Demolitions: VES_M52D_Demolitions{displayName="[FZ] M52D (Demolitions) Reaper";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_RPR_CO"};};
 	class VES_M52D_RPR_Marksman: VES_M52D_Marksman{displayName="[FZ] M52D (Marksman) Reaper";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_RPR_CO"};};
 	class VES_M52D_RPR_Scout: VES_M52D_Scout{displayName="[FZ] M52D (Scout) Reaper";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_RPR_CO"};};
 	class VES_M52D_RPR_Sniper: VES_M52D_Sniper{displayName="[FZ] M52D (Sniper) Reaper";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_RPR_CO"};};
-	
+
 	class VES_M52D_WRH_Rifleman: VES_M52D_Rifleman{displayName="[FZ] M52D (Rifleman) Warhound";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_WRH_CO"};};
 	class VES_M52D_WRH_Demolitions: VES_M52D_Demolitions{displayName="[FZ] M52D (Demolitions) Warhound";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_WRH_CO"};};
 	class VES_M52D_WRH_Marksman: VES_M52D_Marksman{displayName="[FZ] M52D (Marksman) Warhound";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_WRH_CO"};};
 	class VES_M52D_WRH_Scout: VES_M52D_Scout{displayName="[FZ] M52D (Scout) Warhound";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_WRH_CO"};};
 	class VES_M52D_WRH_Sniper: VES_M52D_Sniper{displayName="[FZ] M52D (Sniper) Warhound";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_WRH_CO"};};
-	
+
 	class VES_M52D_KIS_Rifleman: VES_M52D_Rifleman{displayName="[FZ] M52D (Rifleman) Hiruko";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_KIS_CO"};};
 	class VES_M52D_KIS_Demolitions: VES_M52D_Demolitions{displayName="[FZ] M52D (Demolitions) Hiruko";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_KIS_CO"};};
 	class VES_M52D_KIS_Marksman: VES_M52D_Marksman{displayName="[FZ] M52D (Marksman) Hiruko";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_KIS_CO"};};
 	class VES_M52D_KIS_Scout: VES_M52D_Scout{displayName="[FZ] M52D (Scout) Hiruko";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_KIS_CO"};};
 	class VES_M52D_KIS_Sniper: VES_M52D_Sniper{displayName="[FZ] M52D (Sniper) Hiruko";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","V_FZ_Armor\Data\Vests\V_M52_O_KIS_CO"};};
-	
+
 	class VestItem;
 	class OPTRE_UNSC_M52A_Armor_Rifleman_MAR;
 	class VES_M52A_MAR_Rifleman_A: OPTRE_UNSC_M52A_Armor_Rifleman_MAR
@@ -1327,7 +1327,7 @@ class CfgWeapons
 				"CustomKit_Scorch"
 			};
 		};
-		
+
 	};
 	class VES_M52A_MAR_Breacher_A: VES_M52A_MAR_Rifleman_A
 	{
@@ -2200,7 +2200,7 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 	class VES_M52A_WDL_Rifleman_A: VES_M52A_MAR_Rifleman_A{displayName="[FZ] M52A (Rifleman)(A) Woodland";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_WDL_Rifleman_B: VES_M52A_MAR_Rifleman_B{displayName="[FZ] M52A (Rifleman)(B) Woodland";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_WDL_Rifleman_C: VES_M52A_MAR_Rifleman_C{displayName="[FZ] M52A (Rifleman)(C) Woodland";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_R_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
@@ -2219,7 +2219,7 @@ class CfgWeapons
 	class VES_M52A_WDL_Corpsman_B: VES_M52A_MAR_Corpsman_B{displayName="[FZ] M52A (Corpsman)(B) Woodland";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_WDL_Vest_A: VES_M52A_MAR_Vest_A{displayName="[FZ] M52A (Vest) Woodland";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_WDL_Vest_B: VES_M52A_MAR_Vest_B{displayName="[FZ] M52A (Soft) Woodland";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
-	
+
 	class VES_M52A_DES_Rifleman_A: VES_M52A_MAR_Rifleman_A{displayName="[FZ] M52A (Rifleman)(A) Desert";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_DES_Rifleman_B: VES_M52A_MAR_Rifleman_B{displayName="[FZ] M52A (Rifleman)(B) Desert";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_DES_Rifleman_C: VES_M52A_MAR_Rifleman_C{displayName="[FZ] M52A (Rifleman)(C) Desert";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_R_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
@@ -2238,7 +2238,7 @@ class CfgWeapons
 	class VES_M52A_DES_Corpsman_B: VES_M52A_MAR_Corpsman_B{displayName="[FZ] M52A (Corpsman)(B) Desert";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_DES_Vest_A: VES_M52A_MAR_Vest_A{displayName="[FZ] M52A (Vest) Desert";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_DES_Vest_B: VES_M52A_MAR_Vest_B{displayName="[FZ] M52A (Soft) Desert";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
-	
+
 	class VES_M52A_SNO_Rifleman_A: VES_M52A_MAR_Rifleman_A{displayName="[FZ] M52A (Rifleman)(A) Snow";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_SNO_Rifleman_B: VES_M52A_MAR_Rifleman_B{displayName="[FZ] M52A (Rifleman)(B) Snow";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_SNO_Rifleman_C: VES_M52A_MAR_Rifleman_C{displayName="[FZ] M52A (Rifleman)(C) Snow";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_R_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
@@ -2257,7 +2257,7 @@ class CfgWeapons
 	class VES_M52A_SNO_Corpsman_B: VES_M52A_MAR_Corpsman_B{displayName="[FZ] M52A (Corpsman)(B) Snow";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_SNO_Vest_A: VES_M52A_MAR_Vest_A{displayName="[FZ] M52A (Vest) Snow";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_SNO_Vest_B: VES_M52A_MAR_Vest_B{displayName="[FZ] M52A (Soft) Snow";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
-	
+
 	class VES_M52A_CEA_Rifleman_A: VES_M52A_MAR_Rifleman_A{displayName="[FZ] M52A (Rifleman)(A) Evolved";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_CEA_Rifleman_B: VES_M52A_MAR_Rifleman_B{displayName="[FZ] M52A (Rifleman)(B) Evolved";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_CEA_Rifleman_C: VES_M52A_MAR_Rifleman_C{displayName="[FZ] M52A (Rifleman)(C) Evolved";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_R_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};};
@@ -2276,7 +2276,7 @@ class CfgWeapons
 	class VES_M52A_CEA_Corpsman_B: VES_M52A_MAR_Corpsman_B{displayName="[FZ] M52A (Corpsman)(B) Evolved";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_CEA_Vest_A: VES_M52A_MAR_Vest_A{displayName="[FZ] M52A (Vest) Evolved";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_CEA_Vest_B: VES_M52A_MAR_Vest_B{displayName="[FZ] M52A (Soft) Evolved";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
-	
+
 	class VES_M52A_URB_Rifleman_A: VES_M52A_MAR_Rifleman_A{displayName="[FZ] M52A (Rifleman)(A) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_URB_Rifleman_B: VES_M52A_MAR_Rifleman_B{displayName="[FZ] M52A (Rifleman)(B) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_URB_Rifleman_C: VES_M52A_MAR_Rifleman_C{displayName="[FZ] M52A (Rifleman)(C) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_R_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
@@ -2295,7 +2295,7 @@ class CfgWeapons
 	class VES_M52A_URB_Corpsman_B: VES_M52A_MAR_Corpsman_B{displayName="[FZ] M52A (Corpsman)(B) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_M_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_URB_Vest_A: VES_M52A_MAR_Vest_A{displayName="[FZ] M52A (Vest) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_M_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
 	class VES_M52A_URB_Vest_B: VES_M52A_MAR_Vest_B{displayName="[FZ] M52A (Soft) Urban";hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_M_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};};
-	
+
 	// FH-320
 	class VES_FH320_CPD_Heavy: VES_M52A_MAR_Vest_A
 	{
@@ -2324,10 +2324,10 @@ class CfgWeapons
 		displayName="[FZ] FH320 Colonial Police Vest (Medium)";
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\a3\characters_f_beta\indep\equip_ia_vest02";	
+			uniformModel="\a3\characters_f_beta\indep\equip_ia_vest02";
 			hiddenSelections[]={"camo"};
 			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Vests\V_FH_CPD_2_CO"};
-		};		
+		};
 	};
 	class VES_FH320_CPD_Light: VES_FH320_CPD_Heavy
 	{
@@ -2342,7 +2342,7 @@ class CfgWeapons
 			uniformModel="\a3\characters_f_beta\indep\equip_ia_vest01";
 		};
 	};
-	
+
 	class Vest_NoCamo_Base;
 	class V_Rangemaster_Belt: Vest_NoCamo_Base
 	{
@@ -2361,8 +2361,8 @@ class CfgWeapons
 			hiddenSelectionsTextures[]={"a3\characters_f\blufor\data\vests_blk_co.paa"};
 		};
 	};
-	
-	
+
+
 	//Uniforms (Bases)
 	class OPTRE_UNSC_Army_Uniform_OLI;
 	class UniformItem;
@@ -2527,7 +2527,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_V_Khaki;
         };
 	};
-	
+
 	class VES_BDU_CPD: VES_BDU_Evolved
 	{
 		displayName="[FZ] Colonial Police Uniform";
@@ -2544,7 +2544,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_V_ONI;
 		};
 	};
-	
+
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_Evolved: OPTRE_UNSC_Army_Uniform_OLI
     {
@@ -2706,7 +2706,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_SS_V_Khaki;
         };
 	};
-	
+
 	class VES_BDU_SS_CPD: VES_BDU_SS_Evolved
 	{
 		displayName="[FZ] Colonial Police Uniform (Short)";
@@ -2723,7 +2723,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_SS_V_CPD_BLU;
 		};
 	};
-	
+
 	// Rolled Uniforms
 	class VES_BDU_R_Evolved: OPTRE_UNSC_Army_Uniform_OLI
     {
@@ -2885,7 +2885,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_R_V_Khaki;
         };
 	};
-	
+
 	class VES_BDU_R_CPD: VES_BDU_R_Evolved
 	{
 		displayName="[FZ] Colonial Police Uniform (Rolled)";
@@ -2894,7 +2894,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_R_V_CPD;
 		};
 	};
-	
+
 	// Military Police Uniforms
 	class VES_MPU_Evolved: VES_BDU_Evolved
     {
@@ -2920,7 +2920,7 @@ class CfgWeapons
 			uniformClass=VES_MPU_V_Khaki;
         };
 	};
-	
+
 	//Uniforms (Bases)
 	class VES_BDU_Evolved_Slim: VES_BDU_Evolved
     {
@@ -3084,7 +3084,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_V_Khaki_Slim;
         };
 	};
-	
+
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_Evolved_Slim: VES_BDU_SS_Evolved
     {
@@ -3239,7 +3239,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_SS_V_Khaki_Slim;
         };
 	};
-	
+
 	// Rolled Uniforms
 	class VES_BDU_R_Evolved_Slim: VES_BDU_R_Evolved
     {
@@ -3394,7 +3394,7 @@ class CfgWeapons
 			uniformClass=VES_BDU_R_V_Khaki_Slim;
         };
 	};
-	
+
 	// Military Police Uniforms
 	class VES_MPU_Evolved_Slim: VES_BDU_Evolved_Slim
     {
@@ -3420,7 +3420,7 @@ class CfgWeapons
 			uniformClass=VES_MPU_V_Khaki_Slim;
         };
 	};
-	
+
 	// Dress Uniforms
 	/*class VES_DU_White: OPTRE_UNSC_Army_Uniform_OLI
     {
@@ -3450,7 +3450,188 @@ class CfgVehicles
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	class VES_BDU_V_Base: OPTRE_UNSC_Army_Soldier_WDL
 	{
-		class EventHandlers;
+		class HitPoints
+        {
+            class HitFace
+            {
+                armor = 1; //Default Value
+                material = -1;
+                name = "face_hub";
+                passThrough = 0.8;
+                radius = 0.08;
+                explosionShielding = 0.1;
+                minimalHit = 0.01;
+            };
+            class HitNeck: HitFace
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "neck";
+                passThrough = 0.8;
+                radius = 0.1;
+                explosionShielding = 0.5;
+                minimalHit = 0.01;
+            };
+            class HitHead: HitNeck
+            {
+                armor = 1; //Default Value
+                material = -1;
+                name = "head";
+                passThrough = 0.8;
+                radius = 0.2;
+                explosionShielding = 0.5;
+                minimalHit = 0.01;
+                depends = "HitFace max HitNeck";
+            };
+            class HitPelvis: HitHead
+            {
+                armor = 8; //OPTRE Value //Default=6
+                material = -1;
+                name = "pelvis";
+                passThrough = 0.8;
+                radius = 0.24;
+                explosionShielding = 1;
+                visual = "injury_body";
+                minimalHit = 0.01;
+                depends = "0";
+            };
+            class HitAbdomen: HitPelvis
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "spine1";
+                passThrough = 0.8;
+                radius = 0.16;
+                explosionShielding = 1;
+                visual = "injury_body";
+                minimalHit = 0.01;
+            };
+            class HitDiaphragm: HitAbdomen
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "spine2";
+                passThrough = 0.8;
+                radius = 0.18;
+                explosionShielding = 2.4;
+                visual = "injury_body";
+                minimalHit = 0.01;
+            };
+            class HitChest: HitDiaphragm
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "spine3";
+                passThrough = 0.8;
+                radius = 0.18;
+                explosionShielding = 2.4;
+                visual = "injury_body";
+                minimalHit = 0.01;
+            };
+            class HitBody: HitChest
+            {
+                armor = 1000; // Default value, do not change
+                material = -1;
+                name = "body";
+                passThrough = 1;
+                radius = 0;
+                explosionShielding = 2.4;
+                visual = "injury_body";
+                minimalHit = 0.01;
+                depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+            };
+            class HitArms: HitBody
+            {
+                armor = 6; //OPTRE Value //Default=3
+                material = -1;
+                name = "arms";
+                passThrough = 1;
+                radius = 0.1;
+                explosionShielding = 0.3;
+                visual = "injury_hands";
+                minimalHit = 0.01;
+                depends = "0";
+            };
+            class HitHands: HitArms
+            {
+                armor = 6; //OPTRE Value //Default=3
+                material = -1;
+                name = "hands";
+                passThrough = 1;
+                radius = 0.1;
+                explosionShielding = 0.3;
+                visual = "injury_hands";
+                minimalHit = 0.01;
+                depends = "HitArms";
+            };
+            class HitLegs: HitHands
+            {
+                armor = 6; //OPTRE Value //Default=3
+                material = -1;
+                name = "legs";
+                passThrough = 1;
+                radius = 0.14;
+                explosionShielding = 0.3;
+                visual = "injury_legs";
+                minimalHit = 0.01;
+                depends = "0";
+            };
+            class Incapacitated: HitLegs
+            {
+                armor = 1000; //Default value, Do not change
+                material = -1;
+                name = "body";
+                passThrough = 1;
+                radius = 0;
+                explosionShielding = 1;
+                visual = "";
+                minimalHit = 0;
+                depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+            };
+            //----------------------------Ace Hitpoints---------------------------
+            class HitLeftArm
+            {
+                armor = 2; //OPTRE Value //Default=1
+                material = -1;
+                name = "hand_l";
+                passThrough = 1;
+                radius = 0.08;
+                explosionShielding = 1;
+                visual = "injury_hands";
+                minimalHit = 0.01;
+            };
+            class HitRightArm: HitLeftArm
+            {
+                name = "hand_r";
+            };
+            class HitLeftLeg
+            {
+                armor = 2; //OPTRE Value //Default=1
+                material = -1;
+                name = "leg_l";
+                passThrough = 1;
+                radius = 0.1;
+                explosionShielding = 1;
+                visual = "injury_legs";
+                minimalHit = 0.01;
+            };
+            class HitRightLeg: HitLeftLeg
+            {
+                name = "leg_r";
+            };
+            class ACE_HDBracket
+            {
+                armor = 1; //Default Value, Do not Change
+                material = -1;
+                name = "head";
+                passThrough = 0;
+                radius = 1;
+                explosionShielding = 1;
+                visual = "";
+                minimalHit = 0;
+                depends = "HitHead";
+            };
+        };
 	};
 	class VES_BDU_V_Evolved: VES_BDU_V_Base
 	{
@@ -3555,7 +3736,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_Khaki_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Khaki_CO"};
 		uniformclass="VES_BDU_Khaki";
 	};
-	
+
 	class VES_BDU_V_CPD: VES_BDU_V_Evolved
 	{
 		model="\a3\characters_f_beta\indep\ia_soldier_01";
@@ -3570,7 +3751,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_UNI_ONI_CO","V_FZ_Armor\Data\Uniforms\V_UNI_ONI_CO"};
 		uniformclass="VES_BDU_ONI";
 	};
-	
+
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_V_Evolved: VES_BDU_V_Evolved
 	{
@@ -3672,7 +3853,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_Khaki_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Khaki_CO"};
 		uniformclass="VES_BDU_SS_Khaki";
 	};
-	
+
 	class VES_BDU_SS_V_CPD: VES_BDU_SS_V_Evolved
 	{
 		model="\A3\Characters_F\Civil\c_poloshirtpants";
@@ -3685,7 +3866,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_UNI_CPD_BLU_CO"};
 		uniformclass="VES_BDU_SS_CPD_BLU";
 	};
-	
+
 	// Rolled Uniforms
 	class VES_BDU_R_V_Evolved: VES_BDU_V_Evolved
 	{
@@ -3789,7 +3970,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_R_Khaki_CO","V_FZ_Armor\Data\Uniforms\V_BDU_R_Khaki_CO"};
 		uniformclass="VES_BDU_R_Khaki";
 	};
-	
+
 	class VES_BDU_R_V_CPD: VES_BDU_R_V_Evolved
 	{
 		model="\a3\characters_f_beta\indep\ia_soldier_02";
@@ -3797,7 +3978,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_BDU_CPD_CO"};
 		uniformclass="VES_BDU_R_CPD";
 	};
-	
+
 	// Military Police Uniforms
 	class VES_MPU_V_Evolved: VES_BDU_V_Evolved
 	{
@@ -3814,7 +3995,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_MPU_Khaki_CO","V_FZ_Armor\Data\Uniforms\V_MPU_Khaki_CO"};
 		uniformclass="VES_MPU_Khaki";
 	};
-	
+
 	// Uniforms Slim (Textures)
 	class VES_BDU_V_Evolved_Slim: VES_BDU_V_Evolved
 	{
@@ -3921,7 +4102,7 @@ class CfgVehicles
 		hiddenSelections[]={"camo","camo2","insignia","clan","A_BaseLeg"/*,"A_SlimLeg"*/};
 		uniformclass="VES_BDU_Khaki_Slim";
 	};
-	
+
 	// Short-Sleeve Uniforms
 	class VES_BDU_SS_V_Evolved_Slim: VES_BDU_SS_V_Evolved
 	{
@@ -4023,7 +4204,7 @@ class CfgVehicles
 		hiddenSelections[]={"camo","camo2","insignia","clan","A_BaseLeg"/*,"A_SlimLeg"*/};
 		uniformclass="VES_BDU_SS_Khaki_Slim";
 	};
-	
+
 	// Rolled Uniforms
 	class VES_BDU_R_V_Evolved_Slim: VES_BDU_R_V_Evolved
 	{
@@ -4125,7 +4306,7 @@ class CfgVehicles
 		hiddenSelections[]={"camo","camo2","insignia","clan","A_BaseLeg"/*,"A_SlimLeg"*/};
 		uniformclass="VES_BDU_R_Khaki_Slim";
 	};
-	
+
 	// Military Police Uniforms
 	class VES_MPU_V_Evolved_Slim: VES_MPU_V_Evolved
 	{
@@ -4142,7 +4323,7 @@ class CfgVehicles
 		hiddenSelections[]={"camo","camo2","insignia","clan","A_BaseLeg"/*,"A_SlimLeg"*/};
 		uniformclass="VES_MPU_Khaki_Slim";
 	};
-	
+
 	// Dress Uniforms
 	/*class VES_DU_V_White: VES_BDU_R_V_Evolved
 	{
@@ -4157,7 +4338,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Uniforms\V_DU_Gray_CO","V_FZ_Armor\Data\Uniforms\V_DU_Gray_CO"};
 		uniformclass="VES_DU_Gray";
 	};*/
-	
+
 	// Backpacks
 	class Weapon_Bag_Base;
 	class VES_M247T_Pack: Weapon_Bag_Base
@@ -4284,7 +4465,7 @@ class CfgVehicles
 			dissasembleTo[]={};
 		};
 	};
-	
+
 	// Tents & Sleepingbags
 	class Respawn_TentDome_F;
 	class VES_Tent_Dome: Respawn_TentDome_F
@@ -4353,7 +4534,7 @@ class CfgOptreHudSchemes
 			VES_HUD_Balaclava_G_Beast="OPTRE_MarrineGlasses_orange";
 			VES_HUD_Balaclava_G_Joker="OPTRE_MarrineGlasses_orange";
 			VES_HUD_Balaclava_G_Punisher="OPTRE_MarrineGlasses_orange";
-			
+
 			// Balaclava
 			VES_HUD_Balaclava_Black="OPTRE_MarrineGlasses_white";
 			VES_HUD_Balaclava_Gray="OPTRE_MarrineGlasses_white";
@@ -4361,13 +4542,13 @@ class CfgOptreHudSchemes
 			VES_HUD_Balaclava_Beast="OPTRE_MarrineGlasses_white";
 			VES_HUD_Balaclava_Joker="OPTRE_MarrineGlasses_white";
 			VES_HUD_Balaclava_Punisher="OPTRE_MarrineGlasses_white";
-			
+
 			// Aviators
 			VES_HUD_RayBans="OPTRE_MarrineGlasses_white";
 			VES_HUD_RayBans_Bandana="OPTRE_MarrineGlasses_white";
 			VES_HUD_RayBans_Bandana_Green="OPTRE_MarrineGlasses_white";
 			VES_HUD_RayBans_Bandana_Tan="OPTRE_MarrineGlasses_white";
-			
+
 			// APRs
 			VES_HUD_APR_01="OPTRE_MarrineGlasses_white";
 			VES_HUD_APR_02="OPTRE_MarrineGlasses_white";
