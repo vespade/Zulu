@@ -6,7 +6,7 @@ if ( getText(configFile>>"CfgVehicles">> typeOf _victim >> "simulation") == "UAV
 private _weapon = currentWeapon _shooter;
 private _mag = currentMagazine _shooter;
 private _ammo = getText(configFile>>"CfgMagazines">>_mag>>"ammo");
-if((_ammo == "OPTRE_B_127x40_NARQ") || {_ammo == "OPTRE_B_8Gauge_Beanbag"} || {_ammo == "OPTRE_B_145x114_NARQ"})then
+if((_ammo == "OPTRE_B_127x40_NARQ") || {_ammo == "OPTRE_B_8Gauge_Beanbag"} || {_ammo == "OPTRE_B_145x114_NARQ"} || {_ammo == "OPTRE_B_145x114_NARQT"})then
 {
 	private _oldTasedUntilTime = _victim getVariable ["CSW_isTasedUntil",CBA_missionTime - 1];
 	_victim setVariable ["CSW_isTasedUntil",CBA_missionTime + CSW_TASETIME ,true];
