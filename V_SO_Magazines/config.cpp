@@ -1047,6 +1047,8 @@ class CfgMagazines
 		displayname="60Rnd 7.62x51mm AP Magazine (Tracer)";
 		displaynameshort="7.62x51mm AP Tracer";
 		descriptionShort="60 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_60Rnd_762x51_Mag_JHP: OPTRE_60Rnd_762x51_Mag
 	{
@@ -1068,6 +1070,8 @@ class CfgMagazines
 		displayname="60Rnd 7.62x51mm JHP Magazine (Tracer)";
 		displaynameshort="7.62x51mm JHP Tracer";
 		descriptionShort="60 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_32Rnd_762x51_Mag;
 	class OPTRE_32Rnd_762x51_Mag_AP: OPTRE_32Rnd_762x51_Mag
@@ -1090,6 +1094,8 @@ class CfgMagazines
 		displayname="32Rnd 7.62x51mm AP Magazine (Tracer)";
 		displaynameshort="7.62x51mm AP Tracer";
 		descriptionShort="32 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_32Rnd_762x51_Mag_JHP: OPTRE_32Rnd_762x51_Mag
 	{
@@ -1111,6 +1117,8 @@ class CfgMagazines
 		displayname="32Rnd 7.62x51mm JHP Magazine (Tracer)";
 		displaynameshort="7.62x51mm JHP Tracer";
 		descriptionShort="32 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_32Rnd_762x51_Mag_SS: OPTRE_32Rnd_762x51_Mag
 	{
@@ -1132,6 +1140,8 @@ class CfgMagazines
 		displayname="32Rnd 7.62x51mm SS Magazine (Tracer)";
 		displaynameshort="7.62x51mm SS Tracer";
 		descriptionShort="32 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_15Rnd_762x51_Mag;
 	class OPTRE_15Rnd_762x51_Mag_AP: OPTRE_15Rnd_762x51_Mag
@@ -1154,6 +1164,8 @@ class CfgMagazines
 		displayname="15Rnd 7.62x51mm AP Magazine (Tracer)";
 		displaynameshort="7.62x51mm AP Tracer";
 		descriptionShort="15 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=3;
 	};
 	class OPTRE_15Rnd_762x51_Mag_JHP: OPTRE_15Rnd_762x51_Mag
 	{
@@ -1175,6 +1187,8 @@ class CfgMagazines
 		displayname="15Rnd 7.62x51mm JHP Magazine (Tracer)";
 		displaynameshort="7.62x51mm JHP Tracer";
 		descriptionShort="15 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=3;
 	};
 	class OPTRE_15Rnd_762x51_Mag_SS: OPTRE_15Rnd_762x51_Mag
 	{
@@ -1198,6 +1212,8 @@ class CfgMagazines
 		displayname="15Rnd 7.62x51mm SS Magazine (Tracer)";
 		displaynameshort="7.62x51mm SS Tracer";
 		descriptionShort="15 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=3;
 	};
 	class OPTRE_15Rnd_762x51_Mag_FS: OPTRE_15Rnd_762x51_Mag
 	{
@@ -1219,6 +1235,8 @@ class CfgMagazines
 		displayname="15Rnd 7.62x51mm FS Magazine (Tracer)";
 		displaynameshort="7.62x51mm FS Tracer";
 		descriptionShort="15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=3;
 	};
 	class OPTRE_36Rnd_95x40_Mag;
 	class OPTRE_36Rnd_95x40_Mag_JHP: OPTRE_36Rnd_95x40_Mag
@@ -1241,6 +1259,8 @@ class CfgMagazines
 		displayname="36Rnd 9.5x40mm JHP Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
 		descriptionShort="36 Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_36Rnd_95x40_Mag_HPSAP: OPTRE_36Rnd_95x40_Mag
 	{
@@ -1262,6 +1282,8 @@ class CfgMagazines
 		displayname="36Rnd 9.5x40mm HP-SAP Magazine (Tracer)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="36 Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_36Rnd_95x40_Mag_SAPHE: OPTRE_36Rnd_95x40_Mag
 	{
@@ -1283,6 +1305,8 @@ class CfgMagazines
 		displayname="36Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
 		descriptionShort="36 Round Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_36Rnd_95x40_Mag_SS: OPTRE_36Rnd_95x40_Mag
 	{
@@ -1317,6 +1341,8 @@ class CfgMagazines
 		displayname="100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
 		descriptionShort="100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box
 	{
@@ -1338,6 +1364,8 @@ class CfgMagazines
 		displayname="100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x40_Box_SAPHE: OPTRE_100Rnd_95x40_Box
 	{
@@ -1359,6 +1387,8 @@ class CfgMagazines
 		displayname="100Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
 		descriptionShort="100 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x40_Box_SS: OPTRE_100Rnd_95x40_Box
 	{
@@ -1405,6 +1435,8 @@ class CfgMagazines
 		displayname="200Rnd 9.5x40mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
 		descriptionShort="200 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_200Rnd_95x40_Box_HPSAP: OPTRE_200Rnd_95x40_Box
 	{
@@ -1426,6 +1458,8 @@ class CfgMagazines
 		displayname="200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="200 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_200Rnd_95x40_Box_SAPHE: OPTRE_200Rnd_95x40_Box
 	{
@@ -1447,6 +1481,8 @@ class CfgMagazines
 		displayname="200Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
 		descriptionShort="200 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_200Rnd_95x40_Box_SS: OPTRE_200Rnd_95x40_Box
 	{
@@ -1481,6 +1517,8 @@ class CfgMagazines
 		displayname="100Rnd 9.5x60mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
 		descriptionShort="100 Box Round Magazine<br>9.5x60mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x60_Box_HPSAP: OPTRE_100Rnd_95x40_Box
 	{
@@ -1502,6 +1540,8 @@ class CfgMagazines
 		displayname="100Rnd 9.5x60mm HP-SAP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="100 Box Round Magazine<br>9.5x60mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x60_Box_SAPHE: OPTRE_100Rnd_95x40_Box
 	{
@@ -1523,6 +1563,8 @@ class CfgMagazines
 		displayname="100Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
 		descriptionShort="100 Round Box Magazine<br>9.5x60mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x60_Box_SS: OPTRE_100Rnd_95x40_Box
 	{
@@ -1570,6 +1612,8 @@ class CfgMagazines
 		displayname="300Rnd 9.5x60mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
 		descriptionShort="300 Round Box Magazine<br>9.5x60mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_300Rnd_95x60_Box_HPSAP: OPTRE_300Rnd_95x60_Box
 	{
@@ -1591,6 +1635,8 @@ class CfgMagazines
 		displayname="300Rnd 9.5x60mm HP-SAP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="300 Round Box Magazine<br>9.5x60mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_300Rnd_95x60_Box_SAPHE: OPTRE_300Rnd_95x60_Box
 	{
@@ -1612,6 +1658,8 @@ class CfgMagazines
 		displayname="300Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
 		descriptionShort="300 Round Box Magazine<br>9.5x60mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
 	};
 	class OPTRE_300Rnd_95x60_Box_SS: OPTRE_300Rnd_95x60_Box
 	{
@@ -1662,6 +1710,7 @@ class CfgMagazines
 		displayname="8Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
 		descriptionShort="8 Round Magazine<br>12.7x40mm<br>Armor-Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_HE: OPTRE_8Rnd_127x40_Mag
 	{
@@ -1707,6 +1756,7 @@ class CfgMagazines
 		displayname="8Rnd 12.7x40mm HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm HE Tracer";
 		descriptionShort="8 Round Magazine<br>12.7x40mm<br>High-Explosive<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_HVAP: OPTRE_8Rnd_127x40_Mag
 	{
@@ -1728,6 +1778,7 @@ class CfgMagazines
 		displayname="8Rnd 12.7x40mm HVAP Magazine (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
 		descriptionShort="8 Round Magazine<br>12.7x40mm<br>High-Velocity Armor-Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_JHP: OPTRE_8Rnd_127x40_Mag
 	{
@@ -1749,6 +1800,7 @@ class CfgMagazines
 		displayname="8Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
 		descriptionShort="8 Round Magazine<br>12.7x40mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_SAPHE: OPTRE_8Rnd_127x40_Mag
 	{
@@ -1770,6 +1822,7 @@ class CfgMagazines
 		displayname="8Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
 		descriptionShort="8 Round Magazine<br>12.7x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_SS: OPTRE_8Rnd_127x40_Mag
 	{
@@ -1793,6 +1846,7 @@ class CfgMagazines
 		displayname="8Rnd 12.7x40mm SS Magazine (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
 		descriptionShort="8 Round Magazine<br>12.7x40mm<br>Sub-Sonic<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_NARQ: OPTRE_8Rnd_127x40_Mag
 	{
@@ -1816,6 +1870,7 @@ class CfgMagazines
 		displayname="8Rnd 12.7x40mm NARQ Magazine (Tracer)";
 		displaynameshort="12.7x40mm NARQ Tracer";
 		descriptionShort="8 Round Magazine<br>12.7x40mm<br>Tranquilizer<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl: 20Rnd_762x51_Mag
 	{
@@ -1853,6 +1908,7 @@ class CfgMagazines
 		displayname="6Rnd 12.7x40mm AP Cylinder (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
 		descriptionShort="6 Round Cylinder<br>12.7x40mm<br>Armor-Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_HE: OPTRE_6Rnd_127x40_Cyl
 	{
@@ -1898,6 +1954,7 @@ class CfgMagazines
 		displayname="6Rnd 12.7x40mm HE Cylinder (Tracer)";
 		displaynameshort="12.7x40mm HE Tracer";
 		descriptionShort="6 Round Cylinder<br>12.7x40mm<br>High-Explosive<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_HVAP: OPTRE_6Rnd_127x40_Cyl
 	{
@@ -1919,6 +1976,7 @@ class CfgMagazines
 		displayname="6Rnd 12.7x40mm HVAP Cylinder (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
 		descriptionShort="6 Round Cylinder<br>12.7x40mm<br>High-Velocity Armor-Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_JHP: OPTRE_6Rnd_127x40_Cyl
 	{
@@ -1940,6 +1998,7 @@ class CfgMagazines
 		displayname="6Rnd 12.7x40mm JHP Cylinder (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
 		descriptionShort="6 Round Cylinder<br>12.7x40mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_SAPHE: OPTRE_6Rnd_127x40_Cyl
 	{
@@ -1961,6 +2020,7 @@ class CfgMagazines
 		displayname="6Rnd 12.7x40mm SAP-HE Cylinder (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
 		descriptionShort="6 Round Cylinder<br>12.7x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_SS: OPTRE_6Rnd_127x40_Cyl
 	{
@@ -1984,6 +2044,7 @@ class CfgMagazines
 		displayname="6Rnd 12.7x40mm SS Cylinder (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
 		descriptionShort="6 Round Cylinder<br>12.7x40mm<br>Sub-Sonic<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_NARQ: OPTRE_6Rnd_127x40_Cyl
 	{
@@ -2007,6 +2068,7 @@ class CfgMagazines
 		displayname="6Rnd 12.7x40mm NARQ Cylinder (Tracer)";
 		displaynameshort="12.7x40mm NARQ Tracer";
 		descriptionShort="6 Round Cylinder<br>12.7x40mm<br>Tranquilizer<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	{
@@ -2044,6 +2106,7 @@ class CfgMagazines
 		displayname="12Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
 		descriptionShort="12 Round Magazine<br>12.7x40mm<br>Armor-Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_HE: OPTRE_12Rnd_127x40_Mag
 	{
@@ -2065,6 +2128,7 @@ class CfgMagazines
 		displayname="12Rnd 12.7x40mm HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm HE Tracer";
 		descriptionShort="12 Round Magazine<br>12.7x40mm<br>High-Explosive<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_HVAP: OPTRE_12Rnd_127x40_Mag
 	{
@@ -2086,6 +2150,7 @@ class CfgMagazines
 		displayname="12Rnd 12.7x40mm HVAP Magazine (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
 		descriptionShort="12 Round Magazine<br>12.7x40mm<br>High-Velocity Armor-Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_JHP: OPTRE_12Rnd_127x40_Mag
 	{
@@ -2107,6 +2172,7 @@ class CfgMagazines
 		displayname="12Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
 		descriptionShort="12 Round Magazine<br>12.7x40mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_SAPHE: OPTRE_12Rnd_127x40_Mag
 	{
@@ -2128,6 +2194,7 @@ class CfgMagazines
 		displayname="12Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
 		descriptionShort="12 Round Magazine<br>12.7x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_SS: OPTRE_12Rnd_127x40_Mag
 	{
@@ -2151,6 +2218,7 @@ class CfgMagazines
 		displayname="12Rnd 12.7x40mm SS Magazine (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
 		descriptionShort="12 Round Magazine<br>12.7x40mm<br>Sub-Sonic<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_NARQ: OPTRE_12Rnd_127x40_Mag
 	{
@@ -2174,6 +2242,7 @@ class CfgMagazines
 		displayname="12Rnd 12.7x40mm NARQ Magazine (Tracer)";
 		displaynameshort="12.7x40mm NARQ Tracer";
 		descriptionShort="12 Round Magazine<br>12.7x40mm<br>Tranquilizer<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag: 20Rnd_762x51_Mag
 	{
@@ -2211,6 +2280,7 @@ class CfgMagazines
 		displayname="16Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
 		descriptionShort="16 Round Magazine<br>12.7x40mm<br>Armor-Piercing<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_HE: OPTRE_16Rnd_127x40_Mag
 	{
@@ -2232,6 +2302,7 @@ class CfgMagazines
 		displayname="16Rnd 12.7x40mm HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm HE Tracer";
 		descriptionShort="16 Round Magazine<br>12.7x40mm<br>High-Explosive<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_HVAP: OPTRE_16Rnd_127x40_Mag
 	{
@@ -2253,6 +2324,7 @@ class CfgMagazines
 		displayname="16Rnd 12.7x40mm HVAP Magazine (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
 		descriptionShort="16 Round Magazine<br>12.7x40mm<br>High-Velocity Armor-Piercing<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_JHP: OPTRE_16Rnd_127x40_Mag
 	{
@@ -2274,6 +2346,7 @@ class CfgMagazines
 		displayname="16Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
 		descriptionShort="16 Round Magazine<br>12.7x40mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_SAPHE: OPTRE_16Rnd_127x40_Mag
 	{
@@ -2295,6 +2368,7 @@ class CfgMagazines
 		displayname="16Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
 		descriptionShort="16 Round Magazine<br>12.7x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_SS: OPTRE_16Rnd_127x40_Mag
 	{
@@ -2318,6 +2392,7 @@ class CfgMagazines
 		displayname="16Rnd 12.7x40mm SS Magazine (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
 		descriptionShort="16 Round Magazine<br>12.7x40mm<br>Sub-Sonic<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_NARQ: OPTRE_16Rnd_127x40_Mag
 	{
@@ -2341,6 +2416,7 @@ class CfgMagazines
 		displayname="16Rnd 12.7x40mm NARQ Magazine (Tracer)";
 		displaynameshort="12.7x40mm NARQ Tracer";
 		descriptionShort="16 Round Magazine<br>12.7x40mm<br>Tranquilizer<br>Tracers";
+		tracersevery=1;
 	};
 	class OPTRE_4Rnd_145x114_APFSDS_Mag;
 	class OPTRE_4Rnd_145x114_Mag_APFSDST: OPTRE_4Rnd_145x114_APFSDS_Mag
@@ -2352,6 +2428,7 @@ class CfgMagazines
 		displayname="4Rnd 14.5x114mm APFSDS Magazine (Tracer)";
 		displaynameshort="14.5x114mm APFSDS Tracer";
 		descriptionshort="4 Round Magazine<br>14.5x114mm<br>Armor Piercing Fin-Stabilized Disposable Shell<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_4Rnd_145x114_HVAP_Mag;
 	class OPTRE_4Rnd_145x114_Mag_HVAPT: OPTRE_4Rnd_145x114_HVAP_Mag
@@ -2363,6 +2440,7 @@ class CfgMagazines
 		displayname="4Rnd 14.5x114mm HVAP Magazine (Tracer)";
 		displaynameshort="14.5x114mm HVAP Tracer";
 		descriptionshort="4 Round Magazine<br>14.5x114mm<br>High Velocity Armor Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_4Rnd_145x114_HEDP_Mag;
 	class OPTRE_4Rnd_145x114_Mag_HEDPT: OPTRE_4Rnd_145x114_HEDP_Mag
@@ -2374,6 +2452,7 @@ class CfgMagazines
 		displayname="4Rnd 14.5x114mm HEDP Magazine (Tracer)";
 		displaynameshort="14.5x114mm HEDP Tracer";
 		descriptionshort="4 Round Magazine<br>14.5x114mm<br>High Explosive Dual Purpose<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_4Rnd_145x114_Mag_SS: OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
@@ -2397,6 +2476,7 @@ class CfgMagazines
 		displayname="4Rnd 14.5x114mm SS Magazine (Tracer)";
 		displaynameshort="14.5x114mm SS Tracer";
 		descriptionshort="4 Round Magazine<br>14.5x114mm<br>Sub-Sonic<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_4Rnd_145x114_Mag_NARQ: OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
@@ -2420,6 +2500,7 @@ class CfgMagazines
 		displayname="4Rnd 14.5x114mm NARQ Magazine (Tracer)";
 		displaynameshort="14.5x114mm NARQ Tracer";
 		descriptionshort="4 Round Magazine<br>14.5x114mm<br>Tranquilizer<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag;
 	class OPTRE_48Rnd_5x23mm_Mag_FMJ: OPTRE_48Rnd_5x23mm_Mag
@@ -2442,6 +2523,8 @@ class CfgMagazines
 		displayname="48Rnd 5x23mm FMJ Magazine (Tracer)";
 		displaynameshort="5x23mm FMJ Tracer";
 		descriptionShort="48 Round Magazine<br>5x23mm<br>Full Metal Jacket<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_HV: OPTRE_48Rnd_5x23mm_Mag
 	{
@@ -2463,6 +2546,8 @@ class CfgMagazines
 		displayname="48Rnd 5x23mm HV Magazine (Tracer)";
 		displaynameshort="5x23mm HV Tracer";
 		descriptionShort="48 Round Magazine<br>5x23mm<br>High-Velocity<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_JHP: OPTRE_48Rnd_5x23mm_Mag
 	{
@@ -2484,6 +2569,8 @@ class CfgMagazines
 		displayname="48Rnd 5x23mm JHP Magazine (Tracer)";
 		displaynameshort="5x23mm JHP Tracer";
 		descriptionShort="48 Round Magazine<br>5x23mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_SS: OPTRE_48Rnd_5x23mm_Mag
 	{
@@ -2505,6 +2592,8 @@ class CfgMagazines
 		displayname="48Rnd 5x23mm SS (Tracer)";
 		displaynameshort="5x23mm SS Tracer";
 		descriptionShort="48 Round Magazine<br>5x23mm<br>Sub-sonic<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_60Rnd_5x23mm_Mag;
 	class OPTRE_60Rnd_5x23mm_Mag_FMJ: OPTRE_60Rnd_5x23mm_Mag
@@ -2527,6 +2616,8 @@ class CfgMagazines
 		displayname="60Rnd 5x23mm FMJ Magazine (Tracer)";
 		displaynameshort="5x23mm FMJ Tracer";
 		descriptionShort="60 Round Magazine<br>5x23mm<br>Full Metal Jacket<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_HV: OPTRE_60Rnd_5x23mm_Mag
 	{
@@ -2548,6 +2639,8 @@ class CfgMagazines
 		displayname="60Rnd 5x23mm HV Magazine (Tracer)";
 		displaynameshort="5x23mm HV Tracer";
 		descriptionShort="60 Round Magazine<br>5x23mm<br>High-Velocity<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_JHP: OPTRE_60Rnd_5x23mm_Mag
 	{
@@ -2569,6 +2662,8 @@ class CfgMagazines
 		displayname="60Rnd 5x23mm JHP Magazine (Tracer)";
 		displaynameshort="5x23mm JHP Tracer";
 		descriptionShort="60 Round Magazine<br>5x23mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_SS: OPTRE_60Rnd_5x23mm_Mag
 	{
@@ -2590,6 +2685,8 @@ class CfgMagazines
 		displayname="60Rnd 5x23mm SS Magazine (Tracer)";
 		displaynameshort="5x23mm SS Tracer";
 		descriptionShort="60 Round Magazine<br>5x23mm<br>Sub-sonic<br>Tracers";
+		tracersevery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_M41_Twin_HEAT;
 	class OPTRE_1Rnd_50x137_HEAT: OPTRE_M41_Twin_HEAT
@@ -2715,7 +2812,7 @@ class CfgMagazines
 		displayname="6Rnd 8 Gauge Dragon's Breath";
 		displayNameShort="8 Gauge Incendiary";
 		descriptionShort="6 Rounds<br>8 Gauge<br>Incendiary";
-		tracersEvery=1;
+		tracersevery=3;
 	};
 	class OPTRE_12Rnd_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
 	{
@@ -2890,6 +2987,8 @@ class CfgMagazines
 		displayname="20Rnd 8.6x70mm Magazine (Tracer)";
 		displaynameshort="8.6x70mm Tracer";
 		descriptionShort="20 Round Magazine<br>8.6x70mm<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_20Rnd_86x70_Mag_AP: OPTRE_20Rnd_86x70_Mag
 	{
@@ -2911,6 +3010,8 @@ class CfgMagazines
 		displayname="20Rnd 8.6x70mm AP Magazine (Tracer)";
 		displaynameshort="8.6x70mm AP Tracer";
 		descriptionShort="20 Round Magazine<br>8.6x70mm<br>Armor-Piercing<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_20Rnd_86x70_Mag_JHP: OPTRE_20Rnd_86x70_Mag
 	{
@@ -2932,6 +3033,8 @@ class CfgMagazines
 		displayname="20Rnd 8.6x70mm JHP Magazine (Tracer)";
 		displaynameshort="8.6x70mm JHP Tracer";
 		descriptionShort="20 Round Magazine<br>8.6x70mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_20Rnd_86x70_Mag_SS: OPTRE_20Rnd_86x70_Mag
 	{
@@ -2955,6 +3058,8 @@ class CfgMagazines
 		displayname="20Rnd 8.6x70mm SS Magazine (Tracer)";
 		displaynameshort="8.6x70mm SS Tracer";
 		descriptionShort="20 Round Magazine<br>8.6x70mm<br>Subsonic";
+		tracersEvery=3;
+		lastRoundsTracer=5;
 	};
 	class OPTRE_10Rnd_86x70_Mag: OPTRE_20Rnd_86x70_Mag
 	{
@@ -2977,6 +3082,7 @@ class CfgMagazines
 		displayname="10Rnd 8.6x70mm Magazine (Tracer)";
 		displaynameshort="8.6x70mm Tracer";
 		descriptionShort="10 Round Magazine<br>8.6x70mm<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_10Rnd_86x70_Mag_AP: OPTRE_10Rnd_86x70_Mag
 	{
@@ -2998,6 +3104,7 @@ class CfgMagazines
 		displayname="10Rnd 8.6x70mm AP Magazine (Tracer)";
 		displaynameshort="8.6x70mm AP Tracer";
 		descriptionShort="10 Round Magazine<br>8.6x70mm<br>Armor-Piercing<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_10Rnd_86x70_Mag_JHP: OPTRE_10Rnd_86x70_Mag
 	{
@@ -3019,6 +3126,7 @@ class CfgMagazines
 		displayname="10Rnd 8.6x70mm JHP Magazine (Tracer)";
 		displaynameshort="8.6x70mm JHP Tracer";
 		descriptionShort="10 Round Magazine<br>8.6x70mm<br>Jacketed Hollow-Point<br>Tracers";
+		tracersEvery=1;
 	};
 	class OPTRE_10Rnd_86x70_Mag_SS: OPTRE_10Rnd_86x70_Mag
 	{
@@ -3042,6 +3150,7 @@ class CfgMagazines
 		displayname="10Rnd 8.6x70mm SS Magazine (Tracer)";
 		displaynameshort="8.6x70mm SS Tracer";
 		descriptionShort="10 Round Magazine<br>8.6x70mm<br>Subsonic";
+		tracersEvery=1;
 	};
 	class OPTRE_10Rnd_86x70_Mag_FS: OPTRE_10Rnd_86x70_Mag
 	{
@@ -3063,6 +3172,7 @@ class CfgMagazines
 		displayname="10Rnd 8.6x70mm FS Magazine (Tracer)";
 		displaynameshort="8.6x70mm FS Tracer";
 		descriptionShort="10 Round Magazine<br>8.6x70mm<br>Fin-Stabalized<br>Tracers";
+		tracersEvery=1;
 	};
 	class CA_Magazine;
 	class SatchelCharge_Remote_Mag;
