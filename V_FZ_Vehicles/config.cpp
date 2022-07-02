@@ -330,7 +330,7 @@ class cfgVehicles
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_A_WarthogCamos.hpp"
+		#include "cfg\FZ_Z_WarthogCamos.hpp"
 	};
 	class VES_M12G1_LRV_SFP: VES_M12G1_LRV
 	{
@@ -386,7 +386,7 @@ class cfgVehicles
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_B_WarthogCamos.hpp"
+		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
 	class VES_M12A1_LRV_URF: VES_M12A1_LRV
 	{
@@ -450,7 +450,7 @@ class cfgVehicles
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_A_WarthogCamos.hpp"
+		#include "cfg\FZ_W_WarthogCamos.hpp"
 	};
 	class VES_M813_TT_URF: VES_M813_TT
 	{
@@ -490,7 +490,7 @@ class cfgVehicles
 	};
 	
 	// AA Warthogs
-	/*class OPTRE_M12R_AA;
+	class OPTRE_M12R_AA;
 	class VES_M12R_AA: OPTRE_M12R_AA
 	{
 		dlc="Zulu";
@@ -514,8 +514,8 @@ class cfgVehicles
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_E_WarthogCamos.hpp"
-	};*/
+		#include "cfg\FZ_Y_WarthogCamos.hpp"
+	};
 	
 	// APC Warthogs
 	class OPTRE_M12_FAV_APC;
@@ -616,7 +616,7 @@ class cfgVehicles
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_A_WarthogCamos.hpp"
+		#include "cfg\FZ_X_WarthogCamos.hpp"
 	};
 	class VES_M12_APC_URF: VES_M12_APC
 	{
