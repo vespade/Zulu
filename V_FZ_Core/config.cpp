@@ -118,6 +118,10 @@ class CfgEditorSubcategories
 	{
 		displayName="Rotary";
 	};
+    class V_FZ_EdSubCat_Drone
+	{
+		displayName="Drones";
+	};
 };
 class CfgFunctions
 {
