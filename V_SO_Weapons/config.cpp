@@ -27,10 +27,12 @@ class CfgPatches
 			"OPTRE_MA32BGL",
 			"OPTRE_M6G",
 			"OPTRE_M6C",
+			"OPTRE_M6B",
 			"OPTRE_M33",
 			"OPTRE_M33G",
 			"OPTRE_M6D",
 			"OPTRE_M6D_Flashlight",
+			"OPTRE_M6_Laser",
 			"OPTRE_M392_DMR",
 			"OPTRE_M392XD_DMR",
 			"OPTRE_M393_DMR",
@@ -2883,7 +2885,10 @@ class CfgWeapons
 			mass=77;
 			class CowsSlot: CowsSlot
 			{
-				compatibleitems[]={};
+				compatibleitems[]=
+				{
+					"OPTRE_MA37_Smartlink_Scope"
+				};
 			};
 		};
 	};
@@ -2935,6 +2940,17 @@ class CfgWeapons
 			"OPTRE_60Rnd_762x51_Mag_APT",
 			"OPTRE_60Rnd_762x51_Mag_JHP",
 			"OPTRE_60Rnd_762x51_Mag_JHPT"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=110;
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]=
+				{
+					"OPTRE_MA37_Smartlink_Scope"
+				};
+			};
 		};
 	};
 	class OPTRE_MA32: OPTRE_MA37
@@ -3084,6 +3100,7 @@ class CfgWeapons
 	class hgun_Pistol_heavy_01_F;
 	class OPTRE_Handgun_Base: hgun_Pistol_heavy_01_F
 	{
+		class single;
 		class WeaponSlotsInfo;
 	};
 	class OPTRE_M6G: OPTRE_Handgun_Base
@@ -3114,9 +3131,82 @@ class CfgWeapons
 			"OPTRE_8Rnd_127x40_Mag_FR",
 			"OPTRE_8Rnd_127x40_Mag_FG"
 		};
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			mass=43;
+			mass=39;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6_silencer"
+				};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]=
+				{
+					"optic_aco_grn",
+					"optic_aco",
+					"optic_holosight_blk_f",
+					"optic_yorris",
+					"optic_aco_smg",
+					"optic_aco_grn_smg",
+					"optic_holosight_smg_blk_f",
+					"optic_mrd_black",
+					"optre_m393_eotech",
+					"optre_m7_sight",
+					"optre_m6c_scope",
+					"optre_m6g_scope",
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6g_flashlight",
+					"OPTRE_M6_Laser",
+					"acc_flashlight_pistol"
+				};
+			};
+		};
+		class Single: Single
+		{
+			sounds[]=
+			{
+				"StandardSound",
+				"SilencedSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="DefaultRifle";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]=
+				{
+					"closure1",
+					0.5,
+					"closure2",
+					0.5
+				};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"50cal_Type115_Shot_SoundSet",
+					"50cal_Type115_Tail_SoundSet",
+					"50cal_Type115_interiorTail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"DMR06_silencerShot_SoundSet",
+					"DMR06_silencerTail_SoundSet",
+					"DMR06_silencerInteriorTail_SoundSet"
+				};
+			};
 		};
 	};
 	class OPTRE_M6C: OPTRE_M6G
@@ -3161,9 +3251,200 @@ class CfgWeapons
 			"OPTRE_16Rnd_127x40_Mag_NARQ",
 			"OPTRE_16Rnd_127x40_Mag_NARQT"
 		};
-		class WeaponSlotsInfo
+		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass=39;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6_silencer",
+					"optre_m6c_compensator"
+				};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]=
+				{
+					"optic_aco_grn",
+					"optic_aco",
+					"optic_holosight_blk_f",
+					"optic_yorris",
+					"optic_aco_smg",
+					"optic_aco_grn_smg",
+					"optic_holosight_smg_blk_f",
+					"optic_mrd_black",
+					"optre_m393_eotech",
+					"optre_m7_sight",
+					"optre_m6c_scope"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6g_flashlight",
+					"OPTRE_M6_Laser",
+					"optre_m6c_laser",
+					"acc_flashlight_pistol"
+				};
+			};
+		};
+		class Single: Single
+		{
+			sounds[]=
+			{
+				"StandardSound",
+				"SilencedSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="DefaultRifle";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]=
+				{
+					"closure1",
+					0.5,
+					"closure2",
+					0.5
+				};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"50cal_Type115_Shot_SoundSet",
+					"50cal_Type115_Tail_SoundSet",
+					"50cal_Type115_interiorTail_SoundSet"
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				SoundSetShot[]=
+				{
+					"DMR06_silencerShot_SoundSet",
+					"DMR06_silencerTail_SoundSet",
+					"DMR06_silencerInteriorTail_SoundSet"
+				};
+			};
+		};
+	};
+	class OPTRE_M6B: OPTRE_M6G
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		displayName="M6B Magnum";
+		magazines[]=
+		{
+			"OPTRE_8Rnd_127x40_Mag",
+			"OPTRE_8Rnd_127x40_Mag_Tracer",
+			"OPTRE_8Rnd_127x40_Mag_AP",
+			"OPTRE_8Rnd_127x40_Mag_APT",
+			"OPTRE_8Rnd_127x40_Mag_HE",
+			"OPTRE_8Rnd_127x40_Mag_HET",
+			"OPTRE_8Rnd_127x40_Mag_HVAP",
+			"OPTRE_8Rnd_127x40_Mag_HVAPT",
+			"OPTRE_8Rnd_127x40_Mag_JHP",
+			"OPTRE_8Rnd_127x40_Mag_JHPT",
+			"OPTRE_8Rnd_127x40_Mag_SAPHE",
+			"OPTRE_8Rnd_127x40_Mag_SAPHET",
+			"OPTRE_8Rnd_127x40_Mag_SS",
+			"OPTRE_8Rnd_127x40_Mag_SST",
+			"OPTRE_8Rnd_127x40_Mag_NARQ",
+			"OPTRE_8Rnd_127x40_Mag_NARQT",
+			"OPTRE_8Rnd_127x40_Mag_FR",
+			"OPTRE_8Rnd_127x40_Mag_FG"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=39;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6_silencer"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6g_flashlight",
+					"OPTRE_M6_Laser",
+					"acc_flashlight_pistol"
+				};
+			};
+		};
+	};
+	class OPTRE_M6D: OPTRE_M6G
+	{
+		dlc="SO";
+		author="Fireteam Zulu & Forky";
+		scope=2;
+		scopeArsenal=2;
+		displayName="M6D PDWS Magnum";
+		baseWeapon="OPTRE_M6D";
+		model="\V_SO_Weapons\data\M6\M6D";
+		magazines[]=
+		{
+			"OPTRE_12Rnd_127x40_Mag",
+			"OPTRE_12Rnd_127x40_Mag_Tracer",
+			"OPTRE_12Rnd_127x40_Mag_AP",
+			"OPTRE_12Rnd_127x40_Mag_APT",
+			"OPTRE_12Rnd_127x40_Mag_HE",
+			"OPTRE_12Rnd_127x40_Mag_HET",
+			"OPTRE_12Rnd_127x40_Mag_HVAP",
+			"OPTRE_12Rnd_127x40_Mag_HVAPT",
+			"OPTRE_12Rnd_127x40_Mag_JHP",
+			"OPTRE_12Rnd_127x40_Mag_JHPT",
+			"OPTRE_12Rnd_127x40_Mag_SAPHE",
+			"OPTRE_12Rnd_127x40_Mag_SAPHET",
+			"OPTRE_12Rnd_127x40_Mag_SS",
+			"OPTRE_12Rnd_127x40_Mag_SST",
+			"OPTRE_12Rnd_127x40_Mag_NARQ",
+			"OPTRE_12Rnd_127x40_Mag_NARQT"
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=47;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6_silencer"
+				};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]=
+				{
+					"optic_aco_grn",
+					"optic_aco",
+					"optic_holosight_blk_f",
+					"optic_yorris",
+					"optic_aco_smg",
+					"optic_aco_grn_smg",
+					"optic_holosight_smg_blk_f",
+					"optic_mrd_black",
+					"optre_m393_eotech",
+					"optre_m7_sight",
+					"optre_m6c_scope",
+					"OPTRE_M6D_Smartlink"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[]=
+				{
+					"optre_m6d_flashlight",
+					"optre_m6g_flashlight",
+					"OPTRE_M6_Laser",
+					"acc_flashlight_pistol"
+				};
+			};
 		};
 	};
 	class hgun_Pistol_heavy_02_F;
@@ -3263,60 +3544,6 @@ class CfgWeapons
 			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
 		};
 	};
-	class OPTRE_M6D: OPTRE_M6G
-	{
-		dlc="SO";
-		author="Fireteam Zulu & Forky";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M6D PDWS Magnum";
-		baseWeapon="OPTRE_M6D";
-		model="\V_SO_Weapons\data\M6\M6D";
-		magazines[]=
-		{
-			"OPTRE_12Rnd_127x40_Mag",
-			"OPTRE_12Rnd_127x40_Mag_Tracer",
-			"OPTRE_12Rnd_127x40_Mag_AP",
-			"OPTRE_12Rnd_127x40_Mag_APT",
-			"OPTRE_12Rnd_127x40_Mag_HE",
-			"OPTRE_12Rnd_127x40_Mag_HET",
-			"OPTRE_12Rnd_127x40_Mag_HVAP",
-			"OPTRE_12Rnd_127x40_Mag_HVAPT",
-			"OPTRE_12Rnd_127x40_Mag_JHP",
-			"OPTRE_12Rnd_127x40_Mag_JHPT",
-			"OPTRE_12Rnd_127x40_Mag_SAPHE",
-			"OPTRE_12Rnd_127x40_Mag_SAPHET",
-			"OPTRE_12Rnd_127x40_Mag_SS",
-			"OPTRE_12Rnd_127x40_Mag_SST",
-			"OPTRE_12Rnd_127x40_Mag_NARQ",
-			"OPTRE_12Rnd_127x40_Mag_NARQT"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=47;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6d_smartlink"
-				};
-			};
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6_silencer"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"OPTRE_M6D_Flashlight"
-				};
-			};
-		};
-	};
 	class OPTRE_M6G_Flashlight;
 	class OPTRE_M6D_Flashlight: OPTRE_M6G_Flashlight
 	{
@@ -3326,6 +3553,30 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="M6D Flashlight";
 		model="\V_SO_Weapons\data\M6\M6D_Flashlight";
+	};
+	class InventoryFlashLightItem_Base_F;
+	class acc_pointer_IR;
+	class OPTRE_M6_Laser: acc_pointer_IR
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		picture="\OPTRE_weapons\pistol\icons\flashlight.paa";
+		displayName="M6 Laser";
+		descriptionShort="IR Laser for the M6 Handgun series";
+		model="\OPTRE_Weapons\Pistol\m6g_flashlight.p3d";
+		inertia=0.1;
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass=1;
+			class Pointer
+			{
+				irLaserPos="flash dir";
+				irLaserEnd="flash";
+				irDistance=25;
+			};
+		};
 	};
 	class OPTRE_M392_DMR: OPTRE_LongRifle_Base
 	{
@@ -4252,8 +4503,6 @@ class CfgWeapons
 			"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
 			"OPTRE_36Rnd_95x40_Mag_JHP",
 			"OPTRE_36Rnd_95x40_Mag_JHPT",
-			"OPTRE_36Rnd_95x40_Mag_HPSAP",
-			"OPTRE_36Rnd_95x40_Mag_HPSAPT",
 			"OPTRE_36Rnd_95x40_Mag_SAPHE",
 			"OPTRE_36Rnd_95x40_Mag_SAPHET",
 			"OPTRE_36Rnd_95x40_Mag_SS"
@@ -4793,8 +5042,6 @@ class CfgWeapons
 			"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
 			"OPTRE_36Rnd_95x40_Mag_JHP",
 			"OPTRE_36Rnd_95x40_Mag_JHPT",
-			"OPTRE_36Rnd_95x40_Mag_HPSAP",
-			"OPTRE_36Rnd_95x40_Mag_HPSAPT",
 			"OPTRE_36Rnd_95x40_Mag_SAPHE",
 			"OPTRE_36Rnd_95x40_Mag_SAPHET",
 			"OPTRE_36Rnd_95x40_Mag_SS",
@@ -4803,8 +5050,6 @@ class CfgWeapons
 			"OPTRE_100Rnd_95x40_Box_Tracer_Yellow",
 			"OPTRE_100Rnd_95x40_Box_JHP",
 			"OPTRE_100Rnd_95x40_Box_JHPT",
-			"OPTRE_100Rnd_95x40_Box_HPSAP",
-			"OPTRE_100Rnd_95x40_Box_HPSAPT",
 			"OPTRE_100Rnd_95x40_Box_SAPHE",
 			"OPTRE_100Rnd_95x40_Box_SAPHET",
 			"OPTRE_100Rnd_95x40_Box_SS",
@@ -4813,8 +5058,6 @@ class CfgWeapons
 			"OPTRE_200Rnd_95x40_Box_Tracer_Yellow",
 			"OPTRE_200Rnd_95x40_Box_JHP",
 			"OPTRE_200Rnd_95x40_Box_JHPT",
-			"OPTRE_200Rnd_95x40_Box_HPSAP",
-			"OPTRE_200Rnd_95x40_Box_HPSAPT",
 			"OPTRE_200Rnd_95x40_Box_SAPHE",
 			"OPTRE_200Rnd_95x40_Box_SAPHET",
 			"OPTRE_200Rnd_95x40_Box_SS"
@@ -4908,21 +5151,19 @@ class CfgWeapons
 		baseWeapon="OPTRE_M73H";
 		magazines[]=
 		{
-			"OPTRE_100Rnd_95x60_Box",
-			"OPTRE_100Rnd_95x60_Box_Tracer",
-			"OPTRE_100Rnd_95x60_Box_JHP",
-			"OPTRE_100Rnd_95x60_Box_JHPT",
 			"OPTRE_100Rnd_95x60_Box_HPSAP",
 			"OPTRE_100Rnd_95x60_Box_HPSAPT",
+			"OPTRE_100Rnd_95x60_Box_HPSAPTY",
+			"OPTRE_100Rnd_95x60_Box_JHP",
+			"OPTRE_100Rnd_95x60_Box_JHPT",
 			"OPTRE_100Rnd_95x60_Box_SAPHE",
 			"OPTRE_100Rnd_95x60_Box_SAPHET",
 			"OPTRE_100Rnd_95x60_Box_SS",
-			"OPTRE_300Rnd_95x60_Box",
-			"OPTRE_300Rnd_95x60_Box_Tracer",
-			"OPTRE_300Rnd_95x60_Box_JHP",
-			"OPTRE_300Rnd_95x60_Box_JHPT",
 			"OPTRE_300Rnd_95x60_Box_HPSAP",
 			"OPTRE_300Rnd_95x60_Box_HPSAPT",
+			"OPTRE_300Rnd_95x60_Box_HPSAPTY",
+			"OPTRE_300Rnd_95x60_Box_JHP",
+			"OPTRE_300Rnd_95x60_Box_JHPT",
 			"OPTRE_300Rnd_95x60_Box_SAPHE",
 			"OPTRE_300Rnd_95x60_Box_SAPHET",
 			"OPTRE_300Rnd_95x60_Box_SS"
