@@ -155,7 +155,7 @@ class CfgVehicles
 		author="Azzamean";
 		displayName="MQ-221 Dragonfly";
 		editorCategory="V_FZ_EdCat_Zulu";
-        editorSubcategory="V_FZ_EdSubCat_Drone";
+        editorSubcategory = "EdSubcat_Drones";
 		#include "cfg\FZ_A_DragonflyCamos.hpp"
 	};
 	class VES_MQ221_URF: VES_MQ221
@@ -418,7 +418,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="F-99";
 		editorCategory="V_FZ_EdCat_Zulu";
-		editorSubcategory="V_FZ_EdSubCat_Drone";
+		editorSubcategory = "EdSubcat_Drones";
 		crew="VES_Rifleman_MA5B_ODST";
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.4;
@@ -442,7 +442,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="F-99 (Gunpod)";
 		editorCategory="V_FZ_EdCat_Zulu";
-		editorSubcategory="V_FZ_EdSubCat_Drone";
+		editorSubcategory = "EdSubcat_Drones";
 		crew="VES_Rifleman_MA5B_ODST";
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.4;
@@ -466,7 +466,7 @@ class CfgVehicles
 		forceInGarage=1;
 		displayName="F-99 (Missile)";
 		editorCategory="V_FZ_EdCat_Zulu";
-		editorSubcategory="V_FZ_EdSubCat_Drone";
+		editorSubcategory = "EdSubcat_Drones";
 		crew="VES_Rifleman_MA5B_ODST";
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.4;

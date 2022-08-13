@@ -74,6 +74,7 @@ class CfgPatches
 			// Tanks
 			"VES_M808B_MBT",
             "VES_M808BM_MBT",
+            "VES_M808S_MBT",
 			
 			// APC
 			"VES_IFV76",
@@ -87,6 +88,9 @@ class CfgPatches
             "VES_M412_IFV",
             
             "VES_M494_ORYX",
+            
+            // Boat
+            "VES_M112_TT"
 			
 		};
 		weapons[]={};
@@ -803,6 +807,32 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_B_ScorpionCamos.hpp"
 	};
+    class OPTRE_M808S;
+    class VES_M808S_MBT: OPTRE_M808S
+    {
+		dlc="Zulu";
+		author="Vespade";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_C_ScorpionCamos.hpp"
+	};
+    class OPTRE_M808B2;
+    class VES_M808B2_MBT: OPTRE_M808B2
+    {
+		dlc="Zulu";
+		author="Vespade";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_D_ScorpionCamos.hpp"
+	};
 	
 	// Trucks
 	class O_Truck_03_ammo_F;
@@ -1043,6 +1073,28 @@ class cfgVehicles
 		class TextureSources{};
 		hiddenSelectionsTextures[]={"V_FZ_Ground_Vehicles\data\Mattock\Civilian\V_M19_NEW_CO.paa","V_FZ_Ground_Vehicles\data\Mattock\Civilian\V_M19_NEW_A_CO.paa"};
 	};
-	
-	
+    class optre_catfish_unarmed_f;
+    class VES_M112_TT: optre_catfish_unarmed_f
+    {
+        dlc="Zulu";
+		author="Vespade";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName = "M112 Wet Patrol Craft";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		//fuelConsumptionRate=0.1;
+		ace_refuel_fuelCapacity=150;
+		ace_refuel_hooks[]={{-1.5, -.6, -1.1}};
+		enableRadio=1;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=10500;
+        class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_CatfishCamos.hpp"
+    };	
 };	
