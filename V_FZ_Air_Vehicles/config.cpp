@@ -60,7 +60,7 @@ class CfgPatches
             // Wombat
             "VES_F99",
             "VES_F99_Gunpod",
-            "VES_F99_Missile"
+            "VES_F99_Missile",
             
 			
 			// UAVs

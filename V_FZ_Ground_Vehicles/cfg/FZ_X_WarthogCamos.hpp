@@ -63,7 +63,7 @@ class textureSources
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_CO.paa","V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_W_CO.paa","\V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_TRP_CO.paa","V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_APC_CO.paa"
+			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_OD3_CO.paa","V_FZ_Ground_Vehicles\data\Warthog\V_M12_OD3_W_CO.paa","\V_FZ_Ground_Vehicles\data\Warthog\V_M12_OD3_TRP_CO.paa","V_FZ_Ground_Vehicles\data\Warthog\V_M12_OD3_APC_CO.paa"
 		};
 		
 textureList[] = 
