@@ -2,7 +2,9 @@ _vehicles = ((_this select 0) getVariable ["OPTRE_Pelican_AttachedToVehiclesEffe
 	
 if (
 		(
-			{
+			{ 
+				(_x isKindOf "OPTRE_falcon_base") OR 
+				(_x isKindOf "OPTRE_Wombat_base") OR      
 				(_x isKindOf "OPTRE_M808B_base") OR
 				(_x isKindOf "OPTRE_M12A1_LRV") OR 
 				(_x isKindOf "OPTRE_M12_LRV") OR
