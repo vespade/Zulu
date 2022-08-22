@@ -622,7 +622,8 @@ class CfgVehicles
 		#include "cfg\FZ_SparrowhawkActions.hpp"
 		class MFD;
     };
-    class VES_AV22_Sparrowhawk: VES_AV22_Sparrowhawk_Base_F
+    class OPTRE_AV22C_Sparrowhawk;
+    class VES_AV22_Sparrowhawk: OPTRE_AV22C_Sparrowhawk
 	{
 		displayName="AV-22V Sparrowhawk [GAU-23 / M230]";
 		author="Vespade + DaveSkywalker";
@@ -630,6 +631,12 @@ class CfgVehicles
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
+        editorCategory="V_FZ_EdCat_Zulu";
+        editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+        tf_hasLRradio=1;
+		tf_isolatedAmount=0.40000001;
+		tf_range=15000;
         class TransportBackpacks
 		{
 			class _xx_B_Parachute
@@ -665,44 +672,19 @@ class CfgVehicles
 			"attach_Decal2"
 		};
 		#include "cfg\FZ_A_SparrowhawkCamos.hpp"
-		
-		weapons[]=
-		{
-			"OPTRE_GUA23B",
-			"CMFlareLauncher"
-		};
-		magazines[]=
-		{
-			"OPTRE_2000Rnd_20mm_HEIAP",
-			"OPTRE_2000Rnd_20mm_HEIAP",
-			"168Rnd_CMFlare_Chaff_Magazine"
-		};
-		class Turrets: Turrets
-		{
-			class CopilotTurret: CopilotTurret
-			{
-				weapons[]=
-				{
-					"OPTRE_M230",
-					"Laserdesignator_mounted"
-				};
-				magazines[]=
-				{
-					"OPTRE_100Rnd_50mm_HE",
-					"OPTRE_100Rnd_50mm_HE",
-					"OPTRE_100Rnd_50mm_HE",
-					"OPTRE_100Rnd_50mm_APFSDS",
-					"Laserbatteries"
-				};
-			};
-		};
+        #include "cfg\FZ_SparrowhawkActions.hpp"
 	};
-	class VES_AV22A_Sparrowhawk: VES_AV22_Sparrowhawk
+    class OPTRE_AV22A_Sparrowhawk;
+	class VES_AV22A_Sparrowhawk: OPTRE_AV22A_Sparrowhawk
 	{
 		displayName="AV-22V Sparrowhawk [M9109 / M6]";
 		author="Vespade + DaveSkywalker";
-		
-		
+		editorCategory="V_FZ_EdCat_Zulu";
+        editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+        tf_hasLRradio=1;
+		tf_isolatedAmount=0.40000001;
+		tf_range=15000;
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -724,43 +706,20 @@ class CfgVehicles
 			"attach_Decal1",
 			"attach_Decal2"
 		};
-		
-		weapons[]=
-		{
-			"OPTRE_M9109",
-			"CMFlareLauncher"
-		};
-		magazines[]=
-		{
-			"OPTRE_2500Rnd_50mm_HE",
-			"168Rnd_CMFlare_Chaff_Magazine"
-		};
-		class Turrets: Turrets
-		{
-			class CopilotTurret: CopilotTurret
-			{
-				weapons[]=
-				{
-					"VES_M6_Laser",
-					"Laserdesignator_mounted"
-				};
-				magazines[]=
-				{
-					"OPTRE_SpLaser_Battery",
-					"OPTRE_SpLaser_Battery",
-					"OPTRE_SpLaser_Battery",
-					"OPTRE_SpLaser_Battery",
-					"OPTRE_SpLaser_Battery",
-					"Laserbatteries"
-				};
-			};
-		};
+        #include "cfg\FZ_A_SparrowhawkCamos.hpp"
+        #include "cfg\FZ_SparrowhawkActions.hpp"
 	};
-	class VES_AV22B_Sparrowhawk: VES_AV22A_Sparrowhawk
+    class OPTRE_AV22B_Sparrowhawk;
+	class VES_AV22B_Sparrowhawk: OPTRE_AV22B_Sparrowhawk
 	{
 		displayName="AV-22V Sparrowhawk [GAU-23 / M6]";
 		author="Vespade + DaveSkywalker";
-		
+		editorCategory="V_FZ_EdCat_Zulu";
+        editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+        tf_hasLRradio=1;
+		tf_isolatedAmount=0.40000001;
+		tf_range=15000;
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -783,23 +742,19 @@ class CfgVehicles
 			"attach_Decal2"
 		};
 		#include "cfg\FZ_A_SparrowhawkCamos.hpp"
-	   
-		weapons[]=
-		{
-			"OPTRE_GUA23B",
-			"CMFlareLauncher"
-		};
-		magazines[]=
-		{
-			"OPTRE_2000Rnd_20mm_HEIAP",
-			"OPTRE_2000Rnd_20mm_HEIAP",
-			"168Rnd_CMFlare_Chaff_Magazine"
-		};
+        #include "cfg\FZ_SparrowhawkActions.hpp"
 	};
-	class VES_AV22C_Sparrowhawk: VES_AV22A_Sparrowhawk
+    class OPTRE_AV22_Sparrowhawk;
+	class VES_AV22C_Sparrowhawk: OPTRE_AV22_Sparrowhawk
 	{
 		displayName="AV-22V Sparrowhawk [M9109 / M230]";
 		author="Vespade + DaveSkywalker";
+        editorCategory="V_FZ_EdCat_Zulu";
+        editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+        tf_hasLRradio=1;
+		tf_isolatedAmount=0.40000001;
+		tf_range=15000;
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -821,28 +776,9 @@ class CfgVehicles
 			"attach_Decal1",
 			"attach_Decal2"
 		};
-		
-		class Turrets: Turrets
-		{
-			class CopilotTurret: CopilotTurret
-			{
-				weapons[]=
-				{
-					"OPTRE_M230",
-					"Laserdesignator_mounted"
-				};
-				magazines[]=
-				{
-					"OPTRE_100Rnd_50mm_HE",
-					"OPTRE_100Rnd_50mm_HE",
-					"OPTRE_100Rnd_50mm_HE",
-					"OPTRE_100Rnd_50mm_APFSDS",
-					"Laserbatteries"
-				};
-			};
-		};
+        #include "cfg\FZ_A_SparrowhawkCamos.hpp"
+        #include "cfg\FZ_SparrowhawkActions.hpp"
 	};
-	
 	// Police Sparrowhawks
 	class VES_AV22_Sparrowhawk_CPD: VES_AV22_Sparrowhawk
 	{
