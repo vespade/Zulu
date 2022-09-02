@@ -39,10 +39,6 @@ class CfgEditorCategories
 	{
 		displayName="[Zulu] UNSCDF";
 	};
-    class V_FZ_EdCat_CPD
-	{
-		displayName="[Zulu] Colonial Police";
-	};
 	class V_FZ_EdCat_SFP
 	{
 		displayName="[Zulu] Strike Force Phoenix";

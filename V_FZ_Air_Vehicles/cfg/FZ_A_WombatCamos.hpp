@@ -61,7 +61,7 @@ class textureSources
 				textures[]={"\V_FZ_Air_Vehicles\data\Wombat\V_F99_OD3_CO.paa","\V_FZ_Air_Vehicles\data\Wombat\V_F99_W_OD3_CO.paa"};
 			};
 		};
-        hiddenSelections[] = {"camo1","camo2"};
+        hiddenSelections[] = {"camo1","camo2","attach_misslepod","attach_gunpod"};
 		hiddenSelectionsTextures[]=
 		{    "\V_FZ_Air_Vehicles\data\Wombat\V_F99_OD3_CO","\V_FZ_Air_Vehicles\data\Wombat\V_F99_OD3_CO.paa"
 		};

@@ -61,7 +61,7 @@ class textureSources
 				textures[]={"\V_FZ_Air_Vehicles\data\Wombat\V_F99_OD3_CO.paa"};
 			};
 		};
-        hiddenSelections[] = {"camo1","camo2"};
+        hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[]=
 		{    "\V_FZ_Air_Vehicles\data\Wombat\V_F99_OD3_CO"
 		};

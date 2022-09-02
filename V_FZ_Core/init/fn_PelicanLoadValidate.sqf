@@ -4,57 +4,43 @@ _loaded = false;
 	
 switch true do {
 		
-	case (_veh isKindOf "OPTRE_M808B_base"):
-	{
-		_veh attachTo [_pelican,[0,-7.2, -0.4]];
-		_veh setDir 180; 
-		_loaded = true; 
+	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2") : {
+		_veh attachTo [_pelican,[0,-7.2, -0.37105]];
+		_veh setDir 180;
+		_loaded = true;
 	};
-	case (_veh isKindOf "OPTRE_M12A1_LRV" or _veh isKindOf "OPTRE_M12_LRV" or _veh isKindOf "OPTRE_M12G1_LRV" or _veh isKindOf "OPTRE_M12R_AA" or _veh isKindOf "OPTRE_M12_FAV_APC" or _veh isKindOf "OPTRE_M12_FAV"):
+	case (_veh isKindOf "OPTRE_M808S" or _veh isKindOf "OPTRE_M808L") :
 	{
-		_veh attachTo [_pelican,[0.15,-5,.44]]; 
-		_loaded = true;  		
+		_veh attachTo [_pelican,[0,-7.2, -2.7805]];
+		_veh setDir 180;
+		_loaded = true;
 	};
-	case (_veh isKindOf "OPTRE_M813_TT"):
+	case (_veh isKindOf "OPTRE_Wombat" or _veh isKindOf "OPTRE_Wombat_S" or _veh isKindOf "OPTRE_Wombat_B") :
 	{
-		_veh attachTo [_pelican,[0,-5,.25]];  
-		_loaded = true;  
+		_veh attachTo [_pelican,[0,-7.50,-0.60]];
+		_veh setDir 180;
+		_loaded = true;
 	};
-	case (_veh isKindOf "OPTRE_M413_base"):
-	{
-		_veh attachTo [_pelican,[0,-3.6,0.30]];  
-		_loaded = true;  
+	case (_veh isKindOf "OPTRE_M12A1_LRV" or _veh isKindOf "OPTRE_M12_LRV" or _veh isKindOf "OPTRE_M12G1_LRV" or _veh isKindOf "OPTRE_M12R_AA" or _veh isKindOf "OPTRE_M813_TT" or _veh isKindOf "OPTRE_M12_FAV_APC") : {
+		_veh attachTo [_pelican,[0,-3.25,0.25]];
+		//0 = [vehicle player, 15, 0] call BIS_fnc_setPitchBank;
+		_loaded = true;
 	};
-	case (_veh isKindOf "OPTRE_EscapePod"):
-	{
-		_veh attachTo [_pelican,[0,-6,-.80]]; 
-		_loaded = true; 
+	case (_veh isKindOf "OPTRE_M12_FAV" or _veh isKindOf "OPTRE_M914_RV") : {
+		_veh attachTo [_pelican,[0,-4.25,0.70]];
+		_loaded = true;
 	};
-	case (_veh isKindOf "VES_IFV76_A"):
-	{
-		_veh attachTo [_pelican,[0,-4.6,.30]]; 
-		_loaded = true;  
+	case (_veh isKindOf "OPTRE_M413_base") : {
+		_veh attachTo [_pelican,[0,-3.6,0.30]];
+		_loaded = true;
 	};
-	case (_veh isKindOf "Truck_03_base_F"):
-	{
-		_veh attachTo [_pelican,[0,-5,-.4]]; 
-		_loaded = true;  
+	case (_veh isKindOf "OPTRE_M494") : {
+		_veh attachTo [_pelican,[0,-6,-2.57]];
+		_loaded = true;
 	};
-	case (_veh isKindOf "B_Boat_Armed_01_minigun_F"):
-	{
-		_veh attachTo [_pelican,[0,-6.5, -0.37105]];
-		_veh setDir 180; 
-		_loaded = true; 
-	};
-	case (_veh isKindOf "B_Boat_Transport_01_F"):
-	{
-		_veh attachTo [_pelican,[0,-5,.40]];
-		_loaded = true; 
-	};
-	case (_veh isKindOf "optre_hornet_base"):
-	{
-		_veh attachTo [_pelican,[0,-5,-0.8]];  
-		_loaded = true;  
+	case (_veh isKindOf "optre_catfish_unarmed_f" or _veh isKindOf "optre_catfish_mg_f") : {
+		_veh attachTo [_pelican,[0,-4.8,-0.1]];
+		_loaded = true;
 	};
 };
 	

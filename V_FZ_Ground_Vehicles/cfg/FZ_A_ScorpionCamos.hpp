@@ -6,7 +6,7 @@ class textureSources
 				displayName="Desert";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DES_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DES_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DES_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DES_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DES_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DES_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DES_MR_CO.paa"
 				};
 			};
 			class ves_woodland
@@ -15,7 +15,7 @@ class textureSources
 				displayName="Woodland";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_WDL_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_WDL_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_WDL_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_WDL_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_WDL_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_WDL_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_WDL_MR_CO.paa"
 				};
 			};
 			class ves_jungle
@@ -24,7 +24,7 @@ class textureSources
 				displayName="Jungle";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_JUN_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_JUN_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_JUN_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_JUN_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_JUN_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_JUN_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_JUN_MR_CO.paa"
 				};
 			};
 			class ves_urban
@@ -33,7 +33,7 @@ class textureSources
 				displayName="Urban";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_URB_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_URB_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_URB_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_URB_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_URB_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_URB_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_URB_MR_CO.paa"
 				};
 			};
 			class ves_black
@@ -42,7 +42,7 @@ class textureSources
 				displayName="Black";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_BLK_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_BLK_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_BLK_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_BLK_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_BLK_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_BLK_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_BLK_MR_CO.paa"
 				};
 			};
 			class ves_frost
@@ -51,7 +51,7 @@ class textureSources
 				displayName="Frost";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_FRO_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_FRO_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_FRO_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_FRO_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_FRO_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_FRO_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_FRO_MR_CO.paa"
 				};
 			};
 			class ves_tundra
@@ -60,7 +60,7 @@ class textureSources
 				displayName="Tundra";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_TUN_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_TUN_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_TUN_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_TUN_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_TUN_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_TUN_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_TUN_MR_CO.paa"
 				};
 			};
 			class ves_dunes
@@ -69,7 +69,7 @@ class textureSources
 				displayName="Dunes";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DUN_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DUN_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DUN_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DUN_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DUN_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DUN_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_DUN_MR_CO.paa"
 				};
 			};
 			class ves_classic
@@ -78,7 +78,7 @@ class textureSources
 				displayName="Classic";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_CLS_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_CLS_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_CLS_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_CLS_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_CLS_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_CLS_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_CLS_MR_CO.paa"
 				};
 			};
 			class ves_olive
@@ -87,13 +87,13 @@ class textureSources
 				displayName="Olive";
 				textures[]=
 				{
-					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+					"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_MR_CO.paa"
 				};
 			};
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa"
+			"V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_T_CO.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_D3_CO.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa","V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_MR_CO.paa"
 		};
 		
 textureList[] = 

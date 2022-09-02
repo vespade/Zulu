@@ -181,120 +181,108 @@ class CfgWeapons
 // Turrets
 class CfgVehicles
 {
-	class OPTRE_Static_M247H_Shielded_Tripod;
-	class VES_M247H_Turret: OPTRE_Static_M247H_Shielded_Tripod
-	{
-		dlc="FZ";
-		scope=2;
-		scopeCurator=2;
-		author="Vespade";
-		displayName="M247H Mounted Machinegun Turret";
-		crew="VES_Rifleman_MA5B_MAR";
-		icon="";
-		class assembleInfo
-		{
-			primary=1;
-			base="VES_D77HTCI_A";
-			assembleTo="VES_D77HTCIS_A";
-			displayName="D77H-TCI/AV Pelican (MG)";
-			dissasembleTo[]={};
-		};
-	};
-	class OPTRE_Static_M247T_Tripod;
-	class VES_M247T_Turret: OPTRE_Static_M247T_Tripod
-	{
-		dlc="FZ";
-		scope=2;
-		scopeCurator=2;
-		author="Vespade";
-		editorCategory="V_FZ_EdCat_Zulu";
-		crew="VES_Rifleman_MA5B_MAR";
-		class assembleInfo
-		{
-			primary=1;
-			base="";
-			assembleTo="";
-			displayName="";
-			dissasembleTo[]={"VES_M247T_Pack"};
-		};
-		class UserActions
-		{
-			class AirbrakeEngage
-			{
-				animPeriod=5;
-				condition="(player in [gunner this, driver this]) && (alive this)";
-				displayName="<t color='#FE2E2E'>Detach M247 Machinegun";
-				displayNameDefault="<t color='#FE2E2E'>Detach M247 Machinegun";
-				onlyForPlayer=0;
-				position="camera";
-				priority=10;
-				radius=1;
-				showWindow=0;
-				hideOnUse = 1;
-				statement="0 = this spawn V_FZ_fnc_MGDetach";
-				textToolTip="<t color='#FE2E2E'>Detach M247 Machinegun";
-				userActionID=60;
-			};
-		};
-	};
-	class VES_UH144_Turret_L: OPTRE_Static_M247T_Tripod
-	{
-		dlc="FZ";
-		scope=1;
-		scopeCurator=1;
-		author="Vespade";
-		displayName="M247T Side Turret (Left)";
-		crew="VES_Rifleman_MA5B_MAR";
-		icon="";
-	};
-	class VES_UH144_Turret_R: VES_UH144_Turret_L
-	{
-		displayName="M247T Side Turret (Right)";
-	};
-	
-	
-	/*class OPTRE_Static_AA;
-	class VES_Static_AA: OPTRE_Static_AA
-	{
-		dlc="Zulu";
-		author="Vespade";
-		scope=2;
-		scopeCurator=2;
-		editorCategory="V_FZ_EdCat_Zulu";
-		crew="VES_Rifleman_MA5B_MAR";
-		#include "cfg\FZ_E_TurretCamos.hpp"
-	};*/
-	class OPTRE_Static_ATGM;
-	class VES_Static_ATGM: OPTRE_Static_ATGM
-	{
-		dlc="Zulu";
-		author="Vespade";
-		scope=2;
-		scopeCurator=2;
-		editorCategory="V_FZ_EdCat_Zulu";
-		crew="VES_Rifleman_MA5B_MAR";
-		#include "cfg\FZ_B_TurretCamos.hpp"
-	};
-	class OPTRE_Static_Gauss;
-	class VES_Static_M68: OPTRE_Static_Gauss
-	{
-		dlc="Zulu";
-		author="Vespade";
-		scope=2;
-		scopeCurator=2;
-		editorCategory="V_FZ_EdCat_Zulu";
-		crew="VES_Rifleman_MA5B_MAR";
-		#include "cfg\FZ_A_TurretCamos.hpp"
-	};
-	class OPTRE_Static_M41;
-	class VES_Static_M41: OPTRE_Static_M41
-	{
-		dlc="Zulu";
-		author="Vespade";
-		scope=2;
-		scopeCurator=2;
-		editorCategory="V_FZ_EdCat_Zulu";
-		crew="VES_Rifleman_MA5B_MAR";
-		#include "cfg\FZ_A_TurretCamos.hpp"
-	};
+        class OPTRE_Static_M247H_Shielded_Tripod;
+        class VES_M247H_Turret: OPTRE_Static_M247H_Shielded_Tripod
+        {
+            dlc="FZ";
+            scope=2;
+            scopeCurator=2;
+            author="Vespade";
+            displayName="M247H Mounted Machinegun Turret";
+            crew="VES_Rifleman_MA5B_MAR";
+            icon="";
+            class assembleInfo
+            {
+                primary=1;
+                base="VES_D77HTCI_A";
+                assembleTo="VES_D77HTCIS_A";
+                displayName="D77H-TCI/AV Pelican (MG)";
+                dissasembleTo[]={};
+            };
+        };
+        class OPTRE_Static_M247T_Tripod;
+        class VES_M247T_Turret: OPTRE_Static_M247T_Tripod
+        {
+            dlc="FZ";
+            scope=2;
+            scopeCurator=2;
+            author="Vespade";
+            editorCategory="V_FZ_EdCat_Zulu";
+            crew="VES_Rifleman_MA5B_MAR";
+            class assembleInfo
+            {
+                primary=1;
+                base="";
+                assembleTo="";
+                displayName="";
+                dissasembleTo[]={"VES_M247T_Pack"};
+            };
+            class UserActions
+            {
+                class AirbrakeEngage
+                {
+                    animPeriod=5;
+                    condition="(player in [gunner this, driver this]) && (alive this)";
+                    displayName="<t color='#FE2E2E'>Detach M247 Machinegun";
+                    displayNameDefault="<t color='#FE2E2E'>Detach M247 Machinegun";
+                    onlyForPlayer=0;
+                    position="camera";
+                    priority=10;
+                    radius=1;
+                    showWindow=0;
+                    hideOnUse = 1;
+                    statement="0 = this spawn V_FZ_fnc_MGDetach";
+                    textToolTip="<t color='#FE2E2E'>Detach M247 Machinegun";
+                    userActionID=60;
+                };
+            };
+        };
+        class VES_UH144_Turret_L: OPTRE_Static_M247T_Tripod
+        {
+            dlc="FZ";
+            scope=1;
+            scopeCurator=1;
+            author="Vespade";
+            displayName="M247T Side Turret (Left)";
+            crew="VES_Rifleman_MA5B_MAR";
+            icon="";
+        };
+        class VES_UH144_Turret_R: VES_UH144_Turret_L
+        {
+            displayName="M247T Side Turret (Right)";
+        };
+        class OPTRE_Static_ATGM;
+        class VES_Static_ATGM: OPTRE_Static_ATGM
+        {
+            dlc="Zulu";
+            author="Vespade";
+            scope=2;
+            scopeCurator=2;
+            editorCategory="V_FZ_EdCat_Zulu";
+            crew="VES_Rifleman_MA5B_MAR";
+            #include "cfg\FZ_B_TurretCamos.hpp"
+        };
+        class OPTRE_Static_Gauss;
+        class VES_Static_M68: OPTRE_Static_Gauss
+        {
+            dlc="Zulu";
+            author="Vespade";
+            scope=2;
+            scopeCurator=2;
+            editorCategory="V_FZ_EdCat_Zulu";
+            crew="VES_Rifleman_MA5B_MAR";
+            #include "cfg\FZ_A_TurretCamos.hpp"
+        };
+        class OPTRE_Static_M41;
+        class VES_Static_M41: OPTRE_Static_M41
+        {
+            dlc="Zulu";
+            author="Vespade";
+            scope=2;
+            scopeCurator=2;
+            editorCategory="V_FZ_EdCat_Zulu";
+            crew="VES_Rifleman_MA5B_MAR";
+            #include "cfg\FZ_A_TurretCamos.hpp"
+        };
+    };
 };

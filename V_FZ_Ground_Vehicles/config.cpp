@@ -17,42 +17,30 @@ class CfgPatches
 		{
 			// Warthogs
 			"VES_M12",
-			"VES_M12_URF",
 			"VES_M12_SFP",
-			"VES_M12_CPD",
 			
 			"VES_M12_CIV",
 			
 			"VES_M12_LRV",
-			"VES_M12_LRV_URF",
 			"VES_M12_LRV_SFP",
-			"VES_M12_LRV_CPD",
 			
 			"VES_M12G1_LRV",
 			"VES_M12G1_LRV_SFP",
-			"VES_M12G1_LRV_CPD",
 			
 			"VES_M12A1_LRV",
-			"VES_M12A1_LRV_URF",
 			"VES_M12A1_LRV_SFP",
-			"VES_M12A1_LRV_CPD",
 			
 			"VES_M813_TT",
-			"VES_M813_TT_URF",
 			"VES_M813_TT_SFP",
-			"VES_M813_TT_CPD",
 			
 			"VES_M12R_AA",
-			"VES_M12R_AA_URF",
 			"VES_M12R_AA_SFP",
 			
 			"VES_M12_APC_MED",
 			"VES_M12_APC_MED_SFP",
 			
 			"VES_M12_APC",
-			"VES_M12_APC_URF",
 			"VES_M12_APC_SFP",
-			"VES_M12_APC_CPD",
 			
 			// Hyena/Mattock
 			"VES_M19",
@@ -68,25 +56,23 @@ class CfgPatches
 			"VES_HDV134_Tanker_C",
 			"VES_HDV134_Maintenance",
 			
-			"VES_HDV134_TT_CPD",
-			"VES_HDV134_TT_C_CPD",
-			
 			// Tanks
 			"VES_M808B_MBT",
             "VES_M808BM_MBT",
+            "VES_M808S_MBT",
 			
 			// APC
 			"VES_IFV76",
 			"VES_IFV76_M",
 			"VES_IFV76_A",
 			
-			"VES_IFV76_CPD",
-			"VES_IFV76_A_CPD",
-			
             "VES_M413_MGS",
             "VES_M412_IFV",
             
             "VES_M494_ORYX",
+            
+            // Boat
+            "VES_M112_TT"
 			
 		};
 		weapons[]={};
@@ -140,16 +126,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
-	class VES_M12_URF: VES_M12
-	{
-		dlc="Zulu";
-		author="Vespade";
-		side=0;
-		forceInGarage=0;
-		crew="OPTRE_Ins_URF_Rifleman_AR";
-		editorCategory="V_FZ_EdCat_URF";
-		#include "cfg\FZ_C_WarthogCamos.hpp"
-	};
 	class VES_M12_SFP: VES_M12
 	{
 		dlc="Zulu";
@@ -167,20 +143,6 @@ class cfgVehicles
 		class EventHandlers;
 		class UserActions;
 	};
-	class VES_M12_CPD: VES_M12_SFP
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_CPD";
-		editorCategory="V_FZ_EdCat_CPD";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_A_CO"
-		};
-		#include "cfg\FZ_WarthogActions_CPD.hpp"
-	};
-	
 	class VES_M12_CIV: VES_M12_SFP
 	{
 		dlc="Zulu";
@@ -223,14 +185,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
-	class VES_M12_LRV_URF: VES_M12_LRV
-	{
-		side=0;
-		forceInGarage=0;
-		crew="OPTRE_Ins_URF_Rifleman_AR";
-		editorCategory="V_FZ_EdCat_URF";
-		#include "cfg\FZ_C_WarthogCamos.hpp"
-	};
 	class VES_M12_LRV_SFP: VES_M12_LRV
 	{
 		side=2;
@@ -246,20 +200,6 @@ class cfgVehicles
 		class EventHandlers;
 		class UserActions;
 	};
-	class VES_M12_LRV_CPD: VES_M12_LRV_SFP
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_SWAT";
-		editorCategory="V_FZ_EdCat_CPD";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_A_CO"
-		};
-		#include "cfg\FZ_WarthogActions_CPD.hpp"
-	};
-	
 	// Gauss Warthogs
 	class OPTRE_M12G1_LRV;
 	class VES_M12G1_LRV: OPTRE_M12G1_LRV
@@ -302,20 +242,6 @@ class cfgVehicles
 		class UserActions;
 		class EventHandlers;
 	};
-	class VES_M12G1_LRV_CPD: VES_M12G1_LRV_SFP
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_SWAT";
-		editorCategory="V_FZ_EdCat_CPD";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_A_CO"
-		};
-		#include "cfg\FZ_WarthogActions_CPD.hpp"
-	};
-	
 	// Rocket Warthogs
 	class OPTRE_M12A1_LRV;
 	class VES_M12A1_LRV: OPTRE_M12A1_LRV
@@ -343,14 +269,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
-	class VES_M12A1_LRV_URF: VES_M12A1_LRV
-	{
-		side=0;
-		forceInGarage=0;
-		crew="OPTRE_Ins_URF_Rifleman_AR";
-		editorCategory="V_FZ_EdCat_URF";
-		#include "cfg\FZ_D_WarthogCamos.hpp"
-	};
 	class VES_M12A1_LRV_SFP: VES_M12A1_LRV
 	{
 		side=2;
@@ -366,20 +284,6 @@ class cfgVehicles
 		class EventHandlers;
 		class UserActions;
 	};
-	class VES_M12A1_LRV_CPD: VES_M12A1_LRV_SFP
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_SWAT";
-		editorCategory="V_FZ_EdCat_CPD";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_A_CO"
-		};
-		#include "cfg\FZ_WarthogActions_CPD.hpp"
-	};
-	
 	// Transport Warthogs
 	class OPTRE_M813_TT;
 	class VES_M813_TT: OPTRE_M813_TT
@@ -407,14 +311,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_W_WarthogCamos.hpp"
 	};
-	class VES_M813_TT_URF: VES_M813_TT
-	{
-		side=0;
-		forceInGarage=0;
-		crew="OPTRE_Ins_URF_Rifleman_AR";
-		editorCategory="V_FZ_EdCat_URF";
-		#include "cfg\FZ_C_WarthogCamos.hpp"
-	};
 	class VES_M813_TT_SFP: VES_M813_TT
 	{
 		side=2;
@@ -430,20 +326,6 @@ class cfgVehicles
 		class EventHandlers;
 		class UserActions;
 	};
-	class VES_M813_TT_CPD: VES_M813_TT_SFP
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_SWAT";
-		editorCategory="V_FZ_EdCat_CPD";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\Civilian\V_M12_CPD_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_A_CO"
-		};
-		#include "cfg\FZ_WarthogActions_CPD.hpp"
-	};
-	
 	// AA Warthogs
 	class OPTRE_M12R_AA;
 	class VES_M12R_AA: OPTRE_M12R_AA
@@ -573,14 +455,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_X_WarthogCamos.hpp"
 	};
-	class VES_M12_APC_URF: VES_M12_APC
-	{
-		side=0;
-		forceInGarage=0;
-		crew="OPTRE_Ins_URF_Rifleman_AR";
-		editorCategory="V_FZ_EdCat_URF";
-		#include "cfg\FZ_C_WarthogCamos.hpp"
-	};
 	class VES_M12_APC_SFP: VES_M12_APC
 	{
 		side=2;
@@ -631,63 +505,6 @@ class cfgVehicles
 	{
 		dlc="Zulu";
 		author="Vespade";
-		displayName="APC-76 Honeybadger";
-		class Turrets{};
-		class AnimationSources: AnimationSources
-		{
-			class HideTurret
-			{
-				animPeriod = 0.001;
-				initPhase = "true";
-				source = "user";
-			};
-		};
-	};
-	
-	class VES_IFV76_A_CPD: VES_IFV76_A
-	{
-		dlc="Zulu";
-		author="Vespade";
-		scope=1;
-		scopeCurator=1;
-		crew="VES_Rifleman_MA5B_SWAT";
-		editorCategory="V_FZ_EdCat_CPD";
-		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Siren"};
-		side=2;
-		class TextureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_CPD_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_BLK_A_CO.paa",
-			"V_FZ_Ground_Vehicles\data\Honeybadger\V_IFV76_BLK_T_CO.paa"
-		};
-		class UserActions: UserActions
-		{
-			class SirenOn
-			{
-				condition="(alive this) AND (player in [driver this]) AND !(this getVariable [""VES_Warthog_SirenStatus"", false])";
-				displayName="<t color='#FFBF00'>Siren On";
-				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
-				onlyForPlayer=1;
-				position="";
-				radius=6;
-				statement="this setVariable [""VES_Warthog_SirenStatus"", true]; [this] spawn {while {(alive (_this select 0)) AND (_this select 0 getvariable [""VES_Warthog_SirenStatus"", true])} do {_this select 0 say3d [""VES_Siren"", 250, 1]; sleep 3.9;};};";
-			};
-			class SirenOff: SirenOn
-			{
-				condition="(alive this) AND (player in [driver this]) AND (this getVariable ""VES_Warthog_SirenStatus"")";
-				displayName="<t color='#FF8400'>Siren Off";
-				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
-				statement="this setVariable [""VES_Warthog_SirenStatus"", false];";
-			};
-		};
-	};
-	class VES_IFV76_CPD: VES_IFV76_A_CPD
-	{
-		dlc="Zulu";
-		author="Vespade";
-		scope=2;
-		scopeCurator=2;
 		displayName="APC-76 Honeybadger";
 		class Turrets{};
 		class AnimationSources: AnimationSources
@@ -803,6 +620,32 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_B_ScorpionCamos.hpp"
 	};
+    class OPTRE_M808S;
+    class VES_M808S_MBT: OPTRE_M808S
+    {
+		dlc="Zulu";
+		author="Vespade";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_C_ScorpionCamos.hpp"
+	};
+    class OPTRE_M808B2;
+    class VES_M808B2_MBT: OPTRE_M808B2
+    {
+		dlc="Zulu";
+		author="Vespade";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_D_ScorpionCamos.hpp"
+	};
 	
 	// Trucks
 	class O_Truck_03_ammo_F;
@@ -886,26 +729,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_BuffaloCamos.hpp"
 	};
-	/*
-	class VES_HDV134_TT_CPD: VES_HDV134_TT
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_CPD";
-		editorCategory="V_FZ_EdCat_CPD";
-		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Siren"};
-		side=2;
-		class TextureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_CPD_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_BLK_A_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_BLK_S_CO.paa",
-			"\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
-		};				
-	};
-	*/
-	
 	class O_Truck_03_covered_F;
 	class VES_HDV134_TT_C: O_Truck_03_covered_F
 	{
@@ -922,25 +745,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_D_BuffaloCamos.hpp"
 	};
-	/*
-	class VES_HDV134_TT_C_CPD: VES_HDV134_TT_C
-	{
-		dlc="Zulu";
-		author="Vespade";
-		crew="VES_Rifleman_MA5B_CPD";
-		editorCategory="V_FZ_EdCat_CPD";
-		weapons[]={"TruckHorn3", "VES_CPD_Horn", "VES_CPD_Siren"};
-		side=2;
-		class TextureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_CPD_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_BLK_A_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_BLK_S_CO.paa",
-			"\V_FZ_Ground_Vehicles\data\Buffalo\V_HDV134_BLK_C_CO.paa"
-		};		
-	};*/
-	
 	// Hyena/Mattock
 	class O_MRAP_02_F;
 	class O_MRAP_02_gmg_F;
@@ -1043,6 +847,28 @@ class cfgVehicles
 		class TextureSources{};
 		hiddenSelectionsTextures[]={"V_FZ_Ground_Vehicles\data\Mattock\Civilian\V_M19_NEW_CO.paa","V_FZ_Ground_Vehicles\data\Mattock\Civilian\V_M19_NEW_A_CO.paa"};
 	};
-	
-	
+    class optre_catfish_unarmed_f;
+    class VES_M112_TT: optre_catfish_unarmed_f
+    {
+        dlc="Zulu";
+		author="Vespade";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName = "M112 Wet Patrol Craft";
+		editorCategory="V_FZ_EdCat_Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		//fuelConsumptionRate=0.1;
+		ace_refuel_fuelCapacity=150;
+		ace_refuel_hooks[]={{-1.5, -.6, -1.1}};
+		enableRadio=1;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=10500;
+        class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_CatfishCamos.hpp"
+    };	
 };	
