@@ -1,3596 +1,25 @@
+#include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
-	class V_SO_Weapons
+	class V_SO_Magazines
 	{
 		author="Fireteam Zulu";
 		name="Fireteam Zulu: Specialized Ordanance";
 		url="https://discord.gg/fa7Cguk";
 		units[]={};
-		weapons[]=
-		{
-			"OPTRE_M301X",
-			"OPTRE_M319",
-			"OPTRE_MA5B",
-			"OPTRE_MA5BGL",
-			"OPTRE_MA5A",
-			"OPTRE_MA5AGL",
-			"OPTRE_MA5C",
-			"OPTRE_MA5CGL",
-			"OPTRE_MA5K",
-			"OPTRE_MA37",
-			"OPTRE_MA37B",
-			"OPTRE_MA37GL",
-			"OPTRE_MA37BGL",
-			"OPTRE_MA32",
-			"OPTRE_MA32B",
-			"OPTRE_MA32GL",
-			"OPTRE_MA32BGL",
-			"OPTRE_M6G",
-			"OPTRE_M6C",
-			"OPTRE_M6B",
-			"OPTRE_M33",
-			"OPTRE_M33G",
-			"OPTRE_M6D",
-			"OPTRE_M6D_Flashlight",
-			"OPTRE_M6_Laser",
-			"OPTRE_M392_DMR",
-			"OPTRE_M392XD_DMR",
-			"OPTRE_M393_DMR",
-			"OPTRE_M393S_DMR",
-			"OPTRE_M295_BMR",
-			"OPTRE_M28A2",
-			"OPTRE_MRS10X",
-			"OPTRE_CR77",
-			"OPTRE_M14X",
-			"OPTRE_BR55HB",
-			"OPTRE_BR55",
-			"OPTRE_BR55AM",
-			"OPTRE_M7",
-			"OPTRE_M7_Folded",
-			"OPTRE_SRS99D",
-			"OPTRE_SRS99C",
-			"OPTRE_M99",
-			"OPTRE_M48_PAW",
-			"OPTRE_M73",
-			"OPTRE_M73H",
-			"OPTRE_M45",
-			"OPTRE_M45TAC",
-			"OPTRE_M90A"
-		};
-		magazines[]={};
-		ammo[]={};
-		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"OPTRE_Core",
-			"OPTRE_Weapons",
-			"A3_Data_F",
-			"OPTRE_Weapons_Charges",
-			"OPTRE_Weapons_AR",
-			"A3_Data_F_Mark",
-			"OPTRE_Weapons_SMG",
-			"OPTRE_Weapons_Pistol"
-		};
-	};
-};
-class CfgAddons
-{
-	class PreloadAddons
-	{
-		class V_SO_Weapons
-		{
-			list[]=
-			{
-				"V_SO_Weapons"
-			};
-		};
-	};
-};
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class MuzzleSlot;
-class CowsSlot;
-class PointerSlot;
-class UnderBarrelSlot;
-class CfgWeapons
-{
-	class srifle_EBR_F;
-	class OPTRE_LongRifle_Base: srifle_EBR_F
-	{
-		class Single;
-		class WeaponSlotsInfo;
-	};
-	class arifle_Mk20_F;
-	class OPTRE_Rifle_Base: arifle_Mk20_F
-	{
-		class WeaponSlotsInfo;
-		class ItemInfo;
-		class Single;
-		class Burst;
-		class FullAuto;
-	};
-	class NVGoggles;
-	class A3_TVG_S_F: NVGoggles
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		class ItemInfo
-		{
-			type=616;
-			uniformModel="";
-			modelOff="";
-			mass=13;
-		};
-	};
-	class A3_TVG_S_F2: A3_TVG_S_F
-	{
-		displayName="Mark 3 Interface";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3: A3_TVG_S_F
-	{
-		displayName="Mark 4 Interface";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45: A3_TVG_S_F
-	{
-		displayName="Mark 5 Interface";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6: A3_TVG_S_F
-	{
-		displayName="Mark 6 Interface";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7: A3_TVG_S_F
-	{
-		displayName="Mark 7 Interface";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8: A3_TVG_S_F
-	{
-		displayName="Mark 8 Interface";
-		thermalMode[]={7};
-	};
-	class VES_NVG_CNM;
-	class A3_TVG_S_F_CNM: VES_NVG_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_CNM: A3_TVG_S_F_CNM
-	{
-		displayName="Mark 3 Interface (CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_CNM: A3_TVG_S_F_CNM
-	{
-		displayName="Mark 4 Interface (CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_CNM: A3_TVG_S_F_CNM
-	{
-		displayName="Mark 5 Interface (CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_CNM: A3_TVG_S_F_CNM
-	{
-		displayName="Mark 6 Interface (CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_CNM: A3_TVG_S_F_CNM
-	{
-		displayName="Mark 7 Interface (CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_CNM: A3_TVG_S_F_CNM
-	{
-		displayName="Mark 8 Interface (CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_HUL;
-	class A3_TVG_S_F_HUL: VES_NVG_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_HUL: A3_TVG_S_F_HUL
-	{
-		displayName="Mark 3 Interface (HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_HUL: A3_TVG_S_F_HUL
-	{
-		displayName="Mark 4 Interface (HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_HUL: A3_TVG_S_F_HUL
-	{
-		displayName="Mark 5 Interface (HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_HUL: A3_TVG_S_F_HUL
-	{
-		displayName="Mark 6 Interface (HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_HUL: A3_TVG_S_F_HUL
-	{
-		displayName="Mark 7 Interface (HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_HUL: A3_TVG_S_F_HUL
-	{
-		displayName="Mark 8 Interface (HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UL;
-	class A3_TVG_S_F_UL: VES_NVG_UL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UL: A3_TVG_S_F_UL
-	{
-		displayName="Mark 3 Interface (UL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UL: A3_TVG_S_F_UL
-	{
-		displayName="Mark 4 Interface (UL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UL: A3_TVG_S_F_UL
-	{
-		displayName="Mark 5 Interface (UL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UL: A3_TVG_S_F_UL
-	{
-		displayName="Mark 6 Interface (UL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UL: A3_TVG_S_F_UL
-	{
-		displayName="Mark 7 Interface (UL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UL: A3_TVG_S_F_UL
-	{
-		displayName="Mark 8 Interface (UL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_HURS;
-	class A3_TVG_S_F_HURS: VES_NVG_HURS
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (HURS)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_HURS: A3_TVG_S_F_HURS
-	{
-		displayName="Mark 3 Interface (HURS)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_HURS: A3_TVG_S_F_HURS
-	{
-		displayName="Mark 4 Interface (HURS)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_HURS: A3_TVG_S_F_HURS
-	{
-		displayName="Mark 5 Interface (HURS)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_HURS: A3_TVG_S_F_HURS
-	{
-		displayName="Mark 6 Interface (HURS)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_HURS: A3_TVG_S_F_HURS
-	{
-		displayName="Mark 7 Interface (HURS)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_HURS: A3_TVG_S_F_HURS
-	{
-		displayName="Mark 8 Interface (HURS)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_MVI;
-	class A3_TVG_S_F_MVI: VES_NVG_MVI
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (MVI)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_MVI: A3_TVG_S_F_MVI
-	{
-		displayName="Mark 3 Interface (MVI)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_MVI: A3_TVG_S_F_MVI
-	{
-		displayName="Mark 4 Interface (MVI)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_MVI: A3_TVG_S_F_MVI
-	{
-		displayName="Mark 5 Interface (MVI)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_MVI: A3_TVG_S_F_MVI
-	{
-		displayName="Mark 6 Interface (MVI)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_MVI: A3_TVG_S_F_MVI
-	{
-		displayName="Mark 7 Interface (MVI)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_MVI: A3_TVG_S_F_MVI
-	{
-		displayName="Mark 8 Interface (MVI)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA;
-	class A3_TVG_S_F_UA: VES_NVG_UA
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA: A3_TVG_S_F_UA
-	{
-		displayName="Mark 3 Interface (UA)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA: A3_TVG_S_F_UA
-	{
-		displayName="Mark 4 Interface (UA)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA: A3_TVG_S_F_UA
-	{
-		displayName="Mark 5 Interface (UA)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA: A3_TVG_S_F_UA
-	{
-		displayName="Mark 6 Interface (UA)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA: A3_TVG_S_F_UA
-	{
-		displayName="Mark 7 Interface (UA)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA: A3_TVG_S_F_UA
-	{
-		displayName="Mark 8 Interface (UA)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UAB;
-	class A3_TVG_S_F_UAB: VES_NVG_UAB
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UAB)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UAB: A3_TVG_S_F_UAB
-	{
-		displayName="Mark 3 Interface (UAB)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UAB: A3_TVG_S_F_UAB
-	{
-		displayName="Mark 4 Interface (UAB)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UAB: A3_TVG_S_F_UAB
-	{
-		displayName="Mark 5 Interface (UAB)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UAB: A3_TVG_S_F_UAB
-	{
-		displayName="Mark 6 Interface (UAB)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UAB: A3_TVG_S_F_UAB
-	{
-		displayName="Mark 7 Interface (UAB)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UAB: A3_TVG_S_F_UAB
-	{
-		displayName="Mark 8 Interface (UAB)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_HURS_CNM;
-	class A3_TVG_S_F_HURS_CNM: VES_NVG_HURS_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (HURS/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_HURS_CNM: A3_TVG_S_F_HURS_CNM
-	{
-		displayName="Mark 3 Interface (HURS/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_HURS_CNM: A3_TVG_S_F_HURS_CNM
-	{
-		displayName="Mark 4 Interface (HURS/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_HURS_CNM: A3_TVG_S_F_HURS_CNM
-	{
-		displayName="Mark 5 Interface (HURS/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_HURS_CNM: A3_TVG_S_F_HURS_CNM
-	{
-		displayName="Mark 6 Interface (HURS/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_HURS_CNM: A3_TVG_S_F_HURS_CNM
-	{
-		displayName="Mark 7 Interface (HURS/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_HURS_CNM: A3_TVG_S_F_HURS_CNM
-	{
-		displayName="Mark 8 Interface (HURS/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_HURS_HUL;
-	class A3_TVG_S_F_HURS_HUL: VES_NVG_HURS_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (HURS/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_HURS_HUL: A3_TVG_S_F_HURS_HUL
-	{
-		displayName="Mark 3 Interface (HURS/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_HURS_HUL: A3_TVG_S_F_HURS_HUL
-	{
-		displayName="Mark 4 Interface (HURS/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_HURS_HUL: A3_TVG_S_F_HURS_HUL
-	{
-		displayName="Mark 5 Interface (HURS/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_HURS_HUL: A3_TVG_S_F_HURS_HUL
-	{
-		displayName="Mark 6 Interface (HURS/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_HURS_HUL: A3_TVG_S_F_HURS_HUL
-	{
-		displayName="Mark 7 Interface (HURS/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_HURS_HUL: A3_TVG_S_F_HURS_HUL
-	{
-		displayName="Mark 8 Interface (HURS/HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_MVI_CNM;
-	class A3_TVG_S_F_MVI_CNM: VES_NVG_MVI_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (MVI/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_MVI_CNM: A3_TVG_S_F_MVI_CNM
-	{
-		displayName="Mark 3 Interface (MVI/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_MVI_CNM: A3_TVG_S_F_MVI_CNM
-	{
-		displayName="Mark 4 Interface (MVI/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_MVI_CNM: A3_TVG_S_F_MVI_CNM
-	{
-		displayName="Mark 5 Interface (MVI/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_MVI_CNM: A3_TVG_S_F_MVI_CNM
-	{
-		displayName="Mark 6 Interface (MVI/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_MVI_CNM: A3_TVG_S_F_MVI_CNM
-	{
-		displayName="Mark 7 Interface (MVI/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_MVI_CNM: A3_TVG_S_F_MVI_CNM
-	{
-		displayName="Mark 8 Interface (MVI/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_MVI_HUL;
-	class A3_TVG_S_F_MVI_HUL: VES_NVG_MVI_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (MVI/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_MVI_HUL: A3_TVG_S_F_MVI_HUL
-	{
-		displayName="Mark 3 Interface (MVI/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_MVI_HUL: A3_TVG_S_F_MVI_HUL
-	{
-		displayName="Mark 4 Interface (MVI/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_MVI_HUL: A3_TVG_S_F_MVI_HUL
-	{
-		displayName="Mark 5 Interface (MVI/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_MVI_HUL: A3_TVG_S_F_MVI_HUL
-	{
-		displayName="Mark 6 Interface (MVI/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_MVI_HUL: A3_TVG_S_F_MVI_HUL
-	{
-		displayName="Mark 7 Interface (MVI/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_MVI_HUL: A3_TVG_S_F_MVI_HUL
-	{
-		displayName="Mark 8 Interface (MVI/HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_MVI_UL_CNM;
-	class A3_TVG_S_F_MVI_UL_CNM: VES_NVG_MVI_UL_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (MVI/UL/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_MVI_UL_CNM: A3_TVG_S_F_MVI_UL_CNM
-	{
-		displayName="Mark 3 Interface (MVI/UL/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_MVI_UL_CNM: A3_TVG_S_F_MVI_UL_CNM
-	{
-		displayName="Mark 4 Interface (MVI/UL/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_MVI_UL_CNM: A3_TVG_S_F_MVI_UL_CNM
-	{
-		displayName="Mark 5 Interface (MVI/UL/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_MVI_UL_CNM: A3_TVG_S_F_MVI_UL_CNM
-	{
-		displayName="Mark 6 Interface (MVI/UL/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_MVI_UL_CNM: A3_TVG_S_F_MVI_UL_CNM
-	{
-		displayName="Mark 7 Interface (MVI/UL/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_MVI_UL_CNM: A3_TVG_S_F_MVI_UL_CNM
-	{
-		displayName="Mark 8 Interface (MVI/UL/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_MVI_UL_HUL;
-	class A3_TVG_S_F_MVI_UL_HUL: VES_NVG_MVI_UL_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (MVI/UL/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_MVI_UL_HUL: A3_TVG_S_F_MVI_UL_HUL
-	{
-		displayName="Mark 3 Interface (MVI/UL/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_MVI_UL_HUL: A3_TVG_S_F_MVI_UL_HUL
-	{
-		displayName="Mark 4 Interface (MVI/UL/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_MVI_UL_HUL: A3_TVG_S_F_MVI_UL_HUL
-	{
-		displayName="Mark 5 Interface (MVI/UL/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_MVI_UL_HUL: A3_TVG_S_F_MVI_UL_HUL
-	{
-		displayName="Mark 6 Interface (MVI/UL/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_MVI_UL_HUL: A3_TVG_S_F_MVI_UL_HUL
-	{
-		displayName="Mark 7 Interface (MVI/UL/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_MVI_UL_HUL: A3_TVG_S_F_MVI_UL_HUL
-	{
-		displayName="Mark 8 Interface (MVI/UL/HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_MVI_UL;
-	class A3_TVG_S_F_MVI_UL: VES_NVG_MVI_UL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (MVI/UL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_MVI_UL: A3_TVG_S_F_MVI_UL
-	{
-		displayName="Mark 3 Interface (MVI/UL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_MVI_UL: A3_TVG_S_F_MVI_UL
-	{
-		displayName="Mark 4 Interface (MVI/UL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_MVI_UL: A3_TVG_S_F_MVI_UL
-	{
-		displayName="Mark 5 Interface (MVI/UL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_MVI_UL: A3_TVG_S_F_MVI_UL
-	{
-		displayName="Mark 6 Interface (MVI/UL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_MVI_UL: A3_TVG_S_F_MVI_UL
-	{
-		displayName="Mark 7 Interface (MVI/UL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_MVI_UL: A3_TVG_S_F_MVI_UL
-	{
-		displayName="Mark 8 Interface (MVI/UL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA_CNM;
-	class A3_TVG_S_F_UA_CNM: VES_NVG_UA_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA_CNM: A3_TVG_S_F_UA_CNM
-	{
-		displayName="Mark 3 Interface (UA/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA_CNM: A3_TVG_S_F_UA_CNM
-	{
-		displayName="Mark 4 Interface (UA/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA_CNM: A3_TVG_S_F_UA_CNM
-	{
-		displayName="Mark 5 Interface (UA/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA_CNM: A3_TVG_S_F_UA_CNM
-	{
-		displayName="Mark 6 Interface (UA/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA_CNM: A3_TVG_S_F_UA_CNM
-	{
-		displayName="Mark 7 Interface (UA/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA_CNM: A3_TVG_S_F_UA_CNM
-	{
-		displayName="Mark 8 Interface (UA/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA_HUL;
-	class A3_TVG_S_F_UA_HUL: VES_NVG_UA_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA_HUL: A3_TVG_S_F_UA_HUL
-	{
-		displayName="Mark 3 Interface (UA/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA_HUL: A3_TVG_S_F_UA_HUL
-	{
-		displayName="Mark 4 Interface (UA/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA_HUL: A3_TVG_S_F_UA_HUL
-	{
-		displayName="Mark 5 Interface (UA/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA_HUL: A3_TVG_S_F_UA_HUL
-	{
-		displayName="Mark 6 Interface (UA/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA_HUL: A3_TVG_S_F_UA_HUL
-	{
-		displayName="Mark 7 Interface (UA/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA_HUL: A3_TVG_S_F_UA_HUL
-	{
-		displayName="Mark 8 Interface (UA/HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA_HURS;
-	class A3_TVG_S_F_UA_HURS: VES_NVG_UA_HURS
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA/HURS)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA_HURS: A3_TVG_S_F_UA_HURS
-	{
-		displayName="Mark 3 Interface (UA/HURS)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA_HURS: A3_TVG_S_F_UA_HURS
-	{
-		displayName="Mark 4 Interface (UA/HURS)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA_HURS: A3_TVG_S_F_UA_HURS
-	{
-		displayName="Mark 5 Interface (UA/HURS)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA_HURS: A3_TVG_S_F_UA_HURS
-	{
-		displayName="Mark 6 Interface (UA/HURS)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA_HURS: A3_TVG_S_F_UA_HURS
-	{
-		displayName="Mark 7 Interface (UA/HURS)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA_HURS: A3_TVG_S_F_UA_HURS
-	{
-		displayName="Mark 8 Interface (UA/HURS)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA_HURS_CNM;
-	class A3_TVG_S_F_UA_HURS_CNM: VES_NVG_UA_HURS_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA/HURS/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA_HURS_CNM: A3_TVG_S_F_UA_HURS_CNM
-	{
-		displayName="Mark 3 Interface (UA/HURS/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA_HURS_CNM: A3_TVG_S_F_UA_HURS_CNM
-	{
-		displayName="Mark 4 Interface (UA/HURS/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA_HURS_CNM: A3_TVG_S_F_UA_HURS_CNM
-	{
-		displayName="Mark 5 Interface (UA/HURS/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA_HURS_CNM: A3_TVG_S_F_UA_HURS_CNM
-	{
-		displayName="Mark 6 Interface (UA/HURS/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA_HURS_CNM: A3_TVG_S_F_UA_HURS_CNM
-	{
-		displayName="Mark 7 Interface (UA/HURS/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA_HURS_CNM: A3_TVG_S_F_UA_HURS_CNM
-	{
-		displayName="Mark 8 Interface (UA/HURS/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA_HURS_HUL;
-	class A3_TVG_S_F_UA_HURS_HUL: VES_NVG_UA_HURS_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA/HURS/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA_HURS_HUL: A3_TVG_S_F_UA_HURS_HUL
-	{
-		displayName="Mark 3 Interface (UA/HURS/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA_HURS_HUL: A3_TVG_S_F_UA_HURS_HUL
-	{
-		displayName="Mark 4 Interface (UA/HURS/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA_HURS_HUL: A3_TVG_S_F_UA_HURS_HUL
-	{
-		displayName="Mark 5 Interface (UA/HURS/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA_HURS_HUL: A3_TVG_S_F_UA_HURS_HUL
-	{
-		displayName="Mark 6 Interface (UA/HURS/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA_HURS_HUL: A3_TVG_S_F_UA_HURS_HUL
-	{
-		displayName="Mark 7 Interface (UA/HURS/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA_HURS_HUL: A3_TVG_S_F_UA_HURS_HUL
-	{
-		displayName="Mark 8 Interface (UA/HURS/HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA_UL;
-	class A3_TVG_S_F_UA_UL: VES_NVG_UA_UL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA/UL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA_UL: A3_TVG_S_F_UA_UL
-	{
-		displayName="Mark 3 Interface (UA/UL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA_UL: A3_TVG_S_F_UA_UL
-	{
-		displayName="Mark 4 Interface (UA/UL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA_UL: A3_TVG_S_F_UA_UL
-	{
-		displayName="Mark 5 Interface (UA/UL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA_UL: A3_TVG_S_F_UA_UL
-	{
-		displayName="Mark 6 Interface (UA/UL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA_UL: A3_TVG_S_F_UA_UL
-	{
-		displayName="Mark 7 Interface (UA/UL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA_UL: A3_TVG_S_F_UA_UL
-	{
-		displayName="Mark 8 Interface (UA/UL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UA_UL_CNM;
-	class A3_TVG_S_F_UA_UL_CNM: VES_NVG_UA_UL_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UA/UL/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UA_UL_CNM: A3_TVG_S_F_UA_UL_CNM
-	{
-		displayName="Mark 3 Interface (UA/UL/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UA_UL_CNM: A3_TVG_S_F_UA_UL_CNM
-	{
-		displayName="Mark 4 Interface (UA/UL/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UA_UL_CNM: A3_TVG_S_F_UA_UL_CNM
-	{
-		displayName="Mark 5 Interface (UA/UL/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UA_UL_CNM: A3_TVG_S_F_UA_UL_CNM
-	{
-		displayName="Mark 6 Interface (UA/UL/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UA_UL_CNM: A3_TVG_S_F_UA_UL_CNM
-	{
-		displayName="Mark 7 Interface (UA/UL/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UA_UL_CNM: A3_TVG_S_F_UA_UL_CNM
-	{
-		displayName="Mark 8 Interface (UA/UL/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UAB_CNM;
-	class A3_TVG_S_F_UAB_CNM: VES_NVG_UAB_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UAB/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UAB_CNM: A3_TVG_S_F_UAB_CNM
-	{
-		displayName="Mark 3 Interface (UAB/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UAB_CNM: A3_TVG_S_F_UAB_CNM
-	{
-		displayName="Mark 4 Interface (UAB/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UAB_CNM: A3_TVG_S_F_UAB_CNM
-	{
-		displayName="Mark 5 Interface (UAB/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UAB_CNM: A3_TVG_S_F_UAB_CNM
-	{
-		displayName="Mark 6 Interface (UAB/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UAB_CNM: A3_TVG_S_F_UAB_CNM
-	{
-		displayName="Mark 7 Interface (UAB/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UAB_CNM: A3_TVG_S_F_UAB_CNM
-	{
-		displayName="Mark 8 Interface (UAB/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UAB_HUL;
-	class A3_TVG_S_F_UAB_HUL: VES_NVG_UAB_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UAB/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UAB_HUL: A3_TVG_S_F_UAB_HUL
-	{
-		displayName="Mark 3 Interface (UAB/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UAB_HUL: A3_TVG_S_F_UAB_HUL
-	{
-		displayName="Mark 4 Interface (UAB/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UAB_HUL: A3_TVG_S_F_UAB_HUL
-	{
-		displayName="Mark 5 Interface (UAB/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UAB_HUL: A3_TVG_S_F_UAB_HUL
-	{
-		displayName="Mark 6 Interface (UAB/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UAB_HUL: A3_TVG_S_F_UAB_HUL
-	{
-		displayName="Mark 7 Interface (UAB/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UAB_HUL: A3_TVG_S_F_UAB_HUL
-	{
-		displayName="Mark 8 Interface (UAB/HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UAB_UL;
-	class A3_TVG_S_F_UAB_UL: VES_NVG_UAB_UL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UAB/UL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UAB_UL: A3_TVG_S_F_UAB_UL
-	{
-		displayName="Mark 3 Interface (UAB/UL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UAB_UL: A3_TVG_S_F_UAB_UL
-	{
-		displayName="Mark 4 Interface (UAB/UL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UAB_UL: A3_TVG_S_F_UAB_UL
-	{
-		displayName="Mark 5 Interface (UAB/UL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UAB_UL: A3_TVG_S_F_UAB_UL
-	{
-		displayName="Mark 6 Interface (UAB/UL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UAB_UL: A3_TVG_S_F_UAB_UL
-	{
-		displayName="Mark 7 Interface (UAB/UL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UAB_UL: A3_TVG_S_F_UAB_UL
-	{
-		displayName="Mark 8 Interface (UAB/UL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UAB_UL_CNM;
-	class A3_TVG_S_F_UAB_UL_CNM: VES_NVG_UAB_UL_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UAB/UL/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UAB_UL_CNM: A3_TVG_S_F_UAB_UL_CNM
-	{
-		displayName="Mark 3 Interface (UAB/UL/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UAB_UL_CNM: A3_TVG_S_F_UAB_UL_CNM
-	{
-		displayName="Mark 4 Interface (UAB/UL/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UAB_UL_CNM: A3_TVG_S_F_UAB_UL_CNM
-	{
-		displayName="Mark 5 Interface (UAB/UL/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UAB_UL_CNM: A3_TVG_S_F_UAB_UL_CNM
-	{
-		displayName="Mark 6 Interface (UAB/UL/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UAB_UL_CNM: A3_TVG_S_F_UAB_UL_CNM
-	{
-		displayName="Mark 7 Interface (UAB/UL/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UAB_UL_CNM: A3_TVG_S_F_UAB_UL_CNM
-	{
-		displayName="Mark 8 Interface (UAB/UL/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UAB_UL_HUL;
-	class A3_TVG_S_F_UAB_UL_HUL: VES_NVG_UAB_UL_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UAB/UL/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UAB_UL_HUL: A3_TVG_S_F_UAB_UL_HUL
-	{
-		displayName="Mark 3 Interface (UAB/UL/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UAB_UL_HUL: A3_TVG_S_F_UAB_UL_HUL
-	{
-		displayName="Mark 4 Interface (UAB/UL/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UAB_UL_HUL: A3_TVG_S_F_UAB_UL_HUL
-	{
-		displayName="Mark 5 Interface (UAB/UL/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UAB_UL_HUL: A3_TVG_S_F_UAB_UL_HUL
-	{
-		displayName="Mark 6 Interface (UAB/UL/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UAB_UL_HUL: A3_TVG_S_F_UAB_UL_HUL
-	{
-		displayName="Mark 7 Interface (UAB/UL/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UAB_UL_HUL: A3_TVG_S_F_UAB_UL_HUL
-	{
-		displayName="Mark 8 Interface (UAB/UL/HUL)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UL_CNM;
-	class A3_TVG_S_F_UL_CNM: VES_NVG_UL_CNM
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UL/CNM)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UL_CNM: A3_TVG_S_F_UL_CNM
-	{
-		displayName="Mark 3 Interface (UL/CNM)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UL_CNM: A3_TVG_S_F_UL_CNM
-	{
-		displayName="Mark 4 Interface (UL/CNM)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UL_CNM: A3_TVG_S_F_UL_CNM
-	{
-		displayName="Mark 5 Interface (UL/CNM)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UL_CNM: A3_TVG_S_F_UL_CNM
-	{
-		displayName="Mark 6 Interface (UL/CNM)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UL_CNM: A3_TVG_S_F_UL_CNM
-	{
-		displayName="Mark 7 Interface (UL/CNM)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UL_CNM: A3_TVG_S_F_UL_CNM
-	{
-		displayName="Mark 8 Interface (UL/CNM)";
-		thermalMode[]={7};
-	};
-	class VES_NVG_UL_HUL;
-	class A3_TVG_S_F_UL_HUL: VES_NVG_UL_HUL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		displayName="Mark 2 Interface (UL/HUL)";
-		ace_nightVision_grain=0;
-		ace_nightVision_blur=0;
-		ace_nightVision_radBlur=0;
-		ace_nightvision_border="";
-		ace_nightvision_bluRadius=0.050000001;
-		ace_nightvision_generation=4;
-		ace_nightvision_eyeCups=0;
-		thermalMode[]={0,1,2,3,4,5,6,7};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-	};
-	class A3_TVG_S_F2_UL_HUL: A3_TVG_S_F_UL_HUL
-	{
-		displayName="Mark 3 Interface (UL/HUL)";
-		thermalMode[]={0,1,3,4,7};
-	};
-	class A3_TVG_S_F3_UL_HUL: A3_TVG_S_F_UL_HUL
-	{
-		displayName="Mark 4 Interface (UL/HUL)";
-		thermalMode[]={0,1,6,7};
-	};
-	class A3_TVG_S_F45_UL_HUL: A3_TVG_S_F_UL_HUL
-	{
-		displayName="Mark 5 Interface (UL/HUL)";
-		thermalMode[]={0,1,7};
-	};
-	class A3_TVG_S_F6_UL_HUL: A3_TVG_S_F_UL_HUL
-	{
-		displayName="Mark 6 Interface (UL/HUL)";
-		thermalMode[]={0};
-	};
-	class A3_TVG_S_F7_UL_HUL: A3_TVG_S_F_UL_HUL
-	{
-		displayName="Mark 7 Interface (UL/HUL)";
-		thermalMode[]={6};
-	};
-	class A3_TVG_S_F8_UL_HUL: A3_TVG_S_F_UL_HUL
-	{
-		displayName="Mark 8 Interface (UL/HUL)";
-		thermalMode[]={7};
-	};
-	class UGL_F;
-	class OPTRE_M301X: UGL_F
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M301X Grenade Launcher";
-		descriptionShort="M301X GL";
-		baseWeapon="OPTRE_M301X";
+		weapons[]={};
 		magazines[]=
 		{
-			"UGL_8Gauge_Pellet",
-			"UGL_8Gauge_Slug",
-			"UGL_8Gauge_Beanbag",
-			"UGL_FlareBlue_F",
-			"3Rnd_UGL_8Gauge_Pellet",
-			"3Rnd_UGL_8Gauge_Slug",
-			"3Rnd_UGL_8Gauge_Beanbag",
-			"3Rnd_UGL_FlareBlue_F",
-			"1Rnd_HE_Grenade_shell",
-			"UGL_FlareWhite_F",
-			"UGL_FlareGreen_F",
-			"UGL_FlareRed_F",
-			"UGL_FlareYellow_F",
-			"UGL_FlareCIR_F",
-			"1Rnd_Smoke_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeGreen_Grenade_shell",
-			"1Rnd_SmokeYellow_Grenade_shell",
-			"1Rnd_SmokePurple_Grenade_shell",
-			"1Rnd_SmokeBlue_Grenade_shell",
-			"1Rnd_SmokeOrange_Grenade_shell",
-			"3Rnd_HE_Grenade_shell",
-			"3Rnd_UGL_FlareWhite_F",
-			"3Rnd_UGL_FlareGreen_F",
-			"3Rnd_UGL_FlareRed_F",
-			"3Rnd_UGL_FlareYellow_F",
-			"3Rnd_UGL_FlareCIR_F",
-			"3Rnd_Smoke_Grenade_shell",
-			"3Rnd_SmokeRed_Grenade_shell",
-			"3Rnd_SmokeGreen_Grenade_shell",
-			"3Rnd_SmokeYellow_Grenade_shell",
-			"3Rnd_SmokePurple_Grenade_shell",
-			"3Rnd_SmokeBlue_Grenade_shell",
-			"3Rnd_SmokeOrange_Grenade_shell"
-		};
-		cameraDir="OP_look";
-		discreteDistanceInitIndex=0;
-		reloadAction="GestureReloadMXUGL";
-		useExternalOptic=0;
-		useModelOptics=0;
-		discreteDistance[]={100,200,300};
-		discreteDistanceCameraPoint[]=
-		{
-			"OP_eye",
-			"OP_eye2",
-			"OP_eye3"
-		};
-	};
-	class OPTRE_M319: OPTRE_Rifle_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M319X Individual Grenade Launcher";
-		magazines[]=
-		{
-			"UGL_8Gauge_Pellet",
-			"UGL_8Gauge_Slug",
-			"UGL_8Gauge_Beanbag",
-			"UGL_FlareBlue_F",
-			"UGL_Potato",
-			"3Rnd_UGL_8Gauge_Pellet",
-			"3Rnd_UGL_8Gauge_Slug",
-			"3Rnd_UGL_8Gauge_Beanbag",
-			"3Rnd_UGL_FlareBlue_F",
-			"1Rnd_HE_Grenade_shell",
-			"UGL_FlareWhite_F",
-			"UGL_FlareGreen_F",
-			"UGL_FlareRed_F",
-			"UGL_FlareYellow_F",
-			"UGL_FlareCIR_F",
-			"1Rnd_Smoke_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeGreen_Grenade_shell",
-			"1Rnd_SmokeYellow_Grenade_shell",
-			"1Rnd_SmokePurple_Grenade_shell",
-			"1Rnd_SmokeBlue_Grenade_shell",
-			"1Rnd_SmokeOrange_Grenade_shell",
-			"3Rnd_HE_Grenade_shell",
-			"3Rnd_UGL_FlareWhite_F",
-			"3Rnd_UGL_FlareGreen_F",
-			"3Rnd_UGL_FlareRed_F",
-			"3Rnd_UGL_FlareYellow_F",
-			"3Rnd_UGL_FlareCIR_F",
-			"3Rnd_Smoke_Grenade_shell",
-			"3Rnd_SmokeRed_Grenade_shell",
-			"3Rnd_SmokeGreen_Grenade_shell",
-			"3Rnd_SmokeYellow_Grenade_shell",
-			"3Rnd_SmokePurple_Grenade_shell",
-			"3Rnd_SmokeBlue_Grenade_shell",
-			"3Rnd_SmokeOrange_Grenade_shell"
-		};
-		magazineWell[]=
-		{
-			"UGL_40x36",
-			"CBA_40mm_M203",
-			"CBA_40mm_EGLM"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=88;
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class OPTRE_MA5B: OPTRE_Rifle_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA5BX ICWS Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
 			"OPTRE_60Rnd_762x51_Mag_AP",
 			"OPTRE_60Rnd_762x51_Mag_APT",
 			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=84;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_ma5_smartlink",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",
-					1,
-					1,
-					2000
-				};
-				begin2[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",
-					1,
-					1,
-					2000
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.34,
-					"begin2",
-					0.33000001
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_trees",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_forest",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_interior",
-							1.5848932,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_meadows",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_houses",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",
-					1,
-					1,
-					400
-				};
-				begin2[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",
-					1,
-					1,
-					400
-				};
-				begin3[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_03",
-					1,
-					1,
-					400
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.34
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_trees",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_forest",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_tail_interior",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_meadows",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_houses",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			reloadTime=0.064999998;
-			dispersion=0.00075000001;
-			recoil="recoil_single_trg";
-			recoilProne="recoil_single_prone_trg";
-			minRange=2;
-			minRangeProbab=0.0099999998;
-			midRange=200;
-			midRangeProbab=0.0099999998;
-			maxRange=400;
-			maxRangeProbab=0.0099999998;
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",
-					1,
-					1,
-					2000
-				};
-				begin2[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",
-					1,
-					1,
-					2000
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.34,
-					"begin2",
-					0.33000001
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_trees",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_forest",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_interior",
-							1.5848932,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_meadows",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_houses",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",
-					1,
-					1,
-					400
-				};
-				begin2[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",
-					1,
-					1,
-					400
-				};
-				begin3[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_03",
-					1,
-					1,
-					400
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.34
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_trees",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_forest",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_tail_interior",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_meadows",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_houses",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			reloadTime=0.064999998;
-			dispersion=0.00085000001;
-			recoil="recoil_auto_trg";
-			recoilProne="recoil_auto_prone_trg";
-			minRange=2;
-			minRangeProbab=0.0099999998;
-			midRange=200;
-			midRangeProbab=0.0099999998;
-			maxRange=400;
-			maxRangeProbab=0.0099999998;
-		};
-	};
-	class OPTRE_MA5BGL: OPTRE_MA5B
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA5BX + M301 GL Assault Rifle";
-		baseWeapon="OPTRE_MA5BXGL";
-		model="\OPTRE_Weapons\AR\MA5BGL.p3d";
-		muzzles[]=
-		{
-			"this",
-			"OPTRE_M301X"
-		};
-		class OPTRE_M301X: OPTRE_M301X
-		{
-		};
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=117;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_ma5_smartlink",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",
-					1,
-					1,
-					2000
-				};
-				begin2[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",
-					1,
-					1,
-					2000
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.34,
-					"begin2",
-					0.33000001
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_trees",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_forest",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_interior",
-							1.5848932,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_meadows",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_houses",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",
-					1,
-					1,
-					400
-				};
-				begin2[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",
-					1,
-					1,
-					400
-				};
-				begin3[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_03",
-					1,
-					1,
-					400
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.34
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_trees",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_forest",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_tail_interior",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_meadows",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_houses",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			reloadTime=0.064999998;
-			dispersion=0.00075000001;
-			recoil="recoil_single_trg";
-			recoilProne="recoil_single_prone_trg";
-			minRange=2;
-			minRangeProbab=0.0099999998;
-			midRange=200;
-			midRangeProbab=0.0099999998;
-			maxRange=400;
-			maxRangeProbab=0.0099999998;
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",
-					1,
-					1,
-					2000
-				};
-				begin2[]=
-				{
-					"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",
-					1,
-					1,
-					2000
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.34,
-					"begin2",
-					0.33000001
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_trees",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_forest",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_interior",
-							1.5848932,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_meadows",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_houses",
-							1,
-							1,
-							1400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",
-					1,
-					1,
-					400
-				};
-				begin2[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",
-					1,
-					1,
-					400
-				};
-				begin3[]=
-				{
-					"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_03",
-					1,
-					1,
-					400
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.34
-				};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_trees",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_forest",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_tail_interior",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_meadows",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_houses",
-							1,
-							1,
-							400
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			reloadTime=0.064999998;
-			dispersion=0.00085000001;
-			recoil="recoil_auto_trg";
-			recoilProne="recoil_auto_prone_trg";
-			minRange=2;
-			minRangeProbab=0.0099999998;
-			midRange=200;
-			midRangeProbab=0.0099999998;
-			maxRange=400;
-			maxRangeProbab=0.0099999998;
-		};
-	};
-	class OPTRE_MA5A: OPTRE_MA5B
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA3AX ICWS Assault Rifle";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=80;
-		};
-	};
-	class OPTRE_MA5AGL: OPTRE_MA5BGL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA3AX + M301 GL Assault Rifle";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=113;
-		};
-	};
-	class OPTRE_MA5C: OPTRE_MA5B
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA5CX ICWS Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag_JHPT",
 			"OPTRE_32Rnd_762x51_Mag_AP",
 			"OPTRE_32Rnd_762x51_Mag_APT",
 			"OPTRE_32Rnd_762x51_Mag_JHP",
 			"OPTRE_32Rnd_762x51_Mag_JHPT",
 			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
-		};
-		HUD_TotalPosibleBullet=32;
-		class Single: Single
-		{
-			reloadTime=0.094999999;
-		};
-		class FullAuto: FullAuto
-		{
-			reloadTime=0.094999999;
-		};
-	};
-	class OPTRE_MA5CGL: OPTRE_MA5BGL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA5CX + M301 GL Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
-		};
-		HUD_TotalPosibleBullet=32;
-		class Single: Single
-		{
-			reloadTime=0.094999999;
-		};
-		class FullAuto: FullAuto
-		{
-			reloadTime=0.094999999;
-		};
-	};
-	class OPTRE_MA5K: OPTRE_MA5C
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA5KX ICWS Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
-		};
-		class Single: Single
-		{
-			reloadTime=0.050000001;
-		};
-		class FullAuto: FullAuto
-		{
-			reloadTime=0.050000001;
-		};
-	};
-	class OPTRE_MA37: OPTRE_MA5C
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA37X ICWS Assault Rifle";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=77;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"OPTRE_MA37_Smartlink_Scope"
-				};
-			};
-		};
-	};
-	class OPTRE_MA37B: OPTRE_MA37
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA37BX ICWS Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT"
-		};
-	};
-	class OPTRE_MA37GL: OPTRE_MA5CGL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA37X + M301 GL Assault Rifle";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=110;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]={};
-			};
-		};
-	};
-	class OPTRE_MA37BGL: OPTRE_MA5BGL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA37BX + M301 GL Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=110;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"OPTRE_MA37_Smartlink_Scope"
-				};
-			};
-		};
-	};
-	class OPTRE_MA32: OPTRE_MA37
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA32X ICWS Assault Rifle";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=73;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_ma5_smartlink",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-		};
-	};
-	class OPTRE_MA32B: OPTRE_MA32
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA32BX ICWS Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT"
-		};
-	};
-	class OPTRE_MA32GL: OPTRE_MA5CGL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA32X + M301 GL Assault Rifle";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=99.599998;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_ma5_smartlink",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-		};
-	};
-	class OPTRE_MA32BGL: OPTRE_MA5BGL
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MA32BXGL + M301 GL Assault Rifle";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_AP",
-			"OPTRE_60Rnd_762x51_Mag_APT",
-			"OPTRE_60Rnd_762x51_Mag_JHP",
-			"OPTRE_60Rnd_762x51_Mag_JHPT"
-		};
-	};
-	class hgun_Pistol_heavy_01_F;
-	class OPTRE_Handgun_Base: hgun_Pistol_heavy_01_F
-	{
-		class single;
-		class WeaponSlotsInfo;
-	};
-	class OPTRE_M6G: OPTRE_Handgun_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M6GX Magnum";
-		magazines[]=
-		{
-			"OPTRE_8Rnd_127x40_Mag",
-			"OPTRE_8Rnd_127x40_Mag_Tracer",
-			"OPTRE_8Rnd_127x40_Mag_AP",
-			"OPTRE_8Rnd_127x40_Mag_APT",
-			"OPTRE_8Rnd_127x40_Mag_HE",
-			"OPTRE_8Rnd_127x40_Mag_HET",
-			"OPTRE_8Rnd_127x40_Mag_HVAP",
-			"OPTRE_8Rnd_127x40_Mag_HVAPT",
-			"OPTRE_8Rnd_127x40_Mag_JHP",
-			"OPTRE_8Rnd_127x40_Mag_JHPT",
-			"OPTRE_8Rnd_127x40_Mag_SAPHE",
-			"OPTRE_8Rnd_127x40_Mag_SAPHET",
-			"OPTRE_8Rnd_127x40_Mag_SS",
-			"OPTRE_8Rnd_127x40_Mag_SST",
-			"OPTRE_8Rnd_127x40_Mag_NARQ",
-			"OPTRE_8Rnd_127x40_Mag_NARQT",
-			"OPTRE_8Rnd_127x40_Mag_FR",
-			"OPTRE_8Rnd_127x40_Mag_FG"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=39;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_holosight_blk_f",
-					"optic_yorris",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m6c_scope",
-					"optre_m6g_scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6g_flashlight",
-					"OPTRE_M6_Laser",
-					"acc_flashlight_pistol"
-				};
-			};
-		};
-		class Single: Single
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"50cal_Type115_Shot_SoundSet",
-					"50cal_Type115_Tail_SoundSet",
-					"50cal_Type115_interiorTail_SoundSet"
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				SoundSetShot[]=
-				{
-					"DMR06_silencerShot_SoundSet",
-					"DMR06_silencerTail_SoundSet",
-					"DMR06_silencerInteriorTail_SoundSet"
-				};
-			};
-		};
-	};
-	class OPTRE_M6C: OPTRE_M6G
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M6C/SOCOM Magnum";
-		magazines[]=
-		{
-			"OPTRE_12Rnd_127x40_Mag",
-			"OPTRE_12Rnd_127x40_Mag_Tracer",
-			"OPTRE_12Rnd_127x40_Mag_AP",
-			"OPTRE_12Rnd_127x40_Mag_APT",
-			"OPTRE_12Rnd_127x40_Mag_HE",
-			"OPTRE_12Rnd_127x40_Mag_HET",
-			"OPTRE_12Rnd_127x40_Mag_HVAP",
-			"OPTRE_12Rnd_127x40_Mag_HVAPT",
-			"OPTRE_12Rnd_127x40_Mag_JHP",
-			"OPTRE_12Rnd_127x40_Mag_JHPT",
-			"OPTRE_12Rnd_127x40_Mag_SAPHE",
-			"OPTRE_12Rnd_127x40_Mag_SAPHET",
-			"OPTRE_12Rnd_127x40_Mag_SS",
-			"OPTRE_12Rnd_127x40_Mag_SST",
-			"OPTRE_12Rnd_127x40_Mag_NARQ",
-			"OPTRE_12Rnd_127x40_Mag_NARQT",
-			"OPTRE_16Rnd_127x40_Mag",
-			"OPTRE_16Rnd_127x40_Mag_Tracer",
-			"OPTRE_16Rnd_127x40_Mag_AP",
-			"OPTRE_16Rnd_127x40_Mag_APT",
-			"OPTRE_16Rnd_127x40_Mag_HE",
-			"OPTRE_16Rnd_127x40_Mag_HET",
-			"OPTRE_16Rnd_127x40_Mag_HVAP",
-			"OPTRE_16Rnd_127x40_Mag_HVAPT",
-			"OPTRE_16Rnd_127x40_Mag_JHP",
-			"OPTRE_16Rnd_127x40_Mag_JHPT",
-			"OPTRE_16Rnd_127x40_Mag_SAPHE",
-			"OPTRE_16Rnd_127x40_Mag_SAPHET",
-			"OPTRE_16Rnd_127x40_Mag_SS",
-			"OPTRE_16Rnd_127x40_Mag_SST",
-			"OPTRE_16Rnd_127x40_Mag_NARQ",
-			"OPTRE_16Rnd_127x40_Mag_NARQT"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=39;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6_silencer",
-					"optre_m6c_compensator"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_holosight_blk_f",
-					"optic_yorris",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m6c_scope"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6g_flashlight",
-					"OPTRE_M6_Laser",
-					"optre_m6c_laser",
-					"acc_flashlight_pistol"
-				};
-			};
-		};
-		class Single: Single
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]=
-				{
-					"closure1",
-					0.5,
-					"closure2",
-					0.5
-				};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				soundSetShot[]=
-				{
-					"50cal_Type115_Shot_SoundSet",
-					"50cal_Type115_Tail_SoundSet",
-					"50cal_Type115_interiorTail_SoundSet"
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				SoundSetShot[]=
-				{
-					"DMR06_silencerShot_SoundSet",
-					"DMR06_silencerTail_SoundSet",
-					"DMR06_silencerInteriorTail_SoundSet"
-				};
-			};
-		};
-	};
-	class OPTRE_M6B: OPTRE_M6G
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M6B Magnum";
-		magazines[]=
-		{
-			"OPTRE_8Rnd_127x40_Mag",
-			"OPTRE_8Rnd_127x40_Mag_Tracer",
-			"OPTRE_8Rnd_127x40_Mag_AP",
-			"OPTRE_8Rnd_127x40_Mag_APT",
-			"OPTRE_8Rnd_127x40_Mag_HE",
-			"OPTRE_8Rnd_127x40_Mag_HET",
-			"OPTRE_8Rnd_127x40_Mag_HVAP",
-			"OPTRE_8Rnd_127x40_Mag_HVAPT",
-			"OPTRE_8Rnd_127x40_Mag_JHP",
-			"OPTRE_8Rnd_127x40_Mag_JHPT",
-			"OPTRE_8Rnd_127x40_Mag_SAPHE",
-			"OPTRE_8Rnd_127x40_Mag_SAPHET",
-			"OPTRE_8Rnd_127x40_Mag_SS",
-			"OPTRE_8Rnd_127x40_Mag_SST",
-			"OPTRE_8Rnd_127x40_Mag_NARQ",
-			"OPTRE_8Rnd_127x40_Mag_NARQT",
-			"OPTRE_8Rnd_127x40_Mag_FR",
-			"OPTRE_8Rnd_127x40_Mag_FG"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=39;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6_silencer"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6g_flashlight",
-					"OPTRE_M6_Laser",
-					"acc_flashlight_pistol"
-				};
-			};
-		};
-	};
-	class OPTRE_M6D: OPTRE_M6G
-	{
-		dlc="SO";
-		author="Fireteam Zulu & Forky";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M6D PDWS Magnum";
-		baseWeapon="OPTRE_M6D";
-		model="\V_SO_Weapons\data\M6\M6D";
-		magazines[]=
-		{
-			"OPTRE_12Rnd_127x40_Mag",
-			"OPTRE_12Rnd_127x40_Mag_Tracer",
-			"OPTRE_12Rnd_127x40_Mag_AP",
-			"OPTRE_12Rnd_127x40_Mag_APT",
-			"OPTRE_12Rnd_127x40_Mag_HE",
-			"OPTRE_12Rnd_127x40_Mag_HET",
-			"OPTRE_12Rnd_127x40_Mag_HVAP",
-			"OPTRE_12Rnd_127x40_Mag_HVAPT",
-			"OPTRE_12Rnd_127x40_Mag_JHP",
-			"OPTRE_12Rnd_127x40_Mag_JHPT",
-			"OPTRE_12Rnd_127x40_Mag_SAPHE",
-			"OPTRE_12Rnd_127x40_Mag_SAPHET",
-			"OPTRE_12Rnd_127x40_Mag_SS",
-			"OPTRE_12Rnd_127x40_Mag_SST",
-			"OPTRE_12Rnd_127x40_Mag_NARQ",
-			"OPTRE_12Rnd_127x40_Mag_NARQT"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=47;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_holosight_blk_f",
-					"optic_yorris",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m6c_scope",
-					"OPTRE_M6D_Smartlink"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6d_flashlight",
-					"optre_m6g_flashlight",
-					"OPTRE_M6_Laser",
-					"acc_flashlight_pistol"
-				};
-			};
-		};
-	};
-	class hgun_Pistol_heavy_02_F;
-	class SO_M33_Base: hgun_Pistol_heavy_02_F
-	{
-		class Single;
-	};
-	class OPTRE_M33: SO_M33_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="Model 33 'Godfather' Handgun";
-		baseWeapon="OPTRE_M33";
-		model="\A3\Weapons_F_EPA\Pistols\Pistol_heavy_02\Pistol_heavy_02_F";
-		descriptionShort="12.7x40mm Revolver";
-		Eye="";
-		Glasses="";
-		ODST_1="";
-		pictureWire="\V_SO_Weapons\data\M33\V_M33_HUD_CA";
-		HUD_BulletInARows=1;
-		HUD_TotalPosibleBullet=6;
-		hiddenSelectionsTextures[]=
-		{
-			"\V_SO_Weapons\data\M33\V_M33_CO",
-			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
-		};
-		class Single: Single
-		{
-			class StandardSound
-			{
-				soundSetShot[]=
-				{
-					"HunterShotgun_01_SawedOff_Shot_SoundSet",
-					"HunterShotgun_01_Tail_SoundSet"
-				};
-			};
-		};
-		magazines[]=
-		{
-			"OPTRE_6Rnd_127x40_Cyl",
-			"OPTRE_6Rnd_127x40_Cyl_Tracer",
-			"OPTRE_6Rnd_127x40_Cyl_AP",
-			"OPTRE_6Rnd_127x40_Cyl_APT",
-			"OPTRE_6Rnd_127x40_Cyl_HE",
-			"OPTRE_6Rnd_127x40_Cyl_HET",
-			"OPTRE_6Rnd_127x40_Cyl_HVAP",
-			"OPTRE_6Rnd_127x40_Cyl_HVAPT",
-			"OPTRE_6Rnd_127x40_Cyl_JHP",
-			"OPTRE_6Rnd_127x40_Cyl_JHPT",
-			"OPTRE_6Rnd_127x40_Cyl_SAPHE",
-			"OPTRE_6Rnd_127x40_Cyl_SAPHET",
-			"OPTRE_6Rnd_127x40_Cyl_SS",
-			"OPTRE_6Rnd_127x40_Cyl_NARQ",
-			"OPTRE_6Rnd_127x40_Cyl_FR",
-			"OPTRE_6Rnd_127x40_Cyl_FG"
-		};
-		magazineWell[]={};
-		class WeaponSlotsInfo
-		{
-			mass=37;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_holosight_blk_f",
-					"optic_yorris",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_m393_eotech",
-					"optre_m6c_scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m6g_flashlight",
-					"acc_flashlight_pistol",
-					"OPTRE_M6D_Flashlight"
-				};
-			};
-		};
-	};
-	class OPTRE_M33G: OPTRE_M33
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="Model 33 'Godfather' Handgun (Gold)";
-		baseWeapon="OPTRE_M33G";
-		hiddenSelectionsTextures[]=
-		{
-			"\V_SO_Weapons\data\M33\V_M33_G_CO",
-			"\A3\Weapons_F_EPA\Pistols\Pistol_Heavy_02\data\Pistol_Heavy_02_mag_co"
-		};
-	};
-	class OPTRE_M6G_Flashlight;
-	class OPTRE_M6D_Flashlight: OPTRE_M6G_Flashlight
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M6D Flashlight";
-		model="\V_SO_Weapons\data\M6\M6D_Flashlight";
-	};
-	class InventoryFlashLightItem_Base_F;
-	class acc_pointer_IR;
-	class OPTRE_M6_Laser: acc_pointer_IR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		picture="\OPTRE_weapons\pistol\icons\flashlight.paa";
-		displayName="M6 Laser";
-		descriptionShort="IR Laser for the M6 Handgun series";
-		model="\OPTRE_Weapons\Pistol\m6g_flashlight.p3d";
-		inertia=0.1;
-		class ItemInfo: InventoryFlashLightItem_Base_F
-		{
-			mass=1;
-			class Pointer
-			{
-				irLaserPos="flash dir";
-				irLaserEnd="flash";
-				irDistance=25;
-			};
-		};
-	};
-	class OPTRE_M392_DMR: OPTRE_LongRifle_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M392X DMR";
-		model="v_so_weapons\data\m392\m392";
-		magazines[]=
-		{
-			"OPTRE_15Rnd_762x51_Mag",
-			"OPTRE_15Rnd_762x51_Mag_Tracer",
-			"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_SST",
 			"OPTRE_15Rnd_762x51_Mag_AP",
 			"OPTRE_15Rnd_762x51_Mag_APT",
 			"OPTRE_15Rnd_762x51_Mag_JHP",
@@ -3598,1445 +27,19 @@ class CfgWeapons
 			"OPTRE_15Rnd_762x51_Mag_SS",
 			"OPTRE_15Rnd_762x51_Mag_SST",
 			"OPTRE_15Rnd_762x51_Mag_FS",
-			"OPTRE_15Rnd_762x51_Mag_FST"
-		};
-		magazineWell[]={};
-		modes[]=
-		{
-			"Single",
-			"FullAuto"
-		};
-		class FullAuto: Single
-		{
-			aiDispersionCoefX=2;
-			aiDispersionCoefY=3;
-			burst=1;
-			autoFire=1;
-			dispersion=0.00050000002;
-			displayName="Full";
-			maxRange=80;
-			maxRangeProbab=0.039999999;
-			midRange=30;
-			midRangeProbab=0.57999998;
-			minRange=1;
-			minRangeProbab=0.2;
-			recoil="recoil_auto_primary_3outof10";
-			recoilProne="recoil_auto_primary_prone_3outof10";
-			reloadTime=0.079999998;
-			sound[]=
-			{
-				"",
-				10,
-				1
-			};
-			soundBurst=0;
-			soundContinuous=0;
-			soundEnd[]=
-			{
-				"sound",
-				1
-			};
-			textureType="fullAuto";
-		};
-		class WeaponSlotsInfo
-		{
-			mass=126;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"OPTRE_BMR_Laser"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[]=
-				{
-					"bipod_01_f_blk",
-					"bipod_02_f_blk",
-					"bipod_03_f_blk"
-				};
-			};
-		};
-	};
-	class OPTRE_M392XD_DMR: OPTRE_M392_DMR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="Vespade's M392XD";
-		baseWeapon="OPTRE_M392XD_DMR";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"V_SO_Weapons\data\M392\M392\dmr_a_co"
-		};
-	};
-	class OPTRE_M393_DMR: OPTRE_M392_DMR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M395X DMR";
-		class Single;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=134;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class OPTRE_M393S_DMR: OPTRE_M393_DMR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M395X/S DMR";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=128;
-		};
-	};
-	class OPTRE_M295_BMR: OPTRE_M393_DMR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M295X BMR";
-		magazines[]=
-		{
-			"OPTRE_15Rnd_762x51_Mag",
-			"OPTRE_15Rnd_762x51_Mag_Tracer",
-			"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_15Rnd_762x51_Mag_AP",
-			"OPTRE_15Rnd_762x51_Mag_APT",
-			"OPTRE_15Rnd_762x51_Mag_JHP",
-			"OPTRE_15Rnd_762x51_Mag_JHPT",
-			"OPTRE_15Rnd_762x51_Mag_SS",
-			"OPTRE_15Rnd_762x51_Mag_FS",
 			"OPTRE_15Rnd_762x51_Mag_FST",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=123;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser",
-					"OPTRE_BMR_Flashlight"
-				};
-			};
-		};
-	};
-	class OPTRE_M28A2: OPTRE_M393_DMR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M28A2 IMWS DMR";
-		baseWeapon="OPTRE_M28A2";
-		model="\A3\Weapons_F_Exp\Rifles\ARX\ARX_F";
-		picture="\A3\Weapons_F_Exp\Rifles\ARX\Data\UI\arifle_ARX_blk_F_X_CA";
-		pictureWire="\V_SO_Weapons\data\M28\V_M28_HUD_CA";
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_Exp\Rifles\ARX\data\anim\arx.rtm"
-		};
-		muzzles[]=
-		{
-			"this",
-			"Secondary"
-		};
-		reloadAction="GestureReloadARX";
-		magazines[]=
-		{
-			"OPTRE_15Rnd_762x51_Mag",
-			"OPTRE_15Rnd_762x51_Mag_Tracer",
-			"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_15Rnd_762x51_Mag_AP",
-			"OPTRE_15Rnd_762x51_Mag_APT",
-			"OPTRE_15Rnd_762x51_Mag_JHP",
-			"OPTRE_15Rnd_762x51_Mag_JHPT",
-			"OPTRE_15Rnd_762x51_Mag_SS",
-			"OPTRE_15Rnd_762x51_Mag_FS",
-			"OPTRE_15Rnd_762x51_Mag_FST",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_32Rnd_762x51_Mag_AP",
-			"OPTRE_32Rnd_762x51_Mag_APT",
-			"OPTRE_32Rnd_762x51_Mag_JHP",
-			"OPTRE_32Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag_SS",
-			"OPTRE_32Rnd_762x51_Mag_SST"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\V_SO_Weapons\Data\M28\V_M28_CO",
-			"\A3\Weapons_F_Exp\Rifles\ARX\Data\arifle_ARX_blk_02_F_co"
-		};
-		class Single: Single
-		{
-			class SilencedSound
-			{
-				SoundSetShot[]=
-				{
-					"DMR03_silencerShot_SoundSet",
-					"DMR03_silencerTail_SoundSet",
-					"DMR03_silencerInteriorTail_SoundSet"
-				};
-			};
-			class StandardSound
-			{
-				soundSetShot[]=
-				{
-					"DMR03_Shot_SoundSet",
-					"DMR03_tail_SoundSet",
-					"DMR03_InteriorTail_SoundSet"
-				};
-			};
-		};
-		class Secondary: OPTRE_M6G
-		{
-			displayName="M6MWS Magnum";
-			recoil="recoil_ARX_secondary";
-			reloadAction="GestureReloadARX2";
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=163;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class OPTRE_MRS10X: OPTRE_M393_DMR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="MRS10X DMR";
-		baseWeapon="OPTRE_MRS10X";
-		model="\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\DMR_02_F";
-		picture="\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\UI\gear_DMR_02_X_CA";
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\data\Anim\DMR_02.rtm"
-		};
-		reloadAction="GestureReloadDMR02";
-		recoil="recoil_dmr_02";
-		Eye="";
-		Glasses="";
-		ODST_1="";
-		magazines[]=
-		{
-			"OPTRE_10Rnd_86x70_Mag",
-			"OPTRE_10Rnd_86x70_Mag_Tracer",
-			"OPTRE_10Rnd_86x70_Mag_AP",
-			"OPTRE_10Rnd_86x70_Mag_APT",
-			"OPTRE_10Rnd_86x70_Mag_JHP",
-			"OPTRE_10Rnd_86x70_Mag_JHPT",
-			"OPTRE_10Rnd_86x70_Mag_SS",
-			"OPTRE_10Rnd_86x70_Mag_FS",
-			"OPTRE_10Rnd_86x70_Mag_FST",
-			"OPTRE_20Rnd_86x70_Mag",
-			"OPTRE_20Rnd_86x70_Mag_Tracer",
-			"OPTRE_20Rnd_86x70_Mag_AP",
-			"OPTRE_20Rnd_86x70_Mag_APT",
-			"OPTRE_20Rnd_86x70_Mag_JHP",
-			"OPTRE_20Rnd_86x70_Mag_JHPT",
-			"OPTRE_20Rnd_86x70_Mag_SS"
-		};
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"Camo2"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"\V_SO_Weapons\Data\MRS10\V_MRS10.rvmat",
-			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\Data\DMR_02_02.rvmat"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\V_SO_Weapons\Data\MRS10\V_MRS10_CO",
-			"\V_SO_Weapons\Data\MRS10\V_MRS10_A_CO"
-		};
-		class Single: Single
-		{
-			class SilencedSound
-			{
-				SoundSetShot[]=
-				{
-					"DMR02_silencerShot_SoundSet",
-					"DMR02_silencerTail_SoundSet",
-					"DMR02_silencerInteriorTail_SoundSet"
-				};
-			};
-			class StandardSound
-			{
-				soundSetShot[]=
-				{
-					"DMR02_Shot_SoundSet",
-					"DMR02_tail_SoundSet",
-					"DMR02_InteriorTail_SoundSet"
-				};
-			};
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=143;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class OPTRE_CR77: OPTRE_M393_DMR
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="CR77 Tactical Rifle";
-		baseWeapon="OPTRE_CR77";
-		model="\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\DMR_05_F";
-		picture="\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\Data\UI\gear_DMR_05_X_CA";
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\data\Anim\DMR_05.rtm"
-		};
-		reloadAction="GestureReloadDMR05";
-		Eye="";
-		Glasses="";
-		ODST_1="";
-		pictureWire="\V_SO_Weapons\data\CR77\V_CR77_HUD_CA";
-		recoil="recoil_dmr_05";
-		magazines[]=
-		{
-			"OPTRE_10Rnd_86x70_Mag",
-			"OPTRE_10Rnd_86x70_Mag_Tracer",
-			"OPTRE_10Rnd_86x70_Mag_AP",
-			"OPTRE_10Rnd_86x70_Mag_APT",
-			"OPTRE_10Rnd_86x70_Mag_JHP",
-			"OPTRE_10Rnd_86x70_Mag_JHPT",
-			"OPTRE_10Rnd_86x70_Mag_SS",
-			"OPTRE_10Rnd_86x70_Mag_SST",
-			"OPTRE_10Rnd_86x70_Mag_FS",
-			"OPTRE_10Rnd_86x70_Mag_FST",
-			"OPTRE_20Rnd_86x70_Mag",
-			"OPTRE_20Rnd_86x70_Mag_Tracer",
-			"OPTRE_20Rnd_86x70_Mag_AP",
-			"OPTRE_20Rnd_86x70_Mag_APT",
-			"OPTRE_20Rnd_86x70_Mag_JHP",
-			"OPTRE_20Rnd_86x70_Mag_JHPT",
-			"OPTRE_20Rnd_86x70_Mag_SS",
-			"OPTRE_20Rnd_86x70_Mag_SST"
-		};
-		magazineWell[]={};
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"Camo2"
-		};
-		hiddenSelectionsMaterials[]=
-		{
-			"\V_SO_Weapons\Data\CR77\V_CR77.rvmat",
-			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_05\Data\DMR_05_02.rvmat"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"\V_SO_Weapons\Data\CR77\V_CR77_CO",
-			"\V_SO_Weapons\Data\CR77\V_CR77_A_CO"
-		};
-		class Single: Single
-		{
-			class SilencedSound
-			{
-				soundSetShot[]=
-				{
-					"DMR05_silencerShot_SoundSet",
-					"DMR05_silencerTail_SoundSet",
-					"DMR05_silencerInteriorTail_SoundSet"
-				};
-			};
-			class StandardSound
-			{
-				soundSetShot[]=
-				{
-					"DMR05_Shot_SoundSet",
-					"DMR05_tail_SoundSet",
-					"DMR05_InteriorTail_SoundSet"
-				};
-			};
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=206;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class srifle_DMR_06_camo_F;
-	class OPTRE_M14X: srifle_DMR_06_camo_F
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="Mk14X DMR";
-		baseWeapon="OPTRE_M14X";
-		hiddenSelectionsTextures[]=
-		{
-			"\V_SO_Weapons\Data\Mk14\V_M14X_CO",
-			"\V_SO_Weapons\Data\Mk14\V_M14X_A_CO"
-		};
-		Eye="";
-		Glasses="";
-		ODST_1="";
-		pictureWire="\V_SO_Weapons\data\Mk14\V_M14X_HUD_CA";
-		picture="\V_SO_Weapons\data\Mk14\V_M14X_CA";
-		magazines[]=
-		{
-			"OPTRE_15Rnd_762x51_Mag",
-			"OPTRE_15Rnd_762x51_Mag_Tracer",
-			"OPTRE_15Rnd_762x51_Mag_AP",
-			"OPTRE_15Rnd_762x51_Mag_APT",
-			"OPTRE_15Rnd_762x51_Mag_JHP",
-			"OPTRE_15Rnd_762x51_Mag_JHPT",
-			"OPTRE_15Rnd_762x51_Mag_SS",
-			"OPTRE_15Rnd_762x51_Mag_FS",
-			"OPTRE_15Rnd_762x51_Mag_FST"
-		};
-		magazineWell[]={};
-		class WeaponSlotsInfo
-		{
-			mass=92;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_h_mg_blk_f",
-					"muzzle_snds_l",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[]=
-				{
-					"bipod_01_f_blk",
-					"bipod_02_f_blk",
-					"bipod_03_f_blk"
-				};
-			};
-		};
-	};
-	class OPTRE_BR55HB: OPTRE_Rifle_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="BR55XHB Battle Rifle";
-		baseWeapon="OPTRE_BR55XHB";
-		model="\OPTRE_Weapons\BR\BRHB";
-		modes[]=
-		{
-			"Single",
-			"Burst",
-			"FullAuto"
-		};
-		magazines[]=
-		{
-			"OPTRE_36Rnd_95x40_Mag",
-			"OPTRE_36Rnd_95x40_Mag_Tracer",
-			"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
-			"OPTRE_36Rnd_95x40_Mag_JHP",
-			"OPTRE_36Rnd_95x40_Mag_JHPT",
-			"OPTRE_36Rnd_95x40_Mag_SAPHE",
-			"OPTRE_36Rnd_95x40_Mag_SAPHET",
-			"OPTRE_36Rnd_95x40_Mag_SS"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=85;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_h_mg_blk_f",
-					"muzzle_snds_l",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-		class FullAuto: Burst
-		{
-			aiDispersionCoefX=2;
-			aiDispersionCoefY=3;
-			burst=1;
-			autoFire=1;
-			dispersion=0.00050000002;
-			displayName="Full";
-			maxRange=80;
-			maxRangeProbab=0.039999999;
-			midRange=30;
-			midRangeProbab=0.57999998;
-			minRange=1;
-			minRangeProbab=0.2;
-			recoil="recoil_auto_primary_3outof10";
-			recoilProne="recoil_auto_primary_prone_3outof10";
-			reloadTime=0.079999998;
-			sound[]=
-			{
-				"",
-				10,
-				1
-			};
-			soundBurst=0;
-			soundContinuous=0;
-			soundEnd[]=
-			{
-				"sound",
-				1
-			};
-			textureType="fullAuto";
-		};
-	};
-	class OPTRE_BR55: OPTRE_BR55HB
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="BR55X Battle Rifle";
-		baseWeapon="OPTRE_BR55X";
-		model="\OPTRE_Weapons\BR\BR";
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=82;
-		};
-	};
-	class OPTRE_BR55AM: OPTRE_BR55HB
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="BR55AM 'Fafnir' Battle Rifle";
-		baseWeapon="OPTRE_BR55AM";
-		recoil="recoil_dmr_04";
-		Eye="OPTRE_EYE_HUD_AmmoCount_PistolSmart";
-		Glasses="OPTRE_GLASS_HUD_AmmoCount_PistolODST";
-		ODST_1="OPTRE_ODST_HUD_AmmoCount_PistolODST";
-		HUD_BulletInARows=1;
-		HUD_TotalPosibleBullet=16;
-		magazines[]=
-		{
-			"OPTRE_16Rnd_127x40_Mag",
-			"OPTRE_16Rnd_127x40_Mag_AP",
-			"OPTRE_16Rnd_127x40_Mag_APT",
-			"OPTRE_16Rnd_127x40_Mag_HE",
-			"OPTRE_16Rnd_127x40_Mag_HET",
-			"OPTRE_16Rnd_127x40_Mag_HVAP",
-			"OPTRE_16Rnd_127x40_Mag_HVAPT",
-			"OPTRE_16Rnd_127x40_Mag_JHP",
-			"OPTRE_16Rnd_127x40_Mag_JHPT",
-			"OPTRE_16Rnd_127x40_Mag_SAPHE",
-			"OPTRE_16Rnd_127x40_Mag_SAPHET",
-			"OPTRE_16Rnd_127x40_Mag_SS",
-			"OPTRE_16Rnd_127x40_Mag_NARQ"
-		};
-	};
-	class SMG_01_F;
-	class OPTRE_SubMachineGun_Base: SMG_01_F
-	{
-		class WeaponSlotsInfo;
-	};
-	class OPTRE_M7: OPTRE_SubMachineGun_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M7X Caseless SMG";
-		recoil="recoil_M7X";
-		class Single;
-		class FullAuto;
-		magazines[]=
-		{
-			"OPTRE_60Rnd_5x23mm_Mag",
-			"OPTRE_60Rnd_5x23mm_Mag_Tracer",
-			"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_5x23mm_Mag_FMJ",
-			"OPTRE_60Rnd_5x23mm_Mag_FMJT",
-			"OPTRE_60Rnd_5x23mm_Mag_HV",
-			"OPTRE_60Rnd_5x23mm_Mag_HVT",
-			"OPTRE_60Rnd_5x23mm_Mag_JHP",
-			"OPTRE_60Rnd_5x23mm_Mag_JHPT",
-			"OPTRE_60Rnd_5x23mm_Mag_SS",
-			"OPTRE_60Rnd_5x23mm_Mag_SST",
-			"OPTRE_48Rnd_5x23mm_Mag",
-			"OPTRE_48Rnd_5x23mm_Mag_Tracer",
-			"OPTRE_48Rnd_5x23mm_Mag_Tracer_Yellow",
-			"OPTRE_48Rnd_5x23mm_Mag_FMJ",
-			"OPTRE_48Rnd_5x23mm_Mag_FMJT",
-			"OPTRE_48Rnd_5x23mm_Mag_HV",
-			"OPTRE_48Rnd_5x23mm_Mag_HVT",
-			"OPTRE_48Rnd_5x23mm_Mag_JHP",
-			"OPTRE_48Rnd_5x23mm_Mag_JHPT",
-			"OPTRE_48Rnd_5x23mm_Mag_SS",
-			"OPTRE_48Rnd_5x23mm_Mag_SST"
-		};
-		magazineWell[]={};
-		class WeaponSlotsInfo
-		{
-			mass=29;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_b",
-					"muzzle_snds_h_mg_blk_f",
-					"ace_muzzle_mzls_b",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"optre_m7_laser",
-					"optre_m7_flashlight",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class OPTRE_M7_Folded: OPTRE_M7
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M7X Caseless SMG (Folded)";
-		descriptionShort="UNSC M7X SMG (Folded)";
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton"
-		};
-		reloadAction="GestureReloadPistol";
-		type=2;
-		class Single: Single
-		{
-			recoil="recoil_single_mx";
-			recoilProne="recoil_single_prone_mx";
-		};
-		class FullAuto: FullAuto
-		{
-			recoil="recoil_single_mx";
-			recoilProne="recoil_single_prone_mx";
-		};
-	};
-	class OPTRE_SRS99D: OPTRE_LongRifle_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="SRS99DX-S2 Sniper Rifle";
-		magazines[]=
-		{
-			"OPTRE_4Rnd_145x114_APFSDS_Mag",
-			"OPTRE_4Rnd_145x114_Mag_APFSDST",
-			"OPTRE_4Rnd_145x114_HEDP_Mag",
-			"OPTRE_4Rnd_145x114_Mag_HEDPT",
-			"OPTRE_4Rnd_145x114_HVAP_Mag",
-			"OPTRE_4Rnd_145x114_Mag_HVAPT",
-			"OPTRE_4Rnd_145x114_Mag_SS",
-			"OPTRE_4Rnd_145x114_Mag_SST",
-			"OPTRE_4Rnd_145x114_Mag_NARQ",
-			"OPTRE_4Rnd_145x114_Mag_NARQT",
-			"OPTRE_4Rnd_145x114_Mag_DOC"
-		};
-		class Single;
-		class WeaponSlotsInfo
-		{
-			mass=237;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_srs99d_suppressor"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class OPTRE_SRS99C: OPTRE_SRS99D
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="SRS99CX-S2 AM Sniper Rifle";
-	};
-	class OPTRE_M99: OPTRE_SRS99D
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M99A2S3 Stanchion Gauss Rifle";
-		baseWeapon="OPTRE_M99";
-		magazines[]=
-		{
-			"OPTRE_3Rnd_54mm_Mag"
-		};
-		model="\OPTRE_Weapons\Sniper\M99";
-		modelOptics="\OPTRE_Weapons\Sniper\Sniper_Oracle10_Optic";
-		opticType=1;
-		optics=1;
-		opticsID=1;
-		useModelOptics=1;
-		opticsZoomMin=0.0099999998;
-		opticsZoomMax=0.25;
-		opticsZoomInit=0.25;
-		discretefov[]={0.25,0.050000001,0.025,0.0099999998};
-		discreteinitIndex=0;
-		discreteDistance[]={50,100,150,200,250,300,350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1050,1100,1150,1200,1250,1300,1350,1400,1450,1500,1550,1600,1650,1700,1750,1800,1850,1900,1950,2000};
-		discreteDistanceInitIndex=1;
-		distanceZoomMin=100;
-		distanceZoomMax=2000;
-		opticsPPEffects[]=
-		{
-			"OpticsCHAbera1",
-			"OpticsBlur1"
-		};
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={0,1,5,6,7};
-		opticsFlare=1;
-		opticsDisablePeripherialVision=1;
-		nameSound="cannon";
-		class Single: Single
-		{
-			class StandardSound
-			{
-				soundSetShot[]=
-				{
-					"Cannon120mm_Shot_SoundSet",
-					"Cannon120mm_Tail_SoundSet"
-				};
-			};
-		};
-		reloadTime=1.3;
-		class LinkedItems
-		{
-			item="ace_muzzle_mzls_b";
-			slot="MuzzleSlot";
-		};
-		class WeaponSlotsInfo
-		{
-			mass=441;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"ace_muzzle_mzls_b"
-				};
-			};
-		};
-	};
-	class launch_RPG32_F;
-	class OPTRE_M48_PAW: launch_RPG32_F
-	{
-		dlc="SO";
-		author="Fireteam Zulu & Shadow";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M48B 'Cricket' PAW";
-		baseWeapon="OPTRE_M48_PAW";
-		model="\V_SO_Weapons\data\M48\M48B_Cricket";
-		picture="\V_SO_Weapons\data\M48\M48B_Cricket";
-		initSpeed=80;
-		modelOptics="\OPTRE_Weapons\Rockets\M41_Optic";
-		ODST_1="OPTRE_ODST_HUD_AmmoCount_RL";
-		Glasses="OPTRE_GLASS_HUD_AmmoCount_RL";
-		Eye="OPTRE_EYE_HUD_AmmoCount_RL";
-		HUD_BulletInARows=1;
-		HUD_TotalPosibleBullet=1;
-		magazines[]=
-		{
-			"OPTRE_1Rnd_50x137_HEAT",
-			"OPTRE_1Rnd_50x137_HE",
-			"OPTRE_1Rnd_50x137_PEN",
-			"OPTRE_1Rnd_50x137_THERMO",
-			"OPTRE_1Rnd_50x137_Tekcirc"
-		};
-		magazineWell[]={};
-		reloadAction="ReloadRPG";
-		reloadmagazinesound[]=
-		{
-			"A3\sounds_f\weapons\rockets\titan_reload_final",
-			0.56234097,
-			1,
-			50
-		};
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton",
-			"\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm",
-			"Spartan_ManSkeleton",
-			"\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim_Spartan.rtm"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=93;
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m393_acog",
-					"optre_m392_scope",
-					"OPTRE_BMR_Scope",
-					"M48B_Optic",
-					"M48B_Optic_Grid"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-	};
-	class OPTRE_MachineGun_Base;
-	class OPTRE_M73: OPTRE_MachineGun_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M73X Light Machine Gun";
-		magazines[]=
-		{
+			"OPTRE_100Rnd_762x51_Box_AP",
+			"OPTRE_100Rnd_762x51_Box_APT",
+			"OPTRE_400Rnd_762x51_Box",
+			"OPTRE_400Rnd_762x51_Box_Tracer_Yellow",
+			"OPTRE_400Rnd_762x51_Box_AP",
+			"OPTRE_400Rnd_762x51_Box_APT",
+			"OPTRE_30Rnd_30x06_Mag",
+			"OPTRE_30Rnd_30x06_Mag_Tracer",
+			"OPTRE_30Rnd_30x06_Mag_AP",
+			"OPTRE_30Rnd_30x06_Mag_AP_Tracer",
+			"OPTRE_30Rnd_30x06_Mag_JHP",
+			"OPTRE_30Rnd_30x06_Mag_JHP_Tracer",
 			"OPTRE_36Rnd_95x40_Mag",
 			"OPTRE_36Rnd_95x40_Mag_Tracer",
 			"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
@@ -5045,6 +48,14 @@ class CfgWeapons
 			"OPTRE_36Rnd_95x40_Mag_SAPHE",
 			"OPTRE_36Rnd_95x40_Mag_SAPHET",
 			"OPTRE_36Rnd_95x40_Mag_SS",
+			"OPTRE_42Rnd_95x40_Mag",
+			"OPTRE_42Rnd_95x40_Mag_Tracer",
+			"OPTRE_42Rnd_95x40_Mag_Tracer_Yellow",
+			"OPTRE_42Rnd_95x40_Mag_JHP",
+			"OPTRE_42Rnd_95x40_Mag_JHPT",
+			"OPTRE_42Rnd_95x40_Mag_SAPHE",
+			"OPTRE_42Rnd_95x40_Mag_SAPHET",
+			"OPTRE_42Rnd_95x40_Mag_SS",
 			"OPTRE_100Rnd_95x40_Box",
 			"OPTRE_100Rnd_95x40_Box_Tracer",
 			"OPTRE_100Rnd_95x40_Box_Tracer_Yellow",
@@ -5060,132 +71,135 @@ class CfgWeapons
 			"OPTRE_200Rnd_95x40_Box_JHPT",
 			"OPTRE_200Rnd_95x40_Box_SAPHE",
 			"OPTRE_200Rnd_95x40_Box_SAPHET",
-			"OPTRE_200Rnd_95x40_Box_SS"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=158;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"muzzle_snds_h_mg_blk_f",
-					"muzzle_snds_l",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[]=
-				{
-					"bipod_01_f_blk",
-					"bipod_02_f_blk",
-					"bipod_03_f_blk"
-				};
-			};
-		};
-	};
-	class OPTRE_M73H: OPTRE_M73
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M73H Heavy Machine Gun";
-		baseWeapon="OPTRE_M73H";
-		magazines[]=
-		{
+			"OPTRE_200Rnd_95x40_Box_SS",
+			"OPTRE_100Rnd_95x60_Box_JHP",
+			"OPTRE_100Rnd_95x60_Box_JHPT",
 			"OPTRE_100Rnd_95x60_Box_HPSAP",
 			"OPTRE_100Rnd_95x60_Box_HPSAPT",
 			"OPTRE_100Rnd_95x60_Box_HPSAPTY",
-			"OPTRE_100Rnd_95x60_Box_JHP",
-			"OPTRE_100Rnd_95x60_Box_JHPT",
 			"OPTRE_100Rnd_95x60_Box_SAPHE",
 			"OPTRE_100Rnd_95x60_Box_SAPHET",
 			"OPTRE_100Rnd_95x60_Box_SS",
+			"OPTRE_300Rnd_95x60_Box_JHP",
+			"OPTRE_300Rnd_95x60_Box_JHPT",
 			"OPTRE_300Rnd_95x60_Box_HPSAP",
 			"OPTRE_300Rnd_95x60_Box_HPSAPT",
 			"OPTRE_300Rnd_95x60_Box_HPSAPTY",
-			"OPTRE_300Rnd_95x60_Box_JHP",
-			"OPTRE_300Rnd_95x60_Box_JHPT",
 			"OPTRE_300Rnd_95x60_Box_SAPHE",
 			"OPTRE_300Rnd_95x60_Box_SAPHET",
-			"OPTRE_300Rnd_95x60_Box_SS"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=168;
-		};
-	};
-	class OPTRE_Shotgun_Base: arifle_Mk20_F
-	{
-		class Single;
-	};
-	class OPTRE_M45: OPTRE_Shotgun_Base
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M45X Tactical Shotgun";
-		magazines[]=
-		{
+			"OPTRE_300Rnd_95x60_Box_SS",
+			"OPTRE_8Rnd_127x40_Mag",
+			"OPTRE_8Rnd_127x40_Mag_AP",
+			"OPTRE_8Rnd_127x40_Mag_APT",
+			"OPTRE_8Rnd_127x40_Mag_HE",
+			"OPTRE_8Rnd_127x40_Mag_FR",
+			"OPTRE_8Rnd_127x40_Mag_FG",
+			"OPTRE_8Rnd_127x40_Mag_HET",
+			"OPTRE_8Rnd_127x40_Mag_HVAP",
+			"OPTRE_8Rnd_127x40_Mag_HVAPT",
+			"OPTRE_8Rnd_127x40_Mag_JHP",
+			"OPTRE_8Rnd_127x40_Mag_JHPT",
+			"OPTRE_8Rnd_127x40_Mag_SAPHE",
+			"OPTRE_8Rnd_127x40_Mag_SAPHET",
+			"OPTRE_8Rnd_127x40_Mag_SS",
+			"OPTRE_8Rnd_127x40_Mag_SST",
+			"OPTRE_8Rnd_127x40_Mag_NARQ",
+			"OPTRE_8Rnd_127x40_Mag_NARQT",
+			"OPTRE_6Rnd_127x40_Cyl",
+			"OPTRE_6Rnd_127x40_Cyl_AP",
+			"OPTRE_6Rnd_127x40_Cyl_APT",
+			"OPTRE_6Rnd_127x40_Cyl_HE",
+			"OPTRE_6Rnd_127x40_Cyl_FR",
+			"OPTRE_6Rnd_127x40_Cyl_FG",
+			"OPTRE_6Rnd_127x40_Cyl_HET",
+			"OPTRE_6Rnd_127x40_Cyl_HVAP",
+			"OPTRE_6Rnd_127x40_Cyl_HVAPT",
+			"OPTRE_6Rnd_127x40_Cyl_JHP",
+			"OPTRE_6Rnd_127x40_Cyl_JHPT",
+			"OPTRE_6Rnd_127x40_Cyl_SAPHE",
+			"OPTRE_6Rnd_127x40_Cyl_SAPHET",
+			"OPTRE_6Rnd_127x40_Cyl_SS",
+			"OPTRE_6Rnd_127x40_Cyl_SST",
+			"OPTRE_6Rnd_127x40_Cyl_NARQ",
+			"OPTRE_6Rnd_127x40_Cyl_NARQT",
+			"OPTRE_12Rnd_127x40_Mag",
+			"OPTRE_12Rnd_127x40_Mag_AP",
+			"OPTRE_12Rnd_127x40_Mag_APT",
+			"OPTRE_12Rnd_127x40_Mag_HE",
+			"OPTRE_12Rnd_127x40_Mag_HET",
+			"OPTRE_12Rnd_127x40_Mag_HVAP",
+			"OPTRE_12Rnd_127x40_Mag_HVAPT",
+			"OPTRE_12Rnd_127x40_Mag_JHP",
+			"OPTRE_12Rnd_127x40_Mag_JHPT",
+			"OPTRE_12Rnd_127x40_Mag_SAPHE",
+			"OPTRE_12Rnd_127x40_Mag_SAPHET",
+			"OPTRE_12Rnd_127x40_Mag_SS",
+			"OPTRE_12Rnd_127x40_Mag_SST",
+			"OPTRE_12Rnd_127x40_Mag_NARQ",
+			"OPTRE_12Rnd_127x40_Mag_NARQT",
+			"OPTRE_16Rnd_127x40_Mag",
+			"OPTRE_16Rnd_127x40_Mag_AP",
+			"OPTRE_16Rnd_127x40_Mag_APT",
+			"OPTRE_16Rnd_127x40_Mag_HE",
+			"OPTRE_16Rnd_127x40_Mag_HET",
+			"OPTRE_16Rnd_127x40_Mag_HVAP",
+			"OPTRE_16Rnd_127x40_Mag_HVAPT",
+			"OPTRE_16Rnd_127x40_Mag_JHP",
+			"OPTRE_16Rnd_127x40_Mag_JHPT",
+			"OPTRE_16Rnd_127x40_Mag_SAPHE",
+			"OPTRE_16Rnd_127x40_Mag_SAPHET",
+			"OPTRE_16Rnd_127x40_Mag_SS",
+			"OPTRE_16Rnd_127x40_Mag_SST",
+			"OPTRE_16Rnd_127x40_Mag_NARQ",
+			"OPTRE_16Rnd_127x40_Mag_NARQT",
+			"OPTRE_5Rnd_127x99_Mag_Tracer_Red",
+			"OPTRE_5Rnd_127x99_Mag_Tracer_Yellow",
+			"OPTRE_5Rnd_127x99_Mag_AP",
+			"OPTRE_5Rnd_127x99_Mag_APT",
+			"OPTRE_5Rnd_127x99_Mag_SLAP",
+			"OPTRE_5Rnd_127x99_Mag_SLAPT",
+			"OPTRE_5Rnd_127x99_Mag_SS",
+			"OPTRE_5Rnd_127x99_Mag_SST",
+			"OPTRE_10Rnd_127x99_Mag_Tracer_Red",
+			"OPTRE_10Rnd_127x99_Mag_Tracer_Yellow",
+			"OPTRE_10Rnd_127x99_Mag_AP",
+			"OPTRE_10Rnd_127x99_Mag_APT",
+			"OPTRE_10Rnd_127x99_Mag_SLAP",
+			"OPTRE_10Rnd_127x99_Mag_SLAPT",
+			"OPTRE_10Rnd_127x99_Mag_SS",
+			"OPTRE_10Rnd_127x99_Mag_SST",
+			"OPTRE_4Rnd_145x114_Mag_SS",
+			"OPTRE_4Rnd_145x114_Mag_SST",
+			"OPTRE_4Rnd_145x114_Mag_NARQ",
+			"OPTRE_4Rnd_145x114_Mag_NARQT",
+			"OPTRE_48Rnd_5x23mm_Mag_FMJ",
+			"OPTRE_48Rnd_5x23mm_Mag_FMJT",
+			"OPTRE_48Rnd_5x23mm_Mag_HV",
+			"OPTRE_48Rnd_5x23mm_Mag_HVT",
+			"OPTRE_48Rnd_5x23mm_Mag_JHP",
+			"OPTRE_48Rnd_5x23mm_Mag_JHPT",
+			"OPTRE_48Rnd_5x23mm_Mag_SS",
+			"OPTRE_48Rnd_5x23mm_Mag_SST",
+			"OPTRE_60Rnd_5x23mm_Mag_FMJ",
+			"OPTRE_60Rnd_5x23mm_Mag_FMJT",
+			"OPTRE_60Rnd_5x23mm_Mag_HV",
+			"OPTRE_60Rnd_5x23mm_Mag_HVT",
+			"OPTRE_60Rnd_5x23mm_Mag_JHP",
+			"OPTRE_60Rnd_5x23mm_Mag_JHPT",
+			"OPTRE_60Rnd_5x23mm_Mag_SS",
+			"OPTRE_60Rnd_5x23mm_Mag_SST",
+			"OPTRE_64Rnd_57x31_Mag_FMJ",
+			"OPTRE_64Rnd_57x31_Mag_FMJT",
+			"OPTRE_64Rnd_57x31_Mag_HV",
+			"OPTRE_64Rnd_57x31_Mag_HVT",
+			"OPTRE_64Rnd_57x31_Mag_JHP",
+			"OPTRE_64Rnd_57x31_Mag_JHPT",
+			"OPTRE_64Rnd_57x31_Mag_SS",
+			"OPTRE_1Rnd_50x137_HEAT",
+			"OPTRE_1Rnd_50x137_HE",
+			"OPTRE_1Rnd_50x137_PEN",
+			"OPTRE_1Rnd_50x137_THERMO",
+			"OPTRE_1Rnd_50x137_Tekcirc",
 			"OPTRE_6Rnd_8Gauge_Pellet",
 			"OPTRE_6Rnd_8Gauge_Slug",
 			"OPTRE_6Rnd_8Gauge_HEDP",
@@ -5195,358 +209,3065 @@ class CfgWeapons
 			"OPTRE_12Rnd_8Gauge_Slug",
 			"OPTRE_12Rnd_8Gauge_HEDP",
 			"OPTRE_12Rnd_8Gauge_Beanbag",
-			"OPTRE_12Rnd_8Gauge_Incendiary"
+			"OPTRE_12Rnd_8Gauge_Incendiary",
+			"3Rnd_UGL_FlareBlue_F",
+			"3Rnd_UGL_8Gauge_Pellet",
+			"3Rnd_UGL_8Gauge_Slug",
+			"3Rnd_UGL_8Gauge_Beanbag",
+			"UGL_FlareBlue_F",
+			"UGL_8Gauge_Pellet",
+			"UGL_8Gauge_Slug",
+			"UGL_8Gauge_Beanbag",
+			"UGL_Potato",
+			"OPTRE_3Rnd_54mm_Mag",
+			"OPTRE_20Rnd_86x70_Mag",
+			"OPTRE_20Rnd_86x70_Mag_Tracer",
+			"OPTRE_20Rnd_86x70_Mag_AP",
+			"OPTRE_20Rnd_86x70_Mag_APT",
+			"OPTRE_20Rnd_86x70_Mag_JHP",
+			"OPTRE_20Rnd_86x70_Mag_JHPT",
+			"OPTRE_20Rnd_86x70_Mag_SS",
+			"OPTRE_20Rnd_86x70_Mag_SST",
+			"OPTRE_10Rnd_86x70_Mag",
+			"OPTRE_10Rnd_86x70_Mag_Tracer",
+			"OPTRE_10Rnd_86x70_Mag_AP",
+			"OPTRE_10Rnd_86x70_Mag_APT",
+			"OPTRE_10Rnd_86x70_Mag_JHP",
+			"OPTRE_10Rnd_86x70_Mag_JHPT",
+			"OPTRE_10Rnd_86x70_Mag_SS",
+			"OPTRE_10Rnd_86x70_Mag_SST",
+			"OPTRE_10Rnd_86x70_Mag_FS",
+			"OPTRE_10Rnd_86x70_Mag_FST",
+			"C12_Remote_Mag",
+			"C7_Remote_Mag",
+			"UNSCMine_Range_Mag",
+			"M168_Remote_Mag",
+			"M41_IED_Remote_Mag",
+			"M41_IED_B_Remote_Mag"
 		};
-		class WeaponSlotsInfo
+		ammo[]=
 		{
-			mass=93;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_srs99d_suppressor"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[]=
-				{
-					"optic_arco_ak_blk_f",
-					"optic_dms",
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_arco_blk_f",
-					"optic_holosight_blk_f",
-					"optic_mrco",
-					"optic_khs_blk",
-					"optic_hamr",
-					"optic_sos",
-					"optic_lrps",
-					"optic_nightstalker",
-					"optic_erco_blk_f",
-					"optic_ams",
-					"ace_optic_lrps_2d",
-					"ace_optic_lrps_pip",
-					"optic_yorris",
-					"ace_optic_sos_2d",
-					"ace_optic_sos_pip",
-					"ace_optic_mrco_2d",
-					"ace_optic_hamr_2d",
-					"ace_optic_hamr_pip",
-					"optic_ico_01_black_f",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_srs99_scope",
-					"optre_srs99c_scope",
-					"optre_ma5_buis",
-					"optre_m393_eotech",
-					"optre_m73_smartlink",
-					"optre_m7_sight",
-					"optre_m393_acog",
-					"optre_hmg38_carryhandle",
-					"optre_m393_scope",
-					"optre_m392_scope",
-					"optre_br55hb_scope",
-					"optre_m6c_scope",
-					"OPTRE_BMR_Scope",
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
+			"OPTRE_B_762x51_AP",
+			"OPTRE_B_762x51_FS",
+			"OPTRE_B_762x51_JHP",
+			"OPTRE_B_762x51_SS",
+			"OPTRE_B_30x06_Ball",
+			"OPTRE_B_30x06_AP",
+			"OPTRE_B_30x06_JHP",
+			"OPTRE_B_95x40_JHP",
+			"OPTRE_B_95x40_HPSAP",
+			"OPTRE_B_95x40_HPSAPTY",
+			"OPTRE_B_95x40_SS",
+			"OPTRE_B_95x40_SAPHE",
+			"OPTRE_B_95x60_JHP",
+			"OPTRE_B_95x60_HPSAP",
+			"OPTRE_B_95x60_HPSAPTY",
+			"OPTRE_B_95x60_SS",
+			"OPTRE_B_95x60_SAPHE",
+			"OPTRE_B_127x40_Ball",
+			"OPTRE_B_127x40_AP",
+			"OPTRE_B_127x40_HE",
+			"OPTRE_B_127x40_HVAP",
+			"OPTRE_B_127x40_JHP",
+			"OPTRE_B_127x40_SAPHE",
+			"OPTRE_B_127x40_SS",
+			"OPTRE_B_127x40_NARQ",
+			"OPTRE_B_127x99_Ball_Red",
+			"OPTRE_B_127x99_AP",
+			"OPTRE_B_127x99_SLAP",
+			"OPTRE_B_127x99_SS",
+			"OPTRE_B_145x114_SS",
+			"OPTRE_B_145x114_APFSDST",
+			"OPTRE_B_145x114_HVAPT",
+			"OPTRE_B_145x114_NARQ",
+			"OPTRE_B_5x23_Caseless_FMJ",
+			"OPTRE_B_5x23_Caseless_HV",
+			"OPTRE_B_5x23_Caseless_JHP",
+			"OPTRE_B_5x23_Caseless_SS",
+			"OPTRE_B_57x31_FMJ",
+			"OPTRE_B_57x31_HV",
+			"OPTRE_B_57x31_JHP",
+			"OPTRE_B_57x31_SS",
+			"OPTRE_B_8Gauge_Pellet",
+			"OPTRE_B_8Gauge_Slug",
+			"OPTRE_B_8Gauge_HEDP",
+			"OPTRE_B_8Gauge_Beanbag",
+			"OPTRE_B_8Gauge_Incendiary",
+			"OPTRE_B_8Gauge_Incendiary_Submunition",
+			"OPTRE_B_8Gauge_Pellet_Submunition",
+			"F_40mm_Blue",
+			"UGL_Potato",
+			"OPTRE_B_86x70_Ball",
+			"OPTRE_B_86x70_AP",
+			"OPTRE_B_86x70_FS",
+			"OPTRE_B_86x70_JHP",
+			"OPTRE_B_86x70_SS",
+			"OPTRE_50x137_HEAT",
+			"OPTRE_50x137_HE",
+			"OPTRE_50x137_PEN",
+			"OPTRE_50x137_THERMO",
+			"C12_Remote_Ammo",
+			"C7_Remote_Ammo",
+			"M168_Remote_Ammo",
+			"UNSC_Mine_Ammo",
+			"M41_IED_Remote_Ammo",
+			"M41_IED_B_Remote_Ammo"
 		};
-		class Single: Single
+		requiredVersion=0.1;
+		requiredAddons[]=
 		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType;
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",
-					1,
-					1,
-					300
-				};
-				begin2[]=
-				{
-					"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",
-					1,
-					1,
-					300
-				};
-				begin3[]=
-				{
-					"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",
-					1,
-					1,
-					300
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.34
-				};
-				class SoundTails
-				{
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-			reloadTime=0.25;
+			"V_SO_Core",
+			"A3_Weapons_F",
+			"A3_Weapons_F_Launchers_RPG32",
+			"OPTRE_Weapons_Rockets",
+			"OPTRE_Weapons_Charges",
+			"A3_Sounds_F",
+			"A3_Sounds_F_Arsenal",
+			"OPTRE_Weapons_Pistol",
+			"A3_Weapons_F_EPA",
+			"OPTRE_Weapons_Shotgun",
+			"V_SO_Weapons",
+			"A3Data",
+			"OPTRE_Weapons_AR"
 		};
-	};
-	class OPTRE_M45TAC: OPTRE_M45
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M45 Combat Shotgun (Tactical)";
-	};
-	class OPTRE_M90A: OPTRE_M45
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		displayName="M90X CAWS Tactical Shotgun";
-		magazines[]=
-		{
-			"OPTRE_6Rnd_8Gauge_Pellet",
-			"OPTRE_6Rnd_8Gauge_Slug",
-			"OPTRE_6Rnd_8Gauge_HEDP",
-			"OPTRE_6Rnd_8Gauge_Beanbag",
-			"OPTRE_6Rnd_8Gauge_Incendiary"
-		};
-		class WeaponSlotsInfo
-		{
-			mass=120;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[]=
-				{
-					"optre_srs99d_suppressor"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
-				{
-					"acc_pointer_ir",
-					"ace_acc_pointer_green",
-					"acc_flashlight",
-					"optre_m45_flashlight",
-					"optre_m45_flashlight_red",
-					"OPTRE_BMR_Laser"
-				};
-			};
-		};
-		class Single: Single
-		{
-			sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
-			class BaseSoundModeType;
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[]=
-				{
-					"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",
-					1,
-					1,
-					300
-				};
-				begin2[]=
-				{
-					"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",
-					1,
-					1,
-					300
-				};
-				begin3[]=
-				{
-					"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",
-					1,
-					1,
-					300
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.33000001,
-					"begin2",
-					0.33000001,
-					"begin3",
-					0.34
-				};
-				class SoundTails
-				{
-					class TailInterior
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="interior";
-					};
-					class TailTrees
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
-					};
-					class TailMeadows
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[]=
-						{
-							"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",
-							1,
-							1,
-							300
-						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
-					};
-				};
-			};
-		};
-	};
-	class MuzzleSlot: MuzzleSlot
-	{
 	};
 };
-class CfgRecoils
+class CfgAddons
 {
-	class recoil_M7X
+	class PreloadAddons
 	{
-		muzzleOuter[]=
+		class V_SO_Magazines
 		{
-			"0.075*0.2",
-			"0.64*1",
-			"0.315*1",
-			"0.21*1"
+			list[]=
+			{
+				"V_SO_Magazines"
+			};
 		};
-		kickBack[]=
+	};
+};
+class CfgAmmo
+{
+	class OPTRE_B_762x51_Ball;
+	class OPTRE_B_762x51_Tracer_Yellow;
+	class OPTRE_B_762x51_AP: OPTRE_B_762x51_Ball
+	{
+		caliber=3;
+		hit=14;
+		typicalSpeed=920;
+	};
+	class OPTRE_B_762x51_FS: OPTRE_B_762x51_Ball
+	{
+		airFriction=0;
+		caliber=3;
+		hit=15;
+		typicalSpeed=1000;
+		sideairFriction=0;
+	};
+	class OPTRE_B_762x51_JHP: OPTRE_B_762x51_Ball
+	{
+		caliber=0.5;
+		hit=17;
+		typicalSpeed=905;
+	};
+	class OPTRE_B_762x51_SS: OPTRE_B_762x51_Ball
+	{
+		hit=10;
+		typicalSpeed=343;
+	};
+	class OPTRE_B_30x06_Ball: OPTRE_B_762x51_Ball
+	{
+		hit=14.5;
+		typicalSpeed=900;
+		caliber=2.25;
+		airFriction=-0.0009;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_30x06_AP: OPTRE_B_30x06_Ball
+	{
+		caliber=3.5;
+		hit=16;
+		typicalSpeed=1020;
+	};
+	class OPTRE_B_30x06_JHP: OPTRE_B_30x06_Ball
+	{
+		caliber=0.75;
+		hit=18;
+		typicalSpeed=970;
+	};
+	class OPTRE_B_95x40_Ball;
+	class OPTRE_B_95x40_JHP: OPTRE_B_95x40_Ball
+	{
+		caliber=1;
+		hit=20;
+		typicalSpeed=1000;
+		airFriction=-0.0013;
+	};
+	class OPTRE_B_95x40_HPSAP: OPTRE_B_95x40_Ball
+	{
+		caliber=2;
+		hit=17;
+		typicalSpeed=1150;
+		airFriction=-0.0013;
+	};
+	class OPTRE_B_95x40_HPSAPTY: OPTRE_B_95x40_HPSAP
+	{
+		model="\A3\Weapons_f\Data\bullettracer\tracer_yellow";
+	};
+	class OPTRE_B_95x40_SS: OPTRE_B_95x40_Ball
+	{
+		caliber=2;
+		hit=16;
+		typicalSpeed=340;
+		airFriction=-0.0013;
+	};
+	class OPTRE_B_95x40_SAPHE: OPTRE_B_95x40_Ball
+	{
+		craterEffects="ExploAmmoCrater";
+		explosive=0.1;
+		explosionEffects="ExploAmmoExplosion";
+		explosionSoundEffect="DefaultExplosion";
+		hit=17;
+		typicalSpeed=720;
+		indirectHit=12;
+		indirectHitRange=0.34999999;
+		airFriction=-0.0013;
+	};
+	class OPTRE_B_95x60_JHP: OPTRE_B_95x40_Ball
+	{
+		caliber=2;
+		hit=25;
+		typicalSpeed=1200;
+		airFriction=-0.00115;
+	};
+	class OPTRE_B_95x60_HPSAP: OPTRE_B_95x60_JHP
+	{
+		caliber=3;
+		hit=20;
+		typicalSpeed=1400;
+	};
+	class OPTRE_B_95x60_HPSAPTY: OPTRE_B_95x60_HPSAP
+	{
+		model="\A3\Weapons_f\Data\bullettracer\tracer_yellow";
+	};
+	class OPTRE_B_95x60_SS: OPTRE_B_95x60_JHP
+	{
+		caliber=3;
+		hit=20;
+		typicalSpeed=340;
+	};
+	class OPTRE_B_95x60_SAPHE: OPTRE_B_95x60_JHP
+	{
+		craterEffects="ExploAmmoCrater";
+		explosive=0.2;
+		explosionEffects="ExploAmmoExplosion";
+		explosionSoundEffect="DefaultExplosion";
+		hit=17;
+		typicalSpeed=920;
+		indirectHit=23;
+		indirectHitRange=0.045000002;
+	};
+	class B_127x33_Ball;
+	class OPTRE_B_127x40_Ball: B_127x33_Ball
+	{
+		caliber=2;
+		hit=16;
+		typicalSpeed=620;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_127x40_AP: OPTRE_B_127x40_Ball
+	{
+		caliber=3;
+	};
+	class OPTRE_B_127x40_HE: OPTRE_B_127x40_Ball
+	{
+		caliber=3;
+		craterEffects="ExploAmmoCrater";
+		explosive=0.2;
+		explosionEffects="ExploAmmoExplosion";
+		explosionSoundEffect="DefaultExplosion";
+		hit=12;
+		indirectHit=18;
+		indirectHitRange=0.025;
+	};
+	class OPTRE_B_127x40_HVAP: OPTRE_B_127x40_Ball
+	{
+		caliber=3;
+		hit=18;
+		typicalSpeed=800;
+	};
+	class OPTRE_B_127x40_JHP: OPTRE_B_127x40_Ball
+	{
+		caliber=1;
+		hit=22;
+		typicalSpeed=580;
+	};
+	class OPTRE_B_127x40_SAPHE: OPTRE_B_127x40_Ball
+	{
+		caliber=2.5;
+		craterEffects="ExploAmmoCrater";
+		explosive=0.15000001;
+		explosionEffects="ExploAmmoExplosion";
+		explosionSoundEffect="DefaultExplosion";
+		hit=16.5;
+		typicalSpeed=620;
+	};
+	class OPTRE_B_127x40_SS: OPTRE_B_127x40_Ball
+	{
+		hit=14;
+		typicalSpeed=340;
+	};
+	class OPTRE_B_127x40_NARQ: OPTRE_B_127x40_Ball
+	{
+		hit=0.1;
+	};
+	class OPTRE_B_127x99_Ball;
+	class OPTRE_B_127x99_Ball_Red: OPTRE_B_127x99_Ball
+	{
+		hit=30;
+		caliber=2.6;
+		typicalSpeed=880;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_127x99_AP: OPTRE_B_127x99_Ball_Red
+	{
+		hit=25;
+		caliber=3;
+		typicalSpeed=1000;
+	};
+	class B_127x99_SLAP;
+	class OPTRE_B_127x99_SLAP: B_127x99_SLAP
+	{
+		hit=50;
+		caliber=3.4000001;
+		typicalSpeed=1215;
+		airFriction=-0.00036000001;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_127x99_SS: OPTRE_B_127x99_Ball_Red
+	{
+		hit=30;
+		caliber=2.6;
+		typicalSpeed=340;
+	};
+	class OPTRE_B_145x114_APFSDS;
+	class OPTRE_B_145x114_SS: OPTRE_B_145x114_APFSDS
+	{
+		caliber=10;
+		hit=55;
+		typicalSpeed=340;
+		timeToLive=20;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_145x114_APFSDST: OPTRE_B_145x114_APFSDS
+	{
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_145x114_HVAP;
+	class OPTRE_B_145x114_HEDP;
+	class OPTRE_B_145x114_HVAPT: OPTRE_B_145x114_HVAP
+	{
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_145x114_NARQ: OPTRE_B_145x114_APFSDS
+	{
+		hit=0.1;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_5x23_Caseless;
+	class OPTRE_B_5x23_Caseless_FMJ: OPTRE_B_5x23_Caseless
+	{
+		caliber=2;
+		hit=12;
+		typicalSpeed=420;
+	};
+	class OPTRE_B_5x23_Caseless_HV: OPTRE_B_5x23_Caseless
+	{
+		caliber=1;
+		hit=10;
+		typicalSpeed=550;
+	};
+	class OPTRE_B_5x23_Caseless_JHP: OPTRE_B_5x23_Caseless
+	{
+		caliber=0.25;
+		hit=14;
+		typicalSpeed=420;
+	};
+	class OPTRE_B_5x23_Caseless_SS: OPTRE_B_5x23_Caseless
+	{
+		caliber=2;
+		hit=12;
+		typicalSpeed=340;
+	};
+	class OPTRE_B_57x31_Ball;
+	class OPTRE_B_57x31_FMJ:OPTRE_B_57x31_Ball
+	{
+		caliber=2;
+		hit=12;
+		typicalSpeed=420;
+		nvgOnly=0;
+	};
+	class OPTRE_B_57x31_HV:OPTRE_B_57x31_Ball
+	{
+		caliber=1;
+		hit=10;
+		typicalSpeed=550;
+		nvgOnly=0;
+	};
+	class OPTRE_B_57x31_JHP:OPTRE_B_57x31_Ball
+	{
+		caliber=0.25;
+		hit=14;
+		typicalSpeed=420;
+		nvgOnly=0;
+	};
+	class OPTRE_B_57x31_SS:OPTRE_B_57x31_Ball
+	{
+		caliber=2;
+		hit=12;
+		typicalSpeed=340;
+		nvgOnly=0;
+	};
+	class B_12Gauge_Pellets_Submunition;
+	class OPTRE_B_8Gauge_Pellet: B_12Gauge_Pellets_Submunition
+	{
+		submunitionAmmo="OPTRE_B_8Gauge_Pellet_Submunition";
+		thrust=15;
+		triggerTime=0.001;
+	};
+	class B_12Gauge_Slug;
+	class OPTRE_B_8Gauge_Slug: B_12Gauge_Slug
+	{
+		caliber=4;
+		hit=26;
+	};
+	class OPTRE_B_8Gauge_HEDP: OPTRE_B_8Gauge_Slug
+	{
+		craterEffects="ExploAmmoCrater";
+		explosive=0.25;
+		explosionEffects="ExploAmmoExplosion";
+		explosionSoundEffect="DefaultExplosion";
+		hit=32;
+		indirectHit=12;
+		indirectHitRange=0.25;
+	};
+	class OPTRE_B_8Gauge_Beanbag: OPTRE_B_8Gauge_Slug
+	{
+		hit=0.1;
+		typicalspeed=350;
+	};
+	class OPTRE_B_8Gauge_Incendiary: OPTRE_B_8Gauge_Pellet
+	{
+		submunitionConeType[]=
 		{
-			"0.015*1.4",
-			"0.04*1.4"
+			"poissondisc",
+			15
 		};
-		temporary="0.010*1.2";
-		muzzleInner[]={0,0,0.050000001,0.050000001};
-		permanent="0.05*0.4";
+		submunitionAmmo="OPTRE_B_8Gauge_Incendiary_Submunition";
+	};
+	class B_12Gauge_Pellets_Submunition_Deploy;
+	class OPTRE_B_8Gauge_Incendiary_Submunition: B_12Gauge_Pellets_Submunition_Deploy
+	{
+		caliber=1;
+		hit=3;
+		deflecting=0;
+		thrust=75;
+		model="\V_SO_Core\data\Effects\fire_effect";
+		timeToLive=1;
+		tracerEndTime=1;
+		tracerStartTime=0;
+		tracerScale=0.75;
+	};
+	class OPTRE_B_8Gauge_Pellet_Submunition: B_12Gauge_Pellets_Submunition_Deploy
+	{
+		hit=4;
+	};
+	class F_40mm_White;
+	class F_40mm_Blue: F_40mm_White
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		lightColor[]={0.25,0.25,0.5,0};
+	};
+	class UGL_Potato: OPTRE_B_8Gauge_Pellet
+	{
+		submunitionAmmo="G_20mm_HE";
+	};
+	class OPTRE_B_86x70_Ball: OPTRE_B_762x51_Ball
+	{
+		hit=14;
+	};
+	class OPTRE_B_86x70_AP: OPTRE_B_86x70_Ball
+	{
+		caliber=3;
+		hit=16;
+		typicalSpeed=920;
+	};
+	class OPTRE_B_86x70_FS: OPTRE_B_86x70_Ball
+	{
+		airFriction=0;
+		caliber=3;
+		hit=17;
+		typicalSpeed=1000;
+		sideairFriction=0;
+	};
+	class OPTRE_B_86x70_JHP: OPTRE_B_86x70_Ball
+	{
+		caliber=0.5;
+		hit=19;
+		typicalSpeed=905;
+	};
+	class OPTRE_B_86x70_SS: OPTRE_B_86x70_Ball
+	{
+		hit=12;
+		typicalSpeed=340;
+	};
+	class OPTRE_M41_Rocket_Heat;
+	class OPTRE_50x137_HEAT: OPTRE_M41_Rocket_Heat
+	{
+		model="\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
+		caliber=10;
+		hit=950;
+		indirectHit=200;
+		indirectHitRange=0.050000001;
+		explosive=1;
+		fuseDistance=5;
+		initTime=0;
+		thrust=760;
+		thrustTime=0.2;
+		maxSpeed=360;
+		timeToLive=30;
+		allowAgainstInfantry=0;
+		airFriction=0.1;
+		sideAirFriction=0.001;
+	};
+	class OPTRE_50x137_HE: OPTRE_50x137_HEAT
+	{
+		caliber=0;
+		hit=400;
+		indirectHit=200;
+		indirectHitRange=5;
+		maxSpeed=360;
+		explosive=1;
+		timeToLive=30;
+		allowAgainstInfantry=1;
+	};
+	class OPTRE_50x137_PEN: OPTRE_50x137_HE
+	{
+		caliber=20;
+		hit=1500;
+		indirectHit=0;
+		indirectHitRange=0;
+		explosive=0;
+		fuseDistance=0;
+		initTime=0;
+		thrust=1400;
+		thrustTime=0.1;
+		maxSpeed=900;
+		timeToLive=30;
+		allowAgainstInfantry=0;
+		airFriction=0.0099999998;
+		sideAirFriction=9.9999997e-005;
+	};
+	class OPTRE_50x137_THERMO: OPTRE_50x137_PEN
+	{
+		caliber=5;
+		hit=1500;
+		indirectHit=1000;
+		indirectHitRange=15;
+		explosive=1;
+		fuseDistance=15;
+		initTime=0;
+		thrust=800;
+		thrustTime=0.2;
+		maxSpeed=400;
+		timeToLive=40;
+		allowAgainstInfantry=1;
+		CraterEffects="HEShellCrater";
+		CraterWaterEffects="ImpactEffectsWaterHE";
+		ExplosionEffects="HEShellExplosion";
+	};
+	class OPTRE_50x137_Tekcirc: OPTRE_50x137_THERMO
+	{
+		model="OPTRE_weapons\rockets\M41_rocket.p3d";
+		caliber=5;
+		hit=1500;
+		indirectHit=1000;
+		indirectHitRange=15;
+		explosive=1;
+		fuseDistance=15;
+		initTime=0;
+		thrust=800;
+		thrustTime=0.2;
+		maxSpeed=400;
+		timeToLive=50;
+		allowAgainstInfantry=1;
+		CraterEffects="HEShellCrater";
+		CraterWaterEffects="ImpactEffectsWaterHE";
+		ExplosionEffects="HEShellExplosion";
+	};
+	class SatchelCharge_Remote_Ammo;
+	class ATMine_Range_Ammo;
+	class C12_Remote_Ammo: SatchelCharge_Remote_Ammo
+	{
+		hit=6500;
+		indirectHit=4500;
+		indirectHitRange=3;
+		defaultMagazine="C12_Remote_Mag";
+		model="\OPTRE_Weapons\charges\c12.p3d";
+		picture="\OPTRE_weapons\charges\icons\c12.paa";
+		explosive=1;
+		explosionType="bomb";
+		mineModelDisabled="\OPTRE_Weapons\charges\c12G.p3d";
+		ExplosionEffects="MineNondirectionalExplosion";
+		CraterEffects="MineNondirectionalCrater";
+		SoundSetExplosion[]=
+		{
+			"BigIED_Exp_SoundSet",
+			"BigIED_Tail_SoundSet",
+			"Explosion_Debris_SoundSet"
+		};
+		soundTrigger[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_trigger_1",
+			0.56234133,
+			1,
+			50
+		};
+		soundActivation[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_activate_mine_1",
+			0.56234133,
+			1,
+			50
+		};
+		soundDeactivation[]=
+		{
+			"A3\Sounds_F\weapons\mines\deactivate_mine_3a",
+			0.56234133,
+			1,
+			50
+		};
+		whistleDist=10;
+		mineInconspicuousness=3;
+		mineTrigger="RemoteTrigger";
+		triggerWhenDestroyed=1;
+	};
+	class C7_Remote_Ammo: SatchelCharge_Remote_Ammo
+	{
+		hit=2500;
+		indirectHit=2400;
+		indirectHitRange=0.69999999;
+		defaultMagazine="C7_Remote_Mag";
+		model="\OPTRE_Weapons\charges\C7.p3d";
+		picture="\OPTRE_weapons\charges\icons\c12.paa";
+		explosive=1;
+		explosionType="bomb";
+		mineModelDisabled="\OPTRE_Weapons\charges\C7Can.p3d";
+		ExplosionEffects="DirectionalMineExplosion";
+		CraterEffects="";
+		craterShape="\A3\weapons_f\empty.p3d";
+		SoundSetExplosion[]=
+		{
+			"BigIED_Exp_SoundSet",
+			"BigIED_Tail_SoundSet",
+			"Explosion_Debris_SoundSet"
+		};
+		soundTrigger[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_trigger_1",
+			0.56234133,
+			1,
+			50
+		};
+		soundActivation[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_activate_mine_1",
+			0.56234133,
+			1,
+			50
+		};
+		soundDeactivation[]=
+		{
+			"A3\Sounds_F\weapons\mines\deactivate_mine_3a",
+			0.56234133,
+			1,
+			50
+		};
+		whistleDist=10;
+		mineInconspicuousness=3;
+		mineTrigger="RemoteTrigger";
+		triggerWhenDestroyed=1;
+	};
+	class M168_Remote_Ammo: SatchelCharge_Remote_Ammo
+	{
+		hit=9500;
+		indirectHit=6500;
+		indirectHitRange=10;
+		defaultMagazine="M168_Remote_Mag";
+		model="\OPTRE_Weapons\charges\m168.p3d";
+		picture="\OPTRE_weapons\charges\icons\c12.paa";
+		explosive=1;
+		explosionType="bomb";
+		mineModelDisabled="\OPTRE_Weapons\charges\m168g.p3d";
+		ExplosionEffects="MineNondirectionalExplosion";
+		CraterEffects="MineNondirectionalCrater";
+		SoundSetExplosion[]=
+		{
+			"BigIED_Exp_SoundSet",
+			"BigIED_Tail_SoundSet",
+			"Explosion_Debris_SoundSet"
+		};
+		soundTrigger[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_trigger_1",
+			0.56234133,
+			1,
+			50
+		};
+		soundActivation[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_activate_mine_1",
+			0.56234133,
+			1,
+			50
+		};
+		soundDeactivation[]=
+		{
+			"A3\Sounds_F\weapons\mines\deactivate_mine_3a",
+			0.56234133,
+			1,
+			50
+		};
+		whistleDist=10;
+		mineInconspicuousness=3;
+		mineTrigger="RemoteTrigger";
+		triggerWhenDestroyed=1;
+	};
+	class UNSC_Mine_Ammo: ATMine_Range_Ammo
+	{
+		hit=2000;
+		indirectHit=2000;
+		indirectHitRange=1.5;
+		model="\OPTRE_Weapons\charges\UNSCmine.p3d";
+		mineModelDisabled="\OPTRE_Weapons\charges\UNSCmine.p3d";
+		defaultMagazine="UNSCMine_Range_Mag";
+		soundHit1[]=
+		{
+			"A3\Sounds_F\arsenal\explosives\mines\AT_landmine_explosion_01",
+			3.1622801,
+			1,
+			2000
+		};
+		soundHit2[]=
+		{
+			"A3\Sounds_F\arsenal\explosives\mines\AT_landmine_explosion_02",
+			3.1622801,
+			1,
+			2000
+		};
+		multiSoundHit[]=
+		{
+			"soundHit1",
+			0.5,
+			"soundHit2",
+			0.5
+		};
+		explosionEffects="ATMineExplosion";
+		CraterEffects="ATMineCrater";
+		whistleDist=8;
+		mineInconspicuousness=40;
+		mineTrigger="RangeTrigger";
+	};
+	class M41_IED_Remote_Ammo: SatchelCharge_Remote_Ammo
+	{
+		hit=400;
+		indirectHit=200;
+		indirectHitRange=5;
+		defaultMagazine="M41_IED_Remote_Mag";
+		model="\OPTRE_Weapons\charges\m41.p3d";
+		picture="\OPTRE_weapons\rockets\icons\rocket.paa";
+		explosive=1;
+		explosionType="bomb";
+		mineModelDisabled="\OPTRE_Weapons\charges\m41g.p3d";
+		ExplosionEffects="MineNondirectionalExplosionSmall";
+		CraterEffects="MineNondirectionalCraterSmall";
+		soundHit[]=
+		{
+			"a3\sounds_f\arsenal\explosives\mines\explosion_claymore",
+			3.1622777,
+			1,
+			1500
+		};
+		soundDeactivation[]=
+		{
+			"A3\Sounds_F\weapons\Mines\deactivate_mine_3a",
+			1.4125376,
+			1,
+			20
+		};
+		soundTrigger[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_trigger_1",
+			0.56234133,
+			1,
+			50
+		};
+		soundActivation[]=
+		{
+			"A3\Sounds_F\weapons\mines\electron_activate_mine_1",
+			0.56234133,
+			1,
+			50
+		};
+		whistleDist=10;
+		mineInconspicuousness=50;
+		mineTrigger="RemoteTrigger";
+		triggerWhenDestroyed=1;
+	};
+	class M41_IED_B_Remote_Ammo: M41_IED_Remote_Ammo
+	{
+		defaultMagazine="M41_IED_B_Remote_Mag";
+		model="\OPTRE_Weapons\charges\m41_b.p3d";
+		mineModelDisabled="\OPTRE_Weapons\charges\m41g.p3d";
+	};
+};
+class CfgMagazines
+{
+	class OPTRE_60Rnd_762x51_Mag;
+	class OPTRE_32Rnd_762x51_Mag;
+	class OPTRE_15Rnd_762x51_Mag;
+	class 20Rnd_762x51_Mag;
+	class 150Rnd_762x51_Box;
+	class OPTRE_4Rnd_145x114_APFSDS_Mag;
+	class OPTRE_4Rnd_145x114_HVAP_Mag;
+	class OPTRE_4Rnd_145x114_HEDP_Mag;
+	class OPTRE_48Rnd_5x23mm_Mag;
+	class OPTRE_M41_Twin_HEAT;
+	class OPTRE_60Rnd_5x23mm_Mag;
+	class 2Rnd_12Gauge_Pellets;
+	class 2Rnd_12Gauge_Slug;
+	class 3Rnd_UGL_FlareWhite_F;
+	class UGL_FlareWhite_F;
+	class OPTRE_3Rnd_ALIM_Gauss_Slugs;
+	class CA_Magazine;
+	class SatchelCharge_Remote_Mag;
+	class ATMine_Range_Mag;
+	class OPTRE_60Rnd_762x51_Mag_AP: OPTRE_60Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=920;
+		ammo="OPTRE_B_762x51_AP";
+		displayname="60Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing";
+	};
+	class OPTRE_60Rnd_762x51_Mag_APT: OPTRE_60Rnd_762x51_Mag_AP
+	{
+		displayname="60Rnd 7.62x51mm AP Magazine (Tracer)";
+		displaynameshort="7.62x51mm AP Tracer";
+		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_60Rnd_762x51_Mag_JHP: OPTRE_60Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=905;
+		ammo="OPTRE_B_762x51_JHP";
+		displayname="60Rnd 7.62x51mm JHP Magazine";
+		displaynameshort="7.62x51mm JHP";
+		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_60Rnd_762x51_Mag_JHPT: OPTRE_60Rnd_762x51_Mag_JHP
+	{
+		displayname="60Rnd 7.62x51mm JHP Magazine (Tracer)";
+		displaynameshort="7.62x51mm JHP Tracer";
+		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_32Rnd_762x51_Mag_AP: OPTRE_32Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=920;
+		ammo="OPTRE_B_762x51_AP";
+		displayname="32Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing";
+	};
+	class OPTRE_32Rnd_762x51_Mag_APT: OPTRE_32Rnd_762x51_Mag_AP
+	{
+		displayname="32Rnd 7.62x51mm AP Magazine (Tracer)";
+		displaynameshort="7.62x51mm AP Tracer";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_32Rnd_762x51_Mag_JHP: OPTRE_32Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=905;
+		ammo="OPTRE_B_762x51_JHP";
+		displayname="32Rnd 7.62x51mm JHP Magazine";
+		displaynameshort="7.62x51mm JHP";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_32Rnd_762x51_Mag_JHPT: OPTRE_32Rnd_762x51_Mag_JHP
+	{
+		displayname="32Rnd 7.62x51mm JHP Magazine (Tracer)";
+		displaynameshort="7.62x51mm JHP Tracer";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_32Rnd_762x51_Mag_SS: OPTRE_32Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=340;
+		ammo="OPTRE_B_762x51_SS";
+		displayname="32Rnd 7.62x51mm SS Magazine";
+		displaynameshort="7.62x51mm SS";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Subsonic";
+	};
+	class OPTRE_32Rnd_762x51_Mag_SST: OPTRE_32Rnd_762x51_Mag_SS
+	{
+		displayname="32Rnd 7.62x51mm SS Magazine (Tracer)";
+		displaynameshort="7.62x51mm SS Tracer";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Subsonic Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_15Rnd_762x51_Mag_AP: OPTRE_15Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=920;
+		ammo="OPTRE_B_762x51_AP";
+		displayname="15Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing";
+	};
+	class OPTRE_15Rnd_762x51_Mag_APT: OPTRE_15Rnd_762x51_Mag_AP
+	{
+		displayname="15Rnd 7.62x51mm AP Magazine (Tracer)";
+		displaynameshort="7.62x51mm AP Tracer";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_15Rnd_762x51_Mag_JHP: OPTRE_15Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=905;
+		ammo="OPTRE_B_762x51_JHP";
+		displayname="15Rnd 7.62x51mm JHP Magazine";
+		displaynameshort="7.62x51mm JHP";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_15Rnd_762x51_Mag_JHPT: OPTRE_15Rnd_762x51_Mag_JHP
+	{
+		displayname="15Rnd 7.62x51mm JHP Magazine (Tracer)";
+		displaynameshort="7.62x51mm JHP Tracer";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_15Rnd_762x51_Mag_SS: OPTRE_15Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=340;
+		ammo="OPTRE_B_762x51_SS";
+		displayname="15Rnd 7.62x51mm SS Magazine";
+		displaynameshort="7.62x51mm SS";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Subsonic";
+	};
+	class OPTRE_15Rnd_762x51_Mag_SST: OPTRE_15Rnd_762x51_Mag
+	{
+		displayname="15Rnd 7.62x51mm SS Magazine (Tracer)";
+		displaynameshort="7.62x51mm SS Tracer";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Subsonic Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_15Rnd_762x51_Mag_FS: OPTRE_15Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=1000;
+		ammo="OPTRE_B_762x51_FS";
+		displayname="15Rnd 7.62x51mm FS Magazine";
+		displaynameshort="7.62x51mm FS";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Fin-Stabalized";
+	};
+	class OPTRE_15Rnd_762x51_Mag_FST: OPTRE_15Rnd_762x51_Mag_FS
+	{
+		displayname="15Rnd 7.62x51mm FS Magazine (Tracer)";
+		displaynameshort="7.62x51mm FS Tracer";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Fin-Stabalized Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_100Rnd_762x51_Box;
+	class OPTRE_100Rnd_762x51_Box_AP: OPTRE_100Rnd_762x51_Box
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=920;
+		ammo="OPTRE_B_762x51_AP";
+		displayname="100Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="100 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing";
+		tracersEvery=0;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_762x51_Box_APT: OPTRE_100Rnd_762x51_Box_AP
+	{
+		ammo="OPTRE_B_762x51_AP";
+		displayname="100Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="100 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_400Rnd_762x51_Box: OPTRE_100Rnd_762x51_Box
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=950;
+		ammo="OPTRE_B_762x51_Ball";
+		displayname="400Rnd 7.62x51mm Ball Magazine";
+		displaynameshort="7.62x51mm Ball";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Ball";
+		count=400;
+		mass=120;
+	};
+	class OPTRE_400Rnd_762x51_Box_Tracer_Yellow: OPTRE_400Rnd_762x51_Box
+	{
+		ammo="OPTRE_B_762x51_Tracer_Yellow";
+		displayname="400Rnd 7.62x51mm Ball Magazine (Tracer)";
+		displaynameshort="7.62x51mm Ball Tracer";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_400Rnd_762x51_Box_AP: OPTRE_400Rnd_762x51_Box
+	{
+		initspeed=920;
+		ammo="OPTRE_B_762x51_AP";
+		displayname="400Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing";
+	};
+	class OPTRE_400Rnd_762x51_Box_APT: OPTRE_400Rnd_762x51_Box_AP
+	{
+		ammo="OPTRE_B_762x51_AP";
+		displayname="400Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_30Rnd_30x06_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		model="\OPTRE_Weapons\AR\MA5_Magazine.p3d";
+		displayname="30Rnd .30-06 Magazine";
+		displaynameshort=".30-06";
+		ammo="OPTRE_B_30x06_Ball";
+		count=40;
+		initspeed=900;
+		picture="\OPTRE_weapons\ar\icons\magazine.paa";
+		descriptionshort="30 Round Magazine<br/>.30-06";
+		mass=15;
+		lastRoundsTracer=5;
+	};
+	class OPTRE_30Rnd_30x06_Mag_Tracer: OPTRE_30Rnd_30x06_Mag
+	{
+		displayname="30Rnd .30-06 Magazine (Tracers)";
+		displaynameshort=".30-06 Tracer";
+		ammo="OPTRE_B_30x06_Ball";
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Tracer";
+		tracersEvery=1;
+	};
+	class OPTRE_30Rnd_30x06_Mag_AP: OPTRE_30Rnd_30x06_Mag
+	{
+		displayname="30Rnd .30-06 AP Magazine";
+		displaynameshort=".30-06 AP";
+		ammo="OPTRE_B_30x06_AP";
+		initspeed=1020;
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Armor-Piercing";
+		lastRoundsTracer=5;
+	};
+	class OPTRE_30Rnd_30x06_Mag_AP_Tracer: OPTRE_30Rnd_30x06_Mag_AP
+	{
+		displayname="30Rnd .30-06 AP Magazine (Tracers)";
+		displaynameshort=".30-06 AP Tracer";
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_30Rnd_30x06_Mag_JHP: OPTRE_30Rnd_30x06_Mag
+	{
+		displayname="30Rnd .30-06 JHP Magazine";
+		displaynameshort=".30-06 JHP";
+		ammo="OPTRE_B_30x06_JHP";
+		initspeed=970;
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Jacketed Hollow-Point";
+		lastRoundsTracer=5;
+	};
+	class OPTRE_30Rnd_30x06_Mag_JHP_Tracer: OPTRE_30Rnd_30x06_Mag_JHP
+	{
+		displayname="30Rnd .30-06 JHP Magazine (Tracers)";
+		displaynameshort=".30-06 JHP Tracer";
+		ammo="OPTRE_B_30x06_JHP";
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_36Rnd_95x40_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_95x40_HPSAP";
+		displayname="36Rnd 9.5x40mm Magazine";
+		displaynameshort="9.5x60mm HP-SAP";
+		count=36;
+		picture="\OPTRE_weapons\br\icons\magazine.paa";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing";
+		initspeed=1150;
+		mass=8;
+	};
+	class OPTRE_36Rnd_95x40_Mag_Tracer: OPTRE_36Rnd_95x40_Mag
+	{
+		displayname="36Rnd 9.5x40mm Magazine (Tracer Red)";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_36Rnd_95x40_Mag_Tracer_Yellow: OPTRE_36Rnd_95x40_Mag_Tracer
+	{
+		displayname="36Rnd 9.5x40mm Magazine (Tracers Yellow)";
+		ammo="OPTRE_B_95x40_HPSAPTY";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+	};
+	class OPTRE_36Rnd_95x40_Mag_JHP: OPTRE_36Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_JHP";
+		displayname="36Rnd 9.5x40mm JHP Magazine";
+		displaynameshort="9.5x60mm JHP";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
+		initspeed=1000;
+	};
+	class OPTRE_36Rnd_95x40_Mag_JHPT: OPTRE_36Rnd_95x40_Mag_JHP
+	{
+		displayname="36Rnd 9.5x40mm JHP Magazine (Tracer)";
+		displaynameshort="9.5x60mm JHP Tracer";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_36Rnd_95x40_Mag_SAPHE: OPTRE_36Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_SAPHE";
+		displayname="36Rnd 9.5x40mm SAP-HE Magazine";
+		displaynameshort="9.5x60mm SAP-HE";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive";
+		initspeed=720;
+	};
+	class OPTRE_36Rnd_95x40_Mag_SAPHET: OPTRE_36Rnd_95x40_Mag_SAPHE
+	{
+		displayname="36Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
+		displaynameshort="9.5x60mm SAP-HE Tracer";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_36Rnd_95x40_Mag_SS: OPTRE_36Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_SS";
+		displayname="36Rnd 9.5x40mm SS Magazine";
+		displaynameshort="9.5x60mm SS";
+		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_42Rnd_95x40_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_95x40_HPSAP";
+		displayname="42Rnd 9.5x40mm Magazine";
+		displaynameshort="9.5x60mm HP-SAP";
+		count=42;
+		picture="\OPTRE_weapons\br\icons\magazine.paa";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing";
+		initspeed=1150;
+		mass=9.5;
+	};
+	class OPTRE_42Rnd_95x40_Mag_Tracer: OPTRE_42Rnd_95x40_Mag
+	{
+		displayname="42Rnd 9.5x40mm Magazine (Tracer Red)";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_42Rnd_95x40_Mag_Tracer_Yellow: OPTRE_42Rnd_95x40_Mag_Tracer
+	{
+		displayname="42Rnd 9.5x40mm Magazine (Tracers Yellow)";
+		ammo="OPTRE_B_95x40_HPSAPTY";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+	};
+	class OPTRE_42Rnd_95x40_Mag_JHP: OPTRE_42Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_JHP";
+		displayname="42Rnd 9.5x40mm JHP Magazine";
+		displaynameshort="9.5x60mm JHP";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
+		initspeed=1000;
+	};
+	class OPTRE_42Rnd_95x40_Mag_JHPT: OPTRE_42Rnd_95x40_Mag_JHP
+	{
+		displayname="42Rnd 9.5x40mm JHP Magazine (Tracer)";
+		displaynameshort="9.5x60mm JHP Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_42Rnd_95x40_Mag_SAPHE: OPTRE_42Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_SAPHE";
+		displayname="42Rnd 9.5x40mm SAP-HE Magazine";
+		displaynameshort="9.5x60mm SAP-HE";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive";
+		initspeed=720;
+	};
+	class OPTRE_42Rnd_95x40_Mag_SAPHET: OPTRE_42Rnd_95x40_Mag_SAPHE
+	{
+		displayname="42Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
+		displaynameshort="9.5x60mm SAP-HE Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_42Rnd_95x40_Mag_SS: OPTRE_42Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_SS";
+		displayname="42Rnd 9.5x40mm SS Magazine";
+		displaynameshort="9.5x60mm SS";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_100Rnd_95x40_Box: 150Rnd_762x51_Box
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		model="\OPTRE_Weapons\MG\magazine_1.p3d";
+		displayname="100Rnd 9.5x40mm HP-SAP Box Magazine";
+		displaynameshort="9.5x40mm HPSAP";
+		ammo="OPTRE_B_95x40_HPSAP";
+		count=100;
+		initspeed=1200;
+		picture="\OPTRE_Weapons\MG\icons\magazine.paa";
+		descriptionshort="100 Box Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing"
+		mass=35;
+	};
+	class OPTRE_100Rnd_95x40_Box_Tracer: OPTRE_100Rnd_95x40_Box
+	{
+		displayname="100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Red)";
+		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x40_Box_Tracer_Yellow: OPTRE_100Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_HPSAPTY";
+		displayname="100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Yellow)";
+		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x40_Box_JHP: OPTRE_100Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_JHP";
+		displayname="100Rnd 9.5x40mm JHP Box Magazine";
+		displaynameshort="9.5x60mm JHP";
+		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
+		initspeed=1050;
+	};
+	class OPTRE_100Rnd_95x40_Box_JHPT: OPTRE_100Rnd_95x40_Box_JHP
+	{
+		displayname="100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm JHP Tracer";
+		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x40_Box_SAPHE: OPTRE_100Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_SAPHE";
+		displayname="100Rnd 9.5x40mm SAP-HE Box Magazine";
+		displaynameshort="9.5x60mm SAP-HE";
+		descriptionShort="100 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive";
+		initspeed=720;
+	};
+	class OPTRE_100Rnd_95x40_Box_SAPHET: OPTRE_100Rnd_95x40_Box_SAPHE
+	{
+		displayname="100Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm SAP-HE Tracer";
+		descriptionShort="100 Round Box Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x40_Box_SS: OPTRE_100Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_SS";
+		displayname="100Rnd 9.5x40mm SS Box Magazine";
+		displaynameshort="9.5x60mm SS";
+		descriptionShort="100 Round Box Magazine<br/>9.5x40mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_HPSAP";
+		count=200;
+		displayname="200Rnd 9.5x40mm HP-SAP Box Magazine";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing";
+		mass=70.5;
+		initspeed=1200;
+	};
+	class OPTRE_200Rnd_95x40_Box_Tracer: OPTRE_200Rnd_95x40_Box
+	{
+		displayname="200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Red)";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_200Rnd_95x40_Box_Tracer_Yellow: OPTRE_200Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_HPSAPTY";
+		displayname="200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Yellow)";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_200Rnd_95x40_Box_JHP: OPTRE_200Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_JHP";
+		displayname="200Rnd 9.5x40mm JHP Box Magazine";
+		displaynameshort="9.5x60mm JHP";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
+		initspeed=1050;
+	};
+	class OPTRE_200Rnd_95x40_Box_JHPT: OPTRE_200Rnd_95x40_Box_JHP
+	{
+		displayname="200Rnd 9.5x40mm JHP Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm JHP Tracer";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_200Rnd_95x40_Box_SAPHE: OPTRE_200Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_SAPHE";
+		displayname="200Rnd 9.5x40mm SAP-HE Box Magazine";
+		displaynameshort="9.5x60mm SAP-HE";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive";
+		initspeed=720;
+	};
+	class OPTRE_200Rnd_95x40_Box_SAPHET: OPTRE_200Rnd_95x40_Box_SAPHE
+	{
+		displayname="200Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm SAP-HE Tracer";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_200Rnd_95x40_Box_SS: OPTRE_200Rnd_95x40_Box
+	{
+		ammo="OPTRE_B_95x40_SS";
+		displayname="200Rnd 9.5x40mm SS Box Magazine";
+		displaynameshort="9.5x60mm SS";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_100Rnd_95x60_Box_HPSAP: OPTRE_100Rnd_95x40_Box
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=1500;
+		ammo="OPTRE_B_95x60_HPSAP";
+		displayname="100Rnd 9.5x60mm Box Magazine";
+		displaynameshort="9.5x60mm HP-SAP";
+		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing";
+	};
+	class OPTRE_100Rnd_95x60_Box_HPSAPT: OPTRE_100Rnd_95x60_Box_HPSAP
+	{
+		displayname="100Rnd 9.5x60mm Box Magazine (Tracer Red)";
+		displaynameshort="9.5x60mm HP-SAP Red Tracer";
+		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x60_Box_HPSAPTY: OPTRE_100Rnd_95x60_Box_HPSAP
+	{
+		ammo="OPTRE_B_95x60_HPSAPTY";
+		displayname="100Rnd 9.5x60mm Box Magazine (Tracer Yellow)";
+		displaynameshort="9.5x60mm HP-SAP Yellow Tracer";
+		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x60_Box_JHP: OPTRE_100Rnd_95x60_Box_HPSAP
+	{
+		initspeed=1300;
+		ammo="OPTRE_B_95x60_JHP";
+		displayname="100Rnd 9.5x60mm JHP Box Magazine";
+		displaynameshort="9.5x60mm JHP";
+		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point";
+		mass=45;
+	};
+	class OPTRE_100Rnd_95x60_Box_JHPT: OPTRE_100Rnd_95x60_Box_JHP
+	{
+		displayname="100Rnd 9.5x60mm JHP Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm JHP Tracer";
+		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x60_Box_SAPHE: OPTRE_100Rnd_95x60_Box_HPSAP
+	{
+		initspeed=1020;
+		ammo="OPTRE_B_95x60_SAPHE";
+		displayname="100Rnd 9.5x60mm SAP-HE Box Magazine";
+		displaynameshort="9.5x60mm SAP-HE";
+		descriptionShort="100 Round Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive";
+	};
+	class OPTRE_100Rnd_95x60_Box_SAPHET: OPTRE_100Rnd_95x60_Box_SAPHE
+	{
+		displayname="100Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm SAP-HE Tracer";
+		descriptionShort="100 Round Box Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_95x60_Box_SS: OPTRE_100Rnd_95x60_Box_HPSAP
+	{
+		initspeed=340;
+		ammo="OPTRE_B_95x60_SS";
+		displayname="100Rnd 9.5x60mm SS Box Magazine";
+		displaynameshort="9.5x60mm SS";
+		descriptionShort="100 Round Box Magazine<br/>9.5x60mm<br/>Sub-Sonic";
+	};
+	class OPTRE_300Rnd_95x60_Box: OPTRE_100Rnd_95x40_Box
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=1300;
+		ammo="OPTRE_B_95x60";
+		count=300;
+		displayname="300Rnd 9.5x60mm Box Magazine";
+		displaynameshort="9.5x60mm";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm";
+		mass=120;
+	};
+	class OPTRE_300Rnd_95x60_Box_HPSAP: OPTRE_300Rnd_95x60_Box
+	{
+		initspeed=1500;
+		ammo="OPTRE_B_95x60_HPSAP";
+		displayname="300Rnd 9.5x60mm Box Magazine";
+		displaynameshort="9.5x60mm HP-SAP";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing";
+	};
+	class OPTRE_300Rnd_95x60_Box_HPSAPT: OPTRE_300Rnd_95x60_Box_HPSAP
+	{
+		displayname="300Rnd 9.5x60mm Box Magazine (Tracer Red)";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_300Rnd_95x60_Box_HPSAPTY: OPTRE_300Rnd_95x60_Box_HPSAP
+	{
+		ammo="OPTRE_B_95x60_HPSAPTY";
+		displayname="300Rnd 9.5x60mm Box Magazine (Tracer Yellow)";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_300Rnd_95x60_Box_JHP: OPTRE_300Rnd_95x60_Box
+	{
+		initspeed=1300;
+		ammo="OPTRE_B_95x60_JHP";
+		displayname="300Rnd 9.5x60mm JHP Box Magazine";
+		displaynameshort="9.5x60mm JHP";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_300Rnd_95x60_Box_JHPT: OPTRE_300Rnd_95x60_Box_JHP
+	{
+		displayname="300Rnd 9.5x60mm JHP Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm JHP Tracer";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_300Rnd_95x60_Box_SAPHE: OPTRE_300Rnd_95x60_Box
+	{
+		initspeed=1020;
+		ammo="OPTRE_B_95x60_SAPHE";
+		displayname="300Rnd 9.5x60mm SAP-HE Box Magazine";
+		displaynameshort="9.5x60mm SAP-HE";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive";
+	};
+	class OPTRE_300Rnd_95x60_Box_SAPHET: OPTRE_300Rnd_95x60_Box_SAPHE
+	{
+		displayname="300Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";
+		displaynameshort="9.5x60mm SAP-HE Tracer";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_300Rnd_95x60_Box_SS: OPTRE_300Rnd_95x60_Box
+	{
+		initspeed=340;
+		ammo="OPTRE_B_95x60_SS";
+		displayname="300Rnd 9.5x60mm SS Box Magazine";
+		displaynameshort="9.5x60mm SS";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Sub-Sonic";
+	};
+	class OPTRE_8Rnd_127x40_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_127x40_Ball";
+		count=8;
+		displayname="8Rnd 12.7x40mm Magazine";
+		displaynameshort="12.7x40mm";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm";
+		initspeed=620;
+		mass=8;
+		model="\OPTRE_Weapons\pistol\m6_Magazine";
+		picture="\OPTRE_weapons\pistol\icons\magazine";
+	};
+	class OPTRE_8Rnd_127x40_Mag_AP: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=640;
+		ammo="OPTRE_B_127x40_AP";
+		displayname="8Rnd 12.7x40mm AP Magazine";
+		displaynameshort="12.7x40mm AP";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing";
+	};
+	class OPTRE_8Rnd_127x40_Mag_APT: OPTRE_8Rnd_127x40_Mag_AP
+	{
+		displayname="8Rnd 12.7x40mm AP Magazine (Tracer)";
+		displaynameshort="12.7x40mm AP Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_8Rnd_127x40_Mag_HE: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_HE";
+		displayname="8Rnd 12.7x40mm HE Magazine";
+		displaynameshort="12.7x40mm HE";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Explosive";
+	};
+	class OPTRE_8Rnd_127x40_Mag_HET: OPTRE_8Rnd_127x40_Mag_HE
+	{
+		displayname="8Rnd 12.7x40mm HE Magazine (Tracer)";
+		displaynameshort="12.7x40mm HE Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Explosive Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_8Rnd_127x40_Mag_FR: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=100;
+		ammo="F_40mm_Red";
+		displayname="8Rnd 12.7x40mm Flare Magazine (Red)";
+		displaynameshort="12.7x40mm Flare Red";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Flares (Red)";
+	};
+	class OPTRE_8Rnd_127x40_Mag_FG: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=100;
+		ammo="F_40mm_Green";
+		displayname="8Rnd 12.7x40mm Flare Magazine (Green)";
+		displaynameshort="12.7x40mm Flare Green";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Flares (Green)";
+	};
+	class OPTRE_8Rnd_127x40_Mag_HVAP: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=800;
+		ammo="OPTRE_B_127x40_HVAP";
+		displayname="8Rnd 12.7x40mm HVAP Magazine";
+		displaynameshort="12.7x40mm HVAP";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing";
+	};
+	class OPTRE_8Rnd_127x40_Mag_HVAPT: OPTRE_8Rnd_127x40_Mag_HVAP
+	{
+		displayname="8Rnd 12.7x40mm HVAP Magazine (Tracer)";
+		displaynameshort="12.7x40mm HVAP Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_8Rnd_127x40_Mag_JHP: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=580;
+		ammo="OPTRE_B_127x40_JHP";
+		displayname="8Rnd 12.7x40mm JHP Magazine";
+		displaynameshort="12.7x40mm JHP";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_8Rnd_127x40_Mag_JHPT: OPTRE_8Rnd_127x40_Mag_JHP
+	{
+		displayname="8Rnd 12.7x40mm JHP Magazine (Tracer)";
+		displaynameshort="12.7x40mm JHP Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_8Rnd_127x40_Mag_SAPHE: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_SAPHE";
+		displayname="8Rnd 12.7x40mm SAP-HE Magazine";
+		displaynameshort="12.7x40mm SAP-HE";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive";
+	};
+	class OPTRE_8Rnd_127x40_Mag_SAPHET: OPTRE_8Rnd_127x40_Mag_SAPHE
+	{
+		displayname="8Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
+		displaynameshort="12.7x40mm SAP-HE Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_8Rnd_127x40_Mag_SS: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=340;
+		ammo="OPTRE_B_127x40_SS";
+		displayname="8Rnd 12.7x40mm SS Magazine";
+		displaynameshort="12.7x40mm SS";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic";
+	};
+	class OPTRE_8Rnd_127x40_Mag_SST: OPTRE_8Rnd_127x40_Mag_SS
+	{
+		displayname="8Rnd 12.7x40mm SS Magazine (Tracer)";
+		displaynameshort="12.7x40mm SS Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_8Rnd_127x40_Mag_NARQ: OPTRE_8Rnd_127x40_Mag
+	{
+		initspeed=900;
+		ammo="OPTRE_B_127x40_NARQ";
+		displayname="8Rnd 12.7x40mm NARQ Magazine";
+		displaynameshort="12.7x40mm NARQ";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
+	};
+	class OPTRE_8Rnd_127x40_Mag_NARQT: OPTRE_8Rnd_127x40_Mag_NARQ
+	{
+		displayname="8Rnd 12.7x40mm NARQ Magazine (Tracer)";
+		displaynameshort="12.7x40mm NARQ Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_6Rnd_127x40_Cyl: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_127x40_Ball";
+		count=6;
+		displayname="6Rnd 12.7x40mm Cylinder";
+		displaynameshort="12.7x40mm";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm";
+		initspeed=620;
+		mass=4;
+		model="\A3\weapons_F\ammo\mag_univ";
+		picture="\A3\Weapons_F_EPA\Data\ui\M_6Rnd_revolver_CA";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_AP: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_AP";
+		displayname="6Rnd 12.7x40mm AP Cylinder";
+		displaynameshort="12.7x40mm AP";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Armor-Piercing";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_APT: OPTRE_6Rnd_127x40_Cyl_AP
+	{
+		displayname="6Rnd 12.7x40mm AP Cylinder (Tracer)";
+		displaynameshort="12.7x40mm AP Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_6Rnd_127x40_Cyl_HE: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=500;
+		ammo="OPTRE_B_127x40_HE";
+		displayname="6Rnd 12.7x40mm HE Cylinder";
+		displaynameshort="12.7x40mm HE";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Explosive";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_HET: OPTRE_6Rnd_127x40_Cyl_HE
+	{
+		displayname="6Rnd 12.7x40mm HE Cylinder (Tracer)";
+		displaynameshort="12.7x40mm HE Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Explosive Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_6Rnd_127x40_Cyl_FR: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=100;
+		ammo="F_40mm_Red";
+		displayname="6Rnd 12.7x40mm Flare Cylinder (Red)";
+		displaynameshort="12.7x40mm Flare Red";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Flares (Red)";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_FG: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=100;
+		ammo="F_40mm_Green";
+		displayname="6Rnd 12.7x40mm Flare Cylinder (Green)";
+		displaynameshort="12.7x40mm Flare Green";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Flares (Green)";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_HVAP: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=800;
+		ammo="OPTRE_B_127x40_HVAP";
+		displayname="6Rnd 12.7x40mm HVAP Cylinder";
+		displaynameshort="12.7x40mm HVAP";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Velocity Armor-Piercing";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_HVAPT: OPTRE_6Rnd_127x40_Cyl_HVAP
+	{
+		displayname="6Rnd 12.7x40mm HVAP Cylinder (Tracer)";
+		displaynameshort="12.7x40mm HVAP Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_6Rnd_127x40_Cyl_JHP: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=580;
+		ammo="OPTRE_B_127x40_JHP";
+		displayname="6Rnd 12.7x40mm JHP Cylinder";
+		displaynameshort="12.7x40mm JHP";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_JHPT: OPTRE_6Rnd_127x40_Cyl_JHP
+	{
+		displayname="6Rnd 12.7x40mm JHP Cylinder (Tracer)";
+		displaynameshort="12.7x40mm JHP Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_6Rnd_127x40_Cyl_SAPHE: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_SAPHE";
+		displayname="6Rnd 12.7x40mm SAP-HE Cylinder";
+		displaynameshort="12.7x40mm SAP-HE";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_SAPHET: OPTRE_6Rnd_127x40_Cyl_SAPHE
+	{
+		displayname="6Rnd 12.7x40mm SAP-HE Cylinder (Tracer)";
+		displaynameshort="12.7x40mm SAP-HE Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_6Rnd_127x40_Cyl_SS: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=340;
+		ammo="OPTRE_B_127x40_SS";
+		displayname="6Rnd 12.7x40mm SS Cylinder";
+		displaynameshort="12.7x40mm SS";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Sub-Sonic";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_SST: OPTRE_6Rnd_127x40_Cyl_SS
+	{
+		displayname="6Rnd 12.7x40mm SS Cylinder (Tracer)";
+		displaynameshort="12.7x40mm SS Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Sub-Sonic Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_6Rnd_127x40_Cyl_NARQ: OPTRE_6Rnd_127x40_Cyl
+	{
+		initspeed=900;
+		ammo="OPTRE_B_127x40_NARQ";
+		displayname="6Rnd 12.7x40mm NARQ Cylinder";
+		displaynameshort="12.7x40mm NARQ";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Tranquilizer";
+	};
+	class OPTRE_6Rnd_127x40_Cyl_NARQT: OPTRE_6Rnd_127x40_Cyl_NARQ
+	{
+		displayname="6Rnd 12.7x40mm NARQ Cylinder (Tracer)";
+		displaynameshort="12.7x40mm NARQ Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Tranquilizer Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_12Rnd_127x40_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_127x40_Ball";
+		count=12;
+		displayname="12Rnd 12.7x40mm Magazine";
+		displaynameshort="12.7x40mm";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm";
+		initspeed=620;
+		mass=8.5;
+		model="\OPTRE_Weapons\pistol\m6_Magazine";
+		picture="\OPTRE_weapons\pistol\icons\magazine";
+	};
+	class OPTRE_12Rnd_127x40_Mag_AP: OPTRE_12Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_AP";
+		displayname="12Rnd 12.7x40mm AP Magazine";
+		displaynameshort="12.7x40mm AP";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing";
+	};
+	class OPTRE_12Rnd_127x40_Mag_APT: OPTRE_12Rnd_127x40_Mag_AP
+	{
+		displayname="12Rnd 12.7x40mm AP Magazine (Tracer)";
+		displaynameshort="12.7x40mm AP Tracer";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_12Rnd_127x40_Mag_HE: OPTRE_12Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_HE";
+		displayname="12Rnd 12.7x40mm HE Magazine";
+		displaynameshort="12.7x40mm HE";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Explosive";
+	};
+	class OPTRE_12Rnd_127x40_Mag_HET: OPTRE_12Rnd_127x40_Mag_HE
+	{
+		displayname="12Rnd 12.7x40mm HE Magazine (Tracer)";
+		displaynameshort="12.7x40mm HE Tracer";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Explosive Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_12Rnd_127x40_Mag_HVAP: OPTRE_12Rnd_127x40_Mag
+	{
+		initspeed=900;
+		ammo="OPTRE_B_127x40_HVAP";
+		displayname="12Rnd 12.7x40mm HVAP Magazine";
+		displaynameshort="12.7x40mm HVAP";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing";
+	};
+	class OPTRE_12Rnd_127x40_Mag_HVAPT: OPTRE_12Rnd_127x40_Mag_HVAP
+	{
+		displayname="12Rnd 12.7x40mm HVAP Magazine (Tracer)";
+		displaynameshort="12.7x40mm HVAP Tracer";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_12Rnd_127x40_Mag_JHP: OPTRE_12Rnd_127x40_Mag
+	{
+		initspeed=580;
+		ammo="OPTRE_B_127x40_JHP";
+		displayname="12Rnd 12.7x40mm JHP Magazine";
+		displaynameshort="12.7x40mm JHP";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_12Rnd_127x40_Mag_JHPT: OPTRE_12Rnd_127x40_Mag_JHP
+	{
+		displayname="12Rnd 12.7x40mm JHP Magazine (Tracer)";
+		displaynameshort="12.7x40mm JHP Tracer";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_12Rnd_127x40_Mag_SAPHE: OPTRE_12Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_SAPHE";
+		displayname="12Rnd 12.7x40mm SAP-HE Magazine";
+		displaynameshort="12.7x40mm SAP-HE";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive";
+	};
+	class OPTRE_12Rnd_127x40_Mag_SAPHET: OPTRE_12Rnd_127x40_Mag_SAPHE
+	{
+		displayname="12Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
+		displaynameshort="12.7x40mm SAP-HE Tracer";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_12Rnd_127x40_Mag_SS: OPTRE_12Rnd_127x40_Mag
+	{
+		initspeed=340;
+		ammo="OPTRE_B_127x40_SS";
+		displayname="12Rnd 12.7x40mm SS Magazine";
+		displaynameshort="12.7x40mm SS";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic";
+	};
+	class OPTRE_12Rnd_127x40_Mag_SST: OPTRE_12Rnd_127x40_Mag_SS
+	{
+		displayname="12Rnd 12.7x40mm SS Magazine (Tracer)";
+		displaynameshort="12.7x40mm SS Tracer";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_12Rnd_127x40_Mag_NARQ: OPTRE_12Rnd_127x40_Mag
+	{
+		initspeed=900;
+		ammo="OPTRE_B_127x40_NARQ";
+		displayname="12Rnd 12.7x40mm NARQ Magazine";
+		displaynameshort="12.7x40mm NARQ";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
+	};
+	class OPTRE_12Rnd_127x40_Mag_NARQT: OPTRE_12Rnd_127x40_Mag_NARQ
+	{
+		displayname="12Rnd 12.7x40mm NARQ Magazine (Tracer)";
+		displaynameshort="12.7x40mm NARQ Tracer";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_16Rnd_127x40_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_127x40_Ball";
+		count=16;
+		displayname="16Rnd 12.7x40mm Magazine";
+		displaynameshort="12.7x40mm";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm";
+		initspeed=620;
+		mass=16;
+		model="\OPTRE_Weapons\pistol\m6_Magazine";
+		picture="\OPTRE_weapons\pistol\icons\magazine";
+	};
+	class OPTRE_16Rnd_127x40_Mag_AP: OPTRE_16Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_AP";
+		displayname="16Rnd 12.7x40mm AP Magazine";
+		displaynameshort="12.7x40mm AP";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing";
+	};
+	class OPTRE_16Rnd_127x40_Mag_APT: OPTRE_16Rnd_127x40_Mag_AP
+	{
+		displayname="16Rnd 12.7x40mm AP Magazine (Tracer)";
+		displaynameshort="12.7x40mm AP Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_16Rnd_127x40_Mag_HE: OPTRE_16Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_HE";
+		displayname="16Rnd 12.7x40mm HE Magazine";
+		displaynameshort="12.7x40mm HE";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Explosive";
+	};
+	class OPTRE_16Rnd_127x40_Mag_HET: OPTRE_16Rnd_127x40_Mag_HE
+	{
+		displayname="16Rnd 12.7x40mm HE Magazine (Tracer)";
+		displaynameshort="12.7x40mm HE Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Explosive Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_16Rnd_127x40_Mag_HVAP: OPTRE_16Rnd_127x40_Mag
+	{
+		initspeed=800;
+		ammo="OPTRE_B_127x40_HVAP";
+		displayname="16Rnd 12.7x40mm HVAP Magazine";
+		displaynameshort="12.7x40mm HVAP";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing";
+	};
+	class OPTRE_16Rnd_127x40_Mag_HVAPT: OPTRE_16Rnd_127x40_Mag_HVAP
+	{
+		displayname="16Rnd 12.7x40mm HVAP Magazine (Tracer)";
+		displaynameshort="12.7x40mm HVAP Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_16Rnd_127x40_Mag_JHP: OPTRE_16Rnd_127x40_Mag
+	{
+		initspeed=580;
+		ammo="OPTRE_B_127x40_JHP";
+		displayname="16Rnd 12.7x40mm JHP Magazine";
+		displaynameshort="12.7x40mm JHP";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_16Rnd_127x40_Mag_JHPT: OPTRE_16Rnd_127x40_Mag_JHP
+	{
+		displayname="16Rnd 12.7x40mm JHP Magazine (Tracer)";
+		displaynameshort="12.7x40mm JHP Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_16Rnd_127x40_Mag_SAPHE: OPTRE_16Rnd_127x40_Mag
+	{
+		initspeed=620;
+		ammo="OPTRE_B_127x40_SAPHE";
+		displayname="16Rnd 12.7x40mm SAP-HE Magazine";
+		displaynameshort="12.7x40mm SAP-HE";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive";
+	};
+	class OPTRE_16Rnd_127x40_Mag_SAPHET: OPTRE_16Rnd_127x40_Mag_SAPHE
+	{
+		displayname="16Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
+		displaynameshort="12.7x40mm SAP-HE Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_16Rnd_127x40_Mag_SS: OPTRE_16Rnd_127x40_Mag
+	{
+		initspeed=340;
+		ammo="OPTRE_B_127x40_SS";
+		displayname="16Rnd 12.7x40mm SS Magazine";
+		displaynameshort="12.7x40mm SS";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic";
+	};
+	class OPTRE_16Rnd_127x40_Mag_SST: OPTRE_16Rnd_127x40_Mag_SS
+	{
+		displayname="16Rnd 12.7x40mm SS Magazine (Tracer)";
+		displaynameshort="12.7x40mm SS Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_16Rnd_127x40_Mag_NARQ: OPTRE_16Rnd_127x40_Mag
+	{
+		initspeed=900;
+		ammo="OPTRE_B_127x40_NARQ";
+		displayname="16Rnd 12.7x40mm NARQ Magazine";
+		displaynameshort="12.7x40mm NARQ";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
+	};
+	class OPTRE_16Rnd_127x40_Mag_NARQT: OPTRE_16Rnd_127x40_Mag_NARQ
+	{
+		displayname="16Rnd 12.7x40mm NARQ Magazine (Tracer)";
+		displaynameshort="12.7x40mm NARQ Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_10Rnd_127x99;
+	class OPTRE_10Rnd_127x99_Mag_AP: OPTRE_10Rnd_127x99
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		model="\OPTRE_Weapons\pistol\m6_Magazine";
+		picture="\OPTRE_Weapons\br\icons\magazine.paa";
+		mass=16;
+		ammo="OPTRE_B_127x99_AP";
+		displayName="10Rnd 12.7x99mm AP SRM77 Magazine";
+		displayNameShort="12.7x99 AP";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Armor Piercing";
+		initspeed=1000;
+		count=10;
+		tracersEvery=0;
+		lastRoundsTracer=3;
+	};
+	class OPTRE_10Rnd_127x99_Mag_APT: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		displayName="10Rnd 12.7x99mm AP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 AP tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Armor Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_127x99_Mag_Tracer_Red: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_Ball_Red";
+		displayName="10Rnd 12.7x99mm ball SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Tracers";
+		initspeed=880;
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_127x99_Mag_Tracer_Yellow: OPTRE_10Rnd_127x99_Mag_Tracer_Red
+	{
+		ammo="OPTRE_B_127x99_Ball";
+		displayName="10Rnd 12.7x99mm ball SRM77 Magazine (Tracers yellow)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Tracers";
+	};
+	class OPTRE_10Rnd_127x99_Mag_SLAP: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SLAP";
+		displayName="10Rnd 12.7x99mm SLAP SRM77 Magazine";
+		displayNameShort="12.7x99 SLAP";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator";
+		initspeed=1215;
+	};
+	class OPTRE_10Rnd_127x99_Mag_SLAPT: OPTRE_10Rnd_127x99_Mag_SLAP
+	{
+		displayName="10Rnd 12.7x99mm SLAP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SLAP tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_127x99_Mag_SS: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SS";
+		displayName="10Rnd 12.7x99mm SS SRM77 Magazine";
+		displayNameShort="12.7x99 SS";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_10Rnd_127x99_Mag_SST: OPTRE_10Rnd_127x99_Mag_SS
+	{
+		displayName="10Rnd 12.7x99mm SS SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SS tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_AP: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		mass=8;
+		displayName="5Rnd 12.7x99mm AP SRM77 Magazine";
+		displayNameShort="12.7x99 AP";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Armor Piercing";
+		initspeed=1000;
+		count=5;
+		tracersEvery=0;
+		lastRoundsTracer=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_APT: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		displayName="5Rnd 12.7x99mm AP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 AP tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Armor Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_Tracer_Red: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_Ball_Red";
+		displayName="5Rnd 12.7x99mm ball SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Tracers";
+		initspeed=880;
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_Tracer_Yellow: OPTRE_5Rnd_127x99_Mag_Tracer_Red
+	{
+		ammo="OPTRE_B_127x99_Ball";
+		displayName="5Rnd 12.7x99mm ball SRM77 Magazine (Tracers yellow)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Tracers";
+	};
+	class OPTRE_5Rnd_127x99_Mag_SLAP: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SLAP";
+		displayName="5Rnd 12.7x99mm SLAP SRM77 Magazine";
+		displayNameShort="12.7x99 SLAP";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator";
+		initspeed=1215;
+	};
+	class OPTRE_5Rnd_127x99_Mag_SLAPT: OPTRE_5Rnd_127x99_Mag_SLAP
+	{
+		displayName="5Rnd 12.7x99mm SLAP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SLAP tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_SS: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SS";
+		displayName="5Rnd 12.7x99mm SS SRM77 Magazine";
+		displayNameShort="12.7x99 SS";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_5Rnd_127x99_Mag_SST: OPTRE_5Rnd_127x99_Mag_SS
+	{
+		displayName="5Rnd 12.7x99mm SS SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SS tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_4Rnd_145x114_Mag_APFSDST: OPTRE_4Rnd_145x114_APFSDS_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		initspeed=2000;
+		ammo="OPTRE_B_145x114_APFSDST";
+		displayname="4Rnd 14.5x114mm APFSDS Magazine (Tracer)";
+		displaynameshort="14.5x114mm APFSDS Tracer";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Armor Piercing Fin-Stabilized Disposable Shell Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_4Rnd_145x114_Mag_HVAPT: OPTRE_4Rnd_145x114_HVAP_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		initspeed=1800;
+		ammo="OPTRE_B_145x114_HVAPT";
+		displayname="4Rnd 14.5x114mm HVAP Magazine (Tracer)";
+		displaynameshort="14.5x114mm HVAP Tracer";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>High Velocity Armor Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_4Rnd_145x114_Mag_HEDPT: OPTRE_4Rnd_145x114_HEDP_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		initspeed=1500;
+		ammo="OPTRE_B_145x114_HEDP";
+		displayname="4Rnd 14.5x114mm HEDP Magazine (Tracer)";
+		displaynameshort="14.5x114mm HEDP Tracer";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>High Explosive Dual Purpose Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_4Rnd_145x114_Mag_SS: OPTRE_4Rnd_145x114_APFSDS_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=340;
+		ammo="OPTRE_B_145x114_SS";
+		displayname="4Rnd 14.5x114mm SS Magazine";
+		displaynameshort="14.5x114mm SS";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Sub-Sonic";
+	};
+	class OPTRE_4Rnd_145x114_Mag_SST: OPTRE_4Rnd_145x114_Mag_SS
+	{
+		displayname="4Rnd 14.5x114mm SS Magazine (Tracer)";
+		displaynameshort="14.5x114mm SS Tracer";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Sub-Sonic Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_4Rnd_145x114_Mag_NARQ: OPTRE_4Rnd_145x114_APFSDS_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=2000;
+		ammo="OPTRE_B_145x114_NARQ";
+		displayname="4Rnd 14.5x114mm NARQ Magazine";
+		displaynameshort="14.5x114mm NARQ";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Tranquilizer";
+	};
+	class OPTRE_4Rnd_145x114_Mag_NARQT: OPTRE_4Rnd_145x114_Mag_NARQ
+	{
+		displayname="4Rnd 14.5x114mm NARQ Magazine (Tracer)";
+		displaynameshort="14.5x114mm NARQ Tracer";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Tranquilizer Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_FMJ: OPTRE_48Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_FMJ";
+		displayname="48Rnd 5x23mm FMJ Magazine";
+		displaynameshort="5x23mm FMJ";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Full Metal Jacket";
+		initspeed=420;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_FMJT: OPTRE_48Rnd_5x23mm_Mag_FMJ
+	{
+		displayname="48Rnd 5x23mm FMJ Magazine (Tracer)";
+		displaynameshort="5x23mm FMJ Tracer";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Full Metal Jacket Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_HV: OPTRE_48Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_HV";
+		displayname="48Rnd 5x23mm HV Magazine";
+		displaynameshort="5x23mm HV";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>High-Velocity";
+		initspeed=550;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_HVT: OPTRE_48Rnd_5x23mm_Mag_HV
+	{
+		displayname="48Rnd 5x23mm HV Magazine (Tracer)";
+		displaynameshort="5x23mm HV Tracer";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>High-Velocity Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_JHP: OPTRE_48Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_JHP";
+		displayname="48Rnd 5x23mm JHP Magazine";
+		displaynameshort="5x23mm JHP";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point";
+		initspeed=420;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_JHPT: OPTRE_48Rnd_5x23mm_Mag_JHP
+	{
+		displayname="48Rnd 5x23mm JHP Magazine (Tracer)";
+		displaynameshort="5x23mm JHP Tracer";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_SS: OPTRE_48Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_SS";
+		displayname="48Rnd 5x23mm SS Magazine";
+		displaynameshort="5x23mm SS";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Sub-sonic";
+		initspeed=420;
+	};
+	class OPTRE_48Rnd_5x23mm_Mag_SST: OPTRE_48Rnd_5x23mm_Mag_SS
+	{
+		displayname="48Rnd 5x23mm SS (Tracer)";
+		displaynameshort="5x23mm SS Tracer";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Sub-sonic Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_FMJ: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_FMJ";
+		displayname="60Rnd 5x23mm FMJ Magazine";
+		displaynameshort="5x23mm FMJ";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Full Metal Jacket";
+		initspeed=420;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_FMJT: OPTRE_60Rnd_5x23mm_Mag_FMJ
+	{
+		displayname="60Rnd 5x23mm FMJ Magazine (Tracer)";
+		displaynameshort="5x23mm FMJ Tracer";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Full Metal Jacket Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_HV: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_HV";
+		displayname="60Rnd 5x23mm HV Magazine";
+		displaynameshort="5x23mm HV";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>High-Velocity";
+		initspeed=550;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_HVT: OPTRE_60Rnd_5x23mm_Mag_HV
+	{
+		displayname="60Rnd 5x23mm HV Magazine (Tracer)";
+		displaynameshort="5x23mm HV Tracer";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>High-Velocity Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_JHP: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_JHP";
+		displayname="60Rnd 5x23mm JHP Magazine";
+		displaynameshort="5x23mm JHP";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point";
+		initspeed=420;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_JHPT: OPTRE_60Rnd_5x23mm_Mag_JHP
+	{
+		displayname="60Rnd 5x23mm JHP Magazine (Tracer)";
+		displaynameshort="5x23mm JHP Tracer";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_SS: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_5x23_Caseless_SS";
+		displayname="60Rnd 5x23mm SS Magazine";
+		displaynameshort="5x23mm SS";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Sub-sonic";
+		initspeed=340;
+	};
+	class OPTRE_60Rnd_5x23mm_Mag_SST: OPTRE_60Rnd_5x23mm_Mag_SS
+	{
+		displayname="60Rnd 5x23mm SS Magazine (Tracer)";
+		displaynameshort="5x23mm SS Tracer";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Sub-sonic Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_64Rnd_57x31_Mag;
+	class OPTRE_64Rnd_57x31_Mag_FMJ: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_FMJ";
+		displayname="64Rnd 57x31mm FMJ Magazine";
+		displaynameshort="57x31mm FMJ";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Full Metal Jacket";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_FMJT: OPTRE_64Rnd_57x31_Mag_FMJ
+	{
+		displayname="64Rnd 57x31mm FMJ Magazine (Tracer)";
+		displaynameshort="57x31mm FMJ Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Full Metal Jacket Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_64Rnd_57x31_Mag_HV: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_HV";
+		displayname="64Rnd 57x31mm HV Magazine";
+		displaynameshort="57x31mm HV";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>High-Velocity";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_HVT: OPTRE_64Rnd_57x31_Mag_HV
+	{
+		displayname="64Rnd 57x31mm HV Magazine (Tracer)";
+		displaynameshort="57x31mm HV Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>High-Velocity Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_64Rnd_57x31_Mag_JHP: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_JHP";
+		displayname="64Rnd 57x31mm JHP Magazine";
+		displaynameshort="57x31mm JHP";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Jacketed Hollow-Point";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_JHPT: OPTRE_64Rnd_57x31_Mag_JHP
+	{
+		displayname="64Rnd 57x31mm JHP Magazine (Tracer)";
+		displaynameshort="57x31mm JHP Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_64Rnd_57x31_Mag_SS: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_SS";
+		displayname="64Rnd 57x31mm SS Magazine";
+		displaynameshort="57x31mm SS";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Sub-sonic";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_SST: OPTRE_64Rnd_57x31_Mag_SS
+	{
+		displayname="64Rnd 57x31mm SS Magazine (Tracer)";
+		displaynameshort="57x31mm SS Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Sub-sonic Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_1Rnd_50x137_HEAT: OPTRE_M41_Twin_HEAT
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_50x137_HEAT";
+		initspeed=360;
+		count=1;
+		displayname="50x137mm HEAT Rocket";
+		descriptionShort="1 Rocket<br/>50x137mm<br/>High Explosive Anti-Tank<br/>Unguided";
+		mass=35;
+	};
+	class OPTRE_1Rnd_50x137_HE: OPTRE_1Rnd_50x137_HEAT
+	{
+		ammo="OPTRE_50X137_HE";
+		initspeed=400;
+		displayname="50x137mm HE Rocket";
+		displaynameshort="HE";
+		descriptionShort="1 Rocket<br/>50x137mm<br/>High Explosive<br/>Unguided";
+		mass=30;
+	};
+	class OPTRE_1Rnd_50x137_PEN: OPTRE_1Rnd_50x137_HEAT
+	{
+		ammo="OPTRE_50x137_PEN";
+		initspeed=700;
+		displayname="50x137mm Penetrator Rocket";
+		displaynameshort="Penetrator";
+		descriptionShort="1 Rocket<br/>50x137mm<br/>Anti-Tank<br/>Unguided";
+		mass=50;
+	};
+	class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_HEAT
+	{
+		ammo="OPTRE_50x137_THERMO";
+		initspeed=150;
+		displayname="50x137mm Thermobaric Rocket";
+		displaynameshort="Thermobaric";
+		descriptionShort="1 Rocket<br/>50x137mm<br/>Thermobarick<br/>Unguided";
+		mass=55;
+	};
+	class OPTRE_1Rnd_50x137_Tekcirc: OPTRE_1Rnd_50x137_THERMO
+	{
+		scopeArsenal=1;
+		ammo="OPTRE_50x137_THERMO";
+		initspeed=-5;
+		displayname="50x137mm Tekcirc Rocket";
+		displaynameshort="Tekcirc";
+		descriptionShort="1 Rocket<br/>50x137mm<br/>Tekcirc<br/>Dediugnu";
+	};
+
+	class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_8Gauge_Pellet";
+		count=6;
+		displayname="6Rnd 8 Gauge Pellets";
+		displayNameShort="8 Gauge Pellets";
+		descriptionShort="6 Rounds<br/>8 Gauge<br/>Pellets";
+		mass=10;
+		model="\OPTRE_Weapons\Shotgun\Shell_mag_S";
+		picture="\a3\weapons_F\data\ui\m_12gauge_ca";
+	};
+	class OPTRE_6Rnd_8Gauge_Slug: 2Rnd_12Gauge_Slug
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_8Gauge_Slug";
+		displayname="6Rnd 8 Gauge Slugs";
+		displayNameShort="8 Gauge Slugs";
+		descriptionShort="6 Rounds<br/>8 Gauge<br/>Slugs";
+		mass=10;
+		model="\OPTRE_Weapons\Shotgun\Shell_mag_P";
+		picture="\a3\weapons_F\data\ui\m_12gauge_slugs_ca";
+	};
+	class OPTRE_6Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_Slug
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_8Gauge_HEDP";
+		displayname="6Rnd 8 Gauge HEDP";
+		displayNameShort="8 Gauge HEDP";
+		descriptionShort="6 Rounds<br/>8 Gauge<br/>High-Explosive Dual Purpose";
+	};
+	class OPTRE_6Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Slug
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_8Gauge_Beanbag";
+		displayname="6Rnd 8 Gauge Beanbags";
+		displayNameShort="8 Gauge Beanbags";
+		descriptionShort="6 Rounds<br/>8 Gauge<br/>Beanbags";
+	};
+	class OPTRE_6Rnd_8Gauge_Incendiary: OPTRE_6Rnd_8Gauge_Pellet
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_8Gauge_Incendiary";
+		displayname="6Rnd 8 Gauge Dragon's Breath";
+		displayNameShort="8 Gauge Incendiary";
+		descriptionShort="6 Rounds<br/>8 Gauge<br/>Incendiary";
+		tracersevery=1;
+	};
+	class OPTRE_12Rnd_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		count=12;
+		mass=20;
+		displayname="12Rnd 8 Gauge Pellets";
+		descriptionShort="12 Rounds<br/>8 Gauge<br/>Pellets";
+	};
+	class OPTRE_12Rnd_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		count=12;
+		mass=20;
+		displayname="12Rnd 8 Gauge Slugs";
+		descriptionShort="12 Rounds<br/>8 Gauge<br/>Slugs";
+	};
+	class OPTRE_12Rnd_8Gauge_HEDP: OPTRE_6Rnd_8Gauge_HEDP
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		count=12;
+		mass=20;
+		displayname="12Rnd 8 Gauge HEDP";
+		descriptionShort="12 Rounds<br/>8 Gauge<br/>High-Explosive Dual Purpose";
+	};
+	class OPTRE_12Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		count=12;
+		mass=20;
+		displayname="12Rnd 8 Gauge Beanbags";
+		descriptionShort="12 Rounds<br/>8 Gauge<br/>Beanbags";
+	};
+	class OPTRE_12Rnd_8Gauge_Incendiary: OPTRE_6Rnd_8Gauge_Incendiary
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		count=12;
+		mass=20;
+		displayname="12Rnd 8 Gauge Dragon's Breath";
+		descriptionShort="12 Rounds<br/>8 Gauge<br/>Incendiary";
+		tracersevery=1;
+	};
+	class 3Rnd_UGL_FlareBlue_F: 3Rnd_UGL_FlareWhite_F
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="F_40mm_Blue";
+		displayName="3Rnd 3GL Flares (Blue)";
+		displayNameShort="Blue Flare";
+		descriptionShort="Type: Flare Rounds - Blue<br/>Rounds: 3<br/>Used in: 3GL";
+		picture="\v_so_weapons\data\flares\gear_ugl_flare_blue_ca";
+	};
+	class 3Rnd_UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		displayName="3Rnd 3GL 8 Gauge (Pellets)";
+		count=3;
+		descriptionShort="Type: 8 Gauge - Pellets<br/>Rounds: 3<br/>Used in: 3GL";
+		picture="\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca";
+	};
+	class 3Rnd_UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		displayName="3Rnd 3GL 8 Gauge (Slugs)";
+		count=3;
+		descriptionShort="Type: 8 Gauge - Slugs<br/>Rounds: 3<br/>Used in: 3GL";
+		picture="\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Pellets_ca";
+	};
+	class 3Rnd_UGL_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		displayName="3Rnd 3GL 8 Gauge (Beanbags)";
+		count=3;
+		descriptionShort="Type: 8 Gauge - Beanbags<br/>Rounds: 3<br/>Used in: 3GL";
+		picture="\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca";
+	};
+	class UGL_FlareBlue_F: UGL_FlareWhite_F
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="F_40mm_Blue";
+		displayName="Flare Round (Blue)";
+		displayNameShort="Blue Flare";
+		descriptionShort="Type: Flare Round - Blue<br/>Rounds: 1<br/>Used in: ELGM, 3GL";
+		picture="\v_so_weapons\data\flares\gear_ugl_flare_blue_ca";
+	};
+	class UGL_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		displayName="8 Gauge (Pellets)";
+		count=1;
+		descriptionShort="Type: 8 Gauge - Pellets<br/>Rounds: 1<br/>Used in: ELGM, 3GL";
+	};
+	class UGL_8Gauge_Slug: OPTRE_6Rnd_8Gauge_Slug
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		displayName="8 Gauge (Slugs)";
+		count=1;
+		descriptionShort="Type: 8 Gauge - Slugs<br/>Rounds: 1<br/>Used in: ELGM, 3GL";
+	};
+	class UGL_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		displayName="8 Gauge (Beanbags)";
+		count=1;
+		descriptionShort="Type: 8 Gauge - Beanbags<br/>Rounds: 1<br/>Used in: ELGM, 3GL";
+	};
+	class UGL_Potato: OPTRE_6Rnd_8Gauge_Pellet
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		ammo="UGL_Potato";
+		displayName="Potato";
+		displayNameShort="Potato";
+		count=1;
+		descriptionShort="Type: Potato<br/>Rounds: 1<br/>Used in: ELGM, 3GL";
+		picture="\v_so_weapons\data\flares\gear_ugl_potat_ca";
+	};
+	class OPTRE_3Rnd_54mm_Mag: OPTRE_3Rnd_ALIM_Gauss_Slugs
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		type="256";
+		weaponpoolavailable=1;
+		mass=19;
+		simulation="ProxyMagazines";
+		initspeed=15000;
+		displayname="3Rnd 54mm Magazine";
+		displaynameshort="54mm";
+		descriptionShort="3 Round Magazine<br/>54mm";
+		picture="\OPTRE_weapons\ar\icons\magazine.paa";
+	};
+	class OPTRE_20Rnd_86x70_Mag: OPTRE_32Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_86x70_Ball";
+		count=20;
+		mass=9;
+		displayname="20Rnd 8.6x70mm Magazine";
+		displaynameshort="8.6x70mm";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm";
+	};
+	class OPTRE_20Rnd_86x70_Mag_Tracer: OPTRE_20Rnd_86x70_Mag
+	{
+		displayname="20Rnd 8.6x70mm Magazine (Tracer)";
+		displaynameshort="8.6x70mm Tracer";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_20Rnd_86x70_Mag_AP: OPTRE_20Rnd_86x70_Mag
+	{
+		initspeed=920;
+		ammo="OPTRE_B_86x70_AP";
+		displayname="20Rnd 8.6x70mm AP Magazine";
+		displaynameshort="8.6x70mm AP";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing";
+	};
+	class OPTRE_20Rnd_86x70_Mag_APT: OPTRE_20Rnd_86x70_Mag_AP
+	{
+		displayname="20Rnd 8.6x70mm AP Magazine (Tracer)";
+		displaynameshort="8.6x70mm AP Tracer";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_20Rnd_86x70_Mag_JHP: OPTRE_20Rnd_86x70_Mag
+	{
+		initspeed=905;
+		ammo="OPTRE_B_86x70_JHP";
+		displayname="20Rnd 8.6x70mm JHP Magazine";
+		displaynameshort="8.6x70mm JHP";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_20Rnd_86x70_Mag_JHPT: OPTRE_20Rnd_86x70_Mag_JHP
+	{
+		displayname="20Rnd 8.6x70mm JHP Magazine (Tracer)";
+		displaynameshort="8.6x70mm JHP Tracer";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_20Rnd_86x70_Mag_SS: OPTRE_20Rnd_86x70_Mag
+	{
+		initspeed=340;
+		ammo="OPTRE_B_86x70_SS";
+		displayname="20Rnd 8.6x70mm SS Magazine";
+		displaynameshort="8.6x70mm SS";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Subsonic";
+	};
+	class OPTRE_20Rnd_86x70_Mag_SST: OPTRE_20Rnd_86x70_Mag_SS
+	{
+		displayname="20Rnd 8.6x70mm SS Magazine (Tracer)";
+		displaynameshort="8.6x70mm SS Tracer";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Subsonic";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_86x70_Mag: OPTRE_20Rnd_86x70_Mag
+	{
+		count=10;
+		mass=6;
+		displayname="10Rnd 8.6x70mm Magazine";
+		displaynameshort="8.6x70mm";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm";
+	};
+	class OPTRE_10Rnd_86x70_Mag_Tracer: OPTRE_10Rnd_86x70_Mag
+	{
+		displayname="10Rnd 8.6x70mm Magazine (Tracer)";
+		displaynameshort="8.6x70mm Tracer";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_86x70_Mag_AP: OPTRE_10Rnd_86x70_Mag
+	{
+		initspeed=920;
+		ammo="OPTRE_B_86x70_AP";
+		displayname="10Rnd 8.6x70mm AP Magazine";
+		displaynameshort="8.6x70mm AP";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing";
+	};
+	class OPTRE_10Rnd_86x70_Mag_APT: OPTRE_10Rnd_86x70_Mag_AP
+	{
+		displayname="10Rnd 8.6x70mm AP Magazine (Tracer)";
+		displaynameshort="8.6x70mm AP Tracer";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_86x70_Mag_JHP: OPTRE_10Rnd_86x70_Mag
+	{
+		initspeed=905;
+		ammo="OPTRE_B_86x70_JHP";
+		displayname="10Rnd 8.6x70mm JHP Magazine";
+		displaynameshort="8.6x70mm JHP";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point";
+	};
+	class OPTRE_10Rnd_86x70_Mag_JHPT: OPTRE_10Rnd_86x70_Mag_JHP
+	{
+		displayname="10Rnd 8.6x70mm JHP Magazine (Tracer)";
+		displaynameshort="8.6x70mm JHP Tracer";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_86x70_Mag_SS: OPTRE_10Rnd_86x70_Mag
+	{
+		initspeed=340;
+		ammo="OPTRE_B_86x70_SS";
+		displayname="10Rnd 8.6x70mm SS Magazine";
+		displaynameshort="8.6x70mm SS";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Subsonic";
+	};
+	class OPTRE_10Rnd_86x70_Mag_SST: OPTRE_10Rnd_86x70_Mag_SS
+	{
+		displayname="10Rnd 8.6x70mm SS Magazine (Tracer)";
+		displaynameshort="8.6x70mm SS Tracer";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Subsonic";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_86x70_Mag_FS: OPTRE_10Rnd_86x70_Mag
+	{
+		initspeed=1000;
+		ammo="OPTRE_B_86x70_FS";
+		displayname="10Rnd 8.6x70mm FS Magazine";
+		displaynameshort="8.6x70mm FS";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Fin-Stabalized";
+	};
+	class OPTRE_10Rnd_86x70_Mag_FST: OPTRE_10Rnd_86x70_Mag_FS
+	{
+		displayname="10Rnd 8.6x70mm FS Magazine (Tracer)";
+		displaynameshort="8.6x70mm FS Tracer";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Fin-Stabalized Tracers";
+		tracersEvery=1;
+	};
+	class C12_Remote_Mag: SatchelCharge_Remote_Mag
+	{
+		author="Fireteam Zulu";
+		scope=2;
+		displayName="C12 Demolition Charge";
+		displayNameShort="C12 Demo Charge";
+		descriptionShort="Compact explosive charge";
+		descriptionUse="Use: Set Charge";
+		type="2* 256";
+		allowedSlots[]={901,701};
+		ammo="C12_Remote_Ammo";
+		model="\OPTRE_Weapons\charges\c12G.p3d";
+		picture="\OPTRE_weapons\charges\icons\c12.paa";
+		mass=110;
+		count=1;
+		maxLeadSpeed=0;
+		nameSoundWeapon="satchelcharge";
+		nameSound="satchelcharge";
+		weaponPoolAvailable=1;
+		useActionTitle="Put %1 (%2 left)";
+		sound[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			10
+		};
+	};
+	class C7_Remote_Mag: SatchelCharge_Remote_Mag
+	{
+		author="Fireteam Zulu";
+		scope=2;
+		displayName="C-7 Explosive Foam";
+		displayNameShort="C7 Explosive Foam";
+		descriptionShort="Compact explosive Foam";
+		descriptionUse="Use: Set Charge";
+		type="2* 256";
+		allowedSlots[]={901,701};
+		ammo="C7_Remote_Ammo";
+		model="\OPTRE_Weapons\charges\C7Can.p3d";
+		picture="\OPTRE_weapons\charges\icons\c7.paa";
+		mass=7;
+		count=1;
+		maxLeadSpeed=0;
+		nameSoundWeapon="satchelcharge";
+		nameSound="satchelcharge";
+		weaponPoolAvailable=1;
+		useActionTitle="Put %1 (%2 left)";
+		sound[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			10
+		};
+	};
+	class UNSCMine_Range_Mag: ATMine_Range_Mag
+	{
+		author="Fireteam Zulu";
+		scope=2;
+		mass=40;
+		displayName="M154 AT Mine";
+		descriptionUse="Use mine";
+		picture="\OPTRE_weapons\charges\icons\mine.paa";
+		model="\OPTRE_Weapons\charges\UNSCmine.p3d";
+		useAction=1;
+		useActionTitle="Put %1 (%2 left)";
+		type="2* 256";
+		allowedSlots[]={901,701};
+		value=5;
+		ammo="UNSC_Mine_Ammo";
+		nameSoundWeapon="mine";
+		nameSound="mine";
+		count=1;
+		initSpeed=0;
+		maxLeadSpeed=0;
+		descriptionShort="BIP BAP BOOM!";
+		weaponPoolAvailable=1;
+		sound[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			10
+		};
+	};
+	class M168_Remote_Mag: SatchelCharge_Remote_Mag
+	{
+		author="Fireteam Zulu";
+		scope=2;
+		displayName="M168 Demolition Pack";
+		displayNameShort="M168 Demo Charge";
+		descriptionShort="Compact explosive block";
+		descriptionUse="Use: Set Charge";
+		type="2* 256";
+		allowedSlots[]={901,701};
+		ammo="M168_Remote_Ammo";
+		model="\OPTRE_Weapons\charges\m168g.p3d";
+		picture="\OPTRE_weapons\charges\icons\m168.paa";
+		mass=395;
+		count=1;
+		maxLeadSpeed=0;
+		nameSoundWeapon="satchelcharge";
+		nameSound="satchelcharge";
+		weaponPoolAvailable=1;
+		useActionTitle="Put %1 (%2 left)";
+		sound[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			10
+		};
+	};
+	class M41_IED_Remote_Mag: SatchelCharge_Remote_Mag
+	{
+		author="Fireteam Zulu";
+		scope=2;
+		displayName="M41 IED";
+		displayNameShort="M41 IED";
+		descriptionShort="Improvised Explosive Device";
+		descriptionUse="Use: Set Charge";
+		type="2* 256";
+		allowedSlots[]={901,701};
+		ammo="M41_IED_Remote_Ammo";
+		model="\OPTRE_Weapons\charges\m41.p3d";
+		picture="\OPTRE_weapons\rockets\icons\rocket.paa";
+		mass=22;
+		count=1;
+		maxLeadSpeed=0;
+		nameSoundWeapon="satchelcharge";
+		nameSound="satchelcharge";
+		weaponPoolAvailable=1;
+		useActionTitle="Put %1 (%2 left)";
+		sound[]=
+		{
+			"A3\sounds_f\dummysound",
+			0.00031622799,
+			1,
+			10
+		};
+	};
+	class M41_IED_B_Remote_Mag: M41_IED_Remote_Mag
+	{
+		author="Fireteam Zulu";
+		ammo="M41_IED_B_Remote_Ammo";
+		displayName="M41 IED (Buried)";
+		displayNameShort="M41 IED (Buried)";
+		model="\OPTRE_Weapons\charges\m41_b.p3d";
 	};
 };
