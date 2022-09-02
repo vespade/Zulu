@@ -1,3 +1,4 @@
+#include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
 	class V_SO_Magazines
@@ -27,6 +28,18 @@ class CfgPatches
 			"OPTRE_15Rnd_762x51_Mag_SST",
 			"OPTRE_15Rnd_762x51_Mag_FS",
 			"OPTRE_15Rnd_762x51_Mag_FST",
+			"OPTRE_100Rnd_762x51_Box_AP",
+			"OPTRE_100Rnd_762x51_Box_APT",
+			"OPTRE_400Rnd_762x51_Box",
+			"OPTRE_400Rnd_762x51_Box_Tracer_Yellow",
+			"OPTRE_400Rnd_762x51_Box_AP",
+			"OPTRE_400Rnd_762x51_Box_APT",
+			"OPTRE_30Rnd_30x06_Mag",
+			"OPTRE_30Rnd_30x06_Mag_Tracer",
+			"OPTRE_30Rnd_30x06_Mag_AP",
+			"OPTRE_30Rnd_30x06_Mag_AP_Tracer",
+			"OPTRE_30Rnd_30x06_Mag_JHP",
+			"OPTRE_30Rnd_30x06_Mag_JHP_Tracer",
 			"OPTRE_36Rnd_95x40_Mag",
 			"OPTRE_36Rnd_95x40_Mag_Tracer",
 			"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
@@ -35,6 +48,14 @@ class CfgPatches
 			"OPTRE_36Rnd_95x40_Mag_SAPHE",
 			"OPTRE_36Rnd_95x40_Mag_SAPHET",
 			"OPTRE_36Rnd_95x40_Mag_SS",
+			"OPTRE_42Rnd_95x40_Mag",
+			"OPTRE_42Rnd_95x40_Mag_Tracer",
+			"OPTRE_42Rnd_95x40_Mag_Tracer_Yellow",
+			"OPTRE_42Rnd_95x40_Mag_JHP",
+			"OPTRE_42Rnd_95x40_Mag_JHPT",
+			"OPTRE_42Rnd_95x40_Mag_SAPHE",
+			"OPTRE_42Rnd_95x40_Mag_SAPHET",
+			"OPTRE_42Rnd_95x40_Mag_SS",
 			"OPTRE_100Rnd_95x40_Box",
 			"OPTRE_100Rnd_95x40_Box_Tracer",
 			"OPTRE_100Rnd_95x40_Box_Tracer_Yellow",
@@ -131,6 +152,22 @@ class CfgPatches
 			"OPTRE_16Rnd_127x40_Mag_SST",
 			"OPTRE_16Rnd_127x40_Mag_NARQ",
 			"OPTRE_16Rnd_127x40_Mag_NARQT",
+			"OPTRE_5Rnd_127x99_Mag_Tracer_Red",
+			"OPTRE_5Rnd_127x99_Mag_Tracer_Yellow",
+			"OPTRE_5Rnd_127x99_Mag_AP",
+			"OPTRE_5Rnd_127x99_Mag_APT",
+			"OPTRE_5Rnd_127x99_Mag_SLAP",
+			"OPTRE_5Rnd_127x99_Mag_SLAPT",
+			"OPTRE_5Rnd_127x99_Mag_SS",
+			"OPTRE_5Rnd_127x99_Mag_SST",
+			"OPTRE_10Rnd_127x99_Mag_Tracer_Red",
+			"OPTRE_10Rnd_127x99_Mag_Tracer_Yellow",
+			"OPTRE_10Rnd_127x99_Mag_AP",
+			"OPTRE_10Rnd_127x99_Mag_APT",
+			"OPTRE_10Rnd_127x99_Mag_SLAP",
+			"OPTRE_10Rnd_127x99_Mag_SLAPT",
+			"OPTRE_10Rnd_127x99_Mag_SS",
+			"OPTRE_10Rnd_127x99_Mag_SST",
 			"OPTRE_4Rnd_145x114_Mag_SS",
 			"OPTRE_4Rnd_145x114_Mag_SST",
 			"OPTRE_4Rnd_145x114_Mag_NARQ",
@@ -151,6 +188,13 @@ class CfgPatches
 			"OPTRE_60Rnd_5x23mm_Mag_JHPT",
 			"OPTRE_60Rnd_5x23mm_Mag_SS",
 			"OPTRE_60Rnd_5x23mm_Mag_SST",
+			"OPTRE_64Rnd_57x31_Mag_FMJ",
+			"OPTRE_64Rnd_57x31_Mag_FMJT",
+			"OPTRE_64Rnd_57x31_Mag_HV",
+			"OPTRE_64Rnd_57x31_Mag_HVT",
+			"OPTRE_64Rnd_57x31_Mag_JHP",
+			"OPTRE_64Rnd_57x31_Mag_JHPT",
+			"OPTRE_64Rnd_57x31_Mag_SS",
 			"OPTRE_1Rnd_50x137_HEAT",
 			"OPTRE_1Rnd_50x137_HE",
 			"OPTRE_1Rnd_50x137_PEN",
@@ -204,59 +248,46 @@ class CfgPatches
 		ammo[]=
 		{
 			"OPTRE_B_762x51_AP",
-			"OPTRE_B_762x51_APT",
 			"OPTRE_B_762x51_FS",
-			"OPTRE_B_762x51_FST",
 			"OPTRE_B_762x51_JHP",
-			"OPTRE_B_762x51_JHPT",
 			"OPTRE_B_762x51_SS",
-			"OPTRE_B_762x51_SST",
+			"OPTRE_B_30x06_Ball",
+			"OPTRE_B_30x06_AP",
+			"OPTRE_B_30x06_JHP",
 			"OPTRE_B_95x40_JHP",
-			"OPTRE_B_95x40_JHPT",
 			"OPTRE_B_95x40_HPSAP",
-			"OPTRE_B_95x40_HPSAPT",
 			"OPTRE_B_95x40_HPSAPTY",
 			"OPTRE_B_95x40_SS",
 			"OPTRE_B_95x40_SAPHE",
-			"OPTRE_B_95x40_SAPHET",
 			"OPTRE_B_95x60_JHP",
-			"OPTRE_B_95x60_JHPT",
 			"OPTRE_B_95x60_HPSAP",
-			"OPTRE_B_95x60_HPSAPT",
 			"OPTRE_B_95x60_HPSAPTY",
 			"OPTRE_B_95x60_SS",
 			"OPTRE_B_95x60_SAPHE",
-			"OPTRE_B_95x60_SAPHET",
 			"OPTRE_B_127x40_Ball",
 			"OPTRE_B_127x40_AP",
-			"OPTRE_B_127x40_APT",
 			"OPTRE_B_127x40_HE",
-			"OPTRE_B_127x40_HET",
 			"OPTRE_B_127x40_HVAP",
-			"OPTRE_B_127x40_HVAPT",
 			"OPTRE_B_127x40_JHP",
-			"OPTRE_B_127x40_JHPT",
 			"OPTRE_B_127x40_SAPHE",
-			"OPTRE_B_127x40_SAPHET",
 			"OPTRE_B_127x40_SS",
-			"OPTRE_B_127x40_SST",
 			"OPTRE_B_127x40_NARQ",
-			"OPTRE_B_127x40_NARQT",
+			"OPTRE_B_127x99_Ball_Red",
+			"OPTRE_B_127x99_AP",
+			"OPTRE_B_127x99_SLAP",
+			"OPTRE_B_127x99_SS",
 			"OPTRE_B_145x114_SS",
-			"OPTRE_B_145x114_SST",
 			"OPTRE_B_145x114_APFSDST",
 			"OPTRE_B_145x114_HVAPT",
-			"OPTRE_B_145x114_HEDPT",
 			"OPTRE_B_145x114_NARQ",
-			"OPTRE_B_145x114_NARQT",
 			"OPTRE_B_5x23_Caseless_FMJ",
-			"OPTRE_B_5x23_Caseless_FMJT",
 			"OPTRE_B_5x23_Caseless_HV",
-			"OPTRE_B_5x23_Caseless_HVT",
 			"OPTRE_B_5x23_Caseless_JHP",
-			"OPTRE_B_5x23_Caseless_JHPT",
 			"OPTRE_B_5x23_Caseless_SS",
-			"OPTRE_B_5x23_Caseless_SST",
+			"OPTRE_B_57x31_FMJ",
+			"OPTRE_B_57x31_HV",
+			"OPTRE_B_57x31_JHP",
+			"OPTRE_B_57x31_SS",
 			"OPTRE_B_8Gauge_Pellet",
 			"OPTRE_B_8Gauge_Slug",
 			"OPTRE_B_8Gauge_HEDP",
@@ -267,20 +298,14 @@ class CfgPatches
 			"F_40mm_Blue",
 			"UGL_Potato",
 			"OPTRE_B_86x70_Ball",
-			"OPTRE_B_86x70_Ball_Tracer",
 			"OPTRE_B_86x70_AP",
-			"OPTRE_B_86x70_APT",
 			"OPTRE_B_86x70_FS",
-			"OPTRE_B_86x70_FST",
 			"OPTRE_B_86x70_JHP",
-			"OPTRE_B_86x70_JHPT",
 			"OPTRE_B_86x70_SS",
-			"OPTRE_B_86x70_SST",
 			"OPTRE_50x137_HEAT",
 			"OPTRE_50x137_HE",
 			"OPTRE_50x137_PEN",
 			"OPTRE_50x137_THERMO",
-			"OPTRE_50x137_Tekcirc",
 			"C12_Remote_Ammo",
 			"C7_Remote_Ammo",
 			"M168_Remote_Ammo",
@@ -323,15 +348,12 @@ class CfgAddons
 class CfgAmmo
 {
 	class OPTRE_B_762x51_Ball;
+	class OPTRE_B_762x51_Tracer_Yellow;
 	class OPTRE_B_762x51_AP: OPTRE_B_762x51_Ball
 	{
 		caliber=3;
 		hit=14;
 		typicalSpeed=920;
-	};
-	class OPTRE_B_762x51_APT: OPTRE_B_762x51_AP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_762x51_FS: OPTRE_B_762x51_Ball
 	{
@@ -341,59 +363,62 @@ class CfgAmmo
 		typicalSpeed=1000;
 		sideairFriction=0;
 	};
-	class OPTRE_B_762x51_FST: OPTRE_B_762x51_Ball
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_762x51_JHP: OPTRE_B_762x51_Ball
 	{
 		caliber=0.5;
-		hit=18;
+		hit=17;
 		typicalSpeed=905;
-	};
-	class OPTRE_B_762x51_JHPT: OPTRE_B_762x51_JHP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_762x51_SS: OPTRE_B_762x51_Ball
 	{
 		hit=10;
 		typicalSpeed=343;
 	};
-	class OPTRE_B_762x51_SST: OPTRE_B_762x51_SS
+	class OPTRE_B_30x06_Ball: OPTRE_B_762x51_Ball
 	{
+		hit=14.5;
+		typicalSpeed=900;
+		caliber=2.25;
+		airFriction=-0.0009;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_30x06_AP: OPTRE_B_30x06_Ball
+	{
+		caliber=3.5;
+		hit=16;
+		typicalSpeed=1020;
+	};
+	class OPTRE_B_30x06_JHP: OPTRE_B_30x06_Ball
+	{
+		caliber=0.75;
+		hit=18;
+		typicalSpeed=970;
 	};
 	class OPTRE_B_95x40_Ball;
 	class OPTRE_B_95x40_JHP: OPTRE_B_95x40_Ball
 	{
 		caliber=1;
 		hit=20;
-		typicalSpeed=1100;
-	};
-	class OPTRE_B_95x40_JHPT: OPTRE_B_95x40_JHP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+		typicalSpeed=1000;
+		airFriction=-0.0013;
 	};
 	class OPTRE_B_95x40_HPSAP: OPTRE_B_95x40_Ball
 	{
 		caliber=2;
-		hit=15;
-		typicalSpeed=1300;
-	};
-	class OPTRE_B_95x40_HPSAPT: OPTRE_B_95x40_HPSAP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
-	class OPTRE_B_95x40_SS: OPTRE_B_95x40_Ball
-	{
-		caliber=2;
-		hit=15;
-		typicalSpeed=340;
+		hit=17;
+		typicalSpeed=1150;
+		airFriction=-0.0013;
 	};
 	class OPTRE_B_95x40_HPSAPTY: OPTRE_B_95x40_HPSAP
 	{
 		model="\A3\Weapons_f\Data\bullettracer\tracer_yellow";
+	};
+	class OPTRE_B_95x40_SS: OPTRE_B_95x40_Ball
+	{
+		caliber=2;
+		hit=16;
+		typicalSpeed=340;
+		airFriction=-0.0013;
 	};
 	class OPTRE_B_95x40_SAPHE: OPTRE_B_95x40_Ball
 	{
@@ -405,30 +430,20 @@ class CfgAmmo
 		typicalSpeed=720;
 		indirectHit=12;
 		indirectHitRange=0.34999999;
-	};
-	class OPTRE_B_95x40_SAPHET: OPTRE_B_95x40_SAPHE
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+		airFriction=-0.0013;
 	};
 	class OPTRE_B_95x60_JHP: OPTRE_B_95x40_Ball
 	{
 		caliber=2;
 		hit=25;
-		typicalSpeed=1300;
-	};
-	class OPTRE_B_95x60_JHPT: OPTRE_B_95x60_JHP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+		typicalSpeed=1200;
+		airFriction=-0.00115;
 	};
 	class OPTRE_B_95x60_HPSAP: OPTRE_B_95x60_JHP
 	{
 		caliber=3;
 		hit=20;
-		typicalSpeed=1500;
-	};
-	class OPTRE_B_95x60_HPSAPT: OPTRE_B_95x60_HPSAP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+		typicalSpeed=1400;
 	};
 	class OPTRE_B_95x60_HPSAPTY: OPTRE_B_95x60_HPSAP
 	{
@@ -451,24 +466,17 @@ class CfgAmmo
 		indirectHit=23;
 		indirectHitRange=0.045000002;
 	};
-	class OPTRE_B_95x60_SAPHET: OPTRE_B_95x60_SAPHE
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class B_127x33_Ball;
 	class OPTRE_B_127x40_Ball: B_127x33_Ball
 	{
 		caliber=2;
 		hit=16;
 		typicalSpeed=620;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_127x40_AP: OPTRE_B_127x40_Ball
 	{
 		caliber=3;
-	};
-	class OPTRE_B_127x40_APT: OPTRE_B_127x40_AP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_127x40_HE: OPTRE_B_127x40_Ball
 	{
@@ -481,19 +489,11 @@ class CfgAmmo
 		indirectHit=18;
 		indirectHitRange=0.025;
 	};
-	class OPTRE_B_127x40_HET: OPTRE_B_127x40_HE
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_127x40_HVAP: OPTRE_B_127x40_Ball
 	{
 		caliber=3;
 		hit=18;
 		typicalSpeed=800;
-	};
-	class OPTRE_B_127x40_HVAPT: OPTRE_B_127x40_HVAP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_127x40_JHP: OPTRE_B_127x40_Ball
 	{
@@ -501,11 +501,7 @@ class CfgAmmo
 		hit=22;
 		typicalSpeed=580;
 	};
-	class OPTRE_B_127x40_JHPT: OPTRE_B_127x40_JHP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
-	class OPTRE_B_127x40_SAPHE: B_127x33_Ball
+	class OPTRE_B_127x40_SAPHE: OPTRE_B_127x40_Ball
 	{
 		caliber=2.5;
 		craterEffects="ExploAmmoCrater";
@@ -515,26 +511,43 @@ class CfgAmmo
 		hit=16.5;
 		typicalSpeed=620;
 	};
-	class OPTRE_B_127x40_SAPHET: OPTRE_B_127x40_SAPHE
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_127x40_SS: OPTRE_B_127x40_Ball
 	{
 		hit=14;
 		typicalSpeed=340;
 	};
-	class OPTRE_B_127x40_SST: OPTRE_B_127x40_SS
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_127x40_NARQ: OPTRE_B_127x40_Ball
 	{
 		hit=0.1;
 	};
-	class OPTRE_B_127x40_NARQT: OPTRE_B_127x40_NARQ
+	class OPTRE_B_127x99_Ball;
+	class OPTRE_B_127x99_Ball_Red: OPTRE_B_127x99_Ball
 	{
+		hit=30;
+		caliber=2.6;
+		typicalSpeed=880;
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_127x99_AP: OPTRE_B_127x99_Ball_Red
+	{
+		hit=25;
+		caliber=3;
+		typicalSpeed=1000;
+	};
+	class B_127x99_SLAP;
+	class OPTRE_B_127x99_SLAP: B_127x99_SLAP
+	{
+		hit=50;
+		caliber=3.4000001;
+		typicalSpeed=1215;
+		airFriction=-0.00036000001;
+		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class OPTRE_B_127x99_SS: OPTRE_B_127x99_Ball_Red
+	{
+		hit=30;
+		caliber=2.6;
+		typicalSpeed=340;
 	};
 	class OPTRE_B_145x114_APFSDS;
 	class OPTRE_B_145x114_SS: OPTRE_B_145x114_APFSDS
@@ -543,9 +556,6 @@ class CfgAmmo
 		hit=55;
 		typicalSpeed=340;
 		timeToLive=20;
-	};
-	class OPTRE_B_145x114_SST: OPTRE_B_145x114_SS
-	{
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_145x114_APFSDST: OPTRE_B_145x114_APFSDS
@@ -553,21 +563,14 @@ class CfgAmmo
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_145x114_HVAP;
-	class OPTRE_B_145x114_HVAPT: OPTRE_B_145x114_HVAP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_145x114_HEDP;
-	class OPTRE_B_145x114_HEDPT: OPTRE_B_145x114_HEDP
+	class OPTRE_B_145x114_HVAPT: OPTRE_B_145x114_HVAP
 	{
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_145x114_NARQ: OPTRE_B_145x114_APFSDS
 	{
 		hit=0.1;
-	};
-	class OPTRE_B_145x114_NARQT: OPTRE_B_145x114_NARQ
-	{
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_5x23_Caseless;
@@ -577,19 +580,11 @@ class CfgAmmo
 		hit=12;
 		typicalSpeed=420;
 	};
-	class OPTRE_B_5x23_Caseless_FMJT: OPTRE_B_5x23_Caseless_FMJ
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_5x23_Caseless_HV: OPTRE_B_5x23_Caseless
 	{
 		caliber=1;
 		hit=10;
 		typicalSpeed=550;
-	};
-	class OPTRE_B_5x23_Caseless_HVT: OPTRE_B_5x23_Caseless_HV
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_5x23_Caseless_JHP: OPTRE_B_5x23_Caseless
 	{
@@ -597,19 +592,40 @@ class CfgAmmo
 		hit=14;
 		typicalSpeed=420;
 	};
-	class OPTRE_B_5x23_Caseless_JHPT: OPTRE_B_5x23_Caseless_JHP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_5x23_Caseless_SS: OPTRE_B_5x23_Caseless
 	{
 		caliber=2;
 		hit=12;
 		typicalSpeed=340;
 	};
-	class OPTRE_B_5x23_Caseless_SST: OPTRE_B_5x23_Caseless_SS
+	class OPTRE_B_57x31_Ball;
+	class OPTRE_B_57x31_FMJ:OPTRE_B_57x31_Ball
 	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+		caliber=2;
+		hit=12;
+		typicalSpeed=420;
+		nvgOnly=0;
+	};
+	class OPTRE_B_57x31_HV:OPTRE_B_57x31_Ball
+	{
+		caliber=1;
+		hit=10;
+		typicalSpeed=550;
+		nvgOnly=0;
+	};
+	class OPTRE_B_57x31_JHP:OPTRE_B_57x31_Ball
+	{
+		caliber=0.25;
+		hit=14;
+		typicalSpeed=420;
+		nvgOnly=0;
+	};
+	class OPTRE_B_57x31_SS:OPTRE_B_57x31_Ball
+	{
+		caliber=2;
+		hit=12;
+		typicalSpeed=340;
+		nvgOnly=0;
 	};
 	class B_12Gauge_Pellets_Submunition;
 	class OPTRE_B_8Gauge_Pellet: B_12Gauge_Pellets_Submunition
@@ -682,19 +698,11 @@ class CfgAmmo
 	{
 		hit=14;
 	};
-	class OPTRE_B_86x70_Ball_Tracer: OPTRE_B_86x70_Ball
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_86x70_AP: OPTRE_B_86x70_Ball
 	{
 		caliber=3;
 		hit=16;
 		typicalSpeed=920;
-	};
-	class OPTRE_B_86x70_APT: OPTRE_B_86x70_AP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_86x70_FS: OPTRE_B_86x70_Ball
 	{
@@ -704,28 +712,16 @@ class CfgAmmo
 		typicalSpeed=1000;
 		sideairFriction=0;
 	};
-	class OPTRE_B_86x70_FST: OPTRE_B_86x70_Ball
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_86x70_JHP: OPTRE_B_86x70_Ball
 	{
 		caliber=0.5;
 		hit=19;
 		typicalSpeed=905;
 	};
-	class OPTRE_B_86x70_JHPT: OPTRE_B_86x70_JHP
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	class OPTRE_B_86x70_SS: OPTRE_B_86x70_Ball
 	{
 		hit=12;
 		typicalSpeed=340;
-	};
-	class OPTRE_B_86x70_SST: OPTRE_B_86x70_SS
-	{
-		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_M41_Rocket_Heat;
 	class OPTRE_50x137_HEAT: OPTRE_M41_Rocket_Heat
@@ -1040,6 +1036,24 @@ class CfgAmmo
 class CfgMagazines
 {
 	class OPTRE_60Rnd_762x51_Mag;
+	class OPTRE_32Rnd_762x51_Mag;
+	class OPTRE_15Rnd_762x51_Mag;
+	class 20Rnd_762x51_Mag;
+	class 150Rnd_762x51_Box;
+	class OPTRE_4Rnd_145x114_APFSDS_Mag;
+	class OPTRE_4Rnd_145x114_HVAP_Mag;
+	class OPTRE_4Rnd_145x114_HEDP_Mag;
+	class OPTRE_48Rnd_5x23mm_Mag;
+	class OPTRE_M41_Twin_HEAT;
+	class OPTRE_60Rnd_5x23mm_Mag;
+	class 2Rnd_12Gauge_Pellets;
+	class 2Rnd_12Gauge_Slug;
+	class 3Rnd_UGL_FlareWhite_F;
+	class UGL_FlareWhite_F;
+	class OPTRE_3Rnd_ALIM_Gauss_Slugs;
+	class CA_Magazine;
+	class SatchelCharge_Remote_Mag;
+	class ATMine_Range_Mag;
 	class OPTRE_60Rnd_762x51_Mag_AP: OPTRE_60Rnd_762x51_Mag
 	{
 		dlc="SO";
@@ -1054,12 +1068,9 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_762x51_Mag_APT: OPTRE_60Rnd_762x51_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_APT";
 		displayname="60Rnd 7.62x51mm AP Magazine (Tracer)";
 		displaynameshort="7.62x51mm AP Tracer";
-		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_60Rnd_762x51_Mag_JHP: OPTRE_60Rnd_762x51_Mag
@@ -1076,15 +1087,11 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_762x51_Mag_JHPT: OPTRE_60Rnd_762x51_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_JHPT";
 		displayname="60Rnd 7.62x51mm JHP Magazine (Tracer)";
 		displaynameshort="7.62x51mm JHP Tracer";
-		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="60 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
 		tracersevery=1;
 	};
-	class OPTRE_32Rnd_762x51_Mag;
 	class OPTRE_32Rnd_762x51_Mag_AP: OPTRE_32Rnd_762x51_Mag
 	{
 		dlc="SO";
@@ -1099,12 +1106,9 @@ class CfgMagazines
 	};
 	class OPTRE_32Rnd_762x51_Mag_APT: OPTRE_32Rnd_762x51_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_APT";
 		displayname="32Rnd 7.62x51mm AP Magazine (Tracer)";
 		displaynameshort="7.62x51mm AP Tracer";
-		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_32Rnd_762x51_Mag_JHP: OPTRE_32Rnd_762x51_Mag
@@ -1121,12 +1125,9 @@ class CfgMagazines
 	};
 	class OPTRE_32Rnd_762x51_Mag_JHPT: OPTRE_32Rnd_762x51_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_JHPT";
 		displayname="32Rnd 7.62x51mm JHP Magazine (Tracer)";
 		displaynameshort="7.62x51mm JHP Tracer";
-		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_32Rnd_762x51_Mag_SS: OPTRE_32Rnd_762x51_Mag
@@ -1141,17 +1142,13 @@ class CfgMagazines
 		displaynameshort="7.62x51mm SS";
 		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Subsonic";
 	};
-	class OPTRE_32Rnd_762x51_Mag_SST: OPTRE_32Rnd_762x51_Mag_JHP
+	class OPTRE_32Rnd_762x51_Mag_SST: OPTRE_32Rnd_762x51_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_SST";
 		displayname="32Rnd 7.62x51mm SS Magazine (Tracer)";
 		displaynameshort="7.62x51mm SS Tracer";
-		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Subsonic<br/>Tracers";
+		descriptionShort="32 Round Magazine<br/>7.62x51mm<br/>Subsonic Tracers";
 		tracersevery=1;
 	};
-	class OPTRE_15Rnd_762x51_Mag;
 	class OPTRE_15Rnd_762x51_Mag_AP: OPTRE_15Rnd_762x51_Mag
 	{
 		dlc="SO";
@@ -1166,12 +1163,9 @@ class CfgMagazines
 	};
 	class OPTRE_15Rnd_762x51_Mag_APT: OPTRE_15Rnd_762x51_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_APT";
 		displayname="15Rnd 7.62x51mm AP Magazine (Tracer)";
 		displaynameshort="7.62x51mm AP Tracer";
-		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_15Rnd_762x51_Mag_JHP: OPTRE_15Rnd_762x51_Mag
@@ -1188,12 +1182,9 @@ class CfgMagazines
 	};
 	class OPTRE_15Rnd_762x51_Mag_JHPT: OPTRE_15Rnd_762x51_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_JHPT";
 		displayname="15Rnd 7.62x51mm JHP Magazine (Tracer)";
 		displaynameshort="7.62x51mm JHP Tracer";
-		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_15Rnd_762x51_Mag_SS: OPTRE_15Rnd_762x51_Mag
@@ -1210,14 +1201,9 @@ class CfgMagazines
 	};
 	class OPTRE_15Rnd_762x51_Mag_SST: OPTRE_15Rnd_762x51_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_762x51_SST";
 		displayname="15Rnd 7.62x51mm SS Magazine (Tracer)";
 		displaynameshort="7.62x51mm SS Tracer";
-		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Subsonic<br/>Tracers";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Subsonic Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_15Rnd_762x51_Mag_FS: OPTRE_15Rnd_762x51_Mag
@@ -1234,15 +1220,131 @@ class CfgMagazines
 	};
 	class OPTRE_15Rnd_762x51_Mag_FST: OPTRE_15Rnd_762x51_Mag_FS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_762x51_FST";
 		displayname="15Rnd 7.62x51mm FS Magazine (Tracer)";
 		displaynameshort="7.62x51mm FS Tracer";
-		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Fin-Stabalized<br/>Tracers";
+		descriptionShort="15 Round Magazine<br/>7.62x51mm<br/>Fin-Stabalized Tracers";
 		tracersEvery=1;
 	};
-	class 20Rnd_762x51_Mag;
+	class OPTRE_100Rnd_762x51_Box;
+	class OPTRE_100Rnd_762x51_Box_AP: OPTRE_100Rnd_762x51_Box
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=920;
+		ammo="OPTRE_B_762x51_AP";
+		displayname="100Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="100 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing";
+		tracersEvery=0;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_100Rnd_762x51_Box_APT: OPTRE_100Rnd_762x51_Box_AP
+	{
+		ammo="OPTRE_B_762x51_AP";
+		displayname="100Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="100 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_400Rnd_762x51_Box: OPTRE_100Rnd_762x51_Box
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		initspeed=950;
+		ammo="OPTRE_B_762x51_Ball";
+		displayname="400Rnd 7.62x51mm Ball Magazine";
+		displaynameshort="7.62x51mm Ball";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Ball";
+		count=400;
+		mass=120;
+	};
+	class OPTRE_400Rnd_762x51_Box_Tracer_Yellow: OPTRE_400Rnd_762x51_Box
+	{
+		ammo="OPTRE_B_762x51_Tracer_Yellow";
+		displayname="400Rnd 7.62x51mm Ball Magazine (Tracer)";
+		displaynameshort="7.62x51mm Ball Tracer";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_400Rnd_762x51_Box_AP: OPTRE_400Rnd_762x51_Box
+	{
+		initspeed=920;
+		ammo="OPTRE_B_762x51_AP";
+		displayname="400Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing";
+	};
+	class OPTRE_400Rnd_762x51_Box_APT: OPTRE_400Rnd_762x51_Box_AP
+	{
+		ammo="OPTRE_B_762x51_AP";
+		displayname="400Rnd 7.62x51mm AP Magazine";
+		displaynameshort="7.62x51mm AP";
+		descriptionShort="400 Round Box Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
+		tracersEvery=3;
+		lastRoundsTracer=10;
+	};
+	class OPTRE_30Rnd_30x06_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		model="\OPTRE_Weapons\AR\MA5_Magazine.p3d";
+		displayname="30Rnd .30-06 Magazine";
+		displaynameshort=".30-06";
+		ammo="OPTRE_B_30x06_Ball";
+		count=40;
+		initspeed=900;
+		picture="\OPTRE_weapons\ar\icons\magazine.paa";
+		descriptionshort="30 Round Magazine<br/>.30-06";
+		mass=15;
+		lastRoundsTracer=5;
+	};
+	class OPTRE_30Rnd_30x06_Mag_Tracer: OPTRE_30Rnd_30x06_Mag
+	{
+		displayname="30Rnd .30-06 Magazine (Tracers)";
+		displaynameshort=".30-06 Tracer";
+		ammo="OPTRE_B_30x06_Ball";
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Tracer";
+		tracersEvery=1;
+	};
+	class OPTRE_30Rnd_30x06_Mag_AP: OPTRE_30Rnd_30x06_Mag
+	{
+		displayname="30Rnd .30-06 AP Magazine";
+		displaynameshort=".30-06 AP";
+		ammo="OPTRE_B_30x06_AP";
+		initspeed=1020;
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Armor-Piercing";
+		lastRoundsTracer=5;
+	};
+	class OPTRE_30Rnd_30x06_Mag_AP_Tracer: OPTRE_30Rnd_30x06_Mag_AP
+	{
+		displayname="30Rnd .30-06 AP Magazine (Tracers)";
+		displaynameshort=".30-06 AP Tracer";
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Armor-Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_30Rnd_30x06_Mag_JHP: OPTRE_30Rnd_30x06_Mag
+	{
+		displayname="30Rnd .30-06 JHP Magazine";
+		displaynameshort=".30-06 JHP";
+		ammo="OPTRE_B_30x06_JHP";
+		initspeed=970;
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Jacketed Hollow-Point";
+		lastRoundsTracer=5;
+	};
+	class OPTRE_30Rnd_30x06_Mag_JHP_Tracer: OPTRE_30Rnd_30x06_Mag_JHP
+	{
+		displayname="30Rnd .30-06 JHP Magazine (Tracers)";
+		displaynameshort=".30-06 JHP Tracer";
+		ammo="OPTRE_B_30x06_JHP";
+		descriptionshort="30 Round Magazine<br/>.30-06<br/>Jacketed Hollow-Point Tracers";
+		tracersEvery=1;
+	};
 	class OPTRE_36Rnd_95x40_Mag: 20Rnd_762x51_Mag
 	{
 		dlc="SO";
@@ -1255,12 +1357,11 @@ class CfgMagazines
 		count=36;
 		picture="\OPTRE_weapons\br\icons\magazine.paa";
 		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing";
-		initspeed=1330;
+		initspeed=1150;
 		mass=8;
 	};
 	class OPTRE_36Rnd_95x40_Mag_Tracer: OPTRE_36Rnd_95x40_Mag
 	{
-		ammo="OPTRE_B_95x40_HPSAPT";
 		displayname="36Rnd 9.5x40mm Magazine (Tracer Red)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
@@ -1275,21 +1376,14 @@ class CfgMagazines
 	};
 	class OPTRE_36Rnd_95x40_Mag_JHP: OPTRE_36Rnd_95x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_JHP";
 		displayname="36Rnd 9.5x40mm JHP Magazine";
 		displaynameshort="9.5x60mm JHP";
 		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
-		initspeed=1100;
+		initspeed=1000;
 	};
 	class OPTRE_36Rnd_95x40_Mag_JHPT: OPTRE_36Rnd_95x40_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_JHPT";
 		displayname="36Rnd 9.5x40mm JHP Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
 		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
@@ -1297,10 +1391,6 @@ class CfgMagazines
 	};
 	class OPTRE_36Rnd_95x40_Mag_SAPHE: OPTRE_36Rnd_95x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_SAPHE";
 		displayname="36Rnd 9.5x40mm SAP-HE Magazine";
 		displaynameshort="9.5x60mm SAP-HE";
@@ -1309,9 +1399,6 @@ class CfgMagazines
 	};
 	class OPTRE_36Rnd_95x40_Mag_SAPHET: OPTRE_36Rnd_95x40_Mag_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_SAPHET";
 		displayname="36Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
 		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
@@ -1319,17 +1406,79 @@ class CfgMagazines
 	};
 	class OPTRE_36Rnd_95x40_Mag_SS: OPTRE_36Rnd_95x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_SS";
 		displayname="36Rnd 9.5x40mm SS Magazine";
 		displaynameshort="9.5x60mm SS";
 		descriptionShort="36 Round Magazine<br/>9.5x40mm<br/>Sub-Sonic";
 		initspeed=340;
 	};
-	class 150Rnd_762x51_Box;
+	class OPTRE_42Rnd_95x40_Mag: 20Rnd_762x51_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_95x40_HPSAP";
+		displayname="42Rnd 9.5x40mm Magazine";
+		displaynameshort="9.5x60mm HP-SAP";
+		count=42;
+		picture="\OPTRE_weapons\br\icons\magazine.paa";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing";
+		initspeed=1150;
+		mass=9.5;
+	};
+	class OPTRE_42Rnd_95x40_Mag_Tracer: OPTRE_42Rnd_95x40_Mag
+	{
+		displayname="42Rnd 9.5x40mm Magazine (Tracer Red)";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_42Rnd_95x40_Mag_Tracer_Yellow: OPTRE_42Rnd_95x40_Mag_Tracer
+	{
+		displayname="42Rnd 9.5x40mm Magazine (Tracers Yellow)";
+		ammo="OPTRE_B_95x40_HPSAPTY";
+		displaynameshort="9.5x60mm HP-SAP Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
+	};
+	class OPTRE_42Rnd_95x40_Mag_JHP: OPTRE_42Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_JHP";
+		displayname="42Rnd 9.5x40mm JHP Magazine";
+		displaynameshort="9.5x60mm JHP";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
+		initspeed=1000;
+	};
+	class OPTRE_42Rnd_95x40_Mag_JHPT: OPTRE_42Rnd_95x40_Mag_JHP
+	{
+		displayname="42Rnd 9.5x40mm JHP Magazine (Tracer)";
+		displaynameshort="9.5x60mm JHP Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_42Rnd_95x40_Mag_SAPHE: OPTRE_42Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_SAPHE";
+		displayname="42Rnd 9.5x40mm SAP-HE Magazine";
+		displaynameshort="9.5x60mm SAP-HE";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive";
+		initspeed=720;
+	};
+	class OPTRE_42Rnd_95x40_Mag_SAPHET: OPTRE_42Rnd_95x40_Mag_SAPHE
+	{
+		displayname="42Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
+		displaynameshort="9.5x60mm SAP-HE Tracer";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_42Rnd_95x40_Mag_SS: OPTRE_42Rnd_95x40_Mag
+	{
+		ammo="OPTRE_B_95x40_SS";
+		displayname="42Rnd 9.5x40mm SS Magazine";
+		displaynameshort="9.5x60mm SS";
+		descriptionShort="42 Round Magazine<br/>9.5x40mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
 	class OPTRE_100Rnd_95x40_Box: 150Rnd_762x51_Box
 	{
 		dlc="SO";
@@ -1348,9 +1497,6 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x40_Box_Tracer: OPTRE_100Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_HPSAPT";
 		displayname="100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Red)";
 		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
 		tracersEvery=3;
@@ -1358,8 +1504,6 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x40_Box_Tracer_Yellow: OPTRE_100Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
 		ammo="OPTRE_B_95x40_HPSAPTY";
 		displayname="100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Yellow)";
 		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
@@ -1368,33 +1512,22 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x40_Box_JHP: OPTRE_100Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_JHP";
 		displayname="100Rnd 9.5x40mm JHP Box Magazine";
 		displaynameshort="9.5x60mm JHP";
 		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
-		initspeed=1200;
+		initspeed=1050;
 	};
 	class OPTRE_100Rnd_95x40_Box_JHPT: OPTRE_100Rnd_95x40_Box_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_JHPT";
 		displayname="100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
-		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="100 Box Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x40_Box_SAPHE: OPTRE_100Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_SAPHE";
 		displayname="100Rnd 9.5x40mm SAP-HE Box Magazine";
 		displaynameshort="9.5x60mm SAP-HE";
@@ -1403,21 +1536,14 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x40_Box_SAPHET: OPTRE_100Rnd_95x40_Box_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_SAPHET";
 		displayname="100Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
-		descriptionShort="100 Round Box Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="100 Round Box Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
 	class OPTRE_100Rnd_95x40_Box_SS: OPTRE_100Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_SS";
 		displayname="100Rnd 9.5x40mm SS Box Magazine";
 		displaynameshort="9.5x60mm SS";
@@ -1426,10 +1552,6 @@ class CfgMagazines
 	};
 	class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_HPSAP";
 		count=200;
 		displayname="200Rnd 9.5x40mm HP-SAP Box Magazine";
@@ -1439,9 +1561,6 @@ class CfgMagazines
 	};
 	class OPTRE_200Rnd_95x40_Box_Tracer: OPTRE_200Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_HPSAPT";
 		displayname="200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Red)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracers";
@@ -1450,8 +1569,6 @@ class CfgMagazines
 	};
 	class OPTRE_200Rnd_95x40_Box_Tracer_Yellow: OPTRE_200Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
 		ammo="OPTRE_B_95x40_HPSAPTY";
 		displayname="200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer Yellow)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
@@ -1461,33 +1578,22 @@ class CfgMagazines
 	};
 	class OPTRE_200Rnd_95x40_Box_JHP: OPTRE_200Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_JHP";
 		displayname="200Rnd 9.5x40mm JHP Box Magazine";
 		displaynameshort="9.5x60mm JHP";
 		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
-		initspeed=1100;
+		initspeed=1050;
 	};
 	class OPTRE_200Rnd_95x40_Box_JHPT: OPTRE_200Rnd_95x40_Box_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_JHPT";
 		displayname="200Rnd 9.5x40mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
-		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
 	class OPTRE_200Rnd_95x40_Box_SAPHE: OPTRE_200Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_SAPHE";
 		displayname="200Rnd 9.5x40mm SAP-HE Box Magazine";
 		displaynameshort="9.5x60mm SAP-HE";
@@ -1496,21 +1602,14 @@ class CfgMagazines
 	};
 	class OPTRE_200Rnd_95x40_Box_SAPHET: OPTRE_200Rnd_95x40_Box_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x40_SAPHET";
 		displayname="200Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
-		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="200 Round Box Magazine<br/>9.5x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
 	class OPTRE_200Rnd_95x40_Box_SS: OPTRE_200Rnd_95x40_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		ammo="OPTRE_B_95x40_SS";
 		displayname="200Rnd 9.5x40mm SS Box Magazine";
 		displaynameshort="9.5x60mm SS";
@@ -1531,9 +1630,6 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x60_Box_HPSAPT: OPTRE_100Rnd_95x60_Box_HPSAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x60_HPSAPT";
 		displayname="100Rnd 9.5x60mm Box Magazine (Tracer Red)";
 		displaynameshort="9.5x60mm HP-SAP Red Tracer";
 		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing Tracers";
@@ -1542,8 +1638,6 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x60_Box_HPSAPTY: OPTRE_100Rnd_95x60_Box_HPSAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
 		ammo="OPTRE_B_95x60_HPSAPTY";
 		displayname="100Rnd 9.5x60mm Box Magazine (Tracer Yellow)";
 		displaynameshort="9.5x60mm HP-SAP Yellow Tracer";
@@ -1551,12 +1645,8 @@ class CfgMagazines
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
-	class OPTRE_100Rnd_95x60_Box_JHP: OPTRE_100Rnd_95x40_Box
+	class OPTRE_100Rnd_95x60_Box_JHP: OPTRE_100Rnd_95x60_Box_HPSAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=1300;
 		ammo="OPTRE_B_95x60_JHP";
 		displayname="100Rnd 9.5x60mm JHP Box Magazine";
@@ -1566,21 +1656,14 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x60_Box_JHPT: OPTRE_100Rnd_95x60_Box_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x60_JHPT";
 		displayname="100Rnd 9.5x60mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
-		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="100 Box Round Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
-	class OPTRE_100Rnd_95x60_Box_SAPHE: OPTRE_100Rnd_95x40_Box
+	class OPTRE_100Rnd_95x60_Box_SAPHE: OPTRE_100Rnd_95x60_Box_HPSAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=1020;
 		ammo="OPTRE_B_95x60_SAPHE";
 		displayname="100Rnd 9.5x60mm SAP-HE Box Magazine";
@@ -1589,21 +1672,14 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x60_Box_SAPHET: OPTRE_100Rnd_95x60_Box_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x60_SAPHET";
 		displayname="100Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
-		descriptionShort="100 Round Box Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="100 Round Box Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
-	class OPTRE_100Rnd_95x60_Box_SS: OPTRE_100Rnd_95x40_Box
+	class OPTRE_100Rnd_95x60_Box_SS: OPTRE_100Rnd_95x60_Box_HPSAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_95x60_SS";
 		displayname="100Rnd 9.5x60mm SS Box Magazine";
@@ -1626,10 +1702,6 @@ class CfgMagazines
 	};
 	class OPTRE_300Rnd_95x60_Box_HPSAP: OPTRE_300Rnd_95x60_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=1500;
 		ammo="OPTRE_B_95x60_HPSAP";
 		displayname="300Rnd 9.5x60mm Box Magazine";
@@ -1638,9 +1710,6 @@ class CfgMagazines
 	};
 	class OPTRE_300Rnd_95x60_Box_HPSAPT: OPTRE_300Rnd_95x60_Box_HPSAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x60_HPSAPT";
 		displayname="300Rnd 9.5x60mm Box Magazine (Tracer Red)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing Tracers";
@@ -1649,9 +1718,7 @@ class CfgMagazines
 	};
 	class OPTRE_300Rnd_95x60_Box_HPSAPTY: OPTRE_300Rnd_95x60_Box_HPSAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x60_HPSAPT";
+		ammo="OPTRE_B_95x60_HPSAPTY";
 		displayname="300Rnd 9.5x60mm Box Magazine (Tracer Yellow)";
 		displaynameshort="9.5x60mm HP-SAP Tracer";
 		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>High-Powered Semi-Armor-Piercing Tracers";
@@ -1660,10 +1727,6 @@ class CfgMagazines
 	};
 	class OPTRE_300Rnd_95x60_Box_JHP: OPTRE_300Rnd_95x60_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=1300;
 		ammo="OPTRE_B_95x60_JHP";
 		displayname="300Rnd 9.5x60mm JHP Box Magazine";
@@ -1672,21 +1735,14 @@ class CfgMagazines
 	};
 	class OPTRE_300Rnd_95x60_Box_JHPT: OPTRE_300Rnd_95x60_Box_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x60_JHPT";
 		displayname="300Rnd 9.5x60mm JHP Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm JHP Tracer";
-		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
 	class OPTRE_300Rnd_95x60_Box_SAPHE: OPTRE_300Rnd_95x60_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=1020;
 		ammo="OPTRE_B_95x60_SAPHE";
 		displayname="300Rnd 9.5x60mm SAP-HE Box Magazine";
@@ -1695,21 +1751,14 @@ class CfgMagazines
 	};
 	class OPTRE_300Rnd_95x60_Box_SAPHET: OPTRE_300Rnd_95x60_Box_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_95x60_SAPHET";
 		displayname="300Rnd 9.5x60mm SAP-HE Box Magazine (Tracer)";
 		displaynameshort="9.5x60mm SAP-HE Tracer";
-		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="300 Round Box Magazine<br/>9.5x60mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersEvery=3;
 		lastRoundsTracer=10;
 	};
 	class OPTRE_300Rnd_95x60_Box_SS: OPTRE_300Rnd_95x60_Box
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_95x60_SS";
 		displayname="300Rnd 9.5x60mm SS Box Magazine";
@@ -1734,10 +1783,6 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_Mag_AP: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=640;
 		ammo="OPTRE_B_127x40_AP";
 		displayname="8Rnd 12.7x40mm AP Magazine";
@@ -1746,32 +1791,28 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_Mag_APT: OPTRE_8Rnd_127x40_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_APT";
 		displayname="8Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
-		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_HE: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_HE";
 		displayname="8Rnd 12.7x40mm HE Magazine";
 		displaynameshort="12.7x40mm HE";
 		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Explosive";
 	};
+	class OPTRE_8Rnd_127x40_Mag_HET: OPTRE_8Rnd_127x40_Mag_HE
+	{
+		displayname="8Rnd 12.7x40mm HE Magazine (Tracer)";
+		displaynameshort="12.7x40mm HE Tracer";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Explosive Tracers";
+		tracersEvery=1;
+	};
 	class OPTRE_8Rnd_127x40_Mag_FR: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=100;
 		ammo="F_40mm_Red";
 		displayname="8Rnd 12.7x40mm Flare Magazine (Red)";
@@ -1780,32 +1821,14 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_Mag_FG: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=100;
 		ammo="F_40mm_Green";
 		displayname="8Rnd 12.7x40mm Flare Magazine (Green)";
 		displaynameshort="12.7x40mm Flare Green";
 		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Flares (Green)";
 	};
-	class OPTRE_8Rnd_127x40_Mag_HET: OPTRE_8Rnd_127x40_Mag_HE
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HET";
-		displayname="8Rnd 12.7x40mm HE Magazine (Tracer)";
-		displaynameshort="12.7x40mm HE Tracer";
-		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Explosive<br/>Tracers";
-		tracersEvery=1;
-	};
 	class OPTRE_8Rnd_127x40_Mag_HVAP: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=800;
 		ammo="OPTRE_B_127x40_HVAP";
 		displayname="8Rnd 12.7x40mm HVAP Magazine";
@@ -1814,20 +1837,13 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_Mag_HVAPT: OPTRE_8Rnd_127x40_Mag_HVAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HVAPT";
 		displayname="8Rnd 12.7x40mm HVAP Magazine (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
-		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing<br/>Tracers";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_JHP: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=580;
 		ammo="OPTRE_B_127x40_JHP";
 		displayname="8Rnd 12.7x40mm JHP Magazine";
@@ -1836,20 +1852,13 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_Mag_JHPT: OPTRE_8Rnd_127x40_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_JHPT";
 		displayname="8Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
-		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_SAPHE: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_SAPHE";
 		displayname="8Rnd 12.7x40mm SAP-HE Magazine";
@@ -1858,60 +1867,39 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_Mag_SAPHET: OPTRE_8Rnd_127x40_Mag_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_SAPHET";
 		displayname="8Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
-		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_SS: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_127x40_SS";
 		displayname="8Rnd 12.7x40mm SS Magazine";
 		displaynameshort="12.7x40mm SS";
 		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic";
 	};
-	class OPTRE_8Rnd_127x40_Mag_SST: OPTRE_8Rnd_127x40_Mag
+	class OPTRE_8Rnd_127x40_Mag_SST: OPTRE_8Rnd_127x40_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_SST";
 		displayname="8Rnd 12.7x40mm SS Magazine (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
-		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic<br/>Tracers";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_8Rnd_127x40_Mag_NARQ: OPTRE_8Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=900;
 		ammo="OPTRE_B_127x40_NARQ";
 		displayname="8Rnd 12.7x40mm NARQ Magazine";
 		displaynameshort="12.7x40mm NARQ";
 		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
 	};
-	class OPTRE_8Rnd_127x40_Mag_NARQT: OPTRE_8Rnd_127x40_Mag
+	class OPTRE_8Rnd_127x40_Mag_NARQT: OPTRE_8Rnd_127x40_Mag_NARQ
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_NARQT";
 		displayname="8Rnd 12.7x40mm NARQ Magazine (Tracer)";
 		displaynameshort="12.7x40mm NARQ Tracer";
-		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Tranquilizer<br/>Tracers";
+		descriptionShort="8 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl: 20Rnd_762x51_Mag
@@ -1932,10 +1920,6 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_127x40_Cyl_AP: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_AP";
 		displayname="6Rnd 12.7x40mm AP Cylinder";
@@ -1944,32 +1928,28 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_127x40_Cyl_APT: OPTRE_6Rnd_127x40_Cyl_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_APT";
 		displayname="6Rnd 12.7x40mm AP Cylinder (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
-		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_HE: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=500;
 		ammo="OPTRE_B_127x40_HE";
 		displayname="6Rnd 12.7x40mm HE Cylinder";
 		displaynameshort="12.7x40mm HE";
 		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Explosive";
 	};
+	class OPTRE_6Rnd_127x40_Cyl_HET: OPTRE_6Rnd_127x40_Cyl_HE
+	{
+		displayname="6Rnd 12.7x40mm HE Cylinder (Tracer)";
+		displaynameshort="12.7x40mm HE Tracer";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Explosive Tracers";
+		tracersEvery=1;
+	};
 	class OPTRE_6Rnd_127x40_Cyl_FR: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=100;
 		ammo="F_40mm_Red";
 		displayname="6Rnd 12.7x40mm Flare Cylinder (Red)";
@@ -1978,32 +1958,14 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_127x40_Cyl_FG: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=100;
 		ammo="F_40mm_Green";
 		displayname="6Rnd 12.7x40mm Flare Cylinder (Green)";
 		displaynameshort="12.7x40mm Flare Green";
 		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Flares (Green)";
 	};
-	class OPTRE_6Rnd_127x40_Cyl_HET: OPTRE_6Rnd_127x40_Cyl_HE
-	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HET";
-		displayname="6Rnd 12.7x40mm HE Cylinder (Tracer)";
-		displaynameshort="12.7x40mm HE Tracer";
-		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Explosive<br/>Tracers";
-		tracersEvery=1;
-	};
 	class OPTRE_6Rnd_127x40_Cyl_HVAP: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=800;
 		ammo="OPTRE_B_127x40_HVAP";
 		displayname="6Rnd 12.7x40mm HVAP Cylinder";
@@ -2012,20 +1974,13 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_127x40_Cyl_HVAPT: OPTRE_6Rnd_127x40_Cyl_HVAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HVAPT";
 		displayname="6Rnd 12.7x40mm HVAP Cylinder (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
-		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Velocity Armor-Piercing<br/>Tracers";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_JHP: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=580;
 		ammo="OPTRE_B_127x40_JHP";
 		displayname="6Rnd 12.7x40mm JHP Cylinder";
@@ -2034,20 +1989,13 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_127x40_Cyl_JHPT: OPTRE_6Rnd_127x40_Cyl_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_JHPT";
 		displayname="6Rnd 12.7x40mm JHP Cylinder (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
-		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_SAPHE: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_SAPHE";
 		displayname="6Rnd 12.7x40mm SAP-HE Cylinder";
@@ -2056,60 +2004,39 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_127x40_Cyl_SAPHET: OPTRE_6Rnd_127x40_Cyl_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_SAPHET";
 		displayname="6Rnd 12.7x40mm SAP-HE Cylinder (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
-		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_SS: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_127x40_SS";
 		displayname="6Rnd 12.7x40mm SS Cylinder";
 		displaynameshort="12.7x40mm SS";
 		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Sub-Sonic";
 	};
-	class OPTRE_6Rnd_127x40_Cyl_SST: OPTRE_6Rnd_127x40_Cyl
+	class OPTRE_6Rnd_127x40_Cyl_SST: OPTRE_6Rnd_127x40_Cyl_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_SST";
 		displayname="6Rnd 12.7x40mm SS Cylinder (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
-		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Sub-Sonic<br/>Tracers";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Sub-Sonic Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_6Rnd_127x40_Cyl_NARQ: OPTRE_6Rnd_127x40_Cyl
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=900;
 		ammo="OPTRE_B_127x40_NARQ";
 		displayname="6Rnd 12.7x40mm NARQ Cylinder";
 		displaynameshort="12.7x40mm NARQ";
 		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Tranquilizer";
 	};
-	class OPTRE_6Rnd_127x40_Cyl_NARQT: OPTRE_6Rnd_127x40_Cyl
+	class OPTRE_6Rnd_127x40_Cyl_NARQT: OPTRE_6Rnd_127x40_Cyl_NARQ
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_NARQT";
 		displayname="6Rnd 12.7x40mm NARQ Cylinder (Tracer)";
 		displaynameshort="12.7x40mm NARQ Tracer";
-		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Tranquilizer<br/>Tracers";
+		descriptionShort="6 Round Cylinder<br/>12.7x40mm<br/>Tranquilizer Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag: 20Rnd_762x51_Mag
@@ -2130,10 +2057,6 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_127x40_Mag_AP: OPTRE_12Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_AP";
 		displayname="12Rnd 12.7x40mm AP Magazine";
@@ -2142,20 +2065,13 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_127x40_Mag_APT: OPTRE_12Rnd_127x40_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_APT";
 		displayname="12Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
-		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_HE: OPTRE_12Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_HE";
 		displayname="12Rnd 12.7x40mm HE Magazine";
@@ -2164,20 +2080,13 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_127x40_Mag_HET: OPTRE_12Rnd_127x40_Mag_HE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HET";
 		displayname="12Rnd 12.7x40mm HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm HE Tracer";
-		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Explosive<br/>Tracers";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Explosive Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_HVAP: OPTRE_12Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=900;
 		ammo="OPTRE_B_127x40_HVAP";
 		displayname="12Rnd 12.7x40mm HVAP Magazine";
@@ -2186,20 +2095,13 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_127x40_Mag_HVAPT: OPTRE_12Rnd_127x40_Mag_HVAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HVAPT";
 		displayname="12Rnd 12.7x40mm HVAP Magazine (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
-		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing<br/>Tracers";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_JHP: OPTRE_12Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=580;
 		ammo="OPTRE_B_127x40_JHP";
 		displayname="12Rnd 12.7x40mm JHP Magazine";
@@ -2208,20 +2110,13 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_127x40_Mag_JHPT: OPTRE_12Rnd_127x40_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_JHPT";
 		displayname="12Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
-		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_SAPHE: OPTRE_12Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_SAPHE";
 		displayname="12Rnd 12.7x40mm SAP-HE Magazine";
@@ -2230,60 +2125,39 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_127x40_Mag_SAPHET: OPTRE_12Rnd_127x40_Mag_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_SAPHET";
 		displayname="12Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
-		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_SS: OPTRE_12Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_127x40_SS";
 		displayname="12Rnd 12.7x40mm SS Magazine";
 		displaynameshort="12.7x40mm SS";
 		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic";
 	};
-	class OPTRE_12Rnd_127x40_Mag_SST: OPTRE_12Rnd_127x40_Mag
+	class OPTRE_12Rnd_127x40_Mag_SST: OPTRE_12Rnd_127x40_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_SST";
 		displayname="12Rnd 12.7x40mm SS Magazine (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
-		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic<br/>Tracers";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_12Rnd_127x40_Mag_NARQ: OPTRE_12Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=900;
 		ammo="OPTRE_B_127x40_NARQ";
 		displayname="12Rnd 12.7x40mm NARQ Magazine";
 		displaynameshort="12.7x40mm NARQ";
 		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
 	};
-	class OPTRE_12Rnd_127x40_Mag_NARQT: OPTRE_12Rnd_127x40_Mag
+	class OPTRE_12Rnd_127x40_Mag_NARQT: OPTRE_12Rnd_127x40_Mag_NARQ
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_NARQT";
 		displayname="12Rnd 12.7x40mm NARQ Magazine (Tracer)";
 		displaynameshort="12.7x40mm NARQ Tracer";
-		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer<br/>Tracers";
+		descriptionShort="12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag: 20Rnd_762x51_Mag
@@ -2304,10 +2178,6 @@ class CfgMagazines
 	};
 	class OPTRE_16Rnd_127x40_Mag_AP: OPTRE_16Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_AP";
 		displayname="16Rnd 12.7x40mm AP Magazine";
@@ -2316,20 +2186,13 @@ class CfgMagazines
 	};
 	class OPTRE_16Rnd_127x40_Mag_APT: OPTRE_16Rnd_127x40_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_APT";
 		displayname="16Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort="12.7x40mm AP Tracer";
-		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_HE: OPTRE_16Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_HE";
 		displayname="16Rnd 12.7x40mm HE Magazine";
@@ -2338,20 +2201,13 @@ class CfgMagazines
 	};
 	class OPTRE_16Rnd_127x40_Mag_HET: OPTRE_16Rnd_127x40_Mag_HE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HET";
 		displayname="16Rnd 12.7x40mm HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm HE Tracer";
-		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Explosive<br/>Tracers";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Explosive Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_HVAP: OPTRE_16Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=800;
 		ammo="OPTRE_B_127x40_HVAP";
 		displayname="16Rnd 12.7x40mm HVAP Magazine";
@@ -2360,20 +2216,13 @@ class CfgMagazines
 	};
 	class OPTRE_16Rnd_127x40_Mag_HVAPT: OPTRE_16Rnd_127x40_Mag_HVAP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_HVAPT";
 		displayname="16Rnd 12.7x40mm HVAP Magazine (Tracer)";
 		displaynameshort="12.7x40mm HVAP Tracer";
-		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing<br/>Tracers";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>High-Velocity Armor-Piercing Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_JHP: OPTRE_16Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=580;
 		ammo="OPTRE_B_127x40_JHP";
 		displayname="16Rnd 12.7x40mm JHP Magazine";
@@ -2382,20 +2231,13 @@ class CfgMagazines
 	};
 	class OPTRE_16Rnd_127x40_Mag_JHPT: OPTRE_16Rnd_127x40_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_JHPT";
 		displayname="16Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort="12.7x40mm JHP Tracer";
-		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_SAPHE: OPTRE_16Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=620;
 		ammo="OPTRE_B_127x40_SAPHE";
 		displayname="16Rnd 12.7x40mm SAP-HE Magazine";
@@ -2404,63 +2246,177 @@ class CfgMagazines
 	};
 	class OPTRE_16Rnd_127x40_Mag_SAPHET: OPTRE_16Rnd_127x40_Mag_SAPHE
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_127x40_SAPHET";
 		displayname="16Rnd 12.7x40mm SAP-HE Magazine (Tracer)";
 		displaynameshort="12.7x40mm SAP-HE Tracer";
-		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive<br/>Tracers";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Semi-Armor-Piercing High-Explosive Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_SS: OPTRE_16Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_127x40_SS";
 		displayname="16Rnd 12.7x40mm SS Magazine";
 		displaynameshort="12.7x40mm SS";
 		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic";
 	};
-	class OPTRE_16Rnd_127x40_Mag_SST: OPTRE_16Rnd_127x40_Mag
+	class OPTRE_16Rnd_127x40_Mag_SST: OPTRE_16Rnd_127x40_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_SST";
 		displayname="16Rnd 12.7x40mm SS Magazine (Tracer)";
 		displaynameshort="12.7x40mm SS Tracer";
-		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic<br/>Tracers";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Sub-Sonic Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_16Rnd_127x40_Mag_NARQ: OPTRE_16Rnd_127x40_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=900;
 		ammo="OPTRE_B_127x40_NARQ";
 		displayname="16Rnd 12.7x40mm NARQ Magazine";
 		displaynameshort="12.7x40mm NARQ";
 		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
 	};
-	class OPTRE_16Rnd_127x40_Mag_NARQT: OPTRE_16Rnd_127x40_Mag
+	class OPTRE_16Rnd_127x40_Mag_NARQT: OPTRE_16Rnd_127x40_Mag_NARQ
+	{
+		displayname="16Rnd 12.7x40mm NARQ Magazine (Tracer)";
+		displaynameshort="12.7x40mm NARQ Tracer";
+		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_10Rnd_127x99;
+	class OPTRE_10Rnd_127x99_Mag_AP: OPTRE_10Rnd_127x99
 	{
 		dlc="SO";
 		author="Fireteam Zulu";
 		scope=2;
 		scopeArsenal=2;
-		ammo="OPTRE_B_127x40_NARQT";
-		displayname="16Rnd 12.7x40mm NARQ Magazine (Tracer)";
-		displaynameshort="12.7x40mm NARQ Tracer";
-		descriptionShort="16 Round Magazine<br/>12.7x40mm<br/>Tranquilizer<br/>Tracers";
-		tracersevery=1;
+		model="\OPTRE_Weapons\pistol\m6_Magazine";
+		picture="\OPTRE_Weapons\br\icons\magazine.paa";
+		mass=16;
+		ammo="OPTRE_B_127x99_AP";
+		displayName="10Rnd 12.7x99mm AP SRM77 Magazine";
+		displayNameShort="12.7x99 AP";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Armor Piercing";
+		initspeed=1000;
+		count=10;
+		tracersEvery=0;
+		lastRoundsTracer=3;
 	};
-	class OPTRE_4Rnd_145x114_APFSDS_Mag;
+	class OPTRE_10Rnd_127x99_Mag_APT: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		displayName="10Rnd 12.7x99mm AP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 AP tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Armor Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_127x99_Mag_Tracer_Red: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_Ball_Red";
+		displayName="10Rnd 12.7x99mm ball SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Tracers";
+		initspeed=880;
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_127x99_Mag_Tracer_Yellow: OPTRE_10Rnd_127x99_Mag_Tracer_Red
+	{
+		ammo="OPTRE_B_127x99_Ball";
+		displayName="10Rnd 12.7x99mm ball SRM77 Magazine (Tracers yellow)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Tracers";
+	};
+	class OPTRE_10Rnd_127x99_Mag_SLAP: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SLAP";
+		displayName="10Rnd 12.7x99mm SLAP SRM77 Magazine";
+		displayNameShort="12.7x99 SLAP";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator";
+		initspeed=1215;
+	};
+	class OPTRE_10Rnd_127x99_Mag_SLAPT: OPTRE_10Rnd_127x99_Mag_SLAP
+	{
+		displayName="10Rnd 12.7x99mm SLAP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SLAP tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_10Rnd_127x99_Mag_SS: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SS";
+		displayName="10Rnd 12.7x99mm SS SRM77 Magazine";
+		displayNameShort="12.7x99 SS";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_10Rnd_127x99_Mag_SST: OPTRE_10Rnd_127x99_Mag_SS
+	{
+		displayName="10Rnd 12.7x99mm SS SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SS tracer";
+		descriptionshort="10 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_AP: OPTRE_10Rnd_127x99_Mag_AP
+	{
+		mass=8;
+		displayName="5Rnd 12.7x99mm AP SRM77 Magazine";
+		displayNameShort="12.7x99 AP";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Armor Piercing";
+		initspeed=1000;
+		count=5;
+		tracersEvery=0;
+		lastRoundsTracer=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_APT: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		displayName="5Rnd 12.7x99mm AP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 AP tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Armor Piercing Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_Tracer_Red: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_Ball_Red";
+		displayName="5Rnd 12.7x99mm ball SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Tracers";
+		initspeed=880;
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_Tracer_Yellow: OPTRE_5Rnd_127x99_Mag_Tracer_Red
+	{
+		ammo="OPTRE_B_127x99_Ball";
+		displayName="5Rnd 12.7x99mm ball SRM77 Magazine (Tracers yellow)";
+		displayNameShort="12.7x99 ball tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Tracers";
+	};
+	class OPTRE_5Rnd_127x99_Mag_SLAP: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SLAP";
+		displayName="5Rnd 12.7x99mm SLAP SRM77 Magazine";
+		displayNameShort="12.7x99 SLAP";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator";
+		initspeed=1215;
+	};
+	class OPTRE_5Rnd_127x99_Mag_SLAPT: OPTRE_5Rnd_127x99_Mag_SLAP
+	{
+		displayName="5Rnd 12.7x99mm SLAP SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SLAP tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Saboted Light Armor Penetrator Tracers";
+		tracersEvery=1;
+	};
+	class OPTRE_5Rnd_127x99_Mag_SS: OPTRE_5Rnd_127x99_Mag_AP
+	{
+		ammo="OPTRE_B_127x99_SS";
+		displayName="5Rnd 12.7x99mm SS SRM77 Magazine";
+		displayNameShort="12.7x99 SS";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic";
+		initspeed=340;
+	};
+	class OPTRE_5Rnd_127x99_Mag_SST: OPTRE_5Rnd_127x99_Mag_SS
+	{
+		displayName="5Rnd 12.7x99mm SS SRM77 Magazine (Tracer)";
+		displayNameShort="12.7x99 SS tracer";
+		descriptionshort="5 Round Magazine<br/>12.7x99mm<br/>Sub-Sonic Tracers";
+		tracersEvery=1;
+	};
 	class OPTRE_4Rnd_145x114_Mag_APFSDST: OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
 		dlc="SO";
@@ -2469,10 +2425,9 @@ class CfgMagazines
 		ammo="OPTRE_B_145x114_APFSDST";
 		displayname="4Rnd 14.5x114mm APFSDS Magazine (Tracer)";
 		displaynameshort="14.5x114mm APFSDS Tracer";
-		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Armor Piercing Fin-Stabilized Disposable Shell<br/>Tracers";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Armor Piercing Fin-Stabilized Disposable Shell Tracers";
 		tracersEvery=1;
 	};
-	class OPTRE_4Rnd_145x114_HVAP_Mag;
 	class OPTRE_4Rnd_145x114_Mag_HVAPT: OPTRE_4Rnd_145x114_HVAP_Mag
 	{
 		dlc="SO";
@@ -2481,19 +2436,18 @@ class CfgMagazines
 		ammo="OPTRE_B_145x114_HVAPT";
 		displayname="4Rnd 14.5x114mm HVAP Magazine (Tracer)";
 		displaynameshort="14.5x114mm HVAP Tracer";
-		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>High Velocity Armor Piercing<br/>Tracers";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>High Velocity Armor Piercing Tracers";
 		tracersEvery=1;
 	};
-	class OPTRE_4Rnd_145x114_HEDP_Mag;
 	class OPTRE_4Rnd_145x114_Mag_HEDPT: OPTRE_4Rnd_145x114_HEDP_Mag
 	{
 		dlc="SO";
 		author="Fireteam Zulu";
 		initspeed=1500;
-		ammo="OPTRE_B_145x114_HEDPT";
+		ammo="OPTRE_B_145x114_HEDP";
 		displayname="4Rnd 14.5x114mm HEDP Magazine (Tracer)";
 		displaynameshort="14.5x114mm HEDP Tracer";
-		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>High Explosive Dual Purpose<br/>Tracers";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>High Explosive Dual Purpose Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_4Rnd_145x114_Mag_SS: OPTRE_4Rnd_145x114_APFSDS_Mag
@@ -2510,14 +2464,9 @@ class CfgMagazines
 	};
 	class OPTRE_4Rnd_145x114_Mag_SST: OPTRE_4Rnd_145x114_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_145x114_SST";
 		displayname="4Rnd 14.5x114mm SS Magazine (Tracer)";
 		displaynameshort="14.5x114mm SS Tracer";
-		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Sub-Sonic<br/>Tracers";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Sub-Sonic Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_4Rnd_145x114_Mag_NARQ: OPTRE_4Rnd_145x114_APFSDS_Mag
@@ -2534,17 +2483,11 @@ class CfgMagazines
 	};
 	class OPTRE_4Rnd_145x114_Mag_NARQT: OPTRE_4Rnd_145x114_Mag_NARQ
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_145x114_NARQT";
 		displayname="4Rnd 14.5x114mm NARQ Magazine (Tracer)";
 		displaynameshort="14.5x114mm NARQ Tracer";
-		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Tranquilizer<br/>Tracers";
+		descriptionshort="4 Round Magazine<br/>14.5x114mm<br/>Tranquilizer Tracers";
 		tracersEvery=1;
 	};
-	class OPTRE_48Rnd_5x23mm_Mag;
 	class OPTRE_48Rnd_5x23mm_Mag_FMJ: OPTRE_48Rnd_5x23mm_Mag
 	{
 		dlc="SO";
@@ -2559,12 +2502,9 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_FMJT: OPTRE_48Rnd_5x23mm_Mag_FMJ
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_FMJ";
 		displayname="48Rnd 5x23mm FMJ Magazine (Tracer)";
 		displaynameshort="5x23mm FMJ Tracer";
-		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Full Metal Jacket<br/>Tracers";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Full Metal Jacket Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_HV: OPTRE_48Rnd_5x23mm_Mag
@@ -2581,12 +2521,9 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_HVT: OPTRE_48Rnd_5x23mm_Mag_HV
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_HV";
 		displayname="48Rnd 5x23mm HV Magazine (Tracer)";
 		displaynameshort="5x23mm HV Tracer";
-		descriptionShort="48 Round Magazine<br/>5x23mm<br/>High-Velocity<br/>Tracers";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>High-Velocity Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_JHP: OPTRE_48Rnd_5x23mm_Mag
@@ -2603,12 +2540,9 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_JHPT: OPTRE_48Rnd_5x23mm_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_JHPT";
 		displayname="48Rnd 5x23mm JHP Magazine (Tracer)";
 		displaynameshort="5x23mm JHP Tracer";
-		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_SS: OPTRE_48Rnd_5x23mm_Mag
@@ -2617,7 +2551,7 @@ class CfgMagazines
 		author="Fireteam Zulu";
 		scope=2;
 		scopeArsenal=2;
-		ammo="OPTRE_B_5x23_Caseless_JHP";
+		ammo="OPTRE_B_5x23_Caseless_SS";
 		displayname="48Rnd 5x23mm SS Magazine";
 		displaynameshort="5x23mm SS";
 		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Sub-sonic";
@@ -2625,15 +2559,11 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_SST: OPTRE_48Rnd_5x23mm_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_JHP";
 		displayname="48Rnd 5x23mm SS (Tracer)";
 		displaynameshort="5x23mm SS Tracer";
-		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Sub-sonic<br/>Tracers";
+		descriptionShort="48 Round Magazine<br/>5x23mm<br/>Sub-sonic Tracers";
 		tracersevery=1;
 	};
-	class OPTRE_60Rnd_5x23mm_Mag;
 	class OPTRE_60Rnd_5x23mm_Mag_FMJ: OPTRE_60Rnd_5x23mm_Mag
 	{
 		dlc="SO";
@@ -2648,12 +2578,9 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_FMJT: OPTRE_60Rnd_5x23mm_Mag_FMJ
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_FMJT";
 		displayname="60Rnd 5x23mm FMJ Magazine (Tracer)";
 		displaynameshort="5x23mm FMJ Tracer";
-		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Full Metal Jacket<br/>Tracers";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Full Metal Jacket Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_HV: OPTRE_60Rnd_5x23mm_Mag
@@ -2670,12 +2597,9 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_HVT: OPTRE_60Rnd_5x23mm_Mag_HV
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_HVT";
 		displayname="60Rnd 5x23mm HV Magazine (Tracer)";
 		displaynameshort="5x23mm HV Tracer";
-		descriptionShort="60 Round Magazine<br/>5x23mm<br/>High-Velocity<br/>Tracers";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>High-Velocity Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_JHP: OPTRE_60Rnd_5x23mm_Mag
@@ -2692,12 +2616,9 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_JHPT: OPTRE_60Rnd_5x23mm_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_JHPT";
 		displayname="60Rnd 5x23mm JHP Magazine (Tracer)";
 		displaynameshort="5x23mm JHP Tracer";
-		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point Tracers";
 		tracersevery=1;
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_SS: OPTRE_60Rnd_5x23mm_Mag
@@ -2714,15 +2635,88 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_SST: OPTRE_60Rnd_5x23mm_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_5x23_Caseless_SST";
 		displayname="60Rnd 5x23mm SS Magazine (Tracer)";
 		displaynameshort="5x23mm SS Tracer";
-		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Sub-sonic<br/>Tracers";
+		descriptionShort="60 Round Magazine<br/>5x23mm<br/>Sub-sonic Tracers";
 		tracersevery=1;
 	};
-	class OPTRE_M41_Twin_HEAT;
+	class OPTRE_64Rnd_57x31_Mag;
+	class OPTRE_64Rnd_57x31_Mag_FMJ: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_FMJ";
+		displayname="64Rnd 57x31mm FMJ Magazine";
+		displaynameshort="57x31mm FMJ";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Full Metal Jacket";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_FMJT: OPTRE_64Rnd_57x31_Mag_FMJ
+	{
+		displayname="64Rnd 57x31mm FMJ Magazine (Tracer)";
+		displaynameshort="57x31mm FMJ Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Full Metal Jacket Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_64Rnd_57x31_Mag_HV: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_HV";
+		displayname="64Rnd 57x31mm HV Magazine";
+		displaynameshort="57x31mm HV";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>High-Velocity";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_HVT: OPTRE_64Rnd_57x31_Mag_HV
+	{
+		displayname="64Rnd 57x31mm HV Magazine (Tracer)";
+		displaynameshort="57x31mm HV Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>High-Velocity Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_64Rnd_57x31_Mag_JHP: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_JHP";
+		displayname="64Rnd 57x31mm JHP Magazine";
+		displaynameshort="57x31mm JHP";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Jacketed Hollow-Point";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_JHPT: OPTRE_64Rnd_57x31_Mag_JHP
+	{
+		displayname="64Rnd 57x31mm JHP Magazine (Tracer)";
+		displaynameshort="57x31mm JHP Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery=1;
+	};
+	class OPTRE_64Rnd_57x31_Mag_SS: OPTRE_64Rnd_57x31_Mag
+	{
+		dlc="SO";
+		author="Fireteam Zulu";
+		scope=2;
+		scopeArsenal=2;
+		ammo="OPTRE_B_57x31_SS";
+		displayname="64Rnd 57x31mm SS Magazine";
+		displaynameshort="57x31mm SS";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Sub-sonic";
+		initspeed=420;
+	};
+	class OPTRE_64Rnd_57x31_Mag_SST: OPTRE_64Rnd_57x31_Mag_SS
+	{
+		displayname="64Rnd 57x31mm SS Magazine (Tracer)";
+		displaynameshort="57x31mm SS Tracer";
+		descriptionShort="64 Round Magazine<br/>57x31mm<br/>Sub-sonic Tracers";
+		tracersevery=1;
+	};
 	class OPTRE_1Rnd_50x137_HEAT: OPTRE_M41_Twin_HEAT
 	{
 		dlc="SO";
@@ -2738,35 +2732,26 @@ class CfgMagazines
 	};
 	class OPTRE_1Rnd_50x137_HE: OPTRE_1Rnd_50x137_HEAT
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
 		ammo="OPTRE_50X137_HE";
 		initspeed=400;
-		count=1;
 		displayname="50x137mm HE Rocket";
 		displaynameshort="HE";
 		descriptionShort="1 Rocket<br/>50x137mm<br/>High Explosive<br/>Unguided";
 		mass=30;
 	};
-	class OPTRE_1Rnd_50x137_PEN: OPTRE_1Rnd_50x137_HE
+	class OPTRE_1Rnd_50x137_PEN: OPTRE_1Rnd_50x137_HEAT
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
 		ammo="OPTRE_50x137_PEN";
 		initspeed=700;
-		count=1;
 		displayname="50x137mm Penetrator Rocket";
 		displaynameshort="Penetrator";
 		descriptionShort="1 Rocket<br/>50x137mm<br/>Anti-Tank<br/>Unguided";
 		mass=50;
 	};
-	class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_PEN
+	class OPTRE_1Rnd_50x137_THERMO: OPTRE_1Rnd_50x137_HEAT
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
 		ammo="OPTRE_50x137_THERMO";
 		initspeed=150;
-		count=1;
 		displayname="50x137mm Thermobaric Rocket";
 		displaynameshort="Thermobaric";
 		descriptionShort="1 Rocket<br/>50x137mm<br/>Thermobarick<br/>Unguided";
@@ -2774,16 +2759,14 @@ class CfgMagazines
 	};
 	class OPTRE_1Rnd_50x137_Tekcirc: OPTRE_1Rnd_50x137_THERMO
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
 		scopeArsenal=1;
-		ammo="OPTRE_50x137_Tekcirc";
+		ammo="OPTRE_50x137_THERMO";
 		initspeed=-5;
 		displayname="50x137mm Tekcirc Rocket";
 		displaynameshort="Tekcirc";
 		descriptionShort="1 Rocket<br/>50x137mm<br/>Tekcirc<br/>Dediugnu";
 	};
-	class 2Rnd_12Gauge_Pellets;
+
 	class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
 	{
 		dlc="SO";
@@ -2799,7 +2782,6 @@ class CfgMagazines
 		model="\OPTRE_Weapons\Shotgun\Shell_mag_S";
 		picture="\a3\weapons_F\data\ui\m_12gauge_ca";
 	};
-	class 2Rnd_12Gauge_Slug;
 	class OPTRE_6Rnd_8Gauge_Slug: 2Rnd_12Gauge_Slug
 	{
 		dlc="SO";
@@ -2894,7 +2876,6 @@ class CfgMagazines
 		descriptionShort="12 Rounds<br/>8 Gauge<br/>Incendiary";
 		tracersevery=1;
 	};
-	class 3Rnd_UGL_FlareWhite_F;
 	class 3Rnd_UGL_FlareBlue_F: 3Rnd_UGL_FlareWhite_F
 	{
 		dlc="SO";
@@ -2936,7 +2917,6 @@ class CfgMagazines
 		descriptionShort="Type: 8 Gauge - Beanbags<br/>Rounds: 3<br/>Used in: 3GL";
 		picture="\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_6Rnd_12Gauge_Slug_ca";
 	};
-	class UGL_FlareWhite_F;
 	class UGL_FlareBlue_F: UGL_FlareWhite_F
 	{
 		dlc="SO";
@@ -2984,7 +2964,6 @@ class CfgMagazines
 		descriptionShort="Type: Potato<br/>Rounds: 1<br/>Used in: ELGM, 3GL";
 		picture="\v_so_weapons\data\flares\gear_ugl_potat_ca";
 	};
-	class OPTRE_3Rnd_ALIM_Gauss_Slugs;
 	class OPTRE_3Rnd_54mm_Mag: OPTRE_3Rnd_ALIM_Gauss_Slugs
 	{
 		dlc="SO";
@@ -3016,20 +2995,13 @@ class CfgMagazines
 	};
 	class OPTRE_20Rnd_86x70_Mag_Tracer: OPTRE_20Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_86x70_Ball_Tracer";
 		displayname="20Rnd 8.6x70mm Magazine (Tracer)";
 		displaynameshort="8.6x70mm Tracer";
-		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Tracers";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_20Rnd_86x70_Mag_AP: OPTRE_20Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=920;
 		ammo="OPTRE_B_86x70_AP";
 		displayname="20Rnd 8.6x70mm AP Magazine";
@@ -3038,20 +3010,13 @@ class CfgMagazines
 	};
 	class OPTRE_20Rnd_86x70_Mag_APT: OPTRE_20Rnd_86x70_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_86x70_APT";
 		displayname="20Rnd 8.6x70mm AP Magazine (Tracer)";
 		displaynameshort="8.6x70mm AP Tracer";
-		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_20Rnd_86x70_Mag_JHP: OPTRE_20Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=905;
 		ammo="OPTRE_B_86x70_JHP";
 		displayname="20Rnd 8.6x70mm JHP Magazine";
@@ -3060,20 +3025,13 @@ class CfgMagazines
 	};
 	class OPTRE_20Rnd_86x70_Mag_JHPT: OPTRE_20Rnd_86x70_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_86x70_JHPT";
 		displayname="20Rnd 8.6x70mm JHP Magazine (Tracer)";
 		displaynameshort="8.6x70mm JHP Tracer";
-		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_20Rnd_86x70_Mag_SS: OPTRE_20Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_86x70_SS";
 		displayname="20Rnd 8.6x70mm SS Magazine";
@@ -3082,11 +3040,6 @@ class CfgMagazines
 	};
 	class OPTRE_20Rnd_86x70_Mag_SST: OPTRE_20Rnd_86x70_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_86x70_SST";
 		displayname="20Rnd 8.6x70mm SS Magazine (Tracer)";
 		displaynameshort="8.6x70mm SS Tracer";
 		descriptionShort="20 Round Magazine<br/>8.6x70mm<br/>Subsonic";
@@ -3094,11 +3047,6 @@ class CfgMagazines
 	};
 	class OPTRE_10Rnd_86x70_Mag: OPTRE_20Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_86x70_Ball";
 		count=10;
 		mass=6;
 		displayname="10Rnd 8.6x70mm Magazine";
@@ -3107,20 +3055,13 @@ class CfgMagazines
 	};
 	class OPTRE_10Rnd_86x70_Mag_Tracer: OPTRE_10Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_86x70_Ball_Tracer";
 		displayname="10Rnd 8.6x70mm Magazine (Tracer)";
 		displaynameshort="8.6x70mm Tracer";
-		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Tracers";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_10Rnd_86x70_Mag_AP: OPTRE_10Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=920;
 		ammo="OPTRE_B_86x70_AP";
 		displayname="10Rnd 8.6x70mm AP Magazine";
@@ -3129,20 +3070,13 @@ class CfgMagazines
 	};
 	class OPTRE_10Rnd_86x70_Mag_APT: OPTRE_10Rnd_86x70_Mag_AP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_86x70_APT";
 		displayname="10Rnd 8.6x70mm AP Magazine (Tracer)";
 		displaynameshort="8.6x70mm AP Tracer";
-		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing<br/>Tracers";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Armor-Piercing Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_10Rnd_86x70_Mag_JHP: OPTRE_10Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=905;
 		ammo="OPTRE_B_86x70_JHP";
 		displayname="10Rnd 8.6x70mm JHP Magazine";
@@ -3151,20 +3085,13 @@ class CfgMagazines
 	};
 	class OPTRE_10Rnd_86x70_Mag_JHPT: OPTRE_10Rnd_86x70_Mag_JHP
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_86x70_JHPT";
 		displayname="10Rnd 8.6x70mm JHP Magazine (Tracer)";
 		displaynameshort="8.6x70mm JHP Tracer";
-		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point<br/>Tracers";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point Tracers";
 		tracersEvery=1;
 	};
 	class OPTRE_10Rnd_86x70_Mag_SS: OPTRE_10Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=340;
 		ammo="OPTRE_B_86x70_SS";
 		displayname="10Rnd 8.6x70mm SS Magazine";
@@ -3173,11 +3100,6 @@ class CfgMagazines
 	};
 	class OPTRE_10Rnd_86x70_Mag_SST: OPTRE_10Rnd_86x70_Mag_SS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
-		ammo="OPTRE_B_86x70_SST";
 		displayname="10Rnd 8.6x70mm SS Magazine (Tracer)";
 		displaynameshort="8.6x70mm SS Tracer";
 		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Subsonic";
@@ -3185,10 +3107,6 @@ class CfgMagazines
 	};
 	class OPTRE_10Rnd_86x70_Mag_FS: OPTRE_10Rnd_86x70_Mag
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		scope=2;
-		scopeArsenal=2;
 		initspeed=1000;
 		ammo="OPTRE_B_86x70_FS";
 		displayname="10Rnd 8.6x70mm FS Magazine";
@@ -3197,17 +3115,11 @@ class CfgMagazines
 	};
 	class OPTRE_10Rnd_86x70_Mag_FST: OPTRE_10Rnd_86x70_Mag_FS
 	{
-		dlc="SO";
-		author="Fireteam Zulu";
-		ammo="OPTRE_B_86x70_FST";
 		displayname="10Rnd 8.6x70mm FS Magazine (Tracer)";
 		displaynameshort="8.6x70mm FS Tracer";
-		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Fin-Stabalized<br/>Tracers";
+		descriptionShort="10 Round Magazine<br/>8.6x70mm<br/>Fin-Stabalized Tracers";
 		tracersEvery=1;
 	};
-	class CA_Magazine;
-	class SatchelCharge_Remote_Mag;
-	class ATMine_Range_Mag;
 	class C12_Remote_Mag: SatchelCharge_Remote_Mag
 	{
 		author="Fireteam Zulu";
