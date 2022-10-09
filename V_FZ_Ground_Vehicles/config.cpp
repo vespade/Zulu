@@ -598,7 +598,7 @@ class cfgVehicles
 	class VES_M808B_MBT: OPTRE_M808B_UNSC
 	{
 		dlc="Zulu";
-		author="Vespade";
+		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
 		class TransportItems
@@ -611,7 +611,7 @@ class cfgVehicles
     class VES_M808BM_MBT: OPTRE_M808BM_UNSC
     {
 		dlc="Zulu";
-		author="Vespade";
+		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
 		class TransportItems
@@ -624,7 +624,7 @@ class cfgVehicles
     class VES_M808S_MBT: OPTRE_M808S
     {
 		dlc="Zulu";
-		author="Vespade";
+		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
 		class TransportItems
@@ -637,7 +637,7 @@ class cfgVehicles
     class VES_M808B2_MBT: OPTRE_M808B2
     {
 		dlc="Zulu";
-		author="Vespade";
+		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
 		class TransportItems
@@ -645,6 +645,24 @@ class cfgVehicles
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
 		#include "cfg\FZ_D_ScorpionCamos.hpp"
+	};
+    class OPTRE_M875_SPH;
+    class VES_M875_SPH: OPTRE_M875_SPH
+	{
+		dlc = "Zulu";
+		crew="VES_Rifleman_MA5B_MAR";
+		author = "Baseplate";
+        editorCategory="V_FZ_EdCat_Zulu";
+		tf_range = 25000;
+		tf_isolatedAmount = 0.4;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		enableRadio = 1;
+        class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_E_ScorpionCamos.hpp"
 	};
 	
 	// Trucks
