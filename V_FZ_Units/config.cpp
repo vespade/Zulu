@@ -111,15 +111,6 @@ class CfgPatches
 			"VES_Rifleman_ONI_ODST",
 			"VES_ONI_Agent",
 			
-			// Phoenix
-			"VES_Rifleman_MA5B_SFP",
-			"VES_Rifleman_BR55_SFP",
-			"VES_Rifleman_M392_SFP",
-			"VES_Rifleman_M28_SFP",
-			"VES_Rifleman_M73_SFP",
-			"VES_Rifleman_Radio_SFP",
-			"VES_Rifleman_SquadLeader_SFP",
-			"VES_Rifleman_TeamLeader_SFP",
 			// Air-Assault
 			"VES_Rifleman_MA5B_AA",
 			"VES_Rifleman_BR55_AA",
@@ -642,47 +633,6 @@ class CfgVehicles
 	{
 		displayName="Team Leader";
 	};
-	
-	// Strike Force Phoenix
-	class VES_Rifleman_MA5B_SFP: VES_Rifleman_MA5B_ODST
-	{
-		side=2;
-		uniformClass="VES_BDU_Urban_I_Slim";
-		editorCategory="V_FZ_EdCat_SFP";
-		#include "cfg\Strike Force Phoenix\FZ_SFP_LightItems.hpp"
-	};
-	class VES_Rifleman_BR55_SFP: VES_Rifleman_MA5B_SFP
-	{
-		displayName="Rifleman (BR55)";
-		#include "cfg\FZ_BR55_Items.hpp"
-	};
-	class VES_Rifleman_M392_SFP: VES_Rifleman_MA5B_SFP
-	{
-		displayName="Designated Marksman (M392)";
-		#include "cfg\FZ_M392_Items.hpp"
-		#include "cfg\Strike Force Phoenix\FZ_SFP_MarksmanItems.hpp"
-	};
-	class VES_Rifleman_M73_SFP: VES_Rifleman_MA5B_SFP
-	{
-		displayName="Autorifleman";
-		backpack="OPTRE_ILCS_Rucksack_Heavy";
-		#include "cfg\FZ_M73_Items.hpp"
-	};
-	class VES_Rifleman_Radio_SFP: VES_Rifleman_BR55_SFP
-	{
-		displayName="Radio Operator";
-		backpack="OPTRE_ANPRC_515";
-		#include "cfg\Strike Force Phoenix\FZ_SFP_ScoutItems.hpp"
-	};
-	class VES_Rifleman_SquadLeader_SFP: VES_Rifleman_Radio_SFP
-	{
-		displayName="Squad Leader";
-	};
-	class VES_Rifleman_TeamLeader_SFP: VES_Rifleman_SquadLeader_SFP
-	{
-		displayName="Team Leader";
-	};
-	
 	// Air-Assault
 	class VES_Rifleman_MA5B_AA: VES_Rifleman_MA5B_ODST
 	{
