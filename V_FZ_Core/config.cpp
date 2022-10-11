@@ -55,6 +55,10 @@ class CfgEditorCategories
 	{
 		displayName="[Zulu] Civilian (UEG)";
 	};
+    class V_FZ_EdCat_CPD
+    {
+        displayName="[Zulu] Colonial Police Department"
+    }
 };
 class CfgEditorSubcategories
 {

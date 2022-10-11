@@ -18,29 +18,13 @@ class CfgPatches
 			// Warthogs
 			"VES_M12",
 			"VES_M12_SFP",
-			
-			"VES_M12_CIV",
-			
 			"VES_M12_LRV",
-			"VES_M12_LRV_SFP",
-			
 			"VES_M12G1_LRV",
-			"VES_M12G1_LRV_SFP",
-			
 			"VES_M12A1_LRV",
-			"VES_M12A1_LRV_SFP",
-			
 			"VES_M813_TT",
-			"VES_M813_TT_SFP",
-			
 			"VES_M12R_AA",
-			"VES_M12R_AA_SFP",
-			
 			"VES_M12_APC_MED",
-			"VES_M12_APC_MED_SFP",
-			
 			"VES_M12_APC",
-			"VES_M12_APC_SFP",
 			
 			// Hyena/Mattock
 			"VES_M19",
@@ -126,23 +110,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
-	class VES_M12_SFP: VES_M12
-	{
-		dlc="Zulu";
-		author="Vespade";
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		class textureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_A_CO"
-		};
-		class EventHandlers;
-		class UserActions;
-	};
 	class VES_M12_CIV: VES_M12_SFP
 	{
 		dlc="Zulu";
@@ -185,21 +152,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
-	class VES_M12_LRV_SFP: VES_M12_LRV
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		class textureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_A_CO"
-		};
-		class EventHandlers;
-		class UserActions;
-	};
 	// Gauss Warthogs
 	class OPTRE_M12G1_LRV;
 	class VES_M12G1_LRV: OPTRE_M12G1_LRV
@@ -226,21 +178,6 @@ class cfgVehicles
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
 		#include "cfg\FZ_Z_WarthogCamos.hpp"
-	};
-	class VES_M12G1_LRV_SFP: VES_M12G1_LRV
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		class textureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_A_CO"
-		};
-		class UserActions;
-		class EventHandlers;
 	};
 	// Rocket Warthogs
 	class OPTRE_M12A1_LRV;
@@ -269,21 +206,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
-	class VES_M12A1_LRV_SFP: VES_M12A1_LRV
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		class textureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_A2_CO"
-		};
-		class EventHandlers;
-		class UserActions;
-	};
 	// Transport Warthogs
 	class OPTRE_M813_TT;
 	class VES_M813_TT: OPTRE_M813_TT
@@ -310,21 +232,6 @@ class cfgVehicles
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
 		#include "cfg\FZ_W_WarthogCamos.hpp"
-	};
-	class VES_M813_TT_SFP: VES_M813_TT
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		class textureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_A_CO"
-		};
-		class EventHandlers;
-		class UserActions;
 	};
 	// AA Warthogs
 	class OPTRE_M12R_AA;
@@ -416,20 +323,6 @@ class cfgVehicles
 			};
 		};
 	};
-	class VES_M12_APC_MED_SFP: VES_M12_APC_MED
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		class textureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_BLK_A2_CO"
-		};
-	};
-	
 	class VES_M12_APC: VES_M12_APC_Base
 	{
 		dlc="Zulu";
@@ -455,22 +348,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_X_WarthogCamos.hpp"
 	};
-	class VES_M12_APC_SFP: VES_M12_APC
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		class textureSources{};
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_CO",
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_SFP_A_CO"
-		};
-		class EventHandlers;
-		class UserActions;
-	};
-	
 	// APC ~ Hound? Think again.
 	class B_APC_Wheeled_01_cannon_F;
 	class VES_IFV76_A: B_APC_Wheeled_01_cannon_F

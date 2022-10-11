@@ -17,17 +17,9 @@ class CfgPatches
 		{
 			// Falcons
 			"VES_UH144_A",
-			"VES_UH144_A_URF",
-			"VES_UH144_A_SFP",
 			"VES_UH144S_A",
-			"VES_UH144S_A_URF",
-			"VES_UH144S_A_SFP",
 			"VES_UH144",
-			"VES_UH144_URF",
-			"VES_UH144_SFP",
 			"VES_UH144S",
-			"VES_UH144S_URF",
-			"VES_UH144S_SFP",
 			
 			// Pelicans
 			"VES_D77HTCI_A",
@@ -212,48 +204,12 @@ class CfgVehicles
 		#include "cfg\FZ_A_FalconCamos.hpp"
 		class EventHandlers;
 	};
-	class VES_UH144_A_URF: VES_UH144_A
-	{
-		side=0;
-		forceInGarage=0;
-		crew="OPTRE_Ins_URF_Rifleman_AR";
-		editorCategory="V_FZ_EdCat_URF";
-		#include "cfg\FZ_C_FalconCamos.hpp"
-	};
-	class VES_UH144_A_SFP: VES_UH144_A
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
-		};
-	};
 	class VES_UH144S_A: VES_UH144_A
 	{
 		displayName="UH-144S Falcon (Armed)";
 		class EventHandlers: EventHandlers
 		{
 			init = "0 = _this spawn V_FZ_fnc_FalconAddMGs";
-		};
-	};
-	class VES_UH144S_A_SFP: VES_UH144S_A
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
 		};
 	};
 	class OPTRE_UNSC_falcon_unarmed;
@@ -283,28 +239,6 @@ class CfgVehicles
 		#include "cfg\FZ_FalconActions.hpp"
 		class EventHandlers;
 	};
-	class VES_UH144_URF: VES_UH144
-	{
-		side=0;
-		forceInGarage=0;
-		crew="OPTRE_Ins_URF_Rifleman_AR";
-		editorCategory="V_FZ_EdCat_URF";
-		#include "cfg\FZ_C_FalconCamos.hpp"
-	};
-	class VES_UH144_SFP: VES_UH144
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
-		};
-	};
 	class VES_UH144S: VES_UH144
 	{
 		displayName="UH-144S Falcon";
@@ -313,21 +247,6 @@ class CfgVehicles
 			init = "0 = _this spawn V_FZ_fnc_FalconAddMGs";
 		};
 	};
-	class VES_UH144S_SFP: VES_UH144S
-	{
-		side=2;
-		forceInGarage=0;
-		crew="VES_Rifleman_MA5B_SFP";
-		editorCategory="V_FZ_EdCat_SFP";
-		hiddenSelectionsTextures[]=
-		{
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_A_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_BLK_T_CO",
-			"V_FZ_Air_Vehicles\data\Falcon\V_UH144_SFP_S_CO"
-		};
-	};
-	
 	// Pelicans
 	
 	class OPTRE_Pelican_armed;
