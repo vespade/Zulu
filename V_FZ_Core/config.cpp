@@ -57,8 +57,8 @@ class CfgEditorCategories
 	};
     class V_FZ_EdCat_CPD
     {
-        displayName="[Zulu] Colonial Police Department"
-    }
+        displayName="[Zulu] Colonial Police Department";
+    };
 };
 class CfgEditorSubcategories
 {

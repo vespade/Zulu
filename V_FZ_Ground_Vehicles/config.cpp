@@ -17,7 +17,6 @@ class CfgPatches
 		{
 			// Warthogs
 			"VES_M12",
-			"VES_M12_SFP",
 			"VES_M12_LRV",
 			"VES_M12G1_LRV",
 			"VES_M12A1_LRV",
@@ -110,20 +109,6 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_WarthogCamos.hpp"
 	};
-	class VES_M12_CIV: VES_M12_SFP
-	{
-		dlc="Zulu";
-		author="Vespade";
-		side=3;
-		crew="C_man_1";
-		editorCategory="V_FZ_EdCat_CIV";
-		class EventHandlers: EventHandlers
-		{
-			init = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;};";
-		};
-		#include "cfg\FZ_F_WarthogCamos.hpp"
-	};
-	
 	
 	// Machinegun Warthogs
 	class OPTRE_M12_LRV;
