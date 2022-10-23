@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
 	class V_SO_Magazines
@@ -1492,7 +1491,7 @@ class CfgMagazines
 		count=100;
 		initspeed=1200;
 		picture="\OPTRE_Weapons\MG\icons\magazine.paa";
-		descriptionshort="100 Box Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing"
+		descriptionshort="100 Box Round Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing";
 		mass=35;
 	};
 	class OPTRE_100Rnd_95x40_Box_Tracer: OPTRE_100Rnd_95x40_Box
