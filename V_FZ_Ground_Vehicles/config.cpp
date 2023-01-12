@@ -335,6 +335,7 @@ class cfgVehicles
 	};
 	// APC ~ Hound? Think again.
 	class B_APC_Wheeled_01_cannon_F;
+    class AnimationSources;
 	class VES_IFV76_A: B_APC_Wheeled_01_cannon_F
 	{
 		dlc="Zulu";
@@ -357,12 +358,212 @@ class cfgVehicles
 		};
 		class TransportMagazines{};
 		class TransportWeapons{};
-		class AnimationSources;
 		class UserActions;
+        class AnimationSources: AnimationSources
+		{
+			class muzzle_rot
+			{
+				source="ammorandom";
+				weapon="autocannon_40mm_CTWS";
+			};
+			class muzzle_hide
+			{
+				source="reload";
+				weapon="autocannon_40mm_CTWS";
+			};
+			class revolving_cannon
+			{
+				source="revolving";
+				weapon="autocannon_40mm_CTWS";
+			};
+			class HideTurret
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.001;
+			};
+			class HitEngine_src
+			{
+				source="Hit";
+				hitpoint="HitEngine";
+				raw=1;
+			};
+			class HitFuel_src
+			{
+				source="Hit";
+				hitpoint="HitFuel";
+				raw=1;
+			};
+			class HitHull_src
+			{
+				source="Hit";
+				hitpoint="HitHull";
+				raw=1;
+			};
+			class HitMainGun_src
+			{
+				source="Hit";
+				hitpoint="HitGun";
+				raw=1;
+			};
+			class HitTurret_src
+			{
+				source="Hit";
+				hitpoint="HitTurret";
+				raw=1;
+			};
+			class HitComTurret_src
+			{
+				source="Hit";
+				hitpoint="HitComTurret";
+				raw=1;
+			};
+			class HitSLAT_Left_1_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Left_1";
+				raw=1;
+			};
+			class HitSLAT_Left_2_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Left_2";
+				raw=1;
+			};
+			class HitSLAT_Left_3_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Left_3";
+				raw=1;
+			};
+			class HitSLAT_Right_1_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Right_1";
+				raw=1;
+			};
+			class HitSLAT_Right_2_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Right_2";
+				raw=1;
+			};
+			class HitSLAT_Right_3_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Right_3";
+				raw=1;
+			};
+			class HitSLAT_back_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_back";
+				raw=1;
+			};
+			class HitSLAT_front_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_front";
+				raw=1;
+			};
+			class HitSLAT_top_back_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_top_back";
+				raw=1;
+			};
+			class HitSLAT_top_right_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_top_right";
+				raw=1;
+			};
+			class HitSLAT_top_left_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_top_left";
+				raw=1;
+			};
+			class showBags
+			{
+				displayName="$STR_A3_animationsources_showbagsturret0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+			class showCamonetHull
+			{
+				displayName="$STR_A3_animationsources_showcamonethull0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+			class showCamonetCannon
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+			};
+			class showCamonetTurret
+			{
+				displayName="$STR_A3_animationsources_showcamonetturret0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				forceAnimatePhase=1;
+				forceAnimate[]=
+				{
+					"showCamonetCannon",
+					1
+				};
+				forceAnimate2[]=
+				{
+					"showCamonetCannon",
+					0
+				};
+				mass=-50;
+			};
+			class showSLATHull
+			{
+				displayName="$STR_A3_animationsources_showslathull0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+			class showSLATTurret
+			{
+				displayName="$STR_A3_animationsources_showslatturret0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+		};
+		animationList[]=
+		{
+			"showBags",
+			0,
+			"showCamonetHull",
+			0,
+			"showCamonetCannon",
+			0,
+			"showCamonetTurret",
+			0,
+			"showSLATHull",
+			0,
+			"showSLATTurret",
+			0
+		};
 		#include "cfg\FZ_A_HoneybadgerCamos.hpp"
 	};
-    
-	
 	class VES_IFV76: VES_IFV76_A
 	{
 		dlc="Zulu";
@@ -405,7 +606,10 @@ class cfgVehicles
 		tf_range=10000;
 		TFAR_hasIntercom=1;
 		waterResistanceCoef=0.05;
-		class EventHandlers;
+		class EventHandlers
+		{
+			fired = "[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
+		};
 		class TransportItems
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
@@ -413,8 +617,7 @@ class cfgVehicles
         #include "cfg\FZ_A_OryxCamos.hpp"
 		class TransportMagazines{};
 		class TransportWeapons{};
-		class AnimationSources;
-		class UserActions;
+		class UserActions{};
 	};
 	
 	// Bisons
@@ -460,6 +663,8 @@ class cfgVehicles
 	class VES_M808B_MBT: OPTRE_M808B_UNSC
 	{
 		dlc="Zulu";
+        scope = 2;
+        scopeCurator = 2;
 		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
@@ -473,6 +678,8 @@ class cfgVehicles
     class VES_M808BM_MBT: OPTRE_M808BM_UNSC
     {
 		dlc="Zulu";
+        scope = 2;
+        scopeCurator = 2;
 		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
@@ -486,6 +693,8 @@ class cfgVehicles
     class VES_M808S_MBT: OPTRE_M808S
     {
 		dlc="Zulu";
+        scope = 2;
+        scopeCurator = 2;
 		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
@@ -499,6 +708,8 @@ class cfgVehicles
     class VES_M808B2_MBT: OPTRE_M808B2
     {
 		dlc="Zulu";
+        scope = 2;
+        scopeCurator = 2;
 		author="Baseplate";
 		editorCategory="V_FZ_EdCat_Zulu";
 		crew="VES_Rifleman_MA5B_MAR";
@@ -512,6 +723,8 @@ class cfgVehicles
     class VES_M875_SPH: OPTRE_M875_SPH
 	{
 		dlc = "Zulu";
+        scope = 2;
+        scopeCurator = 2;
 		crew="VES_Rifleman_MA5B_MAR";
 		author = "Baseplate";
         editorCategory="V_FZ_EdCat_Zulu";
