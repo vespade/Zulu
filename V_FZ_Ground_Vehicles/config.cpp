@@ -22,7 +22,6 @@ class CfgPatches
 			"VES_M12A1_LRV",
 			"VES_M813_TT",
 			"VES_M12R_AA",
-			"VES_M12_APC_MED",
 			"VES_M12_APC",
 			
 			// Hyena/Mattock
@@ -53,6 +52,8 @@ class CfgPatches
             "VES_M412_IFV",
             
             "VES_M494_ORYX",
+            
+            "VES_M125_APC",
             
             // Boat
             "VES_M112_TT"
@@ -255,58 +256,6 @@ class cfgVehicles
 		scopeCurator=1;
 		class EventHandlers;
 		class UserActions;
-	};
-	class VES_M12_APC_MED: VES_M12_APC_Base
-	{
-		dlc="Zulu";
-		author="Vespade";
-		scope=2;
-		scopeCurator=2;
-		forceInGarage=1;
-		displayName="M12 APC Warthog (Medical)";
-		editorCategory="V_FZ_EdCat_Zulu";
-		crew="VES_Rifleman_MA5B_MAR";
-		//fuelConsumptionRate=0.1;
-		ace_refuel_fuelCapacity=150;
-		ace_refuel_hooks[]={{-1.5, -.6, -1.1}};
-		enableRadio=1;
-		tf_hasLRradio=1;
-		tf_isolatedAmount=.4;
-		tf_range=10500;
-		brakeDistance=4;
-		weapons[]={"AmbulanceHorn", "TruckHorn3"};
-		class TransportItems
-		{
-			#include "cfg\FZ_B_VehicleGear.hpp"
-		};
-		#include "cfg\FZ_B_WarthogCamos.hpp"
-		class EventHandlers: EventHandlers
-		{
-			init = "0 = _this spawn V_FZ_fnc_WarthogLightsAdd";
-		};
-		class UserActions: UserActions
-		{
-			class LightbarOn
-			{
-				condition="(alive this) AND !(this getvariable [""VES_Warthog_LightbarStatus"", false]) AND (player in [driver this])";
-				displayName="<t color='#FFBF00'>Turn on Lightbar";
-				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_ON_ca' size='2.5' />";
-				onlyForPlayer=1;
-				position="";
-				radius=6;
-				statement="0 = this spawn V_FZ_fnc_WarthogLightsOn";
-			};
-			class LightbarOff
-			{
-				condition="(alive this) AND (this getvariable ""VES_Warthog_LightbarStatus"") AND (player in [driver this])";
-				displayName="<t color='#FFBF00'>Turn off Lightbar";
-				displayNameDefault="<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\beacons_OFF_ca' size='2.5' />";
-				onlyForPlayer=1;
-				position="";
-				radius=6;
-				statement="0 = this spawn V_FZ_fnc_WarthogLightsOff";
-			};
-		};
 	};
 	class VES_M12_APC: VES_M12_APC_Base
 	{
@@ -657,6 +606,30 @@ class cfgVehicles
 		};
 		#include "cfg\FZ_A_BisonCamos.hpp"
 	};
+    class OPTRE_M125_APC_Base;
+    class VES_M125_APC: OPTRE_M125_APC_Base
+	{
+		dlc="Zulu";
+		author="Vespade";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+        forceInGarage=1;
+		displayName = "M125 Wildebeest APC";
+        editorCategory="V_FZ_EdCat_Zulu";
+		crew = "VES_Rifleman_MA5B_MAR";
+		tf_range = 25000;
+		tf_isolatedAmount = 0.4;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		enableRadio = 1;
+        TFAR_hasIntercom=1;
+        class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_WildebeestCamos.hpp"
+	};
 	
 	// Scorpions
 	class OPTRE_M808B_UNSC;
@@ -953,7 +926,6 @@ class cfgVehicles
 		crew="VES_Rifleman_MA5B_MAR";
 		//fuelConsumptionRate=0.1;
 		ace_refuel_fuelCapacity=150;
-		ace_refuel_hooks[]={{-1.5, -.6, -1.1}};
 		enableRadio=1;
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.4;
@@ -962,6 +934,7 @@ class cfgVehicles
 		{
 			#include "cfg\FZ_A_VehicleGear.hpp"
 		};
-		#include "cfg\FZ_A_CatfishCamos.hpp"
-    };	
-};	
+        #include "cfg\FZ_A_CatfishCamos.hpp"
+    };
+};
+  

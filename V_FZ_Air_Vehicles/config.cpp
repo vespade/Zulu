@@ -16,10 +16,10 @@ class CfgPatches
 		units[]=
 		{
 			// Falcons
-			"VES_UH144_A",
-			"VES_UH144S_A",
 			"VES_UH144",
-			"VES_UH144S",
+            "VES_UH144_A",
+            "VES_UH144S",
+            "VES_UH144S_A",
 			
 			// Pelicans
 			"VES_D77HTCI_A",
@@ -177,14 +177,14 @@ class CfgVehicles
 	// Falcons
 	
 	class OPTRE_UNSC_falcon;
-	class VES_UH144_A: OPTRE_UNSC_falcon
+	class VES_UH144: OPTRE_UNSC_falcon
 	{
 		dlc="Zulu";
 		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="UH-144 Falcon (Armed)";
+		displayName="UH-144 Falcon";
 		editorCategory="V_FZ_EdCat_Zulu";
 		editorSubcategory="V_FZ_EdSubCat_Rotary";
 		crew="VES_Rifleman_MA5B_ODST";
@@ -204,23 +204,15 @@ class CfgVehicles
 		#include "cfg\FZ_A_FalconCamos.hpp"
 		class EventHandlers;
 	};
-	class VES_UH144S_A: VES_UH144_A
-	{
-		displayName="UH-144S Falcon (Armed)";
-		class EventHandlers: EventHandlers
-		{
-			init = "0 = _this spawn V_FZ_fnc_FalconAddMGs";
-		};
-	};
-	class OPTRE_UNSC_falcon_unarmed;
-	class VES_UH144: OPTRE_UNSC_falcon_unarmed
+	class OPTRE_UNSC_falcon_armed;
+	class VES_UH144_A: OPTRE_UNSC_falcon_armed
 	{
 		dlc="Zulu";
 		author="Vespade";
 		scope=2;
 		scopeCurator=2;
 		forceInGarage=1;
-		displayName="UH-144 Falcon";
+		displayName="UH-144 Falcon (Armed)";
 		editorCategory="V_FZ_EdCat_Zulu";
 		editorSubcategory="V_FZ_EdSubCat_Rotary";
 		crew="VES_Rifleman_MA5B_ODST";
@@ -239,13 +231,60 @@ class CfgVehicles
 		#include "cfg\FZ_FalconActions.hpp"
 		class EventHandlers;
 	};
-	class VES_UH144S: VES_UH144
+    class OPTRE_UNSC_falcon_s;
+	class VES_UH144S: OPTRE_UNSC_falcon_s
 	{
+		dlc="Zulu";
+		author="Vespade";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
 		displayName="UH-144S Falcon";
-		class EventHandlers: EventHandlers
+		editorCategory="V_FZ_EdCat_Zulu";
+		editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+		mainRotorSpeed=3;
+		backRotorSpeed=3;
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=12000;
+		class TransportBackpacks
 		{
-			init = "0 = _this spawn V_FZ_fnc_FalconAddMGs";
+			pack_xx(B_Parachute,8);
 		};
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_FalconCamos.hpp"
+		class EventHandlers;
+	};
+	class OPTRE_UNSC_falcon_armed_s;
+	class VES_UH144S_A: OPTRE_UNSC_falcon_armed_s
+	{
+		dlc="Zulu";
+		author="Vespade";
+		scope=2;
+		scopeCurator=2;
+		forceInGarage=1;
+		displayName="UH-144S Falcon (Armed)";
+		editorCategory="V_FZ_EdCat_Zulu";
+		editorSubcategory="V_FZ_EdSubCat_Rotary";
+		crew="VES_Rifleman_MA5B_ODST";
+		tf_hasLRradio=1;
+		tf_isolatedAmount=.4;
+		tf_range=12000;
+		class TransportBackpacks
+		{
+			pack_xx(B_Parachute,8);
+		};
+		class TransportItems
+		{
+			#include "cfg\FZ_A_VehicleGear.hpp"
+		};
+		#include "cfg\FZ_A_FalconCamos.hpp"
+		#include "cfg\FZ_FalconActions.hpp"
+		class EventHandlers;
 	};
 	// Pelicans
 	
