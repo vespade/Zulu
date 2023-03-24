@@ -1,4 +1,4 @@
-"\OPTRE_Vehicles\warthog\data,\decals_ca.paa","\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"class textureSources
+class textureSources
 		{
 			class ves_desert
 			{

@@ -63,7 +63,7 @@ class textureSources
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_CO.paa","V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_W_CO.paa","\OPTRE_Vehicles\warthog\data\decals_ca.paa","\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"};  
+			"V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_CO.paa","V_FZ_Ground_Vehicles\data\Warthog\V_M12_CLS_W_CO.paa","\OPTRE_Vehicles\warthog\data\decals_ca.paa","\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa","\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 		
 textureList[] = 

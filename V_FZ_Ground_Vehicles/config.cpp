@@ -103,6 +103,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
+        hiddenSelections[] = {"Camo1","Camo2","camo_details","camo_interior"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -131,6 +132,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_turret_decal","camo_sight"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -158,6 +160,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","camo_details","camo_interior"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -185,6 +188,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_turret","camo_turret_decals"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -211,6 +215,7 @@ class cfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.4;
 		tf_range=10500;
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_net","camo_transport_decal"};
 		brakeDistance=4;
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
@@ -239,6 +244,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior"};
 		weapons[]={"TruckHorn3"};
 		class TransportItems
 		{
@@ -275,6 +281,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","camo_details","camo_interior","camo_transport_details","camo_net"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -926,6 +933,7 @@ class cfgVehicles
 		crew="VES_Rifleman_MA5B_MAR";
 		//fuelConsumptionRate=0.1;
 		ace_refuel_fuelCapacity=150;
+        ace_refuel_hooks[]={{-1.5, -.6, -1.1}};
 		enableRadio=1;
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.4;
@@ -937,4 +945,3 @@ class cfgVehicles
         #include "cfg\FZ_A_CatfishCamos.hpp"
     };
 };
-  
