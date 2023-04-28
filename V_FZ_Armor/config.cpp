@@ -282,30 +282,46 @@ class CfgWeapons
 	class OPTRE_UNSC_CH252D_Helmet;
 	class VES_CH252D: OPTRE_UNSC_CH252D_Helmet
 	{
-		dlc="Zulu";
-		author="Vespade & Baseplate";
-		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0.60;
-		displayName="[FZ] CH252D Helmet";
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO"};
-		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"};
-		CBRN_protection=1;
+		dlc = "Zulu";
+		author = "Vespade";
+		ace_hearing_protection = 1;
+		ace_hearing_lowerVolume = 0.6;
+		displayName = "[FZ] CH252D Helmet";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO","V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"};
+		CBRN_protection = 1;
 		class ItemInfo: HeadgearItem
 		{
-			mass=30;
-			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet";
-			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-			hiddenSelections[]={"camo","camo2"};
-			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO"};
-			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"};
+			mass = 30;
+			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet";
+			picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO","V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+			hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"};
 			class HitpointsProtectionInfo
 			{
-				class Face {armor=25; hitpointName="HitFace"; passThrough=0.1;};
-				class Head {armor=25; hitPointName="HitHead"; passThrough=0.1;};
-				class Neck {armor=20; hitpointName="HitNeck"; passThrough=0.1;};
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 20;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
 			};
 		};
-		allowedFacewear[]={};
+		allowedFacewear[] = {};
 	};
 	class VES_CH252D_B: VES_CH252D
 	{
@@ -352,8 +368,8 @@ class CfgWeapons
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.10;
 		displayName="[FZ] CH252D Helmet";
-		hiddenSelections[]={"camo","camo2"};
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+		hiddenSelections[]={"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat", ""};
 		CBRN_protection=1;
 		class ItemInfo: HeadgearItem
@@ -361,8 +377,8 @@ class CfgWeapons
 			mass=30;
 			uniformModel="OPTRE_UNSC_Units\Army\odst_helmet_dp";
 			picture="\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-			hiddenSelections[]={"camo","camo2"};
-			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+			hiddenSelections[]={"camo","camo2","camo3","camo4","H_Ghillie"};
+			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat", ""};
 			class HitpointsProtectionInfo
 			{
@@ -396,30 +412,30 @@ class CfgWeapons
 
 	class VES_S1ONIR: VES_CH252D
 	{
-		author="Vespade & Baseplate";
-		displayName="[FZ] S1/ONI/R Helmet (Gold)";
-		model="\OPTRE_UNSC_Units\Army\recon_helmet";
-		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon";
-		hiddenSelections[]={"camo","camo2"};
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_GLD_V_CO"};
-		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat", "V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR_V.rvmat"};
+		author = "Vespade";
+		displayName = "[FZ] S1/ONI/R Helmet (Gold)";
+		model = "\OPTRE_UNSC_Units\Army\recon_helmet";
+		picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO","V_FZ_Armor\Data\Helmets\V_S1ONIR_GLD_V_CO","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR_V.rvmat"};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\OPTRE_UNSC_Units\Army\recon_helmet";
-			picture="\OPTRE_UNSC_Units\Army\icons\odst_recon";
-			hiddenSelections[]={"camo","camo2"};
-			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_GLD_V_CO"};
-			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR_V.rvmat"};
+			uniformModel = "\OPTRE_UNSC_Units\Army\recon_helmet";
+			picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO","V_FZ_Armor\Data\Helmets\V_S1ONIR_GLD_V_CO","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+			hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR_V.rvmat"};
 		};
 	};
 	class VES_S1ONIR_S: VES_S1ONIR
 	{
-		displayName="[FZ] S1/ONI/R Helmet (Silver)";
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_SLV_V_CO"};
-		class ItemInfo: ItemInfo 
-        {
-            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_SLV_V_CO"};
-        };
+		displayName = "[FZ] S1/ONI/R Helmet (Silver)";
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO","V_FZ_Armor\Data\Helmets\V_S1ONIR_SLV_V_CO","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO","V_FZ_Armor\Data\Helmets\V_S1ONIR_SLV_V_CO","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+		};
 	};
 
 	class VES_S1ONIR_dp: VES_CH252D_dp
@@ -428,15 +444,15 @@ class CfgWeapons
 		displayName="[FZ] S1/ONI/R Helmet (Gold)";
 		model="\OPTRE_UNSC_Units\Army\recon_helmet_dp";
 		picture="\OPTRE_UNSC_Units\Army\icons\odst_recon";
-		hiddenSelections[]={"camo","camo2"};
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_CLR_V_CA"};
+		hiddenSelections[]={"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_CLR_V_CA","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 		hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat",""};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\recon_helmet_dp";
 			picture="\OPTRE_UNSC_Units\Army\icons\odst_recon";
-			hiddenSelections[]={"camo","camo2"};
-			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_CLR_V_CA"};
+			hiddenSelections[]={"camo","camo2","camo3","camo4","H_Ghillie"};
+			hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_S1ONIR_DEF_CO", "V_FZ_Armor\Data\Helmets\V_S1ONIR_CLR_V_CA","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			hiddenSelectionsMaterials[]={"V_FZ_Armor\Data\Helmets\Materials\V_S1ONIR.rvmat",""};
 		};
 	};
