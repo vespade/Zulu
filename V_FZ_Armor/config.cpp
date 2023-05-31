@@ -216,8 +216,6 @@ class CfgWeapons
 		};
 	};
 
-	#include "data\attachments\attachments.hpp"
-
 	// Hats & Berets
 	class H_Beret_Colonel;
 	class HeadgearItem;
