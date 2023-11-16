@@ -40,23 +40,23 @@ class CfgPatches
 			
 			// Tanks
 			"VES_M808B_MBT",
-            "VES_M808BM_MBT",
-            "VES_M808S_MBT",
+            		"VES_M808BM_MBT",
+            		"VES_M808S_MBT",
 			
 			// APC
 			"VES_IFV76",
 			"VES_IFV76_M",
 			"VES_IFV76_A",
 			
-            "VES_M413_MGS",
-            "VES_M412_IFV",
+            		"VES_M413_MGS",
+           		"VES_M412_IFV",
             
-            "VES_M494_ORYX",
+            		"VES_M494_ORYX",
             
-            "VES_M125_APC",
+            		"VES_M125_APC",
             
-            // Boat
-            "VES_M112_TT"
+            		// Boat
+            		"VES_M112_TT"
 			
 		};
 		weapons[]={};
@@ -103,7 +103,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-        hiddenSelections[] = {"Camo1","Camo2","camo_details","camo_interior"};
+        	hiddenSelections[] = {"Camo1","Camo2","camo_details","camo_interior"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -132,7 +132,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_turret_decal","camo_sight"};
+        	hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_turret_decal","camo_sight"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -160,7 +160,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-        hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","camo_details","camo_interior"};
+        	hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","camo_details","camo_interior"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -188,7 +188,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_turret","camo_turret_decals"};
+        	hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_turret","camo_turret_decals"};
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
 		{
@@ -215,7 +215,7 @@ class cfgVehicles
 		tf_hasLRradio=1;
 		tf_isolatedAmount=.4;
 		tf_range=10500;
-        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_net","camo_transport_decal"};
+        	hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior","camo_net","camo_transport_decal"};
 		brakeDistance=4;
 		weapons[]={"TruckHorn3","VES_HogRun","VES_HogJazz"};
 		class TransportItems
@@ -244,7 +244,7 @@ class cfgVehicles
 		tf_isolatedAmount=.4;
 		tf_range=10500;
 		brakeDistance=4;
-        hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior"};
+        	hiddenSelections[] = {"Camo1","Camo2","Camo3","camo_details","camo_interior"};
 		weapons[]={"TruckHorn3"};
 		class TransportItems
 		{
@@ -290,8 +290,11 @@ class cfgVehicles
 		#include "cfg\FZ_X_WarthogCamos.hpp"
 	};
 	// APC ~ Hound? Think again.
-    class AnimationSources;
-	class B_APC_Wheeled_01_cannon_F;
+    	class B_APC_Wheeled_01_base_F;
+	class B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F
+	{
+		class AnimationSources;
+	};
 	class VES_IFV76_A: B_APC_Wheeled_01_cannon_F
 	{
 		dlc="Zulu";
@@ -315,7 +318,209 @@ class cfgVehicles
 		class TransportMagazines{};
 		class TransportWeapons{};
 		class UserActions;
-        class AnimationSources;
+		class AnimationSources: AnimationSources
+		{
+			class muzzle_rot
+			{
+				source="ammorandom";
+				weapon="autocannon_40mm_CTWS";
+			};
+			class muzzle_hide
+			{
+				source="reload";
+				weapon="autocannon_40mm_CTWS";
+			};
+			class revolving_cannon
+			{
+				source="revolving";
+				weapon="autocannon_40mm_CTWS";
+			};
+			class HideTurret
+			{
+				source="user";
+				initPhase=0;
+				animPeriod=0.001;
+			};
+			class HitEngine_src
+			{
+				source="Hit";
+				hitpoint="HitEngine";
+				raw=1;
+			};
+			class HitFuel_src
+			{
+				source="Hit";
+				hitpoint="HitFuel";
+				raw=1;
+			};
+			class HitHull_src
+			{
+				source="Hit";
+				hitpoint="HitHull";
+				raw=1;
+			};
+			class HitMainGun_src
+			{
+				source="Hit";
+				hitpoint="HitGun";
+				raw=1;
+			};
+			class HitTurret_src
+			{
+				source="Hit";
+				hitpoint="HitTurret";
+				raw=1;
+			};
+			class HitComTurret_src
+			{
+				source="Hit";
+				hitpoint="HitComTurret";
+				raw=1;
+			};
+			class HitSLAT_Left_1_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Left_1";
+				raw=1;
+			};
+			class HitSLAT_Left_2_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Left_2";
+				raw=1;
+			};
+			class HitSLAT_Left_3_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Left_3";
+				raw=1;
+			};
+			class HitSLAT_Right_1_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Right_1";
+				raw=1;
+			};
+			class HitSLAT_Right_2_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Right_2";
+				raw=1;
+			};
+			class HitSLAT_Right_3_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_Right_3";
+				raw=1;
+			};
+			class HitSLAT_back_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_back";
+				raw=1;
+			};
+			class HitSLAT_front_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_front";
+				raw=1;
+			};
+			class HitSLAT_top_back_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_top_back";
+				raw=1;
+			};
+			class HitSLAT_top_right_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_top_right";
+				raw=1;
+			};
+			class HitSLAT_top_left_src
+			{
+				source="Hit";
+				hitpoint="HitSLAT_top_left";
+				raw=1;
+			};
+			class showBags
+			{
+				displayName="$STR_A3_animationsources_showbagsturret0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+			class showCamonetHull
+			{
+				displayName="$STR_A3_animationsources_showcamonethull0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+			class showCamonetCannon
+			{
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+			};
+			class showCamonetTurret
+			{
+				displayName="$STR_A3_animationsources_showcamonetturret0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				forceAnimatePhase=1;
+				forceAnimate[]=
+				{
+					"showCamonetCannon",
+					1
+				};
+				forceAnimate2[]=
+				{
+					"showCamonetCannon",
+					0
+				};
+				mass=-50;
+			};
+			class showSLATHull
+			{
+				displayName="$STR_A3_animationsources_showslathull0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+			class showSLATTurret
+			{
+				displayName="$STR_A3_animationsources_showslatturret0";
+				author="$STR_A3_Bohemia_Interactive";
+				source="user";
+				animPeriod=0.001;
+				initPhase=0;
+				mass=-50;
+			};
+		};
+		animationList[]=
+		{
+			"showBags",
+			0,
+			"showCamonetHull",
+			0,
+			"showCamonetCannon",
+			0,
+			"showCamonetTurret",
+			0,
+			"showSLATHull",
+			0,
+			"showSLATTurret",
+			0
+		};
 		#include "cfg\FZ_A_HoneybadgerCamos.hpp"
 	};
 	class VES_IFV76: VES_IFV76_A

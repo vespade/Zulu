@@ -216,8 +216,6 @@ class CfgWeapons
 		};
 	};
 
-	#include "data\attachments\attachments.hpp"
-
 	// Hats & Berets
 	class H_Beret_Colonel;
 	class HeadgearItem;
@@ -288,7 +286,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.6;
 		displayName = "[FZ] CH252D Helmet";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO","V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_DEF_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252D.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252D_V.rvmat"};
 		CBRN_protection = 1;
 		class ItemInfo: HeadgearItem
@@ -326,37 +324,37 @@ class CfgWeapons
 	class VES_CH252D_B: VES_CH252D
 	{
 		displayName="[FZ] CH252D Helmet (Blue)";
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_BLU_V_CO"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_BLU_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo 
         {
-            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_BLU_V_CO"};
+            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_BLU_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
         };
 	};
 	class VES_CH252D_S: VES_CH252D
 	{
 		displayName="[FZ] CH252D Helmet (Silver)";
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo 
         {
-            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"};
+            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
         };
 	};
 	class VES_CH252D_G: VES_CH252D
 	{
 		displayName="[FZ] CH252D Helmet (Gold)";
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_GLD_V_CO"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_GLD_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo 
         {
-            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_GLD_V_CO"};
+            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_GLD_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
         };
 	};
 	class VES_CH252D_RPR: VES_CH252D
 	{
 		displayName="[FZ] CH252D Helmet (Reaper)";
-		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"};
+		hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo 
         {
-            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO"};
+            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_SLV_V_CO", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
         };
 	};
 
@@ -404,9 +402,9 @@ class CfgWeapons
 	class VES_CH252D_RPR_dp: VES_CH252D_dp
     {
         displayName="[FZ] CH252D Helmet (Reaper)";
-        hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+        hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
         class ItemInfo: ItemInfo{
-            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+            hiddenSelectionsTextures[]={"V_FZ_Armor\Data\Helmets\V_CH252D_RPR_CO", "V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA", "optre_unsc_units\army\data\ghillie_woodland_co.paa", "optre_unsc_units\army\data\soft_packs_co.paa"};
         };
     };
 
